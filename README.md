@@ -1,3 +1,3 @@
 雑多な事に関しての公開用Wiki。
 
-[TeFWiki](TeFWiki.md)
+[Home](wiki/Home.md)
