@@ -1,9 +1,6 @@
 remote_theme: Drassil/git-wiki-theme@master
 # (string) Title of your wiki
 title: "RandomThoughts"
-# (string) if you've installed your wiki in subfolder, you must change this configuration
-# with your folder name, otherwise leave it empty
-baseurl: "/RandomThoughts"
 # (string) Description of your wiki
 description: 公開用Wiki、雑多なジャンルのメモを全部入れておく所
 # (boolean) Enable/disable wiki page list in sidebar
