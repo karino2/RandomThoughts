@@ -18,3 +18,6 @@
 ### git-wiki作業手順
 
 - [https://github.com/Drassil/git-wiki-skeleton](https://github.com/Drassil/git-wiki-skeleton)からUse this templateで公開用の名前をつける。
+- _config.ymlからbaseurlの行を削除
+- レポジトリのsettingsからPagesのタブを選んで、Sourceを指定（masterでroot）してSave
+- README.mdを編集（wiki下へのリンクはwiki/が必要っぽい）
