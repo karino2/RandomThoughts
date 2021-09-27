@@ -118,6 +118,7 @@ plugins:
 
 exclude:
   - wiki_src
+  - scripts
 
 #
 # INCLUDING HOOKS
