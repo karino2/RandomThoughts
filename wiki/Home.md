@@ -2,5 +2,6 @@
 
 - [TeFWiki](TeFWiki.md)
   - [Wikiとノート](Wikiとノート.md)
+  - [TeFWikiのサブWiki機能](TeFWikiのサブWiki機能.md)
 - [生物学](生物学.md)
 - [技術的な事を話すweb上の場](技術的な事を話すweb上の場.md)
