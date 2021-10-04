@@ -48,12 +48,19 @@ Wikiでは新しいページをどんどん気軽に作れるのが命なので�
 - _config.ymlの編集
   - baseurlの行を削除
   - title, descriptionを書く
+  - blog_featureをfalseに
   - wiki_srcとscriptsのexcludeを足す
-- レポジトリのsettingsからPagesのタブを選んで、Sourceを指定（masterでroot）してSave
 - README.mdを編集（wiki下へのリンクはwiki/が必要っぽい）
-- sidebarのリンクをwiki/Home.mdに変更
+- sidebarのリンクをwiki/Home.mdに変更（`_include/sidbar.html`にあるっぽい）
+- レポジトリのsettingsからPagesのタブを選んで、Sourceを指定（masterでroot）してSave
 
 これでwiki下にmarkdownを置けば勝手に公開される。以下はTeFWiki特有の作業
+
+- wiki_srcというディレクトリを作る
+- scripts下をコピーする
+- copy.shのSUBWIKI_NAMEを編集
+
+これらは以下の２つをするスクリプト。
 
 - scripts下にTeFWikiのmdをwiki_srcにコピーするスクリプトを置く
 - scripts下にwiki_srcからwikiへWikiLinkをコンバートするスクリプトを置く
