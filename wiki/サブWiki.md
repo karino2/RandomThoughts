@@ -4,6 +4,7 @@
 
 - [blog: TeFWikiのサブディレクトリ対応](https://karino2.github.io/2021/09/26/TeFWiki_subdir_support.html)
 - [Wikiとノート](Wikiとノート.md)
+- [GitWiki](GitWiki.md)
 
 ### 機能概要
 
@@ -39,10 +40,7 @@ Wikiでは新しいページをどんどん気軽に作れるのが命なので�
 
 ### サブWikiの公開方法
 
-ディレクトリをgit-wikiとして公開する運用にしている。
-
-- [git-wiki](https://github.com/Drassil/git-wiki)
-  - [git-wikiのデモページ](http://www.drassil.org/git-wiki/main_page) 
+ディレクトリをgit-wikiとして公開する運用にしている。＞[GitWiki](GitWiki.md)へ
 
 以下、サブWikiをgit-wikiとして公開するための手順。
 
