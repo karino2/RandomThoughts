@@ -14,11 +14,12 @@
 ### 機能概要
 
 TeFWikiにはサブWikiという機能がある。
+サブWikiは複数の独立した子Wikiをつくる機能。
+
 WikiLinkにスラッシュが入っていると、そのスラッシュの前をサブWikiの名前として扱い、そのリンクを辿ったあとはそのサブWiki内に居るという前提で処理が行われる。
-サブWIkiとは、独立した子Wikiのようなもの、といえる。
 
 そのサブWiki内では通常のWikiLinkはすべてそのサブWiki内のリンクとして扱われる。
-Reccent ChangesもそのサブWiki内のWikiNameのみを表示する。
+Recent ChangesもそのサブWiki内のWikiNameのみを表示する。
 
 例えば「RandomThoughts/TeFWiki」というWikiLinkがあったら、RandomThoughtsというサブWikiのTeFWikiというWikiNameだとみなす。
 そのリンクを辿ると、このサブWIkiの中に入ったという認識で処理が行われる。
