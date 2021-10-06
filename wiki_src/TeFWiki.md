@@ -1,5 +1,5 @@
 このWikiを作るのに使っている、自作のローカルWiki。mdのテキストファイルのWiki。
-Electron版とAndroid版があって、Google Driveでデータを共有して使っている。サーバー要らず。
+[[Electron]]版とAndroid版があって、Google Driveでデータを共有して使っている。サーバー要らず。
 
 ### 関連リンク
 
