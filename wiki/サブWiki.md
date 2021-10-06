@@ -3,20 +3,31 @@
 ### 関連リンク
 
 - [blog: TeFWikiのサブディレクトリ対応](https://karino2.github.io/2021/09/26/TeFWiki_subdir_support.html)
+- [github: TeFWiki-Electron/TeFWiki_concept.md](https://github.com/karino2/TeFWiki-Electron/blob/main/TeFWiki_concept.md) 英語での簡単な説明
 - [Wikiとノート](Wikiとノート.md)
 - [GitWiki](GitWiki.md)
+
+サブWikiを公開している例
+- [RandomThoughts](https://karino2.github.io/RandomThoughts/Home) このWiki
+- [Biochemistry 705x](https://karino2.github.io/Biochemistry705x/Home) Biochemistryのノート用サブWiki
 
 ### 機能概要
 
 TeFWikiにはサブWikiという機能がある。
-WikiLinkにスラッシュが入っていると、そのスラッシュの前をサブWikiの名前として扱うというもの。
+WikiLinkにスラッシュが入っていると、そのスラッシュの前をサブWikiの名前として扱い、そのリンクを辿ったあとはそのサブWiki内に居るという前提で処理が行われる。
 サブWIkiとは、独立した子Wikiのようなもの、といえる。
 
-例えば「RandomThoughts/TeFWiki」というWikiLinkがあったら、RandomThoughtsというサブWikiのTeFWikiというWikiNameだと思い、
+そのサブWiki内では通常のWikiLinkはすべてそのサブWiki内のリンクとして扱われる。
+Reccent ChangesもそのサブWiki内のWikiNameのみを表示する。
+
+例えば「RandomThoughts/TeFWiki」というWikiLinkがあったら、RandomThoughtsというサブWikiのTeFWikiというWikiNameだとみなす。
 そのリンクを辿ると、このサブWIkiの中に入ったという認識で処理が行われる。
+この中でHomeというWikiLinkがあれば、それは「RandomThoughts/Home」として扱われる。
+親のWikiのHomeを参照する方法は無い事に注意。
+
+サブWikiから親への移動はパンくずメニューのみ。
 
 実装としては、RandomThoughtsというフォルダが掘られて、その中のWikiとして振る舞う。
-Reccent Changesもそのサブフォルダ内のみだけ表示し、そのサブWiki内では通常のWikiLinkはすべてそのサブWiki内のリンクとして扱われる。
 
 ### 何故サブWIkiという機能を作ったか
 
