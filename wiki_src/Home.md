@@ -8,6 +8,7 @@
 - [[PngNote]]
 - [[いつなに]]
 - [[MDMinaosi]]
+- [[カキオク]]
 
 ### 雑多なメモ
 
@@ -18,3 +19,5 @@
 - [[手書きとテキストの共存]]
 - [[Electron]]
 - [[BaseFood]]
+- [[JetpackCompose]]
+- [[GitHubを使ったSNSを考える]]

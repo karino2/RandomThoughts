@@ -8,6 +8,7 @@
 - [PngNote](PngNote.md)
 - [いつなに](いつなに.md)
 - [MDMinaosi](MDMinaosi.md)
+- [カキオク](カキオク.md)
 
 ### 雑多なメモ
 
@@ -18,3 +19,5 @@
 - [手書きとテキストの共存](手書きとテキストの共存.md)
 - [Electron](Electron.md)
 - [BaseFood](BaseFood.md)
+- [JetpackCompose](JetpackCompose.md)
+- [GitHubを使ったSNSを考える](GitHubを使ったSNSを考える.md)

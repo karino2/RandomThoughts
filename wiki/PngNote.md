@@ -56,3 +56,8 @@ pen_settings.txtというファイルがあったらその中身をパースし�
 なお、現状はbackground.pngを置くUIは無い。自分で画像を用意して手で置く。
 自分はこれを使っている。 [https://github.com/karino2/PngNote/blob/main/images/background.png](https://github.com/karino2/PngNote/blob/main/images/background.png)
 
+### github pagesへの公開
+
+公開には [gautamkrishnar/github-pages-gallery: A zero dollar solution to host your photo/video gallery online using Github pages and GitHub Actions. No coding necessary.](https://github.com/gautamkrishnar/github-pages-gallery) を使っている。
+
+[PngNoteのノートの公開にはGithub Pages Galleryを使う事にした | なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/07/27/use_ghg_for_pngnote_publish.html)
