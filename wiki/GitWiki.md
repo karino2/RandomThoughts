@@ -16,3 +16,5 @@ GithubのWikiを使う事に比べて、ドメインがkarino2.github.io下に�
 
 現状、タイトルがWikiNameじゃなくてサイトのタイトルになっちゃうので、
 urlをMarkdown形式でコピーするExtensionとかの振る舞いがいまいち。タイトルカスタマイズ出来ないのかなぁ。
+
+[WikiName as page title · Issue #92 · Drassil/git-wiki-theme](https://github.com/Drassil/git-wiki-theme/issues/92)

@@ -21,3 +21,5 @@
 - [BaseFood](BaseFood.md)
 - [JetpackCompose](JetpackCompose.md)
 - [GitHubを使ったSNSを考える](GitHubを使ったSNSを考える.md)
+- [GitWiki](GitWiki.md)
+- [スマホ](スマホ.md)
