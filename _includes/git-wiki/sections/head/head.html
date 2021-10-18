@@ -1,0 +1,15 @@
+<head>
+  {% if site.inc_before_head %}
+  {% include {{ site.inc_before_head }} %}
+  {% endif %}
+  <title>{{ page.title }}</title>
+  <meta property="og:hoge" content="Ika" />
+ 
+  {% include git-wiki/sections/head/meta.html %}
+  {% include git-wiki/sections/head/scripts.html %}
+  {% include git-wiki/sections/head/styles.html %}
+
+  {% if site.inc_after_head %}
+  {% include {{ site.inc_after_head }} %}
+  {% endif %}
+</head>
