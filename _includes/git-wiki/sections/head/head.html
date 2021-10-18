@@ -2,8 +2,8 @@
   {% if site.inc_before_head %}
   {% include {{ site.inc_before_head }} %}
   {% endif %}
-  {% assign pagetitle = page.name | slice: 0, -3 %}
-  <title>{{site.name}}/{{ page.name | slice: 0, -3 }}</title>
+  {% assign pagetitle = page.name | replace: ".md", "" %}
+  <title>{{ site.title }}/{{ pagetitle }}</title>
   <meta property="og:hoge" content="Ika4" />
  
   {% include git-wiki/sections/head/meta.html %}
