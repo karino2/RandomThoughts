@@ -4,10 +4,12 @@
   {% endif %}
   {% assign pagetitle = page.name | replace: ".md", "" %}
   {% assign title = site.title | append: "/", pagetitle %}
-  <title>{{ site.title }}/{{ pagetitle }}</title>
-  <meta property="og:hoge" content="Ika6" />
  
   {% include git-wiki/sections/head/meta.html %}
+
+  <title>{{ title }}</title>
+  <meta property="og:hoge" content="Ika7" />
+
   {% include git-wiki/sections/head/scripts.html %}
   {% include git-wiki/sections/head/styles.html %}
 
