@@ -82,8 +82,9 @@ Wikiでは新しいページやリンクをどんどん気軽に作れるのが�
 
 これでwiki下にmarkdownを置けば勝手に公開される。以下はTeFWiki特有の作業
 
+- _includes/git-wiki 下をコピーする（タイトルのカスタマイズ）
 - wiki_srcというディレクトリを作る
-- scripts下をコピーする
+- scripts下をコピーする 
 - copy.shのSUBWIKI_NAMEを編集
 
 これらは以下の２つをするスクリプト。
@@ -92,6 +93,14 @@ Wikiでは新しいページやリンクをどんどん気軽に作れるのが�
 - scripts下にwiki_srcからwikiへWikiLinkをコンバートするスクリプトを置く
 
 これでscripts下でスクリプトを実行するとTeFWikiのサブディレクトリがコピーされて公開準備が整うので、git commitしてpushする。
+
+タイトルのカスタマイズは、
+
+- titleタグを site.name/WikiName にする
+- ページ内のtocの上にh1でWikiNameを表示
+- tocの下にhrを挟む
+
+という事をやっている。
 
 ### 何故ネームスペースじゃなくてサブWikiなのか？
 
