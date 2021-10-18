@@ -3,7 +3,7 @@
   {% include {{ site.inc_before_head }} %}
   {% endif %}
   {% assign pagetitle = page.name | replace: ".md", "" %}
-  {% assign title = site.title | append: "/" | append pagetitle %}
+  {% assign title = site.title | append: "/" | append: pagetitle %}
 
   {% include git-wiki/sections/head/meta.html %}
 
