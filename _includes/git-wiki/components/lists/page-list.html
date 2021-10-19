@@ -7,14 +7,16 @@
         }} updated) {% endif %}:</span>
     <ul class="page-list">
         {% assign numPages=0 %}
-        {% assign items = site.html_pages | sort: 'date' | reverse %}
+        {% assign items = site.html_pages %}
         {% for page in items %}
         {% if numPages >= site.show_wiki_pages_limit %}
         {% break %}
         {% endif %}
         {% if page.is_wiki_page != false and page.sitemap != false %}
         <li class="page-list-item">
-            t: {{ page.modified_time | date: "%F" }}/{{ page.path.modified_time }}
+            {% for pname in page %}
+            {{ pname }}
+            {% endfor %}
             {% assign title = page.title | default: page.name %}
             <a href="{{ page.url | relative_url }}">{{title | escape}}</a>
         </li>
