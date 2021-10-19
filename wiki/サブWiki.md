@@ -1,10 +1,10 @@
-[TeFWiki](TeFWiki.md)
+[TeFWiki](TeFWiki.md)の機能。
 
 ### 関連リンク
 
 - [blog: TeFWikiのサブディレクトリ対応](https://karino2.github.io/2021/09/26/TeFWiki_subdir_support.html)
 - [github: TeFWiki-Electron/TeFWiki_concept.md](https://github.com/karino2/TeFWiki-Electron/blob/main/TeFWiki_concept.md) 英語での簡単な説明
-- [Wikiとノート](Wikiとノート.md)
+- [Wikiとノート](Wikiとノート.md)と[講義ノート](講義ノート.md)
 - [GitWiki](GitWiki.md)
 
 サブWikiを公開している例
