@@ -76,3 +76,12 @@ wiki_src % git log --pretty=format:%cd -n 1 --date=unix BaseFood.md
 これでリストは作れそうだが、htmlは何で書いたものかな。
 
 awkで書いてみた。
+
+- [Manual recents generation · karino2/RandomThoughts@9d3db18](https://github.com/karino2/RandomThoughts/commit/9d3db189d70e3bbba10cc9778f9b8fbd07c16c15)
+- [update · karino2/RandomThoughts@6aa5187](https://github.com/karino2/RandomThoughts/commit/6aa51875df8579314eda9ac0470fb3c1986eda2c)
+
+動いている風味。
+
+役に立ったページ
+- [Variables : Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/)
+- [site変数の内容調査](https://leico.github.io/TechnicalNote/Jekyll/site-variables)
