@@ -1,6 +1,8 @@
-[TeFWiki](TeFWiki.md)から。
+### 関連リンク
 
+- [TeFWiki](TeFWiki.md)
 - [blog: 理想のノート（アプリ）について考える](https://karino2.github.io/2021/09/26/ideal_note.html)
+- [blog: Blogに向く事、Wikiに向く事](https://karino2.github.io/2021/09/28/blog_vs_wiki.html)
 - [サブWiki](サブWiki.md)
 - [講義ノート](講義ノート.md)
 
@@ -75,6 +77,3 @@ Wikiで全体を把握しようとしてもリンクがどこまでも続いて�
 Wikiはずっとそばにあるのがいまいち。ブログは一度離れるとまたそばに置くのが面倒でいまいち。
 
 ノートごとに別々にwikiサイトになって、それをブログからリンクする、という感じの運用にすればいい感じに混ざるんじゃないか？どうだろう？
-
-- 関連リンク：[blog: Blogに向く事、Wikiに向く事](https://karino2.github.io/2021/09/28/blog_vs_wiki.html)
-- 関連リンク: [講義ノート](講義ノート.md)
