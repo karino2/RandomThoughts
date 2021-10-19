@@ -45,3 +45,34 @@ meta.htmlのseoでtitleが生成されているようだが、git-wikiではseo�
 これは`_includes/git-wiki/sections/content/content.html`が手頃に見えたので、tocの上にh1でタイトルを表示しておく。
 ついでにtocと記事の区切りがわかりにくいと思っていたのでhrを挟んでおく。
 tocを囲みのstyleにする方が良い気もするが、そこまでやる必要も無かろう。
+
+### サイドバーのrecentsの日付が反映されていない
+
+少し調べてみた。
+作っているのは以下。
+
+[git-wiki-theme/page-list.html at master · Drassil/git-wiki-theme](https://github.com/Drassil/git-wiki-theme/blob/master/_includes/git-wiki/components/lists/page-list.html)
+
+ここで、page.dateが空になっていてsortが効いていない。なんで空になっているのかは良く分からないが、本家のgit-wikiのデモページでも反映されてなさそうなので、たぶん動いていた事が無い気がする。
+
+pageに入っているもので使えそうなものを眺めてみたが無さそう。
+
+それよりは、普通に生成する方がいい気もするな。どうせ毎回WikiLinkをマークダウンリンクにsedで置き換えているので、
+これらが終わった後にタイムスタンプでソートした先頭10件からhtmlを生成すればいい気がする。
+
+```
+wiki_src % git log --pretty=format:%cd BaseFood.md
+Fri Oct 15 16:43:24 2021 +0900
+Sun Oct 10 14:14:46 2021 +0900
+Wed Oct 6 22:32:18 2021 +0900
+
+wiki_src % git log --pretty=format:%cd -n 1 --date=iso BaseFood.md
+2021-10-15 16:43:24 +0900
+
+wiki_src % git log --pretty=format:%cd -n 1 --date=unix BaseFood.md
+1634283804
+```
+
+これでリストは作れそうだが、htmlは何で書いたものかな。
+
+awkで書いてみた。
