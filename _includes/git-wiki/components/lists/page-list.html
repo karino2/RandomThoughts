@@ -14,7 +14,7 @@
         {% endif %}
         {% if page.is_wiki_page != false and page.sitemap != false %}
         <li class="page-list-item">
-            t: {{ page.date | date: "%F" }}/{{ page.path }}
+            t: {{ page.modified_time | date: "%F" }}/{{ page.path.modified_time }}
             {% assign title = page.title | default: page.name %}
             <a href="{{ page.url | relative_url }}">{{title | escape}}</a>
         </li>
