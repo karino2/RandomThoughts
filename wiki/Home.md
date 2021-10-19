@@ -23,3 +23,4 @@
 - [JetpackCompose](JetpackCompose.md)
 - [GitWiki](GitWiki.md)
 - [スマホ](スマホ.md)
+- [講義ノート](講義ノート.md)
