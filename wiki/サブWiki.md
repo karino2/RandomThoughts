@@ -82,15 +82,16 @@ Wikiでは新しいページやリンクをどんどん気軽に作れるのが�
 
 これでwiki下にmarkdownを置けば勝手に公開される。以下はTeFWiki特有の作業
 
-- _includes/git-wiki 下をコピーする（タイトルのカスタマイズ）
+- _includes/git-wiki 下をコピーする（タイトル、サイドバーのカスタマイズ）
 - wiki_srcというディレクトリを作る
 - scripts下をコピーする 
 - copy.shのSUBWIKI_NAMEを編集
 
-これらは以下の２つをするスクリプト。
+これらは以下の３つをするスクリプト。
 
 - scripts下にTeFWikiのmdをwiki_srcにコピーするスクリプトを置く
 - scripts下にwiki_srcからwikiへWikiLinkをコンバートするスクリプトを置く
+- recentsを生成する（[GitWiki](GitWiki.md)の「サイドバーのrecentsの日付が反映されていないのを修正」を参照）
 
 これでscripts下でスクリプトを実行するとTeFWikiのサブディレクトリがコピーされて公開準備が整うので、git commitしてpushする。
 
