@@ -7,7 +7,7 @@
   - [[サブWiki]]
 - [[PngNote]]
 - [[いつなに]]
-- [[MDMinaosi]]
+- [[MDMinaosi]]と[[MDTouch]]
 - [[カキオク]]
 
 ### 雑多なメモ

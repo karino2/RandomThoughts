@@ -7,7 +7,7 @@
   - [サブWiki](サブWiki.md)
 - [PngNote](PngNote.md)
 - [いつなに](いつなに.md)
-- [MDMinaosi](MDMinaosi.md)
+- [MDMinaosi](MDMinaosi.md)と[MDTouch](MDTouch.md)
 - [カキオク](カキオク.md)
 
 ### 雑多なメモ
