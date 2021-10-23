@@ -64,3 +64,5 @@ config.jsonを使っているので、[Miscellaneous](https://thumbsup.github.io
 という事でこの行を無くして無事有効になった。
 
 [karino2/ImageGallery: Image gallery for PngNote](https://github.com/karino2/ImageGallery) で動いているのが確認出来るはず。
+
+一応手順をブログにまとめておいた。＞ [blog: thumbsupで各画像へのリンクを貼れるようにする](https://karino2.github.io/2021/10/23/thumbsup_with_direct_link.html)
