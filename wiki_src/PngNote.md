@@ -5,6 +5,7 @@ karino2が作っているONYX BOOX Note3用のノートアプリ。
 - [redditのPngNoteのスレ](https://www.reddit.com/r/Onyx_Boox/comments/p5hygq/pngnote_for_boox_note_app_for_boox_device_only/) 割とメインでやっている場所
 - [blog: PngNote for BOOX開発記](https://karino2.github.io/2021/07/23/pngnote_for_boox.html)
 - [blog: PngNoteLoupe](https://karino2.github.io/2021/08/19/pngnoteloupe.html) Android用の拡大機能のプロトタイプ
+- [[GithubPagesGallery]]を公開に使っている。
 
 ### コンセプト
 
@@ -78,8 +79,6 @@ DashPathEffect
 消しゴム（細）;e;8.0
 ```
 
-
-
 ### バックグラウンド画像機能
 
 現状、フォルダにbackground.pngというファイルがあると、それをそのノートのバックグラウンドとして描画する。
@@ -90,6 +89,4 @@ DashPathEffect
 
 ### github pagesへの公開
 
-公開には [gautamkrishnar/github-pages-gallery: A zero dollar solution to host your photo/video gallery online using Github pages and GitHub Actions. No coding necessary.](https://github.com/gautamkrishnar/github-pages-gallery) を使っている。
-
-[PngNoteのノートの公開にはGithub Pages Galleryを使う事にした | なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/07/27/use_ghg_for_pngnote_publish.html)
+公開には[[GithubPagesGallery]]を使っている。
