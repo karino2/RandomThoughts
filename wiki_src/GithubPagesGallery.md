@@ -52,6 +52,8 @@ Creating a themeのページにローカルのテーマを適用する方法は�
 
 config.jsonを使っているので、[Miscellaneous](https://thumbsup.github.io/docs/3-configuration/misc-settings/)と[Cheat sheet](https://thumbsup.github.io/docs/3-configuration/cheat-sheet/)をあわせて考えると、config.jsonにtheme-pathを足せば良さそう。
 
+----
+
 なんか試してみた所、以下のlgHashでスクリプトエラーが出る。
 
 ```
@@ -60,3 +62,5 @@ config.jsonを使っているので、[Miscellaneous](https://thumbsup.github.io
 
 どうもlg-hash.jsをスクリプトタグでincludeすればその時点でプラグインは有効になるように変更されたっぽい？
 という事でこの行を無くして無事有効になった。
+
+[karino2/ImageGallery: Image gallery for PngNote](https://github.com/karino2/ImageGallery) で動いているのが確認出来るはず。
