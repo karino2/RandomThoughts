@@ -51,3 +51,12 @@ ver 1のデモだが、[lightGallery: Hash](https://sachinchoolur.github.io/ligh
 Creating a themeのページにローカルのテーマを適用する方法は載っているが、これをgithub-pages-galleryでやる方法はどうやるのだろう？
 
 config.jsonを使っているので、[Miscellaneous](https://thumbsup.github.io/docs/3-configuration/misc-settings/)と[Cheat sheet](https://thumbsup.github.io/docs/3-configuration/cheat-sheet/)をあわせて考えると、config.jsonにtheme-pathを足せば良さそう。
+
+なんか試してみた所、以下のlgHashでスクリプトエラーが出る。
+
+```
+        plugins: [lgHash],
+```
+
+どうもlg-hash.jsをスクリプトタグでincludeすればその時点でプラグインは有効になるように変更されたっぽい？
+という事でこの行を無くして無事有効になった。
