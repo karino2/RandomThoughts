@@ -27,3 +27,5 @@
   - [GithubPagesGallery](GithubPagesGallery.md)
 - [スマホ](スマホ.md)
 - [講義ノート](講義ノート.md)
+- [Kotlin](Kotlin.md)
+- [そのうち作りたいもの](そのうち作りたいもの.md)
