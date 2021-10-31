@@ -1,6 +1,10 @@
 github上にweb siteを持てる仕組み。
 無料で使えてかなり制限が少なく、jekyllを使っていろいろな事が出来る。
 
+### dockerでのローカルjekyll環境
+
+[Mac OS X上のdockerでjekyll環境を作ってgithub pagesのテストをする - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/01/17/jekyll_on_mac.html)
+
 ### github pagesを使ったシステム
 
   - [GitWiki](GitWiki.md)
