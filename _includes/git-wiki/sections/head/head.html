@@ -3,12 +3,11 @@
   {% include {{ site.inc_before_head }} %}
   {% endif %}
   {% assign pagetitle = page.name | replace: ".md", "" %}
-  {% assign title = site.title | append: "/" | append: pagetitle | strip_html %}
+  {% assign title = pagetitle | append: " - " | append: site.title | strip_html %}
 
   {% include git-wiki/sections/head/meta.html %}
 
   <title>{{ title }}</title>
-  <meta property="og:hoge" content="Ika11" />
 
   {% include git-wiki/sections/head/scripts.html %}
   {% include git-wiki/sections/head/styles.html %}
