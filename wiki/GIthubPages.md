@@ -1,7 +1,7 @@
 github上にweb siteを持てる仕組み。
 無料で使えてかなり制限が少なく、jekyllを使っていろいろな事が出来る。
 
-### dockerでのローカルjekyll環境
+### dockerでのローカル環境
 
 [Mac OS X上のdockerでjekyll環境を作ってgithub pagesのテストをする - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/01/17/jekyll_on_mac.html)
 
@@ -48,6 +48,13 @@ site dataのフォルダと公開用のフォルダに両方同じファイル�
 このgistが同じような事を解説しているな。
 
 [Jekyll - how to build a REST API](https://gist.github.com/MichaelCurrin/f8d908596276bdbb2044f04c352cb7c7)
+
+## カスタマイズいろいろ
+
+そこそこカスタマイズをいろいろやっているので、ここにリンクをまとめていきたい。
+
+- [github pagesでブロックのスタイルを指定したい - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/01/17/block_style_on_githubpages.html)
+
 
 ### タイトルのカスタマイズ
 
