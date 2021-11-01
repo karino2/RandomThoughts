@@ -1,6 +1,6 @@
 git-wiki。ファイル名にハイフンが入るのがなんか嫌なのでGitWikiというWikiNameにしたが。
 
-Github Pagesのテンプレートとして実装されているwiki。[サブWiki](サブWiki.md)の公開に使っている。
+[GithubPages](GithubPages.md)のテンプレートとして実装されているwiki。[サブWiki](サブWiki.md)の公開に使っている。
 なかなか良く出来ていると思うが、びっくりするほどググれない。
 
 - [git-wiki](https://github.com/Drassil/git-wiki)

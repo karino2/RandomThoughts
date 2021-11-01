@@ -23,7 +23,7 @@
 - [Electron](Electron.md)
 - [BaseFood](BaseFood.md)
 - [JetpackCompose](JetpackCompose.md)
-- [GIthubPages](GIthubPages.md)
+- [GithubPages](GithubPages.md)
   - [GitWiki](GitWiki.md)
   - [GithubPagesGallery](GithubPagesGallery.md)
 - [スマホ](スマホ.md)

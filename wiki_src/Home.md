@@ -23,7 +23,7 @@
 - [[Electron]]
 - [[BaseFood]]
 - [[JetpackCompose]]
-- [[GIthubPages]]
+- [[GithubPages]]
   - [[GitWiki]]
   - [[GithubPagesGallery]]
 - [[スマホ]]
