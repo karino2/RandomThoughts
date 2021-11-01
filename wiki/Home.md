@@ -10,6 +10,7 @@
 - [MDMinaosi](MDMinaosi.md)と[MDTouch](MDTouch.md)
 - [カキオク](カキオク.md)
 - [guash](guash.md)
+- [てきすとでっき](てきすとでっき.md)
 
 ### 雑多なメモ
 
@@ -30,3 +31,4 @@
 - [Kotlin](Kotlin.md)
 - [そのうちやりたい事](そのうちやりたい事.md)
 - [税制の比較の論点](税制の比較の論点.md)
+- [雑多なメモ](雑多なメモ.md)

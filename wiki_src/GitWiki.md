@@ -39,7 +39,7 @@ urlをMarkdown形式でコピーするExtensionとかの振る舞いがいまい
 
 head.htmlでタイトルを生成して適当な変数にassignしておく。ついでにtitleタグもここで生成する。
 
-meta.htmlのseoでtitleが生成されているようだが、git-wikiではseoはあまり役に立つ情報を生成しているようには見えないので、これをmeta.htmlから外す。ついでに`og:title`をhead.htmlで作ったものに更新しておく。
+meta.htmlのseoでtitleが生成されているようだが、git-wikiではseoはあまり役に立つ情報を生成しているようには見えないので、これをmeta.htmlから外す。ついでに`og:title`をhead.htmlで作ったものに更新しておく。（追記： [[GithubPages]]で同じ作業をした時に、seoに`title=false`を指定する事が出来るのを知ったので、もっと良いやり方もありそう）
 
 あとはページのトップにh1で表示すればいいか。
 これは`_includes/git-wiki/sections/content/content.html`が手頃に見えたので、tocの上にh1でタイトルを表示しておく。

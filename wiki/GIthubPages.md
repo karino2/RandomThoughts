@@ -65,3 +65,5 @@ site dataのフォルダと公開用のフォルダに両方同じファイル�
 - [Modify title format · karino2/karino2.github.io@99f5cfd](https://github.com/karino2/karino2.github.io/commit/99f5cfd69f7b56ee1a27b835095c63c88b877d32)
 - [Fix prev tilte modification. · karino2/karino2.github.io@e143bf2](https://github.com/karino2/karino2.github.io/commit/e143bf207dd27daddf8d0b4f5309876ce3bf8a2b)
 - [Update head.html · karino2/karino2.github.io@21583b9](https://github.com/karino2/karino2.github.io/commit/21583b9bac95f588b2afe7d2251cafb49b5fe658)
+
+なお、[GitWiki](GitWiki.md)でも同じような作業をしている。
