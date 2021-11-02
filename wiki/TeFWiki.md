@@ -9,6 +9,7 @@
 - [github:TeFWiki: TeFWiki for Android](https://github.com/karino2/TeFWiki/)
 - [Wikiとノート](Wikiとノート.md)
 - [サブWiki](サブWiki.md)
+- [講義ノート](講義ノート.md)
 
 ### コンセプト
 

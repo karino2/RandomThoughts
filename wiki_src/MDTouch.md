@@ -29,3 +29,7 @@
 
 実際自分は、[[TeFWiki]]のexternal editorとして使っている。
 
+### Jetpack Composeを使ったネイティブのMarkdown View
+
+ユーザー視点ではどうでもいい事だけれど、Jetpack Composeを使ったMarkdown表示のネイティブ実装が含まれている。
+まぁまぁ真面目に実装しているので、ちゃんと切り出せば需要はありそう（だけれど切り出すのは面倒なのでしない）。
