@@ -1,7 +1,7 @@
 MDTouchはブロック単位で編集するAndroid用マークダウンエディタのアプリ。Jetpack Composeで書いている。
 
 - [MDTouch - Apps on Google Play](https://play.google.com/store/apps/details?id=io.github.karino2.mdtouch)
-- [github: MDTouch: Markdown editor for Android with touch operation](https://github.com/karino2/MDTouch)
+- [github: MDTouch](https://github.com/karino2/MDTouch) ソースコード
 - [MDMinaosi](MDMinaosi.md) PC版の類似の自作アプリ。
 
 機能的には[MDMinaosi](MDMinaosi.md)のほぼAndroid版という感じだが、タッチで使うので意味合いが違ってくる部分が結構ある。
