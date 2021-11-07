@@ -24,3 +24,32 @@ Jetpack Composeに関するメモ。
 デフォルトで無いの？とググると公式ドキュメントのnestedScrollがそれっぽい。TopAppBarの高さを判定するのがダサいが他は以前のViewの頃の実装とあまり変わらないな。
 
 [androidx.compose.ui.input.nestedscroll: Android Developers](https://developer.android.com/reference/kotlin/androidx/compose/ui/input/nestedscroll/package-summary)
+
+### by rememberを動かす為に必要なimport
+
+毎回忘れるのでここにメモ。
+
+```
+   var textState by remember { mutableStateOf("") }
+```
+
+みたいな表記をする時は、必要なimportが何故か自動でされない。
+以下を手で足す必要がある。
+
+```
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+```
+
+### TextFieldのimeActionの指定方法とEnterされた時のハンドル
+
+imeActionは[Text in Compose  -  Jetpack Compose](https://developer.android.com/jetpack/compose/text)のKeyboard optionsあたりに書いてある。
+
+Enter押された時はKeyboardActionsで拾える。
+
+```
+    keyboardOptions = KeyboardOptions(imeAction = ImeAction.Send),
+    keyboardActions = KeyboardActions(onSend = {...})
+```
+
+
