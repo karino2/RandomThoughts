@@ -45,3 +45,12 @@ StarlarkのParser.javaを眺めていると、u_exp相当のものが無いな�
 少しつついてみて使い物になるかをまずは調べてみよう。
 
 テキストでのexportを実装したい気もするが、それは最後でいいかな。
+
+
+### TODO
+
+- 自前ボタンの電卓とテキストのモード切り替え出来るようにする。 [android - How to create rounded border Button using Jetpack Compose - Stack Overflow](https://stackoverflow.com/questions/58875567/how-to-create-rounded-border-button-using-jetpack-compose)
+
+以下はいまいちなので上のTODOに統合
+- 最初にフォーカス当てる。
+- IMEを数字モードに出来ないか？ [android - EditText with number keypad by default, but allowing alphabetic characters - Stack Overflow](https://stackoverflow.com/questions/3544214/edittext-with-number-keypad-by-default-but-allowing-alphabetic-characters)　無理そう。英語モードのボタンを置くしか無さそうだなぁ。 [How to show Android keyboard with symbols mode by default? - Stack Overflow](https://stackoverflow.com/questions/25219855/how-to-show-android-keyboard-with-symbols-mode-by-default)
