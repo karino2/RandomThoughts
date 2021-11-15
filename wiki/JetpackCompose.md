@@ -1,3 +1,5 @@
+今後はJetpackComposeのサブWikiへ移していく（まだリンク貼れないのでそのうち貼る）
+
 Jetpack Composeに関するメモ。
 
 ### マテリアルカタログ
@@ -40,16 +42,4 @@ Jetpack Composeに関するメモ。
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 ```
-
-### TextFieldのimeActionの指定方法とEnterされた時のハンドル
-
-imeActionは[Text in Compose  -  Jetpack Compose](https://developer.android.com/jetpack/compose/text)のKeyboard optionsあたりに書いてある。
-
-Enter押された時はKeyboardActionsで拾える。
-
-```
-    keyboardOptions = KeyboardOptions(imeAction = ImeAction.Send),
-    keyboardActions = KeyboardActions(onSend = {...})
-```
-
 

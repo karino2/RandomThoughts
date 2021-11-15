@@ -47,10 +47,32 @@ StarlarkのParser.javaを眺めていると、u_exp相当のものが無いな�
 テキストでのexportを実装したい気もするが、それは最後でいいかな。
 
 
-### TODO
+### TODO (既に終えた)
 
 - 自前ボタンの電卓とテキストのモード切り替え出来るようにする。 [android - How to create rounded border Button using Jetpack Compose - Stack Overflow](https://stackoverflow.com/questions/58875567/how-to-create-rounded-border-button-using-jetpack-compose)
 
 以下はいまいちなので上のTODOに統合
 - 最初にフォーカス当てる。
 - IMEを数字モードに出来ないか？ [android - EditText with number keypad by default, but allowing alphabetic characters - Stack Overflow](https://stackoverflow.com/questions/3544214/edittext-with-number-keypad-by-default-but-allowing-alphabetic-characters)　無理そう。英語モードのボタンを置くしか無さそうだなぁ。 [How to show Android keyboard with symbols mode by default? - Stack Overflow](https://stackoverflow.com/questions/25219855/how-to-show-android-keyboard-with-symbols-mode-by-default)
+
+### 電卓モードをつける(2021-11-09)
+
+IMEのモードが数字から文字に戻っちゃうのが気に食わないので、数字だけを入力する電卓っぽいUIを手で書く事にした。
+テキストモードとはユーザーがラジオボタンで明示的に変更する。
+いい感じ。
+
+### sumを実装する(2021-11-12)
+
+sumはbuiltinsだったのでJavaの側にちまちま実装しておく（別にkotlin側で実装してしまってもいいのだが、分散するのもなぁ、という事で）。
+
+残りのTODOは
+
+- ~~math関係を一通り足す~~ 2021-11-13 DONE
+- historyの表示をもうちょっとマシにする
+- ペーストのGUI要素を足す（action barか？）
+- textとしてsend to する機能を足す
+
+後半２つはやらないかも。
+mathは全部揃える気は無いが、三角関数、指数関数、対数くらいは足そうかな、と思っている。
+
+参考： [kotlin.math - Kotlin Programming Language](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.math/)
