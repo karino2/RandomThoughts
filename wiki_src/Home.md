@@ -31,3 +31,4 @@
 - [[最近出来てる事、出来てない事]]
 - [[Starlark]]
 - [[【書籍】財政赤字の神話]]
+- [[【書籍】ggplot2：ElegantGraphicsForDataAnalysis]]
