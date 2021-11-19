@@ -76,3 +76,7 @@ sumはbuiltinsだったのでJavaの側にちまちま実装しておく（別�
 mathは全部揃える気は無いが、三角関数、指数関数、対数くらいは足そうかな、と思っている。
 
 参考： [kotlin.math - Kotlin Programming Language](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.math/)
+
+reduceは欲しい気がするなぁ。functoolsか。
+
+[Functional Programming HOWTO — Python 3.10.0 documentation](https://docs.python.org/3/howto/functional.html#the-functools-module)

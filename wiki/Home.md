@@ -32,3 +32,6 @@
 - [Starlark](Starlark.md)
 - [【書籍】財政赤字の神話](【書籍】財政赤字の神話.md)
 - [【書籍】ggplot2、ElegantGraphicsForDataAnalysis](【書籍】ggplot2、ElegantGraphicsForDataAnalysis.md)
+
+### 一時的なブログ草稿の置き場
+- [11月中旬の雑記](11月中旬の雑記.md)
