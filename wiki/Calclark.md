@@ -68,8 +68,8 @@ sumはbuiltinsだったのでJavaの側にちまちま実装しておく（別�
 残りのTODOは
 
 - ~~math関係を一通り足す~~ 2021-11-13 DONE
+- ~~ペーストのGUI要素を足す（action barか？）~~ ＞Outやアンダーバーの方が快適なのでやらないことに
 - historyの表示をもうちょっとマシにする
-- ペーストのGUI要素を足す（action barか？）
 - textとしてsend to する機能を足す
 
 後半２つはやらないかも。
@@ -80,3 +80,10 @@ mathは全部揃える気は無いが、三角関数、指数関数、対数く�
 reduceは欲しい気がするなぁ。functoolsか。
 
 [Functional Programming HOWTO — Python 3.10.0 documentation](https://docs.python.org/3/howto/functional.html#the-functools-module)
+
+いや、こういうのは必要になるまで実装しない方がいいよな。
+
+### 結果をOutリストに入れる（2021-11-19）
+
+前の結果をコピペするよりも、変数で参照出来た方がいいよなぁ、という気分になって、どうせならJupyterに合わせればいいか、ということでJupyterっぽい実装にする。
+Outの配列に入れて、ついでにアンダーバーも対応。いい感じだね。
