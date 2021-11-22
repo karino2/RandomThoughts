@@ -34,4 +34,6 @@
 - [【書籍】ggplot2、ElegantGraphicsForDataAnalysis](【書籍】ggplot2、ElegantGraphicsForDataAnalysis.md)
 
 ### 一時的なブログ草稿の置き場
-- [11月中旬の雑記](11月中旬の雑記.md)
+- [11月下旬の雑記](11月下旬の雑記.md)
+- [人生を掛けて来た事](人生を掛けて来た事.md)
+- [テスト？](テスト？.md)
