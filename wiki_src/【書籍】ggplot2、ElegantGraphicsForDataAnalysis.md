@@ -13,3 +13,26 @@ Springerの40%オフに釣られてpdfで2021年11月上旬に購入。
 自分の目的はggplot2を使いたいのでは無くてGrammar of Graphicsを学びたいなのでここからが本番だが。
 
 ただやはり具体例があるといいね。dataとvariableの関係とかやはり具体例が多い方が分かりやすい。
+
+### 3章、4章読み終わり（2021-11-26）
+
+3章は使う視点でのより詳細な機能説明。
+ここまでで基本的な利用の情報が全て揃う感じ。
+
+4章からはGrammarの解説。
+やはり具体例をもとに話をするので圧倒的に分かりやすいな。
+dataとaestheticsへのマッピングがdata frame 的なのを作って、それに対していろいろ操作してレイヤーが出来る、
+というのが骨格っぽいな。
+
+scalingは分かりにくいな。statistical transformationの前に実行される、とあるが、例えば算術平均とかscaleのあとに実行されちゃうの？
+trainingとscalingはあとの章を読んでいくと分かるようになると期待。
+
+## 5章、Layer
+
+5つの構成要素
+
+- data
+- aesthetic mappings
+- geom
+- stat
+- position adjustment
