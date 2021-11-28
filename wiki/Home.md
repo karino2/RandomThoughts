@@ -21,7 +21,7 @@
 - [Kotlin](Kotlin.md)
 - [Electron](Electron.md)
 - [BaseFood](BaseFood.md)
-- [JetpackCompose](JetpackCompose.md)
+- [Android](Android.md)
 - [GithubPages](GithubPages.md)
   - [GitWiki](GitWiki.md)
   - [GithubPagesGallery](GithubPagesGallery.md)

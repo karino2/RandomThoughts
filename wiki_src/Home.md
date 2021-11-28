@@ -21,7 +21,7 @@
 - [[Kotlin]]
 - [[Electron]]
 - [[BaseFood]]
-- [[JetpackCompose]]
+- [[Android]]
 - [[GithubPages]]
   - [[GitWiki]]
   - [[GithubPagesGallery]]
