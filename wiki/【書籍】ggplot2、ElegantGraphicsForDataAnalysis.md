@@ -36,3 +36,7 @@ trainingとscalingはあとの章を読んでいくと分かるようになる�
 - geom
 - stat
 - position adjustment
+
+## 6章、Scale
+
+スケールはデータの領域からaesceticの領域への関数との事。おぉ、そう聞くとcoordとの違いも分かるな。
