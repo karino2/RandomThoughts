@@ -2,13 +2,6 @@
 
 Jetpack Composeに関するメモ。
 
-### マテリアルカタログ
-
-ソースが良く行方不明になるのでリンク。
-
-- [material-catalog - Android Code Search](https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:compose/material/material/integration-tests/material-catalog/) ただし実態はもう少し上のレポジトリにある事もあるのでもう少し上からフィルタした方がいいかも。
-- [androidx/compose/material/material/integration-tests/material-catalog at androidx-main · androidx/androidx](https://github.com/androidx/androidx/tree/androidx-main/compose/material/material/integration-tests/material-catalog) ミラー
-
 ### DropdownMenu
 
 - [DropdownMenu - Jetpack Compose Playground](https://foso.github.io/Jetpack-Compose-Playground/material/dropdownmenu/)
