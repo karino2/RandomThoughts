@@ -68,4 +68,4 @@ TeFWikiのファイルはTeFWIki以外のアプリやUnixコマンドなどで�
 
 ### メモ
 
-gradleのタスクでライセンス生成するとasset下が直接書き換わる。これにはbluma.cssが入らないので足す事。
+gradleのタスクでlicenseReleaseReportを実行してライセンス生成するとasset下が直接書き換わる。これにはbluma.cssなどが入らないのでimgs/js_licenses.txtの中身を足す事。

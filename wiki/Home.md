@@ -30,6 +30,7 @@
 - [【書籍】ggplot2、ElegantGraphicsForDataAnalysis](【書籍】ggplot2、ElegantGraphicsForDataAnalysis.md)
 - [【書籍】科学者たちが語る食欲](【書籍】科学者たちが語る食欲.md)
 - [ポモドーロテクニック](ポモドーロテクニック.md)
+- [【書籍】TheGrammarOfGraphics](【書籍】TheGrammarOfGraphics.md)
 
 ### 一時的なブログ草稿の置き場
 - [12月中旬の雑記](12月中旬の雑記.md)
