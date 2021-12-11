@@ -1,12 +1,21 @@
+- [github: karino2/Calclark](https://github.com/karino2/Calclark)
+
+Calclarkとは、[[Starlark]]を電卓っぽく使えるようにしたAndroidアプリである。
+電卓として使う為に`**`のサポートなど、一部[[Starlark]]とは変更した部分があるforkである。
+
+CalclarkはStarlarkの方言の言語名であると同時にAndroid版のアプリ名でもある。
+
+## 開発記録
+
+ここに開発の過程のメモを記しておく。
+
+### はじまり
+
 [[Starlark]]を電卓っぽく使えるAndroidアプリを作ろうと思う。
 ただ、Java版のStarlarkは`**`が無かったりmathモジュールが無かったりするので、forkする必要がありそう。
 
 という事で名前もStarlarkから変えた方がいいかという事でCalclarkという名前にする。
 CalclarkはStarlarkの方言の言語名であると同時にAndroid版のアプリ名でもある。
-
-# 開発記録
-
-ここに開発の過程のメモを記しておく。
 
 [[Starlark]]側に書いたように、ビルドをして動くところまで来た。という事でとりあえずWikiNameを作る。
 今後の方向性としては、

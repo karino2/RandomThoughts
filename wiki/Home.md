@@ -28,7 +28,8 @@
 - [ギター](ギター.md)
 - [【書籍】財政赤字の神話](【書籍】財政赤字の神話.md)
 - [【書籍】ggplot2、ElegantGraphicsForDataAnalysis](【書籍】ggplot2、ElegantGraphicsForDataAnalysis.md)
+- [【書籍】科学者たちが語る食欲](【書籍】科学者たちが語る食欲.md)
 - [ポモドーロテクニック](ポモドーロテクニック.md)
 
 ### 一時的なブログ草稿の置き場
-- [12月上旬の雑記](12月上旬の雑記.md)
+- [12月中旬の雑記](12月中旬の雑記.md)
