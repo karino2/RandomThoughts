@@ -1,4 +1,4 @@
-いわゆる完全栄養食の一種。サブスクリプション型。月に一度届く。
+いわゆる完全栄養食の一種。サブスクリプション型。月に一度届く。[食事関連](食事関連.md)
 
 - [完全食 BASE FOOD（ベースフード）](https://basefood.co.jp/)
 - [blog: 毎週日曜の食事にBASE FOODを導入した](https://karino2.github.io/2021/08/16/basefood_intro.html)
