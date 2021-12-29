@@ -302,6 +302,6 @@ Part 2は読み飛ばした所も多いけれど、これは正しい読み方�
 
 ## 全体の感想など
 
-ブログにしよう、と思うので、ページを分ける。
+せっかくなのでブログにしてみた。
 
 [The Grammar of Graphics を読み終わっての感想 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/12/29/after_reading_gog_book.html)
