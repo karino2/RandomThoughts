@@ -4,7 +4,6 @@
 
 - [自作アプリ](自作アプリ.md)
 - [技術的なメモ](技術的なメモ.md)
-- [【書籍】TheGrammarOfGraphics](【書籍】TheGrammarOfGraphics.md)
 
 ## 雑多なメモ
 

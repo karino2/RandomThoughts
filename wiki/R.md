@@ -1,0 +1,4 @@
+- [【書籍】RforDataScience](【書籍】RforDataScience.md)
+- [【書籍】ggplot2、ElegantGraphicsForDataAnalysis](【書籍】ggplot2、ElegantGraphicsForDataAnalysis.md)
+- [RStudio blog](https://www.rstudio.com/blog/)
+  - [tidyverse blog](https://www.tidyverse.org/blog/)
