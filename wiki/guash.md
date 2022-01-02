@@ -4,3 +4,27 @@
 
 シェルスクリプトでGUIツールを作る為のF# で書いたコマンドラインツール。
 まだ手元で使っているだけでちゃんとリリースした感じでは無いが、結構日常的なツールを書くのに便利に使っている。
+
+## TeFWIkiのファイル名からリンクをクリップボードに入れる
+
+書籍のリンクとかを貼るのにいちいち「【書籍】」とか入力するのもかったるいし、全部の名前を覚えてもいないので、
+ファイル名を適当にフィルタリングしたものからWikiLink、つまり大かっこ２つでくくった文字列を生成してクリップボードに入れる、
+という事をやるguashスクリプトを書く。
+
+クリップボードはMacだと、pbcopyというのを使って以下のように出来るらしい。
+
+```
+echo "hoge" | pbcopy
+```
+
+という事で以下のようにした。
+
+```
+#!/usr/bin/env guash
+
+ls -t ~/GoogleDriveMirror/DriveText/TeFWiki/RandomThoughts/*.md | guash_filter "Select target"
+RES=($(guash_doquery))
+WIKINAME=`basename -s .md ${RES[0]}`
+
+echo "[$WIKINAME]($WIKINAME.md)" | pbcopy
+```
