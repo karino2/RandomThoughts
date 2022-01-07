@@ -1,3 +1,5 @@
+[Kotlin](Kotlin.md)より。
+
 - [Kotlin Native ｜ Kotlin](https://kotlinlang.org/docs/native-overview.html)
 - [ScalaNative](ScalaNative.md) はどうなんだろう？
 
