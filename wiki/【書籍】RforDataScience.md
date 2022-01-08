@@ -6,6 +6,8 @@ tidyverseを使ってデータ分析をしよう、という本。tidyverseはgg
 
 web上で公開されているのが十分BOOXで読みやすかったので、webを読む。コードをCopyボタンでコピーしてR Studioで試す事が出来るので、便利で良いね、web版。
 
+[R](R.md)
+
 ## OS XへのR Studioのインストール
 
 ちょっと3章のbar chartのidentityの説明で、挙動が想像と違ったので、実際のデータで試したくなる。
@@ -188,6 +190,8 @@ invisibleという関数があってこれで返すとrepl上に表示されな�
 おー、簡単に作れていいな。
 こういうUIを簡単に作る系はいろんなところでいろんな人が独自に作ってる感じがあるが、
 それぞれ良さがあるよねぇ。
+
+flexdashboardというのを使うらしい。 [R Markdown Format for Flexible Dashboards • flexdashboard](https://pkgs.rstudio.com/flexdashboard/)
 
 ## 30. Lab Notebook
 

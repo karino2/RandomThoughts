@@ -2,3 +2,4 @@
 - [[【書籍】ggplot2、ElegantGraphicsForDataAnalysis]]
 - [RStudio blog](https://www.rstudio.com/blog/)
   - [tidyverse blog](https://www.tidyverse.org/blog/)
+- [R Markdown Format for Flexible Dashboards • flexdashboard](https://pkgs.rstudio.com/flexdashboard/)
