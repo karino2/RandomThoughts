@@ -1,3 +1,5 @@
+[FSharp](FSharp.md)で書いている、GUIツールをシェルスクリプトで書く為のコマンド。
+
 - [github: karino2/guash: GUI app scripting by shell script.](https://github.com/karino2/guash)
 - [blog: guashで遊ぼう！](https://karino2.github.io/2021/04/27/play_with_guash.html)
    - [blog: GUIツールをシェルスクリプトのように書けないものか？](https://karino2.github.io/2021/04/24/GUITool_like_sh.html) 作る前に考えた事
