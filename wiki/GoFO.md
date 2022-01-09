@@ -35,3 +35,39 @@ ls("~/some/dir/*.md")
 [FParsec](FParsec.md)
 
 まずはlsが動くところまで頑張ろう。
+
+### 2022-01-09
+
+とりあえずlsのパースの中でlsを実行する感じで動いた。
+これでは全然駄目だが、最初は動くところから始めたかったのでこんな感じで。
+
+次にパイプとfilterを実装したいが、filterは実行しないでAST的なのを持っておいて各レコードごとにevalする必要があるので、
+もうちょっと真面目にrecord型とか用意しないとなぁ、と思い、termとexprの再帰的な関係をどう扱うか、
+なんかサンプル無いかなぁ、とSampleでCalculatorとか眺めていたら、
+OperatorPrecedenceParserというのを見つける。
+
+ドキュメントはなんかわかりにくいので簡単な解説記事とか無いかなぁ、とググってたら以下を見つける。
+
+[Parsing Programming Languages with FParsec :: Ambika Eshwar — Functional Programmer and PLT Enthusiast](https://rosalogia.me/posts/functional-parsing/)
+
+お、これはなかなか参考になるな。
+
+FParsecの再帰やバックトラックに苦戦するが、どうにか動く。
+再帰はcreateParserForwardedToRef、バックトラックはattemptだった。
+
+一応
+
+```
+ls("./")
+| filter($1.isFile)
+| filter($1.Length > 400)
+```
+
+が動くようになった。
+想像以上にちゃんと型定義しないと動かなくて一日掛かってしまった…
+
+しかも今のところ`$1`だけという事でいろいろサボっているので、複数タプルを実装する時はやらなきゃいけない事は多いが。
+
+OperatorPrecedenceParserはまだ使ってないが、これも使いたい。
+
+今回の実験にしては無駄に苦労してしまったが、この手のお遊びはたまにやりたくなるので元として使えるコードが手元にあるのは良いだろう。
