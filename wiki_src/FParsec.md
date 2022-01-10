@@ -19,3 +19,10 @@ let float_ws = pfloat .>> ws
 [parsing - FParsec and pipe3 make the arguments explicit or add a type notation - Stack Overflow](https://stackoverflow.com/questions/54536779/fparsec-and-pipe3-make-the-arguments-explicit-or-add-a-type-notation)
 
 良くわからないが、testまで呼ばないと型が確定しないのか。
+
+## 再帰とバックトラック
+
+再帰はcreateParserForwardedToRef、バックトラックはattemptだった。
+この辺を理解してからCalculatorのサンプルを見ると、OperatorPrecedenceParserも難しいところは無い事が分かる。
+
+OperatorPrecedenceParserみたいな便利ライブラリが提供出来るのはパーサーコンビネータの威力やね。
