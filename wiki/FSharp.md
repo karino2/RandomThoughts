@@ -6,6 +6,7 @@
 - [コマンドラインツールを書くための言語](コマンドラインツールを書くための言語.md)
 - [photino](photino.md)
 - [FParsec](FParsec.md)
+- [GoFO](GoFO.md)
 
 ## 自分のブログ
 
