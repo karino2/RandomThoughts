@@ -30,3 +30,11 @@ WIKINAME=`basename -s .md ${RES[0]}`
 
 echo "[[$WIKINAME]]" | pbcopy
 ```
+
+## 入力時に一回ワーニングが出る件
+
+`_TIPropertyValueIsValid called with 4 on nil context!`とか出て一回入力が無視される件。
+
+[_TIPropertyValueIsValid called with 4 on nil context!が出る原因と対処法 - yu9824's Notes](https://note.yu9824.com/error/2021/08/28/matplotlib-warning-TIPropertyValueIsValid.html)
+
+なんか入力ソースを英語にすると治るとからしい。Mac側の問題っぽいので放置。
