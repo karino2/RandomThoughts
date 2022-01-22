@@ -8,3 +8,9 @@
 ## 選択範囲が無い時に一行コピーする、をdisableする方法
 
 settingで`"editor.emptySelectionClipboard": false`相当の事をする。（GUIからemptySeletionで絞り込みしてチェックを外す）
+
+## extensionの作り方
+
+[業務で役に立つVS Code機能拡張を作ってみた話 - LINE ENGINEERING](https://engineering.linecorp.com/ja/blog/uit-enhancement-vscode/)
+
+そのうちやってみたいのでメモしておく。
