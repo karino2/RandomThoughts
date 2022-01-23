@@ -18,3 +18,6 @@ export SAVEHIST=1000000000
 ```
 
 これで良さそう。
+
+日付を表示するのは`history -i`。
+全部表示するなら`history -i 0`。

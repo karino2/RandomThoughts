@@ -2,9 +2,9 @@
 
 ## コマンドラインのマークダウンビュワー
 
-結論：mdcatが良い
+暫定結論: mdcatとmdvを使い分けるのが良さそう
 
-以下試行錯誤等。
+### あらすじ
 
 過去の[サブWiki](サブWiki.md)を検索して見る時、現状はgrepしてlessで見ているが、もうちょっといい感じにしたい。
 GUIアプリでgrepとマークダウンビューがくっついたようなのがあってもいいが、
@@ -13,13 +13,6 @@ GUIアプリでgrepとマークダウンビューがくっついたようなの�
 ようするにコマンドラインから使えるマークダウンビュワーがあればいいんだよな、とググって以下のページを見つける。
 
 [command line - Markdown Viewer - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/4140/markdown-viewer)
-
-候補としては以下くらいかな？
-
-- [joeyespo/grip: Preview GitHub README.md files locally before committing them.](https://github.com/joeyespo/grip) GUI製。
-- [axiros/terminal_markdown_viewer: Styled Terminal Markdown Viewer](https://github.com/axiros/terminal_markdown_viewer) pipで入る。
-- [mdless - BrettTerpstra.com](https://brettterpstra.com/projects/mdless/) gem
-- [mdcat - crates.io: Rust Package Registry](https://crates.io/crates/mdcat) brew  install出来る。
 
 ### grip
 
@@ -31,7 +24,7 @@ GUIアプリでgrepとマークダウンビューがくっついたようなの�
 pip installで入るのでこれを試してみる。
 う、HTMLParserにunescapeが無い、とか言われる。うーん、解決する気も起こらないな。
 
-バイナリがいいな。
+やはりbrewで入るバイナリがいいな。
 
 ### mdcat
 
@@ -54,3 +47,12 @@ alias pcmdl="percol | sed 's/:.*\$//' | xargs mdless"
 ```
 
 いい感じになった。percolってgrepと組み合わせる時自分でsedとか書かないといけないのかしら？
+
+### vmd
+
+[yoshuawuyts/vmd: preview markdown files](https://github.com/yoshuawuyts/vmd)
+
+gripを使っていて、C-cするのが面倒なんだよなぁ、といろいろ探していて見つけた。Electron製っぽい。
+npmでインストールして使ってみる。
+
+ちょっと表示までに時間が掛かるが見た目は良いしウィンドウ閉じれば終わるし、手軽でいいな。
