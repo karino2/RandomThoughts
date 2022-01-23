@@ -58,4 +58,10 @@ alias pcless="pcpath | xargs less"
 alias pcmdl="pcpath | xargs mdless"
 ```
 
+これで以下みたいに使う。
+
+```
+$ grep "SDS" * | pcmdl
+```
+
 いい感じになった。percolってgrepと組み合わせる時自分でsedとか書かないといけないのかしら？
