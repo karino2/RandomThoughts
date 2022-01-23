@@ -39,15 +39,6 @@ $ ln /usr/local/bin/mdcat /usr/local/bin/mdless
 
 よきよき。
 
-grepとpercolと組み合わせてみよう。
-
-```
-alias pcless="percol | sed 's/:.*\$//' | xargs less"
-alias pcmdl="percol | sed 's/:.*\$//' | xargs mdless"
-```
-
-いい感じになった。percolってgrepと組み合わせる時自分でsedとか書かないといけないのかしら？
-
 ### vmd
 
 [yoshuawuyts/vmd: preview markdown files](https://github.com/yoshuawuyts/vmd)
@@ -56,3 +47,15 @@ gripを使っていて、C-cするのが面倒なんだよなぁ、といろい�
 npmでインストールして使ってみる。
 
 ちょっと表示までに時間が掛かるが見た目は良いしウィンドウ閉じれば終わるし、手軽でいいな。
+
+## grepとpercolと組み合わせよう
+
+grepとかagしてpercolで絞り込んで開く、が基本の使い方なので、この用途に使うpercolとviewerを組み合わせたエイリアスをzshで作っておく。
+
+```
+alias pcpath="percol | sed 's/:.*\$//'"
+alias pcless="pcpath | xargs less"
+alias pcmdl="pcpath | xargs mdless"
+```
+
+いい感じになった。percolってgrepと組み合わせる時自分でsedとか書かないといけないのかしら？
