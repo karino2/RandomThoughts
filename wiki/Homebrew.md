@@ -38,6 +38,15 @@ dotnetのruntimeはcaskじゃなくてもあるのか。
 - [github: karino2/homebrew-tap](https://github.com/karino2/homebrew-tap)
 - [guashをhomebrew tapでインストール出来るようにした - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/01/28/homebrew_tap_for_guash.html)
 
+以後新しいFormulaを追加する手順をまとめておこう。
+
+### 新しいアプリをtapに加える手順
+
+- タグを打ってバイナリをgithubのreleasesにアップロード
+- バイナリのurlに対して`brew create <url>`
+- Formulaの雛形がエディタで開かれるので編集して保存
+- tapのレポジトリにmvして加える
+
 ### tapのアップデートってどうやってやるんだろう？
 
 公式に含まれているものならbump-formula-prというのにurlを渡せばPRを作る所まで良きにはからってやってくれそうだが、
@@ -70,3 +79,12 @@ $ brew install karino2/tap/guash
 ```
 
 っぽい？後者はupgradeで出来そうな気もしているが。
+
+追記: なんか上記手順ではFormulaは更新されないなぁ。
+エラーメッセージが最後に出るが、以下のコマンドで更新されているように見える。
+
+```
+$ brew upgrade karino2/tap/
+```
+
+正しいやり方が謎だが、まぁこれで更新されるので、あとはbrew installなりbrew upgradeなり出来るからいいか。
