@@ -15,9 +15,24 @@
 
 github決め打ちなので試すのにurlが要らないのはいいね。公式のManpageのtapのあたりも良くまとまっている。
 
+## ローカルのFormula
+
+`/usr/local/Homebrew/Library/Taps` 下にある。なお、正しくは`brew --repository` でHomebrewまでのパスは分かる。
+これをgrepしていくとだいたい書き方が分かる。
+
 ## Electronアプリのtap
 
 - [tweet-app - npm](https://www.npmjs.com/package/tweet-app?activeTab=readme)
 - [tweet-app/tweet.rb at master · rhysd/tweet-app](https://github.com/rhysd/tweet-app/blob/master/Casks/tweet.rb)
 
 うーむ、brewでビルドするもんかと思ったが、bottleを入れる方が普通なのか？
+
+## guashをhomebrewのtapで公開してみる
+
+試しに[[guash]]をhomebrewで公開してみよう。
+
+dotnetのruntimeはcaskじゃなくてもあるのか。
+
+出来た！
+
+[github: karino2/homebrew-tap](https://github.com/karino2/homebrew-tap)

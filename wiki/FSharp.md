@@ -32,3 +32,11 @@ $"""string-text {"embedded string literal"}"""
 ```
 
 ソース: [MSDN: Interpolated strings](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/interpolated-strings)
+
+## PublishReadyToRun
+
+シングルバイナリを作るのに、PublishReadyToRunでAOT出来るぜ、と[Single file application - .NET - Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/core/deploying/single-file)に書いてあったので試してみたら、
+サイズが36MBから60MBに膨らんでしまう。
+60MBは嫌だなぁ、と思い、AOTしないことに。
+
+前も試した気がするが、メモしておかないとまたやりそうなのでここにメモ。
