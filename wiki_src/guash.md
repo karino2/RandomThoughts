@@ -18,6 +18,7 @@ $ brew install karino2/tap/guash
 
 - [blog: guashで遊ぼう！](https://karino2.github.io/2021/04/27/play_with_guash.html) チュートリアル
    - [blog: GUIツールをシェルスクリプトのように書けないものか？](https://karino2.github.io/2021/04/24/GUITool_like_sh.html) 作る前に考えた事
+- [blog: guashをhomebrew tapでインストール出来るようにした](https://karino2.github.io/2022/01/28/homebrew_tap_for_guash.html)
 
 
 ## TeFWIkiのファイル名からリンクをクリップボードに入れる
