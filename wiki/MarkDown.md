@@ -51,7 +51,7 @@ npmでインストールして使ってみる。
 ### mdvcat
 
 vmdがいい感じだが遅いのとメンテされてなさそうなので、[photino](photino.md)で同じようなものを作ってみた。
-まだ途中だけど。 [mdvcat](mdvcat.md)
+まだ途中だけど、軽快に動いてかなり良い気がする。 ＞[mdvcat](mdvcat.md)へ
 
 ## grepとpercolと組み合わせよう
 
@@ -61,6 +61,7 @@ grepとかagしてpercolで絞り込んで開く、が基本の使い方なの�
 alias pcpath="percol | sed 's/:.*\$//'"
 alias pcless="pcpath | xargs less"
 alias pcmdl="pcpath | xargs mdless"
+alias pcmdvc="pcpath | xargs mdvcat"
 ```
 
 これで以下みたいに使う。
