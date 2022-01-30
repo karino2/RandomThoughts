@@ -85,3 +85,22 @@ awkで書いてみた。
 役に立ったページ
 - [Variables : Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/)
 - [site変数の内容調査](https://leico.github.io/TechnicalNote/Jekyll/site-variables)
+
+## ダークモード
+
+デフォルトで勝手にダークモードになって気に食わないのでオフにしようかと少しコードを見たが、問答無用でオンになるっぽい？
+
+[git-wiki-theme/scripts.html at master · Drassil/git-wiki-theme](https://github.com/Drassil/git-wiki-theme/blob/master/_includes/git-wiki/sections/head/scripts.html)
+
+フローティングボタンは問答無用で出されているように見える。
+
+[git-wiki-theme/body.html at master · Drassil/git-wiki-theme](https://github.com/Drassil/git-wiki-theme/blob/master/_includes/git-wiki/sections/content/body.html)
+
+bodyの方でも特にフラグは無さそう。
+うーん、自分でここは差し替えるか。
+
+差し替えてみた。
+
+[Disable darkmode by default. · karino2/Biochemistry705x@ff8b8a5](https://github.com/karino2/Biochemistry705x/commit/ff8b8a51407a99f2a8699c51c5e935d9eeb976e0)
+
+いいね。他のノートもこれにしよう。
