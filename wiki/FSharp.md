@@ -1,18 +1,22 @@
 ## 関連WikiName
 
 - [guash](guash.md)
-- unimemo
-- uit
+- [unimemo](unimemo.md)
+- [uit](uit.md)
 - [コマンドラインツールを書くための言語](コマンドラインツールを書くための言語.md)
 - [photino](photino.md)
 - [FParsec](FParsec.md)
 - [GoFO](GoFO.md)
+- [mdvcat](mdvcat.md)
 
 ## 自分のブログ
 
 - [MacとWindowsの両方で使う雑用コマンドライン言語にF#はどうだろう？ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/11/15/how_about_fsharp.html)
 - [F#が雑用言語に良い。 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/12/10/fsharp_for_zatuyou.html)
+- [F# でのfsxベースの開発 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/02/06/fsx_eval_based_dev.html)
 - [Create a single binary GUI tool with photino and F# on osx - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/04/25/fsharp_de_photino.html)
+
+ほかにもいろいろ書いているがとりあえず。
 
 ## 外部リンク
 
@@ -40,3 +44,9 @@ $"""string-text {"embedded string literal"}"""
 60MBは嫌だなぁ、と思い、AOTしないことに。
 
 前も試した気がするが、メモしておかないとまたやりそうなのでここにメモ。
+
+## Argu
+
+良く使うのでメモしておく。
+
+[Tutorial](http://fsprojects.github.io/Argu/tutorial.html)

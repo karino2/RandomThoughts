@@ -1,4 +1,4 @@
-[[MarkDown]]で、vmdがいい感じだが遅いのとメンテされてなさそうなので、[[photino]]で同じようなものを作ってみた。
+[[MarkDown]]で、vmdがいい感じだが遅いのとメンテされてなさそうなので、[[photino]]で同じようなものを作ってみた。[[FSharp]]製。
 
 - [github: karino2/mdvca](https://github.com/karino2/mdvcat)
 
