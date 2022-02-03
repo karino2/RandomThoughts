@@ -63,3 +63,15 @@ $"""string-text {"embedded string literal"}"""
 $ dotnet add package System.IO.Compression
 $ dotnet add package System.IO.Compression.ZipFile
 ```
+## StreamからのReadAllLines的な事をするコード
+
+ZipEntryなどはFiles関連の便利メソッドが使えないので、たまにこの手の処理が必要になる。
+終わりまでReadLineする、みたいなwhile的な処理はいまいち書きにくいが、一旦seqを作ってそれをfilterしたりすると簡潔に書ける。
+
+```
+    use sr = ....
+    let lineSeq = seq { while true do yield sr.ReadLine() }
+    lineSeq 
+    |> Seq.takeWhile (fun line -> line <> null) 
+    |> Seq.toList // do read before sr close.
+```
