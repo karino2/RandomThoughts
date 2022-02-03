@@ -50,3 +50,16 @@ $"""string-text {"embedded string literal"}"""
 良く使うのでメモしておく。
 
 [Tutorial](http://fsprojects.github.io/Argu/tutorial.html)
+
+## プロファイラ
+
+[Performance Profiling F# | codesuji](https://www.codesuji.com/2019/10/13/F-Performance-Profiling/) そのうち試したい。
+
+## System.IO.Compression等の追加
+
+アセンブリに入ってそうなdllってどうやって追加するの？と思ったが、nugetになっていて全部nuget経由で追加するものっぽい。
+
+```
+$ dotnet add package System.IO.Compression
+$ dotnet add package System.IO.Compression.ZipFile
+```
