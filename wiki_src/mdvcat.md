@@ -1,6 +1,6 @@
 [[MarkDown]]で、vmdがいい感じだが遅いのとメンテされてなさそうなので、[[photino]]で同じようなものを作ってみた。[[FSharp]]製。
 
-- [github: karino2/mdvca](https://github.com/karino2/mdvcat)
+- [github: karino2/mdvcat](https://github.com/karino2/mdvcat)
 
 [markdig](https://github.com/xoofx/markdig)を使って、[[bulma]]でそれっぽくレンダリングしてみた。
 
@@ -20,4 +20,18 @@ $ mdvcat some/path/to/file.md
 
 ```
 $ mdvcat -d some/path/to/unknown_file.md
+```
+## percolの組み合わせの為のalias
+
+.zshrcに以下のように書いて、
+
+```
+alias pcpath="percol | sed 's/:.*\$//'"
+alias pcmdvc="pcpath | xargs mdvcat"
+```
+
+以下のように使っている。
+
+```
+$ grep -RS "ほげほげ" * |  pcmdvc
 ```
