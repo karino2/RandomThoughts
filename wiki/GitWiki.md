@@ -104,3 +104,45 @@ bodyの方でも特にフラグは無さそう。
 [Disable darkmode by default. · karino2/Biochemistry705x@ff8b8a5](https://github.com/karino2/Biochemistry705x/commit/ff8b8a51407a99f2a8699c51c5e935d9eeb976e0)
 
 いいね。他のノートもこれにしよう。
+
+## ローカルでの動かし方
+
+いい加減ローカルで動かしたくなったので少し調べる。
+とりあえず普段試している動かし方で動かしたら、jekyll-avatarとかjekyll/jekyllのイメージには無いgemがあるなぁ。
+
+と見ていたら、docker-compose.ymlを見つける。composeって使った事無いがぱっと見Dockerfileからだいたい類推が効くので使ってみよう。
+
+```
+$ docker-compose run github-wiki-skeleton
+...
+  Liquid Exception: incompatible character encodings: ASCII-8BIT and UTF-8 in /_layouts/git-wiki-default.html
+```
+
+何これ？git-wiki-default.htmlはローカルには無いやつなんだが。
+dockerでこういうのが起こるってやる気無くすなぁ。
+
+持ってきて二分探査したら、以下で起きているっぽい。
+
+```
+  {% assign pagetitle = page.name %}
+```
+
+ENVの設定がなんか以下で良く分からなかったので
+
+```
+ENV LC_ALL=C.UTF-8=value
+```
+
+普通に以下にしたあとにdocker-ccompose buildし直したら治った…
+
+```
+ENV LC_ALL C.UTF-8
+```
+
+なんかportがつながってないな。servie-portsというのを指定するらしい。
+
+```
+$ docker-compose run --service-ports github-wiki-skeleton
+```
+
+できた。

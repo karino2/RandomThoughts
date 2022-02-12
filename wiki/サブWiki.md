@@ -9,7 +9,9 @@
 
 サブWikiを公開している例
 - [RandomThoughts](https://karino2.github.io/RandomThoughts/Home) このWiki
-- [Biochemistry 705x](https://karino2.github.io/Biochemistry705x/Home) Biochemistryのノート用サブWiki
+- [Biochemistry 705x](https://karino2.github.io/Biochemistry705x/Home) Biochemistry [705x](705x.md)のノート用サブWiki
+- [Molecular Biology 728x](https://karino2.github.io/MolecularBiology728x/Home) 分子生物学、[728x](728x.md)のノート用サブWiki
+- [サブWiki公開用Wiki](https://karino2.github.io/SubWiki/Home) 今後はここにまとめていく事にする
 
 ### サブWikiとは？
 
@@ -89,3 +91,36 @@ Wikiの拡張では、ネームスペースは良く見る、準標準くらい�
 
 サブWikiは各サブWiki同士はもっと独立していて、そのサブWikiで閉じている。逆に言えばサブWiki同士でリンクを貼ったりはあまりやらない使い方を想定している。特に兄弟とか親へのリンクは貼らない前提（そういう機能も今の所無い）。
 そのサブWikiの中では普通のWikiのように編集をしていけば、自然とそのサブWiki内だけのWikiが出来るようになっている。
+
+
+## git-wikiでの複数ディレクトリ対応
+
+サブWikiごとに別のレポジトリを持つのは面倒なので、[GitWiki](GitWiki.md)の一つのレポジトリに複数のサブディレクトリを掘ってそれぞれにサブWikiを置きたい。
+
+- recentsをサブディレクトリに
+- サイトのタイトルをサブディレクトリの名前に
+
+といった作業が必要と思う。以下実際にやってみたメモ。
+
+wikiの下にサブディレクトリをほってmdを置いてみると、permlinkがずれる。
+config.ymlでサブディレクトリごとに書く事に（pathではwiki/が含まれてしまい、これを抜く方法が分からなかった）。
+
+- タイトルをサブディレクトリの名前に
+- Recentsをそれぞれのサブディレクトリ内のみに
+
+page.dirをもとにurlを作ってincludeをしたら、どうもinlcudeされない。
+同じ中身をassingしてincludeすると出来るのに。
+
+良く分からないが、includeがpage.dirに依存するのはダメなのかなぁ。
+
+結局page.dirでifを分けて、include先にはcase分を並べたものをシェルスクリプトで自動生成して置く事にした。
+
+一応できたかな。
+
+[Home - サブWiki公開用Wiki](https://karino2.github.io/SubWiki/Home)
+
+レポジトリとしてはこんなふうにwiki_srcのディレクトリの下にディレクトリを掘る。
+
+[SubWiki/wiki_src/JetpackCompose at master · karino2/SubWiki](https://github.com/karino2/SubWiki/tree/master/wiki_src/JetpackCompose)
+
+今後は新しい講義のノートなどはこの下に追加していきたい。

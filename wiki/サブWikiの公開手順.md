@@ -2,6 +2,23 @@
 
 ディレクトリをgit-wikiとして公開する運用にしている。＞[GitWiki](GitWiki.md)へ
 
+## SubWIkiサイトのサブディレクトリとして公開
+
+最近はこの方法に移行した。
+
+実際に新しいのを追加してみないとうまくいくかは分からないが、現時点の認識を書いておく。
+
+- wiki_srcにディレクトリを追加
+- 一回wiki_srcにコピーした後conv.shする必要があるかも
+- `_includes/git-wiki/components/lists/` 下にサブWikiの名前のディレクトリを掘る
+- sidebar.htmlにエントリを追加（要らない気も？）
+
+----
+
+## 古くなった手順
+
+以下、以前のサブWiki一つにつき1レポジトリだった時代の公開手順を置いておく。RandomThoughtsなどの初期に公開したのはこのままなので。
+
 以下、サブWikiをgit-wikiとして公開するための手順。
 
 - [https://github.com/Drassil/git-wiki-skeleton](https://github.com/Drassil/git-wiki-skeleton)からUse this templateで公開用の名前をつける。

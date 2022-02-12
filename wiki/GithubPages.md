@@ -1,11 +1,17 @@
 github上にweb siteを持てる仕組み。
 無料で使えてかなり制限が少なく、jekyllを使っていろいろな事が出来る。
 
-### dockerでのローカル環境
+## 外部リンク
+
+- [Includes - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/includes/)
+- [Variables - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/)
+- [Control flow – Liquid template language](https://shopify.github.io/liquid/tags/control-flow/)
+
+## dockerでのローカル環境
 
 [Mac OS X上のdockerでjekyll環境を作ってgithub pagesのテストをする - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/01/17/jekyll_on_mac.html)
 
-### github pagesを使ったシステム
+## github pagesを使ったシステム
 
   - [GitWiki](GitWiki.md)
   - [GithubPagesGallery](GithubPagesGallery.md)
@@ -19,7 +25,7 @@ github上にweb siteを持てる仕組み。
 
 同じようにSNS作れないかな？と一瞬考えたが無理だった。＞[GitHubを使ったSNSを考える](GitHubを使ったSNSを考える.md)
 
-### JSONのサーバーに出来ないか
+## JSONのサーバーに出来ないか
 
 現状、統計グラフ！は、GAEでスクリプトを管理している。
 でもそれほど動的である必要は無いので、github pagesでいいんじゃないか？
@@ -67,3 +73,5 @@ site dataのフォルダと公開用のフォルダに両方同じファイル�
 - [Update head.html · karino2/karino2.github.io@21583b9](https://github.com/karino2/karino2.github.io/commit/21583b9bac95f588b2afe7d2251cafb49b5fe658)
 
 なお、[GitWiki](GitWiki.md)でも同じような作業をしている。
+
+page.titleなどの変数は以下。 [Variables - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/)
