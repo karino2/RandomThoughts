@@ -10,3 +10,5 @@ QtのビルドをしたりするのにWindows用ノートPCが欲しいなぁ、
 Ryzen 7 4700Uくらいよりは上がいいかなぁ。
 
 思ったより高くて重いノートPCでもコア数が増えない。Azureのインスタンスでも借りる方がいいか？
+
+- [ThinkPad Z16 Gen 1 Datasheet.indd](https://news.lenovo.com/wp-content/uploads/2022/01/ThinkPad-Z16-Gen-1-Datasheet.pdf) ThinkPad Z16は良いかもしれん。まだ出てないが。
