@@ -13,6 +13,10 @@
 - [Molecular Biology 728x](https://karino2.github.io/MolecularBiology728x/Home) 分子生物学、[728x](728x.md)のノート用サブWiki
 - [サブWiki公開用Wiki](https://karino2.github.io/SubWiki/Home) 今後はここにまとめていく事にする
 
+### サブWikiの公開方法
+
+[サブWikiの公開手順](サブWikiの公開手順.md)
+
 ### サブWikiとは？
 
 TeFWikiにはサブWikiという機能がある。
@@ -65,12 +69,6 @@ Wikiでは新しいページやリンクをどんどん気軽に作れるのが�
 また、サブWikiはedXで生物関連の講義ノートを作るために考えた機能でもある。
 講義ローカルの、ページ数が比較的少なく、講義を受け終わったらある程度フリーズされるような細かい単位のWikiを作りたい。
 この辺の事は[Wikiとノート](Wikiとノート.md)に書いた。
-
-### サブWikiの公開方法
-
-良く行うので独立したページにする。
-
-[サブWikiの公開手順](サブWikiの公開手順.md)
 
 ### 何故ネームスペースじゃなくてサブWikiなのか？
 

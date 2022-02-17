@@ -14,3 +14,17 @@ $ grep -RS "endonuclease" *
 なんか最近Macのオプションが変わってRSが必要になった。
 
 [mdvcat](mdvcat.md)と組み合わせてすごく快適。
+
+
+### Google Keep
+
+exportしたhtmlをマークダウンにしようとして途中で止まった時のメモ。
+
+[djsudduth/keep-it-markdown: Convert Google Keep notes dynamically to markdown for Obsidian and Notion using the unofficial Keep API](https://github.com/djsudduth/keep-it-markdown) これとかほとんど同じ目的なのだが、APIでアクセスする為にログインするのと、そこで使うkeepのAPIが野良なのでちょっと信頼できん。
+
+[Google KeepのメモをBear（メモアプリ）にインポートしたい - Qiita](https://qiita.com/naoya_t/items/1933a0df3a7b308a0942)
+
+これがPython 2系列だが、少しいじった所、メタ情報までは割と動いている。ただしコンテンツは全然ダメ。
+Markdownifyとかでcontents下をコンバートしてみたが全然満足行く結果でない。
+
+やはりKeep専用に作り込む方が早い気がする、という結論に。
