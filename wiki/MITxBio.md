@@ -24,4 +24,9 @@ MITのコースは3桁の数字で識別されていて、それの末尾にxを
 ## 728x Molecular Biology
 
 - [728x](728x.md)
-- [Home - Molecular Biology 728xx](https://karino2.github.io/MolecularBiology728x/Home) ノート用サブWIki
+- [Home - Molecular Biology 728x](https://karino2.github.io/MolecularBiology728x/Home) ノート用サブWIki
+
+## 706x Cell Biology
+
+- [706x](706x.md)
+- [Home - CellBiology706x](https://karino2.github.io/SubWiki/CellBiology706x/Home)

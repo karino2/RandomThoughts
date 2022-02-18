@@ -8,10 +8,11 @@
 
 実際に新しいのを追加してみないとうまくいくかは分からないが、現時点の認識を書いておく。
 
-- wiki_srcにディレクトリを追加
+- 以下の三箇所にサブWIki名のディレクトリを追加
+  - wiki_src
+  - wiki
+   - `_includes/git-wiki/components/lists/`
 - 一回wiki_srcにコピーした後conv.shする必要があるかも
-- `_includes/git-wiki/components/lists/` 下にサブWikiの名前のディレクトリを掘る
-- sidebar.htmlにエントリを追加（要らない気も？）
 
 ----
 

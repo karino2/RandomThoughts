@@ -42,3 +42,9 @@ $ ls -1d */
 ```
 $  ls -p | grep -v /
 ```
+
+### 雑多なメモ
+
+- [exa · a modern replacement for ls](https://the.exa.website/) lsの代替らしい
+- [[OilShell]]
+- [google/zx: A tool for writing better scripts](https://github.com/google/zx)

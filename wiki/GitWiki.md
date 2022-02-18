@@ -107,6 +107,16 @@ bodyの方でも特にフラグは無さそう。
 
 ## ローカルでの動かし方
 
+設定を終えたら、以後は
+
+```
+$ docker-compose run --service-ports github-wiki-skeleton
+```
+
+で。
+
+以下試行錯誤。
+
 いい加減ローカルで動かしたくなったので少し調べる。
 とりあえず普段試している動かし方で動かしたら、jekyll-avatarとかjekyll/jekyllのイメージには無いgemがあるなぁ。
 
