@@ -8,6 +8,19 @@ WikiName的にはOilはちょっとさすがに…と思ったのでOilShellで�
 
 [小さいコマンドを作る用途のシェルスクリプトとその代替 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/02/18/small_shellscript_good_and_alternative.html)
 
+## 細かいコード辺
+
+for文がたまにハマるのでメモ。
+
+```
+const notes = ["abc", "def"]
+for note in @notes {
+  echo $note
+}
+```
+
+なんかアットマークをパーセントと間違えてハマったりする。
+
 ## Syntax highlight
 
 無いのかしら？
