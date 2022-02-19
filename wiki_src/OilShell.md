@@ -4,6 +4,17 @@ shell scriptのスクリプティングの所だけモダンにしよう、と�
 
 WikiName的にはOilはちょっとさすがに…と思ったのでOilShellで。
 
+## 基本的なアイデア
+
+基本的なアイデアとしては、普段のシェルっぽい所はコマンドモードで、プログラム言語っぽく動いて欲しい所はExpression Modeというモードで動くようになっている。
+
+[Command vs. Expression Mode](https://www.oilshell.org/release/latest/doc/command-vs-expression-mode.html)
+
+Expression Modeは普通のプログラム言語っぽい。
+
+なお、コマンドモードはshっぽい。なるべくbashに似せている模様。
+interactiveに使ってもそんなに良い事は無く、シェルスクリプト用という気はする。
+
 ## 試してみた
 
 [小さいコマンドを作る用途のシェルスクリプトとその代替 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/02/18/small_shellscript_good_and_alternative.html)
@@ -20,6 +31,15 @@ for note in @notes {
 ```
 
 なんかアットマークをパーセントと間違えてハマったりする。
+
+配列の添字アクセスはExpression Subというのを使う。`$[]`。
+
+```
+const notes = ["abc", "def"]
+echo $[notes[0]]
+```
+
+コマンドモードでExpressionを参照したい時はこれを使う模様。
 
 ## Syntax highlight
 
