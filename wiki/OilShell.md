@@ -15,9 +15,10 @@ Expression Modeは普通のプログラム言語っぽい。
 なお、コマンドモードはshっぽい。なるべくbashに似せている模様。
 interactiveに使ってもそんなに良い事は無く、シェルスクリプト用という気はする。
 
-## 試してみた
+## 自分の感想等のブログ
 
-[小さいコマンドを作る用途のシェルスクリプトとその代替 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/02/18/small_shellscript_good_and_alternative.html)
+- [小さいコマンドを作る用途のシェルスクリプトとその代替 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/02/18/small_shellscript_good_and_alternative.html) 試してみた印象
+- [Oilシェルスクリプトの入門的解説 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/02/21/what_is_oil_and_is_not.html) もうちょっと理解が進んで書いた解説
 
 ## 細かいコード辺
 
