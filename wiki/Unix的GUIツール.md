@@ -54,6 +54,8 @@ PowerShellのOut-GridViewは同じ特徴を持つ。
 
 [Out-GridView (Microsoft.PowerShell.Utility) - PowerShell - Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/out-gridview?view=powershell-7.2)
 
+percolもGUIツールと呼んで良いかは分からないけれど、同じように使える。[mooz/percol: adds flavor of interactive filtering to the traditional pipe concept of UNIX shell](https://github.com/mooz/percol)
+
 ## 例題：てきすとでっきのアーカイブ機能
 
 [てきすとでっき](てきすとでっき.md)には、古くなったメモのアーカイブ機能が無い。
