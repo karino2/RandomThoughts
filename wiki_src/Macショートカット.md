@@ -32,3 +32,9 @@ gifでAppStoreで検索して一番上に出てきたPicGIF Liteはなんか凄�
 [仕事効率化！MacとWindows間のファイル共有テクニック 3 選](https://navi.dropbox.jp/mac-windows-file-sharing#smoothplay2)
 
 Sambaが最初から入っているっぽいな。
+
+＞いまいちだったのでMac側でsshdを有効にしてscpした。
+
+## LAN内のIPアドレスを知る方法
+
+`arp -a`が簡単だが十分。

@@ -28,3 +28,15 @@ exportしたhtmlをマークダウンにしようとして途中で止まった�
 Markdownifyとかでcontents下をコンバートしてみたが全然満足行く結果でない。
 
 やはりKeep専用に作り込む方が早い気がする、という結論に。
+
+**2022-02-27**
+
+grepでdataスキームが引っかかるのが鬱陶しくなってきたので続きに取り掛かる。
+
+ul, li周りだけ特別扱いして、他はだいたいそのまま生テキストのままにする。
+mdというよりはプレーンテキストになってしまったが、grepしてlessする時は普通に見えるからまぁいいか。
+
+[unimemo/keep_html2md.py at main · karino2/unimemo](https://github.com/karino2/unimemo/blob/main/keep_html2md.py)
+
+dataスキームの画像は取り出した方がいいんだろうがほとんどがwebの記事のスクラップで勝手に貼られたもので、
+あまり画像に意味は無いので必要になるまでやらない。
