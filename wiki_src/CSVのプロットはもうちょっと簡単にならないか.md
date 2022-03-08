@@ -81,8 +81,10 @@ perday <- table %>%
   summarise(perday=sum(pollen))
 ```
 
+これを単純にUnixに翻訳すると以下だろうか？
+
 ```
-$ head ~/some/path/to/some_path.csv
+$ csvplr head ~/some/path/to/some_path.csv
 $ cat ~/some/path/to/some_path.csv | csvplr filter 'pollen != -9999' | head
 $ cat ~/some/path/to/some_path.csv | csvplr filter 'pollen != -9999' | csvplr mutate 'day=date(date)' | head
 $ cat ~/some/path/to/some_path.csv | csvplr filter 'pollen != -9999' | csvplr mutate 'day=date(date)' | csvplr group_by 'day' | head
@@ -119,4 +121,4 @@ $ cat ~/some/path/to/some_path.csv
 
 いまいち度はまあり変わらないか。このくらいならエイリアスで良い気もする。
 
-なんかこれはアリな気がしてきた。そのうち作ろう。
+なんかこれはアリな気がしてきた。正式に名前をつけよう。[[csvplr]]
