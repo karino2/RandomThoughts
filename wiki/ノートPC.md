@@ -35,5 +35,14 @@ Legion 560もなかなか速そう。
 
 [AMD Ryzen 7 5800H vs. AMD Ryzen 9 5900HX - ベンチマーク、テスト、および仕様](https://www.cpu-monkey.com/ja/compare_cpu-amd_ryzen_7_5800h-vs-amd_ryzen_9_5900hx)
 
+### 小型PC
+
 そもそも小型デスクトップでいいのでは、と言われる。ディスプレイとか嫌だなぁ、と思った所、USB給電の小型ディスプレイで普段はリモートでいいのでは？と言われて、そんな気もしてきた…
 [ThinkCentre M75q Tiny Gen2 - 小さなボディでパワフルなパフォーマンス - レノボ・ジャパン](https://www.lenovo.com/jp/ja/desktops/thinkcentre/m-series-tiny/ThinkCentre-M75q-Gen-2/p/11TC1MTM7G2)
+
+結局以下を買う。
+
+- プロセッサー: AMD Ryzen™ 7 Pro 5750GE プロセッサー (3.20 GHz up to 4.60 GHz)
+-  初期導入OS: Windows 10 Pro 64bit
+-  メモリー: 16 GB DDR4 3200MHz SODIMM
+-  ストレージ1: 512 GB PCIe SSD

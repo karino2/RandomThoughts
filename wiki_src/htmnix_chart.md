@@ -7,5 +7,6 @@ webviewにchart.jsをembedしている。
 
 ## 参考リンク
 
+- [Chart.js](https://www.chartjs.org/docs/latest/)
 - [[Unix的GUIツール]]の一種
 - [[htmnix]]の親戚
