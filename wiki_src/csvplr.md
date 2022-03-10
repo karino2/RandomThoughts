@@ -1,24 +1,49 @@
 [[CSVのプロットはもうちょっと簡単にならないか]]で考えついたアイデア。
 
+```
+$ cat pollen_data.csv |
+ csvplr filter 'pollen != -9999' |
+ csvplr mutate 'day=date(date)' |
+ csvplr group_by 'day' |
+ csvplr summarise 'perday=sum(pollen)'
+```
+
 csvをコマンドラインからdplyrっぽく操作したい。
 Unixのコマンド群としてdplyrのような操作を実装する。
 最後のplotは別コマンドで。([[htmnix_chart]]を使う気だが、テキストからグラフが作れるコマンドならなんでも良い感じ）
+
+入力は標準入力、出力は標準出力でどちらも基本的にはcsv。
+
+追記： dplyrなんだからcsvplyrにすべきだった、と後で気づいたが、ちょと文字数多い気がするしまぁいいか。
 
 ## レポジトリ
 
 - [karino2/csvplr: dplyr like unix command line tool for csv.](https://github.com/karino2/csvplr)
 
+## 実装済み
+
+- filter
+- mutate (date, year, month, dayくらい)
+- group_by
+- summarise (sumくらい)
+
 ## コンセプト
 
 csvを渡すと適当にdataframeとして読み込み、
 それをdplyr的に操作するUnixコマンド群。
-コマンド名をcsvplrと呼ぶ事にし、このサブコマンドでfilter, arrange, select, group_by, summariseなどを実装する。
+
+通常のheadなどと同様に操作をしては確認する、を繰り返しながらパイプラインをつなげていって開発するのを前提としたスタイル。
+コマンド名をcsvplrと呼ぶ事にし、サブコマンドでfilter, arrange, select, group_by, summariseなどを実装する。
 
 わざわざ型情報をguessするが、出力は単なるcsvで型情報は出力しない。
 
 guessはstringで持ちつつ操作に応じて行う。例えばdate関数の引数ならDateTime、などのように。
 
-追記： dplyrなんだからcsvplyrにすべきだった、と後で気づいたが、ちょと文字数多い気がするしまぁいいか。
+それぞれのサブコマンドには、Rのサブセットになっているような式の文字列を渡す。
+dplyrのfilterやmutateやgroup_byなどの関数にわたす引数の、括弧の中だけを渡す形になるべく近づける。
+（ただしあくまでシンタックスが似ているシンプルなミニ言語に過ぎない）。
+
+当面は実際に使うユースケースに必要な機能だけを実装していく。
 
 ## 具体例
 
