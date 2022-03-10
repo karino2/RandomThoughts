@@ -4,13 +4,21 @@ csvをコマンドラインからdplyrっぽく操作したい。
 Unixのコマンド群としてdplyrのような操作を実装する。
 最後のplotは別コマンドで。([htmnix_chart](htmnix_chart.md)を使う気だが、テキストからグラフが作れるコマンドならなんでも良い感じ）
 
-## 欲しいもの
+## レポジトリ
 
-csvを渡すと適当にフィールドの型とかをguessしてdataframeとして読み込み、
-それをdplyr的に操作するUnixコマンド群が欲しい。
+- [karino2/csvplr: dplyr like unix command line tool for csv.](https://github.com/karino2/csvplr)
+
+## コンセプト
+
+csvを渡すと適当にdataframeとして読み込み、
+それをdplyr的に操作するUnixコマンド群。
 コマンド名をcsvplrと呼ぶ事にし、このサブコマンドでfilter, arrange, select, group_by, summariseなどを実装する。
 
 わざわざ型情報をguessするが、出力は単なるcsvで型情報は出力しない。
+
+guessはstringで持ちつつ操作に応じて行う。例えばdate関数の引数ならDateTime、などのように。
+
+追記： dplyrなんだからcsvplyrにすべきだった、と後で気づいたが、ちょと文字数多い気がするしまぁいいか。
 
 ## 具体例
 
@@ -56,13 +64,100 @@ $ cat ~/some/path/to/some_path.csv | csvplr filter 'pollen != -9999' | csvplr mu
 
 最初のcsvplr headは型情報を確認する為。普段はcatやheadで良い。
 
-最後の行を改行して書くと以下のようになる。（シェルスクリプト的には改行エスケープしないとダメだけど）
+最後の行を改行して書くと以下のようになる。
 
 ```
-$ cat ~/some/path/to/some_path.csv
- | csvplr filter 'pollen != -9999'
- | csvplr mutate 'day=date(date)'
- | csvplr group_by 'day'
- | csvplr summarise 'perday=sum(pollen)'
+$ cat ~/some/path/to/some_path.csv |
+ csvplr filter 'pollen != -9999' |
+ csvplr mutate 'day=date(date)' |
+ csvplr group_by 'day' |
+ csvplr summarise 'perday=sum(pollen)'
 ```
 
+上記のRの例と比較すると、csvplrを消してみればほとんど一対一に対応しているのがわかると思う。
+
+date関連は[lubridate](https://lubridate.tidyverse.org/)のサブセットとする。
+
+## group_byの仕様
+
+csvplrはUnix的な仕様なので、group byの結果もテキストとして吐かれる必要がある。
+これはsummarizeに食わせる以外では使えなくても構わないが、
+簡単の為、少し特殊なcsvとする。
+
+一つのセルにgroup情報を埋め込む為に、適当なセパレータ、とりあえずcsvでは使われなさそうなエクスクラメーションマークを特殊な記号として使う。
+これが使われていると変に誤解する場合があるが、そういうデータはサポートしない（そういう特殊なのは諦めてRなりpandasなりで真面目に処理すればよかろう）。
+
+`group_by "year, month"`
+
+は、以下のようなセル名になり、
+
+`!csvplr_group_by_zzz!year!month!`
+
+各セルの値はyearのカラムとmonthのカラムの値をエクスクラメーションマークで連結したもの（始めと終わりもあり）としよう。
+例えば以下のような感じになる。
+
+```
+!2022!12!
+```
+
+summariseはこれらの値をキーとして集約していく。
+
+## concatとdistinct（未実装）
+
+csvは日付を変えて同種のデータを取得する、というパターンがある。
+銀行口座の明細とか花粉のデータとか。
+こういう時には、念の為一日くらい重複させてデータを取得するのがオペレーション的に楽なので、
+こういうのを簡単につなげつつ重複を削除する、という事はやりたい事がちょくちょくある。
+
+つなげるのはconcatとかでファイル２つ指定したらつなげる、で良さそうだが、
+花粉データはまだ結果が出てない所は-9999になるんだよな。
+つなげた時にどっちを優先させるか、とか指定するのは面倒なので、
+それよりはfilterしてconcatしたい気はする。
+
+そう思うと一時ファイルを用意するのも面倒なので、stdinと引数のファイルをつなげるのがいいか。
+
+distinctは実装がちょっとむずかしい。
+一方で現実的には時刻なり取引idなり、何かしら一意な事を一つのセルだけで表せるのが大半で、これのdistinctは簡単に実装出来るので、
+カラム指定しているケースだけ対応、でいいかなぁ。
+
+## SQLを使った類似のツール
+
+ググっていたら、少し似たモチベーションのツールを見つける。
+
+[mslusarz/csv-nix-tools: List system information as CSV, manipulate it, pretty print, or export.](https://github.com/mslusarz/csv-nix-tools) 
+
+こちらはUnixコマンドと足りない部分をSQLとする、という感じのもののよう。
+ただC言語でビルドをする、というのがちょっと敷居が高い（コマンドも多い）。
+
+同じようなのが無いか？とググってみて、golangのcsvqというのを見つけた。
+
+[mithrandie/csvq: SQL-like query language for csv](https://github.com/mithrandie/csvq)
+
+こちらはより自分が作っているものにコンセプトが近い。
+csvplrでは無くてこれでも良いのでは？という気もする。
+作る前だったら試してみたかった。
+
+ただ、これを見ていると、SQLとdplyrの違いを感じる。
+SQLは完全なテーブルを作る言語なので、一つ一つの記述に冗長性が高く柔軟性も高い。
+dplyrは一つのコマンドは一つの事しか出来ないので、複数つなげないとテーブルは完成しない。
+その代わり個々のコマンドは簡潔で直行性が高い。
+dplyrの方がUnix的な使い方との相性は良い気がする。
+端的に言えばSQLではパイプでつなげる気はあまり起こらないが、dplyrはパイプをたくさんつなげないと何も出来ない。
+
+インタラクティブにロードして操作してcommit、というのは、
+表計算ソフトはかったるい、という時に面白い気はする。
+UnixコマンドというよりはSQLiteのようにcsvを操作したい、という感じだよなぁ。
+これはこれで使いみちはある気がする。
+一方でここまでやるならRにロードしてdplyrで良いのでは無いか、という気もしてしまう。
+もちろんRやcolabをどこまで身近に感じるかは人による所で、csvqはたぶんその辺はかなり選択肢として遠い人に向いてるのかもしれない。
+
+SQLが欲しいのかdataframeが欲しいのか、という違いもありそうに思う。
+dplyrはdataframe的だよなぁ。
+
+なお、コードを見ると実装はめちゃくちゃ大変そう。RDBMS実装しているのに近いよなぁ。
+
+という事でcsvqはなかなか良さそうにも見えるけれど、自分はcsvplrが欲しいという思いを強くしたので実装を続ける。
+そもそもにSQLよりもdplyrの方がデータ探索には良いと思っているからR使う訳だしね。
+
+それにしてもgolangは試す側は手軽でいいね。
+csvplrもgolangで実装してある方がユーザー的には嬉しいんだろうな。
