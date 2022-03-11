@@ -3,7 +3,19 @@ webviewにchart.jsをembedしている。
 
 標準入力にjsonを渡してチャートを描画する。
 
+## レポジトリ
+
 [karino2/htmnix_chart: CLI command which host chart.js.](https://github.com/karino2/htmnix_chart)
+
+## 使い方の例
+
+[htmnix_chart/test.json at main · karino2/htmnix_chart](https://github.com/karino2/htmnix_chart/blob/main/test/test.json)を見て、
+
+```
+$ cat test.json | htmnix_chart
+```
+
+をすればだいたい分かると思う。
 
 ## 参考リンク
 
