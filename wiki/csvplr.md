@@ -23,7 +23,8 @@ Unixのコマンド群としてdplyrのような操作を実装する。
 ## 実装済み
 
 - filter
-- mutate (date, year, month, dayくらい)
+- select
+- mutate (date, year, month, day, hour, minute, paste0)
 - group_by
 - summarise (sumくらい、group_by必須)
 
@@ -77,17 +78,15 @@ perday <- table %>%
 
 カラム名がdateでかぶっているので読みにくいが、やっている事は割と単純。naというかまだ計測結果が出てないセルは-9999が入る模様。
 
-これを、以下のような感じで書いていきたい。
+これを、csvplrにすると以下のようになる。
 
 ```
-$ csvplr head ~/some/path/to/some_path.csv
+$ head~/some/path/to/some_path.csv
 $ cat ~/some/path/to/some_path.csv | csvplr filter 'pollen != -9999' | head
 $ cat ~/some/path/to/some_path.csv | csvplr filter 'pollen != -9999' | csvplr mutate 'day=date(date)' | head
 $ cat ~/some/path/to/some_path.csv | csvplr filter 'pollen != -9999' | csvplr mutate 'day=date(date)' | csvplr group_by 'day' | head
 $ cat ~/some/path/to/some_path.csv | csvplr filter 'pollen != -9999' | csvplr mutate 'day=date(date)' | csvplr group_by 'day' | csvplr summarise 'perday=sum(pollen)'
 ```
-
-最初のcsvplr headは型情報を確認する為。普段はcatやheadで良い。
 
 最後の行を改行して書くと以下のようになる。
 
@@ -102,6 +101,21 @@ $ cat ~/some/path/to/some_path.csv |
 上記のRの例と比較すると、csvplrを消してみればほとんど一対一に対応しているのがわかると思う。
 
 date関連は[lubridate](https://lubridate.tidyverse.org/)のサブセットとする。
+
+### 時間ごとのプロット
+
+group byせずに時間ごとにプロットしたいが、タイムゾーンまでついたDateTimeは見づらいのでpaste0でセルを作る例。
+全部だと多くなりすぎるので3月1日以降だけ、とかいう感じで絞り込む。
+
+```
+$ cat pollen_14108.csv |
+ csvplr filter 'pollen != -9999'  |
+ csvplr mutate 'dtonly=date(date)' |
+ csvplr filter 'dtonly >= "2022-03-01"' |
+ csvplr mutate 'date2=paste0(month(date), "-", day(date), " ", hour(date))' |
+ csvplr select 'date2, pollen'
+```
+
 
 ## group_byの仕様
 
@@ -129,13 +143,19 @@ summariseはこれらの値をキーとして集約していく。
 
 ## 使ってみた感想
 
-summariseまで出来たので少し使ってみたが、やはりなかなか良い。
+少し使ってみたが、やはりなかなか良い。
 まずdplyrと同様だが基本的に副作用レスというか、もとファイルをいじらないのがいい。
+これがシェル向きというか、対話的な試行錯誤に向いている。
 
 そして各作業を目視して一段ずつ進めていくので、非常に生産性が高い。
 もとファイルをいじらないというのと合わせて、いくらでもやり直しが出来てその場で見ながら作業出来るので、
 試行錯誤が本当に簡単。
 
+csvplrとは直接関係無いが花粉データはwgetで取れるので、コマンドラインと相性がとてもよい。
+
+最初は日付のgroup byしてsummariseしか使わないだろうから書き捨て集計プログラムでもいいんじゃないか、
+と思っていたが、使っていると意外とここ3日間だけ見てみたいとか出てくるので、
+作った甲斐はある気がする。
 
 ## concatとdistinct（未実装）
 
