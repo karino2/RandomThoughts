@@ -24,7 +24,7 @@ Unixのコマンド群としてdplyrのような操作を実装する。
 
 - filter
 - select
-- mutate (date, year, month, day, hour, minute, paste0)
+- mutate (date, year, month, day, hour, minute, paste0, is.na)
 - group_by
 - summarise (sumくらい、group_by必須)
 
