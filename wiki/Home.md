@@ -26,4 +26,3 @@
 - [3月中旬の雑記](3月中旬の雑記.md)
 - [Electron版のTeFWikiは、サブWiki機能を外出し出来ないか](Electron版のTeFWikiは、サブWiki機能を外出し出来ないか.md)
 - [サブWikiの振り返り](サブWikiの振り返り.md)
-- [生物学の勉強の近況](生物学の勉強の近況.md)

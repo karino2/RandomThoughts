@@ -19,6 +19,7 @@ Unixのコマンド群としてdplyrのような操作を実装する。
 ## レポジトリ
 
 - [karino2/csvplr: dplyr like unix command line tool for csv.](https://github.com/karino2/csvplr)
+- [youtube: csvplrのデモ](https://youtu.be/t-vmqqRJASg) スクリーンキャストしつつ喋って解説
 
 ## 実装済み
 
