@@ -27,7 +27,7 @@ Unixのコマンド群としてdplyrのような操作を実装する。
 - select
 - mutate (date, year, month, day, hour, minute, paste0, is.na)
 - group_by
-- summarise (sumくらい、group_by必須)
+- summarise (sumとnくらい、group_by必須)
 
 ## コンセプト
 
@@ -217,3 +217,25 @@ dplyrはdataframe的だよなぁ。
 
 それにしてもgolangは試す側は手軽でいいね。
 csvplrもgolangで実装してある方がユーザー的には嬉しいんだろうな。
+
+## 日々の使用例
+
+具体的に何かやった時にここに貼る。
+
+### 沖縄県の新型コロナの新規患者数のプロット
+
+[新型コロナウイルス感染症患者・無症状病原体保有者の発生について／沖縄県](https://www.pref.okinawa.lg.jp/site/hoken/kansen/soumu/press/20200214_covid19_pr1.html)
+
+にcsvがある。
+
+```
+$ cat 0316youseishaitiran_50001-.csv  | nkf | grep "日" |
+  csvplr mutate 'date=date(確定日)' | csvplr group_by 'date' | csvplr summarise 'count=n()' |
+  awk 'NR<2{print $0;next}{print $0| "sort -r"}' | csv2line
+```
+
+- sjisなのでnkfに通す
+- 普通じゃないデータをfilterする為にgrepを挟んでいる
+- 「令和3年2月1日」的な日付は日の桁数の都合でsortしづらいが、dateコマンドで「2022-02-01」型に直せる
+- 日ごとに集計する為に`n()`関数をsummariseで使っている
+- arrangeはまだ実装してないのでawkで2行目から先をsortしている（[sorting - Is there a way to ignore header lines in a UNIX sort? - Stack Overflow](https://stackoverflow.com/questions/14562423/is-there-a-way-to-ignore-header-lines-in-a-unix-sort)）
