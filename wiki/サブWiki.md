@@ -6,8 +6,11 @@
 - [github: TeFWiki-Electron/TeFWiki_concept.md](https://github.com/karino2/TeFWiki-Electron/blob/main/TeFWiki_concept.md) 英語での簡単な説明
 - [Wikiとノート](Wikiとノート.md)と[講義ノート](講義ノート.md)
 - [GitWiki](GitWiki.md)
+- [サブWikiをTeFWIkiの外部機能に出来ないか](サブWikiをTeFWIkiの外部機能に出来ないか.md)
+- [blog: サブWikiの振り返り](https://karino2.github.io/2022/03/21/subwiki_retrospective.html) 概ね成功したアイデアだったと言って良さそう
 
-サブWikiを公開している例
+### 公開しているサブWiki
+
 - [RandomThoughts](https://karino2.github.io/RandomThoughts/Home) このWiki
 - [Biochemistry 705x](https://karino2.github.io/Biochemistry705x/Home) Biochemistry [705x](705x.md)のノート用サブWiki
 - [Molecular Biology 728x](https://karino2.github.io/MolecularBiology728x/Home) 分子生物学、[728x](728x.md)のノート用サブWiki
