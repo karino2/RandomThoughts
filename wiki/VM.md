@@ -30,3 +30,62 @@ Davis et al. 2003の同種の論文の発展版で、
 - Section 8 結論
 
 とのこと。3と4がメインの内容っぽいな。
+
+### ディスパッチ手法の話
+
+本題とは関係ないが、インタープリタとしてVMを実装する時のディスパッチ手法としていくつか紹介されている。（動的コード生成が必要なものは自分に関係ないので省く）。
+
+- 単なるswitch
+- token-threaded dispatch
+- direct-threaded dispatch
+- inline-threaded dispatch
+
+どのディスパッチかで結果が結構変わる。
+自分の問題ではswitchまわりをいじっても全くパフォーマンスに影響が無かったので関係してないのではないか、
+と予想しているが、この辺は試して確認したいとは思っていたので一覧とリファレンスがあってありがたい。
+
+token-threaded dispatchがGCC拡張とか使ってラベルをつかうヤツだな。
+
+direct-threadedはopcodeをジャンプアドレスにするヤツでdalvikとかで使ってたヤツっぽい。
+
+inline-threaded dispatchというのはよく分からないが、一番早いっぽいな。
+以下か。
+
+[Optimizing direct threaded code by selective inlining - Proceedings of the ACM SIGPLAN 1998 conference on Programming language design and implementation](https://dl.acm.org/doi/10.1145/277650.277743)
+
+### 自分に関係ありそうな観点からの結論
+
+まずSPECjvm98の結果を比較しているのだが、これは自分の問題と似たものが無いように思う。
+JVM自体の比較をする目的のベンチマークなので、あまり計算量が多くなく、それを大量のメモリに対して行う、というような問題が無いんだよなぁ。
+なので自分の問題で試してみる必要がありそうだが、それを差し引いて見ていく。
+
+move関連がだいぶ減って、instructionの数は4割くらい削れる模様。
+これはinstructionの数がほとんど時間に比例しているように見える自分のコードではかなり速くなりそうに思う。
+
+結果を見ると、switchだとだいたい1.5倍くらいの改善がありそう。
+自分の問題の特性を考えると2倍くらいにはなりそうに思う。
+
+一方で、inline threadedだとあまり改善が無くなる。inline threadedを実装するならわざわざレジスタマシンにしなくてもいいんじゃないか、という気がしてくる。
+
+自分がやりそうなアルゴリズムという点ではtoken-threadedだと問題によりけり、という感じだなぁ。
+
+なお、この論文を読めば2003年版を読む必要は無い気はした。
+
+追記: inline threadedは実行属性を付加したメモリへの書き込みが必要なので、AppStoreではおそらくrejectされるので使えない。
+そうして考えるとdirect threadedを基準に比較する事になるが、
+その場合はレジスタ型の方が1.5倍くらいは早くなっている。
+検討する価値はあるかもしれない。
+
+## Optimizing direct threaded code by selective inlining  (inline-threaded)
+
+[Optimizing direct threaded code by selective inlining - Proceedings of the ACM SIGPLAN 1998 conference on Programming language design and implementation](https://dl.acm.org/doi/10.1145/277650.277743)
+
+アルゴリズムの所まで読んだ。これはコンパイル結果のラベルで挟まれた部分をコピーしている。
+これは実行属性のメモリ領域を動的に書き込む事が出来ないと実現出来ないので、iOSでは使えないな。
+
+## The Structure and Performance of Efficient Interpreters
+
+[JILP: Index to Volume 5](https://jilp.org/vol5/)にある論文。
+
+通常のswitch、Direct threaded codeなどを比較している。
+あまり結論は変わらないな。コードを動的にコピーできないならラベルをポインタとして扱うヤツが一番早い。
