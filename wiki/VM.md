@@ -89,3 +89,9 @@ move関連がだいぶ減って、instructionの数は4割くらい削れる模�
 
 通常のswitch、Direct threaded codeなどを比較している。
 あまり結論は変わらないな。コードを動的にコピーできないならラベルをポインタとして扱うヤツが一番早い。
+
+## Hermes
+
+[Hermes](https://hermesengine.dev/)
+
+ReactNativeで使われているJSインタープリタ。
