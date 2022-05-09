@@ -95,3 +95,33 @@ move関連がだいぶ減って、instructionの数は4割くらい削れる模�
 [Hermes](https://hermesengine.dev/)
 
 ReactNativeで使われているJSインタープリタ。
+
+### dispatch
+
+VM/Interpreter.cppのCASEやDISPATCHのマクロを見ると、token threadingっぽく見えるがちょっと見ただけでは解読しきれない。
+あとでもうちょっと気合入れて読むか。
+
+もう少し読んだ。
+
+```
+static void* opcodeDispatch[] = {
+  &&case_Add32,
+  &&case_Loadi32,
+...
+};
+```
+
+という配列が生成されて、
+
+```
+case case_Add32: {
+  frameRegs[ip->iAdd32.op1] = frameRegs[ip->IAdd32.op2].getNumber() + frameRegs[ip->IAdd32.op3].getNumber();
+  ip = ((const Inst*)(&ip->iAdd32 + 1 );
+  goto *opcodeDispatch[(unsigned)ip->opCode];
+}
+```
+
+というのがずらずら並ぶ。Indirect Threadingと書いてあるが、上記論文でtoken threadedと呼ばれているヤツかな。
+direct threadの対義語としてはindirect threadの方が自然だよなぁ。以後はindirect threadと呼ぶか（原典でもそう呼ばれてるっぽいし）。
+
+見た感じだとバイトコードは64bitのレジスタ型のバイトコードに見える（Add32の所が8bit、がregを3つ引数にとり、それぞれが8bitっぽく見えるので32bit、ざっと見たら6引数CallのCall4が最大ぽくて、8+6*8=56 bitくらい使ってそうなのでたぶん64bit）。
