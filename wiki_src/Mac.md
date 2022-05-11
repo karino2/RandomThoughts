@@ -1,8 +1,10 @@
-[[Macショートカット]]
+- [[Macショートカット]]
+- [[Metal]]
+- [About Swift — The Swift Programming Language (Swift 5.6)](https://docs.swift.org/swift-book/)
 
 ## 雑多なリンク
 
-[MacでシェルスクリプトをFinderから実行する方法](https://alvinalexander.com/mac-os-x/exec-unix-shell-script-mac-finder-execute-click/)
+- [MacでシェルスクリプトをFinderから実行する方法](https://alvinalexander.com/mac-os-x/exec-unix-shell-script-mac-finder-execute-click/)
 
 ## スクリーンキャストをアニメgifにするアプリ
 

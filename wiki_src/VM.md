@@ -125,3 +125,38 @@ case case_Add32: {
 direct threadの対義語としてはindirect threadの方が自然だよなぁ。以後はindirect threadと呼ぶか（原典でもそう呼ばれてるっぽいし）。
 
 見た感じだとバイトコードは64bitのレジスタ型のバイトコードに見える（Add32の所が8bit、がregを3つ引数にとり、それぞれが8bitっぽく見えるので32bit、ざっと見たら6引数CallのCall4が最大ぽくて、8+6*8=56 bitくらい使ってそうなのでたぶん64bit）。
+
+## BEAM VM
+
+ErlangのVM。レジスタ型でdirect threadedだと書いてあった。
+
+[BEAM VM ELI5 — BEAM VM Wisdoms](http://beam-wisdoms.clau.se/en/latest/eli5-vm.html)
+
+少し見てみる。
+コードはこれか。
+
+[otp/beam_emu.c at master · erlang/otp](https://github.com/erlang/otp/blob/master/erts/emulator/beam/emu/beam_emu.c)
+
+OpCaseが並んでいるが必要なのが全然入ってないな。
+これはbeam_makeopsというperlスクリプトで生成されるっぽい。
+grepするとmarkdownのドキュメントがあるな。
+
+[otp/beam_makeops.md at master · erlang/otp](https://github.com/erlang/otp/blob/master/erts/emulator/internal_doc/beam_makeops.md)
+
+ラベルは32bitに収まるので下32bitにラベルを、上32bitにレジスタなどの引数を入れている、と書いてある。
+first-class labelのサイズってどこに書いてあるんだろう？
+
+gccのC extensionを見ると、Labels as Valuesというのがあるな。
+
+[Labels as Values - Using the GNU Compiler Collection (GCC)](https://gcc.gnu.org/onlinedocs/gcc-4.8.0/gcc/Labels-as-Values.html#Labels-as-Values)
+
+うーむ、voidポインタとしか言ってないな。ちらっと試した感じ、ローカルでは64bitっぽいが…
+
+BeamInstrの型はUWordでこれはUintで、これはSIZEOF_VOID_Pの入るint系の型という事っぽい。
+普通にunsigned long longの場合がある。
+
+という事はドキュメント上は32bitに収まるケースを書いているが、収まらない場合はBeamInstrが大きくなるだけだな。
+
+で、これが64bitの場合、lb_move_cxは64bitで40も64bitに入って、さらに次の128bitにatomが入るって事になってめちゃくちゃ効率悪そうだな。
+
+ただ理屈は分かった。結局void*とは別にレジスタを持つ必要があるな。
