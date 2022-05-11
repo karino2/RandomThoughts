@@ -1,7 +1,8 @@
 Mac/iOSのMetal関連。
 
+- [Metal Overview - Apple Developer](https://developer.apple.com/metal/) いろんな所へのリンクがある。
 - [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html) 総合的で良い。またサンプルもそれなりにある（ただ最初に出てこない。先に幾つかの章末にあるサンプルを見てから読む方が良いかも）
-- [Metalのトップページ](https://developer.apple.com/documentation/metal) サンプルが多い。
+- [Metalドキュメントのトップページ](https://developer.apple.com/documentation/metal) サンプルが多い。
 - [Document Archive:Metal](https://developer.apple.com/library/archive/navigation/#section=Technologies&topic=Metal)
 - [サンプルのツイート](https://twitter.com/graphicsguyale/status/1511494953846800386)
 
@@ -40,3 +41,24 @@ OpenGLやOpenCLプログラマにとっては記述は少し冗長で、
 
 もうちょっと実際のiPadやiPhone上で使った時の話が多いと良いのになぁ、とは思うが、
 このくらいでも十分買う価値はあった。
+
+## 公式動画メモ
+
+[Graphics & Games - Videos - Apple Developer](https://developer.apple.com/videos/graphics-games) から見た動画のメモなど。
+
+### Tune CPU job scheduling for Apple silicon games
+
+[Tune CPU job scheduling for Apple silicon games - Tech Talks - Videos - Apple Developer](https://developer.apple.com/videos/play/tech-talks/110147/)
+
+見る価値無し。Metalじゃないし、スレッドを下手につかうとダメですよ、という話で、ほとんどがGCDを使えば避けられるような事。
+
+### Metal Compute on MacBook Pro
+
+[Metal Compute on MacBook Pro - Tech Talks - Videos - Apple Developer](https://developer.apple.com/videos/play/tech-talks/10580/)
+
+M1 MaxやM1 Pro上でのアーキテクチャから見たMetalの話。概要ではあるがなかなか良い。
+UMAで32GBマシンだと20GBくらいGPUから使えるとかそういう話がある。
+あとTextureとBufferでキャッシュが別々だから両方使えば倍だぜ、とか（両方つかうのは自分たちの用途では難しそうだが）。
+
+終盤はWWDC 20 Optimize Metal Performance for Apple Silicon Macs を見る方が良いらしい。
+この動画も見たいね。
