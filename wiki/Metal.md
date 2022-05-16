@@ -4,7 +4,6 @@ Mac/iOSのMetal関連。
 - [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html) 総合的で良い。またサンプルもそれなりにある（ただ最初に出てこない。先に幾つかの章末にあるサンプルを見てから読む方が良いかも）
 - [Metalドキュメントのトップページ](https://developer.apple.com/documentation/metal) サンプルが多い。
 - [Document Archive:Metal](https://developer.apple.com/library/archive/navigation/#section=Technologies&topic=Metal)
-- [サンプルのツイート](https://twitter.com/graphicsguyale/status/1511494953846800386)
 
 
 ## GPU計算のサンプル
@@ -12,6 +11,42 @@ Mac/iOSのMetal関連。
 [Performing Calculations on a GPU](https://developer.apple.com/documentation/metal/performing_calculations_on_a_gpu)
 
 ダウンロードして読んでみたら割と手頃だったのでメモ。
+
+## C++のサンプル
+
+[Getting started with Metal-cpp - Metal - Apple Developer](https://developer.apple.com/metal/cpp/)
+
+C++用のヘッダが別配布であるらしい。C++17との事だが、iOSとMacでしかMetalは使わないので問題無いかな。
+ライセンスはApache 2.0。SDKに含めておいてよ、という気はするけれど、Apache 2.0ならまぁいいか。
+
+このページにはXCodeの設定も書いてある。Foundation, QuartzCore, Metalをリンクに足せと言っている。
+
+[サンプルのツイート](https://twitter.com/graphicsguyale/status/1511494953846800386) これはサンプルへのリンクっぽい。
+
+### Halideではどうしているか？
+
+[Halide](Halide.md)のCMakeList.txtを見ているとこの辺をやっている場所は良く分からないな。Makefileはframework Metalとframekwork Foundationを足しているが…
+
+ただ、TEST_METALというのが定義されて、それがgpu_context.hで
+
+```
+#include <Metal/MTLCommandQueue.h>
+#include <Metal/MTLDevice.h>
+```
+
+をincludeするようにはなっている。これは上記のC++のヘッダじゃなくてobjCのヘッダに見える。
+
+さらに調べたら、細かいifなどを取り除くと以下みたいな文が見つかった。
+
+```
+find_library(METAL_LIBRARY Metal)
+target_link_libraries(${TARGET} ${VISIBILITY} "${METAL_LIBRARY}")
+find_library(FOUNDATION_LIBRARY Foundation)
+target_link_libraries(${TARGET} ${VISIBILITY} "${FOUNDATION_LIBRARY}")
+```
+
+HalideGeneratorHelpers.cmakeという中に見つかった。これはCMakeLists.txtからincludeされてるし、これっぽいな。
+
 
 ## 基礎から学ぶ Metal
 
