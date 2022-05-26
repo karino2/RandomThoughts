@@ -1,5 +1,6 @@
 - [[Macショートカット]]
 - [[Metal]]
+- [[ObjectiveC]]
 - [About Swift — The Swift Programming Language (Swift 5.6)](https://docs.swift.org/swift-book/)
 
 ## 雑多なリンク
@@ -36,13 +37,3 @@ Contents/Resources/Keyboardの下にxmlがある。
 ClipboardActionTransformations.xml に追加してしまえば良いか？
 Command+Wをクローズにするのは出来たが、Command+TabをCtrl+TabにするのとCommand+QをWindows+Qにする方法がわからないな。ぐぬぬ。
 
-## Objective-C
-
-ページを分けるほどの事でも無いのでここで。
-
-[iOS開発に入門する - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/05/23/iosdev.html)
-にも書いたが、
-
-- [From C++ to Objective-C](http://pierre.chachatelier.fr/programmation/fichiers/cpp-objc-en.pdf) 最初に読む。クラスカテゴリのあたりはいまいちなので下のも参照。
-- [Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html) 公式ドキュメント。上のpdfを読んでて分からないところだけつまむ感じ。
-- [nytimes/objective-c-style-guide: The Objective-C Style Guide used by The New York Times](https://github.com/NYTimes/objective-c-style-guide) スタイルガイドだそうで。まだ読んでない。

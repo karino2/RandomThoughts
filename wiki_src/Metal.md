@@ -97,3 +97,9 @@ UMAで32GBマシンだと20GBくらいGPUから使えるとかそういう話が
 
 終盤はWWDC 20 Optimize Metal Performance for Apple Silicon Macs を見る方が良いらしい。
 この動画も見たいね。
+
+## ソースからのコンパイル、C++連携など
+
+Halideのコードを読んでこの辺を軽く調べた。
+
+[HalideのMetalバックエンド周辺のコード読みメモ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/05/26/halide_metal_integ_memo.html)
