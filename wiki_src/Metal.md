@@ -103,3 +103,16 @@ UMAで32GBマシンだと20GBくらいGPUから使えるとかそういう話が
 Halideのコードを読んでこの辺を軽く調べた。
 
 [HalideのMetalバックエンド周辺のコード読みメモ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/05/26/halide_metal_integ_memo.html)
+
+## Data Typeのサイズ
+
+[Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)の2.1にスカラーのサイズがある。
+
+intは32bitでint32_tと同じ。
+
+## GridとThreadGroup
+
+良くごっちゃになるので。
+Gridが全体のサイズ、thread groupは個々のthread groupのこと。
+
+[Calculating Threadgroup and Grid Sizes ー Apple Developer Documentation](https://developer.apple.com/documentation/metal/compute_passes/calculating_threadgroup_and_grid_sizes)
