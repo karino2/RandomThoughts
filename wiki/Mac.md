@@ -37,3 +37,16 @@ Contents/Resources/Keyboardの下にxmlがある。
 ClipboardActionTransformations.xml に追加してしまえば良いか？
 Command+Wをクローズにするのは出来たが、Command+TabをCtrl+TabにするのとCommand+QをWindows+Qにする方法がわからないな。ぐぬぬ。
 
+## UIKit入門
+
+[iOS開発に入門する - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/05/23/iosdev.html) にも書いた内容だが、
+最近はGetting Startedとか無くなっちゃっててSwiftUIに飛ばされるっぽいので（マジか…）
+
+[(3) Custom View with xib in iOS, swift - YouTube](https://www.youtube.com/watch?v=L97S_SJKMg8) はXcodeの操作を思い出すのには役に立つ。
+
+### 久しぶりに触った時に気をつける事
+
+- Constraintsは子供を一通り入れ終わったあとに作業すべし
+- 右側のペインのタブ切り替えで切り替えて目的のものを探す
+- イベント関連は左側にツリー出して左クリックから変な丸を上にドラッグアンドドロップして相手を指定
+- ポトペタ対象はCmd+Shift+Lで（メニューのViewにShow Libraryでも出る）
