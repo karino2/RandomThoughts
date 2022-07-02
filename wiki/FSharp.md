@@ -8,6 +8,8 @@
 - [FParsec](FParsec.md)
 - [GoFO](GoFO.md)
 - [mdvcat](mdvcat.md)
+- [csvplr](csvplr.md)
+- [FSharpLesson](FSharpLesson.md)
 
 ## 自分のブログ
 

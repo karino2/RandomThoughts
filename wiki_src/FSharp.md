@@ -8,6 +8,8 @@
 - [[FParsec]]
 - [[GoFO]]
 - [[mdvcat]]
+- [[csvplr]]
+- [[FSharpLesson]]
 
 ## 自分のブログ
 
