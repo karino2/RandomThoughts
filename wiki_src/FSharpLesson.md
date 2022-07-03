@@ -75,3 +75,6 @@ Pythonにある程度なれてきてプログラムのスキルを次の段階�
 
 c-lessonと同様、あくまで作るのは学習目的で実用性は無いものにする。
 その代わり題材的な面白さと、その理解が実務の理解を深めるようなものを選びたい。
+
+KVSはちょっと低レベルすぎる気もするので、最初は[ztittle/Qdbm.Net: .NET port of the QDBM Embedded Database](https://github.com/ztittle/Qdbm.Net)この辺を使ってインデクサを作り、
+そこまでの分量を見て物足りなかったら自作して置き換えるでもいいかもしれない。
