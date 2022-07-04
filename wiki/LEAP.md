@@ -19,7 +19,7 @@ Relational Databaseの教科書だが割とLeapを前提にした本が以下。
 2001年出版。ちょっと高いがKindleにはなっているしサンプルの終わりまで読んだらまぁまぁだったので買ってあげる。
 Entity-Attribute-Relationとかの話がちゃんと載ってて、個々の論文を追っていくよりは読みやすい。
 
-## Leapいじり
+## LEAPいじり
 
 Relational Algebraの勉強用に昔少し触った事があるLeapをいじろうとしたが、動かない.
 
