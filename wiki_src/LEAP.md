@@ -34,3 +34,54 @@ User Guideのテーブル名が間違っていてtandpになっているが、
 だいたいは指定した通りに動く。
 
 少し動かしてコードも簡単に読んだが、これなら一から書く方がクリアでいいかなぁ。
+
+### Ex4.2 restrictに対応するコードを調べる
+
+上記のTheory and Practice of Relational Databases (2nd)でExample 4.2を見ると、restrictを使った例があった。
+あれ？LEAPにrestrictって無かったよな？と思い、該当するサンプルコードを見ようとする。
+
+[LEAP RDBMS : User Guide](http://leap.sourceforge.net/page3.html)にはsourcesにあると言っていて、なんか名前がtandpになっているので、以下を試してみる。
+
+```
+[user] :-) use tandp
+[tandp] :-) sources
+...
+example_42
+...
+```
+
+ふむ、sourcesの中身ってどうやって表示するんだっけ？なんかlって書いてあるな。
+
+```
+[tandp] :-) l example_42
+Source File: example_42
+-----------------------
+# This example is taken from page 64, example 4.2.
+restrict (auction) (sell_price>purchase_price)
+print @last
+<EOF>
+```
+
+あれ？restrictって使っているが。動くのか？
+と思ってlistしてみたが、auctionなんて無いな。
+
+install.srcには入っているっぽいが、どこにできてるんだろう。
+
+うーむ、よく分からないな。まぁいいや、install.srcからauctionを作っている所をコピペして実行して、
+それから試してみよう。
+
+```
+[tandp] :-) @ example_42
+[tandp] :-) restrict (auction) (sell_price>purchase_price)
+[tandp] :-) print @last
+reference date_bought  purchase_price date_sold sell_price
+--------- ------------ -------------- --------- ----------
+R020      02-12-43     4              17-10-88  145
+R048      15-05-68     3              16-03-89  8
+R049      15-05-68     3              16-03-89  8
+[tandp] :-) Message: Relation zzszww returned.
+```
+
+あれ？動いた。restrictって実装されているのか。
+
+UserGuidを検索すると、どうもこれってselectの別名っぽいな。なるほど。

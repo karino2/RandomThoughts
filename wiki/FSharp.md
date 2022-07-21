@@ -17,6 +17,7 @@
 - [F#が雑用言語に良い。 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/12/10/fsharp_for_zatuyou.html)
 - [F# でのfsxベースの開発 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/02/06/fsx_eval_based_dev.html)
 - [Create a single binary GUI tool with photino and F# on osx - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/04/25/fsharp_de_photino.html)
+- [Type-First Developmentが良いという話 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/01/25/type_first_development.html)
 
 ほかにもいろいろ書いているがとりあえず。
 
@@ -52,7 +53,7 @@ $"""string-text {"embedded string literal"}"""
 
 良く使うのでメモしておく。
 
-[Tutorial](http://fsprojects.github.io/Argu/tutorial.html)
+[Tutorial](https://fsprojects.github.io/Argu/tutorial.html)
 
 ## プロファイラ
 

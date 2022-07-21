@@ -3,7 +3,7 @@
 - [FParsecのチュートリアル](http://www.quanttec.com/fparsec/tutorial.html) 
 - [fparsec/Samples at master · stephan-tolksdorf/fparsec](https://github.com/stephan-tolksdorf/fparsec/tree/master/Samples)
 - [Parsing Programming Languages with FParsec :: Ambika Eshwar — Functional Programmer and PLT Enthusiast](https://rosalogia.me/posts/functional-parsing/)
-- [[GoFO]]を作るのに使おうと思う。
+- [[GoFO]]を作るのに使おうと思う。[[csvplr]]を作るのにも使っている。
 
 ## FS0030とその対策
 
