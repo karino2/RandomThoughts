@@ -1,5 +1,22 @@
 みんな大好きC++。
 
+## mapのキーと違う型でfindしたい時
+
+そういうのをheterogeneous lookupと言うらしい。
+例えばソースの部分文字列をSubString型として作っていて、
+string型をmapのキーにしてSubStringでfindしたい、みたいな時。
+
+そういう時には、Compareにis_transparentというのを定義するらしい。
+
+```
+struct SubStringComparator {
+   using is_transparent = std::true_type;
+   // 以下operator()定義
+};
+```
+
+[c++ - How can I search an std::map using a key of a different type - Stack Overflow](https://stackoverflow.com/questions/31923715/how-can-i-search-an-stdmap-using-a-key-of-a-different-type)
+
 ## Move onlyなオブジェクトをinitializer listで作れない
 
 [c++ - Can I list-initialize a vector of move-only type? - Stack Overflow](https://stackoverflow.com/questions/8468774/can-i-list-initialize-a-vector-of-move-only-type)
