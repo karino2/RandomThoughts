@@ -1,6 +1,7 @@
 - [JetpackCompose](JetpackCompose.md)
 - [StorageAccessFramework](StorageAccessFramework.md)
 - [Kotlin](Kotlin.md)
+- [Android Debug Bridge (adb)  :  Android Developers](https://developer.android.com/studio/command-line/adb) WiFiデバッグの説明。
 
 ## launcherアイコンの作り方
 
@@ -17,3 +18,10 @@ AndroidStudioから、
 
 [Provide information for Google Play's Data safety section - Play Console Help](https://support.google.com/googleplay/android-developer/answer/10787469?hl=en)
 
+## adbのソースコードの場所
+
+そのうちMacとの間の移動のアプリとか書きたいなぁ、と思い、adbのソースコードの場所をメモしておく。
+
+[platform/system/adb - Git at Google](https://android.googlesource.com/platform/system/adb)
+
+adb shellとかのGUIラッパくらいでいいかな、とは思っている。
