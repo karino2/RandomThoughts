@@ -1,4 +1,5 @@
-[karino2/TextBaseRenamer: Bulk renamer app based on text.](https://github.com/karino2/TextBaseRenamer)
+- [TextBaseRenamer - Apps on Google Play](https://play.google.com/store/apps/details?id=io.github.karino2.textbaserenamer)
+- [github: karino2/TextBaseRenamer: Bulk renamer app based on text.](https://github.com/karino2/TextBaseRenamer)
 
 ## コンセプト
 
