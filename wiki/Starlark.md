@@ -77,3 +77,7 @@ Files API回りでOreoからのものを使っているっぽいのでminSDKを2
 電卓の用途にはいまいちだな。ちょっといじって足せるか調べてみよう。
 
 parseBinOpExpressionのあたりか。STAR_STARというトークン自体はあるので、precedanceに足してこの辺いじればいけるか？
+
+## 拡張子は.starか
+
+[added .star to extensions by dainikkal · Pull Request #128 · bazelbuild/vscode-bazel](https://github.com/bazelbuild/vscode-bazel/pull/128)
