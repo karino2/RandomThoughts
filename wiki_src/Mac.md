@@ -2,6 +2,7 @@
 - [[Metal]]
 - [[ObjectiveC]]
 - [About Swift — The Swift Programming Language (Swift 5.6)](https://docs.swift.org/swift-book/)
+- [MacBook Pro (16-inch, 2019) - Technical Specifications](https://support.apple.com/kb/SP809?locale=en_US) 仕事マシンはMacBook Pro 2019 16-inch 
 
 ## 雑多なリンク
 
