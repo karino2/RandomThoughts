@@ -16,4 +16,5 @@ fsharp-lessonが略称かな。
 [c# - Is there a .Net library similar to GNU readline? - Stack Overflow](https://stackoverflow.com/questions/2024170/is-there-a-net-library-similar-to-gnu-readline)
 
 を見ていろいろ試したが、今の所ちゃんと扱えるのを見つけられていない。
-一番マシだったのが [tonerdo/readline: A Pure C# GNU-Readline like library for .NET/.NET Core](https://github.com/tonerdo/readline) だが、バクスペースで文字の半分しか消えない。
+
+ブログにした。 [dotnetで使えるReadLineっぽいライブラリで日本語が使えるのは無いのだろうか？ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/08/26/dotnet_readline_like_lib_for_japanese.html)
