@@ -5,3 +5,9 @@ C# で書いた、readlineっぽいライブラリ。CJKをまぁまぁちゃん
 エスケープシーケンスとかは使わずにConsoleのAPIだけで書いている。
 
 とりあえず[[FSharpLesson]]のToyRelで使いたい。
+
+### リリース作業メモ
+
+- csprojのバージョンを更新
+- `$ git tag 1.0.3 && git push && git push --tags`
+- `$ dotnet pack -c Release` でnugetのパッケージを作ってギャラリの上のUploadタブからアップロード

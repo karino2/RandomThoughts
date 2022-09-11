@@ -20,3 +20,12 @@ fsharp-lessonが略称かな。
 ブログにした。 [dotnetで使えるReadLineっぽいライブラリで日本語が使えるのは無いのだろうか？ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/08/26/dotnet_readline_like_lib_for_japanese.html)
 
 自分で作る事にした。＞[ReCJKLine](ReCJKLine.md)
+
+
+### ベンチマーク
+
+第三回ではメモリと時間を測りたい。
+
+- [BenchmarkDotNet](https://benchmarkdotnet.org/) これが良さそう
+- [How to use F# and BenchmarkDotNet - Phillip Carter's blog](https://phillipcarter.dev/posts/benchmarking-fsharp/)
+- [Benchmarking F# code - Compositional IT](https://www.compositional-it.com/news-blog/benchmarking-f-code/)
