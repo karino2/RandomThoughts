@@ -21,7 +21,6 @@ fsharp-lessonが略称かな。
 
 自分で作る事にした。＞[[ReCJKLine]]
 
-
 ### ベンチマーク
 
 第三回ではメモリと時間を測りたい。
@@ -29,3 +28,50 @@ fsharp-lessonが略称かな。
 - [BenchmarkDotNet](https://benchmarkdotnet.org/) これが良さそう
 - [How to use F# and BenchmarkDotNet - Phillip Carter's blog](https://phillipcarter.dev/posts/benchmarking-fsharp/)
 - [Benchmarking F# code - Compositional IT](https://www.compositional-it.com/news-blog/benchmarking-f-code/)
+
+ToyRelに試してみた時のメモ。
+
+とりあえずパッケージを追加。
+
+```
+$ dotnet add package benchmarkdotnet
+```
+
+ToyRelで試す。Program.fsに以下を書く。
+
+```
+open BenchmarkDotNet.Attributes
+open BenchmarkDotNet.Running
+
+[<MemoryDiagnoser>]
+type ProductBench() =
+  [<Benchmark>]
+  member _.Product() =
+    runStatement "use tandp"
+    runStatement "(stock) product (delivery)"
+
+[<EntryPoint>]
+let main _ = 
+  BenchmarkRunner.Run<ProductBench>() |> ignore
+  0
+```
+
+以下で実行される。ちょっと回数が実行されすぎてランダムのファイル名がぶつかるが。
+
+```
+$ dotnet run -c Release
+```
+
+もうちょっと回数を減らしたい。
+
+```
+open BenchmarkDotNet.Jobs
+open BenchmarkDotNet.Engines
+
+[<SimpleJob (RunStrategy.ColdStart, targetCount=1)>]
+[<MemoryDiagnoser>]
+type ProductBench() =
+...
+```
+
+で一回になった。
