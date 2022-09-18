@@ -30,6 +30,7 @@
  - [dotnet add unimemo.fsproj package FSharp.Data](https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line) F#でのnugetパッケージの追加
 - [Deedle: Exploratory data library for .NET](https://fslab.org/Deedle/) dataframeっぽい奴。
 - [What does this C# code look like in F#? (part one: expressions and statements) « Inside F#](https://lorgonblog.wordpress.com/2008/11/28/what-does-this-c-code-look-like-in-f-part-one-expressions-and-statements/)
+- [Common I/O Tasks - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/standard/io/common-i-o-tasks) dotnetだけどF# で使うので。
 
 ## メモ
 

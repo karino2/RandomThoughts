@@ -116,3 +116,16 @@ intは32bitでint32_tと同じ。
 Gridが全体のサイズ、thread groupは個々のthread groupのこと。
 
 [Calculating Threadgroup and Grid Sizes ー Apple Developer Documentation](https://developer.apple.com/documentation/metal/compute_passes/calculating_threadgroup_and_grid_sizes)
+
+## Scale compute workloads across Apple GPUs（動画）
+
+M1の話だが、なかなか情報量が多いのでメモ。
+
+[Scale compute workloads across Apple GPUs - WWDC22 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2022/10159/)
+
+- 1:11 M1のGPUコア数。M1が8, M1 Proが16まで、M1 Maxが32まで、M1 Ultraが64まで
+- 5:41 32kBのthread group memoryの説明
+- 5:24 SIMD groupとコアの関係。1コアあたり32スレッド。threadExecutionWidthで取れる、warpのサイズ。
+- 6:24 GPUコア数あたりのスレッド数の推奨（1コア1K〜2K）
+- 7:19 スレッドグループは小さい方がいい。execution widthの倍数のうち最小が推奨とか（つまり可能なら32が最適）
+- 8:00 Metal Compute on MacBook Pro Tech talk （instrumentでのこの辺の話か。あとで見たい）
