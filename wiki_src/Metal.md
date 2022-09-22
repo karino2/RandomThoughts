@@ -129,3 +129,5 @@ M1の話だが、なかなか情報量が多いのでメモ。
 - 6:24 GPUコア数あたりのスレッド数の推奨（1コア1K〜2K）
 - 7:19 スレッドグループは小さい方がいい。execution widthの倍数のうち最小が推奨とか（つまり可能なら32が最適）
 - 8:00 Metal Compute on MacBook Pro Tech talk （instrumentでのこの辺の話か。あとで見たい）
+- 10:50 waitUntlCompletedよりMTLShaderEvent::waitの方がいいらしい
+- 12:00 Modern Rendering with Metal でIndirect command bufferというものの話があるらしい
