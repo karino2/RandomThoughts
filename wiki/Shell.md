@@ -48,3 +48,11 @@ $  ls -p | grep -v /
 - [exa · a modern replacement for ls](https://the.exa.website/) lsの代替らしい
 - [OilShell](OilShell.md)
 - [google/zx: A tool for writing better scripts](https://github.com/google/zx)
+
+### シェルの再起動
+
+良くやり方を忘れるので
+
+```
+$ exec $SHELL -l
+```

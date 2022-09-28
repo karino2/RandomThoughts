@@ -75,3 +75,16 @@ type ProductBench() =
 ```
 
 で一回になった。
+
+### ハッシュ関数
+
+ファイルパスからハッシュを計算したいとする。
+暗号用途じゃなくてハッシュ用途。
+
+[Cyan4973/xxHash: Extremely fast non-cryptographic hash algorithm](https://github.com/Cyan4973/xxHash)
+
+SpookyHashが良さそう？
+
+[brandondahler/Data.HashFunction: C# library to create a common interface to non-cryptographic hash functions.](https://github.com/brandondahler/Data.HashFunction/)
+
+一通り揃っているのでどれでも良さそうだが。
