@@ -8,6 +8,27 @@
 
 - [MacでシェルスクリプトをFinderから実行する方法](https://alvinalexander.com/mac-os-x/exec-unix-shell-script-mac-finder-execute-click/)
 
+## PDFリーダー
+
+MacのPDFリーダー。デフォルトは目次のexpand時のツリービューのスクロールがおかしいので、
+長いドキュメント(主にC++本）を読むのに辛いので他を物色。
+
+編集とかの機能のせいで目的のメニューを探しづらいとかが嫌なので、出来たら注釈とかも無しでただ読むのに最適化したのが欲しい。
+
+### PDF Reader Pro Lite
+
+目次の項目の上をホバーさせるとpreviewが出てめちゃ邪魔なのが辛い。他はまぁ我慢出来なくも無いのだが。
+あと課金の促しが結構邪魔。
+
+### PDF Reader - Simple Viewer
+
+目次のビューが無い。
+
+### PDF Reader X
+
+今の所良さそうか。
+
+
 ## スクリーンキャストをアニメgifにするアプリ
 
 gifでAppStoreで検索して一番上に出てきたPicGIF Liteはなんか凄い速いのしか作れなくて使い方が分からなかった。

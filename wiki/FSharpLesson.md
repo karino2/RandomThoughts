@@ -76,6 +76,50 @@ type ProductBench() =
 
 で一回になった。
 
+### 自分でメモリを測ってみる。
+
+以下みたいにした所
+
+```
+  printfn "%d" (System.Diagnostics.Process.GetCurrentProcess().WorkingSet64)
+  printfn "%d" (GC.GetTotalAllocatedBytes true)
+  printfn "%d" (System.Diagnostics.Process.GetCurrentProcess().PrivateMemorySize64)
+  printfn "%d" (System.Diagnostics.Process.GetCurrentProcess().PeakPagedMemorySize64)
+  printfn "%d" (System.Diagnostics.Process.GetCurrentProcess().PeakVirtualMemorySize64)
+  printfn "%d" (System.Diagnostics.Process.GetCurrentProcess().PeakWorkingSet64)
+```
+
+以下みたいな結果になった。
+
+```
+52350976
+4667080
+0
+0
+0
+0
+```
+
+なぜPeakが0なのかは分からないが。
+
+`/usr/bin/time -l`と比べてみよう。
+
+```
+$ dotnet build -c Release
+$ /usr/bin/time -l  bin/Release/net6.0/ToyRel
+...
+        0.95 real         0.99 user         0.02 sys
+            50819072  maximum resident set size
+               12713  page reclaims
+...
+            31428608  peak memory footprint
+```
+
+maximum resident set sizeとWorkingSet64はほぼ一致している。
+一方でこれらはアプリがallocateしたもの以外のも含んでそう。
+
+この辺はGCが使われるくらい長く動くもので測るとどうなるかを調べてみないと何がいいか結論は難しいが、
+
 ### ハッシュ関数
 
 ファイルパスからハッシュを計算したいとする。
