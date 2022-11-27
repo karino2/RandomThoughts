@@ -7,3 +7,9 @@ update-indexでassume-unchangedを指定する。
 ```
 $ git update-index --assume-unchanged .vscode/c_cpp_properties.json
 ```
+
+### CI用などに空コミット
+
+```
+$ git commit --allow-empty -m "CIトラブルのため空コミット"
+```
