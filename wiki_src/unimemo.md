@@ -40,3 +40,14 @@ mdというよりはプレーンテキストになってしまったが、grep�
 
 dataスキームの画像は取り出した方がいいんだろうがほとんどがwebの記事のスクラップで勝手に貼られたもので、
 あまり画像に意味は無いので必要になるまでやらない。
+
+### Twitterの更新
+
+新しいデータを持ってきた時の作業手順。
+
+- original/Twitter 下にダウンロードしたデータを上書き
+- Scratch.fsxで`convall tdict`までを選択してAlt+Enter (setupTempJsonまででtemp-tweet.jsonを作るので、ここまででトラブルシュート）
+
+### Anchorのrss
+
+rssをrss.txtと名前をつけて保存し、original/anchor_rss/rss.txtに置いて、Scratch.fsxの該当部分をAlt+Enterする。
