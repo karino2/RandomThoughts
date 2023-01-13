@@ -24,6 +24,20 @@ Javaのコードがあるおかげで解説が曖昧な部分が残っていな�
 そしてそれぞれのカラースペースにLinear Filterなどを適用した場合の違いや問題点などは三冊目。
 結局全部必要という気はした。
 
+### 6章 Edges and Contours
+
+仕事でgradを使ったアルゴリズムで問題を解決できないか？と思う事があり、類似の問題という事でエッジ検出を読み直す。
+
+6.2がgradの求め方。6.3がそれを使ったエッジ検出、6.6がエッジシャープニングとなっている。
+
+6.4や6.5でCannyエッジ検出とかContourの話とかがちょっと触れられているがここではお話程度。
+
+本題の6.3は以下のようなアルゴリズムがある。
+
+- PrewittとSobelフィルタ（二次元gradが求まり、そこから強さと角度が求まる）
+- Roberts Operator (初期のより簡単なフィルタ）
+- Compass Operators (向きをいろいろ変えたSobelフィルタでいろいろな向きの直行座標でのgradを求めて、最大の強度の向きを採用する）
+
 ## Core Algorithm
 
 <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00DZ12N9C&linkId=5474d4aab9246303d12fbe6259c369f4"></iframe>
