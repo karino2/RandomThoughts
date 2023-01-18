@@ -15,6 +15,6 @@ Windows 10はDirectX 12がプレインストールされている模様。Direct
 - [Direct Compute – Bring GPU Computing to 
 the Mainstream.pdf](https://www.nvidia.com/content/GTC/documents/1015_GTC09.pdf) 2009年のNVIDIAのカンファレンスのpdfだが、CUDA, OpenCL分かってる人にとって良いオーバービューになっている。
 - [High-level shader language (HLSL) - Win32 apps - Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl)
-
+   - [abs - Win32 apps - Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-abs) プリミティブの一例
 
 
