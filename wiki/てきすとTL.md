@@ -25,3 +25,9 @@ Unix的な哲学に従ったテキストファイルやディレクトリ構成�
 
 現状は時間の情報がファイル名にしか入ってないのでgrepした時に何時に話したかが分からないが、フォーマットの不変さを重視する。
 これ以上は簡単に出来ないのでこのフォーマットで行けるだろう。
+
+## github pagesへの公開スクリプト
+
+以下でmysidebar.htmlを作る。スタイル等はscssで足している。
+
+[karino2.github.io/scripts at master · karino2/karino2.github.io](https://github.com/karino2/karino2.github.io/tree/master/scripts)
