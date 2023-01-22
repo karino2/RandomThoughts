@@ -31,3 +31,6 @@ Unix的な哲学に従ったテキストファイルやディレクトリ構成�
 以下でmysidebar.htmlを作る。スタイル等はscssで足している。
 
 [karino2.github.io/scripts at master · karino2/karino2.github.io](https://github.com/karino2/karino2.github.io/tree/master/scripts)
+
+Electronのアプリでぽちぽち書いて、TeFWikiとかPngNoteとかを全部Google Driveから公開するスクリプトにこのスクリプトも足す事で、
+公開自体の手間はゼロになった。
