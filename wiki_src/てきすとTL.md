@@ -1,9 +1,9 @@
 [[一人で使うタイムライン的な何かが欲しい]]より。
 
 ローカルで「ひとこと」をそのタイムスタンプのファイルに保存していくアプリ。
-今の所Electron版だけある。
 
-[karino2/TextTL-electron: TextTL electron version.](https://github.com/karino2/TextTL-electron)
+- [karino2/TextTL: Standalone text timeline app for android.](https://github.com/karino2/TextTL) Android版
+- [karino2/TextTL-electron: TextTL electron version.](https://github.com/karino2/TextTL-electron) Electron版
 
 ## 仕様
 
@@ -32,5 +32,5 @@ Unix的な哲学に従ったテキストファイルやディレクトリ構成�
 
 [karino2.github.io/scripts at master · karino2/karino2.github.io](https://github.com/karino2/karino2.github.io/tree/master/scripts)
 
-Electronのアプリでぽちぽち書いて、TeFWikiとかPngNoteとかを全部Google Driveから公開するスクリプトにこのスクリプトも足す事で、
+ElectronのアプリやAndroidのあプリでぽちぽち書いて、TeFWikiとかPngNoteとかを全部Google Driveから公開するスクリプトにこのスクリプトも足す事で、
 公開自体の手間はゼロになった。
