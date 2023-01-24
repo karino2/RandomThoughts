@@ -49,3 +49,7 @@ ElectronのアプリやAndroidのあプリでぽちぽち書いて、TeFWikiと�
 作る前は「なんだかんだ言って作っても使わなくなりそうだな」と思っていたが、作ってみたらこれは思ったより使いそうな気がしてきている。もうちょっと使い続けてみて良さそうだったらblogになんか記事を書いてみよう。
 
 このElectronのアプリとAndroidのアプリでUnix的なファイルを生成してGoogle Driveのsyncでsyncしてシェルスクリプトなどでgithub pagesに公開するというシステムはなかなか良いな。このWikiである[TeFWiki](TeFWiki.md)なんかもそうなんだけど。
+
+## ブログも書いてみた
+
+[ローカルで使うタイムライン、てきすとTLを作っている - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/01/23/texttl_standalone_tl.html)
