@@ -8,4 +8,4 @@ DEST_RES="${SCRIPTS_DIR}/../wiki"
 
 rm $DEST_SRC/*
 rm $DEST_RES/*
-cp ~/GoogleDriveMirror/DriveText/TeFWiki/${SUBWIKI_NAME}/*.md $DEST_SRC/
+cp  ~/work/syncthing_dirs/TeFWiki/${SUBWIKI_NAME}/*.md $DEST_SRC/
