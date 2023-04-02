@@ -50,4 +50,10 @@ dataスキームの画像は取り出した方がいいんだろうがほとん�
 
 ### Anchorのrss
 
-rssをrss.txtと名前をつけて保存し、original/anchor_rss/rss.txtに置いて、Scratch.fsxの該当部分をAlt+Enterする。
+original/anchor_rss/ で以下を実行し、
+
+```
+$ wget -O rss.txt https://anchor.fm/s/68ce140/podcast/rss
+```
+
+Scratch.fsxの該当部分をAlt+Enterする。
