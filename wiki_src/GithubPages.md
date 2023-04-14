@@ -3,6 +3,10 @@ github上にweb siteを持てる仕組み。
 
 ## 外部リンク
 
+- [GitHub Pages - Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.](https://pages.github.com/) 本家
+
+以下はjekyll関連でよく参照するもの。
+
 - [Includes - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/includes/)
 - [Variables - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/)
 - [Control flow – Liquid template language](https://shopify.github.io/liquid/tags/control-flow/)
@@ -10,6 +14,41 @@ github上にweb siteを持てる仕組み。
 ## dockerでのローカル環境
 
 [Mac OS X上のdockerでjekyll環境を作ってgithub pagesのテストをする - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/01/17/jekyll_on_mac.html)
+
+## 新規の始め方
+
+よく新しく始めるので、その際の手順などを。基本的には以下と同じことをdockerでするだけ。
+
+[Jekyll を使用して GitHub Pages サイトを作成する - GitHub Docs](https://docs.github.com/ja/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
+
+まずはレポジトリを用意して、Github側で設定する。
+
+次にjekyllのバージョンを調べる。
+
+[envygeeks/jekyll-docker: ⛴ Docker images, and CI builders for Jekyll.](https://github.com/envygeeks/jekyll-docker)
+
+次に、以下を実行。
+
+```
+% export JEKYLL_VERSION=3.8
+% docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll new --skip-bundle . --force
+```
+
+forceはcurrent directoryが空じゃない場合にいるとか。 [Installing jekyll in current directory fails · Issue #3309 · jekyll/jekyll](https://github.com/jekyll/jekyll/issues/3309)
+
+そして`_config.yml`を書き換える。
+
+動作確認は以下。
+
+```
+docker run --rm  --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000  jekyll/jekyll  jekyll serve --incremental
+```
+
+これで`localshot:4000`にアクセスすれば見れる。
+
+なお、`_config.yml`でbaseUrlを指定していると、それをlocalhostにつける必要がある。例えばTextTL_siteを指定している場合、
+
+`http://localhost:4000/TextTL_site` がrootになる。
 
 ## github pagesを使ったシステム
 
