@@ -30,12 +30,20 @@ Unix的な哲学に従ったテキストファイルやディレクトリ構成�
 
 ## github pagesへの公開スクリプト
 
-以下でmysidebar.htmlを作る。スタイル等はscssで足している。
+ブログのサイドバーに最新の何件かを表示して、そこからpermlinkで公開する専用のgithub pagesサイトに飛ばすようになっている。
+
+ElectronのアプリやAndroidのあプリでぽちぽち書いて、TeFWikiとかPngNoteとかを全部[[Syncthing]]から公開するスクリプトにこのスクリプトも足す事で、
+公開自体の手間はゼロになった。
+
+### permlink用github pages
+
+[github:TextTL_site/conv2md](https://github.com/karino2/TextTL_site/scripts/conv2md) に変換スクリプトがある。
+
+### ブログのサイドバーへの公開
+
+以下でmysidebar.htmlを作る。スタイル等はscssで足している。生成されるpermlinkは上記レポジトリの公開URLへのリンクになっている。
 
 [karino2.github.io/scripts at master · karino2/karino2.github.io](https://github.com/karino2/karino2.github.io/tree/master/scripts)
-
-ElectronのアプリやAndroidのあプリでぽちぽち書いて、TeFWikiとかPngNoteとかを全部Google Driveから公開するスクリプトにこのスクリプトも足す事で、
-公開自体の手間はゼロになった。
 
 ## 作ってみた感想、思ったより良い
 
