@@ -1,6 +1,6 @@
 [一人で使うタイムライン的な何かが欲しい](一人で使うタイムライン的な何かが欲しい.md)より。
 
-ローカルで「ひとこと」をそのタイムスタンプのファイルに保存していくアプリ。
+ローカルで「ひとこと」をそのタイムスタンプのファイルに保存していくアプリ。Android版とElectron版がある（どちらもバイナリ公開はしていない。自分でビルドして使っている）
 
 - [karino2/TextTL: Standalone text timeline app for android.](https://github.com/karino2/TextTL) Android版
 - [karino2/TextTL-electron: TextTL electron version.](https://github.com/karino2/TextTL-electron) Electron版
@@ -32,7 +32,7 @@ Unix的な哲学に従ったテキストファイルやディレクトリ構成�
 
 ブログのサイドバーに最新の何件かを表示して、そこからpermlinkで公開する専用のgithub pagesサイトに飛ばすようになっている。
 
-ElectronのアプリやAndroidのあプリでぽちぽち書いて、TeFWikiとかPngNoteとかを全部[Syncthing](Syncthing.md)から公開するスクリプトにこのスクリプトも足す事で、
+ElectronのアプリやAndroidのアプリでぽちぽち書いて、TeFWikiとかPngNoteとかを全部[Syncthing](Syncthing.md)から公開するスクリプトにこのスクリプトも足す事で、
 公開自体の手間はゼロになった。
 
 ### permlink用github pages
@@ -56,7 +56,7 @@ ElectronのアプリやAndroidのあプリでぽちぽち書いて、TeFWikiと�
 
 作る前は「なんだかんだ言って作っても使わなくなりそうだな」と思っていたが、作ってみたらこれは思ったより使いそうな気がしてきている。もうちょっと使い続けてみて良さそうだったらblogになんか記事を書いてみよう。
 
-このElectronのアプリとAndroidのアプリでUnix的なファイルを生成してGoogle Driveのsyncでsyncしてシェルスクリプトなどでgithub pagesに公開するというシステムはなかなか良いな。このWikiである[TeFWiki](TeFWiki.md)なんかもそうなんだけど。
+このElectronのアプリとAndroidのアプリでUnix的なファイルを生成してGoogle Driveのsyncでsyncしてシェルスクリプトなどでgithub pagesに公開するというシステムはなかなか良いな。このWikiである[TeFWiki](TeFWiki.md)なんかもそうなんだけど。＞[UFASアーキテクチャ](UFASアーキテクチャ.md)と名付ける
 
 ## ブログも書いてみた
 
