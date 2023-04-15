@@ -5,6 +5,10 @@
 - [karino2/TextTL: Standalone text timeline app for android.](https://github.com/karino2/TextTL) Android版
 - [karino2/TextTL-electron: TextTL electron version.](https://github.com/karino2/TextTL-electron) Electron版
 
+公開しているものは以下のページの左のサイドバーで見れる。
+
+- [karino2.github.io](https://karino2.github.io)
+
 ## 仕様
 
 指定したフォルダの下の、例えば `2023/01/21/1674308621113.txt` などに各ひとことを保存していく。1ひとこと1ファイル。
