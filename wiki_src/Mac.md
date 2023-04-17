@@ -59,6 +59,17 @@ Contents/Resources/Keyboardの下にxmlがある。
 ClipboardActionTransformations.xml に追加してしまえば良いか？
 Command+Wをクローズにするのは出来たが、Command+TabをCtrl+TabにするのとCommand+QをWindows+Qにする方法がわからないな。ぐぬぬ。
 
+## launchctl
+
+定期実行はMacではlaunchdとlaunchctlというのを使う。
+
+実行時にはpathなどが通ってないのでlaunchctl setenvというのを使う。
+
+```
+launchctl setenv PATH /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+launchctl setenv NODE_PATH /usr/local/lib/node_modules
+```
+
 ## UIKit入門
 
 [iOS開発に入門する - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/05/23/iosdev.html) にも書いた内容だが、
