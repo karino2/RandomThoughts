@@ -3,6 +3,7 @@
 - [MITxBio](MITxBio.md) 自分的お気に入りのシリーズ。
   - [705x](705x.md) Biochemistry
   - [706x](706x.md) 細胞生物学
+  - [728x](728x.md) 分子生物学
 
 ## コンパイラのコース
 
