@@ -2,7 +2,7 @@
 
 ### NuGetパッケージを作って登録する
 
-[ReCJKLine](ReCJKLine)でNuGetに登録したくなったのでメモ。
+[ReCJKLine](ReCJKLine.md)でNuGetに登録したくなったのでメモ。
 
 - [Create a NuGet package using MSBuild - Microsoft Docs](https://docs.microsoft.com/en-us/nuget/create-packages/creating-a-package-msbuild)
 - [.NET CoreライブラリプロジェクトをパッケージングしてNuGetサーバーに発行する - Build Insider](https://www.buildinsider.net/language/dotnetcore/06)

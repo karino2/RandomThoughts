@@ -1,4 +1,4 @@
-[Mac](Mac)のプログラム言語。
+[Mac](Mac.md)のプログラム言語。
 
 - [Swift - Apple](https://www.apple.com/swift/)
 

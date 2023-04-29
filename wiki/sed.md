@@ -1,4 +1,4 @@
-[Shell](Shell)で良く使われる
+[Shell](Shell.md)で良く使われる
 
 ## 同じファイルに出力する
 

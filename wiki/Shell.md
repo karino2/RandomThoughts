@@ -1,4 +1,4 @@
-シェル関連を置くところ。[sed](sed)や[awk](awk)も関係しがち。
+シェル関連を置くところ。[sed](sed.md)や[awk](awk.md)も関係しがち。
 
 ## コマンドの記録
 
@@ -46,7 +46,7 @@ $  ls -p | grep -v /
 ### 雑多なメモ
 
 - [exa · a modern replacement for ls](https://the.exa.website/) lsの代替らしい
-- [OilShell](OilShell)
+- [OilShell](OilShell.md)
 - [google/zx: A tool for writing better scripts](https://github.com/google/zx)
 
 ### シェルの再起動

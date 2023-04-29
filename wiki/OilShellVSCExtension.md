@@ -1,4 +1,4 @@
-[OilShell](OilShell)のVSCode Extension。
+[OilShell](OilShell.md)のVSCode Extension。
 
 - [OilShell extension - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=karino2.oilshell-extension)
 - [karino2/vscode-oilshell: VSCode extension for oil shell script.](https://github.com/karino2/vscode-oilshell)

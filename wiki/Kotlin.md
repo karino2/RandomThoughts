@@ -1,7 +1,7 @@
 ## 雑多なメモ
 
 - [Parcelable implementation generator  -  Android Developers](https://developer.android.com/kotlin/parcelize) dataクラスをParcelableにするプラグイン
-- [KotlinNative](KotlinNative)
+- [KotlinNative](KotlinNative.md)
 
 ## Compose for Desktop
 

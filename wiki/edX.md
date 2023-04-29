@@ -1,9 +1,9 @@
-[MOOC](MOOC)の一つ。MIT,Harvard系。MITxの[生物学](%E7%94%9F%E7%89%A9%E5%AD%A6)のコースの出来が良いので最近良く使っている。
+[MOOC](MOOC.md)の一つ。MIT,Harvard系。MITxの[生物学](%E7%94%9F%E7%89%A9%E5%AD%A6.md)のコースの出来が良いので最近良く使っている。
 
-- [MITxBio](MITxBio) 自分的お気に入りのシリーズ。
-  - [705x](705x) Biochemistry
-  - [706x](706x) 細胞生物学
-  - [728x](728x) 分子生物学
+- [MITxBio](MITxBio.md) 自分的お気に入りのシリーズ。
+  - [705x](705x.md) Biochemistry
+  - [706x](706x.md) 細胞生物学
+  - [728x](728x.md) 分子生物学
 
 ## コンパイラのコース
 

@@ -3,7 +3,7 @@
 fsharp-lessonが略称かな。
 
 - [karino2の暇つぶしプログラム教室 F#編](https://karino2.github.io/fsharp-lesson/)
-- [FSharp](FSharp)
+- [FSharp](FSharp.md)
 
 ## 個人的メモ
 
@@ -19,7 +19,7 @@ fsharp-lessonが略称かな。
 
 ブログにした。 [dotnetで使えるReadLineっぽいライブラリで日本語が使えるのは無いのだろうか？ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2022/08/26/dotnet_readline_like_lib_for_japanese.html)
 
-自分で作る事にした。＞[ReCJKLine](ReCJKLine)
+自分で作る事にした。＞[ReCJKLine](ReCJKLine.md)
 
 ### ベンチマーク
 

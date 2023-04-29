@@ -4,7 +4,7 @@
 
 ## R for Data Scicence
 
-[【書籍】RforDataScience](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91RforDataScience)の30章で少し言及がある。
+[【書籍】RforDataScience](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91RforDataScience.md)の30章で少し言及がある。
 
 - [30 R Markdown workflow ｜ R for Data Science](https://r4ds.had.co.nz/r-markdown-workflow.html)
     - [Maintaining a laboratory notebook » Colin Purrington](https://colinpurrington.com/tips/lab-notebooks/) リンクされてた記事
@@ -31,4 +31,4 @@ Labでは無いから違って当然ではあるのだが、一方で残す事�
 
 [Linus Pauling Research Notebooks - Special Collections & Archives Research Center](http://scarc.library.oregonstate.edu/coll/pauling/rnb/)
 
-[LinusPauling](LinusPauling)のノートブックが公開されてる！凄いね。
+[LinusPauling](LinusPauling.md)のノートブックが公開されてる！凄いね。

@@ -6,7 +6,7 @@ tidyverseを使ってデータ分析をしよう、という本。tidyverseはgg
 
 web上で公開されているのが十分BOOXで読みやすかったので、webを読む。コードをCopyボタンでコピーしてR Studioで試す事が出来るので、便利で良いね、web版。
 
-[R](R)
+[R](R.md)
 
 ## OS XへのR Studioのインストール
 
@@ -159,7 +159,7 @@ tibbleは初めて学ぶのでちゃんと読む。Rのdata.frameの癖のある
 tidy dataの論文はhttpsじゃない所に置いてある。[http://www.jstatsoft.org/v59/i10/paper](http://www.jstatsoft.org/v59/i10/paper)。
 そのうち読みたい。
 
-影響されて、ファイル操作の文法というのを考えてみる。[GoFO](GoFO)
+影響されて、ファイル操作の文法というのを考えてみる。[GoFO](GoFO.md)
 
 pivot_longer, pivot_wider, separateの３つとmissing value関連が基本か。
 割と単純だがこれだけで十分なんだろうか？最後の例はなかなか複雑で、これがここまで素直に扱えるならだいたいのケースでOKという気もするが。
@@ -195,7 +195,7 @@ flexdashboardというのを使うらしい。 [R Markdown Format for Flexible D
 
 ## 30. Lab Notebook
 
-これは結構興味ある話題なので独立したページを作る。 [LabNotebook](LabNotebook)
+これは結構興味ある話題なので独立したページを作る。 [LabNotebook](LabNotebook.md)
 
 ## 読み終わった感想、tidyverseや現代的なR環境を学ぶのには良かった
 

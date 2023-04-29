@@ -1,4 +1,4 @@
-[Android](Android)のSAF関連。
+[Android](Android.md)のSAF関連。
 
 - [DocumentFileをACTION_VIEWにわたす](https://www.javaer101.com/en/article/92932287.html)
 - [[Android] Storage Access Framework でドキュメントを保存する](https://akira-watson.com/android/action_create_document.html) ACTION_CREATE_DOCUMENTの例

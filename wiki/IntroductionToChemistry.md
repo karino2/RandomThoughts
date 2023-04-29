@@ -1,4 +1,4 @@
-[化学](%E5%8C%96%E5%AD%A6)より。
+[化学](%E5%8C%96%E5%AD%A6.md)より。
 
 CourseraのIntroduction to Chemistry: Structures and Solutionsのコース。
 

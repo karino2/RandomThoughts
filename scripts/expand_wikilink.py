@@ -6,7 +6,7 @@ pat = re.compile(r'\[\[([^]]*)\]\]')
 
 def replace(m):
     original = m.group(1)
-    encoded = urllib.parse.quote(original, safe='')
+    encoded = urllib.parse.quote(original+".md", safe='')
     return f"[{original}]({encoded})"
 
 for line in sys.stdin:

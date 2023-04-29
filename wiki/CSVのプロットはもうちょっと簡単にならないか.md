@@ -56,11 +56,11 @@ dplyr的な操作は変数への代入は出来ず、いつも非破壊的に単
 ようするにawkと同じ感じのコマンドライン型の言語と、gnuplotか何かのplotのコマンドと、
 それらを統合するGUIの３つに分けるのが良さそうな気がする。
 
-コマンドライン型の言語は以前PoCとして作った[GoFO](GoFO)に毛が生えた程度なんじゃなかろうか？
+コマンドライン型の言語は以前PoCとして作った[GoFO](GoFO.md)に毛が生えた程度なんじゃなかろうか？
 
 plotはとりあえずgnuplotで良い気がする。
 
-統合するGUIは最近のパターンの[FSharp](FSharp)+[photino](photino)でそんなに難しくなさそう。
+統合するGUIは最近のパターンの[FSharp](FSharp.md)+[photino](photino.md)でそんなに難しくなさそう。
 
 そもそもGUI要るのか？dplyrっぽいawkとgnuplotのラッパーだけで良いのでは？
 
@@ -121,4 +121,4 @@ $ cat ~/some/path/to/some_path.csv
 
 いまいち度はまあり変わらないか。このくらいならエイリアスで良い気もする。
 
-なんかこれはアリな気がしてきた。正式に名前をつけよう。[csvplr](csvplr)
+なんかこれはアリな気がしてきた。正式に名前をつけよう。[csvplr](csvplr.md)

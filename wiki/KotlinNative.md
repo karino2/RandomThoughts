@@ -1,11 +1,11 @@
-[Kotlin](Kotlin)より。
+[Kotlin](Kotlin.md)より。
 
 - [Kotlin Native ｜ Kotlin](https://kotlinlang.org/docs/native-overview.html)
-- [ScalaNative](ScalaNative) はどうなんだろう？
+- [ScalaNative](ScalaNative.md) はどうなんだろう？
 
 ## コマンドラインツールとしてのKotlin Native
 
-[GoFS](GoFS)のようなアイデアを簡単に試して配りたい時に、kotlin nativeってどうなんだろう？と思い立つ。
+[GoFS](GoFS.md)のようなアイデアを簡単に試して配りたい時に、kotlin nativeってどうなんだろう？と思い立つ。
 
 - [Why is a Kotlin native executable larger than the equivalent Rust executable? - Stack Overflow](https://stackoverflow.com/questions/52781064/why-is-a-kotlin-native-executable-larger-than-the-equivalent-rust-executable)
 
@@ -20,4 +20,4 @@ Hello Worldが800kとか言ってる。結構小さいじゃん。
 
 ただポターブルなライブラリみたいなのはいろいろ作られているらしい。
 うーん、必要なライブラリが揃ってくればこれでもいいかもしれないが、
-なんか違う気もする。[ScalaNative](ScalaNative)はJVMと揃えたライブラリをScalaで再実装していて、こっちの方がイメージには近いよなぁ、と思ったり。
+なんか違う気もする。[ScalaNative](ScalaNative.md)はJVMと揃えたライブラリをScalaで再実装していて、こっちの方がイメージには近いよなぁ、と思ったり。

@@ -1,4 +1,4 @@
-[KotlinNative](KotlinNative)を見ていて、Scala Nativeというものを知る。
+[KotlinNative](KotlinNative.md)を見ていて、Scala Nativeというものを知る。
 
 - [Scala Native — Scala Native 0.4.3-SNAPSHOT documentation](https://scala-native.readthedocs.io/en/latest/)
 - [An introduction to Scala Native ｜ Let's talk about Scala 3 - YouTube](https://www.youtube.com/watch?v=u2CnE-sRdBw)
@@ -12,4 +12,4 @@ IDEとしてはVSCodeを推奨している！Metalというextensionがあるら
 なかなか良さそうじゃないか？これ。
 
 Scala Nativeは基礎的なライブラリに関してはScalaで再実装したJVM版とコンパチブルなものを使うようになっている。
-そうそう、こっちの方が[KotlinNative](KotlinNative)よりいいよな。
+そうそう、こっちの方が[KotlinNative](KotlinNative.md)よりいいよな。

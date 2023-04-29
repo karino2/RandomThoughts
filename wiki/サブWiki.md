@@ -1,21 +1,21 @@
-[TeFWiki](TeFWiki)の機能。
+[TeFWiki](TeFWiki.md)の機能。
 
 ### 関連リンク
 
 - [blog: TeFWikiのサブディレクトリ対応](https://karino2.github.io/2021/09/26/TeFWiki_subdir_support.html)
 - [github: TeFWiki-Electron/TeFWiki_concept.md](https://github.com/karino2/TeFWiki-Electron/blob/main/TeFWiki_concept.md) 英語での簡単な説明
-- [Wikiとノート](Wiki%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88)と[講義ノート](%E8%AC%9B%E7%BE%A9%E3%83%8E%E3%83%BC%E3%83%88)
-- [GitWiki](GitWiki)
-- [サブWikiをTeFWIkiの外部機能に出来ないか](%E3%82%B5%E3%83%96Wiki%E3%82%92TeFWIki%E3%81%AE%E5%A4%96%E9%83%A8%E6%A9%9F%E8%83%BD%E3%81%AB%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84%E3%81%8B)
+- [Wikiとノート](Wiki%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88.md)と[講義ノート](%E8%AC%9B%E7%BE%A9%E3%83%8E%E3%83%BC%E3%83%88.md)
+- [GitWiki](GitWiki.md)
+- [サブWikiをTeFWIkiの外部機能に出来ないか](%E3%82%B5%E3%83%96Wiki%E3%82%92TeFWIki%E3%81%AE%E5%A4%96%E9%83%A8%E6%A9%9F%E8%83%BD%E3%81%AB%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84%E3%81%8B.md)
 - [blog: サブWikiの振り返り](https://karino2.github.io/2022/03/21/subwiki_retrospective.html) 概ね成功したアイデアだったと言って良さそう
 
 ### 公開しているサブWiki
 
-[サブWikiリンク](%E3%82%B5%E3%83%96Wiki%E3%83%AA%E3%83%B3%E3%82%AF)にまとめた。
+[サブWikiリンク](%E3%82%B5%E3%83%96Wiki%E3%83%AA%E3%83%B3%E3%82%AF.md)にまとめた。
 
 ### サブWikiの公開方法
 
-[サブWikiの公開手順](%E3%82%B5%E3%83%96Wiki%E3%81%AE%E5%85%AC%E9%96%8B%E6%89%8B%E9%A0%86)
+[サブWikiの公開手順](%E3%82%B5%E3%83%96Wiki%E3%81%AE%E5%85%AC%E9%96%8B%E6%89%8B%E9%A0%86.md)
 
 ### サブWikiとは？
 
@@ -68,7 +68,7 @@ Wikiでは新しいページやリンクをどんどん気軽に作れるのが�
 
 また、サブWikiはedXで生物関連の講義ノートを作るために考えた機能でもある。
 講義ローカルの、ページ数が比較的少なく、講義を受け終わったらある程度フリーズされるような細かい単位のWikiを作りたい。
-この辺の事は[Wikiとノート](Wiki%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88)に書いた。
+この辺の事は[Wikiとノート](Wiki%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88.md)に書いた。
 
 ### 何故ネームスペースじゃなくてサブWikiなのか？
 
@@ -93,7 +93,7 @@ Wikiの拡張では、ネームスペースは良く見る、準標準くらい�
 
 ## git-wikiでの複数ディレクトリ対応
 
-サブWikiごとに別のレポジトリを持つのは面倒なので、[GitWiki](GitWiki)の一つのレポジトリに複数のサブディレクトリを掘ってそれぞれにサブWikiを置きたい。
+サブWikiごとに別のレポジトリを持つのは面倒なので、[GitWiki](GitWiki.md)の一つのレポジトリに複数のサブディレクトリを掘ってそれぞれにサブWikiを置きたい。
 
 - recentsをサブディレクトリに
 - サイトのタイトルをサブディレクトリの名前に
