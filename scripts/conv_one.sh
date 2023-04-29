@@ -3,4 +3,4 @@
 FNAME=`basename $1`
 DST="../wiki/$FNAME"
 
-sed 's/\[\[\([^]]*\)\]\]/\[\1\](\1.md)/g' $1 > $DST
+cat $1 | python expand_wikilink.py > $DST

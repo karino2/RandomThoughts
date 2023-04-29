@@ -5,7 +5,7 @@
 AndroidのIME周辺のキーボードの扱いが好きになれないので、全部キーコードを自前でハンドルするエディタを作りたい。
 テキスト入力専用で快適に長文が入力出来る感じの。
 
-[Starlark](Starlark.md)バックエンドにしたemacsみたいなエディタをぼんやりと考えている。
+[Starlark](Starlark)バックエンドにしたemacsみたいなエディタをぼんやりと考えている。
 ということで名前はStarlark backendのemacsっぽいAndroid用エディタ、Starlarcsとしたい。
 
 日本語入力はSKKを移植する感じで。
@@ -20,7 +20,7 @@ View側と内部の両方を一気につくると永遠に完成しないのでV
 そうすると一番単純にはスクロールとかは無視して、画面に表示している範囲の文字をdrawするだけの方が楽か。
 まぁ最初はそこからか。
 
-そう考えるなら[ZipSourceCodeReading](ZipSourceCodeReading.md)と同じ感じでいいか。
+そう考えるなら[ZipSourceCodeReading](ZipSourceCodeReading)と同じ感じでいいか。
 ZipSourceCodeReadingはスクロールがいまいちだったので、将来的には各行を表示するViewを作ってRecyclerViewに任せたい気もするが、
 キーボード中心と割り切れば別にスクロールがいまいちでも我慢出来るかもしれない。
 なんにせよ最初は単に配列を画面に表示するだけの方がいいな。

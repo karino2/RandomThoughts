@@ -4,7 +4,7 @@
 C# で書いた、readlineっぽいライブラリ。CJKをまぁまぁちゃんとハンドルする。
 エスケープシーケンスとかは使わずにConsoleのAPIだけで書いている。
 
-とりあえず[FSharpLesson](FSharpLesson.md)のToyRelで使いたい。
+とりあえず[FSharpLesson](FSharpLesson)のToyRelで使いたい。
 
 ### リリース作業メモ
 

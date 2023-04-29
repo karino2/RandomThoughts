@@ -5,8 +5,8 @@ Unique it, 略してuit。gitを参考に考えたファイル管理システム
 ## リンク
 
 - [karino2/uit: Unique it file sync and manage system.](https://github.com/karino2/uit)
-- [FSharp](FSharp.md)
-- [自作アプリ](自作アプリ.md)
+- [FSharp](FSharp)
+- [自作アプリ](%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%97%E3%83%AA)
 
 以下はブログに書いたメモとか作業ログ
 

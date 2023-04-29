@@ -1,8 +1,8 @@
 - [github: karino2/Calclark](https://github.com/karino2/Calclark)
 - [Calclark - Apps on Google Play](https://play.google.com/store/apps/details?id=io.github.karino2.calclark)
 
-Calclarkとは、[Starlark](Starlark.md)を電卓っぽく使えるようにしたAndroidアプリである。
-電卓として使う為に`**`のサポートなど、一部[Starlark](Starlark.md)とは変更した部分があるforkである。
+Calclarkとは、[Starlark](Starlark)を電卓っぽく使えるようにしたAndroidアプリである。
+電卓として使う為に`**`のサポートなど、一部[Starlark](Starlark)とは変更した部分があるforkである。
 
 CalclarkはStarlarkの方言の言語名であると同時にAndroid版のアプリ名でもある。
 
@@ -36,13 +36,13 @@ Jupyterを真似て`_`と`__`と、`Out[0]`とかの配列に過去の結果を�
 
 ### はじまり
 
-[Starlark](Starlark.md)を電卓っぽく使えるAndroidアプリを作ろうと思う。
+[Starlark](Starlark)を電卓っぽく使えるAndroidアプリを作ろうと思う。
 ただ、Java版のStarlarkは`**`が無かったりmathモジュールが無かったりするので、forkする必要がありそう。
 
 という事で名前もStarlarkから変えた方がいいかという事でCalclarkという名前にする。
 CalclarkはStarlarkの方言の言語名であると同時にAndroid版のアプリ名でもある。
 
-[Starlark](Starlark.md)側に書いたように、ビルドをして動くところまで来た。という事でとりあえずWikiNameを作る。
+[Starlark](Starlark)側に書いたように、ビルドをして動くところまで来た。という事でとりあえずWikiNameを作る。
 今後の方向性としては、
 
 1. `**`に対応

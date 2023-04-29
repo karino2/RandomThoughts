@@ -1,4 +1,4 @@
-karino2が作っている、[Electron](Electron.md)製のマークダウンエディタ。見直しに特化している。
+karino2が作っている、[Electron](Electron)製のマークダウンエディタ。見直しに特化している。
 
 - [blog: Markdown見直し用ツール、MDMinaosi](https://karino2.github.io/2021/04/02/MDMinaosi.html)
 
@@ -18,4 +18,4 @@ MDMinaosiは基本は通常のブラウザの表示と同じで、読む事に�
 
 Message Passingの記事の見直しに日常的に使っているが、とても良い。
 
-なお、Androidの似たコンセプトのアプリ、[MDTouch](MDTouch.md)を途中まで作っているが、まだリリースはしていない。
+なお、Androidの似たコンセプトのアプリ、[MDTouch](MDTouch)を途中まで作っているが、まだリリースはしていない。

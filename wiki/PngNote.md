@@ -5,14 +5,14 @@ karino2が作っているONYX BOOX Note3用のノートアプリ。
 - [redditのPngNoteのスレ](https://www.reddit.com/r/Onyx_Boox/comments/p5hygq/pngnote_for_boox_note_app_for_boox_device_only/) 割とメインでやっている場所
 - [blog: PngNote for BOOX開発記](https://karino2.github.io/2021/07/23/pngnote_for_boox.html)
 - [blog: PngNoteLoupe](https://karino2.github.io/2021/08/19/pngnoteloupe.html) Android用の拡大機能のプロトタイプ
-- [GithubPagesGallery](GithubPagesGallery.md)を公開に使っている。
+- [GithubPagesGallery](GithubPagesGallery)を公開に使っている。
 
 ### コンセプト
 
 - BOOXのNote3でペンが快適に使える事
 - 単なるpngの連番ファイルとディレクトリ
 - 低機能で使っていて迷う所が無いような選択肢の少ないUI
-- 講義ノートなどを取るのに特化した機能＞[講義ノート](講義ノート.md)
+- 講義ノートなどを取るのに特化した機能＞[講義ノート](%E8%AC%9B%E7%BE%A9%E3%83%8E%E3%83%BC%E3%83%88)
 
 ### 雑感
 
@@ -89,4 +89,4 @@ DashPathEffect
 
 ### github pagesへの公開
 
-公開には[GithubPagesGallery](GithubPagesGallery.md)を使っている。
+公開には[GithubPagesGallery](GithubPagesGallery)を使っている。

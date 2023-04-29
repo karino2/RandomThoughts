@@ -2,8 +2,8 @@ ElectronじゃないけどDeskGapもここで。
 
 - [electron-forge: WSLでElectron開発](https://www.electronforge.io/guides/developing-with-wsl)
 - [Electron: クイックスタート](https://www.electronjs.org/docs/tutorial/quick-start)
-- [TeFWiki](TeFWiki.md)
-- [ReactNative](ReactNative.md)
+- [TeFWiki](TeFWiki)
+- [ReactNative](ReactNative)
 
 
 ## Deskgapで、パッケージングの方法

@@ -4,7 +4,7 @@
 
 自分はSpringerの40%オフの時に買った。たまにもっと安いセールもやっているが、そういうのを待っているとなかなか買えないので、欲しいものがあれば40%オフくらいで買ってしまって良い気はしている。
 
-一度挫折したが、[【書籍】ggplot2、ElegantGraphicsForDataAnalysis](【書籍】ggplot2、ElegantGraphicsForDataAnalysis.md)を読み終わって理解を深めたので再チャレンジ。
+一度挫折したが、[【書籍】ggplot2、ElegantGraphicsForDataAnalysis](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91ggplot2%E3%80%81ElegantGraphicsForDataAnalysis)を読み終わって理解を深めたので再チャレンジ。
 
 なお、このページではThe Grammar of GraphicsをGoGと略す事もある。
 

@@ -1,4 +1,4 @@
-html片を書いて[Unix的GUIツール](Unix的GUIツール.md)を作る為のツール。
+html片を書いて[Unix的GUIツール](Unix%E7%9A%84GUI%E3%83%84%E3%83%BC%E3%83%AB)を作る為のツール。
 htmlnixは先人が居たのでhtmnixで。
 
 ## レポジトリ
@@ -19,7 +19,7 @@ $ cat test/test.html | htmnix
 
 htmnixコマンドの標準入力にhtml片を渡すと、それが表示される。
 `hn-`で始まる特殊なクラスをつけると、特別な振る舞いをする。
-html片は[bulma](bulma.md)でスタイル付け出来る。
+html片は[bulma](bulma)でスタイル付け出来る。
 
 jsは書かない。htmlとcssだけ。
 
@@ -29,11 +29,11 @@ jsは書かない。htmlとcssだけ。
 - `hn-cancel` キャンセルボタン
 - `hn-mul-sel` マルチセレクション、このクラスたついたものは複数選択されて、結果は`hn-value` attributeに書いてある値が出力される（1行1`hn-value`で）
 
-まずはこれだけ。[てきすとでっき](てきすとでっき.md)の古くなったメモをアーカイブ用テキストファイルに移すGUIツールを作るのに使う機能から始める。
+まずはこれだけ。[てきすとでっき](%E3%81%A6%E3%81%8D%E3%81%99%E3%81%A8%E3%81%A7%E3%81%A3%E3%81%8D)の古くなったメモをアーカイブ用テキストファイルに移すGUIツールを作るのに使う機能から始める。
 
-pythonとかgolangでhtml片を生成する部分とこのhtmnixでGUIを表示する部分に分ければいろんな[Unix的GUIツール](Unix的GUIツール.md)がスクリプトで書けるようになるんじゃないか。
+pythonとかgolangでhtml片を生成する部分とこのhtmnixでGUIを表示する部分に分ければいろんな[Unix的GUIツール](Unix%E7%9A%84GUI%E3%83%84%E3%83%BC%E3%83%AB)がスクリプトで書けるようになるんじゃないか。
 
-[FSharp](FSharp.md)、[bulma](bulma.md)、[photino](photino.md)あたりで作る。
+[FSharp](FSharp)、[bulma](bulma)、[photino](photino)あたりで作る。
 
 あっさり出来た。なかなか簡単につくれたので筋の良さを感じる。
 

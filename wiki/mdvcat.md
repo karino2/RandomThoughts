@@ -1,8 +1,8 @@
-[MarkDown](MarkDown.md)で、vmdがいい感じだが遅いのとメンテされてなさそうなので、[photino](photino.md)で同じようなものを作ってみた。[FSharp](FSharp.md)製。
+[MarkDown](MarkDown)で、vmdがいい感じだが遅いのとメンテされてなさそうなので、[photino](photino)で同じようなものを作ってみた。[FSharp](FSharp)製。
 
 - [github: karino2/mdvcat](https://github.com/karino2/mdvcat)
 
-[markdig](https://github.com/xoofx/markdig)を使って、[bulma](bulma.md)でそれっぽくレンダリングしてみた。
+[markdig](https://github.com/xoofx/markdig)を使って、[bulma](bulma)でそれっぽくレンダリングしてみた。
 
 パフォーマンスがだいぶ良いので、コマンドラインオプションをつけてhomebrewで公開すれば流行るかもしれない。
 
