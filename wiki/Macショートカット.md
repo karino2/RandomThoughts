@@ -1,4 +1,4 @@
-[Mac](Mac.md)
+[Mac](Mac)
 
 ## Macショートカット
 

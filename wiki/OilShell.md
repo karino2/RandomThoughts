@@ -117,4 +117,4 @@ fork { mdvcat oil-help-topics.md }
 
 自分で作る事にした。
 
-[OilShellVSCExtension](OilShellVSCExtension.md)
+[OilShellVSCExtension](OilShellVSCExtension)

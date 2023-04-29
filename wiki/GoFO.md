@@ -16,7 +16,7 @@ ls("~/some/dir/*.md")
    |> mutate($1.Name)
    |> filter($2 ~ /^【書籍】/)
    |> mutate(basename($1.Name))
-   |> println("書籍.md", f"[$3](%243.md)")
+   |> println("書籍.md", f"[$3](%243)")
 ```
 
 printlnはもう一工夫欲しい所だが、なかなか悪くない気がする。
@@ -28,16 +28,16 @@ ls("~/some/dir/*.md")
    | mutate($1.Name)
    | filter($2 ~ /^【書籍】/)
    | mutate(basename($1.Name))
-   | println("書籍.md", f"[$3](%243.md)")
+   | println("書籍.md", f"[$3](%243)")
 ```
 
 トップレベルは関数コールとパイプ記号だけでいいか？変数に入れたいとかあるかもしれないが、最初は無しでいい気もする。
 
 ## 開発記録
 
-とりあえず[FSharp](FSharp.md)で作ってみる。パーサーなんか無いかな？と適当にググってFParsecを使ってみる事に。
+とりあえず[FSharp](FSharp)で作ってみる。パーサーなんか無いかな？と適当にググってFParsecを使ってみる事に。
 
-[FParsec](FParsec.md)
+[FParsec](FParsec)
 
 まずはlsが動くところまで頑張ろう。
 

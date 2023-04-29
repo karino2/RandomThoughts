@@ -3,7 +3,7 @@
 - [gautamkrishnar/github-pages-gallery](https://github.com/gautamkrishnar/github-pages-gallery) 
 
 github pagesを使った photo gallery のテンプレート。
-[PngNote](PngNote.md)の公開に使っている。＞[blog: PngNoteのノートの公開にはGithub Pages Galleryを使う事にした](https://karino2.github.io/2021/07/27/use_ghg_for_pngnote_publish.html)
+[PngNote](PngNote)の公開に使っている。＞[blog: PngNoteのノートの公開にはGithub Pages Galleryを使う事にした](https://karino2.github.io/2021/07/27/use_ghg_for_pngnote_publish.html)
 
 内部的には、[thumbsup](https://thumbsup.github.io/)というコマンドラインツール（？）を使って静的ページを生成している。
 これは[sachinchoolur/lightGallery](https://github.com/sachinchoolur/lightGallery)というjsライブラリを使ったページを生成する。

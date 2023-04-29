@@ -1,6 +1,6 @@
-[サブWiki](%E3%82%B5%E3%83%96Wiki.md)より。
+[サブWiki](%E3%82%B5%E3%83%96Wiki)より。
 
-ディレクトリをgit-wikiとして公開する運用にしている。＞[GitWiki](GitWiki.md)へ
+ディレクトリをgit-wikiとして公開する運用にしている。＞[GitWiki](GitWiki)へ
 
 ## SubWIkiサイトのサブディレクトリとして公開
 
@@ -43,7 +43,7 @@
 
 - scripts下にTeFWikiのmdをwiki_srcにコピーするスクリプトを置く
 - scripts下にwiki_srcからwikiへWikiLinkをコンバートするスクリプトを置く
-- recentsを生成する（[GitWiki](GitWiki.md)の「サイドバーのrecentsの日付が反映されていないのを修正」を参照）
+- recentsを生成する（[GitWiki](GitWiki)の「サイドバーのrecentsの日付が反映されていないのを修正」を参照）
 
 これでscripts下でスクリプトを実行するとTeFWikiのサブディレクトリがコピーされて公開準備が整うので、git commitしてpushする。
 

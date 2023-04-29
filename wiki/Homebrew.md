@@ -29,7 +29,7 @@ github決め打ちなので試すのにurlが要らないのはいいね。公�
 
 ## guashをhomebrewのtapで公開してみる
 
-試しに[guash](guash.md)をhomebrewで公開してみよう。
+試しに[guash](guash)をhomebrewで公開してみよう。
 
 dotnetのruntimeはcaskじゃなくてもあるのか。
 

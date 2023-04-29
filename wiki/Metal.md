@@ -25,7 +25,7 @@ C++用のヘッダが別配布であるらしい。C++17との事だが、iOSと
 
 ### Halideではどうしているか？
 
-[Halide](Halide.md)のCMakeList.txtを見ているとこの辺をやっている場所は良く分からないな。Makefileはframework Metalとframekwork Foundationを足しているが…
+[Halide](Halide)のCMakeList.txtを見ているとこの辺をやっている場所は良く分からないな。Makefileはframework Metalとframekwork Foundationを足しているが…
 
 ただ、TEST_METALというのが定義されて、それがgpu_context.hで
 

@@ -52,17 +52,17 @@ docker run --rm  --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000  jekyll/jekyl
 
 ## github pagesを使ったシステム
 
-  - [GitWiki](GitWiki.md)
-  - [GithubPagesGallery](GithubPagesGallery.md)
+  - [GitWiki](GitWiki)
+  - [GithubPagesGallery](GithubPagesGallery)
 
-どちらも良く出来ていて、[サブWiki](%E3%82%B5%E3%83%96Wiki.md)の公開に使ったり、[PngNote](PngNote.md)の公開に使ったりしている。
+どちらも良く出来ていて、[サブWiki](%E3%82%B5%E3%83%96Wiki)の公開に使ったり、[PngNote](PngNote)の公開に使ったりしている。
 このgithub pagesを使ったシステムは無料でありながらサーバーの運用をしなくても良くていいよな。
 
 どちらも既存のソフトをgithub pagesに対応しただけという感じになっていて、
 そんなにいろいろは頑張っていない。
 だがそのおかげで、割といじりやすく、足りないものは自分で足して行けて良い。
 
-同じようにSNS作れないかな？と一瞬考えたが無理だった。＞[GitHubを使ったSNSを考える](GitHub%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FSNS%E3%82%92%E8%80%83%E3%81%88%E3%82%8B.md)
+同じようにSNS作れないかな？と一瞬考えたが無理だった。＞[GitHubを使ったSNSを考える](GitHub%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9FSNS%E3%82%92%E8%80%83%E3%81%88%E3%82%8B)
 
 ## JSONのサーバーに出来ないか
 
@@ -111,6 +111,6 @@ site dataのフォルダと公開用のフォルダに両方同じファイル�
 - [Fix prev tilte modification. · karino2/karino2.github.io@e143bf2](https://github.com/karino2/karino2.github.io/commit/e143bf207dd27daddf8d0b4f5309876ce3bf8a2b)
 - [Update head.html · karino2/karino2.github.io@21583b9](https://github.com/karino2/karino2.github.io/commit/21583b9bac95f588b2afe7d2251cafb49b5fe658)
 
-なお、[GitWiki](GitWiki.md)でも同じような作業をしている。
+なお、[GitWiki](GitWiki)でも同じような作業をしている。
 
 page.titleなどの変数は以下。 [Variables - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/)

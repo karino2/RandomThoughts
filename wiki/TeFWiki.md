@@ -1,5 +1,5 @@
 このWikiを作るのに使っている、自作のローカルWiki。mdのテキストファイルのWiki。
-[Electron](Electron.md)版とAndroid版があって、Google Driveでデータを共有して使っている。サーバー要らず。
+[Electron](Electron)版とAndroid版があって、Google Driveでデータを共有して使っている。サーバー要らず。
 
 ### 関連リンク
 
@@ -7,9 +7,9 @@
    - [blog: TeFWiki、テキストファイルのWikiをElectronで作ってみる](https://karino2.github.io/2021/04/10/TeFWiki.html) 開発当初のブログ
 - [github:TeFWiki-Electron](https://github.com/karino2/TeFWiki-Electron)
 - [github:TeFWiki: TeFWiki for Android](https://github.com/karino2/TeFWiki/)
-- [Wikiとノート](Wiki%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88.md)
-- [サブWiki](%E3%82%B5%E3%83%96Wiki.md)
-- [講義ノート](%E8%AC%9B%E7%BE%A9%E3%83%8E%E3%83%BC%E3%83%88.md)
+- [Wikiとノート](Wiki%E3%81%A8%E3%83%8E%E3%83%BC%E3%83%88)
+- [サブWiki](%E3%82%B5%E3%83%96Wiki)
+- [講義ノート](%E8%AC%9B%E7%BE%A9%E3%83%8E%E3%83%BC%E3%83%88)
 
 
 
@@ -51,8 +51,8 @@ TeFWiki自体は必要最小限の機能に留めようとしている。
 TeFWikiのファイルはTeFWIki以外のアプリやUnixコマンドなどでも作り編集されていく事を期待している。
 
 実際自分はjekyllのブログのファイルをハードリンクで貼ってTeFWIkiのデータにしていたりもするし、
-[いつなに](%E3%81%84%E3%81%A4%E3%81%AA%E3%81%AB.md)も勝手にマークダウンを編集していく。
-また、マークダウンのエディタとしても外部エディタとして[MDTouch](MDTouch.md)（PCでは[MDMinaosi](MDMinaosi.md)）をちょくちょく使っている。
+[いつなに](%E3%81%84%E3%81%A4%E3%81%AA%E3%81%AB)も勝手にマークダウンを編集していく。
+また、マークダウンのエディタとしても外部エディタとして[MDTouch](MDTouch)（PCでは[MDMinaosi](MDMinaosi)）をちょくちょく使っている。
 
 例えばPC側はelispやvim scriptの拡張で同じデータを作っていっても、問題無くAndroid版アプリと組み合わせて使える、
 というような、開かれたメモ環境を指向している。

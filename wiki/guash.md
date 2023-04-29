@@ -1,13 +1,13 @@
 - [github: karino2/guash: GUI app scripting by shell script.](https://github.com/karino2/guash)
 
-[FSharp](FSharp.md)で書いている、GUIツールをシェルスクリプトで書く為のコマンド。
+[FSharp](FSharp)で書いている、GUIツールをシェルスクリプトで書く為のコマンド。
 
 シェルスクリプトでGUIツールを作る為のF# で書いたコマンドラインツール。
 日常的なツールを書くのに便利に使っている。
 
 ## インストール
 
-[Homebrew](Homebrew.md)のtapに対応したので、Macなら以下でインストール出来る。
+[Homebrew](Homebrew)のtapに対応したので、Macなら以下でインストール出来る。
 
 ```
 $ brew tap karino2/tap
@@ -42,7 +42,7 @@ ls -t ~/GoogleDriveMirror/DriveText/TeFWiki/RandomThoughts/*.md | guash_filter "
 RES=($(guash_doquery))
 WIKINAME=`basename -s .md ${RES[0]}`
 
-echo "[$WIKINAME](%24WIKINAME.md)" | pbcopy
+echo "[$WIKINAME](%24WIKINAME)" | pbcopy
 ```
 
 ## 入力時に一回ワーニングが出る件

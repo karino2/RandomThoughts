@@ -1,5 +1,5 @@
-- [【書籍】RforDataScience](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91RforDataScience.md)
-- [【書籍】ggplot2、ElegantGraphicsForDataAnalysis](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91ggplot2%E3%80%81ElegantGraphicsForDataAnalysis.md)
+- [【書籍】RforDataScience](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91RforDataScience)
+- [【書籍】ggplot2、ElegantGraphicsForDataAnalysis](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91ggplot2%E3%80%81ElegantGraphicsForDataAnalysis)
 - [RStudio blog](https://www.rstudio.com/blog/)
   - [tidyverse blog](https://www.tidyverse.org/blog/)
 - [R Markdown Format for Flexible Dashboards • flexdashboard](https://pkgs.rstudio.com/flexdashboard/)

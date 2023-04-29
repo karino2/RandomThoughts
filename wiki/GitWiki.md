@@ -1,6 +1,6 @@
 git-wiki。ファイル名にハイフンが入るのがなんか嫌なのでGitWikiというWikiNameにしたが。
 
-[GithubPages](GithubPages.md)のテンプレートとして実装されているwiki。[サブWiki](%E3%82%B5%E3%83%96Wiki.md)の公開に使っている。
+[GithubPages](GithubPages)のテンプレートとして実装されているwiki。[サブWiki](%E3%82%B5%E3%83%96Wiki)の公開に使っている。
 なかなか良く出来ていると思うが、びっくりするほどググれない。
 
 - [git-wiki](https://github.com/Drassil/git-wiki)
@@ -39,7 +39,7 @@ urlをMarkdown形式でコピーするExtensionとかの振る舞いがいまい
 
 head.htmlでタイトルを生成して適当な変数にassignしておく。ついでにtitleタグもここで生成する。
 
-meta.htmlのseoでtitleが生成されているようだが、git-wikiではseoはあまり役に立つ情報を生成しているようには見えないので、これをmeta.htmlから外す。ついでに`og:title`をhead.htmlで作ったものに更新しておく。（追記： [GithubPages](GithubPages.md)で同じ作業をした時に、seoに`title=false`を指定する事が出来るのを知ったので、もっと良いやり方もありそう）
+meta.htmlのseoでtitleが生成されているようだが、git-wikiではseoはあまり役に立つ情報を生成しているようには見えないので、これをmeta.htmlから外す。ついでに`og:title`をhead.htmlで作ったものに更新しておく。（追記： [GithubPages](GithubPages)で同じ作業をした時に、seoに`title=false`を指定する事が出来るのを知ったので、もっと良いやり方もありそう）
 
 あとはページのトップにh1で表示すればいいか。
 これは`_includes/git-wiki/sections/content/content.html`が手頃に見えたので、tocの上にh1でタイトルを表示しておく。
