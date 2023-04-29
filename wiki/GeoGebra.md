@@ -1,2 +1,0 @@
-- [GeoGebra について – GeoGebra](https://www.geogebra.org/about)
-- [数式を扱う](https://blog2.issei.org/2021/11/25/math-typesetting-in-hugo/)
