@@ -8,6 +8,6 @@ for line in sys.stdin:
     wikiname = line[:-4]
     encoded = urllib.parse.quote(wikiname, safe='')
     print("        <li class=\"page-list-item\">")
-    print("            <a href=\"{{ \"/%s\" | relative_url }}\">{{\"%s\" | escape}}</a>" % (encoded, wikiname))
+    print("            <a href=\"\"/%s\"\">{{\"%s\" | escape}}</a>" % (encoded, wikiname))
     print("        </li>")
 
