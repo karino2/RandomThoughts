@@ -4,7 +4,7 @@ Mac/iOSのMetal関連。
 - [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html) 総合的で良い。またサンプルもそれなりにある（ただ最初に出てこない。先に幾つかの章末にあるサンプルを見てから読む方が良いかも）
 - [Metalドキュメントのトップページ](https://developer.apple.com/documentation/metal) サンプルが多い。
 - [Document Archive:Metal](https://developer.apple.com/library/archive/navigation/#section=Technologies&topic=Metal)
-
+- [Metal Feature Set Tables(pdf)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) ちょくちょく調べたくなるが意外と見つからないのでリンクを貼っておく。
 
 ## GPU計算のサンプル
 
