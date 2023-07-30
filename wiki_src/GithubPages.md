@@ -99,6 +99,7 @@ site dataのフォルダと公開用のフォルダに両方同じファイル�
 そこそこカスタマイズをいろいろやっているので、ここにリンクをまとめていきたい。
 
 - [github pagesでブロックのスタイルを指定したい - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/01/17/block_style_on_githubpages.html)
+- [Github Pages上でkotlin playgroundを使ってみる - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/07/30/kotlin_playground_on_github_page.html)
 
 
 ### タイトルのカスタマイズ

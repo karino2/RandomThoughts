@@ -3,6 +3,7 @@
 - [Parcelable implementation generator  -  Android Developers](https://developer.android.com/kotlin/parcelize) dataクラスをParcelableにするプラグイン
 - [[KotlinNative]]
 - [kotlin-playground - Self-contained component to embed in websites for running Kotlin code](https://jetbrains.github.io/kotlin-playground/) web上で実行する奴
+   - [Github Pages上でkotlin playgroundを使ってみる - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/07/30/kotlin_playground_on_github_page.html)
 
 ## Compose for Desktop
 
