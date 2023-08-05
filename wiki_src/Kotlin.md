@@ -17,3 +17,11 @@ hello worldを動かしてみた。
 ## Kotlinパズル
 
 日々コードを書いていて出会ったちょっとしたパズルを書いていく予定。
+
+## プログラム素人向けKotlin入門
+
+プログラム素人にAndroid開発を教えてみたところ、使い物になるkotlinの入門が無かったので自分で書く事に。
+
+[トップページ - karino2の暇つぶしプログラム教室 kotlin編](https://karino2.github.io/kotlin-lesson/)
+
+姉妹ページ: [算数で挫折した人向けのJavaScript入門 - 算数で挫折した人向けの、Javascript入門](https://karino2.github.io/js-introduction/)
