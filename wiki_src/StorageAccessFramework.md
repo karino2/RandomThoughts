@@ -6,6 +6,41 @@
 
 ---
 
+### getExternalStoragePublicDirectory周辺
+
+[[あおぞらAndroid教室]]でファイル周りの解説でも書こうかと思っていて、getExternalStoragePublicDirectoryを使おうと思ったらdeprecatedとなっているな。
+
+[Environment  -  Android Developers](https://developer.android.com/reference/android/os/Environment#getExternalStoragePublicDirectory(java.lang.String))
+
+だが同じ役割をする代替が無さそう。
+
+[getExternalStoragePublicDirectory deprecated in Android Q - Stack Overflow](https://stackoverflow.com/questions/56468539/getexternalstoragepublicdirectory-deprecated-in-android-q)
+
+RELATIVE_PATHが良さそうだが、これはAPI level 29から、だとか。さすがにこれはちょっと新しすぎるなぁ。
+
+```kotlin
+      val resolver = context.contentResolver
+      val contentValues = ContentValues().apply {
+        put(MediaStore.MediaColumns.DISPLAY_NAME, "SomeFileName001")
+        put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg")
+        put(MediaStore.MediaColumns.RELATIVE_PATH, "DCIM/SomeDirName")
+      }
+
+      val uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)
+
+      resolver.openOutputStream(uri).use {
+        // TODO something with the stream
+      }
+```
+
+Storage Access Frameworkの推奨シナリオを見ていたら、getExternalStoragePublicDirectoryを使えと書いてある… ＞[Android storage use cases and best practices  -  Android Developers](https://developer.android.com/training/data-storage/use-cases#export-media-files-to-device)
+
+正しくはバージョン見てgetExternalStoragePublicDirectoryと上記のコードを切り替えるんだろうが、さすがに違いすぎてかったるいな、これは。
+
+まぁSAF使わずにDownloads下に保存したい、みたいなのはそれなりに雑なアプリな事が多いので、29以下を捨てる日が来るまではgetExternalStoragePublicDirectoryを使い続けるか。
+
+こういうの互換にするためのandroidxでは無いのか？と思うが、使えそうなのが見当たらないな。
+
 ### しばらくしたあとのアクセスでSecurityExceptionが上がる
 
 GoogleDriveなどで、ACTION_OPEN_DOCUMENTで得たuriをtakePersistableUriPermissionして保存し、デバイスを再起動してそのuriを開くと、以下のexception。
