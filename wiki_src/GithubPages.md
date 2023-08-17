@@ -60,8 +60,14 @@ docker run --rm  --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000  jekyll/jekyl
 ナビゲーションバーがあるテーマをいろいろ探していたが、すでにいろいろminimaをカスタマイズしすぎていて乗り換えるのが面倒なので、
 minimaにサイドバー足す方向で進めよう。
 
+出来た。
 
+[ナビゲーション用サイドバー対応 · karino2/kotlin-lesson@129d33f](https://github.com/karino2/kotlin-lesson/commit/129d33fcc0a51de2ed26e7c5de069e4cd246b31d)
 
+最初は上の例を真似してymlでテキストを指定していたが面倒なのでファイルだけ追加しておいてLiquidの方でページタイトルを表示するように変更。
+ページの追加と削除はこれまでのconfig.ymlと同程度の手間に抑えたかったので。
+
+結果はまぁまぁ満足。
 
 ## github pagesを使ったシステム
 
