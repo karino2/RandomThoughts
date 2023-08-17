@@ -57,7 +57,11 @@ docker run --rm  --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000  jekyll/jekyl
 
 [Navigation - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/tutorials/navigation/)
 
-横に出すのはwikiでもやってるのでそっちと合わせてやればいいか。
+ナビゲーションバーがあるテーマをいろいろ探していたが、すでにいろいろminimaをカスタマイズしすぎていて乗り換えるのが面倒なので、
+minimaにサイドバー足す方向で進めよう。
+
+
+
 
 ## github pagesを使ったシステム
 
