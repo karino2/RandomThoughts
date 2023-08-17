@@ -50,6 +50,15 @@ docker run --rm  --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000  jekyll/jekyl
 
 `http://localhost:4000/TextTL_site` がrootになる。
 
+## サイドバーでナビゲーション
+
+ナビゲーション用のサイドバーを作ろうと思いたつ。
+適当にググったら、以下が良く書けている。
+
+[Navigation - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/tutorials/navigation/)
+
+横に出すのはwikiでもやってるのでそっちと合わせてやればいいか。
+
 ## github pagesを使ったシステム
 
   - [[GitWiki]]
