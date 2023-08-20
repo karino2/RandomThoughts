@@ -85,8 +85,8 @@ minimaにサイドバー足す方向で進めよう。
 
 ## JSONのサーバーに出来ないか
 
-現状、統計グラフ！は、GAEでスクリプトを管理している。
-でもそれほど動的である必要は無いので、github pagesでいいんじゃないか？
+統計グラフ！は、GAEでスクリプトを管理していたが、
+それほど動的である必要は無いので、github pagesでいいんじゃないか？
 
 [Hosting a JSON API on GitHub Pages](https://victorscholz.medium.com/hosting-a-json-api-on-github-pages-47b402f72603)
 
@@ -112,6 +112,10 @@ site dataのフォルダと公開用のフォルダに両方同じファイル�
 このgistが同じような事を解説しているな。
 
 [Jekyll - how to build a REST API](https://gist.github.com/MichaelCurrin/f8d908596276bdbb2044f04c352cb7c7)
+
+追記： [[統計グラフ！]]に書いたように、結局jsonは毎回全部送る事にした。大したサイズでは無いので。If-Modified-Sinceで普段は送られないのでいいだろう。
+そしてhtmlの生成は遊びで[[TypeScript]]でやってみた。
+悪くないが、短かったのでJSで良かったな。
 
 ## カスタマイズいろいろ
 
