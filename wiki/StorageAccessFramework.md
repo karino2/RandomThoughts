@@ -7,6 +7,21 @@
 
 ---
 
+### メディアファイルの周辺
+
+WhiteBoardCastで録画した動画をこれまではexternal storageに保存していたが、これはAndroid 10以降のスタイルでは無い。
+という事で方針を考える。
+
+MediaMixtureがFileを取る。だから録画中のファイルはapp specific directoryに入れておくのが良さそう。
+最後に合成が終わったらMediaStoreに移動するのがいいだろうか？
+
+- [Access media files from shared storage  -  Android Developers](https://developer.android.com/training/data-storage/shared/media) のToggle pending status for media files　という所にParcelFileDescriptorを取得する例がある。これでバイナリを書く事は出来そう。
+- [Create/Copy File in Android Q using MediaStore - Stack Overflow](https://stackoverflow.com/questions/59511147/create-copy-file-in-android-q-using-mediastore) これの「1. Create and Write File」の回答も近いコードになっている
+
+スライドはpdfとしてexportするので、これはSAFを使うのがいいか？
+コードを見直すとpdfwriterのライブラリはOutputStreamでさえあれば良さそうなので、SAFで保存ファイルを選ばせる事は出来そう。
+
+
 ### getExternalStoragePublicDirectory周辺
 
 [あおぞらAndroid教室](%E3%81%82%E3%81%8A%E3%81%9E%E3%82%89Android%E6%95%99%E5%AE%A4)でファイル周りの解説でも書こうかと思っていて、getExternalStoragePublicDirectoryを使おうと思ったらdeprecatedとなっているな。
