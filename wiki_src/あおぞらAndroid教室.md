@@ -1,7 +1,8 @@
-正式名は「karino2のあおぞらAndroid開発教室」
+karino2が友人に[[Android]]を教えている会の名称。正式名は「karino2のあおぞらAndroid開発教室」
 
 - [トップページ - karino2のあおぞらAndroid開発教室](https://karino2.github.io/kotlin-lesson/)
 - [youtube: あおぞら教室再生list](https://youtu.be/fa0nvWd_VOE?list=PL3J_mLcl4YCdi2bLHtynt7Ohni1_NQJiF)
+
 
 プログラム素人の友人がAndroidアプリを作ってみたいのでプログラムと一緒に教えてよ、と言ってきたので始めた所、
 俺も習いたいんだけど？というのがちょこちょこ出てきたので何人かに教えてるもの。
