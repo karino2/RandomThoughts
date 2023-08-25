@@ -21,6 +21,19 @@ MediaMixtureがFileを取る。だから録画中のファイルはapp specific 
 スライドはpdfとしてexportするので、これはSAFを使うのがいいか？
 コードを見直すとpdfwriterのライブラリはOutputStreamでさえあれば良さそうなので、SAFで保存ファイルを選ばせる事は出来そう。
 
+permissionとしては[Access media files from shared storage  -  Android Developers](https://developer.android.com/training/data-storage/shared/media)の「Extra permissions needed for apps running on legacy devices」に、 Android 9以下ならREAD_EXTERNAL_STORAGEとWRITE_EXTERNAL_STORAGEがいるとの事。
+Android 9はAPI Level 28。
+
+RELATIVE_PATHは API Level 29から。
+
+-  [MediaStore.MediaColumns  -  Android Developers](https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#RELATIVE_PATH)
+- [SDK Platform release notes  -  Android Studio  |  Android Developers](https://developer.android.com/tools/releases/platforms)
+
+```
+if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)
+{
+}
+```
 
 ### getExternalStoragePublicDirectory周辺
 
