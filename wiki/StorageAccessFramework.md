@@ -65,6 +65,13 @@ GET_CONTENTと入れ替えActivityにするかなぁ。
 - [android - Select multiple files with Intent.ACTION_GET_CONTENT - Stack Overflow](https://stackoverflow.com/questions/19513556/select-multiple-files-with-intent-action-get-content)
 - [Android 10 ACTION_GET_CONTENT image with GPS info? - Stack Overflow](https://stackoverflow.com/questions/60085410/android-10-action-get-content-image-with-gps-info)
 
+Photo Pickerは無ければACTION_GET_CONTENTになって、しかも良い感じにやってくるメッセージは統一してくれるので、
+Photo Pickerでいい気がしてきた。
+
+そこにRecycleViewerでドラッグアンドロップで順番変えられる感じのスライドインポーター的なActivityを作るのが良さそう。
+
+- [ItemTouchHelper  -  Android Developers](https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper) この辺か。
+
 ### getExternalStoragePublicDirectory周辺
 
 [あおぞらAndroid教室](%E3%81%82%E3%81%8A%E3%81%9E%E3%82%89Android%E6%95%99%E5%AE%A4)でファイル周りの解説でも書こうかと思っていて、getExternalStoragePublicDirectoryを使おうと思ったらdeprecatedとなっているな。
