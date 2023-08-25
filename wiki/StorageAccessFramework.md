@@ -54,7 +54,16 @@ if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)
 
 - WorkDirの下のmp4を全て削除
 - PDFのexportをSAFに
+- MultiGalleryが機能してないので方針を考える
 
+Photo pickerが使いたいがFire Maxでは使え無さそう？要調査。
+
+[対応しているAndroidのインテント - Fireタブレット](https://developer.amazon.com/ja/docs/fire-tablets/ft-supported-android-intents.html)
+
+GET_CONTENTと入れ替えActivityにするかなぁ。
+
+- [android - Select multiple files with Intent.ACTION_GET_CONTENT - Stack Overflow](https://stackoverflow.com/questions/19513556/select-multiple-files-with-intent-action-get-content)
+- [Android 10 ACTION_GET_CONTENT image with GPS info? - Stack Overflow](https://stackoverflow.com/questions/60085410/android-10-action-get-content-image-with-gps-info)
 
 ### getExternalStoragePublicDirectory周辺
 
