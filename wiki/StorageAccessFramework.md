@@ -50,6 +50,11 @@ if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)
 と思ったらこれはAndroid Qから。Pより前は何使ったらいいんだ？
 とりあえずapp specific storageに保存されてる方のファイルにこれまで通りのThumbnailUtilsを使う方針にしてみよう。
 
+### TODO
+
+- WorkDirの下のmp4を全て削除
+- PDFのexportをSAFに
+
 
 ### getExternalStoragePublicDirectory周辺
 
