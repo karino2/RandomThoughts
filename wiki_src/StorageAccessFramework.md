@@ -12,6 +12,8 @@
 WhiteBoardCastで録画した動画をこれまではexternal storageに保存していたが、これはAndroid 10以降のスタイルでは無い。
 という事で方針を考える。
 
+### 全体の方針
+
 MediaMixtureがFileを取る。だから録画中のファイルはapp specific directoryに入れておくのが良さそう。
 最後に合成が終わったらMediaStoreに移動するのがいいだろうか？
 
@@ -21,8 +23,12 @@ MediaMixtureがFileを取る。だから録画中のファイルはapp specific 
 スライドはpdfとしてexportするので、これはSAFを使うのがいいか？
 コードを見直すとpdfwriterのライブラリはOutputStreamでさえあれば良さそうなので、SAFで保存ファイルを選ばせる事は出来そう。
 
+### permission
+
 permissionとしては[Access media files from shared storage  -  Android Developers](https://developer.android.com/training/data-storage/shared/media)の「Extra permissions needed for apps running on legacy devices」に、 Android 9以下ならREAD_EXTERNAL_STORAGEとWRITE_EXTERNAL_STORAGEがいるとの事。
 Android 9はAPI Level 28。
+
+### RELATIVE_PATH
 
 RELATIVE_PATHは API Level 29から。
 
@@ -34,6 +40,16 @@ if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)
 {
 }
 ```
+
+### サムネイル
+
+これまではファイルに書いて`ThumbnailUtils.createVideoThumbnail`を呼んでいたがMediaStoreのUriに書くようにしたので違うのを使う必要がある。
+
+[Access media files from shared storage  -  Android Developers](https://developer.android.com/training/data-storage/shared/media)の「Load file thumbnails」によると、loadThumbnailで良さそう。
+
+と思ったらこれはAndroid Qから。Pより前は何使ったらいいんだ？
+とりあえずapp specific storageに保存されてる方のファイルにこれまで通りのThumbnailUtilsを使う方針にしてみよう。
+
 
 ### getExternalStoragePublicDirectory周辺
 
