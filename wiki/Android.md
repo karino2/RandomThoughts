@@ -52,3 +52,6 @@ compileSdkVersionをcompileSdkに。
 buildlToolsVersionは消す。
 
 Settings＞Build, Execution, Deployment＞Gradle JDK を jbr 1.7に。
+
+
+Playのページは一番左下のPolicy and programのApp contentに必要な事がまとまっている。

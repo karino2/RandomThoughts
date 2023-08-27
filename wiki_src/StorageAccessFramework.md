@@ -54,8 +54,8 @@ if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)
 
 - DONE ... WorkDirの下のmp4を全て削除
 - PDFのexportをSAFに
-- drag indicatorのアイコンを組み込む
-- 横画面でのスライド選びをなんとかしたい。
+- DONE ... drag indicatorのアイコンを組み込む
+- DONE ... 横画面でのスライド選びをなんとかしたい。
 - DONE ... MultiGalleryが機能してないので方針を考える
 
 Photo pickerが使いたいがFire Maxでは使え無さそう？要調査。
