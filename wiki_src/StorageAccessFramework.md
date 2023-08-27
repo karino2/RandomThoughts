@@ -54,7 +54,7 @@ if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)
 
 - WorkDirの下のmp4を全て削除
 - PDFのexportをSAFに
-- MultiGalleryが機能してないので方針を考える
+- DONE ... MultiGalleryが機能してないので方針を考える
 
 Photo pickerが使いたいがFire Maxでは使え無さそう？要調査。
 
@@ -71,6 +71,9 @@ Photo Pickerでいい気がしてきた。
 そこにRecycleViewerでドラッグアンドロップで順番変えられる感じのスライドインポーター的なActivityを作るのが良さそう。
 
 - [ItemTouchHelper  -  Android Developers](https://developer.android.com/reference/androidx/recyclerview/widget/ItemTouchHelper) この辺か。
+
+FireMaxでAudioRecordのreadがかえってこなくなるのはバッファサイズが大きすぎるらしい。minの倍ちょっとなんだが…
+という事で無事解決。
 
 ### getExternalStoragePublicDirectory周辺
 
