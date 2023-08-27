@@ -52,8 +52,10 @@ if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)
 
 ### TODO
 
-- WorkDirの下のmp4を全て削除
+- DONE ... WorkDirの下のmp4を全て削除
 - PDFのexportをSAFに
+- drag indicatorのアイコンを組み込む
+- 横画面でのスライド選びをなんとかしたい。
 - DONE ... MultiGalleryが機能してないので方針を考える
 
 Photo pickerが使いたいがFire Maxでは使え無さそう？要調査。
@@ -74,6 +76,12 @@ Photo Pickerでいい気がしてきた。
 
 FireMaxでAudioRecordのreadがかえってこなくなるのはバッファサイズが大きすぎるらしい。minの倍ちょっとなんだが…
 という事で無事解決。
+
+ContentDBのupdateがうまく行かなくなっている。以下のメッセージが出ている。
+
+`"Movement of content://media/external/video/media which isn't part of well-defined collection not allowed"`
+
+- where句でidと一致するのをupdateしていたが、urlを直接指定するように変更
 
 ### getExternalStoragePublicDirectory周辺
 
