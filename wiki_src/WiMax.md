@@ -20,6 +20,7 @@ UQ-WiMaxに乗り換える事に。
    - [目次 - WTC-C1167GC ユーザーズマニュアル - エレコム株式会社](https://www.elecom.co.jp/support/manual/network/wireless-lan/relay/wtc-c1167gc/usersmanual/?_gl=1*3eotn4*_gcl_au*MTAyNzU0NjYyMS4xNjkzMDE1Njc3*_ga*MTM3NDcyODYzMi4xNjkzMDE1Njc3*_ga_0F81RERH28*MTY5MzAxNTY3Ny4xLjEuMTY5MzAxNTY4NC4wLjAuMA..)
 
 接続はWPSではできなかった上に一度変な状態になると全然設定できないが、リセットしてやり直せばうまく出来た。
-でもSSID変えたりとかは出来ないのかね、これ。2.4GHzは名前変えようかと思っていたのだが。
+でもSSID変えたりとかは出来ないのかね、これ。2.4GHzは名前変えようかと思っていたのだが。あ、出来た。接続した後にSSIDを変えると変更されるのか。
+これはわかりにくいなぁ。
 
-ただ普通に動いててPCの方は速度落ちてないので親の方につながっているっぽいし、まぁいいか、となった。
+でもこれでやりたい事は出来たな。よしよし。
