@@ -4,6 +4,14 @@
 - [[Swift]]
 - [MacBook Pro (16-inch, 2019) - Technical Specifications](https://support.apple.com/kb/SP809?locale=en_US) 仕事マシンはMacBook Pro 2019 16-inch 
 
+## VSCode関連
+
+[[VSCode]]の環境設定などをちょこちょこブログに書いているのでここにリンクをまとめておく。
+
+- [OS XでVS Codeのcppdbgを動かす - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/11/17/osx_cppdbg.html)
+- [MacでVSCodeとclangで中規模のC++開発（コンソールアプリ）をする - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/04/13/mid_cppproj_vscode_mac.html) 2020年。ちょっと古くなっている。
+- [MacでVSCodeとclangで小規模のC++開発（コンソールアプリ）をする手順 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/01/small_cppproj_vscode_mac.html) 2023年。
+
 ## 雑多なリンク
 
 - [MacでシェルスクリプトをFinderから実行する方法](https://alvinalexander.com/mac-os-x/exec-unix-shell-script-mac-finder-execute-click/)
