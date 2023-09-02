@@ -1,4 +1,5 @@
-[karino2/cppunzip: Header only unzip library only depend on zlib and STL.](https://github.com/karino2/cppunzip) githubのレポジトリ
+- [karino2/cppunzip: Header only unzip library only depend on zlib and STL.](https://github.com/karino2/cppunzip) githubのレポジトリ
+- [CppUnzip ヘッダーオンリーでzlibだけで動くunzipライブラリを作った - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/02/cppunzip_header_only_unzip_library.html) ブログポスト
 
 C++でzlibとSTLのみに依存しているだけの、ヘッダーオンリーなunzipライブラリ。
 メモリに読み込む前提でファイルに書き出さないが、
