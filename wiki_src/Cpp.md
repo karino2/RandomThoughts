@@ -1,5 +1,7 @@
 みんな大好きC++。
 
+- [最近読んだC++の本2冊の感想 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/03/31/cpp_book.html)
+
 ## mapのキーと違う型でfindしたい時
 
 そういうのをheterogeneous lookupと言うらしい。
