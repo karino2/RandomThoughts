@@ -4,6 +4,7 @@
 - [[Kotlin]]
 - [Android Debug Bridge (adb)  :  Android Developers](https://developer.android.com/studio/command-line/adb) WiFiデバッグの説明。
 - [Android code search](https://cs.android.com)
+- [Stable Releases  -  Jetpack  |  Android Developers](https://developer.android.com/jetpack/androidx/versions/stable-channel)
 
 
 ## launcherアイコンの作り方
