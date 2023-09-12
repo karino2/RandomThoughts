@@ -4,6 +4,7 @@
 
 - C-w ウィンドウ切り替え
 - Command+option+shift 矩形選択
+- C-u Command+Dのundo（最後の選択を戻す）
 
 ## 選択範囲が無い時に一行コピーする、をdisableする方法
 
