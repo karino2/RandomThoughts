@@ -75,6 +75,14 @@ collapseしたいなぁ。
 
 onclickに直接入れればそんなに面倒は無いか？
 
+MDNはどうしているんだろう？と以下のサイトをデベロッパーモードで見てみると＞[JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+なんかdetailsとかいうタグを使っている。
+
+[<details>: The Details disclosure element - HTML: HyperText Markup Language - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+
+おお、これでいいじゃん。
+
 ## github pagesを使ったシステム
 
   - [GitWiki](GitWiki)
