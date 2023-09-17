@@ -5,7 +5,9 @@
 - [Android Debug Bridge (adb)  :  Android Developers](https://developer.android.com/studio/command-line/adb) WiFiデバッグの説明。
 - [Android code search](https://cs.android.com)
 - [Stable Releases  -  Jetpack  |  Android Developers](https://developer.android.com/jetpack/androidx/versions/stable-channel)
-
+- [あおぞらAndroid教室](%E3%81%82%E3%81%8A%E3%81%9E%E3%82%89Android%E6%95%99%E5%AE%A4)
+- [NFC の基本  -  Connectivity  |  Android Developers](https://developer.android.com/guide/topics/connectivity/nfc/nfc?hl=ja)
+- [Android Basics in Kotlin course  -  Android Developers](https://developer.android.com/courses/android-basics-kotlin/course) code labsとか
 
 ## launcherアイコンの作り方
 
