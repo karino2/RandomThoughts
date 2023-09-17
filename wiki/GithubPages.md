@@ -69,6 +69,12 @@ minimaにサイドバー足す方向で進めよう。
 
 結果はまぁまぁ満足。
 
+collapseしたいなぁ。
+
+[How To Create a Tree View](https://www.w3schools.com/howto/howto_js_treeview.asp)
+
+onclickに直接入れればそんなに面倒は無いか？
+
 ## github pagesを使ったシステム
 
   - [GitWiki](GitWiki)
