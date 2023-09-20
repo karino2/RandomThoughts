@@ -1,0 +1,15 @@
+- [Kotlinの公式リファレンスを日本語化してみた[後編] - Qiita](https://qiita.com/dogwood008/items/f4ceabd0b0d801fb3a9f)
+   - [リファレンス - Kotlin Programming Language](http://dogwood008.github.io/kotlin-web-site-ja/docs/reference/)
+   - [dogwood008/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/dogwood008/kotlin-web-site-ja)　かなり頑張ってあるがメンテはされてない感じ。残念。
+   - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
+
+## レポジトリを移管してもらった - 2023-09-20 (水)
+
+和訳を追加したり更新したい、と思って相談した所、移管して作業するのはどうか、という話になり、レポジトリを移管してもらいました。
+移管をするとURLが変わってしまうんですね…（知らなかった）
+
+とりあえず作業していきます。
+
+いろいろなバージョンが古くビルドをするのが大変そうなので、
+これを通すよりは、同じmarkdownやnav.ymlを使って簡素にビルドする方向に変更する。
+見た目はダサくなるかもしれないが、本家がここまで変わっていてアップデートも難しい以上、別の道を歩むしかなかろう、という事で。
