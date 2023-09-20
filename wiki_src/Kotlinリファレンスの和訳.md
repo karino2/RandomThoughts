@@ -3,6 +3,10 @@
    - [dogwood008/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/dogwood008/kotlin-web-site-ja)　かなり頑張ってあるがメンテはされてない感じ。残念。
    - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
 
+## 2023-09-21 (木)
+
+v1.9.10とURLの構成を揃えた。またツアーを足し始め。
+
 ## レポジトリを移管してもらった - 2023-09-20 (水)
 
 和訳を追加したり更新したい、と思って相談した所、移管して作業するのはどうか、という話になり、レポジトリを移管してもらいました。
