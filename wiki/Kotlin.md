@@ -4,10 +4,7 @@
 - [KotlinNative](KotlinNative)
 - [kotlin-playground - Self-contained component to embed in websites for running Kotlin code](https://jetbrains.github.io/kotlin-playground/) web上で実行する奴
    - [Github Pages上でkotlin playgroundを使ってみる - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/07/30/kotlin_playground_on_github_page.html)
-- [Kotlinの公式リファレンスを日本語化してみた[後編] - Qiita](https://qiita.com/dogwood008/items/f4ceabd0b0d801fb3a9f)
-   - [リファレンス - Kotlin Programming Language](http://dogwood008.github.io/kotlin-web-site-ja/docs/reference/)
-   - [dogwood008/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/dogwood008/kotlin-web-site-ja)　かなり頑張ってあるがメンテはされてない感じ。残念。
-   - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
+- [Kotlinリファレンスの和訳](Kotlin%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%81%AE%E5%92%8C%E8%A8%B3)
 
 ## Compose for Desktop
 
