@@ -1,6 +1,7 @@
 - [Kotlinの公式リファレンスを日本語化してみた[後編] - Qiita](https://qiita.com/dogwood008/items/f4ceabd0b0d801fb3a9f)
    - [リファレンス - Kotlin Programming Language](http://dogwood008.github.io/kotlin-web-site-ja/docs/reference/)
-   - [dogwood008/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/dogwood008/kotlin-web-site-ja)　かなり頑張ってあるがメンテはされてない感じ。残念。
+   - [karino2/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/karino2/kotlin-web-site-ja)
+      - [dogwood008/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/dogwood008/kotlin-web-site-ja)　元のレポジトリ、もう移管済み。
    - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
 
 ## 2023-09-21 (木)
