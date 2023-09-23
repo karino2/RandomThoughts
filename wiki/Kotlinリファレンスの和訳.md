@@ -5,7 +5,9 @@
    - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
    - [Kotlinのリファレンスの和訳を引き継ぎました - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/21/kotlin_reference_japanse_translation.html)
 
-## ツアーの和訳終了 - 2023-09-23 (土)
+## 2023-09-23 (土)
+
+### ツアーの和訳終了 
 
 一通りツアーを和訳した。＞[Kotlinツアーへようこそ！ - Kotlin Programming Language](https://karino2.github.io/kotlin-web-site-ja/docs/kotlin-tour-welcome.html)
 
@@ -24,6 +26,13 @@ basic-types.mdの内容は、現在ではそれぞれの型ごとのmdファイ�
 大量に追記されているのでついでに和訳するのは厳しいので、ひとまずファイルに分けていくのを優先する。
 
 一通り終わった。
+
+### 基本的な構文、の最新原文への追随など終了
+
+[基本的な構文 - Kotlin Programming Language](https://karino2.github.io/kotlin-web-site-ja/docs/basic-syntax.html)
+
+まぁまぁ変わっていたのでそれなりに大変だった。1から訳すよりはだいぶ楽だが。
+やはり実行出来る方がいいよな。
 
 ## 2023-09-21 (木)
 
