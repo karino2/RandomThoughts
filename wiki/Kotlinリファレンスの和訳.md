@@ -5,6 +5,16 @@
    - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
    - [Kotlinのリファレンスの和訳を引き継ぎました - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/21/kotlin_reference_japanse_translation.html)
 
+## ツアーの和訳終了 - 2023-09-23 (土)
+
+一通りツアーを和訳した。＞[Kotlinツアーへようこそ！ - Kotlin Programming Language](https://karino2.github.io/kotlin-web-site-ja/docs/kotlin-tour-welcome.html)
+
+とりあえず[あおぞらAndroid教室](%E3%81%82%E3%81%8A%E3%81%9E%E3%82%89Android%E6%95%99%E5%AE%A4)でやってもらう分は出来たかな。
+ただリンク先が存在しなかったりする事も結構あるので、とりあえず既存の和訳を新しいファイル名などに対応させていく作業をしたい。
+
+とりあえずファイル構成を直すにあたり、ナビゲーションバーの階層を深く出来るようにするか。
+3階層までをハードコードで対応するかなぁ。
+
 ## 2023-09-21 (木)
 
 v1.9.10とURLの構成を揃えた。またツアーを足し始め。

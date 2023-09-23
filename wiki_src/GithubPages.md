@@ -9,7 +9,6 @@ github上にweb siteを持てる仕組み。
 
 - [Includes - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/includes/)
 - [Variables - Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/variables/)
-- [Control flow – Liquid template language](https://shopify.github.io/liquid/tags/control-flow/)
 
 ## dockerでのローカル環境
 
@@ -49,6 +48,14 @@ docker run --rm  --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000  jekyll/jekyl
 なお、`_config.yml`でbaseUrlを指定していると、それをlocalhostにつける必要がある。例えばTextTL_siteを指定している場合、
 
 `http://localhost:4000/TextTL_site` がrootになる。
+
+## Liquid
+
+- [Types – Liquid template language](https://shopify.github.io/liquid/basics/types/)
+
+辞書は無いとのこと。ワークアラウンド。
+
+[json - How to create or define a dictionary in liquid templates? - Stack Overflow](https://stackoverflow.com/questions/67691445/how-to-create-or-define-a-dictionary-in-liquid-templates)
 
 ## サイドバーでナビゲーション
 
