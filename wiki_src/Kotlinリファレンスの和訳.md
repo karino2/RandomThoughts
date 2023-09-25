@@ -5,6 +5,12 @@
    - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
    - [Kotlinのリファレンスの和訳を引き継ぎました - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/21/kotlin_reference_japanse_translation.html)
 
+## 2023-09-25 (月)
+
+継承の和訳を終えて、sealedクラスの和訳を最新版の原文とマージした（翻訳は一部まだ）。
+これで作業途中として変に混ざっているのは全部解決出来たかな。
+navbar的には一番上から継承までは和訳が終わっている状態となった（コーディング規約は除く）。
+
 ## 2023-09-24 (日)
 
 イディオムの和訳のアップデート終了。
