@@ -95,3 +95,10 @@ launchctl setenv NODE_PATH /usr/local/lib/node_modules
 ## 途中から見えないAVIの対処
 
 Free WMV AVI Converterを使っている。
+
+## Instrumentsのworking directoryの設定
+
+毎回わからなくなるのでメモする。
+
+XCode の Instrumentsのworking directoryの設定は、
+上のタスクバーの中のexeっぽいアイコンからEdit XXXを選んで、一番下のtext areaがそれ。
