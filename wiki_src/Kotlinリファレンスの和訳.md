@@ -5,6 +5,17 @@
    - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
    - [Kotlinのリファレンスの和訳を引き継ぎました - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/21/kotlin_reference_japanse_translation.html)
 
+## 2023-09-26 (火)
+
+以下の和訳を最新版に更新。
+
+- 可視性修飾
+- 拡張
+- データクラス
+
+これでクラスとオブジェクトの半分くらいは最新版に更新出来た。あと３日くらい作業すれば全部最新版には出来るかなぁ。
+そこそこ大変だが、出来ない作業量じゃないな。
+
 ## 2023-09-25 (月)
 
 継承の和訳を終えて、sealedクラスの和訳を最新版の原文とマージした（翻訳は一部まだ）。
