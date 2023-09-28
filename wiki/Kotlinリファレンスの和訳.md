@@ -5,6 +5,16 @@
    - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
    - [Kotlinのリファレンスの和訳を引き継ぎました - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/21/kotlin_reference_japanse_translation.html)
 
+## 2023-09-28 (木)
+
+ここ２日はジェネリクスの和訳を更新していた。
+追加されている原文がややこしいのが多く、また元の文も意味が間違っているのがあったりして直す部分も多く、
+しかもややこしいので難産だったが、なんとか終わった。
+
+invarianceとcovarianceとcontravarianceを指定するからvarianceなのに、
+不変、共変、反変、分散と訳してしまうと意味が分からなくなってしまうよなぁ、とか思いつつ定訳には従う事に。
+varianceは変動性、とか訳すべきだったんじゃないかなぁ。
+
 ## 2023-09-26 (火)
 
 以下の和訳を最新版に更新。
