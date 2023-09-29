@@ -14,6 +14,7 @@
 - delegated-properties.md
 
 の和訳を更新した。
+ついでに目についたtype-aliases.mdが短かったので和訳した。
 
 ## 2023-09-28 (木)
 
