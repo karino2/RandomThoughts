@@ -11,6 +11,7 @@
 
 - object-decralations.md
 - delegation.md
+- delegated-properties.md
 
 の和訳を更新した。
 
