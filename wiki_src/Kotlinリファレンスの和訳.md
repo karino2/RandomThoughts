@@ -5,6 +5,11 @@
    - [JetBrains/kotlin-web-site: The Kotlin programming language website](https://github.com/JetBrains/kotlin-web-site) 本家
    - [Kotlinのリファレンスの和訳を引き継ぎました - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/21/kotlin_reference_japanse_translation.html)
 
+## 2023-10-01 (日)
+
+既存の和訳のアップデートが全部終わった。結構たいへんだったが、やれば出来るものだな。
+今後はとりあえず教えるのに使うものから和訳していきたい。
+
 ## 2023-09-29 (金)
 
 仕事が行き詰まったので気分転換に和訳。
