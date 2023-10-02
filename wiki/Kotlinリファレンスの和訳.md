@@ -14,6 +14,14 @@ dogwood008氏がやったものをkarino2が引き継いで和訳している
 - [Kotlinの公式リファレンスを日本語化してみた[後編] - Qiita](https://qiita.com/dogwood008/items/f4ceabd0b0d801fb3a9f)
    - [dogwood008/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/dogwood008/kotlin-web-site-ja)　元のレポジトリ、もう移管済み。
 
+## 2023-10-02 (月)
+
+以下を和訳
+
+- null-safety.md
+- equality.md
+- destructuring-declarations.md
+
 ## 2023-10-01 (日)
 
 既存の和訳のアップデートが全部終わった。結構たいへんだったが、やれば出来るものだな。
