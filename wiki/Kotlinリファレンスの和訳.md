@@ -16,11 +16,13 @@ dogwood008氏がやったものをkarino2が引き継いで和訳している
 
 ## 2023-10-02 (月)
 
-以下を和訳
+コレクションは先が長いので、それ以外のヤツで教室で使いそうなヤツを先に和訳する事にする。
+という事で以下を和訳
 
 - null-safety.md
 - equality.md
 - destructuring-declarations.md
+- fun-interfaces.md
 
 ## 2023-10-01 (日)
 
