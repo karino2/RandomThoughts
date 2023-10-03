@@ -19,6 +19,8 @@ dogwood008氏がやったものをkarino2が引き継いで和訳している
 以下を和訳
 
 - constructing-collections.md
+- iterators.md
+- ranges.md
 
 ## 2023-10-02 (月)
 
