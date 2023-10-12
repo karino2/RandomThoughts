@@ -24,3 +24,7 @@ settings.jsonに以下を書く。
 ### msbuildでC++をパラレルビルドするのはUseMultiToolTask
 
 似たよなオプションがいろいろあるが、C++でninjaの-jみたいな事をしたい場合は`/p:UseMultiToolTask=true`
+
+## 書籍： Concurrent Programming on Windows
+
+[[【書籍】ConcurrentProgrammingOnWindows]]
