@@ -14,6 +14,10 @@ dogwood008氏がやったものをkarino2が引き継いで和訳している
 - [Kotlinの公式リファレンスを日本語化してみた[後編] - Qiita](https://qiita.com/dogwood008/items/f4ceabd0b0d801fb3a9f)
    - [dogwood008/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/dogwood008/kotlin-web-site-ja)　元のレポジトリ、もう移管済み。
 
+## 2023-10-19 (木)
+
+collection-elements.mdを和訳。かったるさのピーク。
+
 ## 2023-10-15 (日)
 
 collection-parts.mdを２日かけて和訳する。この辺は無理せずダラダラ進める方針で。Collectionもそろそろ終盤戦に入るかな。
