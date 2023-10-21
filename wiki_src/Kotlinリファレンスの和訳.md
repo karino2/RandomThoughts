@@ -18,6 +18,7 @@ dogwood008氏がやったものをkarino2が引き継いで和訳している
 
 - collection-ordering.md
 - collection-aggragete.md
+- collection-write.md
 
 を和訳。
 
