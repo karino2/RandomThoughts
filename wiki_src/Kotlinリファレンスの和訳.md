@@ -16,7 +16,10 @@ dogwood008氏がやったものをkarino2が引き継いで和訳している
 
 ## 2023-10-21 (土)
 
-collection-ordering.mdを和訳。
+- collection-ordering.md
+- collection-aggragete.md
+
+を和訳。
 
 ## 2023-10-19 (木)
 
