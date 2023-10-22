@@ -26,6 +26,7 @@ karino2が友人に[[Android]]を教えている会の名称。正式名は「ka
 
 これはロジカルにもわかりやすいし数学的にも面白いので、このやり方でやるのがいいかもしれない、と思った。
 
+メモ： [opensudoku/OpenSudoku at master · romario333/opensudoku](https://github.com/romario333/opensudoku/tree/master/OpenSudoku) オープンソースの数独実装。カスタムビューだった。
 
 ### 2023-10-19 (木) 中規模の何かを書いてもらう課題がある方がいいか？
 
