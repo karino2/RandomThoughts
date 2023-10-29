@@ -1,6 +1,8 @@
 みんな大好きC++。
 
 - [最近読んだC++の本2冊の感想 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/03/31/cpp_book.html)
+- [inkooboo/thread-pool-cpp: High performance C++11 thread pool](https://github.com/inkooboo/thread-pool-cpp) cppのスレッドプール実装、小さくて早いとか。そのうち読んでみたい。
+- [[【書籍】CppConcurrencyInAction]]
 
 ## mapのキーと違う型でfindしたい時
 
