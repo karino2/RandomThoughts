@@ -89,3 +89,16 @@ latchとbarrierはよそでは良く見るヤツで、こういうのは欲し�
 
 現状は使い物にならないという結論は変わらないが、こっちの動向はウォッチしておく価値があるかもしれん。
 flexible_barrierみたいなのがもうちょっと整備されれば使える日も来るかもしれない。
+
+### 5章  memory orderはかなり詳しくて良い
+
+例え話はかえって分かりにくくて説明の内容は気に食わないが、
+それでも必要な例がいろいろあるのは素晴らしい。
+自分はだいぶ理解が足りていなかったという事を理解した。
+
+orderingは[1024cores - Ordering](https://www.1024cores.net/home/lock-free-algorithms/so-what-is-a-memory-model-and-how-to-cook-it/ordering)と合わせて見るともうちょっとわかりやすい。
+
+だいぶ理解が深まり、release-acquireの組も使える程度の理解にはなった。
+ただこのatomic operationがボトルネックになった事はこれまで無いし、今後もなさそうなのでseq cstでいいかな、という気はする。
+
+この本の印象がだいぶ良くなった。こういう解説はやはりC++の本で読まないとね。
