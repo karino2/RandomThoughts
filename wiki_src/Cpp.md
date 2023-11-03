@@ -49,3 +49,34 @@ Working draftはフリーで手に入るとのことなのでこれでいいか�
 結局14みたいなup to dateでは無い仕様は、最終的にはコンパイラのサポート具合の問題なので仕様としてどうなっているかはそこまで厳密に知っても仕方ないしなぁ。
 
 ちなみに関数コールは5.2.2か。
+
+- [Useful resources - cppreference.com](https://en.cppreference.com/w/cpp/links) working draftのリンク集
+
+## static storage durationの初期化とマルチスレッド
+
+グローバル変数などはstatic storage durationという事になる。
+static storage durationのコンストラクタは一つのスレッドだけで行われて、それを触るどのスレッドからも終わった状態でアクセスされる事が保証されているっぽい事が[[【書籍】CppConcurrencyInAction]]の3.3.1の最後に書いてある。
+
+C++ 14のworking draftで関連しそうな記述だと3.6.2の所の記述がそれっぽい。
+
+> 4. It is implementation-defined whether the dynamic initialization of a non-local variable with static storage
+duration is done before the first statement of main. If the initialization is deferred to some point in time
+after the first statement of main, it shall occur before the first odr-use (3.2) of any function or variable
+defined in the same translation unit as the variable to be initialized.3
+
+odr-useの前に実行される、というのは保証されていそうに見える。
+odr-useは3.2に書いてあるとの事で定義を見ると、実行されうるコード片に変数が現れる事っぽいな。
+
+一つのスレッドだけで実行されてうんぬんはここからは良く分からないが、
+
+C++ 17のworking draftだともうちょっと細かい記述に変わっているな。6.6.3の5か。
+
+> 5. It is implementation-defined whether the dynamic initialization of a non-local inline variable with static storage duration is sequenced before the first statement of main or is deferred. If it is deferred, it strongly happens before any non-initialization odr-use of that variable. It is implementation-defined in which threads and at which points in the program such deferred dynamic initialization occurs.
+
+[basic.start](https://timsong-cpp.github.io/cppwp/n4659/basic.start#dynamic-5)
+
+strongly happensというのがそういう意味なんだろう。
+
+[c++ - What does "strongly happens before" mean? - Stack Overflow](https://stackoverflow.com/questions/58986135/what-does-strongly-happens-before-mean)
+
+いわゆる普通のhappens beforeの関係を満たすものか。
