@@ -4,6 +4,7 @@
 - [inkooboo/thread-pool-cpp: High performance C++11 thread pool](https://github.com/inkooboo/thread-pool-cpp) cppのスレッドプール実装、小さくて早いとか。そのうち読んでみたい。
 - [[【書籍】CppConcurrencyInAction]]
 - [[【書籍】ConcurrentProgrammingOnWindows]]も一部C++
+- [[1024cores]]
 
 ## mapのキーと違う型でfindしたい時
 
