@@ -14,6 +14,12 @@ dogwood008氏がやったものをkarino2が引き継いで和訳している
 - [Kotlinの公式リファレンスを日本語化してみた[後編] - Qiita](https://qiita.com/dogwood008/items/f4ceabd0b0d801fb3a9f)
    - [dogwood008/kotlin-web-site-ja: The Kotlin Programming Language Website (original: http://kotlinlang.org/)](https://github.com/dogwood008/kotlin-web-site-ja)　元のレポジトリ、もう移管済み。
 
+## 2023-11-10 (金)
+
+scope-functions.mdの和訳を、最後のtakeIfとtakeUnless以外を終える。最後はまぁあんま使わないしいいかなぁ、みたいな。そのうち気が向いたらやる。
+
+あとはコレクションの最後3つを和訳したらこのリファレンスの和訳も終わりかな。
+
 ## 2023-11-08 (水)
 
 ちまちまと進めていたreflection.mdの和訳を終える。
