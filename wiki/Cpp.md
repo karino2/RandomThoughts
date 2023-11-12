@@ -5,6 +5,7 @@
 - [【書籍】CppConcurrencyInAction](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91CppConcurrencyInAction)
 - [【書籍】ConcurrentProgrammingOnWindows](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91ConcurrentProgrammingOnWindows)も一部C++
 - [1024cores](1024cores)
+- [並列プログラム](%E4%B8%A6%E5%88%97%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0)
 
 ## mapのキーと違う型でfindしたい時
 
