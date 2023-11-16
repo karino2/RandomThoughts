@@ -48,7 +48,7 @@ GRD guard2 = Locker(mutex2);
 
 言語と環境は何にするかなぁ。[[Electron]]でいい気もするが、F#とphotinoでもいい気もする。うーん。
 
-nodeの[file-matcher - npm](https://www.npmjs.com/package/file-matcher)で1と2は良い気がする。という事でとりあえずElectronで作る。
+nodeの[file-matcher - npm](https://www.npmjs.com/package/file-matcher)で1と2は良い気がする。という事でとりあえずElectronで作る。＞行が取れなかったので結局globで自分で書く事に…
 
 ## もっと手抜き出来ないか？
 
