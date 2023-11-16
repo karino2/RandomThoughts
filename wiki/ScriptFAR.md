@@ -1,14 +1,16 @@
+- [そのうちやりたい事](%E3%81%9D%E3%81%AE%E3%81%86%E3%81%A1%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E4%BA%8B)
+- [Electron](Electron)
+
+ScriptableなFind and Replace。Scriptableは長いのでScriptで。
+
 awkのような事を対話的にやりたい。
 以前はemacs lispでやっていたのだが、最近はemacsとか使ってないので似たような事をやりたい気がする。
 
-名前が思いつかないのでとりあえずそのまんまのページ名で。
-
-暫定的にscript-far（Find and Replace）というフォルダ名で進める。なんかしっくり来てないが。
-
 ## コンセプト
 
-用途を限定する事で楽に書ける、結果を確認しながらapplyするかを順番に決めていける。
-検索と置換のようなインターフェースでもっと複雑な事が出来るようなものが欲しい。
+VSCodeのFind and Replaceのようなインターフェースで、もうちょっとインテリジェントな事をやりたい事がよくあるので、そういう環境を作りたい。
+
+用途を限定する事で楽に書ける、結果を確認しながらapplyするかを順番に決めていける、みたいなのが欲しい。
 
 ## ユースケース
 
@@ -44,6 +46,6 @@ GRD guard2 = Locker(mutex2);
 4. 編集対象領域に対してアクションを複数書く
 5. アクションを適用した結果のプレビューが出る、その後はy, y, yという感じでどれに適用してどれに適用しないかが選べる
 
-言語と環境は何にするかなぁ。Electronでいい気もするが、F#とphotinoでもいい気もする。うーん。
+言語と環境は何にするかなぁ。[Electron](Electron)でいい気もするが、F#とphotinoでもいい気もする。うーん。
 
-nodeの[file-matcher - npm](https://www.npmjs.com/package/file-matcher)で1と2は良い気がする。
+nodeの[file-matcher - npm](https://www.npmjs.com/package/file-matcher)で1と2は良い気がする。という事でとりあえずElectronで作る。
