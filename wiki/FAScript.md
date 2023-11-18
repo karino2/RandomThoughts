@@ -1,3 +1,4 @@
+- [karino2/fa-script: Find and ShellScript app by Electron.](https://github.com/karino2/fa-script)
 - [そのうちやりたい事](%E3%81%9D%E3%81%AE%E3%81%86%E3%81%A1%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E4%BA%8B)
 - [Electron](Electron)
 
@@ -40,6 +41,10 @@ GRD guard2 = Locker(mutex2);
 3. ifdefの行とendifの行を消す
 
 というような事を簡単に書いて、それをapplyしていくかどうかをプレビュー付きで出来るようにしたい。
+
+----
+
+以下は作っていた時のメモです。
 
 ## たたき台
 
