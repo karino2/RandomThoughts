@@ -12,6 +12,14 @@
 
 [Amazon.co.jp: HP ノートパソコン Pavilion 15-eh 2023年モデル 15.6インチ](https://www.amazon.co.jp/dp/B0C3CC5DB8?ref=emc_p_m_5_i_atc&th=1)
 
+ポチった。
+
+- ディスプレイ 15.6インチ
+- メモリ 16GB
+- SSD 512GB
+- Ryzen5 7530U
+- 91280円
+
 
 ## 仕事用WindowsノートPCが欲しい （2022-02-13）
 
