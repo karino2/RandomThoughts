@@ -8,6 +8,10 @@ Windows上の環境設定のメモなど。そのうちまとめてブログに�
 - chocolateyをインストール ... [Chocolatey Software - Installing Chocolatey](https://chocolatey.org/install)
 - choco install cmake
 - choco install qt5-default
+- choco install qtcreator
+- choco install vscode
+
+qt5-defaultはMINGWなのでVSの拡張は使えない、と言われてqtcreatorをインストールすることに。
 
 ## VSCode関連
 
