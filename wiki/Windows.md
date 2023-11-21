@@ -1,4 +1,13 @@
+- [NuGet](NuGet)
+- [DirectCompute](DirectCompute)
+
 Windows上の環境設定のメモなど。そのうちまとめてブログにしたい。
+
+## 最初のセットアップ
+
+- chocolateyをインストール ... [Chocolatey Software - Installing Chocolatey](https://chocolatey.org/install)
+- choco install cmake
+- choco install qt5-default
 
 ## VSCode関連
 

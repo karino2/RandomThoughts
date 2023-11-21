@@ -1,4 +1,6 @@
-[NuGet Gallery](https://www.nuget.org/)
+- [NuGet Gallery](https://www.nuget.org/)
+
+[[Windows]]のパッケージ管理ツール。
 
 ### NuGetパッケージを作って登録する
 
