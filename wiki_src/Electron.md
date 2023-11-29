@@ -1,13 +1,17 @@
-ElectronじゃないけどDeskGapもここで。
-
 - [electron-forge: WSLでElectron開発](https://www.electronforge.io/guides/developing-with-wsl)
 - [Electron: クイックスタート](https://www.electronjs.org/docs/tutorial/quick-start)
    - [Debugging in VSCode - Electron](https://www.electronjs.org/docs/latest/tutorial/debugging-vscode)
 - [[TeFWiki]]
 - [[ReactNative]]
 
+## Electron alternative
 
-## Deskgapで、パッケージングの方法
+Electronじゃないけどいちいちページ作るほどでも無いのでここで。
+
+- [[photino]]
+- [WebUI](https://webui.me/docs/2.4.0/#/)
+
+### Deskgapで、パッケージングの方法
 
 [https://github.com/patr0nus/DeskGap/issues/5](https://github.com/patr0nus/DeskGap/issues/5)
 
