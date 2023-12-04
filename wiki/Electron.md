@@ -6,10 +6,8 @@
 
 ## Electron alternative
 
-Electronじゃないけどいちいちページ作るほどでも無いのでここで。
-
 - [photino](photino)
-- [WebUI](https://webui.me/docs/2.4.0/#/)
+- [WebUI](WebUI)
 
 ### Deskgapで、パッケージングの方法
 
