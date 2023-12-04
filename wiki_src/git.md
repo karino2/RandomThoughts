@@ -13,3 +13,9 @@ $ git update-index --assume-unchanged .vscode/c_cpp_properties.json
 ```
 $ git commit --allow-empty -m "CIトラブルのため空コミット"
 ```
+
+### ブランチマネージメント
+
+とりあえずリンクを貼っておく場所。
+
+- [Traunkベース: Introduction](https://trunkbaseddevelopment.com/)
