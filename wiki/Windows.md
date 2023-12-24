@@ -38,6 +38,14 @@ settings.jsonに以下を書く。
 
 似たよなオプションがいろいろあるが、C++でninjaの-jみたいな事をしたい場合は`/p:UseMultiToolTask=true`
 
+## PowerShellのこまごまとしたこと
+
+```
+PS> notepad $PROFILE
+PS> echo $env:APPDATA
+```
+
+
 ## 書籍： Concurrent Programming on Windows
 
 [【書籍】ConcurrentProgrammingOnWindows](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91ConcurrentProgrammingOnWindows)
