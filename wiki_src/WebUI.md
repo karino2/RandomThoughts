@@ -76,3 +76,25 @@ main.html
 - micromark、いいかも。[GitHub - micromark/micromark-extension-gfm: micromark extension to support GFM (GitHub Flavored Markdown)](https://github.com/micromark/micromark-extension-gfm)
    - コードハイライトはクライアントサイドでやれとの事 [Getting code fence language via custom plugin · micromark · Discussion #159 · GitHub](https://github.com/orgs/micromark/discussions/159)
         - starry-nightへのリンクが紹介されているがこれでよいかも。 [GitHub - wooorm/starry-night: Syntax highlighting, like GitHub](https://github.com/wooorm/starry-night#example-using-starry-night-on-the-client)
+
+### micromark
+
+公式READMEにあるように
+
+```
+import {micromark} from 'https://esm.sh/micromark@3'
+import {gfm, gfmHtml} from 'https://esm.sh/micromark-extension-gfm@3'
+```
+
+としたら、Extensionの型がmicromark-util-typesが1.0と2.0が違っていて合わない、と言われる。
+
+仕方ないのでgfmを2.0.3にしたところ、今度は
+
+```
+error: Uncaught ReferenceError: document is not defined
+    at https://esm.sh/v135/parse-entities@3.1.0/denonext/decode-entity.js:2:7
+```
+
+と言われる。
+
+結局gfmを3にして型のエラーを無視して実行したら動いた…
