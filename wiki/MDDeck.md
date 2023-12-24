@@ -18,6 +18,15 @@ mdでGitHubのissueみたいに足していけるのが欲しい。
 
 [てきすとTL](%E3%81%A6%E3%81%8D%E3%81%99%E3%81%A8TL)と同じ感じだがmdなところが違うだけ。
 
+## 現状
+
+2023-12-24現在。
+
+Windowsはコンパイルしたexeはnode_module下に必要なファイルがないとか言われて動かない（ただし初回ディレクトリ選ぶところだけdeno runで実行すれば、あとはexeで作業は出来る）。
+Macはなんかディレクトリ選ぶところも動いている。
+
+編集はまだサポートしてないが、新しくセルを追加していくのは出来ている。
+
 ## 開発メモ
 
 - [GitHub - denoland/deno-gfm: Server-side GitHub Flavored Markdown rendering for Deno](https://github.com/denoland/deno-gfm) task listサポートができないか？

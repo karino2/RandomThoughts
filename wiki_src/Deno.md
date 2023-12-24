@@ -37,7 +37,9 @@ const openDir = async() => {
 }
 ```
 
-コンパイルしたexeでは、node_moduleがうんたらとか言われて動かないな…（deno runでは動く）
+Windowsのコンパイルしたexeでは、node_moduleがうんたらとか言われて動かないな…（deno runでは動く）
+
+Macはコンパイルしても普通に動くな。なんかnpm周りがバグってるっぽい。
 
 - これが動けば良さそうだが、こちらはメンテされてなさそうか（ちょっと試したら動かなかった）
  [GitHub - Srinivasa314/tinyfiledialogs-deno: A library for displaying various kinds of dialogs. It is a wrapper of tinyfiledialogs-rs](https://github.com/Srinivasa314/tinyfiledialogs-deno) 
