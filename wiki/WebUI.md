@@ -77,6 +77,7 @@ main.html
    - コードハイライトはクライアントサイドでやれとの事 [Getting code fence language via custom plugin · micromark · Discussion #159 · GitHub](https://github.com/orgs/micromark/discussions/159)
         - starry-nightへのリンクが紹介されているがこれでよいかも。 [GitHub - wooorm/starry-night: Syntax highlighting, like GitHub](https://github.com/wooorm/starry-night#example-using-starry-night-on-the-client)
 - [GitHub - manorit2001/node-file-dialog: Opens file dialog gui in nodejs server side](https://github.com/manorit2001/node-file-dialog) Windowsだとこれで動きそうだが、Macでは無理か？
+   - [GitHub - Srinivasa314/tinyfiledialogs-deno: A library for displaying various kinds of dialogs. It is a wrapper of tinyfiledialogs-rs](https://github.com/Srinivasa314/tinyfiledialogs-deno) こちらはメンテされてなさそうか（ちょっと試したら動かなかった）
 
 ### micromark
 
