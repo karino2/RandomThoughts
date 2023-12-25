@@ -54,4 +54,8 @@ error: Uncaught ReferenceError: document is not defined
 
 と言われる。
 
-結局gfmを3にして型のエラーを無視して実行したら動いた…
+結局gfmを3にして型のエラーを無視して実行したら動いた…＞コンパイルで怒られたのでgfmを2に戻した。doucmentどうこうは言われなくなった（なんで？）
+
+## Android版メモ
+
+- [Qawaz/compose-code-editor: Display & Edit code with syntax highlighting in jetpack compose](https://github.com/Qawaz/compose-code-editor)
