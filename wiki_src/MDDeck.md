@@ -59,3 +59,25 @@ error: Uncaught ReferenceError: document is not defined
 ## Android版メモ
 
 - [Qawaz/compose-code-editor: Display & Edit code with syntax highlighting in jetpack compose](https://github.com/Qawaz/compose-code-editor)
+
+ドキュメントには2.0.3がAndroid用っぽく見えるが、v3.1.1にもAndroidっぽい対応が入っている。しかもKotlinとかはv2.0.3には入ってないのでこれを使ってみる。
+
+settings.gradle.ktsに以下のjitpackの行を追加
+
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven(url = "https://jitpack.io")
+    }
+}
+```
+
+build.gradleに以下を追加
+
+```kotlin
+    implementation("com.github.Qawaz.compose-code-editor:codeeditor-android:v3.1.1")
+```
+
