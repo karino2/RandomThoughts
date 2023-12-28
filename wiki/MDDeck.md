@@ -12,7 +12,7 @@ mdでGitHubのissueみたいに足していけるのが欲しい。
 
 似たようなアプリ三つも作るのはどうなんだとも思うが、まぁいい。
 
-[WebUI](WebUI)と[Deno](Deno)で作る。
+[WebUI](WebUI)と[Deno](Deno)で作る。＞結局Electronとnodeで作り直した（1時間くらいで移せた）
 
 ## 仕様
 
