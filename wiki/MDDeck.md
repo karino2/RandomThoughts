@@ -1,6 +1,7 @@
 [自作アプリ](%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%97%E3%83%AA)
 
-- [karino2/MDDeck_WebUI: MDDeck, desktop version (WebUI and Deno).](https://github.com/karino2/MDDeck_WebUI)
+- [karino2/MDDeck_Electron: MDDeck, Electron version.](https://github.com/karino2/MDDeck_Electron)
+- [karino2/MDDeck: MDDeck for android.](https://github.com/karino2/MDDeck/tree/main)
 
 ## あらすじ
 
@@ -10,9 +11,7 @@ mdでGitHubのissueみたいに足していけるのが欲しい。
 [てきすとでっき](%E3%81%A6%E3%81%8D%E3%81%99%E3%81%A8%E3%81%A7%E3%81%A3%E3%81%8D)とすごく似ているが、コンフリクトせず、1セル1ファイルのmd。
 [てきすとTL](%E3%81%A6%E3%81%8D%E3%81%99%E3%81%A8TL)のmd版という感じ。
 
-似たようなアプリ三つも作るのはどうなんだとも思うが、まぁいい。
-
-[WebUI](WebUI)と[Deno](Deno)で作る。＞結局Electronとnodeで作り直した（1時間くらいで移せた）
+似たようなアプリ三つも作るのはどうなんだとも思うが、まぁいい。PC版は[Electron](Electron)で作った。
 
 ## 仕様
 
@@ -31,32 +30,6 @@ Android版は日付の表示とか細々とした事は残っているが日常�
 
 ## 開発メモ
 
-- [GitHub - denoland/deno-gfm: Server-side GitHub Flavored Markdown rendering for Deno](https://github.com/denoland/deno-gfm) task listサポートができないか？
-- micromark、いいかも。[GitHub - micromark/micromark-extension-gfm: micromark extension to support GFM (GitHub Flavored Markdown)](https://github.com/micromark/micromark-extension-gfm)
-   - コードハイライトはクライアントサイドでやれとの事 [Getting code fence language via custom plugin · micromark · Discussion #159 · GitHub](https://github.com/orgs/micromark/discussions/159)
-        - starry-nightへのリンクが紹介されているがこれでよいかも。 [GitHub - wooorm/starry-night: Syntax highlighting, like GitHub](https://github.com/wooorm/starry-night#example-using-starry-night-on-the-client)
-
-### micromark
-
-公式READMEにあるように
-
-```
-import {micromark} from 'https://esm.sh/micromark@3'
-import {gfm, gfmHtml} from 'https://esm.sh/micromark-extension-gfm@3'
-```
-
-としたら、Extensionの型がmicromark-util-typesが1.0と2.0が違っていて合わない、と言われる。
-
-仕方ないのでgfmを2.0.3にしたところ、今度は
-
-```
-error: Uncaught ReferenceError: document is not defined
-    at https://esm.sh/v135/parse-entities@3.1.0/denonext/decode-entity.js:2:7
-```
-
-と言われる。
-
-結局gfmを3にして型のエラーを無視して実行したら動いた…＞コンパイルで怒られたのでgfmを2に戻した。doucmentどうこうは言われなくなった（なんで？）
 
 ## Android版メモ
 
@@ -84,3 +57,34 @@ build.gradleに以下を追加
     implementation("com.github.Qawaz.compose-code-editor:codeeditor-android:v3.1.1")
 ```
 
+## 古くなった内容
+
+最初は[Deno](Deno)と[WebUI](WebUI)を使っていたがElectronに乗り換えたDenoとWebUIの頃のメモを以下に残しておく。
+
+- [karino2/MDDeck_WebUI: MDDeck, desktop version (WebUI and Deno).](https://github.com/karino2/MDDeck_WebUI) 
+  - [GitHub - denoland/deno-gfm: Server-side GitHub Flavored Markdown rendering for Deno](https://github.com/denoland/deno-gfm) task listサポートができないか？
+  - micromark、いいかも。[GitHub - micromark/micromark-extension-gfm: micromark extension to support GFM (GitHub Flavored Markdown)](https://github.com/micromark/micromark-extension-gfm)
+      - コードハイライトはクライアントサイドでやれとの事 [Getting code fence language via custom plugin · micromark · Discussion #159 · GitHub](https://github.com/orgs/micromark/discussions/159)
+      - starry-nightへのリンクが紹介されているがこれでよいかも。 [GitHub - wooorm/starry-night: Syntax highlighting, like GitHub](https://github.com/wooorm/starry-night#example-using-starry-night-on-the-client)
+
+### micromark
+
+公式READMEにあるように
+
+```
+import {micromark} from 'https://esm.sh/micromark@3'
+import {gfm, gfmHtml} from 'https://esm.sh/micromark-extension-gfm@3'
+```
+
+としたら、Extensionの型がmicromark-util-typesが1.0と2.0が違っていて合わない、と言われる。
+
+仕方ないのでgfmを2.0.3にしたところ、今度は
+
+```
+error: Uncaught ReferenceError: document is not defined
+    at https://esm.sh/v135/parse-entities@3.1.0/denonext/decode-entity.js:2:7
+```
+
+と言われる。
+
+結局gfmを3にして型のエラーを無視して実行したら動いた…＞コンパイルで怒られたのでgfmを2に戻した。doucmentどうこうは言われなくなった（なんで？）
