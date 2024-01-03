@@ -82,3 +82,11 @@ strongly happensというのがそういう意味なんだろう。
 [c++ - What does "strongly happens before" mean? - Stack Overflow](https://stackoverflow.com/questions/58986135/what-does-strongly-happens-before-mean)
 
 いわゆる普通のhappens beforeの関係を満たすものか。
+
+## C++のコンパイルタイムリフレクション
+
+[stephenberry/glaze: Extremely fast, in memory, JSON and interface library for modern C++](https://github.com/stephenberry/glaze)
+
+どうやってるのか全然わからへん。
+
+この辺でなにかやってそうだが。 [glaze/include/glaze/reflection/to_tuple.hpp at dcb422aa19dab8678fa61c978159183bd84f6d63 · stephenberry/glaze](https://github.com/stephenberry/glaze/blob/dcb422aa19dab8678fa61c978159183bd84f6d63/include/glaze/reflection/to_tuple.hpp#L4)
