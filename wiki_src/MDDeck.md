@@ -2,6 +2,7 @@
 
 - [karino2/MDDeck_Electron: MDDeck, Electron version.](https://github.com/karino2/MDDeck_Electron)
 - [karino2/MDDeck: MDDeck for android.](https://github.com/karino2/MDDeck/tree/main)
+- [MDDeck - Google Play のアプリ](https://play.google.com/store/apps/details?id=io.github.karino2.mddeck)
 
 ## あらすじ
 
