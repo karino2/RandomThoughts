@@ -1,8 +1,9 @@
 [自作アプリ](%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%97%E3%83%AA)
 
-- [karino2/MDDeck_Electron: MDDeck, Electron version.](https://github.com/karino2/MDDeck_Electron)
-- [karino2/MDDeck: MDDeck for android.](https://github.com/karino2/MDDeck/tree/main)
 - [MDDeck - Google Play のアプリ](https://play.google.com/store/apps/details?id=io.github.karino2.mddeck)
+   - [karino2/MDDeck: MDDeck for android.](https://github.com/karino2/MDDeck/tree/main)
+- [karino2/MDDeck_Electron: MDDeck, Electron version.](https://github.com/karino2/MDDeck_Electron) PC版
+- [MDDeckというアプリを作ってリリースしました！ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2024/01/06/mddeck_release.html)
 
 ## あらすじ
 
