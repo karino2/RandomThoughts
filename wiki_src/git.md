@@ -28,3 +28,7 @@ gitの一部に入っている模様。tcl/tk（wish）。
 
 ちょっといじりたいと思ったが、なかなか気力がわかないな。
 誰か[[WebUI]]で同じの作って。
+
+### gitのクライアントいろいろ
+
+- [Introduction · Tig - Text-mode interface for Git](https://jonas.github.io/tig/) ncursesのUI。生きていけそうではあるがショートカットとか覚えるのがだるい
