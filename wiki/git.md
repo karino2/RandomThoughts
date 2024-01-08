@@ -19,3 +19,12 @@ $ git commit --allow-empty -m "CIトラブルのため空コミット"
 とりあえずリンクを貼っておく場所。
 
 - [Traunkベース: Introduction](https://trunkbaseddevelopment.com/)
+
+### gitkのソース
+
+gitの一部に入っている模様。tcl/tk（wish）。
+
+- [git/gitk-git at master · git/git](https://github.com/git/git/tree/master/gitk-git)
+
+ちょっといじりたいと思ったが、なかなか気力がわかないな。
+誰か[WebUI](WebUI)で同じの作って。
