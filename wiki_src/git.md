@@ -32,3 +32,4 @@ gitの一部に入っている模様。tcl/tk（wish）。
 ### gitのクライアントいろいろ
 
 - [Introduction · Tig - Text-mode interface for Git](https://jonas.github.io/tig/) ncursesのUI。生きていけそうではあるがショートカットとか覚えるのがだるい
+- [PowerShell Gallery - Git/Git.ps1 1.1.4.11](https://www.powershellgallery.com/packages/Tecman.Tfs.Tools/1.1.4.11/Content/Git%5CGit.ps1) powershellでちょっとした事、checkoutとかはこれを参考に自分のを作るのがいいかも。
