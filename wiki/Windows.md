@@ -45,6 +45,7 @@ PS> notepad $PROFILE
 PS> echo $env:APPDATA
 ```
 
+久しぶりに使おうとして忘れているもの。 Out-GridView。
 
 ## 書籍： Concurrent Programming on Windows
 
