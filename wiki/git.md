@@ -1,5 +1,9 @@
 みんな大好きgit。
 
+## 外部リンク
+
+- [git rebaseでコミットをまとめたり分割する #Git - Qiita](https://qiita.com/kzmasa/items/b430bc528d117a7a4493) rebase -i のedit
+
 ## レポジトリにあるファイルをローカルで変更するがgit statusとかには出さない
 
 update-indexでassume-unchangedを指定する。
@@ -41,3 +45,19 @@ git本家のソースツリーに含まれている、tcl/tkで書かれたgit-g
 - 全ファイルをステージング
 - ファイルのrevert（Hunkのrevertはある）
 - リモートのチェックアウト
+
+## 入門
+
+公式で配ってる[Git - Book](https://git-scm.com/book/en/v2) Pro Gitという本がとても良く書けているが、
+本格的に勉強する用の本なので、入門者に薦めるのはちょっと気がひける。
+
+入門者にとりあえずこれ見て、というには何がいいだろう？と思い、ググってよさそうだったものを貼っておく。
+
+- [【超入門】初心者のためのGitとGitHubの使い方 - RAKUS Developers Blog - ラクス エンジニアブログ](https://tech-blog.rakus.co.jp/entry/20200529/git) なかなかちょうど良いかもしれない
+- [Git でのバージョン コントロールの概要 - Training - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/paths/intro-to-vc-git/) 演習形式で進められるのがよさそう。
+    - [Git 入門 - Training - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/intro-to-git/) ローカルの基本で終わってしまうが、その範囲なら良い
+    - [Git でブランチとマージを使用してコードを編集する - Training - Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/branch-merge-git/) なかなか良い
+    - [Git および GitHub の Microsoft Learn ドキュメントの基礎 - Contributor guide - Microsoft Learn](https://learn.microsoft.com/ja-jp/contribute/content/git-github-fundamentals) リンク集的になかなか良い
+- [Hello World - GitHub Docs](https://docs.github.com/ja/get-started/quickstart/hello-world) GitHub中心だがGitHub側の入門には良いかも。
+
+Microsoft Learnはなかなか良い気がする。

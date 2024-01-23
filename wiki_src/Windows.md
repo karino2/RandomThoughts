@@ -13,6 +13,10 @@ Windows上の環境設定のメモなど。そのうちまとめてブログに�
 
 qt5-defaultはMINGWなのでVSの拡張は使えない、と言われてqtcreatorをインストールすることに。
 
+## WSLのパス
+
+`\\wsl.localhost\Ubuntu\home\karino2\bin` などのようにwsl.localhostで触れる。Windows側は/mnt/c以下
+
 ## VSCode関連
 
 ### PowerShell for VS 2022をVSCodeのintegrated terminalにする
@@ -43,6 +47,7 @@ settings.jsonに以下を書く。
 ```
 PS> notepad $PROFILE
 PS> echo $env:APPDATA
+PS> $env:PATH
 ```
 
 久しぶりに使おうとして忘れているもの。 Out-GridView。
