@@ -9,3 +9,14 @@ Qt関連のリンクとかを貼っておく場所。
 プロジェクト＞ビルドと実行の下のキット＞実行 の中にDebugger settingsというのがあって、ここのQML debuggerを無効にすると無くせる。
 
 ビルドの方ばかり見ていたが実行の方だった。
+
+### Windowsでのパラレルビルド
+
+おおむね以下が正しいが、jom.exeが無い。 [parallel multi-cpu multi-core build - Qt Forum](https://forum.qt.io/topic/70247/parallel-multi-cpu-multi-core-build/5)
+
+jom.exeを手動で入れる。
+
+[jom.exe is missing - Qt Forum](https://forum.qt.io/topic/121491/jom-exe-is-missing/2)
+
+そしてプロジェクトからビルドと実行の使ってるキットの実行で、nmake.exeの代わりに実行するコマンド、
+でさきほどダウンロードしたjom.exeを指定したらできた。
