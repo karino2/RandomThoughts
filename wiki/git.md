@@ -18,6 +18,14 @@ $ git update-index --assume-unchanged .vscode/c_cpp_properties.json
 $ git commit --allow-empty -m "CIトラブルのため空コミット"
 ```
 
+## HEADのファイルのハッシュ値を取得
+
+git rev-parseというコマンドを使う。
+
+```
+$ git rev-parse HEAD:some_dir/some_file.txt
+```
+
 ## ブランチマネージメント
 
 とりあえずリンクを貼っておく場所。
