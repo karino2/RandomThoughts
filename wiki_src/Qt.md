@@ -20,3 +20,10 @@ jom.exeを手動で入れる。
 
 そしてプロジェクトからビルドと実行の使ってるキットの実行で、nmake.exeの代わりに実行するコマンド、
 でさきほどダウンロードしたjom.exeを指定したらできた。
+
+### QTextCharFormatのcopy assignment
+
+[QTextCharFormat Class - Qt GUI 6.6.1](https://doc.qt.io/qt-6/qtextcharformat.html)　を見ていたら、copy assignmentがないように見えるが、
+ホバーでツールチップをみると定義されているように見える。
+このケースではデフォルトのcopy assignmentが定義されて、baseのcopy assignmentが呼ばれるっぽいか？
+ドキュメントからわからないってどうなの？と思ってしまうが。
