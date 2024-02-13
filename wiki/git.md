@@ -1,8 +1,13 @@
 みんな大好きgit。
 
+- [ゆっくり中級git](%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E4%B8%AD%E7%B4%9Agit) 最近自分が作ってる中級を目指す[ゆっくり実況](%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E5%AE%9F%E6%B3%81)
+
 ## 外部リンク
 
-- [git rebaseでコミットをまとめたり分割する #Git - Qiita](https://qiita.com/kzmasa/items/b430bc528d117a7a4493) rebase -i のedit
+- [Pro Git - Book](https://git-scm.com/book/en/v2) 公式で配ってるPro Gitという本。日本語は少し古いので英語版を読んでる。epubはたまに記号が壊れているがだいたい読める。だいたい使うのに必要な事がすべて書いてあるので最初から上級者を目指すならこの本読むだけで良い。
+- [Git's database internals III: file history queries - The GitHub Blog](https://github.blog/2022-08-31-gits-database-internals-iii-file-history-queries/) このIIIに限らず、このシリーズはPro Gitに無い部分の解説があって良い
+- [Git - index-format Documentation](https://git-scm.com/docs/index-format) indexの内部構造。
+- [git rebaseでコミットをまとめたり分割する #Git - Qiita](https://qiita.com/kzmasa/items/b430bc528d117a7a4493) rebase -i。この辺を中級gitの解説では出来るようにしたい。
 
 ## レポジトリにあるファイルをローカルで変更するがgit statusとかには出さない
 
