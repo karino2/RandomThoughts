@@ -17,4 +17,8 @@ the Mainstream.pdf](https://www.nvidia.com/content/GTC/documents/1015_GTC09.pdf)
 - [High-level shader language (HLSL) - Win32 apps - Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl)
    - [abs - Win32 apps - Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-abs) プリミティブの一例
 
+## Computing Shaderのタイムアウト
 
+Dispatchのエラーを見る場所が特に無いが、最後に結果をMapする所でGetDeviceRemovedReasonで結果がもらえる事がある。
+
+[c++ - DirectX 11 Compute Shader error DXGI_ERROR_DEVICE_HUNG - Game Development Stack Exchange](https://gamedev.stackexchange.com/questions/165356/directx-11-compute-shader-error-dxgi-error-device-hung)
