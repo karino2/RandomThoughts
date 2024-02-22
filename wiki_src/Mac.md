@@ -91,6 +91,7 @@ launchctl setenv NODE_PATH /usr/local/lib/node_modules
 - 右側のペインのタブ切り替えで切り替えて目的のものを探す
 - イベント関連は左側にツリー出して左クリックから変な丸を上にドラッグアンドドロップして相手を指定
 - ポトペタ対象はCmd+Shift+Lで（メニューのViewにShow Libraryでも出る）
+- Viewを作りたいのにインターフェースビルダーでiPhoneの絵みたいなのになる＞右側のタブでSimulated MetrixをFreeformにする
 
 ## 途中から見えないAVIの対処
 
