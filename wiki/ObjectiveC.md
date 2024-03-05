@@ -54,3 +54,11 @@ pdfの5.1.6のファクトリメソッドは何が言いたいのか分からな
 
 読んでみると思っていたほどリファレンスではなく普通の言語入門書みたいな体裁だが、それなりに各項目が詳しいので持っておいて損は無い気はする。
 レビューの印象とは結構違う本だな。
+
+## メンバ変数はインターフェースにだけ定義出来る
+
+implementationに定義できてコンパイルエラーにならんな？と思っていたら、これはC言語のstatic的な扱いになる模様。
+
+[objective c - Class variable defined at @implementation rather than @interface? - Stack Overflow](https://stackoverflow.com/questions/2571518/class-variable-defined-at-implementation-rather-than-interface)
+
+うーむ、これは本に書いておいてほしいなぁ。
