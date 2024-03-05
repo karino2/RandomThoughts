@@ -1,4 +1,4 @@
-[Mac](Mac)より。
+[Mac](Mac)より。[Swift](Swift)
 
 ## リンク等
 
