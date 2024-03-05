@@ -55,10 +55,14 @@ pdfの5.1.6のファクトリメソッドは何が言いたいのか分からな
 読んでみると思っていたほどリファレンスではなく普通の言語入門書みたいな体裁だが、それなりに各項目が詳しいので持っておいて損は無い気はする。
 レビューの印象とは結構違う本だな。
 
-## メンバ変数はインターフェースにだけ定義出来る
+## メンバ変数はimplementationだけに定義出来る
 
-implementationに定義できてコンパイルエラーにならんな？と思っていたら、これはC言語のstatic的な扱いになる模様。
+古いバージョンではimplementationに定義したメンバ変数は実はグローバル扱いだったらしいが、
 
 [objective c - Class variable defined at @implementation rather than @interface? - Stack Overflow](https://stackoverflow.com/questions/2571518/class-variable-defined-at-implementation-rather-than-interface)
 
-うーむ、これは本に書いておいてほしいなぁ。
+詳解 Objective-C 2.0 第3版の4章に、「実装部でのインスタンス変数定義」という項目でXCode 4.2以降では出来ると書いてあるし、新しいドキュメントでも
+
+[Encapsulating Data](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/EncapsulatingData/EncapsulatingData.html#//apple_ref/doc/uid/TP40011210-CH5-SW6)
+
+で、「You Can Define Instance Variables without Properties」の所に定義出来ると書いてある。
