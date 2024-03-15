@@ -103,3 +103,7 @@ Free WMV AVI Converterを使っている。
 
 XCode の Instrumentsのworking directoryの設定は、
 上のタスクバーの中のexeっぽいアイコンからEdit XXXを選んで、一番下のtext areaがそれ。
+
+## Xcodeのバージョンセレクタ
+
+[XcodesOrg/xcodes: The best command-line tool to install and switch between multiple versions of Xcode.](https://github.com/XcodesOrg/xcodes)
