@@ -3,6 +3,12 @@
 - [The Swift Programming Language - Documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/) we版。
 - ebook [Swift - Apple](https://www.apple.com/swift/)でApple Book Storeから無料でダウンロード出来る。
 
+### 2024-03-20 (水) ふたたび読み始め
+
+仕事で割とSwiftを使う機会が増えてきたので、ふたたび復習。
+ツアーを一通り読んで、あとは使いそうな所だけつまみ読みかな。
+
+
 ### 2023-05-01 (月) 読み始め 
 
 結構前にSwift実践プログラミングという本を読んだが、あの頃から言語自体もだいぶ変わってそうなのと、
