@@ -15,6 +15,87 @@ Swfitがkotlinと違う所としては、文字列はコレクションをvarに
 それはどうなのか？という気もするが、いちいちmutableとimmutableなファクトリなどを用意するのもそれはそれで面倒はあるから、
 これはこれか。
 
+### protocolとリファレンス
+
+protocolの変数にインスタンスを入れるとreference countが上がるが、structの時はそうした事が起こらないという理解だが、
+protocolを使ったコードというのはアセンブリ的にはどうなるんだろうか？
+
+例えばdelegateとかでweakにする、みたいな話がある時、structでそれにconformなものを入れてもいいんだろうか？
+
+試してみたらそもそもweakは作れなかった。
+
+```swift
+protocol Test {
+  var someStr: String { get set }
+}
+
+// この行はコンパイルエラー。やはりAnyObjectが無いとダメらしい
+weak var hoge2: Test? = nil
+```
+
+weakが無い時はclassもstructも入れられて、classはリファレンスカウントが上がるがstructはコピー、というのは違和感があるよなぁ。
+でも確かにコピーはされてそうに見える。
+
+```swift
+protocol Test {
+  var someStr: String { get set }
+}
+
+class TestClass : Test {
+  var someStr = "hoge"
+}
+
+struct TestStruct : Test {
+  var someStr = "ika"
+}
+
+var st = TestStruct()
+st.someStr = "fuga"
+
+var hoge : Test? = nil
+
+hoge = st
+hoge!.someStr = "hoge"
+
+
+print("st: \(st.someStr), hg: \(hoge!.someStr)")
+// > st: fuga, hg: hoge 
+
+var cl = TestClass()
+hoge = cl
+cl.someStr = "fuga2"
+
+print("cl: \(cl.someStr), hg: \(hoge!.someStr)")
+//> cl: fuga2, hg: fuga2
+```
+
+うーむ、やはり同じ変数に入れてもstructはコピーに、classはリファレンスになっているな。
+この変数の記憶領域というのはどうなっているんだろう？という感じがするが。boxing的な事が起こるがコピーされる、みたいな良く分からない挙動をするんだろうなぁ。
+
+簡単にboxingしてるか試してみよう。
+
+```swift
+var st = TestStruct()
+st.someStr = "fuga"
+
+var hoge : Test? = nil
+
+hoge = st
+hoge!.someStr = "hoge"
+
+
+print("st: \(st.someStr), hg: \(hoge!.someStr)")
+//> さっきと同じ、st: fuga, hg: hoge
+
+var hoge2: Test = hoge!
+
+hoge2.someStr = "hoge2"
+print("st: \(st.someStr), hg: \(hoge!.someStr), hg2: \(hoge2.someStr)")
+// > st: fuga, hg: hoge, hg2: hoge2
+```
+
+hoge2もちゃんとコピーされるなぁ。単純にboxingされてリファレンスとして扱われる訳では無さそう。
+
 
 ### 2023-05-01 (月) 読み始め 
 
