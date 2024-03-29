@@ -1,10 +1,13 @@
+- [[書籍]]
+- [[CG]]
+
 Principles of Digital Image Processingという、3冊に分かれている画像処理の本。主に二次元。
 
 Springerの50%オフクーポンが来てたので手頃そうなのを探していて見つける。
 
 ## Fundamental Techniques
 
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00DZ0OC4C&linkId=7947dc04d97861595a7db1889cbe25be"></iframe>
+[amazon: Principles of Digital Image Processing: Fundamental Techniques](https://amzn.to/3vnKxTl)
 
 三部作の第一作目だが、これだけでも割と悪くない。この本は主にフィルタとかの話。
 
@@ -40,6 +43,7 @@ Javaのコードがあるおかげで解説が曖昧な部分が残っていな�
 
 ## Core Algorithm
 
+[amazon: Principles of Digital Image Processing: Core Algorithm](https://amzn.to/3TCXErF)
 <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00DZ12N9C&linkId=5474d4aab9246303d12fbe6259c369f4"></iframe>
 
 当初は買う予定も無かったが50%オフの期間が終わりそうになってきて買ってきたくなったので買う事に。

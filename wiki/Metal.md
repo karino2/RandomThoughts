@@ -1,4 +1,4 @@
-Mac/iOSのMetal関連。
+[Mac](Mac)/iOSのMetal関連。[CG](CG)
 
 - [Metal Overview - Apple Developer](https://developer.apple.com/metal/) いろんな所へのリンクがある。
 - [Metal-Shading-Language-Specification.pdf](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)
