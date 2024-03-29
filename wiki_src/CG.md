@@ -4,6 +4,7 @@
 - [Are there any books on shaders? : r/GraphicsProgramming](https://www.reddit.com/r/GraphicsProgramming/comments/olbkpi/are_there_any_books_on_shaders/)
 - [ShaderToy Tutorials - YouTube](https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5)
 - [Shadertoy BETA](https://www.shadertoy.com/)
+- [XDC 2022 - Implementing the graphics pipeline on compute - Erik Faye-Lund - YouTube](https://www.youtube.com/watch?v=DREz3n7gZPw)
 
 ## GPUでのPath描画
 
