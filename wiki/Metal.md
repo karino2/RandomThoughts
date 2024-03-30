@@ -51,7 +51,7 @@ HalideGeneratorHelpers.cmakeという中に見つかった。これはCMakeLists
 
 ## 基礎から学ぶ Metal
 
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=en_US&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B08TGBY9N5&linkId=fdf4abed1ce6b33b389cc66565903f21"></iframe>
+[amazon: 基礎から学ぶ Metal〜MetalによるGPUプログラミング入門](https://amzn.to/3VX3xTB)
 
 サンプルでも十分な気はしたが、本の方がBOOXで読みやすいのでポチってみた。
 
