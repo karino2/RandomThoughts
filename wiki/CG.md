@@ -12,6 +12,14 @@ misreading chatで紹介していたエピソードが興味深かったので�
 
 [103: GPU-Accelerated Path Rendering – Misreading Chat](https://misreading.chat/2022/11/01/103-gpu-accelerated-path-rendering/) 
 
+### GPUを使って曲線を描く (2005 MSR)
+
+[Resolution Independent Curve Rendering using Programmable Graphics Hardware - Microsoft Research](https://www.microsoft.com/en-us/research/publication/resolution-independent-curve-rendering-using-programmable-graphics-hardware/)を読んでみる。
+
+パラメトリックに記述された曲線をx, yの表現に直す事でGPUで描くというもの。ある種の曲線は放物線を変換したものとして表現出来る事を使う事で、GPUで高速に描けるとか。
+
+- conic section 円錐曲線（円錐の断面）
+
 ## GPU関連
 
 - [【書籍】OpenGL4ShadingLanguageCook](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91OpenGL4ShadingLanguageCook)
