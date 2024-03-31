@@ -20,6 +20,16 @@ misreading chatで紹介していたエピソードが興味深かったので�
 
 - conic section 円錐曲線（円錐の断面）
 
+3章でquadraticなケースを、4章でqubicなケースをやっていて、3の冒頭がquadraticの場合の本体に思う。基本的なアイデアとしては任意のx, yをu, vスペースに射影して式1の正負で塗り分ける、という事だと思う。
+
+shader toyの以下 [Bezier quadratic (Loop/Blinn)](https://www.shadertoy.com/view/flG3Rt) を見ると、barycentricというの以外はだいたいここに書いてあるのと同じ事をしているように見える。
+三角形の重心座標、というのがあるのかな。
+ググってみて以下に当たる。
+
+[三角形の重心座標とその応用 - 高校数学の美しい物語](https://manabitimes.jp/math/805)
+
+ふむふむ。
+
 ## GPU関連
 
 - [【書籍】OpenGL4ShadingLanguageCook](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91OpenGL4ShadingLanguageCook)
