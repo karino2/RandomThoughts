@@ -5,6 +5,7 @@
 - [kotlin-playground - Self-contained component to embed in websites for running Kotlin code](https://jetbrains.github.io/kotlin-playground/) web上で実行する奴
    - [Github Pages上でkotlin playgroundを使ってみる - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/07/30/kotlin_playground_on_github_page.html)
 - [Kotlinリファレンスの和訳](Kotlin%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E3%81%AE%E5%92%8C%E8%A8%B3)
+- [A Comprehensive Kotlin Learning Guide for All Levels - The JetBrains Academy Blog](https://blog.jetbrains.com/education/2024/04/04/kotlin-learning-guide/)
 
 ## Compose for Desktop
 
