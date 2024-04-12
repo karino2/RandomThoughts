@@ -1,8 +1,9 @@
 - [[CG]]
 - [[書籍]]
+- [PacktPublishing/OpenGL-4-Shading-Language-Cookbook-Third-Edition: OpenGL 4 Shading Language Cookbook - Third Edition, published by Packt](https://github.com/PacktPublishing/OpenGL-4-Shading-Language-Cookbook-Third-Edition/tree/master) サンプルコード
 
 [amazon: OpenGL 4 Shading Language Cookbook: Build high-quality, real-time 3D graphics with OpenGL 4.6, GLSL 4.6 and C++17, 3rd Edition](https://amzn.to/4cF8Qg0)
-
+  
 ## 購入動機など 2024-03-30 (土)
 
 OpenCLやMetalのコンピューティングシェーダーなどは結構触ってきたので割と慣れているのだが、
@@ -28,3 +29,19 @@ diffuseオンリーのシェーディングまで読んだ。CGの本として�
 
 この辺の話は昔Real Time Renderingsの勉強会で結構真面目にやったのを読んでいて思い出す。
 当時は使う予定も無く勉強していたが、意外とこうやって何十年もあとに使うことになったりして世の中分からないものだな。
+
+昔Real Time Renderingsを勉強していた頃は、ハードウェアのことを良く分かっていなかったので、数学的な事だけを真面目に理解していた気がする。
+それはプログラマとしては全く意味の無い事ではあるんだが、
+ハードウェアとかこの辺のプログラムに詳しくなった今改めて読むと、数学的な事をやけに真面目に理解した過去があると、内容がえらく簡単になるのでスラスラ読んでいけるな。
+
+### サンプルのソースの確認
+
+トーラスのデータはどうやって指定しているのかを読み直したが、特に解説は無い。
+サンプル、[OpenGL-4-Shading-Language-Cookbook-Third-Edition/chapter03/scenediffuse.h at master · PacktPublishing/OpenGL-4-Shading-Language-Cookbook-Third-Edition](https://github.com/PacktPublishing/OpenGL-4-Shading-Language-Cookbook-Third-Edition/blob/master/chapter03/scenediffuse.h)を読むと、Torusとかいうクラスが使われていて、`torus.render()`とかいうメソッドが呼ばれている。
+
+TorusはTriangleMeshのサブクラスで、renderはこちらに定義されている。[OpenGL-4-Shading-Language-Cookbook-Third-Edition/ingredients/trianglemesh.cpp at master · PacktPublishing/OpenGL-4-Shading-Language-Cookbook-Third-Edition](https://github.com/PacktPublishing/OpenGL-4-Shading-Language-Cookbook-Third-Edition/blob/master/ingredients/trianglemesh.cpp)
+これは序盤に解説のあったVAOを設定してglDrawElementsを呼んでいるな。glDrawElementsはUsing element arraysの所に一応説明があるが、詳細はOpenGLのドキュメントを読んでくれ、との事。
+この辺の解説は微妙だなぁ。
+
+サンプルを通して全体を説明する、というよりは、
+サンプルのカタログって側面が強い気がする。
