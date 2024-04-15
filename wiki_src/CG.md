@@ -54,6 +54,54 @@ b0を0, 0に変換して、b0b1を(1/2, 0)に、b0b2を(1, 1)に変換すれば�
 
 なるほど、これは賢い！uvとの変換を自分でするんじゃなくて、補間結果が勝手に変換された事になるんだな。
 
+## GPUを使って三角形を描く
+
+[Buffer pass bloom](https://www.shadertoy.com/view/lsBfRc)　を見ていたら、三角形を以下で描いていた。
+
+```
+float getTriangle(vec2 p, vec2 rp){
+    p *= vec2(iResolution.x, iResolution.y);
+    p /= max(iResolution.x, iResolution.y);
+    
+    p -= rp;
+
+    vec3 color = vec3(0.0);
+    float d = 0.0;
+
+    // Remap the space to -1. to 1.
+    p = p *2.-1.;
+
+    // Number of sides of your shape
+    int N = 3;
+
+    // Angle and radius from the current pixel
+    float a = atan(p.x,p.y)+PI;
+    float r = TWO_PI/float(N);
+
+    // Shaping function that modulate the distance
+    d = cos(floor(.5+a/r)*r-a)*length(p);
+
+    return 1.0-step(.12,d);
+}
+```
+
+最後のcosの中が良く分からない。イメージとしては三角形の各辺に垂線をおろして、それが一定の距離以下、という事で描いているんじゃなかろうか、と思うのだが。
+軽く封筒の裏計算をしてみた所、シータの3つの範囲で場合分けが必要に思えるが、そうした事をしていない。floorでそういう小細工をしているんじゃないか。
+
+場合分けは、0から2piで見ると、以下の３つで必要になる。
+
+- 0〜pi/2と11pi/6〜2pi ...  - pi/6
+- pi/2〜7pi/6 ... -5pi/6
+- 7pi/6〜11pi/6 ... -3pi/2
+
+右側は引く数字。2pi/3ずつ増えていく。なるほど。シータに2piを掛けたものを3で割って、一周を３つの区画に分けているのか。
+ちゃんと計算はしてないがなりそうだな。
+
+
+
+
+
+
 ## GPU関連
 
 - [[【書籍】OpenGL4ShadingLanguageCook]]
