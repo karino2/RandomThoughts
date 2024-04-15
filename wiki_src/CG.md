@@ -97,10 +97,24 @@ float getTriangle(vec2 p, vec2 rp){
 右側は引く数字。2pi/3ずつ増えていく。なるほど。シータに2piを掛けたものを3で割って、一周を３つの区画に分けているのか。
 ちゃんと計算はしてないがなりそうだな。
 
+### GPUで正方形
 
+上記三角形と同じ所に以下があった。
 
+```
+float getSquare(vec2 p, vec2 rp){
+    p *= vec2(iResolution.x, iResolution.y);
+    p /= max(iResolution.x, iResolution.y);
+        
+    p += rp;
+    vec2 bl = step(abs(p * 2.0 - 1.0),vec2(0.2));
+    float rt = bl.x * bl.y;
+    
+	return rt;
+}
+```
 
-
+こちらは難しくは無いが、へーって感じするよね。xとyの中心からの距離を出して、step関数を使って掛け算する。
 
 ## GPU関連
 
