@@ -27,6 +27,8 @@ Javaのコードがあるおかげで解説が曖昧な部分が残っていな�
 そしてそれぞれのカラースペースにLinear Filterなどを適用した場合の違いや問題点などは三冊目。
 結局全部必要という気はした。
 
+ガンマ補正はこの巻にある（良く参照するのでメモ）
+
 ### 6章 Edges and Contours
 
 仕事でgradを使ったアルゴリズムで問題を解決できないか？と思う事があり、類似の問題という事でエッジ検出を読み直す。
@@ -44,7 +46,6 @@ Javaのコードがあるおかげで解説が曖昧な部分が残っていな�
 ## Core Algorithm
 
 [amazon: Principles of Digital Image Processing: Core Algorithm](https://amzn.to/3TCXErF)
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00DZ12N9C&linkId=5474d4aab9246303d12fbe6259c369f4"></iframe>
 
 当初は買う予定も無かったが50%オフの期間が終わりそうになってきて買ってきたくなったので買う事に。
 
