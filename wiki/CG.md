@@ -1,10 +1,12 @@
 - [技術的なメモ](%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2)
 - [Metal](Metal)
-- [【書籍】PrinciplesOfDigitalImageProcessing](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91PrinciplesOfDigitalImageProcessing)
 - [Are there any books on shaders? : r/GraphicsProgramming](https://www.reddit.com/r/GraphicsProgramming/comments/olbkpi/are_there_any_books_on_shaders/)
 - [ShaderToy Tutorials - YouTube](https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5)
 - [Shadertoy BETA](https://www.shadertoy.com/)
 - [XDC 2022 - Implementing the graphics pipeline on compute - Erik Faye-Lund - YouTube](https://www.youtube.com/watch?v=DREz3n7gZPw)
+- [【書籍】PrinciplesOfDigitalImageProcessing](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91PrinciplesOfDigitalImageProcessing)
+- [【書籍】OpenGL4ShadingLanguageCook](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91OpenGL4ShadingLanguageCook)
+- [【書籍】HLSLシェーダーの魔導書](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91HLSL%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%80%E3%83%BC%E3%81%AE%E9%AD%94%E5%B0%8E%E6%9B%B8)
 
 ## GPUでのPath描画
 
@@ -115,7 +117,3 @@ float getSquare(vec2 p, vec2 rp){
 ```
 
 こちらは難しくは無いが、へーって感じするよね。xとyの中心からの距離を出して、step関数を使って掛け算する。
-
-## GPU関連
-
-- [【書籍】OpenGL4ShadingLanguageCook](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91OpenGL4ShadingLanguageCook)

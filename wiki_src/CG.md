@@ -1,10 +1,12 @@
 - [[技術的なメモ]]
 - [[Metal]]
-- [[【書籍】PrinciplesOfDigitalImageProcessing]]
 - [Are there any books on shaders? : r/GraphicsProgramming](https://www.reddit.com/r/GraphicsProgramming/comments/olbkpi/are_there_any_books_on_shaders/)
 - [ShaderToy Tutorials - YouTube](https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5)
 - [Shadertoy BETA](https://www.shadertoy.com/)
 - [XDC 2022 - Implementing the graphics pipeline on compute - Erik Faye-Lund - YouTube](https://www.youtube.com/watch?v=DREz3n7gZPw)
+- [[【書籍】PrinciplesOfDigitalImageProcessing]]
+- [[【書籍】OpenGL4ShadingLanguageCook]]
+- [[【書籍】HLSLシェーダーの魔導書]]
 
 ## GPUでのPath描画
 
@@ -115,7 +117,3 @@ float getSquare(vec2 p, vec2 rp){
 ```
 
 こちらは難しくは無いが、へーって感じするよね。xとyの中心からの距離を出して、step関数を使って掛け算する。
-
-## GPU関連
-
-- [[【書籍】OpenGL4ShadingLanguageCook]]
