@@ -26,6 +26,10 @@ karino2が友人に[[Android]]を教えている会の名称。正式名は「ka
 
 [はろーCustomView - karino2のあおぞらAndroid開発教室](https://karino2.github.io/kotlin-lesson/hello_customview.html)
 
+興が乗ったのでinvalidateまで解説。
+
+[invalidateで四角を動かそう - karino2のあおぞらAndroid開発教室](https://karino2.github.io/kotlin-lesson/invalidate_animation.html)
+
 ## 最後まで終えてみての雑感 2023-12-01 (金)
 
 予定では次回で終わりの予定だったが次回は皆の予定が合わずに今日で終わりとなった。全体の振り返りなど。
