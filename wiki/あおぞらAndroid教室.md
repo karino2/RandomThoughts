@@ -17,7 +17,13 @@ karino2が友人に[Android](Android)を教えている会の名称。正式名�
 
 [Canvasでいろいろ描画 - karino2のあおぞらAndroid開発教室](https://karino2.github.io/kotlin-lesson/canvas.html)
 
-とりあえず2Dゲームを作るのに最低限必要なカスタムビューの話題は全部入ったかな。
+とりあえず2Dゲームを作るのに最低限必要なカスタムビューの話題は全部入ったかな。ひとまずここまででカスタムビュー編は完成でいいかな。
+
+ここからはこういうのを作るのがいいと思うが、説明をざっと読んだ感じ、まだクラスとか作った事も無いkotlinしか知らない人に読ませるにはちょっと難しいな。
+
+[javascriptで作るシューティングゲーム的な何か(1) #JavaScript - Qiita](https://qiita.com/doxas/items/9debec7e1f0c19bc8daa)
+
+Android版を作れば需要はあると思うが、自分でやる気は起きないな。
 
 ## カスタムビュー編を開始 2024-04-27 (土)
 
