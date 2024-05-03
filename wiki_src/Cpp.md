@@ -7,6 +7,7 @@
 - [[【書籍】ConcurrentProgrammingOnWindows]]も一部C++
 - [[1024cores]]
 - [[並列プログラム]]
+- [GitHub - rigtorp/awesome-modern-cpp: A collection of resources on modern C++](https://github.com/rigtorp/awesome-modern-cpp?tab=readme-ov-file) C++の本の一覧
 
 ## mapのキーと違う型でfindしたい時
 
