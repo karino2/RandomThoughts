@@ -117,3 +117,11 @@ float getSquare(vec2 p, vec2 rp){
 ```
 
 こちらは難しくは無いが、へーって感じするよね。xとyの中心からの距離を出して、step関数を使って掛け算する。
+
+## OKlabカラースペース
+
+[【書籍】PrinciplesOfDigitalImageProcessing](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91PrinciplesOfDigitalImageProcessing)にはCIELabやCIELuvが解説されていたが、それの改善版としてOKlabというのがあるらしい。lは小文字か。
+
+[A perceptual color space for image processing](https://bottosson.github.io/posts/oklab/)
+
+計算は割と簡単だな。xyzへの変換も3x3の行列になっているので、
