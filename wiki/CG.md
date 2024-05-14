@@ -1,5 +1,6 @@
 - [技術的なメモ](%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2)
 - [Metal](Metal)
+- [ガンマ補正](%E3%82%AC%E3%83%B3%E3%83%9E%E8%A3%9C%E6%AD%A3)
 - [Are there any books on shaders? : r/GraphicsProgramming](https://www.reddit.com/r/GraphicsProgramming/comments/olbkpi/are_there_any_books_on_shaders/)
 - [ShaderToy Tutorials - YouTube](https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5)
 - [Shadertoy BETA](https://www.shadertoy.com/)
@@ -124,4 +125,4 @@ float getSquare(vec2 p, vec2 rp){
 
 [A perceptual color space for image processing](https://bottosson.github.io/posts/oklab/)
 
-計算は割と簡単だな。xyzへの変換も3x3の行列になっているので、
+計算は割と簡単だな。xyzへの変換も3x3の行列になっているので、掛けた結果の行列をあらかじめ求めておけば単なる行列適用と簡単な指数乗の組み合わせで求められる。いいね。
