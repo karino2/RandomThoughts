@@ -126,3 +126,12 @@ float getSquare(vec2 p, vec2 rp){
 [A perceptual color space for image processing](https://bottosson.github.io/posts/oklab/)
 
 計算は割と簡単だな。xyzへの変換も3x3の行列になっているので、掛けた結果の行列をあらかじめ求めておけば単なる行列適用と簡単な指数乗の組み合わせで求められる。いいね。
+
+## xyzとsRGBの変換
+
+まず[ガンマ補正](%E3%82%AC%E3%83%B3%E3%83%9E%E8%A3%9C%E6%AD%A3)してから計算する。
+
+- [【書籍】PrinciplesOfDigitalImageProcessing](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91PrinciplesOfDigitalImageProcessing) の2冊目（Core Algorithm）の6.3.1 (p107)から詳しい解説がある。
+- [Color space conversion (2)](https://fujiwaratko.sakura.ne.jp/infosci/colorspace/colorspace2_e.html)
+- [sRGB - Wikipedia](https://en.wikipedia.org/wiki/SRGB)
+- [Bruce Lindbloom: RGB to XYZ](http://www.brucelindbloom.com/index.html?Eqn_RGB_to_XYZ.html)
