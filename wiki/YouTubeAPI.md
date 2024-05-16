@@ -17,3 +17,23 @@ YouTubeのサービス関連のAPIをまとめるページ。
 - Cuepoint: パートナー限定API。広告を挟める。
 
 動画は良く出来ている。ただRTMPのURLを得た後なにをしているかをもう少し見たいな。
+
+### サンプルコードなど
+
+BroadcastとStreamを作ってBindする例は以下か。
+
+[api-samples/java/src/main/java/com/google/api/services/samples/youtube/cmdline/live/CreateBroadcast.java at master · youtube/api-samples](https://github.com/youtube/api-samples/blob/master/java/src/main/java/com/google/api/services/samples/youtube/cmdline/live/CreateBroadcast.java)
+
+Androidの例は無さそう？マジで？
+
+## StackOverflow
+
+[How to Get Help  -  YouTube Live Streaming API  -  Google for Developers](https://developers.google.com/youtube/v3/live/support)から[Newest 'youtube-livestreaming-api' Questions - Stack Overflow](https://stackoverflow.com/questions/tagged/youtube-livestreaming-api)にリンクされていて、これが一番まともな情報が得られそう。マジかよ。
+
+- [sockets - Android - Stream video from camera into another Android Device - Stack Overflow](https://stackoverflow.com/questions/47687861/android-stream-video-from-camera-into-another-android-device/70400557#70400557)
+
+デバイス同士なので少し違うけれど、Androidから配信しようとするコードが半分含まれている。読んでみたが画像を送る部分が無いような？
+
+- [javascript - After binding my stream to my broadcast using the Youtube live streaming API, my video stream does not appear on Youtube - Stack Overflow](https://stackoverflow.com/questions/69533231/after-binding-my-stream-to-my-broadcast-using-the-youtube-live-streaming-api-my) jsの例
+
+リンクされているコードはこれ [toshvelaga/livestream: Livestream to Youtube, Twitch, and Facebook at the same time using Javascript 📹](https://github.com/toshvelaga/livestream) で、さらに[toshvelaga/twitch-streamer: Stream to twitch from the browser using FFmpeg and React (simplified version of ohmystream for demonstration purposes)](https://github.com/toshvelaga/twitch-streamer)へリンクされていて、それは元は [kubi-ozisik/youtube-streamer: YouTube Streamer with React via FFMPEG Codec](https://github.com/kubi-ozisik/youtube-streamer/tree/master)だったらしい。twitchの奴の方がメンテされてそう。
