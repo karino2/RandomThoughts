@@ -37,3 +37,15 @@ Androidの例は無さそう？マジで？
 - [javascript - After binding my stream to my broadcast using the Youtube live streaming API, my video stream does not appear on Youtube - Stack Overflow](https://stackoverflow.com/questions/69533231/after-binding-my-stream-to-my-broadcast-using-the-youtube-live-streaming-api-my) jsの例
 
 リンクされているコードはこれ [toshvelaga/livestream: Livestream to Youtube, Twitch, and Facebook at the same time using Javascript 📹](https://github.com/toshvelaga/livestream) で、さらに[toshvelaga/twitch-streamer: Stream to twitch from the browser using FFmpeg and React (simplified version of ohmystream for demonstration purposes)](https://github.com/toshvelaga/twitch-streamer)へリンクされていて、それは元は [kubi-ozisik/youtube-streamer: YouTube Streamer with React via FFMPEG Codec](https://github.com/kubi-ozisik/youtube-streamer/tree/master)だったらしい。twitchの奴の方がメンテされてそう。
+
+## GitHubを検索してみる
+
+YoutubeのAPIでGitHubを検索してみる。とりあえずKotlinから。
+
+[SKrotkih/YTLiveVideo-Android: Android (Kotlin) app for YouTube live broadcast streaming with using YouTube Live Streaming API v3](https://github.com/SKrotkih/YTLiveVideo-Android/tree/master)
+
+これは結構良さそう。
+
+[simplestreaming/core/data/src/main/java/com/yurihondo/simplestreaming/data/repository/LiveStreamingRepositoryImpl.kt at a2fc3fabdee482f19ff68856eddc4d72301218af · yurihondo/simplestreaming](https://github.com/yurihondo/simplestreaming/blob/a2fc3fabdee482f19ff68856eddc4d72301218af/core/data/src/main/java/com/yurihondo/simplestreaming/data/repository/LiveStreamingRepositoryImpl.kt)
+
+ここのコードも結構ちゃんと動きそう。
