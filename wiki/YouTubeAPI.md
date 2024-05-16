@@ -15,3 +15,5 @@ YouTubeのサービス関連のAPIをまとめるページ。
     - RTMP URL
     - Stream Name
 - Cuepoint: パートナー限定API。広告を挟める。
+
+動画は良く出来ている。ただRTMPのURLを得た後なにをしているかをもう少し見たいな。
