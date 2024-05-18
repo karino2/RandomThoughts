@@ -8,3 +8,9 @@ Twitch、ゲーム実況などで割と使われている印象で、以前シ�
 [Twitch Game Developer Playbook - Twitch Developers](https://dev.twitch.tv/gamedevelopers/) ゲーム開発者向けの情報が充実してそうな雰囲気だな。読んでみよう。
 読んでみた。マーケティング用パワポという感じで開発者が求めているhow toとかでは無かった。
 
+### 配信周り
+
+- [Video Broadcast - Twitch Developers](https://dev.twitch.tv/docs/video-broadcast/)
+   - [Broadcasting Guidelines](https://help.twitch.tv/s/article/broadcasting-guidelines?language=en_US)
+
+iOS側は[[Mac]]にまとめるか。

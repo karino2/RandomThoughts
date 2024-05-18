@@ -107,3 +107,32 @@ XCode の Instrumentsのworking directoryの設定は、
 ## Xcodeのバージョンセレクタ
 
 [XcodesOrg/xcodes: The best command-line tool to install and switch between multiple versions of Xcode.](https://github.com/XcodesOrg/xcodes)
+
+## iOSのビデオ配信周り
+
+[[YouTubeAPI]]や[[Twitch]]で配信するようなケースで、iOS側はどうなっているかを調べるメモ。
+
+ [HTTP Live Streaming - Apple Developer Documentation](https://developer.apple.com/documentation/http-live-streaming) あたりから見るのか？
+
+### Fragmented MPEG-4とAVAssetWriter
+
+[Author fragmented MPEG-4 content with AVAssetWriter - WWDC20 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2020/10011)
+
+この一つ手前のエンコーダーのあたりを知りたいのだが、とりあえずの取っ掛かりとして。
+このサンプルコードからたどって見つけた。 [Writing Fragmented MPEG-4 Files for HTTP Live Streaming - Apple Developer Documentation](https://developer.apple.com/documentation/avfoundation/media_reading_and_writing/writing_fragmented_mpeg-4_files_for_http_live_streaming?language=objc)
+
+この動画はやりたい事とは違いそうだが、情報量が多いのでなかなか良い。
+
+Working with Media in AV Foundation (WWDC11)がみたい動画っぽいが見つからないな。
+
+ただAV Foundation周りを調べると良さそうか。
+
+### AV Foundation
+
+ [AVFoundation Overview - Apple Developer](https://developer.apple.com/av-foundation/)
+
+[Apple iOS Development: Understanding AV Foundation - YouTube](https://www.youtube.com/watch?v=mCiZW2xW4Ks)
+
+### Audioのキャプチャ
+
+[Capturing stereo audio from built-in microphones - Apple Developer Documentation](https://developer.apple.com/documentation/avfaudio/capturing_stereo_audio_from_built-in_microphones?language=objc)
