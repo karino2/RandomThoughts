@@ -6,3 +6,5 @@ Twitch、ゲーム実況などで割と使われている印象で、以前シ�
 自分ではあまり見た事が無いので良く知らない。
 
 [Twitch Game Developer Playbook - Twitch Developers](https://dev.twitch.tv/gamedevelopers/) ゲーム開発者向けの情報が充実してそうな雰囲気だな。読んでみよう。
+読んでみた。マーケティング用パワポという感じで開発者が求めているhow toとかでは無かった。
+
