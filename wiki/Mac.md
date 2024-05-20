@@ -135,6 +135,12 @@ Working with Media in AV Foundation (WWDC11)がみたい動画っぽいが見つ
 
 Playbackの解説と、Editingの解説が詳しい。Editingは役に立ちそう。AVComposition、AVAudioMixなどの解説や時間などがどう表されるかなどの解説。
 
+最後に言及されてたサンプルコード
+
+- RosyWriter
+- AVReaderWriter for OSX
+
+
 ### Audioのキャプチャ
 
 [Capturing stereo audio from built-in microphones - Apple Developer Documentation](https://developer.apple.com/documentation/avfaudio/capturing_stereo_audio_from_built-in_microphones?language=objc)
