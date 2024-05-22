@@ -83,7 +83,8 @@ launchctl setenv NODE_PATH /usr/local/lib/node_modules
 [iOS開発に入門する - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/05/23/iosdev.html) にも書いた内容だが、
 最近はGetting Startedとか無くなっちゃっててSwiftUIに飛ばされるっぽいので（マジか…）
 
-[(3) Custom View with xib in iOS, swift - YouTube](https://www.youtube.com/watch?v=L97S_SJKMg8) はXcodeの操作を思い出すのには役に立つ。
+- [(3) Custom View with xib in iOS, swift - YouTube](https://www.youtube.com/watch?v=L97S_SJKMg8) はXcodeの操作を思い出すのには役に立つ。
+- [Core Graphics: Drawing - Swift 3, Xcode 8 - YouTube](https://www.youtube.com/watch?v=gbFHqHHApC4&t=555s) Doodleアプリを作る、これもXcodeの操作を思い出すのに良い（やや進みがのろいが…）
 
 ### 久しぶりに触った時に気をつける事
 
