@@ -52,9 +52,14 @@ CheckedContinuationの最初の型引数はgenericsになっているのかな�
 - [What's new in AppKit - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10054/)
 - [Swift concurrency: Behind the scenes - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10254/)
 
+## What’s new in AVFoundation - WWDC21
+
+[What’s new in AVFoundation - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10146/) を見る。
+これはやりたい事には必要ないのだけれど、AV Foundation関連を見て慣れておこうかな、という事で。
+
 ### enumの引数で返りの型が決まる？
 
-[What’s new in AVFoundation - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10146/) の4:40あたりに以下のようなコード例があった。
+4:40あたりに以下のようなコード例があった。
 
 ```swift
  let (duration, tracks) = try await assert.load(.duration, .tracks)
@@ -166,4 +171,10 @@ try Task.checkCancellation()
 asyncじゃないコンテキストから実行する時などに使う。
 キャンセレーションやエラーなどのporpagateを手でやってやる必要がる（Taskオブジェクトが帰ってきてそれで行う）
 
-22:29
+なお、Task.detachedでunstructureよりさらに独立で、Actorやpriorityなどが共有されないタスクが作られるとか。Actorはまだ出てきてないので他の動画を見る必要がありそう。
+
+## Protect mutable state with Swift actors - WWDC21
+
+という事で次はActorを説明しているらしい以下を見る。
+
+[Protect mutable state with Swift actors - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10133) 
