@@ -5,3 +5,32 @@
 上記の公式ページから、「The Swift Programming Language」という電子書籍がApple Book Storeから無料で読むことが出来る。
 - [Swift.org - Mixing Swift and C++](https://www.swift.org/documentation/cxx-interop/) C++ interop、experimentalっぽい。
 - [Importing Objective-C into Swift - Apple Developer Documentation](https://developer.apple.com/documentation/swift/importing-objective-c-into-swift) SwiftからObjective-Cを呼ぶ
+
+## Swift Concurrency
+
+なんかGCDと結構別物っぽいので真面目に勉強する。
+
+- [Concurrency - Documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)
+- [Swift Concurrency Deep Dive [1] — GCD vs async/await - by Enebin - Towards Dev](https://towardsdev.com/swift-concurrency-deep-dive-1-gcd-vs-async-await-280ac5df7c76)
+
+後者のブログからWWDCの動画が参照されている。やはりWWDC動画から見る方がいいか。
+
+### WWDCのAsync, awaitの入門
+
+- [Meet async/await in Swift - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10132/)
+
+前半はasyncとawaitとは、的な話で、この範囲だと他の言語との違いは特になし。awaitにtryをつける場合がある、くらいか。
+
+後半22分くらいから実際に使う場合の話が出てきて、await使うにはasyncコンテキストの中じゃないといけない、
+とかいう話が出てくる。そのためにはTaskというものの中で使う、とか。
+ただTaskの話の詳細はあまり出てこない。main threadで実行したいとかそういう話は別動画っぽいか？（タイトル的にはこれか？[Explore structured concurrency in Swift - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10134/)）
+
+28分くらいからnon asyncなものをasyncでラップするためのwithCheckedThrowingContinuationの話が出てくる。
+
+この動画から参照されている動画で気になるもの
+
+- [Protect mutable state with Swift actors - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10133) 
+- [Explore structured concurrency in Swift - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10134/)
+- [Discover concurrency in SwiftUI - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10019/)
+- [What’s new in AVFoundation - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10146/)
+- [What's new in AppKit - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10054/)
