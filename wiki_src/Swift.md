@@ -99,3 +99,21 @@ enumはいいとして、enum以外の推論ルールはどうなっているの
 型が決まっている時はその型のstatic変数を探してくれるってのは良く見るので、たぶんその派生ではあると思うが。
 
 関係無いがこの動画でenumをいーにゅーむと発音したりtupleをとゅーぷると発音すると知る。
+
+### AVVideoCompositing
+
+[What’s new in AVFoundation - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10146/) の13分あたりに動画のcomposite関連のコード片がある。
+ただしこれは本当にコードの一部だけで全体としてどうしたらいいかは良く分からない。
+この辺やりたい時に参考にしたいかもしれないのでここにメモを残しておく。
+
+### Explore structured concurrency in Swift
+
+Task周りとかをもう少し知りたいな、と思い、もうちょっと詳しそうな動画に進む。
+次はこの動画。
+
+ [Explore structured concurrency in Swift - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10134/)
+
+でも最初のところはいわゆる構造化プログラム（gotoじゃなくてループとif使っていこうな）の類推としてのconcurrencyの話で、
+async await素晴らしいな、という事しか言ってなさそうな雰囲気。もう少し聞いていこう。
+
+お、5分くらいからTaskの話が始まった。この動画で合ってたっぽいな。
