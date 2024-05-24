@@ -94,7 +94,7 @@ enumはいいとして、enum以外の推論ルールはどうなっているの
 ただしこれは本当にコードの一部だけで全体としてどうしたらいいかは良く分からない。
 この辺やりたい時に参考にしたいかもしれないのでここにメモを残しておく。
 
-### Explore structured concurrency in Swift
+## Explore structured concurrency in Swift
 
 Task周りとかをもう少し知りたいな、と思い、もうちょっと詳しそうな動画に進む。
 次はこの動画。
@@ -106,5 +106,64 @@ async await素晴らしいな、という事しか言ってなさそうな雰囲
 
 お、5分くらいからTaskの話が始まった。この動画で合ってたっぽいな。
 
-7:00くらいにasync letの話。ふむふむ。async letはその変数をアクセスするまで並行に動き、変数を使うところで`await 変数名`とするところでCPSのブロックが作られる訳か。
+### async let
+
+7:00くらいにasync letの話。ふむふむ。async letはその変数をアクセスするまで並列に動き、変数を使うところで`await 変数名`とするところでCPSのブロックが作られる訳か。
 これが一番単純な、Taskが生成されるケースかな。
+
+### withThrowingTaskGroupで複数同時実行
+
+14:20くらいからwithThrowingTaskGroupの話が始まる。
+
+```swift
+try await withThrowingTaskGroup(of: Void.self) { group in 
+    for id in ids {
+        group.async {
+           thumbnails[id] = try await fetchOneThumbnail(withID: id)
+        }
+    }
+}
+```
+
+withThrowingTaskGroupは、groupを引数に取るクロージャを引数にする。
+group.asyncでタスクを同時に走らせる。いわゆるparだな。
+
+groupの下にTaskがぶら下がりタスクツリーとなる。groupがスコープから消える時に全部をawaitする感じらしい。
+
+17:02 thumbnailsにレースコンディションがあるので以下のようにするべき、とか。
+
+```swift
+try await withThrowingTaskGroup(of: (String, UIImage).self) { group in 
+    for id in ids {
+        group.async {
+           return try await fetchOneThumbnail(withID: id)
+        }
+    }
+    for try await (id, thumbnail) in group {
+        thumbnails[id] = thumbnail
+    }
+}
+```
+
+withThrowingTaskGroupの引数に型を指定する（.selfとはなんだろう？）、そしてgroup.asyncからはその型をreturnする。
+その後でgroupにtry awaitで値を取り出す。
+
+### キャンセルとstructured task
+
+structured taskは、終わる時は子供も全部終わる。ツリーとしては、子供のノードがすべて終わって始めて親のノードが終わる。
+
+キャンセルはcooperativeで、
+
+```swift
+try Task.checkCancellation()
+```
+
+でチェックする。または `Task.isCancelled` でbooleanでチェック出来る。
+
+### Taskとunstructured concurrency
+
+21:00あたりでTaskを使った話が出てくる。これはスコープ内で終わらないようなケース。
+asyncじゃないコンテキストから実行する時などに使う。
+キャンセレーションやエラーなどのporpagateを手でやってやる必要がる（Taskオブジェクトが帰ってきてそれで行う）
+
+22:29
