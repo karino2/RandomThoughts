@@ -215,3 +215,19 @@ Swift的だよな。
 actorの仕組みを実現するためにここまでいろいろな要素が必要で、それぞれをコンパイラがいろいろチェックする必要があるの、
 どうしても抵抗がある。
 まぁC#の初期の心理的抵抗と一緒で、慣れてしまえばそういうものと思えるようになるのかもしれないが。
+
+最後に参照されてた動画メモ
+
+[Swift concurrency: Update a sample app - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10194/)
+
+### actorについてはだいたい理解出来た
+
+結構重要な概念だが、この動画でだいたい理解出来たな。
+
+## クリスラトナーのDesign Doc的なもの
+
+ググってたら見つけた。
+
+[Swift Concurrency Manifesto](https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782)
+
+actorの話とかが結構語られている。
