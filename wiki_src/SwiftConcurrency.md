@@ -178,3 +178,7 @@ asyncじゃないコンテキストから実行する時などに使う。
 という事で次はActorを説明しているらしい以下を見る。
 
 [Protect mutable state with Swift actors - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10133) 
+
+6:00くらいからActorの話が始まるな。これは知らない概念だ。
+
+普通にクラスのように書いて、外からアクセスする時はawaitで呼ぶと、クラスとしてはJavaのsynchronizedのように動いているように見えるが、ブロックじゃなくてyieldする感じか。
