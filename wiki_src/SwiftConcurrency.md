@@ -231,3 +231,15 @@ actorの仕組みを実現するためにここまでいろいろな要素が必
 [Swift Concurrency Manifesto](https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782)
 
 actorの話とかが結構語られている。
+
+## Swift concurrency: Behind the scenes - WWDC21
+
+だいぶ理解が進んだのでbehind the sceneの動画を見る。
+
+[Swift concurrency: Behind the scenes - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10254/)
+
+理解は深まったが、それほど新しい話は無いな。priorityの所は良く分からなかった（どうやってキューの先頭に持ってきてるんだ？とか）。
+
+自分が以前やった[並列プログラムから見たFuture](https://karino2.github.io/2021/03/05/future_for_parallel.html)あたりの話と似ているよね。
+違いはfutureの場合はfutureを実行しているスレッドが遊ぶケースでもactorなら同じスレッドを使えるケースがあるというあたりか。
+この辺はAppleは本当に良く分かってるよなぁ。
