@@ -173,6 +173,10 @@ asyncじゃないコンテキストから実行する時などに使う。
 
 なお、Task.detachedでunstructureよりさらに独立で、Actorやpriorityなどが共有されないタスクが作られるとか。Actorはまだ出てきてないので他の動画を見る必要がありそう。
 
+### Structured Concurrencyの元ネタはPythonのTrioらしい
+
+[Python](Python)に関連リンクを置いておく。
+
 ## Protect mutable state with Swift actors - WWDC21
 
 という事で次はActorを説明しているらしい以下を見る。
