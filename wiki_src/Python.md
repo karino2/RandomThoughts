@@ -2,7 +2,7 @@
 
 みんなだいすきPython。
 
-### 整数を32bitの16進数にする
+## 整数を32bitの16進数にする
 
 ちょろっとした確認で良くやりたくなるが、負数はちょっと面倒がある。
 
@@ -14,3 +14,12 @@
 hex(-3 & (2**32-1))
 '{:#x}'.format(-3 & (2**32-1))
 ```
+
+## TrioとStructured Concurrency
+
+[[SwiftConcurrency]]のクリスラトナーのマニフェストのコメントにリンクされていたので見てみる。
+
+- [Nathaniel J. Smith - Trio: Async concurrency for mere mortals - PyCon 2018 - YouTube](https://www.youtube.com/watch?v=oLkfnc_UMcE)
+- [Notes on structured concurrency, or: Go statement considered harmful — njs blog](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/)
+
+ゆとりなのでとりあえず動画から。
