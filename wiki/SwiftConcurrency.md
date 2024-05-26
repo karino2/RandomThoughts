@@ -224,14 +224,6 @@ actorの仕組みを実現するためにここまでいろいろな要素が必
 
 結構重要な概念だが、この動画でだいたい理解出来たな。
 
-## クリスラトナーのDesign Doc的なもの
-
-ググってたら見つけた。
-
-[Swift Concurrency Manifesto](https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782)
-
-actorの話とかが結構語られている。
-
 ## Swift concurrency: Behind the scenes - WWDC21
 
 だいぶ理解が進んだのでbehind the sceneの動画を見る。
@@ -243,3 +235,40 @@ actorの話とかが結構語られている。
 自分が以前やった[並列プログラムから見たFuture](https://karino2.github.io/2021/03/05/future_for_parallel.html)あたりの話と似ているよね。
 違いはfutureの場合はfutureを実行しているスレッドが遊ぶケースでもactorなら同じスレッドを使えるケースがあるというあたりか。
 この辺はAppleは本当に良く分かってるよなぁ。
+
+## クリスラトナーのConcurrency Manifesto
+
+ググってたら見つけた。
+
+[Swift Concurrency Manifesto](https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782)
+
+actorの話とかが結構語られている。
+
+基本的な使い方は先ほどの[Protect mutable state with Swift actors - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10133) の方で理解しているという前提で、もう少し背後にある考えなどをここには書いてみたい。
+
+### GCDの延長としてのactor
+
+リソースごとにDispatchQueueを持つ、というデザインの延長としてactorがある。
+延長というからには違いがある訳で、どこが違うかというと、
+DispatchQueueはそれが保護するリソースとDispatchQueueの関係がimplicitでコンパイラがチェックしてくれなかった。
+
+actorは特定のデータを特定の（論理）スレッドからだけ触る、という事を明示的に表現出来るようになっていて、
+コンパイラがチェックしてくれる。
+
+また次のそれ以前のactorとの違いにもつながるが、引数に渡したりreturnで値を返すときに共有されてしまうデータについて、
+それが安全であるかどうかをコンパイラがチェック出来るようにするための第一歩でもある。
+
+### Swiftのactorとそれ以前のactorの違い
+
+Swiftのactorで解決したかった問題としては
+
+- 値をreturnしたい
+- 引数をdeep copyしたくない
+
+の２つが大きい。
+この時にshared mutable stateが意図せず漏れ出してしまうのは防ぎたい。
+
+一方で幾つかの注意深く設計された、スレッドセーフなオブジェクトは共有されて良い。
+あるオブジェクトが共有されて良いか駄目かを表す概念がSendableで、actorの境界とSendableの組み合わせで、
+安全であると同時に一部を効率のために限定された形で共有する事を許す、というのが可能になっている。
+これはasync/awaitとも良く組み合わさり、開発者がより柔軟にトレードオフを選択出来るactorモデルとなっている。
