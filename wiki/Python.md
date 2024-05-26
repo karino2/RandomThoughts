@@ -23,3 +23,6 @@ hex(-3 & (2**32-1))
 - [Notes on structured concurrency, or: Go statement considered harmful — njs blog](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/)
 
 ゆとりなのでとりあえず動画から。
+
+ようするに複数のコルーチンをグルーピングする仕組みとスコープを組み合わせるという話だな。
+Kotlinなんかはデフォルトでそうなのでどこが新しいのか一瞬分からなかったが。
