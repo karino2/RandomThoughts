@@ -280,3 +280,11 @@ Swiftのactorで解決したかった問題としては
 ### Pythonのtrioによるstructured concurrency
 
 上記のマニフェストのコメントでリンクが貼られていたので見てみる。[Python](Python)に続く。
+
+## Update a sample app の動画
+
+もうだいたい理解したので作業を開始しようと思ったら意外と手が動かなかったので、
+既存のサンプルをSwift Concurrencyバージョンに直す、という以下の動画を見る事に。
+
+[Swift concurrency: Update a sample app - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10194/)
+
