@@ -3,9 +3,14 @@
 なんかGCDと結構別物っぽいので真面目に勉強する。
 
 - [Concurrency - Documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)
+
+## WWDCの動画で入門
+
+適当にググって以下を見つける
+
 - [Swift Concurrency Deep Dive [1] — GCD vs async/await - by Enebin - Towards Dev](https://towardsdev.com/swift-concurrency-deep-dive-1-gcd-vs-async-await-280ac5df7c76)
 
-後者のブログからWWDCの動画が参照されている。やはりWWDC動画から見る方がいいか。
+このブログからWWDCの動画が参照されている。やはりWWDC動画から見る方がいいか、と結論づけ、WWDCの動画を見ていく。
 
 ## WWDCのAsync, awaitの入門（Meet async/await in Swift WWDC21）
 
