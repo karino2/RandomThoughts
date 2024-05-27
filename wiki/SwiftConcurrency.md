@@ -288,3 +288,8 @@ Swiftのactorで解決したかった問題としては
 
 [Swift concurrency: Update a sample app - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10194/)
 
+`@MainActor`はclassにつけるattributeなの、なんか違和感あるよなぁ。これはactorのattributeじゃないのかしら？
+
+### 見ようと思っていた動画は一通り見た
+
+だいぶ理解が進んだので書いてみようと思う。AppKitの奴をまだ見てないが、そこはいいだろう。
