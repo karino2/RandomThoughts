@@ -3,6 +3,7 @@
 なんかGCDと結構別物っぽいので真面目に勉強する。
 
 - [Concurrency - Documentation](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)
+- [Concurrency - Apple Developer Documentation](https://developer.apple.com/documentation/swift/concurrency) こっちはクラスリファレンス、大した情報は無いが存在を知る事はできる。
 
 ## WWDCの動画で入門
 
@@ -298,3 +299,24 @@ Swiftのactorで解決したかった問題としては
 ### 見ようと思っていた動画は一通り見た
 
 だいぶ理解が進んだので書いてみようと思う。AppKitの奴をまだ見てないが、そこはいいだろう。
+
+## Global Actorについて調べる
+
+`@MainActor`みたいなのは自分のactorでも作れないのかな？と思いドキュメントを見ても良く分からないのでググっていたら、
+これはGlobal Actorという話らしく、そのプロポーザルが見つかったのでこれを読む。
+
+[swift-evolution/proposals/0316-global-actors.md at main · apple/swift-evolution](https://github.com/apple/swift-evolution/blob/main/proposals/0316-global-actors.md)
+
+こういうの、公式ドキュメントからリンクしてよ、って思うんだが。公式ドキュメントのプロトコルはあった。 [GlobalActor - Apple Developer Documentation](https://developer.apple.com/documentation/swift/globalactor)
+
+ようするに、
+
+- GlobalActorプロトコルにconformする
+   - staticなsharedを定義すれば良さそう（ActorTypeはinferされそう）
+- `@globalActor` attributeをつける
+
+をすれば、以後はattributeとして使えそう。へー。
+
+associatedtypeのinferenceでググって以下を見つける。 [Recent improvements to associated type inference - Development / Compiler - Swift Forums](https://forums.swift.org/t/recent-improvements-to-associated-type-inference/70265)
+
+globalActorの例も見つけた。 [Global actors in Swift - Swift with Majid](https://swiftwithmajid.com/2024/03/12/global-actors-in-swift/)
