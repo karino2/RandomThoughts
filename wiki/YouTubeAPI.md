@@ -26,6 +26,8 @@ BroadcastとStreamを作ってBindする例は以下か。
 
 Androidの例は無さそう？マジで？
 
+Androidのサンプルのタイトルでググってたらこれを見つけた。これか？[youtube/yt-watchme](https://github.com/youtube/yt-watchme?tab=readme-ov-file)
+
 ## StackOverflow
 
 [How to Get Help  -  YouTube Live Streaming API  -  Google for Developers](https://developers.google.com/youtube/v3/live/support)から[Newest 'youtube-livestreaming-api' Questions - Stack Overflow](https://stackoverflow.com/questions/tagged/youtube-livestreaming-api)にリンクされていて、これが一番まともな情報が得られそう。マジかよ。
