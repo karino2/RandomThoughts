@@ -145,3 +145,16 @@ Playbackの解説と、Editingの解説が詳しい。Editingは役に立ちそ�
 ### Audioのキャプチャ
 
 [Capturing stereo audio from built-in microphones - Apple Developer Documentation](https://developer.apple.com/documentation/avfaudio/capturing_stereo_audio_from_built-in_microphones?language=objc)
+
+### エンコードとデコードのsample bufferの直接アクセス
+
+AVAssetWriterのdelegateの返すsegmentedDataがなんなのか全然分からなくて調べていた所見つけた動画。
+
+[Direct Access to Video Encoding and Decoding - WWDC14 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2014/513/)
+
+ユースケースとして以下を挙げている
+
+1. Displaying an H.264 stream in a layer in your application
+2. Decoding an H.264 stream and accessing the decoded buffers
+3. Compressing a sequence of images into a movie file
+4. Compressing a sequence of images into an H.264 stream for the network
