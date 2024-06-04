@@ -153,6 +153,10 @@ AV Foundationでは無くその下のVideo Toolboxを使うらしい。
 
 [Direct Access to Video Encoding and Decoding - WWDC14 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2014/513/)
 
+参照されてる動画で気になったの
+
+- WWDC 2013 Moving to AVKit and AVFoundation
+
 ### 扱う4つのユースケース
 
 ユースケースとして以下を挙げている
@@ -197,3 +201,24 @@ CMSampleBufferを作るのに必要なのは以下の３つ。
 - NAL Unit （ヘッダを長さに置き換える必要あり）
 
 この３つを、CMSampleBufferCreateに食わせる。
+
+### VTDecompressSessionによるデコードした画像へのアクセス
+
+20:00あたりから、ネットワークのストリームをデコードしてCVPixelBufferにアクセスする例に入る。
+これにはVTDecompressSessionを使う。
+この中にVideoDecoderが入っているらしい。
+
+### VTCompressionSessionでネットワークに圧縮フレームを直接送る
+
+29:00あたりからCVPixelBufferを圧縮してネットワークに送る例が始まる。
+
+VTCompressionSessionEncodeFrameでpixelBufferを送るっぽい。
+
+最後に待つのはVTCompressionSessionCompleteFramesらしい。
+
+### Elementary Streamへの変換
+
+34:00あたりからElementary Streamへの変換の話がある。
+SPSとPPSを最初に送る必要があるが、これはCMVideoFormatDescriptionGetH264ParameterSetAtIndexというそのものずばりの関数がある。
+
+次にNAL Unitの変換。I Frameなどは先頭に4バイトのlengthが入っているので、これを00 00 01の3 byteの開始コードに変換する必要がある。
