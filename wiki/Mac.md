@@ -146,11 +146,14 @@ Playbackの解説と、Editingの解説が詳しい。Editingは役に立ちそ�
 
 [Capturing stereo audio from built-in microphones - Apple Developer Documentation](https://developer.apple.com/documentation/avfaudio/capturing_stereo_audio_from_built-in_microphones?language=objc)
 
-### エンコードとデコードのsample bufferの直接アクセス
+## エンコードとデコードのsample bufferの直接アクセス
 
-AVAssetWriterのdelegateの返すsegmentedDataがなんなのか全然分からなくて調べていた所見つけた動画。
+AVAssetWriterのdelegateの返すsegmentedDataがなんなのか全然分からなくて調べていた所見つけた動画。とても良いのでサブセクションを作る。
+AV Foundationでは無くその下のVideo Toolboxを使うらしい。
 
 [Direct Access to Video Encoding and Decoding - WWDC14 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2014/513/)
+
+### 扱う4つのユースケース
 
 ユースケースとして以下を挙げている
 
@@ -158,3 +161,39 @@ AVAssetWriterのdelegateの返すsegmentedDataがなんなのか全然分から�
 2. Decoding an H.264 stream and accessing the decoded buffers
 3. Compressing a sequence of images into a movie file
 4. Compressing a sequence of images into an H.264 stream for the network
+
+### 良く出てくる登場人物
+
+6分あたり。
+
+- CVPixelBuffer ... 非圧縮の画像バッファ
+- CVPixelBufferPool ... CVPixelBufferのバッファプール
+- pixelBufferAttributes ... 幅、高さ、32RGBAなど
+- CMTime
+- CMVideoFormatDescription ... width/height, フォーマットタイプとしてkCMPixelFormat_32RGBA、kCMVideoCodecType_H264など
+- CMBlockBuffer ... 圧縮されたビデオフレームのデータなど
+- CMSampleBuffer ... 圧縮されたビデオフレームと非圧縮のビデオフレームの二種類がある。以下を含む。
+   - CMTime ... プレゼンテーションタイム
+   - CMVideoFormatDescription
+   - 圧縮されたビデオの場合 ... CMBlockBuffer
+   - 非圧縮されたフレームの場合 ... CVPixelBuffer
+- CMClock ... mach_absolute_timeなどの勝手に進むなにかのラッパ
+- CMTimebase ... CMClockを元に原点を決めたりとかいろいろ操作した時間
+
+この辺は良く出てくるのでありがたい。
+
+### H.264のストリームのデコード
+
+10:00あたりから。15:00あたりからネットワークからCMSampleBufferへのコンバートの話が出てくる。
+
+NetworkからくるH.264ストリームはElementary Streamと呼ばれる形式で、それとファイルに保存されるMPEG-4をベースとしたCMSampleBufferの間には変換が必要となる。
+
+NAL Unitからmp4のCMVideoFormatDescriptionを作るのはCMVideoFormatDescriptorCreateFromH264ParameterSets。
+
+CMSampleBufferを作るのに必要なのは以下の３つ。
+
+- CMTime
+- CMVideoFormatDescription
+- NAL Unit （ヘッダを長さに置き換える必要あり）
+
+この３つを、CMSampleBufferCreateに食わせる。
