@@ -15,3 +15,12 @@
 長くなったのでページを分ける。
 
 [[SwiftConcurrency]]
+
+## SwiftPM
+
+Swiftのパッケージマネージャ。[Swift.org - Package Manager](https://www.swift.org/documentation/package-manager/)
+
+Xcodeのプロジェクトは最初から対応が入っていて、右クリックから追加で追加出来る。
+[Adding package dependencies to your app - Apple Developer Documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app)
+
+（公式のGetting Startedとだいぶ違うのでメモ）
