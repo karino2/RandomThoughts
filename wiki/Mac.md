@@ -222,3 +222,9 @@ VTCompressionSessionEncodeFrameでpixelBufferを送るっぽい。
 SPSとPPSを最初に送る必要があるが、これはCMVideoFormatDescriptionGetH264ParameterSetAtIndexというそのものずばりの関数がある。
 
 次にNAL Unitの変換。I Frameなどは先頭に4バイトのlengthが入っているので、これを00 00 01の3 byteの開始コードに変換する必要がある。
+
+## メモ
+
+使うか分からないメモを置いておく
+
+- [Karsten Suehring](https://iphome.hhi.de/suehring/tml/download/) H.264のリファレンスインプリメンテーションか？ [ffmpeg - What does Elementary Stream mean in Terms of H264 - Stack Overflow](https://stackoverflow.com/questions/27090114/what-does-elementary-stream-mean-in-terms-of-h264)より。
