@@ -144,7 +144,14 @@ Playbackの解説と、Editingの解説が詳しい。Editingは役に立ちそ�
 
 ### Audioのキャプチャ
 
+オーディオというよりはステレオの話だが、サンプルコードは参考になりそう。
+
 [Capturing stereo audio from built-in microphones - Apple Developer Documentation](https://developer.apple.com/documentation/avfaudio/capturing_stereo_audio_from_built-in_microphones?language=objc)
+
+WWDCのこの動画が同じ内容か？ [Record stereo audio with AVAudioSession - WWDC20 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2020/10226/)
+
+なんかAVAudioRecoderはファイルに書く奴っぽいので、サンプルバッファが取れるのは無いのか？
+とググっていたらその辺の比較をしているブログを見つけた。 [Recording Audio on iOS with Examples - Dolby.io](https://dolby.io/blog/recording-audio-on-ios-with-examples/)
 
 ## エンコードとデコードのsample bufferの直接アクセス
 
