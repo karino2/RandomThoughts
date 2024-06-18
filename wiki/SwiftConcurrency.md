@@ -328,3 +328,15 @@ AsyncSequenceを使いたくなったので動画を見る。
 [Meet AsyncSequence - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10058/)
 
 AsyncStreamで自分のAsyncSequenceを作れるのね。
+
+### continuationを外に保持する
+
+AsyncStreamにわたすクロージャにcontinuationが渡ってくるが、これを外に保持することで外で使うことが出来るっぽい。
+以下のモチベーションの所にそのやり方と、これが普通のやり方だがキモいのでもっといいやり方を提案する、みたいな話がある。
+モチベーションの方は短くて良いコード例となっている。
+
+[swift-evolution/proposals/0388-async-stream-factory.md at main · swiftlang/swift-evolution](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0388-async-stream-factory.md)
+
+以下のスレッドも同じ話がある。
+
+[“Unlike other continuations in Swift, AsyncStream.Continuation supports escaping.” - Using Swift - Swift Forums](https://forums.swift.org/t/unlike-other-continuations-in-swift-asyncstream-continuation-supports-escaping/53254/5)
