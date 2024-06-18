@@ -320,3 +320,11 @@ Swiftのactorで解決したかった問題としては
 associatedtypeのinferenceでググって以下を見つける。 [Recent improvements to associated type inference - Development / Compiler - Swift Forums](https://forums.swift.org/t/recent-improvements-to-associated-type-inference/70265)
 
 globalActorの例も見つけた。 [Global actors in Swift - Swift with Majid](https://swiftwithmajid.com/2024/03/12/global-actors-in-swift/)
+
+## Meet AsyncSequence - WWDC21
+
+AsyncSequenceを使いたくなったので動画を見る。
+
+[Meet AsyncSequence - WWDC21 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2021/10058/)
+
+AsyncStreamで自分のAsyncSequenceを作れるのね。
