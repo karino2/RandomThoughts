@@ -170,7 +170,7 @@ AV Foundationでは無くその下のVideo Toolboxを使うらしい。
 
 1. Displaying an H.264 stream in a layer in your application
 2. Decoding an H.264 stream and accessing the decoded buffers
-3. Compressing a sequence of images into a movie file
+3. Compressing a sequence of images into a movie file (27:50あたりから）
 4. Compressing a sequence of images into an H.264 stream for the network
 
 ### 良く出てくる登場人物
