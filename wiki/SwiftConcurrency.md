@@ -340,3 +340,5 @@ AsyncStreamにわたすクロージャにcontinuationが渡ってくるが、こ
 以下のスレッドも同じ話がある。
 
 [“Unlike other continuations in Swift, AsyncStream.Continuation supports escaping.” - Using Swift - Swift Forums](https://forums.swift.org/t/unlike-other-continuations-in-swift-asyncstream-continuation-supports-escaping/53254/5)
+
+ちなみにプロポーザルのmakeStreamはすでに入っているっぽい。[makeStream(of:bufferingPolicy:) - Apple Developer Documentation](https://developer.apple.com/documentation/swift/asyncstream/makestream(of:bufferingpolicy:))
