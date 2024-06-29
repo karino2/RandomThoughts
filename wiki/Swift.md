@@ -24,3 +24,11 @@ Xcodeのプロジェクトは最初から対応が入っていて、右クリッ
 [Adding package dependencies to your app - Apple Developer Documentation](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app)
 
 （公式のGetting Startedとだいぶ違うのでメモ）
+
+## Logger
+
+使ってるモジュールがめっちゃログ吐くので消し方を調べる。
+
+[Debug with structured logging - WWDC23 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2023/10226/) この動画の最初の方の方法で十分な気がしてきた。
+
+関係無いが、LLDBで `p 変数名` とか `po 変数名` でウォッチ出来るのは便利そうだな。Do What I Mean Printというコマンドがあってdwim-printと呼び、pがこのエイリアスになっているらしい。へー。
