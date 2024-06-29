@@ -32,3 +32,16 @@ Xcodeのプロジェクトは最初から対応が入っていて、右クリッ
 [Debug with structured logging - WWDC23 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2023/10226/) この動画の最初の方の方法で十分な気がしてきた。
 
 関係無いが、LLDBで `p 変数名` とか `po 変数名` でウォッチ出来るのは便利そうだな。Do What I Mean Printというコマンドがあってdwim-printと呼び、pがこのエイリアスになっているらしい。へー。
+
+[Explore logging in Swift - WWDC20 - Videos - Apple Developer](https://developer.apple.com/videos/play/wwdc2020/10168/)
+
+こちらはより基本的な使い方。non numericな値をstring interpolateで出すと、普段はprivacy的な削除で消されるらしい。publicとか指定しないとエンドユーザーの端末では見えないとか。
+あとデバイスからのログの吸い出し方もこの動画で説明されている。
+
+formatの話もある。
+
+```
+  logger.log("hogehoge \(seconds, format: .fixed(precision: 2))")
+```
+
+公式ドキュメント: [Logging - Apple Developer Documentation](https://developer.apple.com/documentation/os/logging)
