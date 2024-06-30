@@ -50,10 +50,12 @@ pdfの5.1.6のファクトリメソッドは何が言いたいのか分からな
 
 言語のリファレンスっぽいの無いかなぁ、と探して、以下を見つける。
 
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=en_US&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00GJGOPDW&linkId=0bb3ac5a7096ae2f9a90c6f77c7273eb"></iframe>
+[詳解 Objective-C 2.0 第3版](https://amzn.to/3RQauCL)
 
 読んでみると思っていたほどリファレンスではなく普通の言語入門書みたいな体裁だが、それなりに各項目が詳しいので持っておいて損は無い気はする。
 レビューの印象とは結構違う本だな。
+
+ただちょっと古いな。
 
 ## メンバ変数はimplementationだけに定義出来る
 
