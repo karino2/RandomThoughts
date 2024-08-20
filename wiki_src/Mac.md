@@ -119,3 +119,13 @@ XCode の Instrumentsのworking directoryの設定は、
 
 - [Core Animation - Apple Developer Documentation](https://developer.apple.com/documentation/quartzcore/)
 - [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+
+### CALayerをCGContextに描く
+
+CALayerのrenderを使うらしい。
+
+[render(in:) - Apple Developer Documentation](https://developer.apple.com/documentation/quartzcore/calayer/1410909-render)
+
+### CALayerに画像をセットする方法
+
+[Setting Up Layer Objects](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/SettingUpLayerObjects/SettingUpLayerObjects.html) の「Providing a Layer’s Contents」にcontentsをセットするか、displayLayerなどのdelegateを実装すると書いてあるが、結局後者もcontentsを更新しているな。
