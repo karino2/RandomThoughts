@@ -1,5 +1,6 @@
 [Android](Android)のSAF関連。
 
+- [DocumentsProviderによるデータアクセスをよりセキュアにする工夫](https://techblog.lycorp.co.jp/ja/20240828a)
 - [DocumentFileをACTION_VIEWにわたす](https://www.javaer101.com/en/article/92932287.html)
 - [[Android] Storage Access Framework でドキュメントを保存する](https://akira-watson.com/android/action_create_document.html) ACTION_CREATE_DOCUMENTの例
 - [Y.A.Mの雑記帳: Android 11 では ACTION_CREATE_DOCUMENT と ACTION_OPEN_DOCUMENT には queries 指定が必要](https://y-anz-m.blogspot.com/2020/11/android-11-actioncreatedocument.html)
