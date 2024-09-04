@@ -129,3 +129,7 @@ CALayerのrenderを使うらしい。
 ### CALayerに画像をセットする方法
 
 [Setting Up Layer Objects](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/SettingUpLayerObjects/SettingUpLayerObjects.html) の「Providing a Layer’s Contents」にcontentsをセットするか、displayLayerなどのdelegateを実装すると書いてあるが、結局後者もcontentsを更新しているな。
+
+### UIViewのレイヤーを取る
+
+layerで取れそう。[layer - Apple Developer Documentation](https://developer.apple.com/documentation/uikit/uiview/1622436-layer)
