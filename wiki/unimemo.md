@@ -59,3 +59,5 @@ $ wget -O rss.txt https://anchor.fm/s/68ce140/podcast/rss
 Scratch.fsxの該当部分をAlt+Enterする。
 
 2024-02-07 (水)  なんか最近ionideでAlt+Enterが動いていないので、dotnet fsiを実行した後にスクリプトをコピペしている。
+
+RSSのURLははspotifyになっても変わって無さそう。
