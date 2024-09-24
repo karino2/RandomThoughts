@@ -1,8 +1,10 @@
 Kindle Fire Max 11を買った。（2023-07-10 ）
 
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B0B2SD8BVX&linkId=5c50a3c64ee475b05b7d6c1a37f95e1f"></iframe>
+[amazon: Kindle Fire Max 11(2023年モデル)](https://amzn.to/3XT3Y1s)
 
 定価34980円の所をプライムデーのセールで26980円+ポイント3200ポイントくらい。ポイントでスタイラスを買おうかなぁ、と思っている。
+
+スタイラスは単6電池。
 
 ## ファーストインプレッション
 
