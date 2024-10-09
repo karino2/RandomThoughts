@@ -79,6 +79,10 @@ Ping	37.5ms
 上り	14.25Mbps(あまり速くない)
 ```
 
+楽天モバイルに乗り換えるかなぁ。
+
+[Galaxy 5G Mobile Wi-Fi(SCR01)は楽天モバイル最強プランで使えるのかを検証](https://xn--gmowimax-uv4gua1g3gb5p6k8a2956mom7aqbzc.net/galaxy5gmobilewifi-rakutenunlimit/)
+
 ## 契約プラン
 
 プランがいっぱいあってどれかわからなくなるのでメモしておく。
