@@ -81,7 +81,8 @@ Ping	37.5ms
 
 楽天モバイルに乗り換えるかなぁ。
 
-[Galaxy 5G Mobile Wi-Fi(SCR01)は楽天モバイル最強プランで使えるのかを検証](https://xn--gmowimax-uv4gua1g3gb5p6k8a2956mom7aqbzc.net/galaxy5gmobilewifi-rakutenunlimit/)
+- [Galaxy 5G Mobile Wi-Fi(SCR01)は楽天モバイル最強プランで使えるのかを検証](https://xn--gmowimax-uv4gua1g3gb5p6k8a2956mom7aqbzc.net/galaxy5gmobilewifi-rakutenunlimit/)
+- [UQ WiMaxから楽天モバイル2回線に乗り換え - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2024/10/09/uq_wimax_to_rakuten_2line.html)
 
 ## 契約プラン
 
