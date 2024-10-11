@@ -61,28 +61,7 @@ Ping	37.7ms
 
 ### 楽天モバイルのテザリング
 
-| 種類 | 測定結果 |
-| ---- | ---- |
-| Jitter |	14.77ms |
-| Ping |	37.5ms |
-| 下り |	45.44Mbps(少し速い) |
-| 上り |	21.18Mbps(普通) |
-
-月曜の夜に楽天モバイルのテザリングも測ってみた。
-少し遅いが、似たようなものだなぁ、これ。
-
-```
-種類	測定結果
-Jitter	8.85ms
-Ping	37.5ms
-下り	43.74Mbps(少し速い)
-上り	14.25Mbps(あまり速くない)
-```
-
-楽天モバイルに乗り換えるかなぁ。
-
-- [Galaxy 5G Mobile Wi-Fi(SCR01)は楽天モバイル最強プランで使えるのかを検証](https://xn--gmowimax-uv4gua1g3gb5p6k8a2956mom7aqbzc.net/galaxy5gmobilewifi-rakutenunlimit/)
-- [UQ WiMaxから楽天モバイル2回線に乗り換え - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2024/10/09/uq_wimax_to_rakuten_2line.html)
+[楽天モバイル](%E6%A5%BD%E5%A4%A9%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB)へ。
 
 ## 契約プラン
 
