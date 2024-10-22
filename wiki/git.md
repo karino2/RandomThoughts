@@ -17,6 +17,16 @@ update-indexでassume-unchangedを指定する。
 $ git update-index --assume-unchanged .vscode/c_cpp_properties.json
 ```
 
+## cherry-pickで改行コードに違いがある場合
+
+```
+git cherry-pick -x --strategy-option=renormalize XXXX
+```
+
+-xはコミットIDを含める、という奴。
+
+XXXXはハッシュID。
+
 ## CI用などに空コミット
 
 ```
