@@ -14,9 +14,16 @@
 最近はAndroidの Asset Studioを使うのが良い。
 AndroidStudioから、
 
-`メニュー＞File＞New＞Image Asset`
+`メニュー＞View＞Tool Window＞Resource Manager`
 
-を選ぶ。512x512とかの大きめのpngを用意して指定し、TrimをYesにするとだいたい良きに計らってくれる
+を選ぶ。
+上の所の+を選び、Launcher iconを選びAsset typeをImageにして、
+512x512とかの大きめのpngを用意して指定し、TrimをYesにするとだいたい良きに計らってくれる。
+
+
+前は以下だった。
+
+`メニュー＞File＞New＞Image Asset`
 
 ## no user data collectedな時のPrivacy Policyの書き方
 
