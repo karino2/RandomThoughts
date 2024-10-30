@@ -8,6 +8,7 @@
 - [[あおぞらAndroid教室]]
 - [NFC の基本  -  Connectivity  |  Android Developers](https://developer.android.com/guide/topics/connectivity/nfc/nfc?hl=ja)
 - [Android Basics in Kotlin course  -  Android Developers](https://developer.android.com/courses/android-basics-kotlin/course) code labsとか
+- [[FDroid]]
 
 ## launcherアイコンの作り方
 
