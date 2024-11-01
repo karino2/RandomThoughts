@@ -50,6 +50,7 @@ settings.jsonに以下を書く。
 PS> notepad $PROFILE
 PS> echo $env:APPDATA
 PS> $env:PATH
+PS> $env:PATH.Split(";")
 ```
 
 久しぶりに使おうとして忘れているもの。 Out-GridView。
