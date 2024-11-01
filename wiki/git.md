@@ -69,6 +69,10 @@ git本家のソースツリーに含まれている、tcl/tkで書かれたgit-g
 - ファイルのrevert（Hunkのrevertはある）
 - リモートのチェックアウト
 
+### tigメモ
+
+[TigがWindowsにやってきたのでチュートリアルをまとめる #Git - Qiita](https://qiita.com/y-tsutsu/items/98fc75b8814c99619cf4)
+
 ## 入門
 
 公式で配ってる[Git - Book](https://git-scm.com/book/en/v2) Pro Gitという本がとても良く書けているが、
