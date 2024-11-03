@@ -12,6 +12,14 @@
 - [MacでVSCodeとclangで中規模のC++開発（コンソールアプリ）をする - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/04/13/mid_cppproj_vscode_mac.html) 2020年。ちょっと古くなっている。
 - [MacでVSCodeとclangで小規模のC++開発（コンソールアプリ）をする手順 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/01/small_cppproj_vscode_mac.html) 2023年。
 
+## dylib関連のデバッグ
+
+rpathとかがどうなってるかとかはotoolというコマンドで見る。
+
+```
+$ otool -L MyApp.app
+```
+
 ## 雑多なリンク
 
 - [MacでシェルスクリプトをFinderから実行する方法](https://alvinalexander.com/mac-os-x/exec-unix-shell-script-mac-finder-execute-click/)
