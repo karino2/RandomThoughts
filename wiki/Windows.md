@@ -44,6 +44,30 @@ settings.jsonに以下を書く。
 
 似たよなオプションがいろいろあるが、C++でninjaの-jみたいな事をしたい場合は`/p:UseMultiToolTask=true`
 
+なお、VisualStudioの中では、プロジェクトのプロパティのC/C++の中の全般に「複数プロセッサによるコンパイル」という項目があり、
+同じ効果ではないだろうがなんか並列にはなる。
+
+Directory.Build.propsを作れば
+
+- [C++ build throughput investigation and tune up - C++ Team Blog](https://devblogs.microsoft.com/cppblog/cpp-build-throughput-investigation-and-tune-up/)
+   - [Customize your build by folder or solution - MSBuild - Microsoft Learn](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-by-directory?view=vs-2022)
+
+
+```
+<Project>
+   <ItemDefinitionGroup>
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <!--  カスタムビルドの方の設定、こっちはあんま意味ない気がするが。 -->
+    <CustomBuild>
+      <BuildInParallel>true</BuildInParallel>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+</Project>
+```
+
+
 ## PowerShellのこまごまとしたこと
 
 ```
