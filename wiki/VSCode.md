@@ -31,4 +31,6 @@ settingで`"editor.emptySelectionClipboard": false`相当の事をする。（GU
 
 ## workspaceのみで有効な環境変数
 
-[VSCode：ワークスペースでのみ有効な環境変数を設定する - いつかの熊右衛門](https://kuma-emon.com/it/pc/4970/)
+- [VSCode：ワークスペースでのみ有効な環境変数を設定する - いつかの熊右衛門](https://kuma-emon.com/it/pc/4970/)
+  - あくまでVSCodeから起動されるシェルのみに有効なのでsourceFileMapとかには使えなかった
+- [Visual Studio Code Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
