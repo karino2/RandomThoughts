@@ -2,6 +2,7 @@
 - [DirectCompute](DirectCompute)
 - [ノートPC](%E3%83%8E%E3%83%BC%E3%83%88PC)
 - [ミニPC](%E3%83%9F%E3%83%8BPC)
+- [VSCode](VSCode)
 
 Windows上の環境設定のメモなど。そのうちまとめてブログにしたい。
 

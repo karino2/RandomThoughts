@@ -28,3 +28,7 @@ settingで`"editor.emptySelectionClipboard": false`相当の事をする。（GU
 へー、と思って見てみると、Macではパスがだいぶ違っていて後者は見つからなかった。
 前者は設定から探してみるとHOMEのLibrary下にあるらしい。へー、こんな所に。
 結構大量にたまっていたので消してみた。
+
+## workspaceのみで有効な環境変数
+
+[VSCode：ワークスペースでのみ有効な環境変数を設定する - いつかの熊右衛門](https://kuma-emon.com/it/pc/4970/)

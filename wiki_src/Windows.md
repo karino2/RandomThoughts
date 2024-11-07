@@ -2,6 +2,7 @@
 - [[DirectCompute]]
 - [[ノートPC]]
 - [[ミニPC]]
+- [[VSCode]]
 
 Windows上の環境設定のメモなど。そのうちまとめてブログにしたい。
 
