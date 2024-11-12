@@ -73,6 +73,13 @@ git本家のソースツリーに含まれている、tcl/tkで書かれたgit-g
 
 [TigがWindowsにやってきたのでチュートリアルをまとめる #Git - Qiita](https://qiita.com/y-tsutsu/items/98fc75b8814c99619cf4)
 
+### gitのターミナルUI系いろいろ
+
+tigがなかなか良いのだが、コミット周りとかも似たようなのが欲しいなぁ、と思いいろいろ他を物色してみる。
+
+- lazygit 少し触ったがどうもなじまなかった
+- gitui なんか良さそう？
+
 ## 入門
 
 公式で配ってる[Git - Book](https://git-scm.com/book/en/v2) Pro Gitという本がとても良く書けているが、
