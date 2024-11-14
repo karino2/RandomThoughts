@@ -80,6 +80,16 @@ PS> $env:PATH.Split(";")
 
 久しぶりに使おうとして忘れているもの。 Out-GridView。
 
+## Python Invokeの実行
+
+[Python](Python)
+
+```
+$ python -m invoke --list
+```
+
+などとpythonコマンド越しに実行するのが楽そう。
+
 ## 書籍： Concurrent Programming on Windows
 
 [【書籍】ConcurrentProgrammingOnWindows](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91ConcurrentProgrammingOnWindows)
