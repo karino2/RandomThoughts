@@ -101,3 +101,7 @@ VS関連はまだページ分けるほどは無いのでここに。
 - [VS2022の同期実行ビジュアライザーが動かない時の対処 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/10/19/vs2022_concurrency_visualizer.html)
 
 RelWithDebInfoでビルドしたものに実行している＞同期実行ビジュアライザー
+
+### ファイルを開く
+
+VSCodeのC-p相当の事は、C-qしてC-tして、file:hogehoge.cとかやる。
