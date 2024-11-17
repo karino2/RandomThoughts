@@ -8,6 +8,7 @@
 - [1024cores](1024cores)
 - [並列プログラム](%E4%B8%A6%E5%88%97%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0)
 - [GitHub - rigtorp/awesome-modern-cpp: A collection of resources on modern C++](https://github.com/rigtorp/awesome-modern-cpp?tab=readme-ov-file) C++の本の一覧
+- [stlab/libraries: ASL libraries will be migrated here in the stlab namespace, new libraries will be created here.](https://github.com/stlab/libraries/tree/main) Adobeのオープンソースライブラリ
 
 ## mapのキーと違う型でfindしたい時
 
