@@ -45,7 +45,7 @@ $ git rev-parse HEAD:some_dir/some_file.txt
 
 とりあえずリンクを貼っておく場所。
 
-- [Traunkベース: Introduction](https://trunkbaseddevelopment.com/)
+- [Trunkベース: Introduction](https://trunkbaseddevelopment.com/)
 
 ## gitkのソース
 
