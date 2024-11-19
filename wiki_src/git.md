@@ -41,6 +41,14 @@ git rev-parseというコマンドを使う。
 $ git rev-parse HEAD:some_dir/some_file.txt
 ```
 
+## コミットログを表示
+
+ハッシュ値がXXXの時、
+
+```
+$ git log --format=%B -n 1 XXX
+```
+
 ## ブランチマネージメント
 
 とりあえずリンクを貼っておく場所。
