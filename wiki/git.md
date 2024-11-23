@@ -19,6 +19,12 @@ $ git update-index --assume-unchanged .vscode/c_cpp_properties.json
 
 ## cherry-pickで改行コードに違いがある場合
 
+諦めてパッチファイルを作ってunix2dosしてgit amするという手順にした。
+
+[gitで改行コードが異なるレポジトリ間でチェリーピック的な事をしたい - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2024/11/23/cherry_pick_between_difference_eol_repo_in_git.html)
+
+**駄目だった試行錯誤**
+
 ```
 git cherry-pick -x --strategy-option=renormalize XXXX
 ```
@@ -27,7 +33,11 @@ git cherry-pick -x --strategy-option=renormalize XXXX
 
 XXXXはハッシュID。
 
-これでは駄目な事が多い。
+内部コードが違う場合、これでは駄目な事が多い。
+
+**駄目だった試行錯誤2**
+
+copilotに聞いたら以下を言われた。
 
 ```
 git add --renormalize xxx
@@ -40,10 +50,7 @@ git add --renormalize xxx
 * text eol=crlf
 ```
 
-と組み合わせると良いか？＞駄目
-
-unix2dosに-mオプションでBOMを足せそう。
-ステージングファイルにunix2dosを掛けるようなスクリプトにするといいか？
+と組み合わせると良いと言うが、試したら駄目だった。
 
 ## CI用などに空コミット
 
