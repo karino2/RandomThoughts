@@ -27,6 +27,24 @@ git cherry-pick -x --strategy-option=renormalize XXXX
 
 XXXXはハッシュID。
 
+これでは駄目な事が多い。
+
+```
+git add --renormalize xxx
+```
+
+でxxxファイルの改行コードを直すらしい。
+.gitattributesの
+
+```
+* text eol=crlf
+```
+
+と組み合わせると良いか？＞駄目
+
+unix2dosに-mオプションでBOMを足せそう。
+ステージングファイルにunix2dosを掛けるようなスクリプトにするといいか？
+
 ## CI用などに空コミット
 
 ```
