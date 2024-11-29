@@ -105,3 +105,12 @@ RelWithDebInfoでビルドしたものに実行している＞同期実行ビジ
 ### ファイルを開く
 
 VSCodeのC-p相当の事は、C-qしてC-tして、file:hogehoge.cとかやる。
+
+### パフォーマンスプロファイラー
+
+開始、を押すと「予期しない例外です。詳細についてはログを確認してください。」と出る。
+これは管理者として実行しないとなるっぽい？違った。
+
+「.NET デスクトップ開発」をインストールしたら起動するようになった。これは酷い…
+
+[VS2022 Performance profiler "Unexpected exception" on start - Developer Community](https://developercommunity.visualstudio.com/t/VS2022-Performance-profiler-Unexpected-/10795500)
