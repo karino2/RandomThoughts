@@ -17,6 +17,15 @@ update-indexでassume-unchangedを指定する。
 $ git update-index --assume-unchanged .vscode/c_cpp_properties.json
 ```
 
+## cherry-pick用のgit logコマンド
+
+毎回copilotに聞くのでメモしておく。
+
+```
+$ git log main --pretty=format:"%h %an %s"
+```
+
+
 ## cherry-pickで改行コードに違いがある場合
 
 諦めてパッチファイルを作ってunix2dosしてgit amするという手順にした。
