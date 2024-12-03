@@ -3,6 +3,7 @@
 - [ノートPC](%E3%83%8E%E3%83%BC%E3%83%88PC)
 - [ミニPC](%E3%83%9F%E3%83%8BPC)
 - [VSCode](VSCode)
+- [VisualStudio](VisualStudio)
 
 Windows上の環境設定のメモなど。そのうちまとめてブログにしたい。
 
@@ -93,24 +94,3 @@ $ python -m invoke --list
 ## 書籍： Concurrent Programming on Windows
 
 [【書籍】ConcurrentProgrammingOnWindows](%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91ConcurrentProgrammingOnWindows)
-
-## VisualStudio
-
-VS関連はまだページ分けるほどは無いのでここに。
-
-- [VS2022の同期実行ビジュアライザーが動かない時の対処 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/10/19/vs2022_concurrency_visualizer.html)
-
-RelWithDebInfoでビルドしたものに実行している＞同期実行ビジュアライザー
-
-### ファイルを開く
-
-VSCodeのC-p相当の事は、C-qしてC-tして、file:hogehoge.cとかやる。
-
-### パフォーマンスプロファイラー
-
-開始、を押すと「予期しない例外です。詳細についてはログを確認してください。」と出る。
-これは管理者として実行しないとなるっぽい？違った。
-
-「.NET デスクトップ開発」をインストールしたら起動するようになった。これは酷い…
-
-[VS2022 Performance profiler "Unexpected exception" on start - Developer Community](https://developercommunity.visualstudio.com/t/VS2022-Performance-profiler-Unexpected-/10795500)
