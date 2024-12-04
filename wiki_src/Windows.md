@@ -11,11 +11,8 @@ Windows上の環境設定のメモなど。そのうちまとめてブログに�
 
 - chocolateyをインストール ... [Chocolatey Software - Installing Chocolatey](https://chocolatey.org/install)
 - choco install cmake
-- choco install qt5-default
 - choco install qtcreator
 - choco install vscode
-
-qt5-defaultはMINGWなのでVSの拡張は使えない、と言われてqtcreatorをインストールすることに。
 
 ## WSLのパス
 
@@ -94,3 +91,10 @@ $ python -m invoke --list
 ## 書籍： Concurrent Programming on Windows
 
 [[【書籍】ConcurrentProgrammingOnWindows]]
+
+## リモートデスクトップにログイン出来ない
+
+「お使いの資格情報は機能しませんでした」と表示され接続されない。いろいろ調査した結果、
+ホストマシンに一度MSアカウントとしてログインし直す必要がある模様。＞[Microsoftアカウントでのリモートデスクトップ接続に苦労した話 #Windows - Qiita](https://qiita.com/sfjwr/items/037aabef2c5637fe0e51)
+
+PINを忘れた場合で途中までログインしてPINをリセットしますか？というところでキャンセルしたらログインしたとみなされたっぽく、解決した。
