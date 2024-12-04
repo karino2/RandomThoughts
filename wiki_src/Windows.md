@@ -13,6 +13,8 @@ Windows上の環境設定のメモなど。そのうちまとめてブログに�
 - choco install cmake
 - choco install qtcreator
 - choco install vscode
+- choco install git
+- choco install lazygit
 
 ## WSLのパス
 
