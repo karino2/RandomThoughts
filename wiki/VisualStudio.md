@@ -19,6 +19,8 @@ VSから プロジェクト＞NuGetパッケージの管理を選び、パッケ
 
 そしてSystem.Threading.Tasks.Dataflowをインストールしてみる。だめそう。
 
+CVCollectionService.exe
+
 ## ファイルを開く
 
 VSCodeのC-p相当の事は、C-1, C-r。
