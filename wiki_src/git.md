@@ -83,6 +83,12 @@ $ git rev-parse HEAD:some_dir/some_file.txt
 $ git log --format=%B -n 1 XXX
 ```
 
+## remotes/origin下の不要なブランチの削除
+
+```
+$ git remote prune origin
+```
+
 ## ブランチマネージメント
 
 とりあえずリンクを貼っておく場所。
