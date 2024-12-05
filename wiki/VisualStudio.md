@@ -8,6 +8,17 @@
 
 RelWithDebInfoでビルドしたものに実行している＞同期実行ビジュアライザー
 
+### The trace is corruptedと言われて表示出来ない
+
+System.Threading.Tasks.Dataflowがロード出来ていないっぽい？
+
+VSから プロジェクト＞NuGetパッケージの管理を選び、パッケージソースの設定からaddを選び、以下を入力して更新
+
+- nuget.org
+- https://api.nuget.org/v3/index.json
+
+そしてSystem.Threading.Tasks.Dataflowをインストールしてみる。だめそう。
+
 ## ファイルを開く
 
 VSCodeのC-p相当の事は、C-1, C-r。
