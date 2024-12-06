@@ -116,3 +116,7 @@ $ python -m invoke --list
 ホストマシンに一度MSアカウントとしてログインし直す必要がある模様。＞[Microsoftアカウントでのリモートデスクトップ接続に苦労した話 #Windows - Qiita](https://qiita.com/sfjwr/items/037aabef2c5637fe0e51)
 
 PINを忘れた場合で途中までログインしてPINをリセットしますか？というところでキャンセルしたらログインしたとみなされたっぽく、解決した。
+
+## タイトルバーを出さないRemoteDesktop
+
+設定で出さなくしてフルスクリーンにした時は、抜け方はC-A-Home。
