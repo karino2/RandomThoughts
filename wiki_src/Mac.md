@@ -20,6 +20,8 @@ rpathとかがどうなってるかとかはotoolというコマンドで見る�
 $ otool -L MyApp.app
 ```
 
+[Understanding dyld @executable_path, @loader_path and @rpath - iTwenty's Space](https://itwenty.me/posts/01-understanding-rpath/)
+
 ## 雑多なリンク
 
 - [MacでシェルスクリプトをFinderから実行する方法](https://alvinalexander.com/mac-os-x/exec-unix-shell-script-mac-finder-execute-click/)
