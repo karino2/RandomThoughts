@@ -82,3 +82,13 @@ ZipEntryなどはFiles関連の便利メソッドが使えないので、たま�
     |> Seq.takeWhile (fun line -> line <> null) 
     |> Seq.toList // do read before sr close.
 ```
+
+## Fable関連
+
+なんかgolangのランタイムで動くFSharpみたいな言語無いかなぁ、と思っていて見つけたもの。
+
+- [Golang (wip) by dbrattli · Pull Request #3345 · fable-compiler/Fable](https://github.com/fable-compiler/Fable/pull/3345)
+   - [Golang · fable-compiler/Fable · Discussion #3346](https://github.com/fable-compiler/Fable/discussions/3346)
+- [The Go Programming Language](https://go.dev/src/cmd/compile/README) golangのコンパイラ周辺のドキュメント。外から使える感じでは無さそうだが、一応メモしておく。
+
+fableからやると、トランスパイラにdotnetが必要になっちゃうよなぁ。やはり似た言語くらいがいいんじゃないか、という気もする。
