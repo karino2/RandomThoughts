@@ -7,6 +7,10 @@
 
 Windows上の環境設定のメモなど。そのうちまとめてブログにしたい。
 
+## ショートカット
+
+- スクリーンショット: Win+Shift+S
+
 ## 最初のセットアップ
 
 - chocolateyをインストール ... [Chocolatey Software - Installing Chocolatey](https://chocolatey.org/install)
