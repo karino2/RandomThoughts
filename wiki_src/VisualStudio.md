@@ -21,6 +21,8 @@ VSから プロジェクト＞NuGetパッケージの管理を選び、パッケ
 
 CVCollectionService.exe
 
+**追記: 2024/12/24のExtensionのアップデートで治ったっぽい。**
+
 ## ファイルを開く
 
 VSCodeのC-p相当の事は、C-1, C-r。
