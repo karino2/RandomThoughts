@@ -4,6 +4,28 @@ go言語、golangなどと呼ばれる。
 
 - [Tutorials - The Go Programming Language](https://go.dev/doc/tutorial/)
 
+## lensmとディスアセンブル
+
+- [loov/lensm: Go assembly and source viewer](https://github.com/loov/lensm?tab=readme-ov-file)
+
+使い方が良く分からなかったのでメモ。
+
+```
+$ go build  -o hello_generics hello_generics.go
+$ lensm -filter main hello_generics
+```
+
+最適化を切りたければ以下。（lがno inline、Nが最適化無効）
+
+```
+$ go build -gcflags "-N -l" -o hello_generics hello_generics.go
+```
+ 
+## Generics
+
+- [The generics implementation of Go 1.18 • DeepSource](https://deepsource.com/blog/go-1-18-generics-implementation)
+- [proposal/design/generics-implementation-dictionaries-go1.18.md at master · golang/proposal](https://github.com/golang/proposal/blob/master/design/generics-implementation-dictionaries-go1.18.md)
+
 ## Go学習メモ 
 
 やった事をどこかに書きたい時にここに書く。
