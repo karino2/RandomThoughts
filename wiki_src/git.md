@@ -109,6 +109,14 @@ gitの一部に入っている模様。tcl/tk（wish）。
 - [Introduction · Tig - Text-mode interface for Git](https://jonas.github.io/tig/) ncursesのUI。生きていけそうではあるがショートカットとか覚えるのがだるい
 - [PowerShell Gallery - Git/Git.ps1 1.1.4.11](https://www.powershellgallery.com/packages/Tecman.Tfs.Tools/1.1.4.11/Content/Git%5CGit.ps1) powershellでちょっとした事、checkoutとかはこれを参考に自分のを作るのがいいかも。
 
+### lazygit
+
+コンソール系をいろいろ試した結果、結局これをメインにする事に。
+
+差分の方をスクロールするのはShift+j, Shift+kでも出来る（何故かヘルプにはpageup, pagedownしか載ってないが）
+
+リモートのブランチを最初にチェックアウトする場合はcを使う（名前でインクリメンタルフィルタリング）。
+
 ### git-guiメモ
 
 git本家のソースツリーに含まれている、tcl/tkで書かれたgit-gui。ステージングは割と良い。足りない機能を以下にメモしていく。
@@ -131,8 +139,6 @@ tigがなかなか良いのだが、コミット周りとかも似たような�
 gitui、なんかリモートのブランチをチェックアウトしようとするとディレクトリが使用中とかいって中途半端にチェックアウトされてしまう（ファイルだけ更新されてHEADが更新されてない感じ？）。
 
 [コンソールとか小さめのgitクライアントをいろいろ触ってみている - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2024/11/14/console_git_client.html)
-
-lazygitで差分の方をスクロールするのはShift+j, Shift+kでも出来る（何故かヘルプにはpageup, pagedownしか載ってないが）
 
 
 ## 入門
