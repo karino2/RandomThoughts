@@ -3,6 +3,7 @@
 go言語、golangなどと呼ばれる。
 
 - [Tutorials - The Go Programming Language](https://go.dev/doc/tutorial/)
+- [How to Write Go Code - The Go Programming Language](https://go.dev/doc/code)
 
 ## lensmとディスアセンブル
 
@@ -23,8 +24,17 @@ $ go build -gcflags "-N -l" -o hello_generics hello_generics.go
  
 ## Generics
 
-- [The generics implementation of Go 1.18 • DeepSource](https://deepsource.com/blog/go-1-18-generics-implementation)
-- [proposal/design/generics-implementation-dictionaries-go1.18.md at master · golang/proposal](https://github.com/golang/proposal/blob/master/design/generics-implementation-dictionaries-go1.18.md)
+TourのGenericsの所をやっただけだとよく分からないのでもうちょっとお勉強。
+
+- [The generics implementation of Go 1.18 • DeepSource](https://deepsource.com/blog/go-1-18-generics-implementation) 内部解説ブログ
+- [proposal/design/generics-implementation-dictionaries-go1.18.md at master · golang/proposal](https://github.com/golang/proposal/blob/master/design/generics-implementation-dictionaries-go1.18.md) 公式ドキュメント
+- [Tutorial: Getting started with generics - The Go Programming Language](https://go.dev/doc/tutorial/generics) 使う側、constraintsの追加の仕方がわかる
+
+よく使うconstraints一覧とかor以外のどういうconstraints演算があるのかがまだ分からない。
+
+## リフレクション
+
+
 
 ## Go学習メモ 
 
@@ -44,3 +54,7 @@ Sliceのあたりは毎回ちょっと詰まるな。
 
 構造体とか関数あたりまで飛ばしてしまってもいいのだが、
 rangeとかifの条件の前に文書けるのとかswitch周りとか細々と忘れている事があるので結局全部見ている。
+
+### Tourが終わったのでTutorialを少し進める 2025-01-08 (水)
+
+複数モジュールの開発とかgenericsとかを見たりする。
