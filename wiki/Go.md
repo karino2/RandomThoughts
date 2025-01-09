@@ -3,7 +3,7 @@
 go言語、golangなどと呼ばれる。
 
 - [Tutorials - The Go Programming Language](https://go.dev/doc/tutorial/)
-- [How to Write Go Code - The Go Programming Language](https://go.dev/doc/code)
+- [Go by Example](https://gobyexample.com/)
 
 ## lensmとディスアセンブル
 
@@ -37,6 +37,20 @@ TourのGenericsの所をやっただけだとよく分からないのでもう�
 [The Laws of Reflection - The Go Programming Language](https://go.dev/blog/laws-of-reflection)
 
 Elemがなんなのかはよく分からないが、NumFieldでフィールドの個数、Fieldでフィールドが取れそうか。
+
+## コードを書き始めるセットアップ
+
+- [How to Write Go Code - The Go Programming Language](https://go.dev/doc/code)
+
+go mod initに何を書くかよくわからんな、と思ったが、「go mod init github.com/karino2/レポジトリの名前」で良さそう。
+
+また、go buildは同一ディレクトリ内の.goファイルをビルドしてくれるっぽい。＞[go command - cmd/go - Go Packages](https://pkg.go.dev/cmd/go#hdr-Compile_packages_and_dependencies)
+
+## struct embedding
+
+[Go by Example: Struct Embedding](https://gobyexample.com/struct-embedding)
+
+IRのツリー作る時などの、Nodeを先頭に置くとメソッドが使えるという機能。
 
 ## Go学習メモ 
 
