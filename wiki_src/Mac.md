@@ -108,6 +108,10 @@ launchctl setenv NODE_PATH /usr/local/lib/node_modules
 
 Free WMV AVI Converterを使っている。
 
+## Xcodeのキーボードショートカット
+
+- Open Quickly:  Shift+Cmd+O
+
 ## Instrumentsのworking directoryの設定
 
 毎回わからなくなるのでメモする。
