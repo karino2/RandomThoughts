@@ -81,3 +81,16 @@ parseBinOpExpressionのあたりか。STAR_STARというトークン自体はあ
 ## 拡張子は.starか
 
 [added .star to extensions by dainikkal · Pull Request #128 · bazelbuild/vscode-bazel](https://github.com/bazelbuild/vscode-bazel/pull/128)
+
+## starlark-go
+
+- [google/starlark-go: Starlark in Go: the Starlark configuration language, implemented in Go](https://github.com/google/starlark-go/tree/master)
+
+ちょっとコード読みのメモを置く場所が欲しかったのでここに置く。
+
+### パースとAST
+
+パースは syntax/parse.go でパースするっぽい。
+FileOptionsのParseというメソッド。
+
+parserのparseFileメソッドがその中身か。
