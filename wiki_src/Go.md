@@ -52,6 +52,46 @@ go mod initに何を書くかよくわからんな、と思ったが、「go mod
 
 IRのツリー作る時などの、Nodeを先頭に置くとメソッドが使えるという機能。
 
+## 引数つきの配列初期化
+
+starlark-goのコードを見ていたら以下のようなコードがあった。[starlark-go/internal/compile/compile.go at master · google/starlark-go](https://github.com/google/starlark-go/blob/master/internal/compile/compile.go)
+
+```golang
+const (
+  AMP Opcode = iota
+  APPEND
+  // 以下省略
+)
+
+var opcodeNames = [...]string {
+	AMP:          "amp",
+	APPEND:       "append",
+  // 以下省略
+}
+```
+
+これで、`opcodeNames[AMP]` などのように並ぶらしい。
+
+どうも配列の要素の前に定数でインデックスを指定出来るっぽいんだが、ドキュメントで該当場所は見つけられなかった。
+
+以下みたいなコードは動く。
+
+```golang
+const (
+	HOGE int = iota
+	IKA
+)
+
+func main() {
+	s := [...]string{
+		HOGE: "hoge",
+		// IKA: "ika"
+		3:    "ika",
+	}
+	fmt.Println(s)
+}
+```
+
 ## Go学習メモ 
 
 やった事をどこかに書きたい時にここに書く。
