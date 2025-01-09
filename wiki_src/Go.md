@@ -34,7 +34,9 @@ TourのGenericsの所をやっただけだとよく分からないのでもう�
 
 ## リフレクション
 
+[The Laws of Reflection - The Go Programming Language](https://go.dev/blog/laws-of-reflection)
 
+Elemがなんなのかはよく分からないが、NumFieldでフィールドの個数、Fieldでフィールドが取れそうか。
 
 ## Go学習メモ 
 
