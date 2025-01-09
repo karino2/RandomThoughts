@@ -94,3 +94,5 @@ parseBinOpExpressionのあたりか。STAR_STARというトークン自体はあ
 FileOptionsのParseというメソッド。
 
 parserのparseFileメソッドがその中身か。
+
+パース結果はStmtの配列として返るっぽい。

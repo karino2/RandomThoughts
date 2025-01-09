@@ -94,6 +94,23 @@ func main() {
 
 ちなみにドット３つはコンパイル時に要素数に展開されるらしい。
 
+## ASTのノード的な表現
+
+Exprのstructを定義する、みたいな時に、空のメソッドをインターフェースにいれる事で表現するイディオムがあるっぽい。
+starlark-goのExprに以下のようなコードがあった。[starlark-go/syntax/syntax.go at master · google/starlark-go](https://github.com/google/starlark-go/blob/master/syntax/syntax.go#L220)
+
+```golang
+type Expr interface {
+   expr()
+}
+
+func (*BinaryExpr) expr()    {}
+func (*CallExpr) expr()      {}
+// 以下略
+```
+
+こうやって構造体がExprである事を表現しているっぽい。 別にexprメソッド無くても動きそうではあるが。Stmtとかも同様の事をやっている。
+
 ## Go学習メモ 
 
 やった事をどこかに書きたい時にここに書く。
