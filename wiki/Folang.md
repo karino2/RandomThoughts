@@ -23,3 +23,84 @@ dotnetはやっぱりかったるさがあるので、runtimeやデプロイは[
 
 fsharpを移植したいのではなく、ランタイム的にはなるべくgoそのままにしたい。プラスアルファで型情報くらいは追加で持ってもいいかもしれないが。
 という事で言語的には全く新しい言語になるだろう。
+
+## どんな感じに書けたらいいか考える
+
+とりあえずhello world的なものを考えたい。
+
+まずgolangの関数呼び出しは[FSharp](FSharp)のdotnetの関数呼び出しのようにしたい気がする。
+
+```
+import "fmt"
+
+let main () =
+   fmt.Println("hoge")
+```
+
+これは以下に展開されて欲しい。
+
+```golang
+import "fmt"
+
+func main() {
+   fmt.Println("hoge")
+}
+```
+
+次にfolangの関数定義を考える。
+最初はtype inferenceは無い状態から始めよう。すると関数定義は以下か。
+
+```
+import "fmt"
+
+let hello (msg: string) =
+    fmt.Println(msg)
+
+let main() =
+    hello "hoge"
+```
+
+folangとしては関数はカッコ無しで呼び出し、部分適用されていくFSharp的な実行でいいだろう。
+このカッコで呼び出すかそのまま呼び出すかでどちらの呼び出しかを分ける感じにしたい。
+
+これはどういうコードに展開されるかはちょっと現時点ではよくわからないな。
+
+```golang
+import "fmt"
+
+func hello(msg string) {
+    fmt.Println(msg)
+}
+
+func main() {
+   hello("hoge")
+}
+```
+
+このhello("hoge")に展開されるのか部分適用されるのかはコンパイル時にたぶん決定出来るよな。
+
+複数引数だと以下みたいな感じになるか。
+
+```
+let hello (msg: string) (num: int) = 
+   fmt.Printf(msg, num)
+
+let main () =
+   let temp = hello "hoge%d"
+   temp 123
+```
+
+部分適用すると以下みたいか？
+
+```golang
+func hello(msg string, num int) {
+    fmt.Printf(msg, num)
+}
+
+func main() {
+   temp := func(num int) { hello("hello%d", num) }
+   temp(123)
+}
+```
+
+とりあえずこのくらいを生成出来るようにする所から始めるか。
