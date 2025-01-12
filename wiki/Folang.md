@@ -12,6 +12,7 @@
    - [Go言語でつくるインタプリタ - O'Reilly Japan](https://www.oreilly.co.jp/books/9784873118222/) こんな本があるらしい。まぁあまり読む必要も感じないが。
 - [google/starlark-go: Starlark in Go: the Starlark configuration language, implemented in Go](https://github.com/google/starlark-go) 手本としてはstarlarkとかどうだろう。
 - [rhysd/gocaml: :camel: Statically typed functional programming language implementation with Go and LLVM](https://github.com/rhysd/gocaml) 言語的にはcamlが似てるよな（当たり前）
+- [Overview · Reason](https://reasonml.github.io/docs/en/overview) ReasonML、JSとのinteroperabilityを重視しているのでこれはこれで参考になる。
 
 ## 開発動機
 
@@ -105,3 +106,18 @@ func main() {
 ```
 
 とりあえずこのくらいを生成出来るようにする所から始めるか。
+
+いや、関数定義はもっとgolang的でいいのではないか？
+
+```
+import "fmt"
+
+func hello (msg string, num int) = 
+   fmt.Printf(msg, num)
+
+func main () =
+   let temp = hello "hoge%d"
+   temp 123
+```
+
+いや、やはり関数定義のシンタックスが面倒なのは良くないな。
