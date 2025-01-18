@@ -138,7 +138,7 @@ func main () =
 import "fmt"
 
 let main () =
-    GoEval("fmt.Println(\"Hello World\")")
+    GoEval "fmt.Println(\"Hello World\")"
 ```
 
 GoEvalは今はunit型としているが、any型にしてキャストを実装すれば割となんでも出来そうな気がする。
@@ -146,7 +146,7 @@ GoEvalは今はunit型としているが、any型にしてキャストを実装�
 
 ```
 let hello (msg:string) = 
-    GoEval("fmt.Println(\"Hello %s\", msg)")
+    GoEval "fmt.Printf(\"Hello %s\n\", msg)"
 ```
 
 GoEvalの中で引数のmsgを（気を付けて）使う事が出来る。
@@ -207,7 +207,7 @@ package main
 import "fmt"
 
 let hello (msg:string) = 
-    GoEval("fmt.Printf(\"Hello %s\\n\", msg)")
+    GoEval "fmt.Printf(\"Hello %s\\n\", msg)"
 
 let main () =
    hello "World"
@@ -234,7 +234,7 @@ golang慣れてないので、型に相当するもののinterfaceに対応す�
 とりあえず全部ポインタに統一しているが、C++ならこのくらいのstructは実体で持って回る方が普通なんだよなぁ。
 ただC++はvirtualは全部ポインタ越しになるんだよなぁ。
 
-### 2025-01-17 (金)
+### 型の定義とlookup 2025-01-17 (金)
 
 関数定義で型をmapに登録して関数呼び出しでこのmapをlookupするようにする。
 これでASTより先は一番原始的なものは完成だ。
@@ -253,3 +253,23 @@ golang慣れてないので、型に相当するもののinterfaceに対応す�
 
 パーサーがどのくらいかはわからんが、このくらいをトランスパイルで作るくらいならなんか出来そうな気もしてくるな。
 思ったよりも行けそうかも？
+
+### 2025-01-18 (土)
+
+トークナイザを書く。オフサイドルールとかを入れようとしたら意外と良く分からない感じだったので、
+まずはそういう事を考えずにトークナイズだけ行う。
+
+まずは一番カンタンなhello world的な以下に必要な事だけやろうとしているが、
+
+```
+package main
+import "fmt"
+
+let main () =
+    GoEval "fmt.Println(\"Hello World\")"
+```
+
+意外と必要なものが多く、思ったよりも時間が掛かった。文字列リテラルのエスケープが開幕に必要になってしまうのだよなぁ。
+ただなんとか一通り終わった。
+
+次はパーサーを書くのだが、ちょっと燃え尽きたので休憩。ここまでやった程度のASTを作るパーサーまではあと一歩って所かな。
