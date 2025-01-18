@@ -3,6 +3,10 @@
 
 [[FSharp]]っぽい見た目で[[Go]]として動く言語を作りたいなぁ、と思い、Folangという名前をつけておく。
 
+## レポジトリ
+
+[karino2/folang: Funcitonal language transpiler to golang.](https://github.com/karino2/folang/tree/main)
+
 ## 関連リンク
 
 参考になりそうなリンクを貼っておく。
@@ -334,3 +338,7 @@ let main () =
 
 なんかfolangでfolangのコンパイラを書く所までは行けそうな気がしてきたな。
 セルフトランスパイルまで行けばちょっとしたものじゃないか？
+
+ここをスタート地点としよう、という事で公開する。 [karino2/folang: Funcitonal language transpiler to golang.](https://github.com/karino2/folang/tree/main)
+
+まだ置いただけだが。
