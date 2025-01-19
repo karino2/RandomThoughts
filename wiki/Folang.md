@@ -401,6 +401,7 @@ mypoint := &Point{ X: 1, Y: 2 }
      - パース
   - Record生成
      - AST
-     - パース 
+     - パース
+     - フィールドアクセス 
 - Union
 - パターンマッチ
