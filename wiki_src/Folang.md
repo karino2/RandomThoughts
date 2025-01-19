@@ -31,7 +31,7 @@
     - [Overview · Reason](https://reasonml.github.io/docs/en/overview) ReasonML、JSとのinteroperabilityを重視しているのでこれはこれで参考になる。（追記：ReScriptの方がメンテされてそう）
 - [oden/doc/compiler-overview.md at master · oden-lang/oden](https://github.com/oden-lang/oden/blob/master/doc/compiler-overview.md) Haskellで書かれた似たようなコンセプトのもの。かなり頑張っているが途中で開発が止まっていて残念。
 - [Explore this site - F# for fun and profit](https://fsharpforfunandprofit.com/site-contents/) fun and profitはとりあえずここから。
-
+- [Golang · fable-compiler/Fable · Discussion #3346](https://github.com/fable-compiler/Fable/discussions/3346) fableのgolangバックエンド途中まで。
 
 ## ゴールとノンゴール
 
@@ -53,6 +53,12 @@
 - MLやF#互換は目指さない
 - go無しで全部書くのは目指さない（困ったらgoに降りて書く）
 
+## Discriminated Unionの実装方針
+
+- [Discriminated Unions - F# for fun and profit](https://fsharpforfunandprofit.com/posts/discriminated-unions/) F#の機能としての説明
+- [Fable · Features](https://fable.io/docs/typescript/features.html) FableのUnionの実装
+- 
+
 ## 開発動機
 
 dotnetはやっぱりかったるさがあるので、runtimeやデプロイは[[Go]]が良いと思う。
@@ -64,7 +70,6 @@ dotnetはやっぱりかったるさがあるので、runtimeやデプロイは[
 
 fsharpを移植したいのではなく、ランタイム的にはなるべくgoそのままにしたい。プラスアルファで型情報くらいは追加で持ってもいいかもしれないが。
 という事で言語的には全く新しい言語になるだろう。
-
 
 ## どんな感じに書けたらいいか考える
 
