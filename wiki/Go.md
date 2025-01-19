@@ -5,6 +5,8 @@ go言語、golangなどと呼ばれる。
 - [Tutorials - The Go Programming Language](https://go.dev/doc/tutorial/)
 - [Go by Example](https://gobyexample.com/)
 - [The Go Programming Language Specification - The Go Programming Language](https://go.dev/ref/spec)
+- [research!rsc: Go Data Structures: Interfaces](https://research.swtch.com/interfaces) インターフェースの内部表現、割と良く見たくなるページなので。
+- [fmt package - fmt - Go Packages](https://pkg.go.dev/fmt) standard libraryのリファレンス、とりあえずfmtを貼っておく
 
 ## lensmとディスアセンブル
 

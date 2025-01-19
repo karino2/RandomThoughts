@@ -11,17 +11,27 @@
 
 参考になりそうなリンクを貼っておく。
 
+**golang関連**
+
+- [example/gotypes at master · golang/example](https://github.com/golang/example/tree/master/gotypes) go のtype checker
+  - [types package - go/types - Go Packages](https://pkg.go.dev/go/types)
 - [pie/v1 at master · elliotchance/pie](https://github.com/elliotchance/pie/tree/master/v1) v1はコードジェネレーションをしているらしく、コメントとかでアノテーションとかしているのでコード的には似たものが使えるかもしれない。
+
+**golangによる言語処理系**
+
 - [kztomita/golisp: GoによるLISP実装](https://github.com/kztomita/golisp/tree/master) IRのツリーとかをGoでどんな感じで書くのかの参考に
    - [Go言語でつくるインタプリタ - O'Reilly Japan](https://www.oreilly.co.jp/books/9784873118222/) こんな本があるらしい。まぁあまり読む必要も感じないが。
    - [bradford-hamilton/monkey-lang: Currently extending the Monkey programming language designed in the books "Writing An Interpreter In Go" and "Writing a Compiler in Go"](https://github.com/bradford-hamilton/monkey-lang/tree/master) 上記の本で出てくるmonkey言語を拡張しているものらしい。
 - [google/starlark-go: Starlark in Go: the Starlark configuration language, implemented in Go](https://github.com/google/starlark-go) 手本としてはstarlarkとかどうだろう。
 - [rhysd/gocaml: :camel: Statically typed functional programming language implementation with Go and LLVM](https://github.com/rhysd/gocaml) 言語的にはcamlが似てるよな（当たり前）
-- [Overview · Reason](https://reasonml.github.io/docs/en/overview) ReasonML、JSとのinteroperabilityを重視しているのでこれはこれで参考になる。
+
+**参考になりそうな関数型言語系**
+
 - [Pattern Matching / Destructuring - ReScript Language Manual](https://rescript-lang.org/docs/manual/v11.0.0/pattern-matching-destructuring) ReScriptのドキュメントはJSの例が出ていてかなり参考になる。
+    - [Overview · Reason](https://reasonml.github.io/docs/en/overview) ReasonML、JSとのinteroperabilityを重視しているのでこれはこれで参考になる。（追記：ReScriptの方がメンテされてそう）
 - [oden/doc/compiler-overview.md at master · oden-lang/oden](https://github.com/oden-lang/oden/blob/master/doc/compiler-overview.md) Haskellで書かれた似たようなコンセプトのもの。かなり頑張っているが途中で開発が止まっていて残念。
-- [example/gotypes at master · golang/example](https://github.com/golang/example/tree/master/gotypes) go のtype checker
-  - [types package - go/types - Go Packages](https://pkg.go.dev/go/types)
+- [Explore this site - F# for fun and profit](https://fsharpforfunandprofit.com/site-contents/) fun and profitはとりあえずここから。
+
 
 ## ゴールとノンゴール
 
@@ -345,3 +355,40 @@ let main () =
 ここをスタート地点としよう、という事で公開する。 [karino2/folang: Funcitonal language transpiler to golang.](https://github.com/karino2/folang/tree/main)
 
 まだ置いただけだが。
+
+### 2025-01-19 (日)
+
+次はレコードとdiscriminated unionとパターンマッチの３つをやらないといけなくて、３つ同時にやらないといけないとやる気が出ない。
+1つだけやればいいんだろうが、1つだと使い道が無いからなぁ。
+
+レコード型だけやればいいんだが、これだけでやりたい事が無いのでやる気が出ないんだよなぁ。
+
+[F#のリファレンスのレコード型のところ](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/records)の例をとりあえず動かすか？
+
+以下のコードが
+
+```
+type Point = { X: int; Y: int }
+
+let mypoint = {X = 1; Y = 2 }
+```
+
+以下になればいいかな。
+
+```
+type Point struct {
+  X int
+  Y int
+}
+
+mypoint := &Point{ X: 1, Y: 2 }
+```
+
+でもmypointの使い道が無いんだよな。
+必要な機能は大量にあるが最低限これだけ実装すればこれが出来る、というのが見えてないのでやる気が出ない。
+
+とりあえずこれくらいとフィールドアクセスだけ実装してunionの実装を進めるのがいいのかなぁ。
+なんか最初のターゲット（トランスパイラ）が、最初のターゲットにしては難しすぎるような気がしてきた。うーん。
+
+とりあえず fun and profitの方のレコード型のページのリンクも貼っておこう。
+[Records - F# for fun and profit](https://fsharpforfunandprofit.com/posts/records/)

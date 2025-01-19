@@ -23,12 +23,19 @@
 
 ## 外部リンク
 
-- [Get Started with F# in Visual Studio Code](https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-vscode)
-- [F#でNuGetのライブラリを使う](https://karino2.github.io/2021/01/16/ionide_nuget.html)
+**言語仕様関連**
+
 - [F# for fun and profit: Choosing between collection functions](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/posts/list-module-functions.html)
   - [Seq (FSharp.Core)](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html) 一覧から真面目に探したい時はこちら。
 - [Language Guide - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/) Microsoft Learn
 - [About F# - The F# Language Specification](https://fsharp.org/specs/language-spec/) スペック
+- [Explore this site - F# for fun and profit](https://fsharpforfunandprofit.com/site-contents/) fun and profitはとりあえずここから。
+- [Printf (FSharp.Core) - FSharp.Core](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html) リファレンス、とりあえずprintfのリンクを貼っておく
+
+**作業開始時の細々とした情報**
+
+- [Get Started with F# in Visual Studio Code](https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-vscode)
+- [F#でNuGetのライブラリを使う](https://karino2.github.io/2021/01/16/ionide_nuget.html)
  - [dotnet add unimemo.fsproj package FSharp.Data](https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line) F#でのnugetパッケージの追加
 - [Deedle: Exploratory data library for .NET](https://fslab.org/Deedle/) dataframeっぽい奴。
 - [What does this C# code look like in F#? (part one: expressions and statements) « Inside F#](https://lorgonblog.wordpress.com/2008/11/28/what-does-this-c-code-look-like-in-f-part-one-expressions-and-statements/)
