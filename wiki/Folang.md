@@ -27,7 +27,7 @@
 
 **参考になりそうな関数型言語系**
 
-- [Pattern Matching / Destructuring - ReScript Language Manual](https://rescript-lang.org/docs/manual/v11.0.0/pattern-matching-destructuring) ReScriptのドキュメントはJSの例が出ていてかなり参考になる。
+- [Pattern Matching / Destructuring - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/pattern-matching-destructuring) ReScriptのドキュメントはJSの例が出ていてかなり参考になる。なぜか最新のドキュメントはJSのコードがバグってるのでv10のリンクを貼っておく。
     - [Overview · Reason](https://reasonml.github.io/docs/en/overview) ReasonML、JSとのinteroperabilityを重視しているのでこれはこれで参考になる。（追記：ReScriptの方がメンテされてそう）
 - [oden/doc/compiler-overview.md at master · oden-lang/oden](https://github.com/oden-lang/oden/blob/master/doc/compiler-overview.md) Haskellで書かれた似たようなコンセプトのもの。かなり頑張っているが途中で開発が止まっていて残念。
 - [Explore this site - F# for fun and profit](https://fsharpforfunandprofit.com/site-contents/) fun and profitはとりあえずここから。
@@ -55,9 +55,79 @@
 
 ## Discriminated Unionの実装方針
 
+まずは自分が馴染んでいるF#の実装の解説文書のリンクから。
+
 - [Discriminated Unions - F# for fun and profit](https://fsharpforfunandprofit.com/posts/discriminated-unions/) F#の機能としての説明
-- [Fable · Features](https://fable.io/docs/typescript/features.html) FableのUnionの実装
-- 
+- [Discriminated Unions - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions)
+
+例えば以下の簡単なケースを考えてみる。
+
+```
+type IntOrBool =
+  |  I of int
+  | B of bool
+```
+
+こうするとIとBという関数が出来て、結果はIntOrBool型で、実行時にどちらかがパターンマッチで判定出来る。
+intとかboolのところは同じ型が来る場合もあるっぽい（上記のMicrosoft LearnのEquilateralTriangleとSquareの例参照）。
+だから単なるtype assertionでは区別出来ない。
+
+以下のような実装だとどうだろう？
+
+```golang
+type IntOrBool interface {
+  IntOrBool_Union()
+}
+
+func (*IntOrBool_I) IntOrBool_Union(){}
+func (*IntOrBool_B) IntOrBool_Union(){}
+
+type IntOrBool_I struct {
+   _value int
+}
+
+type IntOrBool_B struct {
+   _value bool
+}
+
+func New_IntOrBool_I(v int) IntOrBool { return &IntOrBool_I{v} }
+func New_IntOrBool_B(v bool) IntOrBool { return &IntOrBool_B{v} }
+```
+
+IかBはNewXXXの関数呼び出しにマップすれば良さそう。
+
+これならIntOrBoolはtype assertionで実行時にIかBは区別出来るんじゃないか？
+試してみよう。
+
+```fsharp
+match iob with
+| I ival -> printfn "i=%d" ival
+| B bval -> printfn "b=%v" bval
+```
+
+この単純なケースなら単なるtype assertで実現出来そうだな。
+
+```golang
+switch iob.(type) {
+case *IntOrBool_I:
+   ival := iob._value
+   fmt.Printf("i=%d", ival)
+case *IntOrBool_B:
+   bval := iob._value
+   fmt.Printf("b=%v", bval)
+}
+```
+
+もちろん実際はもっと複雑なパターンがありうるのでtype switchで書けるのか、という問題はあるが、たぶんcaseの中にさらなる条件で全部書けるはずか？
+まぁ複雑なパターンはしばらく使わないので、まずはこの単純なケースが動くようにすべきか。
+
+altJSの実装を見てみる。
+
+- [Fable · Features](https://fable.io/docs/typescript/features.html#f-unions) FableのUnionの実装
+- [Pattern Matching / Destructuring - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/pattern-matching-destructuring) ReScriptのUnion実装、payloadのあたりが参考になる。
+
+fableでもReScriptでも、まず各caseを表すタグを用意してここに文字列かインデックスを入れている。
+JSだと実行時に型情報が無くなるので必要な気がするが、goならいらないのでは？
 
 ## 開発動機
 
