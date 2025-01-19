@@ -392,3 +392,15 @@ mypoint := &Point{ X: 1, Y: 2 }
 
 とりあえず fun and profitの方のレコード型のページのリンクも貼っておこう。
 [Records - F# for fun and profit](https://fsharpforfunandprofit.com/posts/records/)
+
+やることをリストアップしておく。
+
+- Record
+  - Record定義
+     - AST
+     - パース
+  - Record生成
+     - AST
+     - パース 
+- Union
+- パターンマッチ
