@@ -83,11 +83,11 @@ func (*IntOrBool_I) IntOrBool_Union(){}
 func (*IntOrBool_B) IntOrBool_Union(){}
 
 type IntOrBool_I struct {
-   _value int
+   Value int
 }
 
 type IntOrBool_B struct {
-   _value bool
+   Value bool
 }
 
 func New_IntOrBool_I(v int) IntOrBool { return &IntOrBool_I{v} }
@@ -110,10 +110,10 @@ match iob with
 ```golang
 switch iob.(type) {
 case *IntOrBool_I:
-   ival := iob._value
+   ival := iob.Value
    fmt.Printf("i=%d", ival)
 case *IntOrBool_B:
-   bval := iob._value
+   bval := iob.Value
    fmt.Printf("b=%v", bval)
 }
 ```
