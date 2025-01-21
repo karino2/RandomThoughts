@@ -554,3 +554,6 @@ Unionを終えたあたりでオフサイドルール実装したりletとか関
 ただF#のspecのexpressionのexpr exprというルールがパース出来ないじゃん、ってなって、ちょっと適当なルールでのパースになっている。
 
 お、FSharpの方でグラマーっぽいの見つけた。これか。＞[fsharp/src/Compiler/pars.fsy at 686dcabea0f81eafbf800ec4e7ba6e34580ddf2a · dotnet/fsharp](https://github.com/dotnet/fsharp/blob/686dcabea0f81eafbf800ec4e7ba6e34580ddf2a/src/Compiler/pars.fsy#L3418)
+
+パターンマッチを実装しようとしたが、オフサイドルールを実装しないと使い物にならないことに気づく。
+本格的にやるのは大変そうなので、ある程度決め打ちで手動でハンドル出来ないかなぁ。
