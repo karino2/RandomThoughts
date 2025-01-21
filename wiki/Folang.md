@@ -25,8 +25,6 @@
 - [google/starlark-go: Starlark in Go: the Starlark configuration language, implemented in Go](https://github.com/google/starlark-go) 手本としてはstarlarkとかどうだろう。
 - [rhysd/gocaml: :camel: Statically typed functional programming language implementation with Go and LLVM](https://github.com/rhysd/gocaml) 言語的にはcamlが似てるよな（当たり前）
 - [google/grumpy: Grumpy is a Python to Go source code transcompiler and runtime.](https://github.com/google/grumpy) pythonのgolangへのトランスパイラ。こんなのあったのか！？
-- [Borgo Programming Language](https://borgo-lang.github.io/) Rustっぽい言語をgolangにトランスパイルするらしい
-   - [borgo/std/core/core.brg at 3b9f01578941fb00ed93756e2fadc009feb50128 · borgo-lang/borgo](https://github.com/borgo-lang/borgo/blob/3b9f01578941fb00ed93756e2fadc009feb50128/std/core/core.brg#L125) brogoでのTupleとか。参考になりそう。
 
 **参考になりそうな関数型言語系**
 
@@ -35,6 +33,8 @@
 - [oden/doc/compiler-overview.md at master · oden-lang/oden](https://github.com/oden-lang/oden/blob/master/doc/compiler-overview.md) Haskellで書かれた似たようなコンセプトのもの。かなり頑張っているが途中で開発が止まっていて残念。
 - [Explore this site - F# for fun and profit](https://fsharpforfunandprofit.com/site-contents/) fun and profitはとりあえずここから。
 - [Golang · fable-compiler/Fable · Discussion #3346](https://github.com/fable-compiler/Fable/discussions/3346) fableのgolangバックエンド途中まで。
+- [Borgo Programming Language](https://borgo-lang.github.io/) Rustっぽい言語をgolangにトランスパイルするらしい
+   - [borgo/std/core/core.brg at 3b9f01578941fb00ed93756e2fadc009feb50128 · borgo-lang/borgo](https://github.com/borgo-lang/borgo/blob/3b9f01578941fb00ed93756e2fadc009feb50128/std/core/core.brg#L125) brogoでのTupleとか。参考になりそう。
 
 ## ゴールとノンゴール
 
@@ -548,7 +548,7 @@ Unionを終えたあたりでオフサイドルール実装したりletとか関
 トランスパイラは下の言語がすでに強力なので、そんなにいろいろ書かなくても使い物になる。
 遊びでやるにはいいと思うんだよな。
 
-### 2025-01-21 (火)
+### Union限定のパターンマッチ実装 2025-01-21 (火)
 
 手抜きだった関数のパースをBlockという概念を持ってきてもうちょっと真面目に実装する。
 ただF#のspecのexpressionのexpr exprというルールがパース出来ないじゃん、ってなって、ちょっと適当なルールでのパースになっている。
@@ -556,4 +556,12 @@ Unionを終えたあたりでオフサイドルール実装したりletとか関
 お、FSharpの方でグラマーっぽいの見つけた。これか。＞[fsharp/src/Compiler/pars.fsy at 686dcabea0f81eafbf800ec4e7ba6e34580ddf2a · dotnet/fsharp](https://github.com/dotnet/fsharp/blob/686dcabea0f81eafbf800ec4e7ba6e34580ddf2a/src/Compiler/pars.fsy#L3418)
 
 パターンマッチを実装しようとしたが、オフサイドルールを実装しないと使い物にならないことに気づく。
-本格的にやるのは大変そうなので、ある程度決め打ちで手動でハンドル出来ないかなぁ。
+本格的にやるのは大変そうなので、ある程度決め打ちで手動でハンドル出来ないかなぁ。＞手動で適当に処理した
+
+とりあえずAST上でUnionのケースだけパターンマッチを実装してみた。パースを書けば動きそうな雰囲気だが、パーサーを書く気がちょっと湧かずに休憩。
+
+しばらくして気が向いたのでパーサーを書く。結構本格的になってきたなぁ。動いている事は確認。
+これでDiscriminated Unionの最低限の実装が確認出来たな。
+
+次は何が必要なのかな？とセルフホストすべく一番小さなftype.goを眺めていると、Sliceとそのイテレーション、そしてifがあれば作れそうだな。
+とりあえずSliceだな。
