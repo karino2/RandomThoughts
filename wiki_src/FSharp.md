@@ -31,6 +31,7 @@
 - [About F# - The F# Language Specification](https://fsharp.org/specs/language-spec/) スペック
 - [Explore this site - F# for fun and profit](https://fsharpforfunandprofit.com/site-contents/) fun and profitはとりあえずここから。
 - [Printf (FSharp.Core) - FSharp.Core](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html) リファレンス、とりあえずprintfのリンクを貼っておく
+- [fsharp/src/Compiler/pars.fsy at 686dcabea0f81eafbf800ec4e7ba6e34580ddf2a · dotnet/fsharp](https://github.com/dotnet/fsharp/blob/686dcabea0f81eafbf800ec4e7ba6e34580ddf2a/src/Compiler/pars.fsy#L3418) リファレンスの文法はexpr周りが厳密じゃないのでソース。
 
 **作業開始時の細々とした情報**
 

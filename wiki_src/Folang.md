@@ -547,3 +547,10 @@ Unionを終えたあたりでオフサイドルール実装したりletとか関
 普通に言語処理系を書くともっとずっとたくさん書かないと使い物になる所まで行かないが、
 トランスパイラは下の言語がすでに強力なので、そんなにいろいろ書かなくても使い物になる。
 遊びでやるにはいいと思うんだよな。
+
+### 2025-01-21 (火)
+
+手抜きだった関数のパースをBlockという概念を持ってきてもうちょっと真面目に実装する。
+ただF#のspecのexpressionのexpr exprというルールがパース出来ないじゃん、ってなって、ちょっと適当なルールでのパースになっている。
+
+お、FSharpの方でグラマーっぽいの見つけた。これか。＞[fsharp/src/Compiler/pars.fsy at 686dcabea0f81eafbf800ec4e7ba6e34580ddf2a · dotnet/fsharp](https://github.com/dotnet/fsharp/blob/686dcabea0f81eafbf800ec4e7ba6e34580ddf2a/src/Compiler/pars.fsy#L3418)
