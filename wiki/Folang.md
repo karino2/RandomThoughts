@@ -15,7 +15,8 @@
 
 - [example/gotypes at master · golang/example](https://github.com/golang/example/tree/master/gotypes) go のtype checker
   - [types package - go/types - Go Packages](https://pkg.go.dev/go/types)
-- [pie/v1 at master · elliotchance/pie](https://github.com/elliotchance/pie/tree/master/v1) v1はコードジェネレーションをしているらしく、コメントとかでアノテーションとかしているのでコード的には似たものが使えるかもしれない。
+- [elliotchance/pie: 🍕 Enjoy a slice! A utility library for dealing with slices and maps that focuses on type safety and performance.](https://github.com/elliotchance/pie) mapとかのライブラリ
+   - [pie/v1 at master · elliotchance/pie](https://github.com/elliotchance/pie/tree/master/v1) v1はコードジェネレーションをしているらしく、コメントとかでアノテーションとかしているのでコード的には似たものが使えるかもしれない。
 
 **golangによる言語処理系**
 
