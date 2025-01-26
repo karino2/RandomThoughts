@@ -127,7 +127,26 @@ case *IntOrBool_B:
 もちろん実際はもっと複雑なパターンがありうるのでtype switchで書けるのか、という問題はあるが、たぶんcaseの中にさらなる条件で全部書けるはずか？
 まぁ複雑なパターンはしばらく使わないので、まずはこの単純なケースが動くようにすべきか。
 
-altJSの実装を見てみる。
+### of無しのケース
+
+```
+type AorB =
+  | A
+  | B
+```
+
+のような事も出来る。この場合、Aは関数ではなく変数になる（引数無し関数と変数の区別がfsharpは無く、Unit引数の関数とは区別される）。
+
+とりあえずgolang側は以下のようにvarにしてみる。
+
+```golang
+var New_AorB_A AorB = &AorB_A{}
+```
+
+変数名にNewがついているのはおかしいが、あんまりofがある時と無い時でコードを変えたくないのでこうしておく。
+どうせfolang上ではこの名前は出てこないしね。
+
+### UnionのaltJSの実装を見てみる。
 
 - [Fable · Features](https://fable.io/docs/typescript/features.html#f-unions) FableのUnionの実装
 - [Pattern Matching / Destructuring - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/pattern-matching-destructuring) ReScriptのUnion実装、payloadのあたりが参考になる。
@@ -600,4 +619,14 @@ Unionを終えたあたりでオフサイドルール実装したりletとか関
 スライスはgolangっぽく大括弧を前に置くスタイルにしてみるかな。パースで困ったらFSharp互換にするが、困るまではgolang互換で進めてみる。
 
 of無しのUnionのcase constructorは引数無しなので関数じゃなくて変数になるんだな。
-ちょっとその対応をしないといけない事に気づいた所で燃え尽き。
+ちょっとその対応をしないといけない事に気づき休憩＞実装した
+
+moduleはどうしようかなぁ。packageはディレクトリと紐づいているので、FSharpの粒度よりは大きくなっちゃうんだよな。
+ただいっぱいディレクトリ分ければいいのでは、という話もある。
+golangの概念と被っているものを入れるのは良くない気もするよな。
+せっかく新規に作っているので、この辺はgolangに寄せていきたい気もする。
+まずはpackageを使う事にし、困ったらmoduleを検討しよう。
+
+スライスはちゃんとサポートするならgenericsをサポートしてその一部とする方がいいような気もするが、
+スライスやmapだけなら特別扱いで良いという話もあるし、golangはそもそもそうなってるんだよな。
+とりあえず特別扱いで実装してしまうか。mapはそんなに使ってないのでラップしてしまってもいいかもしれない。
