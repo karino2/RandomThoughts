@@ -8,6 +8,12 @@ go言語、golangなどと呼ばれる。
 - [research!rsc: Go Data Structures: Interfaces](https://research.swtch.com/interfaces) インターフェースの内部表現、割と良く見たくなるページなので。
 - [fmt package - fmt - Go Packages](https://pkg.go.dev/fmt) standard libraryのリファレンス、とりあえずfmtを貼っておく
 
+## モジュール
+
+- [Organizing a Go module - The Go Programming Language](https://go.dev/doc/modules/layout)
+- [Import same package name or Aliasing while importing packages in Go (Golang) - Welcome To Golang By Example](https://golangbyexample.com/import-same-package-name-golang/) importでのエイリアス
+
+
 ## lensmとディスアセンブル
 
 - [loov/lensm: Go assembly and source viewer](https://github.com/loov/lensm?tab=readme-ov-file)
