@@ -656,3 +656,25 @@ Sliceをサポートした所、レコードのスライスとinterfaceのスラ
 
 ftype.goを眺めているが、スライス周りのmapとかパイプライン演算子とか整備していけばだいたい[FSharp](FSharp)っぽく書けそうだな。
 もう2〜3日くらい実装すれば基本的な事は書ける表現力に至れそうな気がする。やっぱfor文回すよりは楽だよなぁ。
+
+次のUnitTestに向けて使う関数を書いてみた。
+
+```
+let fargs (ft:FFunc) =
+  let l = slice.Length ft.targets
+  ft.targets |> slice.Take l
+```
+
+このUnitTestを通すのに必要なもの
+
+- 変数定義のlet
+- Recordのフィールドアクセス
+- パッケージアクセス（slice.XXXとかをどう管理するか）
+- slice.Length, slice.Take
+- パイプ演算子
+
+なんかいっぱい使いすぎだな。たった二行なのになぁ。
+
+ReScriptのarrayはカンマ区切りなんだな。[Array & List - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/array-and-list)
+
+セミコロン区切りにするつもりだったが、カンマ区切りにしようかしら。
