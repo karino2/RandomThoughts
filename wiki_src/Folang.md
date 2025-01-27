@@ -138,8 +138,8 @@ package_info slice =
    let Take<T> : int->[]T->[]T 
 ```
 
-通常のRecordとかの型定義との違いをコロンで表現してみたがどうだろう？いまいちか？
-sliceは開幕からgenericsが要るやん... LengthはanyでもいいがTakeは要るよなぁ。
+sliceは開幕からgenericsが要るやん... LengthはanyでもいいがTakeは要るよなぁ。仕方ない、諦めて対応しよう。
+別にしばらくは明示的に呼び出し時に指定するでもいいので。
 
 type parameterを`<T>`にするか`[T]`にするかは悩ましいが、インデックスアクセスが大括弧なのでFSharpに揃える。
 
@@ -157,6 +157,8 @@ package_info buf =
 でもコンストラクタはどうしよう？`buf.Buffer ()`というのが勝手に定義される事にするか。確かFSharpはそういう感じになってたよな。＞[Constructors - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/members/constructors)
 
 とりあえずこれでいいか。
+
+ファイルの拡張子はとりあえずfoiにしておくかな。
 
 ## Discriminated Unionの実装方針
 
@@ -765,3 +767,8 @@ ReScriptのarrayはカンマ区切りなんだな。[Array & List - ReScript Lan
 
 セミコロン区切りにするつもりだったが、カンマ区切りにしようかしら。
 
+スコープとletの実装を終えたのでパッケージアクセスのための外部情報のシンタックスを考える（このページ上の方に書いてある）。
+slice.Takeはgenericsが必要な事に気づく。幸いgolangのgenericsは十分な機能を持っているので、そこまで大変でも無い気はしているが。
+ようするにFunCallのreturnの型を引数から更新するだけだよな。そのくらいなら出来そうな気もするな。
+
+まぁそろそろその辺に挑む段階に来ているか。
