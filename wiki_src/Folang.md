@@ -85,8 +85,8 @@ type IntOrBool interface {
   IntOrBool_Union()
 }
 
-func (*IntOrBool_I) IntOrBool_Union(){}
-func (*IntOrBool_B) IntOrBool_Union(){}
+func (IntOrBool_I) IntOrBool_Union(){}
+func (IntOrBool_B) IntOrBool_Union(){}
 
 type IntOrBool_I struct {
    Value int
@@ -96,11 +96,12 @@ type IntOrBool_B struct {
    Value bool
 }
 
-func New_IntOrBool_I(v int) IntOrBool { return &IntOrBool_I{v} }
-func New_IntOrBool_B(v bool) IntOrBool { return &IntOrBool_B{v} }
+func New_IntOrBool_I(v int) IntOrBool { return IntOrBool_I{v} }
+func New_IntOrBool_B(v bool) IntOrBool { return IntOrBool_B{v} }
 ```
 
 IかBはNewXXXの関数呼び出しにマップすれば良さそう。
+最初はポインタにしていたが、interfaceとstructを内部で区別するのが定義があとに来るケースでは困難なので全部実体に統一。
 
 これならIntOrBoolはtype assertionで実行時にIかBは区別出来るんじゃないか？
 試してみよう。
@@ -115,10 +116,10 @@ match iob with
 
 ```golang
 switch iob.(type) {
-case *IntOrBool_I:
+case IntOrBool_I:
    ival := iob.Value
    fmt.Printf("i=%d", ival)
-case *IntOrBool_B:
+case IntOrBool_B:
    bval := iob.Value
    fmt.Printf("b=%v", bval)
 }
@@ -140,7 +141,7 @@ type AorB =
 とりあえずgolang側は以下のようにvarにしてみる。
 
 ```golang
-var New_AorB_A AorB = &AorB_A{}
+var New_AorB_A AorB = AorB_A{}
 ```
 
 変数名にNewがついているのはおかしいが、あんまりofがある時と無い時でコードを変えたくないのでこうしておく。
