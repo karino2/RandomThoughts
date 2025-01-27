@@ -13,6 +13,14 @@ go言語、golangなどと呼ばれる。
 - [Organizing a Go module - The Go Programming Language](https://go.dev/doc/modules/layout)
 - [Import same package name or Aliasing while importing packages in Go (Golang) - Welcome To Golang By Example](https://golangbyexample.com/import-same-package-name-golang/) importでのエイリアス
 
+### パッケージレイアウト
+
+モジュールと関連した話題。
+
+- [golang-standards/project-layout: Standard Go Project Layout](https://github.com/golang-standards/project-layout?tab=readme-ov-file)
+- [I'll take pkg over internal](https://travisjeffery.com/b/2019/11/i-ll-take-pkg-over-internal/)
+
+pkg, cmd, internalに分けるのがスタンダードっぽいか。
 
 ## lensmとディスアセンブル
 
