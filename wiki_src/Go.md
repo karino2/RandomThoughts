@@ -33,11 +33,10 @@ $ go build -gcflags "-N -l" -o hello_generics hello_generics.go
  
 ## Generics
 
-TourのGenericsの所をやっただけだとよく分からないのでもうちょっとお勉強。
-
+- [Go by Example: Generics](https://gobyexample.com/generics)
+- [Tutorial: Getting started with generics - The Go Programming Language](https://go.dev/doc/tutorial/generics) 使う側、constraintsの追加の仕方がわかる
 - [The generics implementation of Go 1.18 • DeepSource](https://deepsource.com/blog/go-1-18-generics-implementation) 内部解説ブログ
 - [proposal/design/generics-implementation-dictionaries-go1.18.md at master · golang/proposal](https://github.com/golang/proposal/blob/master/design/generics-implementation-dictionaries-go1.18.md) 公式ドキュメント
-- [Tutorial: Getting started with generics - The Go Programming Language](https://go.dev/doc/tutorial/generics) 使う側、constraintsの追加の仕方がわかる
 
 よく使うconstraints一覧とかor以外のどういうconstraints演算があるのかがまだ分からない。
 

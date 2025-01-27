@@ -72,6 +72,92 @@
 
 大なり、の記号は相対的なプライオリティを明確にするためにつけている（左側がプライオリティの項目、つまり1番目は「関係に書ける」が重要という意味）。
 
+## Genericsのシンタックス（タイプパラメータ）
+
+goは大括弧だがFSharpは角括弧だ。
+
+なるべくならgolangに揃えたいが、FSharpはシンタックス的に変数と関数の区別が曖昧になるようになっているので、
+インデックスアクセスとややこしい事になる。
+
+```
+let Length[T any] (args: []T) =
+   ...
+
+Length[int] listOfList[3]
+```
+
+やはりこれは厳しいな。角括弧にするか。
+
+```
+let Length<T any> (args: []T) =
+   ...
+
+Length<int> listOfList[3]
+```
+
+これはこれでかなりパースがトリッキーになるんだが、仕方なし。
+
+## 外部の型情報
+
+パッケージアクセスをそろそろ考えたい。型情報ファイルを手作業で作って加えるのでいいのだが、どういうシンタックスにするか。
+
+### 関連情報
+
+FSharpのシグニチャファイルは似たような話だ。
+
+- [Signature files - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/signature-files)
+
+関数はvalになる。うーん。このためだけにvalというのもなぁ。moduleとかnamespaceは通常の定義と同じ。
+
+ReScriptではletで定義している。
+
+- [Module - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/module#signatures)
+
+ただシンタックスはコロンになる。気持ち悪さはあるが、変数が定義されていると思えばletが正しい気もする。
+module typeが先頭に来る所が通常のmoduleとは違う。
+
+Borgoは関数定義がキーワードであるので普通に関数定義のようになっている。
+
+- [Borgo Programming Language](https://borgo-lang.github.io/#package-definitions)
+
+パーサーは同じのが使えるというメリットはあるが、まぁこれは言語のシンタックスが違いすぎるのであまり参考にはならないか。
+
+### folangでの外部の型情報
+
+さて、folangではどうしよう？
+
+モジュールという名前にしておくか？いや、変えておく方がいいか。
+golang的にはpackageなんだよなぁ。
+
+package_infoにしよう。
+そしてReScriptを真似してletでコロンとしてみるか。
+
+```
+package_info slice =
+   let Length<T>: []T -> int
+   let Take<T> : int->[]T->[]T 
+```
+
+通常のRecordとかの型定義との違いをコロンで表現してみたがどうだろう？いまいちか？
+sliceは開幕からgenericsが要るやん... LengthはanyでもいいがTakeは要るよなぁ。
+
+type parameterを`<T>`にするか`[T]`にするかは悩ましいが、インデックスアクセスが大括弧なのでFSharpに揃える。
+
+このままBufferも書いてみよう。
+
+```
+package_info buf =
+    type Buffer
+    let WriteString: Buffer->()
+    let String: ()->string
+```
+
+こっちはいい気がするな。typeは右に書くものが無いな。type aliasを中で定義するようなのはサポートしなくていいだろう。
+
+でもコンストラクタはどうしよう？`buf.Buffer ()`というのが勝手に定義される事にするか。確かFSharpはそういう感じになってたよな。＞[Constructors - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/members/constructors)
+
+とりあえずこれでいいか。
+
 ## Discriminated Unionの実装方針
 
 まずは自分が馴染んでいるF#の実装の解説文書のリンクから。
@@ -678,3 +764,4 @@ let fargs (ft:FFunc) =
 ReScriptのarrayはカンマ区切りなんだな。[Array & List - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/array-and-list)
 
 セミコロン区切りにするつもりだったが、カンマ区切りにしようかしら。
+
