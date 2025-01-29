@@ -148,15 +148,13 @@ type parameterを`<T>`にするか`[T]`にするかは悩ましいが、イン�
 ```
 package_info buf =
     type Buffer
-    let WriteString: Buffer->()
+    let New: ()->Buffer
+    let Write: Buffer->()
     let String: ()->string
 ```
 
 こっちはいい気がするな。typeは右に書くものが無いな。type aliasを中で定義するようなのはサポートしなくていいだろう。
-
-でもコンストラクタはどうしよう？`buf.Buffer ()`というのが勝手に定義される事にするか。確かFSharpはそういう感じになってたよな。＞[Constructors - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/members/constructors)
-
-とりあえずこれでいいか。
+コンストラクタとかはどうせラップするのだからNew関数を作らせる事にする。
 
 ファイルの拡張子はとりあえずfoiにしておくかな。
 
@@ -773,7 +771,7 @@ slice.Takeはgenericsが必要な事に気づく。幸いgolangのgenericsは十
 
 まぁそろそろその辺に挑む段階に来ているか。
 
-### 2025-01-29 (水)
+### 外部パッケージの使用をサポート 2025-01-29 (水)
 
 Genericsをサポートしようと途中まで書いたが、やりたいのは定義では無くて外部で定義されたgenericsの関数を呼びたい事だよなぁ、と気づく。
 しばらくは自分で定義出来る必要は無いよな。
@@ -786,3 +784,38 @@ package_info slice =
    let Take<T> : int->[]T->[]T 
 ```
 
+ジェネリクスのサポートと外部パッケージ情報の両方を同時にやるのは面倒なので、先にbytes.Bufferのラッパから書く。
+
+```
+package_info buf =
+  type Buffer
+  let New: ()->Buffer
+  let Write: Buffer->string->()
+  let String: Buffer->string
+```
+
+これをパース出来るようになった。ついでにこのラッパのパッケージをgolang側でも定義する。pkg/bufに置く。
+これでfolangから外部のパッケージを呼ぶ手段が確立出来た。
+
+以下のようなコードが無事動くようになった。
+
+```
+package main
+
+import "github.com/karino2/folang/pkg/frt"
+import "github.com/karino2/folang/pkg/buf"
+
+let main() =
+  let bb = buf.New ()
+  buf.Write bb "hello"
+  buf.Write bb "world"
+  let res = buf.String bb
+  frt.Println res
+```
+
+.foiファイルはmainで先にわたす必要あり。
+
+将来的にはfrtはプレフィクス無しで探すようにしたい気もするが、まずはそういう事はやらずに進める。
+なんか一気に完成度が上がったな。
+
+ここまでくればだいぶセルフホストも見えてきたな。
