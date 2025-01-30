@@ -853,3 +853,54 @@ let fargs (ft:FFunc) =
 ```
 
 パイプ演算子とレコードのフィールドアクセスと関数の部分適用だな。
+
+部分適用を途中まで書いていたら、generic functionをfunction literalで書く方法が分からないな？となってググったら、出来ないらしい？＞[go - Generic function, can't be defined in form of anonymous? - Stack Overflow](https://stackoverflow.com/questions/75915359/generic-function-cant-be-defined-in-form-of-anonymous)
+
+手動でカリー化すれば平気かな？
+
+```golang
+func Take[T any](num int) func([]T) []T {
+  ...
+}
+
+take2 := Take(2)
+```
+
+いや、駄目だな。結局、take2の時点でTが解決されていないのは許されていないらしい。
+ださいなぁ。
+
+ただ実用上は、型を渡してやればいいのでは？という話はある。
+
+```golang
+take2 := Take[string](2)
+```
+
+これは許される訳だ。カッコ悪いが、Folangとしては部分適用の時は全部の型を解決する必要がある、というのは一つ妥協点としてはありか？
+幸い以下のようなコードでは
+
+```
+  ft.targets |> slice.Take l
+```
+
+Takeの部分適用は解決した上でパイプ演算子にわたす事が出来る。
+代わりに以下のような事は出来ない。
+
+```
+  let part = slice.Take l
+  part ft.targets
+```
+
+genericな高階関数はFSharpの強力さの根底にあるものなので残念ではあるが、主な用途であるちょっとした書き捨てツールではまぁ許容範囲内か。
+
+partial applyのコードがあったので読んだ。
+
+[gofunctools/functools/partial.go at c5e9260901e587b64863f9141e8991ab3774963f · choleraehyq/gofunctools](https://github.com/choleraehyq/gofunctools/blob/c5e9260901e5/functools/partial.go#L16)
+
+リフレクションで取って、引数は全部`interface{}`にしてしまう。うーん、これでまぁ呼ぶ事は出来るが、結果の型が失われてしまうよなぁ。
+これならリフレクションなんて使わなくても同じ事は出来るか。
+
+folang上で型をトラックして最後にキャストする、というのは出来なくはないか。
+
+よし、当面はパイプラインのように部分適用時には解決されている事を前提にする、
+解決されないものは将来的には`interface{}`にしてトラッキングして最後にキャストするようにしたい、
+と思いつつそんな日は来ないだろう、という感じでいこう。
