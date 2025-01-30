@@ -832,3 +832,16 @@ package_info slice =
 
 ジェネリクスのインスタンシエートは結局FunCallの中の先頭の関数の型に対してだけ行えば十分…かな？
 とりあえずその方向でやってみよう。
+
+動いた。これでslice関連が動くように。
+
+えーと、あとは何が動けば次のUnitTestが試せるんだっけ？
+以下を動かしたいので、
+
+```
+let fargs (ft:FFunc) =
+  let l = slice.Length ft.targets
+  ft.targets |> slice.Take l
+```
+
+パイプ演算子とレコードのフィールドアクセスだな。
