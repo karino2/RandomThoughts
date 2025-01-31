@@ -913,3 +913,31 @@ folang上で型をトラックして最後にキャストする、というの�
 ### 2025-01-31 (金)
 
 今日はパイプを実装しよう。
+パースは最終的には[Parsing expressions by precedence climbing - Eli Bendersky's website](https://eli.thegreenplace.net/2012/08/02/parsing-expressions-by-precedence-climbing)で実装したいが、とりあえずまだbinopがパイプだけなので簡単に。
+
+ただ以下のケースで
+
+```
+s |> slice.Length
+```
+
+右辺が変数の場合があるが、変数のタイプパラメータの解決という概念を実装してないので実装出来ない事に気づく。
+
+Goとしては何が生成されたらいいんだろう？
+別に以下のコードが生成されたら、
+
+```
+frt.Pipe(s, slice.Length)
+```
+
+勝手にタイプパラメータはgoが解決してくれるな。
+この時にはexprとしての型が解決されていれば十分なのか。
+
+そして部分適用の場合はもうちょっと頑張らないとまずい。
+
+```
+frt.Pipe(s, func (v T[]) T[] { return slice.Take 2 v })
+```
+
+このTを解決してほしいからだな。
+こうして考えるとVarは生成するgoのコードには変化は無くて、exprの型だけ解決すればいいのか。
