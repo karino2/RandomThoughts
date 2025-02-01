@@ -62,6 +62,7 @@
 - パフォーマンスはそれほど気にしない
 - MLやF#互換は目指さない
 - go無しで全部書くのは目指さない（困ったらgoに降りて書く）
+- 完全さは目指さない（変な制限があってもあまり使わなければOK）
 
 ### プライオリティ
 
@@ -76,21 +77,24 @@
 
 大なり、の記号は相対的なプライオリティを明確にするためにつけている（左側がプライオリティの項目、つまり1番目は「関係に書ける」が重要という意味）。
 
+## Folang言語仕様とその検討
+
+言語仕様は以下に書いていく。どうしてこういう仕様になったかの検討は[[Folang仕様検討]]を参照。
+なお、新しいものが上に来る事が多いので、読む順番はちょっとトリッキー。固まってきたら並び替えたい。
+
+## importのシステムライブラリ
+
+ダブルクオートで括られてないimportはシステムのimportとみなし、内部的にはfolang/pkgへのパスがprefixでついているとみなす。
+具体的には以下の２つは同じ意味になる。（生成されるgoコードはどちらも二行目になる）
+
+```
+import frt
+import "github.com/karino2/folang/pkg/frt"
+```
+
 ## Genericsのシンタックス（タイプパラメータ）
 
-goは大括弧だがFSharpは角括弧だ。
-
-なるべくならgolangに揃えたいが、FSharpはシンタックス的に変数と関数の区別が曖昧になるようになっているので、
-インデックスアクセスとややこしい事になる。
-
-```
-let Length[T any] (args: []T) =
-   ...
-
-Length[int] listOfList[3]
-```
-
-やはりこれは厳しいな。角括弧にするか。
+goは大括弧だがFSharpは角括弧。
 
 ```
 let Length<T any> (args: []T) =
@@ -99,42 +103,14 @@ let Length<T any> (args: []T) =
 Length<int> listOfList[3]
 ```
 
-これはこれでかなりパースがトリッキーになるんだが、仕方なし。
+ただし現時点では外部のgenericな関数を呼ぶだけで自身で定義するのはサポートしていない。
 
 ## 外部の型情報
 
-パッケージアクセスをそろそろ考えたい。型情報ファイルを手作業で作って加えるのでいいのだが、どういうシンタックスにするか。
+外部のパッケージなどをアクセスするための言語要素。FSharpのシグニチャファイルとかと似たようなもの。
 
-### 関連情報
-
-FSharpのシグニチャファイルは似たような話だ。
-
-- [Signature files - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/signature-files)
-
-関数はvalになる。うーん。このためだけにvalというのもなぁ。moduleとかnamespaceは通常の定義と同じ。
-
-ReScriptではletで定義している。
-
-- [Module - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/module#signatures)
-
-ただシンタックスはコロンになる。気持ち悪さはあるが、変数が定義されていると思えばletが正しい気もする。
-module typeが先頭に来る所が通常のmoduleとは違う。
-
-Borgoは関数定義がキーワードであるので普通に関数定義のようになっている。
-
-- [Borgo Programming Language](https://borgo-lang.github.io/#package-definitions)
-
-パーサーは同じのが使えるというメリットはあるが、まぁこれは言語のシンタックスが違いすぎるのであまり参考にはならないか。
-
-### folangでの外部の型情報
-
-さて、folangではどうしよう？
-
-モジュールという名前にしておくか？いや、変えておく方がいいか。
-golang的にはpackageなんだよなぁ。
-
-package_infoにしよう。
-そしてReScriptを真似してletでコロンとしてみるか。
+ファイルの拡張子は.foiに書く（ただし.foファイルの中に書く事も出来る、.foiに書いてあると対応するgoファイルが生成されないだけ）。
+package_infoというもので定義し、関数はReScriptを真似してletでコロンとしてみる。
 
 ```
 package_info slice =
@@ -142,12 +118,7 @@ package_info slice =
    let Take<T> : int->[]T->[]T 
 ```
 
-sliceは開幕からgenericsが要るやん... LengthはanyでもいいがTakeは要るよなぁ。仕方ない、諦めて対応しよう。
-別にしばらくは明示的に呼び出し時に指定するでもいいので。
-
-type parameterを`<T>`にするか`[T]`にするかは悩ましいが、インデックスアクセスが大括弧なのでFSharpに揃える。
-
-このままBufferも書いてみよう。
+型はtypeで以下のように書く。
 
 ```
 package_info buf =
@@ -157,12 +128,86 @@ package_info buf =
     let String: ()->string
 ```
 
-こっちはいい気がするな。typeは右に書くものが無いな。type aliasを中で定義するようなのはサポートしなくていいだろう。
-コンストラクタとかはどうせラップするのだからNew関数を作らせる事にする。
-
 ファイルの拡張子はとりあえずfoiにしておくかな。
 
-## Discriminated Unionの実装方針
+## コメント
+
+コメントはgolangと同様、CスタイルとC++の一行コメントの２つをサポートする。（ただし現状はCスタイルのみ実装）
+
+```
+package main
+
+/*
+これはコメントです
+*/
+
+let ika () =
+  123
+```
+
+## GoEval
+
+goのコードをそのまま文字列として書く、イメージとしてはインラインアセンブラに近い機能。
+以下のようなコードは、
+
+```
+package main
+import "fmt"
+
+let main () =
+  GoEval "fmt.Println(\"Hello World\")"
+```
+
+以下のコードに展開される。
+
+```
+package main
+import "fmt"
+
+func main() {
+   fmt.Println("Hello World")
+}
+```
+
+### 戻りの型指定
+
+デフォルトではUnitとみなされる。戻りの型を指定したい場合はタイプパラメータで指定する。
+
+```
+   // このsはstring
+   let s = GoEval<string> "fmt.Sprintf(\"hoge %d\", 123)"
+```
+
+展開されるコードは以下になる。
+
+```
+   s := fmt.Sprintf("hoge %d", 123)
+```
+
+go側では型指定はないので、folang上のsと同じ型になるように指定してやらないといけない。
+
+### 引数の使用
+
+引数のidentifierはgoでもそのまま持ち越されるので、以下のように書く事が出来る。aを使っている事に注意。
+
+```
+let ika (a:int) =
+   GoEval<string> "fmt.Sprintf(\"hoge %d\", a)"
+```
+
+これは以下のように展開される。
+
+```
+func ika(a int) string {
+   return fmt.Sprintf("hoge %d", a)
+}
+```
+
+下に生成されるgoコードを意識しながら引数などを使ってやる。この辺はインラインアセンブラと同じ。
+
+Folangで対応してない機能はGoEvalでラップしてやれば割と使える。
+
+## Discriminated Unionの実装
 
 まずは自分が馴染んでいるF#の実装の解説文書のリンクから。
 
@@ -181,7 +226,8 @@ type IntOrBool =
 intとかboolのところは同じ型が来る場合もあるっぽい（上記のMicrosoft LearnのEquilateralTriangleとSquareの例参照）。
 だから単なるtype assertionでは区別出来ない。
 
-以下のような実装だとどうだろう？
+そこで、IntOrBoolをinterfaceとして、IntOrBool_I, IntOrBool_Bというstructを作る事にする。
+以下のような実装。
 
 ```golang
 type IntOrBool interface {
@@ -250,70 +296,69 @@ var New_AorB_A AorB = AorB_A{}
 変数名にNewがついているのはおかしいが、あんまりofがある時と無い時でコードを変えたくないのでこうしておく。
 どうせfolang上ではこの名前は出てこないしね。
 
-### UnionのaltJSの実装を見てみる。
 
-- [Fable · Features](https://fable.io/docs/typescript/features.html#f-unions) FableのUnionの実装
-- [Pattern Matching / Destructuring - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/pattern-matching-destructuring) ReScriptのUnion実装、payloadのあたりが参考になる。
+## 関数定義
 
-fableでもReScriptでも、まず各caseを表すタグを用意してここに文字列かインデックスを入れている。
-JSだと実行時に型情報が無くなるので必要な気がするが、goならいらないのでは？
-
-Borgoという言語にはRustのenumみたいなのがあるので見てみる。 [borgo/compiler/test/snapshot/codegen-emit/enums.exp at main · borgo-lang/borgo](https://github.com/borgo-lang/borgo/blob/main/compiler/test/snapshot/codegen-emit/enums.exp)
-
-タグを使っているなぁ。
-
-## 開発動機
-
-dotnetはやっぱりかったるさがあるので、runtimeやデプロイは[[Go]]が良いと思う。
-でも言語は[[FSharp]]みたいなのが好きなので、なんかトランスパイルでどうにかならんかな？
-実用にはならなくてもgoのお遊びとして結構やってみたい気もする。
-
-とりあえず簡単なシンボルのツリーからgoのソース生成するのを作って、それを発展させていってそれっぽいものに出来ないかしら？
-セルフホスト出来る感じに出来たらちまちま時間をかけて進めていけそうな気もするが。
-
-fsharpを移植したいのではなく、ランタイム的にはなるべくgoそのままにしたい。プラスアルファで型情報くらいは追加で持ってもいいかもしれないが。
-という事で言語的には全く新しい言語になるだろう。
-
-## どんな感じに書けたらいいか考える
-
-とりあえずhello world的なものを考えたい。
-
-まずgolangの関数呼び出しは[[FSharp]]のdotnetの関数呼び出しのようにしたい気がする。
+基本的な関数定義は以下のようになる。
+引数は今の所すべて型アノテーションが必須。戻りの型は自動で推論される。
 
 ```
+let ika (a:string) (b:string) =
+  a+b
+```
+
+これは以下に展開される。
+
+```golang
+func ika(a string, b string) string {
+  return a+b
+}
+```
+
+なお、引数無しは引数unitが一つと定義する。
+GoEvalは引数のコードをそのままGoに流すexpression、型は型パラメータで指定するが指定無しだとUnit。
+
+それを用いると以下のようなコードは、
+
+```
+package main
 import "fmt"
 
 let main () =
-   fmt.Println("hoge")
+  GoEval "fmt.Println(\"Hello World\")"
 ```
 
-これは以下に展開されて欲しい。
+以下のコードになる。
 
 ```golang
 import "fmt"
 
 func main() {
-   fmt.Println("hoge")
+   fmt.Println("Hello World")
 }
 ```
 
-次にfolangの関数定義を考える。
-最初はtype inferenceは無い状態から始めよう。すると関数定義は以下か。
+基本的にはメソッドはサポートしない（手でラップする）
+
+### 関数呼び出し
+
+関数呼び出しは[[FSharp]]スタイルで引数が足りない時は部分適用となる。
+
+まずは基本的な呼び出しから。以下のhello関数の呼び出しに注目。
 
 ```
 import "fmt"
 
 let hello (msg: string) =
-    fmt.Println(msg)
+    GoEval "fmt.Println(msg)"
 
 let main() =
     hello "hoge"
 ```
 
-folangとしては関数はカッコ無しで呼び出し、部分適用されていくFSharp的な実行でいいだろう。
-このカッコで呼び出すかそのまま呼び出すかでどちらの呼び出しかを分ける感じにしたい。
+folangとしては関数はカッコ無しで呼び出す。`hello "hoge"`の所。
 
-これはどういうコードに展開されるかはちょっと現時点ではよくわからないな。
+これは以下のようなコードに展開される。
 
 ```golang
 import "fmt"
@@ -327,54 +372,49 @@ func main() {
 }
 ```
 
-このhello("hoge")に展開されるのか部分適用されるのかはコンパイル時にたぶん決定出来るよな。
+### 関数呼び出しの部分適用
 
-複数引数だと以下みたいな感じになるか。
+複数引数で部分適用すると以下。
 
 ```
 let hello (msg: string) (num: int) = 
-   fmt.Printf(msg, num)
+   GoEval "fmt.Printf(msg, num)"
 
 let main () =
    let temp = hello "hoge%d"
    temp 123
 ```
 
-部分適用すると以下みたいか？
-
-```golang
-func hello(msg string, num int) {
-    fmt.Printf(msg, num)
-}
-
-func main() {
-   temp := func(num int) { hello("hello%d", num) }
-   temp(123)
-}
-```
-
-とりあえずこのくらいを生成出来るようにする所から始めるか。
-
-いや、関数定義はもっとgolang的でいいのではないか？
+以下の行で、2引数のhelloに1引数だけ渡している。
 
 ```
-import "fmt"
-
-func hello (msg string, num int) = 
-   fmt.Printf(msg, num)
-
-func main () =
-   let temp = hello "hoge%d"
-   temp 123
+let temp = hello "hoge%d"
 ```
 
-いや、やはり関数定義のシンタックスが面倒なのは良くないな。
+生成されるコードは以下。
+
+```
+temp := func(num int) { hello("hello%d", num) }
+```
+
+
+## 開発動機
+
+dotnetはやっぱりかったるさがあるので、runtimeやデプロイは[[Go]]が良いと思う。
+でも言語は[[FSharp]]みたいなのが好きなので、なんかトランスパイルでどうにかならんかな？
+実用にはならなくてもgoのお遊びとして結構やってみたい気もする。
+
+とりあえず簡単なシンボルのツリーからgoのソース生成するのを作って、それを発展させていってそれっぽいものに出来ないかしら？
+セルフホスト出来る感じに出来たらちまちま時間をかけて進めていけそうな気もするが。
+
+fsharpを移植したいのではなく、ランタイム的にはなるべくgoそのままにしたい。プラスアルファで型情報くらいは追加で持ってもいいかもしれないが。
+という事で言語的には全く新しい言語になるだろう。
 
 ## 開発日記
 
 やった事を書く場所が欲しくてとりあえずここに置いておく。
 
-[[Folang開発日記過去ログ]]
+[[Folang過去ログ]]
 
 ### パイプ演算子と最低限の型推論 2025-01-31 (金)
 
@@ -426,6 +466,8 @@ Takeの戻りが `[]int` に解決されるのはまぁまぁ頑張ったぜ。
 
 ### 2025-02-01 (土)
 
+ちょっと開発日記が長くなってきたので古いのを置く場所を別途作る＞[[Folang過去ログ]]
+
 importが長いので、folangのpkgに関してはダブルクオート無しでimportする、という事にしよう。
 つまり以下の２つは同じ意味にする。
 
@@ -436,4 +478,8 @@ import frt
 
 C系の言語のダブルクオートと角括弧の違いみたいなもんだな。golangにない区別なのがちょっと躊躇するが、まぁいいだろう。
 
-そろそろコメントがほしいな。とりあえずCスタイルのコメントをスペースとして扱おう。
+そろそろコメントがほしいな。とりあえずCスタイルのコメントをスペースとして扱おう。＞実装した。
+
+次はレコードのフィールドアクセスを実装したいがちょっとやる気が尽きたので休憩。文字列連結も作っておきたいな。
+
+固まった仕様と検討を分離しておく。Discriminated Unionはページを分けたいが、まぁそのうちでいいか。
