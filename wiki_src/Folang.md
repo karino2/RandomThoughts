@@ -428,7 +428,7 @@ fsharpを移植したいのではなく、ランタイム的にはなるべくgo
 - [x] このページの整理
 - [x] レコードのフィールドアクセス
 - [x] andによる相互再帰型定義
-- [ ] +, -とexpressionのカッコ
+- [x] +, -とexpressionのカッコ
 
 importが長いので、folangのpkgに関してはダブルクオート無しでimportする、という事にしよう。
 つまり以下の２つは同じ意味にする。
@@ -504,4 +504,23 @@ and  FuncType = {targets: []FType}
 andを実装したら別のmatchのバグが見つかって直したりしている。こんな日もある。で、無事FTypeが定義出来るようになって、
 次のUnitTestを通そうとしたら結果が間違っていて、-1しないと駄目な事が判明するも引き算をまだ実装してない。ぐぬぬ。
 
-二項演算を実装しようと思いoperator_plus的なのを探すも見つからず。
+二項演算を実装しようと思いoperator_plus的なのを探すも見つからず。自分で実装する事に。
+
+[The Go Programming Language SpecificationのArithmetic operatorsのあたり](https://go.dev/ref/spec#Arithmetic_operators)を確認して、それっぽいOpPlusやOpMinusをgenericsで書く。
+
+二項演算のパースを少し真面目に書いて、無事UnitTestが通った！
+
+次は必要なのは`String.concat`（ [String (FSharp.Core) - FSharp.Core](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-stringmodule.html)）なのだが、
+golangのパッケージは小文字始まりのpublicメソッドは大文字はじまりなので`string.Concat`になる。
+でもさすがにprimitiveの型名と同じパッケージ名はなぁ。
+
+まぁsくらいつけてstringsかな。すでに使われているパッケージ名ではあるが、folangでそちらを直接使う事はないのでいいだろう。
+いや、むしろstrにするか？うーん、どうしよっかなぁ。sliceがちょっと長いなぁ、とは思ってるんだよなぁ。
+
+LengthとConcatくらいしか使わないのでstringsでいいか。
+
+次のターゲットは良く見ると相互再帰が使われている。これってそもそもF#でも変な事しないと書けない感じだった気がするので、考え直すのが正しかった気がするが、どうするんだっけかな？
+
+[The "Dependency cycles" Series · F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/series/dependency-cycles.html)
+
+相互じゃない再帰ならreturnの型のアノテーションをつければ割と簡単なので、returnの型のアノテーションに対応すべきだな（まだしてない）。
