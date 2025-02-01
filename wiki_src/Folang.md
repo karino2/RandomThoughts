@@ -473,7 +473,8 @@ Takeの戻りが `[]int` に解決されるのはまぁまぁ頑張ったぜ。
 - [x] システムimport
 - [x] コメント
 - [x] このページの整理
-- [ ] レコードのフィールドアクセス
+- [x] レコードのフィールドアクセス
+- [ ] andによる相互再帰型定義
 - [ ] 文字列連結とexpressionのカッコ
 
 importが長いので、folangのpkgに関してはダブルクオート無しでimportする、という事にしよう。
@@ -506,3 +507,37 @@ hoge a + b
 ```
 
 良く考えればこれは正しいのだけれど、直感的に良く間違えてしまう所。まぁこの辺の仕様はFolangでもそのまま引き継ぐ予定。
+
+レコードアクセスが出来たので実行したら、型定義がmutually recursiveだから駄目だ。
+
+```
+type FType =
+| FInt
+| FString
+| FUnit
+| FUnresolved
+| FFunc of FuncType // まだ定義されてないFuncType
+
+type FuncType = {targets: []FType} // FuncTypeではFTypeを使う
+```
+
+以前は通ってたが、最近parseTypeですでに定義されているかをチェックするようになったので駄目になった。
+
+FSharpではどうするんだっけ？と思ったらandで定義するのか。
+
+[Records in F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/records#creating-mutually-recursive-records)
+
+```
+type FType =
+| FInt
+| FString
+| FUnit
+| FUnresolved
+| FFunc of FuncType
+and  FuncType = {targets: []FType}
+```
+
+うー、andのパースは結構面倒があるな。2パスにするか、エラーにせずにUnresolved型とかにするかだが、
+エラーにしておく方が他の場所では安心なんだよなぁ。
+まぁinside type definition的なフラグでparseTypeの挙動を変えるとかやる事は出来るか。幸いtype定義の中では普通の式は来ないからな。
+この辺の仕様はさすがに良く出来ているよな、F#。
