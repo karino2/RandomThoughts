@@ -41,12 +41,26 @@ $ go build -gcflags "-N -l" -o hello_generics hello_generics.go
  
 ## Generics
 
+**使う側**
+
 - [Go by Example: Generics](https://gobyexample.com/generics)
-- [Tutorial: Getting started with generics - The Go Programming Language](https://go.dev/doc/tutorial/generics) 使う側、constraintsの追加の仕方がわかる
+- [Tutorial: Getting started with generics - The Go Programming Language](https://go.dev/doc/tutorial/generics) constraintsの追加の仕方がわかる
+
+`~T`はunderlying typeがTな型全部。
+
+**Constraints周りの説明**
+
+- [The Go Programming Language Specification#Type_constraints](https://go.dev/ref/spec#Type_constraints) 使う側の仕様的な解説
+- [cmp package - cmp - Go Packages](https://pkg.go.dev/cmp#Ordered) cmpにOrderedというのがある
+- [constraints package - golang.org/x/exp/constraints - Go Packages](https://pkg.go.dev/golang.org/x/exp/constraints) 2025年現在でもexperimentsな奴で、predefinedな奴は見つけた。（これがまだexperimentalなの！？）
+- [All your comparable types - The Go Programming Language](https://go.dev/blog/comparable) comparableは特別らしい。
+
+いまいちどういうconstraintsがあるのか良く分からないが、実はあんまりないのかもしれない。
+
+**内部解説**
+
 - [The generics implementation of Go 1.18 • DeepSource](https://deepsource.com/blog/go-1-18-generics-implementation) 内部解説ブログ
 - [proposal/design/generics-implementation-dictionaries-go1.18.md at master · golang/proposal](https://github.com/golang/proposal/blob/master/design/generics-implementation-dictionaries-go1.18.md) 公式ドキュメント
-
-よく使うconstraints一覧とかor以外のどういうconstraints演算があるのかがまだ分からない。
 
 ## リフレクション
 
