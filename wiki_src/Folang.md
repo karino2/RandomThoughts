@@ -530,12 +530,14 @@ LengthとConcatくらいしか使わないのでstringsでいいか。
 
 相互じゃない再帰ならreturnの型のアノテーションをつければ割と簡単なので、returnの型のアノテーションに対応すべきだな（まだしてない）。
 
-### 2025-02-02 (日)
+### ftype.goのfolangでの再実装が終わる 2025-02-02 (日)
 
 - [x] stringsの実装
 - [x] returnがunitの関数のパイプなどの扱いを直す
 - [x] 行コメント対応
 - [x] letの関数定義での戻りの型のannotation対応（再帰呼び出しが出来るように）
+- [x] if-then-else
+- [x] slice.Sort
 
 パイプで最後がvoidの時が動かない事に気づく。
 goのgenericsではunit相当のものはどう書くんだろう？とぐぐったら、どうも別で用意しないといけないらしい。＞[Using "void" type as a parameterized type in Go generics (version 1.18) or above - Stack Overflow](https://stackoverflow.com/questions/71038312/using-void-type-as-a-parameterized-type-in-go-generics-version-1-18-or-above)
@@ -549,9 +551,18 @@ goのgenericsではunit相当のものはどう書くんだろう？とぐぐっ
 そしてif then elseがまだない事を思い出すなどした。
 でもこの辺はやれば終わる話で難しい事はないな。
 
-- [ ] if-then-else
-- [ ] slice.Sort
-
 sortはdestructiveなのでコピーしないと駄目そうだな。 [sort package - sort - Go Packages](https://pkg.go.dev/sort)
 
 sliceのコピー [go - Why can't I duplicate a slice with `copy()`? - Stack Overflow](https://stackoverflow.com/questions/30182538/why-cant-i-duplicate-a-slice-with-copy)
+
+一通り使うものを実装して、ftype.goと同じ内容をfolangで実装してはテストを繰り返し、無事ftype.goが全部実装し終わった！
+最初のゴールを無事達成出来た。やったぜ。
+
+ただ次はast.goだがこれは1000行以上あるし、型推論の雑な実装とかがかなり込み入っている。うーん、どうしたもんかなぁ。
+やっていってもいいんだが、そろそろちょっとした用途には使えそうなので、先にドッグフードがてら使ってみようかな？という気もする。
+
+いや、少しast.goのコードを見ていたら、型推論のコード以外はfolangで書いてもいい気もしてきた。
+型推論はちょっとaddhookすぎるので、実装自体を見直したい気がするので、これをそのまま持っていくのに抵抗があるが、
+他はまぁこんなもんだな、という実装になっているので。
+
+という事で次の目標はast.goの型推論以外のコードの実装、にしてみよう。
