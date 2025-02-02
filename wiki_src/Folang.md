@@ -83,6 +83,11 @@
 言語仕様は以下に書いていく。どうしてこういう仕様になったかの検討は[[Folang仕様検討]]を参照。
 なお、新しいものが上に来る事が多いので、読む順番はちょっとトリッキー。固まってきたら並び替えたい。
 
+## イコールの比較
+
+equalは`=`で、not equalは`<>`で行う。
+equalはsliceも中を比較する（go-compのEqualを使う[cmp package - github.com/google/go-cmp/cmp - Go Packages](https://pkg.go.dev/github.com/google/go-cmp/cmp)）
+
 ## importのシステムライブラリ
 
 ダブルクオートで括られてないimportはシステムのimportとみなし、内部的にはfolang/pkgへのパスがprefixでついているとみなす。
