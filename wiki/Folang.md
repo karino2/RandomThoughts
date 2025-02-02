@@ -547,6 +547,8 @@ LengthとConcatくらいしか使わないのでstringsでいいか。
 - [x] letの関数定義での戻りの型のannotation対応（再帰呼び出しが出来るように）
 - [x] if-then-else
 - [x] slice.Sort
+- [x] 型定義やcaseの間のコメント
+- [x] slice expression（リテラル）
 
 パイプで最後がvoidの時が動かない事に気づく。
 goのgenericsではunit相当のものはどう書くんだろう？とぐぐったら、どうも別で用意しないといけないらしい。＞[Using "void" type as a parameterized type in Go generics (version 1.18) or above - Stack Overflow](https://stackoverflow.com/questions/71038312/using-void-type-as-a-parameterized-type-in-go-generics-version-1-18-or-above)
@@ -578,3 +580,7 @@ sliceのコピー [go - Why can't I duplicate a slice with `copy()`? - Stack Ove
 
 スライスリテラルが必要になった。
 仕様検討の結果、セミコロン区切りにする。
+
+今後のtodoメモ
+
+- [ ] panic
