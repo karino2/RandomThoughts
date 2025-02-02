@@ -530,8 +530,23 @@ LengthとConcatくらいしか使わないのでstringsでいいか。
 - [x] stringsの実装
 - [x] returnがunitの関数のパイプなどの扱いを直す
 - [x] 行コメント対応
+- [x] letの関数定義での戻りの型のannotation対応（再帰呼び出しが出来るように）
 
 パイプで最後がvoidの時が動かない事に気づく。
 goのgenericsではunit相当のものはどう書くんだろう？とぐぐったら、どうも別で用意しないといけないらしい。＞[Using "void" type as a parameterized type in Go generics (version 1.18) or above - Stack Overflow](https://stackoverflow.com/questions/71038312/using-void-type-as-a-parameterized-type-in-go-generics-version-1-18-or-above)
 
 まぁ別に用意すればいいか。
+
+必要なものを揃えたあとに細々としたバグも直し、無事FTypeToGoのFFuncのケースが動くように。
+セルフホストの型の部分で一番複雑な所なので、これが動いたのはftype.goのfolangでの置き換えの山場を超えたと言えそう。
+
+セルフホストの実装を続けていき、次はdictが必要になったが、FSharp的にはこれはsortして比較する方がそれっぽいな。
+そしてif then elseがまだない事を思い出すなどした。
+でもこの辺はやれば終わる話で難しい事はないな。
+
+- [ ] if-then-else
+- [ ] slice.Sort
+
+sortはdestructiveなのでコピーしないと駄目そうだな。 [sort package - sort - Go Packages](https://pkg.go.dev/sort)
+
+sliceのコピー [go - Why can't I duplicate a slice with `copy()`? - Stack Overflow](https://stackoverflow.com/questions/30182538/why-cant-i-duplicate-a-slice-with-copy)
