@@ -133,7 +133,7 @@ package_info buf =
 
 ## コメント
 
-コメントはgolangと同様、CスタイルとC++の一行コメントの２つをサポートする。（ただし現状はCスタイルのみ実装）
+コメントはgolangと同様、CスタイルとC++の一行コメントの２つをサポートする。
 
 ```
 package main
@@ -143,7 +143,7 @@ package main
 */
 
 let ika () =
-  123
+  123 // これもコメントです。
 ```
 
 ## GoEval
@@ -524,3 +524,14 @@ LengthとConcatくらいしか使わないのでstringsでいいか。
 [The "Dependency cycles" Series · F# for Fun and Profit](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/series/dependency-cycles.html)
 
 相互じゃない再帰ならreturnの型のアノテーションをつければ割と簡単なので、returnの型のアノテーションに対応すべきだな（まだしてない）。
+
+### 2025-02-02 (日)
+
+- [x] stringsの実装
+- [x] returnがunitの関数のパイプなどの扱いを直す
+- [x] 行コメント対応
+
+パイプで最後がvoidの時が動かない事に気づく。
+goのgenericsではunit相当のものはどう書くんだろう？とぐぐったら、どうも別で用意しないといけないらしい。＞[Using "void" type as a parameterized type in Go generics (version 1.18) or above - Stack Overflow](https://stackoverflow.com/questions/71038312/using-void-type-as-a-parameterized-type-in-go-generics-version-1-18-or-above)
+
+まぁ別に用意すればいいか。
