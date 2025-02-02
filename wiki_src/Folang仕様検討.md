@@ -3,6 +3,23 @@
 仕様を検討してた時のメモなどをまとめておく。
 決定した仕様は[[Folang]]の方に書く。
 
+## スライス expressionの区切り
+
+ReScriptはカンマ、FSharpはセミコロン。
+
+- [Array & List - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/array-and-list)
+   - [Record - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/record) レコードもカンマ
+   - [Tuple - ReScript Language Manual](https://rescript-lang.org/docs/manual/v10.0.0/tuple) タプルはカッコをつけてカンマ
+- FSharpはセミコロン [Lists - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/lists)
+   - レコードもセミコロン
+   - タプルはカッコをつけてカンマ [Tuples - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/tuples)
+
+レコードの区切りをセミコロンにしているので、セミコロンに統一する事に。
+
+F＃久しぶりに触るとカンマにしてしまいがちだが、レコードのフィールドがタプルの時はやっぱりややこしいのでセミコロンの方がいい気もするな。
+
+スライスの区切りはセミコロンに決定。
+
 ## 関数呼び出しの仕様検討
 
 とりあえずhello world的なものを考えて仕様を考えていきたい。
