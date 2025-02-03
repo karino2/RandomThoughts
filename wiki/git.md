@@ -23,6 +23,8 @@ $ git update-index --assume-unchanged .vscode/c_cpp_properties.json
 
 ```
 $ git log main --pretty=format:"%h %an %s"
+$ git log main --author=karino2 --pretty=format:"%h %an %s"
+
 ```
 
 
