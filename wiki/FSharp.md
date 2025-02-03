@@ -27,8 +27,8 @@
 **言語仕様関連**
 
 - [Explore this site - F# for fun and profit](https://fsharpforfunandprofit.com/site-contents/) fun and profitはとりあえずここから。
-   - [F# for fun and profit: Choosing between collection functions](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/posts/list-module-functions.html)
-        - [Seq (FSharp.Core)](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html) 一覧から真面目に探したい時はこちら。
+   - [F# for fun and profit: Choosing between collection functions](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/posts/list-module-functions.html) 良く見るコレクション周りのhow to
+        - [List (FSharp.Core) - FSharp.Core](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html) 一覧から真面目に探したい時はこちら。
 - [Language Guide - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/) Microsoft Learn
 - [About F# - The F# Language Specification](https://fsharp.org/specs/language-spec/) スペック
 - [Printf (FSharp.Core) - FSharp.Core](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html) リファレンス、とりあえずprintfのリンクを貼っておく
