@@ -21,3 +21,11 @@ markdownのリンクとして、けれど縦棒をハイフンに置き換える
 ```javascript
 javascript:(function(){const e=document.createElement('input');const title = document.title.replaceAll('|', '-'); e.value=`[${title}](${location.href})`;document.querySelector('body').append(e);e.select();document.execCommand('copy');e.remove(); alert(`${title} copied!`)})();
 ```
+
+## jsonc, json5
+
+JavaScript関係無いがjson関連。
+
+コメントが入れられるのがjsonc、trailing commaとかもありなのがjson5か。json5でいいのでは感。
+
+[Paji's Blog - What is JSONC, what is JSON5.](https://paji.blog/jsonc-json5)
