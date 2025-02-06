@@ -449,6 +449,8 @@ ocamlのhand writing parserでググってこんなのを発見＞[Good example 
 
 そもそも現在のgolangのtokenizerの実装があるので、あれを移植してみて無理な所を見てみるかなぁ。
 
+とりあえずトークンのスキャンをgolangの側で書いて、トークナイザはfolang側で書くという方針でやってみる。
+
 ## 開発動機
 
 dotnetはやっぱりかったるさがあるので、runtimeやデプロイは[Go](Go)が良いと思う。
