@@ -736,4 +736,7 @@ package文のパースだけ出来た。なんかこれは正しい方向性だ�
 
 F#としてはPoint.Xなどの表記で曖昧性を解決出来る＞[Records in F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/records#remarks)
 
-これを実装する必要がありそう。そもそもレコード型の生成で型名を書かないのはおかしい気はするけどな。
+これを実装する必要がありそう。そもそもレコード型の生成で型名を書かないのはおかしい気はするけどな。＞実装した
+
+paramsのパースはまぁまぁ動くように。このくらい書くとパーサーの書き方はだいたいはっきりしてきたな。
+最後の引数をParseStateにする事で、なんかパーサーコンビネータっぽくなってきた。
