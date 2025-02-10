@@ -10,3 +10,7 @@
 ## Polymorphic typeをinferenceまで読む 2025-02-09 (日)
 
 [[Folang]]でGenericsの実装を雑にしたら割と行き詰まったので読んだ。
+自分なりに考えた事はかなり近い。
+
+instantiationはちょっと説明は分かりにくかったが、ようするにgenericな関数のcallに対して、その場でMetaな型を型パラメータに割り当てる、という事だよな。
+そしてgenerarizationは最後まで解決されなかったMetaの型を型パラメータに昇格させる、という事か。
