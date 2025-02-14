@@ -552,12 +552,32 @@ func CnvL[U any](fn func(ParseState) ParseState, prev frt.Tuple2[ParseState, U])
 	return frt.NewTuple2(fn(t), u)
 }
 
-func CnvR[U any](fn func(U) U, prev frt.Tuple2[ParseState, U]) frt.Tuple2[ParseState, U] {
+func CnvR[T any, U any](fn func(T) U, prev frt.Tuple2[ParseState, T]) frt.Tuple2[ParseState, U] {
 	t, u := frt.Destr(prev)
 	return frt.NewTuple2(t, fn(u))
 }
 ```
 
 これでいいか。
+
+これを使うと、以下みたいなコードが
+
+```
+let parsePackage (ps:ParseState) =
+  let ps2 = psConsume PACKAGE ps
+  let pname = psIdentName ps2
+  let ps3 = psNextNOL ps2
+  let pkg = Package pname
+  (ps3, pkg)
+```
+
+以下のように直せる。(psIdentNameNxLとかいうのが増えているがこれは大した事無い）
+
+```
+let parsePackage (ps:ParseState) =
+  psConsume PACKAGE ps
+  |> psIdentNameNxL
+  |> CnvR Package
+```
 
 だいぶ面倒が減ってきたな。パーサー書くのが憂鬱では無くなってきた。いいね。
