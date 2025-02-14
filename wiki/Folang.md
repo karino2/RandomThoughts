@@ -487,3 +487,77 @@ let ika () =
 骨組みはだいたい出来たかな。
 
 う、package_infoの中のコメントがうまく処理出来てない。明日直そう。
+
+### パーサー関連utilityをgoで揃える 2025-02-14 (金)
+
+ジェネリクスのサポートが弱いのでfolangでパーサーコンビネータっぽい事が出来ないのでいろいろ面倒なのだが、
+golangの方でジェネリクスのutilityを整備してそれを呼ぶなら結構いろいろ出来るのでは？と気付きやってみる。
+
+```golang
+func withPs[T any](ps ParseState, v T) frt.Tuple2[ParseState, T] {
+	return frt.NewTuple2(ps, v)
+}
+```
+
+withPsでpsを先に作っておいて値が出来たあとに結果を返す、みたいな時にパイプラインで一気に出来るようになった。
+
+```
+    let (ps3, rest) = psConsume SEMICOLON ps2 |> parseFieldInitializers parseE
+    slice.Prepend nep rest |> withPs ps3
+```
+
+今この説明を書いていて、値を加工する関数を渡す方が関数型っぽいな、と思ったがまぁいい。
+
+さらに関数の方を先に進める以下のようなものを作った。
+
+```golang
+func Thr[T any](fn func(ParseState) ParseState, prev frt.Tuple2[ParseState, T]) frt.Tuple2[ParseState, T] {
+	p, e := frt.Destr(prev)
+	return frt.NewTuple2(fn(p), e)
+}
+```
+
+これで値を返したあとにEOLをskipする、みたいな事が書けるようになった。
+
+```
+  let (ps2, neps) = psConsume LBRACE ps |> parseFieldInitializers parseE |> Thr (psConsume RBRACE)
+```
+
+これはなかなか関数型っぽいな。
+やはりThrPとThrEを作る方がそれっぽいか。
+そもそもにこれはParseStateには依存してないよなぁ。
+
+本来は以下が正しいか。
+
+```golang
+func Cnv1[T any, U any](fn func(T) T, prev frt.Tuple2[T, U]) frt.Tuple2[T, U] {
+	t, u := frt.Destr(prev)
+	return frt.NewTuple2(fn(t), u)
+}
+
+func Cnv2[T any, U any](fn func(U) U, prev frt.Tuple2[T, U]) frt.Tuple2[T, U] {
+	t, u := frt.Destr(prev)
+	return frt.NewTuple2(t, fn(u))
+}
+```
+
+これならwithPsもいらなかったのでは感。せっかくなのでこう直しておくか。＞サポートしてないinferenceが必要になったのでTだけParseStateにした。
+
+要素は0オリジンでCnv0とCnv1の方が正しい気もしてきたが、Cnv1で右側というのもちょっと分かりにくいよな。
+CnvLとCnvRか。
+
+```golang
+func CnvL[U any](fn func(ParseState) ParseState, prev frt.Tuple2[ParseState, U]) frt.Tuple2[ParseState, U] {
+	t, u := frt.Destr(prev)
+	return frt.NewTuple2(fn(t), u)
+}
+
+func CnvR[U any](fn func(U) U, prev frt.Tuple2[ParseState, U]) frt.Tuple2[ParseState, U] {
+	t, u := frt.Destr(prev)
+	return frt.NewTuple2(t, fn(u))
+}
+```
+
+これでいいか。
+
+だいぶ面倒が減ってきたな。パーサー書くのが憂鬱では無くなってきた。いいね。
