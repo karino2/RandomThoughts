@@ -945,3 +945,136 @@ ocamlのhand writing parserでググってこんなのを発見＞[Good example 
 
 とりあえずトークンのスキャンをgolangの側で書いて、トークナイザはfolang側で書くという方針でやってみる。
 
+### レコード型のパース 2025-02-13 (木)
+
+過去ログを眺めていたら、次は以下を動かしていた。
+
+```
+type hoge = {X: string; Y: string}
+
+let ika () =
+    {X="abc"; Y="def"}
+```
+
+これはなかなか手頃だな。さすが前回の自分。という事でこれの対応をやろう。
+
+そこそこめんどくさかったが、無事トランスパイル出来た。
+骨組みはだいたい出来たかな。
+
+う、package_infoの中のコメントがうまく処理出来てない。明日直そう。
+
+### パーサー関連utilityをgoで揃える、Union実装、match実装 2025-02-14 (金)
+
+- [x] パーサー整理
+- [x] Union対応
+- [x] match exprの対応
+
+ジェネリクスのサポートが弱いのでfolangでパーサーコンビネータっぽい事が出来ないのでいろいろ面倒なのだが、
+golangの方でジェネリクスのutilityを整備してそれを呼ぶなら結構いろいろ出来るのでは？と気付きやってみる。
+
+```golang
+func withPs[T any](ps ParseState, v T) frt.Tuple2[ParseState, T] {
+	return frt.NewTuple2(ps, v)
+}
+```
+
+withPsでpsを先に作っておいて値が出来たあとに結果を返す、みたいな時にパイプラインで一気に出来るようになった。
+
+```
+    let (ps3, rest) = psConsume SEMICOLON ps2 |> parseFieldInitializers parseE
+    slice.Prepend nep rest |> withPs ps3
+```
+
+今この説明を書いていて、値を加工する関数を渡す方が関数型っぽいな、と思ったがまぁいい。
+
+さらに関数の方を先に進める以下のようなものを作った。
+
+```golang
+func Thr[T any](fn func(ParseState) ParseState, prev frt.Tuple2[ParseState, T]) frt.Tuple2[ParseState, T] {
+	p, e := frt.Destr(prev)
+	return frt.NewTuple2(fn(p), e)
+}
+```
+
+これで値を返したあとにEOLをskipする、みたいな事が書けるようになった。
+
+```
+  let (ps2, neps) = psConsume LBRACE ps |> parseFieldInitializers parseE |> Thr (psConsume RBRACE)
+```
+
+これはなかなか関数型っぽいな。
+やはりThrPとThrEを作る方がそれっぽいか。
+そもそもにこれはParseStateには依存してないよなぁ。
+
+本来は以下が正しいか。
+
+```golang
+func Cnv1[T any, U any](fn func(T) T, prev frt.Tuple2[T, U]) frt.Tuple2[T, U] {
+	t, u := frt.Destr(prev)
+	return frt.NewTuple2(fn(t), u)
+}
+
+func Cnv2[T any, U any](fn func(U) U, prev frt.Tuple2[T, U]) frt.Tuple2[T, U] {
+	t, u := frt.Destr(prev)
+	return frt.NewTuple2(t, fn(u))
+}
+```
+
+これならwithPsもいらなかったのでは感。せっかくなのでこう直しておくか。＞サポートしてないinferenceが必要になったのでTだけParseStateにした。
+
+要素は0オリジンでCnv0とCnv1の方が正しい気もしてきたが、Cnv1で右側というのもちょっと分かりにくいよな。
+CnvLとCnvRか。
+
+```golang
+func CnvL[U any](fn func(ParseState) ParseState, prev frt.Tuple2[ParseState, U]) frt.Tuple2[ParseState, U] {
+	t, u := frt.Destr(prev)
+	return frt.NewTuple2(fn(t), u)
+}
+
+func CnvR[T any, U any](fn func(T) U, prev frt.Tuple2[ParseState, T]) frt.Tuple2[ParseState, U] {
+	t, u := frt.Destr(prev)
+	return frt.NewTuple2(t, fn(u))
+}
+```
+
+これでいいか。
+
+これを使うと、以下みたいなコードが
+
+```
+let parsePackage (ps:ParseState) =
+  let ps2 = psConsume PACKAGE ps
+  let pname = psIdentName ps2
+  let ps3 = psNextNOL ps2
+  let pkg = Package pname
+  (ps3, pkg)
+```
+
+以下のように直せる。(psIdentNameNxLとかいうのが増えているがこれは大した事無い）
+
+```
+let parsePackage (ps:ParseState) =
+  psConsume PACKAGE ps
+  |> psIdentNameNxL
+  |> CnvR Package
+```
+
+だいぶ面倒が減ってきたな。パーサー書くのが憂鬱では無くなってきた。いいね。
+
+Unionの実装まで進めた。結構面倒な所だが、stmt_to_go.foの方で7割くらい実装済みなのでこちらはそこまで大変でもなかった。
+
+次はmatchの実装だが、これは逆に思ったより面倒。というよりも、これまで適当に済ませてきたblockとかをどうするかという問題に直面して手が止まったという感じか。
+
+Unionとmatchが結構大物で最初の実装でも割と大変だった所なので、これが終わればセルフホストもだいぶ見えてくる感じに思う。
+
+息抜きに今後の見通しを考える。
+とりあえずセルフホストをやったあとに、型推論をちゃんとやりたい。というか関数を基本アノテーション無しで定義するようにしたい。
+コードがだいぶ変わるので。
+推論前提のコードに変えたあとにアナウンスしたいな。
+
+1/13に作り始めたので今日でだいたい一ヶ月か。意外と一ヶ月で出来るものだな。
+正直セルフホストをするのでなければもう使っていける段階に来ているとは思うのだけれど、
+セルフホストはドッグフードとしては強力なので機能セットがかなりいい感じになるというメリットを実感している。
+いいものにするのに役に立ってるな、と思うので、このままセルフホストを目指して進めていきたい。
+
+match終わった！テストをいろいろtinyfoから持ってきて未実装部分を潰していく。だいぶ前に進んだ。

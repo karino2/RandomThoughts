@@ -449,139 +449,6 @@ fsharpを移植したいのではなく、ランタイム的にはなるべくgo
 [Folang過去ログ](Folang%E9%81%8E%E5%8E%BB%E3%83%AD%E3%82%B0)
 
 
-### レコード型のパース 2025-02-13 (木)
-
-過去ログを眺めていたら、次は以下を動かしていた。
-
-```
-type hoge = {X: string; Y: string}
-
-let ika () =
-    {X="abc"; Y="def"}
-```
-
-これはなかなか手頃だな。さすが前回の自分。という事でこれの対応をやろう。
-
-そこそこめんどくさかったが、無事トランスパイル出来た。
-骨組みはだいたい出来たかな。
-
-う、package_infoの中のコメントがうまく処理出来てない。明日直そう。
-
-### パーサー関連utilityをgoで揃える、Union実装、match実装 2025-02-14 (金)
-
-- [x] パーサー整理
-- [x] Union対応
-- [x] match exprの対応
-
-ジェネリクスのサポートが弱いのでfolangでパーサーコンビネータっぽい事が出来ないのでいろいろ面倒なのだが、
-golangの方でジェネリクスのutilityを整備してそれを呼ぶなら結構いろいろ出来るのでは？と気付きやってみる。
-
-```golang
-func withPs[T any](ps ParseState, v T) frt.Tuple2[ParseState, T] {
-	return frt.NewTuple2(ps, v)
-}
-```
-
-withPsでpsを先に作っておいて値が出来たあとに結果を返す、みたいな時にパイプラインで一気に出来るようになった。
-
-```
-    let (ps3, rest) = psConsume SEMICOLON ps2 |> parseFieldInitializers parseE
-    slice.Prepend nep rest |> withPs ps3
-```
-
-今この説明を書いていて、値を加工する関数を渡す方が関数型っぽいな、と思ったがまぁいい。
-
-さらに関数の方を先に進める以下のようなものを作った。
-
-```golang
-func Thr[T any](fn func(ParseState) ParseState, prev frt.Tuple2[ParseState, T]) frt.Tuple2[ParseState, T] {
-	p, e := frt.Destr(prev)
-	return frt.NewTuple2(fn(p), e)
-}
-```
-
-これで値を返したあとにEOLをskipする、みたいな事が書けるようになった。
-
-```
-  let (ps2, neps) = psConsume LBRACE ps |> parseFieldInitializers parseE |> Thr (psConsume RBRACE)
-```
-
-これはなかなか関数型っぽいな。
-やはりThrPとThrEを作る方がそれっぽいか。
-そもそもにこれはParseStateには依存してないよなぁ。
-
-本来は以下が正しいか。
-
-```golang
-func Cnv1[T any, U any](fn func(T) T, prev frt.Tuple2[T, U]) frt.Tuple2[T, U] {
-	t, u := frt.Destr(prev)
-	return frt.NewTuple2(fn(t), u)
-}
-
-func Cnv2[T any, U any](fn func(U) U, prev frt.Tuple2[T, U]) frt.Tuple2[T, U] {
-	t, u := frt.Destr(prev)
-	return frt.NewTuple2(t, fn(u))
-}
-```
-
-これならwithPsもいらなかったのでは感。せっかくなのでこう直しておくか。＞サポートしてないinferenceが必要になったのでTだけParseStateにした。
-
-要素は0オリジンでCnv0とCnv1の方が正しい気もしてきたが、Cnv1で右側というのもちょっと分かりにくいよな。
-CnvLとCnvRか。
-
-```golang
-func CnvL[U any](fn func(ParseState) ParseState, prev frt.Tuple2[ParseState, U]) frt.Tuple2[ParseState, U] {
-	t, u := frt.Destr(prev)
-	return frt.NewTuple2(fn(t), u)
-}
-
-func CnvR[T any, U any](fn func(T) U, prev frt.Tuple2[ParseState, T]) frt.Tuple2[ParseState, U] {
-	t, u := frt.Destr(prev)
-	return frt.NewTuple2(t, fn(u))
-}
-```
-
-これでいいか。
-
-これを使うと、以下みたいなコードが
-
-```
-let parsePackage (ps:ParseState) =
-  let ps2 = psConsume PACKAGE ps
-  let pname = psIdentName ps2
-  let ps3 = psNextNOL ps2
-  let pkg = Package pname
-  (ps3, pkg)
-```
-
-以下のように直せる。(psIdentNameNxLとかいうのが増えているがこれは大した事無い）
-
-```
-let parsePackage (ps:ParseState) =
-  psConsume PACKAGE ps
-  |> psIdentNameNxL
-  |> CnvR Package
-```
-
-だいぶ面倒が減ってきたな。パーサー書くのが憂鬱では無くなってきた。いいね。
-
-Unionの実装まで進めた。結構面倒な所だが、stmt_to_go.foの方で7割くらい実装済みなのでこちらはそこまで大変でもなかった。
-
-次はmatchの実装だが、これは逆に思ったより面倒。というよりも、これまで適当に済ませてきたblockとかをどうするかという問題に直面して手が止まったという感じか。
-
-Unionとmatchが結構大物で最初の実装でも割と大変だった所なので、これが終わればセルフホストもだいぶ見えてくる感じに思う。
-
-息抜きに今後の見通しを考える。
-とりあえずセルフホストをやったあとに、型推論をちゃんとやりたい。というか関数を基本アノテーション無しで定義するようにしたい。
-コードがだいぶ変わるので。
-推論前提のコードに変えたあとにアナウンスしたいな。
-
-1/13に作り始めたので今日でだいたい一ヶ月か。意外と一ヶ月で出来るものだな。
-正直セルフホストをするのでなければもう使っていける段階に来ているとは思うのだけれど、
-セルフホストはドッグフードとしては強力なので機能セットがかなりいい感じになるというメリットを実感している。
-いいものにするのに役に立ってるな、と思うので、このままセルフホストを目指して進めていきたい。
-
-match終わった！テストをいろいろtinyfoから持ってきて未実装部分を潰していく。だいぶ前に進んだ。
 
 ### 型推論の手前まで一通り 2025-02-15 (土)
 
@@ -684,11 +551,12 @@ andの方は途中の型を一時的なTypeVarにして終わったあとに置�
 あと半日程度の作業でセルフホストにチャレンジという所までは行く。
 バグはいろいろ出てくるだろうが、だいたいはgolang実装と同じ動きなので見比べれば多くはすぐに片付くだろう。
 
-### 相互再帰型の定義、関数の再帰呼び出し、main 2025-02-18 (火)
+### 相互再帰型の定義、関数の再帰呼び出し、main実装、セルフホストに向けたinference改善 2025-02-18 (火)
 
 - [x] andの再帰型定義
 - [x] let funcの型指定と再帰呼び出し
 - [x] main関数を書く
+- [x] フィールドアクセス型をつくり型解決を改善
 
 もうここまで来たら細々としたのは片付けてしまおう、という事でandのサポートをする。
 そのままの勢いで再帰呼び出しも直し、main関数も書く。
@@ -714,3 +582,13 @@ Headの時点でTypeVarを割り当てるのは正しいｔ思うが、パイプ
 すぐには片付か無さそうなので今日はここまでかな。
 
 少し考えてみた内容をブログにしてみた。＞ [フィールドアクセスの型解決 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2025/02/18/field_access_type_resolution.html)
+
+フィールドアクセス型を作ってみたら今度はスライスとのマッチでうまく行かないケースが出てくる。
+ちょっと実装を進める前に時間を置いて考えてみるか。
+
+とりあえず頭の中にもやもやしていた実装は一通り終わり、ここからはまた新しく考えないといけない段階に来た気がする。
+
+こういう本質的な問題を複雑に解決する前に、
+もうちょっと前に進むのに必要な所を考えたいよな。
+Expr単位で分かっているものを解決していけばこういう問題はあまり発生しないのだから、
+そういう方向で難しい問題が発生しにくくなるように頑張った方がいい気もする。
