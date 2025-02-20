@@ -738,3 +738,14 @@ Folang内での定義はまだ出来ないが、それはおいおい。
 
 そしてDictを実装する。FSharpとしては型名はMapがimmutableなものとしては使われるが、
 一方IDictionaryを作るキーワードはdictで、この辺は微妙なので無理に揃えるのはやめてdictで。
+
+scopeを実装したら以下は無理と言われた。
+
+```golang
+type MyScope struct {
+  // dictいろいろ
+  Parent     MyScope
+}
+```
+
+そうか。ポインタじゃないと駄目か。
