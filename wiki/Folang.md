@@ -616,3 +616,13 @@ wrapper.goは514行に。foが3649行なので、だいたいfolangで実装出�
 
 スタックトレースが深すぎて辛いのでFoldなどを実装してそれを使うようにする。
 いい感じになった。
+
+サンプルからmdを生成するツールを書いたりして見つかったバグを直したりしていた。
+生成したmdはこちら。
+
+[folang/samples/README.md at main · karino2/folang](https://github.com/karino2/folang/blob/main/samples/README.md)
+
+生成したmdを見ていたら古い書き方が多かったので直したり。
+なんかすごい完成度上がったように見えるな。よしよし。
+
+次はGetting Startedを書くかな。
