@@ -632,6 +632,6 @@ wrapper.goは514行に。foが3649行なので、だいたいfolangで実装出�
 
 とりあえずGetting Startedから書き始める。
 
-[folang/docs/tutorials/GettingStarted_ja.md at main · karino2/folang](https://github.com/karino2/folang/blob/main/docs/tutorials/GettingStarted_ja.md)
+[folang/docs/tutorials/1_GettingStarted_ja.md at main · karino2/folang](https://github.com/karino2/folang/blob/main/docs/tutorials/1_GettingStarted_ja.md)
 
 とりあえず日本語で書いて、自動翻訳して手直ししよう、という作戦。
