@@ -56,6 +56,115 @@ fsharpを移植したいのではなく、ランタイム的にはなるべくgo
 
 - [Parsing expressions by precedence climbing - Eli Bendersky's website](https://eli.thegreenplace.net/2012/08/02/parsing-expressions-by-precedence-climbing)
 
+## 仕様検討
+
+Golangのinterfaceってgenerics使えるのかな？と調べても良く分からなかったが、chatGPTに聞いたらコード出してくれて動いた。
+
+```golang
+package main
+
+import "fmt"
+
+// 型パラメータ T を持つインターフェース
+type Printer[T any] interface {
+	Print(value T)
+}
+
+// int 型の Printer 実装
+type IntPrinter struct{}
+
+func (p IntPrinter) Print(value int) {
+	fmt.Println("Printing int:", value)
+}
+
+// string 型の Printer 実装
+type StringPrinter struct{}
+
+func (p StringPrinter) Print(value string) {
+	fmt.Println("Printing string:", value)
+}
+
+func main() {
+	var intPrinter Printer[int] = IntPrinter{}
+	intPrinter.Print(42)
+
+	var stringPrinter Printer[string] = StringPrinter{}
+	stringPrinter.Print("Hello, World!")
+}
+```
+
+これが動くならそれほど難しい事は無いかな？
+
+Optionalの実装とかってどっかにあるのかな、とググって以下を見つける。
+
+[Generic Go Optionals · Preslav Rachev](https://preslav.me/2021/11/18/generic-golang-optionals/)
+
+なんかレコードとUnionのGenerics対応も出来そうだな。
+
+以下みたいなのを作りたい。
+
+```
+type Result<T> =
+| Success of T
+| Failure of string
+```
+
+これはGoのコードとしては、以下で良さそうか。
+
+```golang
+type Result[T any] interface {
+   Result_Union()
+}
+
+func (Result_Success[T]) Result_Union(){}
+func (Result_Failure[T]) Result_Union(){}
+
+type Result_Success[T any] struct {
+  Value T
+}
+
+type Result_Failure[T any] struct {
+  Value string
+}
+
+func New_Result_Success[T any](v T) Result[T] { return Result_Success[T]{v} }
+func New_Result_Failure[T any](v string) Result[T] { return Result_Failure[T]{v} }
+```
+
+動作は確認出来た。
+
+でもFolang側での型推論は簡単では無いよな。
+
+[Understanding Parser Combinators - F# for fun and profit](https://fsharpforfunandprofit.com/posts/understanding-parser-combinators/)
+
+の以下の例を見ると
+
+```fsharp
+type ParseResult<'a> =
+  | Success of 'a
+  | Failure of string
+
+let pchar (charToMatch,str) =
+  if String.IsNullOrEmpty(str) then
+    Failure "No more input"
+  else
+    let first = str.[0]
+    if first = charToMatch then
+      let remaining = str.[1..]
+      Success (charToMatch,remaining)
+    else
+      let msg = sprintf "Expecting '%c'. Got '%c'" charToMatch first
+      Failure msg
+```
+
+このFailureの方のtype parameterはSuccessの方で初めて確定する訳で。いや、別に全部バラバラにtype variableを振って推移律でunifyすればいいか。
+
+本家のResult型も貼っておく。
+
+- [Result<'T, 'TError> (FSharp.Core) - FSharp.Core](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-fsharpresult-2.html)
+- [Result (FSharp.Core) - FSharp.Core](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-resultmodule.html)
+- [Results - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/results)
+
 ## 開発日記
 
 やった事を書く場所が欲しくてとりあえずここに置いておく。
@@ -284,3 +393,6 @@ google翻訳で英語版も用意して軽く見直していく。見直しは�
 細々としたのは残っているが、大きいのはRecordのGenericsだよなぁ。
 逆にそれさえ実装すればパーサーコンビネータをはじめとした多くのものが実装出来るようになる気がする。
 ただ、もうちょっと使ってからそういうのは手を出したい気もするんだよな。
+
+Golang側のgenericsを触ってみて、やれば出来そうだな、という感触は得る。仕様検討の方に移動。
+あればライブラリ全体に影響があるが、
