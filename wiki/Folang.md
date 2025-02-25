@@ -58,6 +58,33 @@ fsharpを移植したいのではなく、ランタイム的にはなるべくgo
 
 ## 仕様検討
 
+### 文字列リテラル
+
+F# はダブルクオート３つがあるが、golangはバッククオートなんだよなぁ。
+そしてinterpolationは欲しい。
+
+[Interpolated strings - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/interpolated-strings)
+
+とりあえずバッククオートとドル始まりを実装するかな。
+
+
+```
+let a = `This is
+Multiline
+string`
+
+let b = $"String {a} interpolation"
+
+let c = $`This
+is
+also {a}
+interpolation. {{}} for brace pair.`
+```
+
+この２つがあれば十分か。
+
+### Unionのgenerics
+
 Golangのinterfaceってgenerics使えるのかな？と調べても良く分からなかったが、chatGPTに聞いたらコード出してくれて動いた。
 
 ```golang
@@ -423,3 +450,30 @@ Unionはポインタにするしか無い、という結論になり、goのwrap
 
 一晩たってだいたい方針が固まったので朝飯を食べつつ実装。無事動く。ただレコードはそんなに使う所無いんだよな。
 Unionが本丸。
+
+F# で書いたツールをいろいろ移植したいと思い、photinoの代わりはなんか無いかなぁ、と調べてて、[Introduction - Wails](https://wails.io/docs/introduction/) というのを見つける。
+こういうの試すなら文字列リテラルをもっとリッチにしたいな。
+
+グローバル変数のメモ。
+
+以下はNG ("syntax error: non-declaration statement outside function body")
+
+```golang
+func AddTwo(a string, b string) string {
+ return a+b
+}
+
+g_str := AddTwo("hoge", "ika")
+```
+
+以下はOK。
+
+```golang
+func AddTwo(a string, b string) string {
+ return a+b
+}
+
+var g_str = AddTwo("hoge", "ika")
+```
+
+ちなみに右辺がこういう関数とかだとconstはNG。Folang的にはvarになればいいのかな。
