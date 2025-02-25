@@ -2,3 +2,5 @@
 
 - [Bulma: Free, open source, and modern CSS framework based on Flexbox](https://bulma.io/) 公式
 - [Bulma Sandbox](https://codepen.io/NiiMartey/pen/vJboYX) 動作確認に自分が良く使ってるサンドボックス
+
+関係ないけれど、pico cssというのを見かけた。[Pico CSS • Minimal CSS Framework for semantic HTML](https://picocss.com/)
