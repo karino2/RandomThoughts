@@ -486,3 +486,8 @@ $"This is var a: {a}, var b is {b}."
 
 raw stringはGolangに合わせてバッククオートにしたいな。こちらにもドルもつけられるようにしよう。
 この辺やったらWebView系の何かで小物を作ってみたいな。
+
+### rawstring対応 2025-02-26 (水)
+
+簡単に対応出来そうなので朝起きて軽くbacktickのrawstring対応。
+ついでにrawstringのstring interpolationも対応しておく。
