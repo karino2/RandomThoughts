@@ -491,3 +491,5 @@ raw stringはGolangに合わせてバッククオートにしたいな。こち�
 
 簡単に対応出来そうなので朝起きて軽くbacktickのrawstring対応。
 ついでにrawstringのstring interpolationも対応しておく。
+
+これでwebview使ったアプリを書く準備は出来たかな。
