@@ -8,7 +8,6 @@ go言語、golangなどと呼ばれる。
 - [research!rsc: Go Data Structures: Interfaces](https://research.swtch.com/interfaces) インターフェースの内部表現、割と良く見たくなるページなので。
 - [fmt package - fmt - Go Packages](https://pkg.go.dev/fmt) standard libraryのリファレンス、とりあえずfmtを貼っておく
 - [go - Go](https://cs.opensource.google/go/go) 処理系のソース。
-- [zserge/lorca: Build cross-platform modern desktop apps in Go + HTML5](https://github.com/zserge/lorca) Electron的な事をやりたい、みたいな話。
 
 ## モジュール
 
@@ -125,6 +124,20 @@ func main() {
 ```
 
 ちなみにドット３つはコンパイル時に要素数に展開されるらしい。
+
+## lorcaとWails
+
+Electron的な事をやりたい、みたいな話。
+
+- [Introduction - Wails](https://wails.io/docs/introduction/)
+- [zserge/lorca: Build cross-platform modern desktop apps in Go + HTML5](https://github.com/zserge/lorca) 
+
+WailsはElectronの代替としてより本格的なもの。出来上がったものもMacではちゃんとapp bundleになる。
+ただgo installとかで結果が入る感じにはならない。
+
+lorcaはChromeのデバッグなんちゃらの機能を使って動くとの事で、Chromeが立ち上がる。
+ただ出来上がったものは普通にgo install出来そう。
+
 
 ## ASTのノード的な表現
 
