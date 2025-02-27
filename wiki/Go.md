@@ -138,6 +138,9 @@ WailsはElectronの代替としてより本格的なもの。出来上がった�
 lorcaはChromeのデバッグなんちゃらの機能を使って動くとの事で、Chromeが立ち上がる。
 ただ出来上がったものは普通にgo install出来そう。
 
+[mdvcat](mdvcat)を移植してみた＞[karino2/mdvcat_lorca: lorca porting of mdvcat.](https://github.com/karino2/mdvcat_lorca)
+
+こういうのはこれでいいかもな。
 
 ## ASTのノード的な表現
 
