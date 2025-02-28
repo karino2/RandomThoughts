@@ -192,6 +192,65 @@ let pchar (charToMatch,str) =
 - [Result (FSharp.Core) - FSharp.Core](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-resultmodule.html)
 - [Results - F# - Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/fsharp/language-reference/results)
 
+### 値が無いケースがこれではうまう行かない
+
+実装をしてみようとした所、値が無いケースがうまく行かない。[folang/docs/specs/union_ja.md at main · karino2/folang](https://github.com/karino2/folang/blob/main/docs/specs/union_ja.md)
+
+もともと以下のようなUnionには
+
+```fsharp
+type AorB =
+  | A
+  | B
+```
+
+以下のようなGoのコードが生成されていた。
+
+```golang
+var New_AorB_A AorB = AorB_A{}
+```
+
+だが、これではTが指定出来ない。
+こういう変数は作れない。
+
+```golang
+var New_AorB_A AorB[T] = AorB_A[T}{}
+```
+
+値が無いケースも関数にするしか無いかなぁ。以下のようになっていればおおむねいいか。
+
+```golang
+func New_AorB_A[T any]() AorB[T] { return AorB_A[T]{} }
+```
+
+Folangとしては当然明示的にspecifyするしか無いが、
+
+```fsharp
+AorB_A<int> ()
+```
+
+F# ではどうなっているんだっけ？
+
+```
+> type AorB<'t> =
+- | A
+- | B of 't
+-
+- ;;
+type AorB<'t> =
+  | A
+  | B of 't
+
+> A ;;
+val it: AorB<'a>
+
+> B 123 ;;
+val it: AorB<int> = B 123
+```
+
+うーむ、Aはgenerics型の変数になるのか。これはたぶんgolangでは実現出来ないな。どうするのがいいんだろう？
+
+
 ## 開発日記
 
 やった事を書く場所が欲しくてとりあえずここに置いておく。

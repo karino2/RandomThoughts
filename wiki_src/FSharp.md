@@ -103,3 +103,12 @@ ZipEntryなどはFiles関連の便利メソッドが使えないので、たま�
 - [The Go Programming Language](https://go.dev/src/cmd/compile/README) golangのコンパイラ周辺のドキュメント。外から使える感じでは無さそうだが、一応メモしておく。
 
 fableからやると、トランスパイラにdotnetが必要になっちゃうよなぁ。やはり似た言語くらいがいいんじゃないか、という気もする。
+
+## dotnet fsi
+
+たまに使おうとすると忘れているが、コマンドラインでちょろっと試すなら、dotnet fsiとする。
+
+```
+$ dotnet fsi
+```
+
