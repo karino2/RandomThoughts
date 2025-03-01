@@ -250,6 +250,45 @@ val it: AorB<int> = B 123
 
 うーむ、Aはgenerics型の変数になるのか。これはたぶんgolangでは実現出来ないな。どうするのがいいんだろう？
 
+ReScriptでもやはり異なる型の引数に同じ変数が使えるな。
+
+```rescript
+
+type result<'a> =
+  | Ok('a)
+  | Failure
+  | Other
+
+
+module App = {
+  let iToS = (i) => {
+    switch(i) {
+      | Ok(arg) => Int.toString(arg)
+      | Failure => "int fail"
+      | Other => "int other"
+    }
+  }
+  
+  let sToS = (s) => {
+    switch(s) {
+      | Ok(arg) => arg
+      | Failure => "s fail"
+      | Other => "s other"
+    }
+  }
+    
+  let make = (cond) => {
+    let f = Failure
+    let o = Other
+    let a = if cond { Ok(123) } else { f }
+    let b = if cond { Ok("abc") } else { f }
+    iToS(a) ++ sToS(b) ++ iToS(o) ++ sToS(o)
+  }
+}
+```
+
+変数の参照の所で型が決まり、ランタイムとしては別に同じ値を入れておいてキャストでもすれば良いという気はする。
+このケースだけは変数の定義では無くて参照で型が決まる気がするな。
 
 ## 開発日記
 
