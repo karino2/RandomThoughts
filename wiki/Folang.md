@@ -55,6 +55,8 @@ fsharpを移植したいのではなく、ランタイム的にはなるべくgo
 **その他**
 
 - [Parsing expressions by precedence climbing - Eli Bendersky's website](https://eli.thegreenplace.net/2012/08/02/parsing-expressions-by-precedence-climbing)
+- [hhvm/hphp/hack/src/utils/lsp/lsp.mli at master · facebook/hhvm](https://github.com/facebook/hhvm/blob/master/hphp/hack/src/utils/lsp/lsp.mli) Hackに入っているOcamlのlsp、1400行くらい
+   - 本家の[ocaml/ocaml-lsp: OCaml Language Server Protocol implementation](https://github.com/ocaml/ocaml-lsp?tab=readme-ov-file)が最初はここから始めたとか
 
 ## 仕様検討
 
