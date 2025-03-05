@@ -8,6 +8,7 @@ go言語、golangなどと呼ばれる。
 - [research!rsc: Go Data Structures: Interfaces](https://research.swtch.com/interfaces) インターフェースの内部表現、割と良く見たくなるページなので。
 - [fmt package - fmt - Go Packages](https://pkg.go.dev/fmt) standard libraryのリファレンス、とりあえずfmtを貼っておく
 - [go - Go](https://cs.opensource.google/go/go) 処理系のソース。
+- [alecthomas/participle: A parser library for Go](https://github.com/alecthomas/participle/tree/master) パーサーはこれが良い。
 
 ## モジュール
 
