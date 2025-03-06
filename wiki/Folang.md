@@ -414,7 +414,18 @@ csvplrが3要素タプルを使っていたのでサポートした
 
 やはり `[]T*U` は`([]T)*U` とパースするしかないかぁ。
 
+[alecthomas/participle: A parser library for Go](https://github.com/alecthomas/participle) のexamplesのexpr4を見ていたら、手書きパーサーの例が出ている。
+おぉ、いいじゃん、こういうのやりたかったんだよ、ということでparticipleでcsvplrの移植をやってみることにする。
+
 ### UnionにStringerのメソッドを生成 2025-03-06 (木)
 
 デバッグ時に不便なので、Stringerを生成することにした。とりあえずUnionだけ。
 Recordもそのうちやってもいいかもしれないが。
+
+csvplrのパーサーをparticipleで書いてIRはUnionを生成するのができた。まぁまぁ簡単に出来たな。このくらいならF# とそんなに面倒さは変わらない気がする。
+次はdataframe系のパッケージを使ってcsvのやりとりか。
+
+csvplrの移植はなかなかいい感じのタスクな気がしてきた。
+
+文字列のマッチとinner関数のletはそろそろ対応してもいいかもな。
+後者は内部的にはfunのletに変換する感じにして単なるシンタックスシュガーとして扱う感じで。
