@@ -4,6 +4,7 @@
 
 - [TypeScript: Documentation - TypeScript for JavaScript Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - [[Deno]]
+- [The essentials of TypeScript • Tackling TypeScript](https://exploringjs.com/tackling-ts/ch_typescript-essentials.html) 入門記事
 
 **VSCode 関連**
 
