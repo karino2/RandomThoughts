@@ -9,6 +9,7 @@
 - [NFC の基本  -  Connectivity  |  Android Developers](https://developer.android.com/guide/topics/connectivity/nfc/nfc?hl=ja)
 - [Android Basics in Kotlin course  -  Android Developers](https://developer.android.com/courses/android-basics-kotlin/course) code labsとか
 - [FDroid](FDroid)
+- [Android Graphics Shading Language (AGSL)  -  Views  -  Android Developers](https://developer.android.com/develop/ui/views/graphics/agsl) AGSLなんて出来てたのか。びっくりするほどドキュメントがなくGLSLとの違いが全然分からんが。
 
 ## launcherアイコンの作り方
 
