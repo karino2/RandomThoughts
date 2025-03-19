@@ -205,3 +205,13 @@ let localf = fun a -> someExpr
 これでcsvplrを移植するのに必要な機能は揃ったかな。
 
 最近の変更分のドキュメントを更新しておく。まぁ読んでる人がどれだけいるかは微妙だが。
+
+### csvplr移植、QFrameを評価 2025-03-19 (水)
+
+Folangの応用としてcsvplrを移植するのに、DataFrameのライブラリを選び、QFrameを使ってみる事にする。
+
+[tobgu/qframe: Immutable data frame for Go](https://github.com/tobgu/qframe?tab=readme-ov-file)
+
+この辺は特にこだわりは無いので使ってみて駄目ならほかを試す感じで。
+
+見た感じ結構高機能なので、csvplrを移植するよりも、ASTから直接このQFrameのフィルタとかを生成する方がいいかもなぁ。
