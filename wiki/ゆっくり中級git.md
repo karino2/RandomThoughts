@@ -7,6 +7,19 @@
 
 なんとなくいつ何をやったかをメモしておく。
 
+### 第五回作業開始 2025-03-27 (木)
+
+めっちゃ時間あいたが、第五回を作り始める。
+
+とりあえず第三回と第四回の内容を思い出すべく1.5倍速で見直す。
+
+cherry-pickの説明からか。diffはどうしようかなぁ。
+
+チェリーピック
+
+- [Git - git-cherry-pick Documentation](https://git-scm.com/docs/git-cherry-pick)
+- [Git - Revision Selection](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection.html) diffのバージョン指定周り
+
 ### 第五回に向けたメモ 2024-06-03 (月)
 
 第五回は履歴整理をやっていきたい。
