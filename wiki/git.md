@@ -34,6 +34,9 @@ $ git log main --author=karino2 --pretty=format:"%h %an %s"
 
 [gitで改行コードが異なるレポジトリ間でチェリーピック的な事をしたい - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2024/11/23/cherry_pick_between_difference_eol_repo_in_git.html)
 
+なお本来はコンテンツのみをCRLFにするのが正しい。
+そこでバイナリファイルとかがあると手作業の修正が必要になる。その場合はvim -bでパッチファイルを開くと末尾のCRを編集出来る。
+
 **駄目だった試行錯誤**
 
 ```
