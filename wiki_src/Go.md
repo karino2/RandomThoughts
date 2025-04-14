@@ -1,6 +1,6 @@
 [[技術的なメモ]]
 
-go言語、golangなどと呼ばれる。
+go言語、golangなどと呼ばれる。関連して[[Folang]]のリンクも張っておく。
 
 - [Tutorials - The Go Programming Language](https://go.dev/doc/tutorial/)
 - [Go by Example](https://gobyexample.com/)
