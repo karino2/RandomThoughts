@@ -35,3 +35,23 @@ settingで`"editor.emptySelectionClipboard": false`相当の事をする。（GU
 - [VSCode：ワークスペースでのみ有効な環境変数を設定する - いつかの熊右衛門](https://kuma-emon.com/it/pc/4970/)
   - あくまでVSCodeから起動されるシェルのみに有効なのでsourceFileMapとかには使えなかった
 - [Visual Studio Code Variables Reference](https://code.visualstudio.com/docs/editor/variables-reference)
+
+## カスタムコマンド実行系
+
+C-Shift-p でOpen Keyboard Shortcut(JSON)を選び、以下を書いている。
+
+```
+{
+        "key": "cmd+e",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text" : "extract_wikilink.sh '${file}'\u000D"
+        }
+    },{
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text" : "today.command\u000D"
+        }
+    }
+```
