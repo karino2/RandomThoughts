@@ -37,3 +37,13 @@ C-qしてC-tして、file:hogehoge.cとかでも良い。
 「.NET デスクトップ開発」をインストールしたら起動するようになった。これは酷い…
 
 [VS2022 Performance profiler "Unexpected exception" on start - Developer Community](https://developercommunity.visualstudio.com/t/VS2022-Performance-profiler-Unexpected-/10795500)
+
+## vcpkg
+
+とりあえずここに置く。
+
+baselineのアップデート
+
+```
+% vcpkg x-update-baseline
+```
