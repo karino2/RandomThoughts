@@ -42,6 +42,8 @@ C-qしてC-tして、file:hogehoge.cとかでも良い。
 
 とりあえずここに置く。
 
+- [vcpkg.json リファレンス - Microsoft Learn](https://learn.microsoft.com/ja-jp/vcpkg/reference/vcpkg-json)
+
 baselineのアップデート
 
 ```
