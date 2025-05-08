@@ -1,4 +1,5 @@
-[Windows](Windows)
+- [Windows](Windows)
+- [VSCode](VSCode)
 
 ## 同期実行ビジュアライザ
 
