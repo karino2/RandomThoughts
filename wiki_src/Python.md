@@ -2,6 +2,8 @@
 
 みんなだいすきPython。
 
+- [marimo - a next-generation Python notebook](https://marimo.io/) Jupyter NotebookのUI、面白い
+
 ## 整数を32bitの16進数にする
 
 ちょろっとした確認で良くやりたくなるが、負数はちょっと面倒がある。
