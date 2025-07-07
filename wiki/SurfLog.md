@@ -456,3 +456,11 @@ sub buggyはいい波用にちょうど欲しかったもの。UBER DRIVER JPは
 
 試してみたいのはsub buggyだが、全然駄目な可能性が高いのもsub buggyで悩ましい。
 UBER DVIER JPは今メインで使っているRNF Reduxと近いので、同じようなボードを鎌倉に欲しい、という希望からは満足出来る可能性が高く無難ではある。
+
+## 2025-07-07 (月)
+
+数日寝かせてみて、冷静になるとやはりsub buggyは出番が少ないのではないか、と思ったのと、以下のプロモのライディング見てたらサイズのある波でも全然平気そうだったので。
+
+[Luvsurf TV 499 : LOST『UBER DRIVER』プロモーションライディングムービー - YouTube](https://www.youtube.com/watch?v=EpuqTobz2zw)
+
+まぁこいつらは上手すぎるという問題はあるが。
