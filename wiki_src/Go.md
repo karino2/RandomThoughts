@@ -9,6 +9,7 @@ go言語、golangなどと呼ばれる。関連して[[Folang]]のリンクも�
 - [fmt package - fmt - Go Packages](https://pkg.go.dev/fmt) standard libraryのリファレンス、とりあえずfmtを貼っておく
 - [go - Go](https://cs.opensource.google/go/go) 処理系のソース。
 - [alecthomas/participle: A parser library for Go](https://github.com/alecthomas/participle/tree/master) パーサーはこれが良い。
+- [[Wails]] Go向けの[[Electron]]代替。
 
 ## モジュール
 
@@ -133,7 +134,7 @@ Electron的な事をやりたい、みたいな話。
 - [Introduction - Wails](https://wails.io/docs/introduction/)
 - [zserge/lorca: Build cross-platform modern desktop apps in Go + HTML5](https://github.com/zserge/lorca) 
 
-WailsはElectronの代替としてより本格的なもの。出来上がったものもMacではちゃんとapp bundleになる。
+[[Wails]]は[[Electron]]の代替としてより本格的なもの。出来上がったものもMacではちゃんとapp bundleになる。
 ただgo installとかで結果が入る感じにはならない。
 
 lorcaはChromeのデバッグなんちゃらの機能を使って動くとの事で、Chromeが立ち上がる。
