@@ -53,4 +53,10 @@ settingsはこちらか。
 
 [Getting Started - go-ini/ini](https://ini.unknwon.io/docs/intro/getting_started)
 
+localStorageを使っているアプリもあるな。
+
+[spirit/frontend/src/App.jsx at main · o8x/spirit](https://github.com/o8x/spirit/blob/main/frontend/src/App.jsx)
+
+まぁこれでいいっちゃいい。
+
 とりあえず指定されたディレクトリから画像ファイルのパスの一覧を作り、それをとりあえずはulとliで表示する所から始めるか。
