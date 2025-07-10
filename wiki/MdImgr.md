@@ -30,6 +30,8 @@ VSCodeにはクリップボード経由でリンクを手動で入れる感じ�
 
 まずは指定フォルダに含まれる画像をリストで表示する所から始めよう。
 
+### 設定の保存いろいろ
+
 アプリの設定などを覚えるのってどうやるんだろう？
 用途を考えれば覚えなくてもいいか？
 
@@ -59,4 +61,19 @@ localStorageを使っているアプリもあるな。
 
 まぁこれでいいっちゃいい。
 
+### ローカルの画像表示
+
 とりあえず指定されたディレクトリから画像ファイルのパスの一覧を作り、それをとりあえずはulとliで表示する所から始めるか。
+
+何も考えずにimgにfileスキームで絶対パスを指定してみたら、AssetHandlerがそんなの知らん、と言ってきた。
+ふむ、それはそうだな。
+
+ではどうするのが良いんだろうか？以下から
+
+[wailsapp/awesome-wails: ⭐ A carefully selected list of Wails applications](https://github.com/wailsapp/awesome-wails?tab=readme-ov-file)
+
+似たようなアプリ無いかなぁ、といろいろ見ていたら、triangula-guiでbase64にして送っている。
+
+[triangula-gui/runner.go at main · rh12503/triangula-gui](https://github.com/rh12503/triangula-gui/blob/main/runner.go#L134)
+
+まぁこれが良いか。
