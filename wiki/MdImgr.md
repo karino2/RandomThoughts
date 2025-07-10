@@ -31,3 +31,26 @@ VSCodeにはクリップボード経由でリンクを手動で入れる感じ�
 まずは指定フォルダに含まれる画像をリストで表示する所から始めよう。
 
 アプリの設定などを覚えるのってどうやるんだろう？
+用途を考えれば覚えなくてもいいか？
+
+varlyとかいうwailsアプリを見ていると、以下みたいなコードがあって、
+
+```golang
+libdir, _ = os.UserConfigDir()
+basedir   = filepath.Join(libdir, "varlyapp")
+docsdir   = filepath.Join(basedir, "Documents")
+```
+
+このdocsdirに保存してそう。これは `~/Library/Application Support/varlyapp/` 下っぽいな。これで良さそう。
+
+[varlyapp-wails/app.go at master · ag-go/varlyapp-wails](https://github.com/ag-go/varlyapp-wails/blob/master/app.go)
+
+settingsはこちらか。
+
+[varlyapp-wails/backend/services/settings.go at master · ag-go/varlyapp-wails](https://github.com/ag-go/varlyapp-wails/blob/master/backend/services/settings.go)
+
+自分で作るのは面倒だな。iniファイルかなんかでいいから無いかな？あった。
+
+[Getting Started - go-ini/ini](https://ini.unknwon.io/docs/intro/getting_started)
+
+とりあえず指定されたディレクトリから画像ファイルのパスの一覧を作り、それをとりあえずはulとliで表示する所から始めるか。
