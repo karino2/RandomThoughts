@@ -1,6 +1,7 @@
 [go](go)向けの[Electron](Electron)代替。
 
 - [The Wails Project - Wails](https://wails.io/)
+- [wailsapp/awesome-wails: ⭐ A carefully selected list of Wails applications](https://github.com/wailsapp/awesome-wails?tab=readme-ov-file) サンプルアプリを探すのに良い。
 
 ## GettingStartedをやってみる
 

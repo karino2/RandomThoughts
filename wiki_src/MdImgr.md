@@ -77,3 +77,7 @@ localStorageを使っているアプリもあるな。
 [triangula-gui/runner.go at main · rh12503/triangula-gui](https://github.com/rh12503/triangula-gui/blob/main/runner.go#L134)
 
 まぁこれが良いか。
+
+ドキュメントを読んでいたら以下を発見。こっちの方がいいか？
+
+[Dynamic Assets - Wails](https://wails.io/docs/guides/dynamic-assets)
