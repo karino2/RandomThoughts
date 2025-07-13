@@ -2,20 +2,11 @@
 
 ## Macショートカット
 
-隠しファイルの表示方法
-Shift+Cmd+.
-
-ロック
-Command+Ctrl+Q
-
-矩形選択
-Command+option+shift（下の Command+Shift+4 が矩形選択のような？）
-
-スクリーンショット
-Command+Shift+4
-
-画面録画  
-Command+Shift+5
+- 隠しファイルの表示方法: Shift+Cmd+.
+- ロック: Command+Ctrl+Q
+- スクリーンショット: Command+Shift+4
+  - 保存せずにクリップボードのみ: Command+Shift+Ctrl+4 （Ctrlが入る）
+- 画面録画: Command+Shift+5
 
 ## リモートデスクトップ
 
