@@ -1,5 +1,7 @@
 md用の画像管理ソフトが欲しい。
-とりあえずMdImgrという名前だけつけて構想を練る。
+小回りの効くGUIユーティリティで実現した。
+
+- [karino2/MdImgr: Image manager for markdown](https://github.com/karino2/MdImgr)
 
 ## 要求
 
@@ -148,3 +150,18 @@ FireAlpacaは選択範囲をクリップボードにコピー、という機能�
 MdImgr、かなりいいな。パスが決め打ちなのを直して公開しよう。
 
 PCに板タブをつなぐ事を受け入れれば、かなり理想に近いものになった。スクリーンショットと手書きの図を自由に混ぜられるのがいいね。
+
+## レポジトリ作成
+
+とりあえずハードコードの所をgemini cliになおしてもらって公開。
+
+[karino2/MdImgr: Image manager for markdown](https://github.com/karino2/MdImgr)
+
+gemini cliは出来上がったものがいまいちだが、とりあえず目的は達成しているのでやっつけには良いね。
+jekyllで使いたい場合は、テンプレートの所にたとえば以下みたいな感じにする。
+
+```
+![images/MFG_BasicShape/$1]({{"/assets/images/MFG_BasicShape/$1" | absolute_url}})
+```
+
+MFG_BasicShapeはお好みに合わせて。 `$1` の所がファイル名に置換される。ドル記号のエスケープとかやってないのでそういうのが入るパターンは今の所書けない。
