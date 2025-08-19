@@ -37,6 +37,16 @@ $ git log main --author=karino2 --pretty=format:"%h %an %s"
 なお本来はコンテンツのみをCRLFにするのが正しい。
 そこでバイナリファイルとかがあると手作業の修正が必要になる。その場合はvim -bでパッチファイルを開くと末尾のCRを編集出来る。
 
+```
+vim -b +'set list' mytemp.patch
+```
+
+また、amはコンフリクトするとapplyしてくれないので、applyコマンドを直接rejectオプションで呼び出す方が作業はしやすい。
+
+```
+git apply --reject mytemp.patch
+```
+
 **駄目だった試行錯誤**
 
 ```
