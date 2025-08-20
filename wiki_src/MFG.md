@@ -45,3 +45,39 @@ def result_u8 |x, y| {
   [gray, gray, gray, 1.0] |> to_u8color(...)
 }
 ```
+
+上記の式で計算するのもそんなに大変ではないが、とりあえずこれを評価して駄目だった事はない。
+
+## ハッシュ
+
+この論文が素晴らしく良くまとまっている。
+
+[Hash Functions for GPU Rendering (JCGT)](https://jcgt.org/published/0009/03/02/)
+
+2次元で使うならPCGかな。`hash(x + hash(y))` とするのがperlinノイズで使っていた手法とか。
+MFGはハットが累乗に使われているのでxorが関数なのに注意。
+
+```
+fn hash |i: i32| {
+  let state = u32(i) * 747796405u + 2891336453u
+  let word = xor((state >> ((state >> 28u) + 4u)), state) * 277803737u
+  i32(xor((word >> 22u), word))
+}
+
+fn hash_xy |x:i32, y:i32| {
+  hash(x + hash(y))
+}
+```
+
+ちなみにuint32を0.0〜1.0にマップするには以下が良いとか。（関数の外はi32で統一、という方針に従い、i32で渡してu32にキャストして計算している）
+
+```
+fn map_to_f32 |uval: i32| {
+  let inv = 1.0 / 4294967295.0
+  f32(u32(uval))*inv
+}
+
+let tmp2 = map_to_f32(0xf0ffffff)
+@print_expr(tmp2)
+
+```

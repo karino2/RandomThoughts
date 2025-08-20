@@ -100,13 +100,59 @@ def result_u8 |x, y| {
   # 3x3の位置を左上に2x2のピクセルを打つ。
   # 3x3の位置をgcxyと呼ぶ。
   let gcxy = goxy*GRID_SIZE + [2, 2]
-  ifel (all([x, y] >= gcxy) && all([x, y] <= gcxy+[2, 2]),
+  ifel (all([x, y] >= gcxy) && all([x, y] < gcxy+[2, 2]),
       u8[0, 0, 0, 0xff],
        u8[0, 0, 0, 0])
 }
 ```
 
-![imgs/Stippling/2025_0820_200033.png](imgs/Stippling/2025_0820_200033.png)
+![imgs/Stippling/2025_0820_210217.png](imgs/Stippling/2025_0820_210217.png)
 
-なんかあってそうか。
-これを少しずらす。
+なんかあってそうか。でもサイズ2はちょっと小さいな。スペース広すぎか。
+
+まぁいい。これを少しずらす。
+
+ハッシュは[[MFG]]に書いたPCGベースの奴でいいだろう（正直xorshiftとかxxHashでも十分良い気がしているが）。
+
+```
+fn hash |i: i32| {
+  let state = u32(i) * 747796405u + 2891336453u
+  let word = xor((state >> ((state >> 28u) + 4u)), state) * 277803737u
+  i32(xor((word >> 22u), word))
+}
+
+fn hash_xy |x:i32, y:i32| {
+  hash(x + hash(y))
+}
+
+fn map_to_f32 |uval: i32| {
+  let inv = 1.0 / 4294967295.0
+  f32(u32(uval))*inv
+}
+```
+
+ずらすのは`-3`から+3まででいいのかな。
+
+```
+let GRID_SIZE = 8
+let POINT_SIZE = 2
+let SPACE=(GRID_SIZE-POINT_SIZE)/2
+
+# 中略
+
+  # -SPACEからSPACEの間にランダムにずらす。
+  # goxyに対応した乱数をハッシュで得る
+  let rand1 = hash_xy(*goxy)
+  let rand2 = hash(rand1)
+  # -0.5〜0.5の乱数
+  let rf1 = map_to_f32(rand1)-0.5
+  let rf2 = map_to_f32(rand2)-0.5
+
+  let offset = i32([rf1, rf2]*f32(2*SPACE))
+  let gcxy2 = gcxy+offset
+```
+
+![imgs/Stippling/2025_0820_210146.png](imgs/Stippling/2025_0820_210146.png)
+
+ブルーノイズという感じはしないが、ランダム性は得られている。
+あとはさらにもう一つ乱数を足して、これがグレーの値より大きければ点を打つか。
