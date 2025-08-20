@@ -71,12 +71,12 @@ def grayT |x, y| {
 
 
 def result_u8 |x, y| {
-  let gray = grayT(x, y) |> linear2gamma(...)
-  [gray, gray, gray, 1.0] |> to_u8color(...)
+  let gray = grayT(x, y)
+  [gray, gray, gray, 1.0] |> lbgra_to_u8color(...)}
 }
 ```
 
-grayTはリニアライズされた色になるので、RGBに戻す時はgamma補正する。
+grayTはリニアライズされた色になるので、RGBに戻す時はgamma補正する（to_u8colorでは無くlbgra_to_u8colorを使うということ）。
 本当はグレーを戻すのにRGB同じ数値では適切ではないが、これは動作確認なのでいいでしょう。
 
 試してみると以下。
@@ -84,3 +84,29 @@ grayTはリニアライズされた色になるので、RGBに戻す時はgamma�
 ![imgs/Stippling/2025_0820_144940.png](imgs/Stippling/2025_0820_144940.png)
 
 結構綺麗にできているので良さそう。
+
+### 格子の中心に点を打つ
+
+点はとりあえず2x2ピクセルとしよう。上下左右に3pxずつあけるとすると、格子は8x8か？
+
+```
+let GRID_SIZE = 8
+let inputEx = sampler<input_u8>(address=.ClampToEdge)
+
+def result_u8 |x, y| {
+  # 格子の左上
+  let goxy = [x, y]/GRID_SIZE
+
+  # 3x3の位置を左上に2x2のピクセルを打つ。
+  # 3x3の位置をgcxyと呼ぶ。
+  let gcxy = goxy*GRID_SIZE + [2, 2]
+  ifel (all([x, y] >= gcxy) && all([x, y] <= gcxy+[2, 2]),
+      u8[0, 0, 0, 0xff],
+       u8[0, 0, 0, 0])
+}
+```
+
+![imgs/Stippling/2025_0820_200033.png](imgs/Stippling/2025_0820_200033.png)
+
+なんかあってそうか。
+これを少しずらす。
