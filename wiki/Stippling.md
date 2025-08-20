@@ -1,7 +1,7 @@
 [CG](CG)
 
 Wikipediaの日本語では[点刻 - Wikipedia](https://ja.wikipedia.org/wiki/%E7%82%B9%E5%88%BB)となっている。
-[MFG](MFG)でStipplingとか出来ないかなぁ、と思ってリンクを集めるページ。
+[MFG](MFG)でStipplingとか出来ないかなぁ、と思って情報を集めたり、実装のメモをしたりするページ。
 
 [MdImgr](MdImgr)用のテンプレートを貼っておく。`![imgs/Stippling/$1](imgs/Stippling/$1)`
 
@@ -61,3 +61,25 @@ GPUだけでは閉じない。
 ### グレースケール化
 
 まずはグレースケールの場を作るためにグレースケールにしよう。
+[MFG](MFG)に書いたように、以下とする。
+
+```
+@bounds(input_u8.extent(0), input_u8.extent(1))
+def grayT |x, y| {
+  to_xyza(input_u8(x, y)).y
+}
+
+
+def result_u8 |x, y| {
+  let lgray = grayT(x, y) |> linear2gamma(...)
+  [lgray, lgray, lgray, 1.0] |> to_u8color(...)
+}
+```
+
+grayTはリニアライズされた色になるので、RGBに戻す時はgamma補正する。
+
+試してみると以下。
+
+![imgs/Stippling/2025_0820_144940.png](imgs/Stippling/2025_0820_144940.png)
+
+結構綺麗にできているのでいいでしょう。
