@@ -156,3 +156,35 @@ let SPACE=(GRID_SIZE-POINT_SIZE)/2
 
 ブルーノイズという感じはしないが、ランダム性は得られている。
 あとはさらにもう一つ乱数を足して、これがグレーの値より大きければ点を打つか。
+
+グレーの値は格子内の平均でいいかな。
+
+
+```
+  let rf3 = hash(rand2) |> map_to_f32(...)
+
+  let gavg = rsum(0..<GRID_SIZE, 0..<GRID_SIZE) |rx, ry| {
+    let pos = goxy*GRID_SIZE+[rx, ry]
+    grayEx(*pos)
+  } / f32(GRID_SIZE^2)
+
+  let survive = rf3 < gavg  
+```
+
+これでどうだろう？
+
+![imgs/Stippling/2025_0820_211118.png](imgs/Stippling/2025_0820_211118.png)
+
+スキマがあきすぎてわからんな。
+
+とりあえずランダムにずらすとかやめて、隙間をもっと減らしてみよう。
+
+```
+let GRID_SIZE = 4
+let POINT_SIZE = 3
+```
+
+![imgs/Stippling/2025_0820_212046.png](imgs/Stippling/2025_0820_212046.png)
+
+ロジックはあってそうだが、思ってたのと違うな。
+
