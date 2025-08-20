@@ -71,15 +71,16 @@ def grayT |x, y| {
 
 
 def result_u8 |x, y| {
-  let lgray = grayT(x, y) |> linear2gamma(...)
-  [lgray, lgray, lgray, 1.0] |> to_u8color(...)
+  let gray = grayT(x, y) |> linear2gamma(...)
+  [gray, gray, gray, 1.0] |> to_u8color(...)
 }
 ```
 
 grayTはリニアライズされた色になるので、RGBに戻す時はgamma補正する。
+本当はグレーを戻すのにRGB同じ数値では適切ではないが、これは動作確認なのでいいでしょう。
 
 試してみると以下。
 
 ![imgs/Stippling/2025_0820_144940.png](imgs/Stippling/2025_0820_144940.png)
 
-結構綺麗にできているのでいいでしょう。
+結構綺麗にできているので良さそう。
