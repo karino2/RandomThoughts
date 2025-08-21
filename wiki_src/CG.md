@@ -12,6 +12,7 @@
 - [math - Is there a good GLSL hash function? - Stack Overflow](https://stackoverflow.com/questions/23319289/is-there-a-good-glsl-hash-function) シェーダーでのハッシュ関数。randでは無くハッシュが欲しい事もあるんだよな。
   - [Hash Functions for GPU Rendering (JCGT)](https://jcgt.org/published/0009/03/02/) リンクされてたこの論文は決定版ではないか。
 - [[Stippling]]
+- [[ハーフトーン]]
 
 ## GPUでのPath描画
 

@@ -299,50 +299,6 @@ def result_u8 |x, y| {
 
 ただこの考えはここまで書いたコードと全然違うので一旦中断。
 
-### 単にグレーの濃度を白黒の頻度で表すフィルタを作ってみる
+### ハーフトーンはどうだろう？
 
-Stipplingとは違うが、単に2値トーン化として雑にランダムにサンプルするコードを作ってみるとどうだろう？
-ようするに単なるハーフトーンの雑な実装だが。
-
-```
-def result_u8 |x, y| {
-   let gray = grayT(x, y)
-   ifel(rand() < gray, u8[0xff, 0xff, 0xff, 0xff], u8[0, 0, 0, 0xff])
-}
-```
-
-![imgs/Stippling/2025_0821_122411.png](imgs/Stippling/2025_0821_122411.png)
-
-けっこういいけど、これ、なんかガンマ補正してない時の暗くなるのと同じ結果に見えるな。
-アルファをガンマ補正するのはどうなんだ問題と同じでしないのが正しい気もするけれど、
-あえてやってみるとどうなるだろう？
-
-```
-def result_u8 |x, y| {
-   let lgray = grayT(x, y)
-   let gray = linear2gamma(lgray)
-   ifel(rand() < gray, u8[0xff, 0xff, 0xff, 0xff], u8[0, 0, 0, 0xff])
-}
-```
-
-![imgs/Stippling/2025_0821_122722.png](imgs/Stippling/2025_0821_122722.png)
-
-やはりこっちの方が正しい気はするな。
-
-拡大するとランダムさがトーンとして汚いので、やはりbluenoiseの方が良さそうではある。
-
-![imgs/Stippling/2025_0821_122841.png](imgs/Stippling/2025_0821_122841.png)
-
-ちょっとハーフトーンは面白そうだな。論文を調べてみてあとでページを分けよう。
-
-### shadertoyの実装を移植してみる
-
-shadertoyでハーフトーンで眺めていて見つけた以下を移植してみる。
-
-[Halftone](https://www.shadertoy.com/view/XslGRM)
-
-結果は以下。（少し処理系のバグを見つけたのでコードは訂正してから）
-
-![imgs/Stippling/2025_0821_125719.png](imgs/Stippling/2025_0821_125719.png)
-
-おお、結構いい感じだな。
+ハーフトーンを作る方が簡単そうな上に使い道もありそう。[[ハーフトーン]]
