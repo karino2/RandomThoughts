@@ -188,3 +188,21 @@ let POINT_SIZE = 3
 
 ロジックはあってそうだが、思ってたのと違うな。
 
+### いまいちな結果の考察
+
+Weighted Voronoi CentroidによるImage Stipplingのサンプル結果などを眺めていて違いについて思うのは、
+黒いところはくっつくくらいの密度にならないとそれっぽっくならない、という事。
+いつもオーバーラップしないように、というのは正しくない。
+
+もともとポアソンディスクサンプリングの説明でくっつかないようにサンプルするというような理解から入ったのでそういうものだと思っていたが、
+imge stipplingの時にはくっつくくらいそばになるケースを作らないと駄目そうだ。
+
+どちらかというとそういうサンプリングが効いてくるのは、濃度が薄いところである程度等間隔に出るというところに思う。
+
+また、点はある程度大きい方がそれっぽい。
+
+### Example-basedな手法を調べる
+
+以下の論文を読んでみる。
+
+[Example-based stippling using a scale-dependent grayscale process - Proceedings of the 8th International Symposium on Non-Photorealistic Animation and Rendering](https://dl.acm.org/doi/abs/10.1145/1809939.1809946)
