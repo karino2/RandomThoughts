@@ -7,6 +7,22 @@
 
 [JSDocいいね！ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/08/19/jsdoc_is_nice.html)
 
+関数はreturns。
+
+[Use JSDoc: returns](https://jsdoc.app/tags-returns)
+
+```javascript
+/**
+ * Returns the sum of a and b
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+function sum(a, b) {
+    return a + b;
+}
+```
+
 ## Arrayのfilterをasyncで使うのが難しい
 
 [javascript - How to use Array.prototype.filter with async? - Stack Overflow](https://stackoverflow.com/questions/47095019/how-to-use-array-prototype-filter-with-async)
