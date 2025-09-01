@@ -1,32 +1,22 @@
 - [[サーフボード]]
 - [[ソフトボード]]
 
-このWikiではKyussFishと呼ぶことにする。
+このWikiではKyussFishと呼ぶことにする。KumaFishと字面が似ていてちょっといまいちだが…
 
 # SOFTECH Rocket Fish KYUSS KING 4.8 29l
 
-Softechのソフトトップのボード。
+Softechのソフトトップのボード。Kyuss Kingのシグニチャモデルだが、4.8と5.8があって、何故か5.8しか公式ページには乗ってない。
 
 - 公式: [Kyuss King Fish - Softech USA](https://www.softechsoftboards.com/products/kyuss-king-fish?variant=31772713418849) なんか大きさが違うが。
-- [Kyuss King Rocket Fish - YouTube](https://www.youtube.com/watch?v=7Xg9W7NM_i0)
-  - [Kyuss King 'Rocket Fish' - YouTube](https://www.youtube.com/watch?v=v5s2SP6IkcE) これは5'8の方だな。
-  - [Sessions at home with Kyuss King - YouTube](https://www.youtube.com/watch?v=yE2o9vFFDkQ) これは4'8な気がするがイメージビデオ感
-- [SOFTECH RocketFish 4'8 by SURFASOFT - YouTube](https://www.youtube.com/watch?v=sgzxqb2X5Zs)
-- [Softech Rocket Fish Surfboard Review - YouTube](https://www.youtube.com/watch?v=1nHFb2txoCY)
-  - サーフボードレビューでは小さい方選んどけ、との事。へー。
-- [Softech Kyuss King Rocket Fish soft surfboard 4ft 8 FCS II - White](https://www.boardshop.co.uk/softech-kyuss-king-rocket-fish-soft-surfboard-4ft-8-fcs-ii-white?srsltid=AfmBOoqQXowRmsV7MbEzcknfUMo555kIX-meKPItZ_d6BRLWl-3mHgwX) レビューが２つついている。
-- [Hydro Surf Shop - Blog - Softech Rocket Series](https://www.hydrosurf.co.nz/blog/post/2017/12/06/softech-rocket-series) 一段落くらい言及がある。
-- [EISBACH 2018 - YouTube](https://www.youtube.com/watch?v=uL-VGQI3Qrc) 川だけどこれはこのモデルだな。
-- [スポンジボードなのにパフォーマンスツインっていう秘密兵器 - YouTube](https://www.youtube.com/watch?v=_GA8WJZpMVI) 森下ハルさんの弟さんが、結構昔にこの系統を紹介している。これはメイソンホーモデルだな。
-- [Test de la Softech 4.8 à Capbreton - YouTube](https://www.youtube.com/watch?v=sqr3oMS_w6s) Rocket Fishっぽいが、乗ってるのは子供かな、随分大きく見える。
-- [FOAM DOGS - SLOG #5 - YouTube](https://www.youtube.com/watch?v=r3-G0Ciq3U0) これは古いモデルかな。結構良さそう。
+- [Softech Rocket Fish Surfboard Review - YouTube](https://www.youtube.com/watch?v=1nHFb2txoCY) サーフボードレビューのこの動画が一番良くまとまっている気がする。
+- [Kyuss King Rocket Fish - YouTube](https://www.youtube.com/watch?v=7Xg9W7NM_i0) 公式動画。短いが。
 
 ## 21500円でメルカリで落札 2025-08-27 (水)
 
-近場の手渡しでやすかったので購入。
+近場の手渡しで安かったので購入。
 
-[[ソフトボード]]は、MF little marleyが大きすぎるという印象で[[KumaFish]]に買い替えて、それも大きすぎるという印象なので、
-やはり一度思い切って小さすぎるかもしれないゾーンを試してみる必要がある、という結論になる。
+[[ソフトボード]]は、これまでMF [[LittleMarley]]が大きすぎるという印象で[[KumaFish]]に買い替えて、それも大きすぎるという印象なので、
+やはり一度思い切って小さすぎるかもしれないゾーンを試してみる必要がある、という結論になり、このボードを試す事に。
 
 まあこれより小さいのを試す事は無いと思うので、
 これで良ければいいし、小さすぎたとしても次からはここから上を見ていけばいいだろう、という事で。
@@ -64,6 +54,9 @@ Softechのソフトトップのボード。
 普通のボードくらいの感じに思う。でもMFの32.7lとは雲泥の差だ。ちゃんとテイクオフしてすぐのフェースで当てに行ける。
 ジャンクコンディションの時はここしか当てられないので、ここに当てに行けるかどうかは大きな違いなんだよなぁ。
 
+コシくらいのセットに乗った時にすごくいい感じに大きな弧のカットバックで戻ってこれて、気持ちよかった。
+おー、って感じのライディングが出来て、コンディションが悪い割には満足度高い。
+
 ただプラスティックのフィンだと少しルースする感じもあるので硬いフィンに変えた方が良さそう。
 
 ソフトボードに期待するテイクオフの楽さについては確かに[[RNFRedux]]よりはパワーがなくても走り出せる。
@@ -78,10 +71,70 @@ KyussFishだと余裕だった。
 その辺は[[KumaFish]]とは違う。しかも波がちょっとは必要だ。ヒザモモくらいは必要。これも[[KumaFish]]とは違う。
 本当に小さい波の時には[[KumaFish]]の方が遊べるな。
 
+### ショアブレイクもイケる
+
 さて、普通にパワーレスな波に乗るだけでも悪くなかったが、さらに驚いたのがショアブレイク。
+
+今日はショアブレイク自体はヒザモモ…うーんモモは無いかな〜くらいの小さい波。だけどちょっとは波がある、という感じの日で、
+このくらいなら割とよくある程度のコンディションだったと思う。
+こんなショアブレイクでも割と遊べた。
+
 普通のボードだと距離が短すぎて何も出来ないようなところでも、走り出しが早くてすぐに動かせるので一発当てられてちょっと遊べる。
 そうそう、こういうのやりたかったんだよ、という感じ。
-波もたくさん来るのでたくさん乗れる。パドリングもそんなにいらない。楽しい。
+ショアブレイクは波もたくさん来るのでたくさん乗れる。パドリングもそんなにいらない。楽しい。
+リップはあまり良いのは出来なかったが、カットバックは結構戻りが良くていい練習になった。
+
+ただショアブレイクだともうちょっと幅が無い方がいいかもしれない。少し動かしづらさがある。
+けれど十分遊べる。
+ショアブレイクだと浮力はあまり要らないかもしれない。
+でも普通のボードだと全然走り出さないので立つだけで終わっちゃうので、やっぱ浮力はいるのか？
+よく分からないがKyussFishなら十分だった。
+
+しかもボード壊しそうなので、スポンジボードで雑にやるのが良い。
+
+ショアブレイクをやってみるまでは、波がそこそこ無いと出番が無いのでは？もっと浮力あるボードにするべきだったか？と思っていたが、
+ショアブレイクをやってみて、これなら使えるシチュエーションはだいぶ多そうだ、と考えを改めた。
+このくらいのコンディションなら結構よくある。
+波打ち際で遊ぶのは手軽で良い。
+浮力もこのくらいで特に問題を感じない。
+
+波打ち際で遊ぶのに手頃だけれど、ちょっと大きくなったらたまにセットに乗ればコシくらいなら全然楽しめる。
+材木座の湾内でちょっと遊ぶには良い選択肢だと思う。
+
+なかなか良いおもちゃを手に入れた。というかめっちゃコスパいいな、この板。
+
+### その他ほそぼそとした事
+
+座っているとモモの内側が擦れて痛い。ただ[[KumaFish]]のモモの前が痛いのは今のところなさそう。
+痛い場所が違うな。
+ソフトボードはこの辺はいまいちだよなぁ。
+ただ家に帰ってきたあとはなんとも無いので、こっちの方がマシな気はする。
+
+あと何故か知らないが左ヒザの膝小僧を打つ。テイクオフの時に当たるのかな？よく分からないが、二回出て二回とも打撲っぽい感じになったのでそういうものっぽい。
+まぁこちらはそこまで酷くも無い。
+
+座ってると多少たわんで、スポンジボードって感じがする。壊れそう。ちゃちい。
+[[KumaFish]]はこの辺全然たわまないんだよね。丈夫な感じがする。
+いつまで乗れるかは分からないが、まぁ2万で買ったもんなので乗り潰す感じでいいだろう。
+
+乗るまでは「大丈夫か？これ」という感じだったが、ライディングはびっくりするほどまともなので、
+触った印象では判断の難しいボードだな、と思った。
+乗ると少しいい波で乗った[[RNFRedux]]と似てるんだよな。
+
+4.8という数字から受ける印象ほどは小さく感じない。
+幅があるので割と普通のボードに感じられる。
+乗っていても短さをあまり感じない。
+これはすぐに上げられる感じがしないというデメリットでもある。
+座ってモモがすれやすいしパドリングも手が当たりやすいなどのデメリットもある。
+
+ただ幅があるおかげでリッターの割に薄く作れているのでレールがめちゃ入れやすい、というメリットにもなっていて、
+この辺は一長一短だよなぁ、という気もする。
+コシくらいのセットに乗るとすごく気分良いライディングが出来るんだよなぁ。
+そしてショアブレイクでも上げられないほどでも無い。
+このバランスがちょうどいい可能性もある。
+
+結局海に行ったら思ったより波があったり無かったり、というのは、例外というよりはむしろ日常なので、
+材木座の湾内で起こるシチュエーションにちょうど対応出来る範囲というのは使い勝手が良い。
 
 ----
 
@@ -208,3 +261,22 @@ redditで似たような事を考えている人のスレ。
 rocket 52、これは4'4という事か。
 
 乗ってみないと分からないが、平気そうだな。ポチってみよう。
+
+## 関連リンク等
+
+購入にあたりいろいろなページを繰り返し見たのでここにまとめておく。
+
+- 公式: [Kyuss King Fish - Softech USA](https://www.softechsoftboards.com/products/kyuss-king-fish?variant=31772713418849) なんか大きさが違うが。
+- [Kyuss King Rocket Fish - YouTube](https://www.youtube.com/watch?v=7Xg9W7NM_i0)
+  - [Kyuss King 'Rocket Fish' - YouTube](https://www.youtube.com/watch?v=v5s2SP6IkcE) これは5'8の方だな。
+  - [Sessions at home with Kyuss King - YouTube](https://www.youtube.com/watch?v=yE2o9vFFDkQ) これは4'8な気がするがイメージビデオ感
+- [SOFTECH RocketFish 4'8 by SURFASOFT - YouTube](https://www.youtube.com/watch?v=sgzxqb2X5Zs) 自撮りだがかなり上手そうでいい感じっぽい
+- [Softech Rocket Fish Surfboard Review - YouTube](https://www.youtube.com/watch?v=1nHFb2txoCY)
+  - サーフボードレビューでは小さい方選んどけ、との事。へー。
+- [Softech Kyuss King Rocket Fish soft surfboard 4ft 8 FCS II - White](https://www.boardshop.co.uk/softech-kyuss-king-rocket-fish-soft-surfboard-4ft-8-fcs-ii-white?srsltid=AfmBOoqQXowRmsV7MbEzcknfUMo555kIX-meKPItZ_d6BRLWl-3mHgwX) レビューが２つついている。
+- [Hydro Surf Shop - Blog - Softech Rocket Series](https://www.hydrosurf.co.nz/blog/post/2017/12/06/softech-rocket-series) 一段落くらい言及がある。
+- [EISBACH 2018 - YouTube](https://www.youtube.com/watch?v=uL-VGQI3Qrc) 川だけどこれはこのモデルだな。
+- [スポンジボードなのにパフォーマンスツインっていう秘密兵器 - YouTube](https://www.youtube.com/watch?v=_GA8WJZpMVI) 森下ハルさんの弟さんが、結構昔にこの系統を紹介している。これはメイソンホーモデルだな。
+- [Test de la Softech 4.8 à Capbreton - YouTube](https://www.youtube.com/watch?v=sqr3oMS_w6s) Rocket Fishっぽいが、乗ってるのは子供かな、随分大きく見える。
+- [FOAM DOGS - SLOG #5 - YouTube](https://www.youtube.com/watch?v=r3-G0Ciq3U0) これは古いモデルかな。結構良さそう。
+
