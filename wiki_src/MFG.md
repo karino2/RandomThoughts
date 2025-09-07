@@ -4,6 +4,7 @@
 
 - 公式ページ [MFG - Modern Filter-language for GPU / MFG Studio](https://modernfilterlanguageforgpu.org/)
 - ドキュメントトップ [MFG/docs/ja/README.md at main · karino2/MFG](https://github.com/karino2/MFG/blob/main/docs/ja/README.md)
+- [MFG - Modern Filter-language for GPU / 学生GPUプログラミングコンテスト](https://modernfilterlanguageforgpu.org/ja/contest/)
 - [MFGプログラムシリーズ - YouTube](https://www.youtube.com/playlist?list=PL3J_mLcl4YCf1AHEjZO4PjdaIexukpb6e)
 
 ## グレースケール
