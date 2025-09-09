@@ -4,6 +4,7 @@
 - [ミニPC](%E3%83%9F%E3%83%8BPC)
 - [VSCode](VSCode)
 - [VisualStudio](VisualStudio)
+- [PowerShell](PowerShell)
 
 Windows上の環境設定のメモなど。そのうちまとめてブログにしたい。
 
@@ -73,33 +74,6 @@ Directory.Build.propsを作れば
 </Project>
 ```
 
-
-## PowerShellのこまごまとしたこと
-
-```
-PS> notepad $PROFILE
-PS> echo $env:APPDATA
-PS> $env:PATH
-PS> $env:PATH.Split(";")
-```
-
-久しぶりに使おうとして忘れているもの。 Out-GridView。
-
-### ZLocation
-
-PowerShellでもautojumpのようなものが欲しいなぁ、とCopilotに聞いてZLocationというのを教えてもらう。[vors/ZLocation: ZLocation is the new Jump-Location](https://github.com/vors/ZLocation)
-
-少し試してみよう。
-
-```
-$ Install-Module ZLocation -Scope CurrentUser
-```
-
-profileに
-
-```
-Import-Module ZLocation
-```
 
 ## Python Invokeの実行
 
