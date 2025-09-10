@@ -43,13 +43,13 @@ $ ls -1d */
 $  ls -p | grep -v /
 ```
 
-### 雑多なメモ
+## 雑多なメモ
 
 - [exa · a modern replacement for ls](https://the.exa.website/) lsの代替らしい
 - [OilShell](OilShell)
 - [google/zx: A tool for writing better scripts](https://github.com/google/zx)
 
-### シェルの再起動
+## シェルの再起動
 
 良くやり方を忘れるので
 
@@ -57,7 +57,7 @@ $  ls -p | grep -v /
 $ exec $SHELL -l
 ```
 
-### bcの小数計算
+## bcの小数計算
 
 lオプションでできる。
 
