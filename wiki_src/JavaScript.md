@@ -46,3 +46,13 @@ JavaScript関係無いがjson関連。
 コメントが入れられるのがjsonc、trailing commaとかもありなのがjson5か。json5でいいのでは感。
 
 [Paji's Blog - What is JSONC, what is JSON5.](https://paji.blog/jsonc-json5)
+
+## prismjs
+
+[Prism](https://prismjs.com/)
+
+JS製のシンタックスハイライト。小さい。
+
+[[TeFWiki]]のAndroid版はassetsにprismjsを入れている。こういう用途には小さくて良い。
+
+[[MFG]]のシンタックスハイライトも以下に用意した。＞[MFG/tools/prism-mfg at main · karino2/MFG](https://github.com/karino2/MFG/tree/main/tools/prism-mfg)
