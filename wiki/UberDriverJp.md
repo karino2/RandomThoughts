@@ -22,6 +22,7 @@ UBER DRIVERはサブドライバーのさらに小波用、という位置づけ
 - [Luvsurf TV 499 : LOST『UBER DRIVER』プロモーションライディングムービー - YouTube](https://www.youtube.com/watch?v=EpuqTobz2zw)
 - [Luvsurf TV 539：「マサト・ユカワ」LOST『UBER-DRIVER』Pro-Formance series 湯川正人 - YouTube](https://www.youtube.com/watch?v=oc6bBIehTH4)
 - [Luvsurf TV 577：LOST『UBER DRIVER』湯川正人 - YouTube](https://www.youtube.com/watch?v=xRngAu1Y9NI) こっちは割とでかい波もある。5'8だとか。
+- [Luvsurf TV 503：LOST『UBER DRIVER』Pro-Formance series 小林 正 - YouTube](https://www.youtube.com/watch?v=0H7S90TV-kA)
 
 JPはそれをさらに小波用にしている感じか。ノーズをワイドにしてロッカーを減らしている。
 
