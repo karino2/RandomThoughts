@@ -23,10 +23,14 @@ UBER DRIVERはサブドライバーのさらに小波用、という位置づけ
 - [Luvsurf TV 539：「マサト・ユカワ」LOST『UBER-DRIVER』Pro-Formance series 湯川正人 - YouTube](https://www.youtube.com/watch?v=oc6bBIehTH4)
 - [Luvsurf TV 577：LOST『UBER DRIVER』湯川正人 - YouTube](https://www.youtube.com/watch?v=xRngAu1Y9NI) こっちは割とでかい波もある。5'8だとか。
 - [Luvsurf TV 503：LOST『UBER DRIVER』Pro-Formance series 小林 正 - YouTube](https://www.youtube.com/watch?v=0H7S90TV-kA)
+- [Lost Uber Driver vs Webber quad - YouTube](https://www.youtube.com/watch?v=28HlSqcrHL8) 後半少しだけだが。
+- [...Lost Uber Driver - YouTube](https://www.youtube.com/watch?v=2nzAe5doTMY)
+   - [Foamy scenes productions - YouTube](https://www.youtube.com/watch?v=xcLPV21Zz30) これもUber Driverっぽいな。こちらはライディング多い。
 
 JPはそれをさらに小波用にしている感じか。ノーズをワイドにしてロッカーを減らしている。
 
 - [UBER DRIVER-JPタグ - Luvsurf](https://www.luvsurf.co.jp/category/24sblog/uber-driver-jp/)
+  - [新Luvsurf TV : Placebo 5’8″『UBER DRIVER-JP』FLEXLITE-ULTIMATE「チャッキー・リガーノ」](https://www.luvsurf.co.jp/35504/) 動画あり
   - [UBER DRIVER-JP - Luvsurfのモデル説明のweb archive](https://web.archive.org/web/20201023014826/https://www.luvsurf.co.jp/model/901/) 
 
 UBER DRIVER XLと方向性は似ている気がするので、それ系のプレセボ、と思っておけば良さそうか。
