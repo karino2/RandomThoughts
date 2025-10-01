@@ -33,7 +33,8 @@ export default defineUserConfig({
       markdown: {
         highlighter: {
           type: "prismjs"
-        }
+        },
+        tasklist: true,
       }
     }),
     head: [
