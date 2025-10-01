@@ -1,3 +1,16 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/Stippling.html.vue"
 const data = JSON.parse("{\"path\":\"/Stippling.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1755752775000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":10}],\"changelog\":[{\"hash\":\"69fc2156574b06c4329aeca071863afb8f95e682\",\"time\":1755752775000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"06d4e0f613b85363c4b60aba6db89b8af5a99d3f\",\"time\":1755749149000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"3d68dc965481be16059ee253cdd2a16dd45ccabe\",\"time\":1755745540000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"41b6bcb101c2aa24b6d8684734c38356825202cd\",\"time\":1755695142000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"0645a56b7443f5198f1b9e1d469dfdb825c102c8\",\"time\":1755691536000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"8188e688e7740cbe29e560575e322156271f7ae2\",\"time\":1755687954000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"76f83cc0570510cdde4bc4dfdc047afc0a129b88\",\"time\":1755674585000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"1d609d0cb38053dc0b2b0adfd6348c1123289a29\",\"time\":1755671014000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"59fefc987316ed62592a17c40c7e190038c8d510\",\"time\":1755666347000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"c5cc6f1f9a97297b1a1f4b5036043c35b33d6b92\",\"time\":1755403564000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"Stippling.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

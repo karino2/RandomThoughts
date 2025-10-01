@@ -1,3 +1,16 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/大河ドラマ.html.vue"
 const data = JSON.parse("{\"path\":\"/%E5%A4%A7%E6%B2%B3%E3%83%89%E3%83%A9%E3%83%9E.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1704722739000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":9}],\"changelog\":[{\"hash\":\"777399b59b3043b4e8a312a0491b322a961d3d5f\",\"time\":1704722739000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"8a2b668d4651a2636672f6cb8f1e3336b0ebba2a\",\"time\":1704719131000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"ae310f71e54bd9b644a91105eb8522b11a71fdb4\",\"time\":1692356728000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"52640abe344af2539fdfdcd338c64b3a57119b30\",\"time\":1692345926000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"2b1fd1bba31fd79c546bc7386ad85924bfe9b025\",\"time\":1692273960000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"bb57764864263aa7323ad0c7f8bf9c9fe44fafe7\",\"time\":1692270346000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"32b0da8251f2e1718596504e0b5597e216e1d5b6\",\"time\":1691157926000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"15fc62c2b5bff970454951759ac397ac873d8930\",\"time\":1690898733000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"c95c8c0e50d39e958752f75145e0df4d17e6ded6\",\"time\":1690887931000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"大河ドラマ.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -49,8 +49,11 @@ $ npm install -D vuepress-markdown-it-wikilink
 
 buildの方をしたらエラーメッセージを吐いてくれた！
 
+mdの方にリンクの中にタグと解釈される文字列が含まれていたせいだったので直したが、それでもwikilinkは有効にならない。
 
-理由はわからないが、単なるmdを手で呼ぶかなぁ。
+どうもこれはv1向けのプラグインっぽいなぁ。
+
+単なるmarkdown-itのプラグインを手で呼ぶかなぁ。
 
 [TeFWiki](TeFWiki)はjekyllの制約でリンクパターンをカスタマイズしていたので、以下を使ってたので同じのを使ってみる。
 
@@ -58,3 +61,35 @@ buildの方をしたらエラーメッセージを吐いてくれた！
 $ npm i -D @kwvanderlinde/markdown-it-wikilinks
 ```
 
+optionsは[TeFWiki](TeFWiki)のものと同じので、以下で動いた。
+
+```
+import wikilinks from '@kwvanderlinde/markdown-it-wikilinks'
+
+export default defineUserConfig({
+    bundler: viteBundler(),
+    theme: defaultTheme(),
+    extendsMarkdown: md => {
+        md.use(wikilinks(options))
+    },
+})
+```
+
+いやぁ、これは苦戦した。v1とv2で微妙に変わってて、ポイントとしては、markdownプロパティではなくextendsMarkdownを直接書く、という事と、
+extendじゃなくてextendsに変わってる事（三単現のs…）。
+
+これで無事動いた。
+
+## タイトルとnavbar
+
+トップに戻る方法が無いとデバッグが面倒なので以下を追加。
+
+```
+    theme: defaultTheme({
+      navbar: [
+        {text: "Home", link: "/Home.html"}
+    ]
+    }),
+    title: "RandomThoughts",
+    description: "公開用Wiki、雑多なジャンルのメモを全部入れておく所",
+```

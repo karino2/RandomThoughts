@@ -1,3 +1,16 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/お便りコーナー.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%81%8A%E4%BE%BF%E3%82%8A%E3%82%B3%E3%83%BC%E3%83%8A%E3%83%BC.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1654243149000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":6}],\"changelog\":[{\"hash\":\"38beceeb0935d23a6f9ef295be37c4874350c374\",\"time\":1654243149000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"150287f2d6de6c73048f909b84d3ea0e16aacd3d\",\"time\":1652326227000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"fe3a741abf25db7900512317c69f60008f9a33bd\",\"time\":1652325522000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"1e244739ed2aeac630b52fb6c768f9060a4808d7\",\"time\":1652281827000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"46a2034cc9fdf3271f0ca3be1010592d2277612e\",\"time\":1652280917000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"12e4b5ea4f9c54d5f25bc063af52800dd2991f1d\",\"time\":1652280129000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"お便りコーナー.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

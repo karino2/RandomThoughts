@@ -1,3 +1,16 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/StorageAccessFramework.html.vue"
 const data = JSON.parse("{\"path\":\"/StorageAccessFramework.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1724853950000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":14}],\"changelog\":[{\"hash\":\"94be46d121692453b348391bd30d1affdf9bb171\",\"time\":1724853950000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"f807f249a9675ccf56af175e9e1c0d205b28ed89\",\"time\":1693127131000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"89f77fd5d4ea536895dcd9466c695945ff7bae2c\",\"time\":1693123526000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"2c3099d351d96b16d742cfd588b0b448884830cb\",\"time\":1693112729000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"18a0b22119d6081086fe4d3855efdaa1a5403aed\",\"time\":1692976753000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"158ed092dba6dc464f5824a0b42291fc53c78ef3\",\"time\":1692958142000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"d72fba5f3aa61d16f6775f32585c3b57b4b58150\",\"time\":1692954333000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"4a3e4a7d21be44eb8bb5a556887398a3bbc381a4\",\"time\":1692950733000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"1050a539e811ebfbda8b71933e56288b37b76a12\",\"time\":1692947133000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"17d90c3b4e4ece147b4d77d5ffcec3c95eb9e47b\",\"time\":1692875132000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"ce7338f8cc2e111204015ee45b0898cbad4e09aa\",\"time\":1692504326000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"05b097afc9af85aab89b2b32f625c3aa313f0fae\",\"time\":1692151526000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"79dd44fc6e1192b0290155ff393fbdb03de09e60\",\"time\":1638064410000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"efd4345173bedb40e49f6233cca3dadf41f0df80\",\"time\":1638064324000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"StorageAccessFramework.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

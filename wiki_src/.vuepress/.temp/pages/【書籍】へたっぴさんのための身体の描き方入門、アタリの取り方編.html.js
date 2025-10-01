@@ -1,3 +1,16 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/【書籍】へたっぴさんのための身体の描き方入門、アタリの取り方編.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E3%81%B8%E3%81%9F%E3%81%A3%E3%81%B4%E3%81%95%E3%82%93%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E8%BA%AB%E4%BD%93%E3%81%AE%E6%8F%8F%E3%81%8D%E6%96%B9%E5%85%A5%E9%96%80%E3%80%81%E3%82%A2%E3%82%BF%E3%83%AA%E3%81%AE%E5%8F%96%E3%82%8A%E6%96%B9%E7%B7%A8.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1727359546000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":3}],\"changelog\":[{\"hash\":\"587a45cc4ce0676e12529a95856a2b6ae9970b43\",\"time\":1727359546000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"f1a7bad216e54360e1589c939e7318ec51ce9b99\",\"time\":1725199541000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"500548805449fc9342698d611e40307225f343a8\",\"time\":1725192344000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"【書籍】へたっぴさんのための身体の描き方入門、アタリの取り方編.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

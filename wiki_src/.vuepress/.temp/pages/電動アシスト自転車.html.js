@@ -1,3 +1,16 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/電動アシスト自転車.html.vue"
 const data = JSON.parse("{\"path\":\"/%E9%9B%BB%E5%8B%95%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88%E8%87%AA%E8%BB%A2%E8%BB%8A.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1747490749000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":6}],\"changelog\":[{\"hash\":\"556ebe05472ad1a0897e2ec06a7ba8c02ec9151d\",\"time\":1747490749000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"c0205f11c5633c85985185a7f2c0df619030d098\",\"time\":1747408104000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"0f816ff3945a8cf05dad92665caea997e1247bce\",\"time\":1747391892000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"88c22759442f01e15435043efa85fbbbe0a1d06b\",\"time\":1747296337000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"b823d1527b6ed33422706efe52feaa436c3b82dd\",\"time\":1735560339000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"8ed78c04732d3eb510f6971737d8b4fa17f0bbc7\",\"time\":1735556746000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"電動アシスト自転車.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

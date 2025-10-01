@@ -20,18 +20,26 @@ const options = {
 }
     */
 
-// import wikilinks from '@kwvanderlinde/markdown-it-wikilinks'
-import wikilinks from '@gardeners/markdown-it-wikilinks'
+import wikilinks from '@kwvanderlinde/markdown-it-wikilinks'
+// import wikilinks from '@gardeners/markdown-it-wikilinks'
 // import wikilinks from 'markdown-it-wikilinks'
-        console.log("here")
+console.log("here")
 
-  export default defineUserConfig({
+export default defineUserConfig({
     bundler: viteBundler(),
-    theme: defaultTheme(),
-    // plugins: [wikilinks],
-      extendsMarkdown: md => {
-        console.log("here2")
-        md.use(wikilinks(options))
-        // md.use(wikilinks({}))
-      },
-  })
+    theme: defaultTheme({
+      navbar: [
+        {text: "Home", link: "/Home.html"}
+      ],
+      home: "Home.html",
+    }),
+    title: "RandomThoughts",
+    description: "公開用Wiki、雑多なジャンルのメモを全部入れておく所",
+    extendsMarkdown: md => {
+      md.use(wikilinks(options))
+    },
+    extendsPage: (page, app)=> {
+      page.title = page.path
+      console.log(page.title) 
+    }
+})

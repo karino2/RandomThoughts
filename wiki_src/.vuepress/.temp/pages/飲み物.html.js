@@ -1,3 +1,16 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/飲み物.html.vue"
 const data = JSON.parse("{\"path\":\"/%E9%A3%B2%E3%81%BF%E7%89%A9.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1724555146000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":10}],\"changelog\":[{\"hash\":\"4cd310a48356a0a2af22f046930f76c777da87d7\",\"time\":1724555146000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"d50610726e516a114bdbff31b975c7eec8f1f096\",\"time\":1692601530000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"e9973e7d692ba0ddd6c1330af0de44984b63c491\",\"time\":1685077523000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"74b722d49bf9f4ea73fe9068b0093d52981b5c1e\",\"time\":1680687896000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"449ccdd2b194c4cf02316c47bf8859d47a5fb49c\",\"time\":1680612329000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"4decc78111452399e9fafb0d4b6e41003cd20c22\",\"time\":1678686989000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"6e698664a926ddd85f5133011cb65a9c475812fb\",\"time\":1674999879000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"1c90f9c3f4f1c662ffc69f953a9b6934b1d1bf40\",\"time\":1670741458000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"7d4f842da39cceb2004827b479f0d7d9e804c242\",\"time\":1670643324000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"48869c6a3c4b8079fe2a60625814a6431d3c886a\",\"time\":1670489830000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"飲み物.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

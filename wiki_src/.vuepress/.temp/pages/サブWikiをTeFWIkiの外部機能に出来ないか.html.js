@@ -1,3 +1,16 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/サブWikiをTeFWIkiの外部機能に出来ないか.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%82%B5%E3%83%96Wiki%E3%82%92TeFWIki%E3%81%AE%E5%A4%96%E9%83%A8%E6%A9%9F%E8%83%BD%E3%81%AB%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84%E3%81%8B.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1647930477000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":1}],\"changelog\":[{\"hash\":\"8b1eb62c922933450fa4c0fd154c4ae0969fb586\",\"time\":1647930477000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"サブWikiをTeFWIkiの外部機能に出来ないか.md\"}")
 export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
