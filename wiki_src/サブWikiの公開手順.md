@@ -2,6 +2,11 @@
 
 ディレクトリをgit-wikiとして公開する運用にしている。＞[[GitWiki]]へ
 
+## RandomThoughtsだけはVuePressを使っている
+
+[[VuePress]]にその手順をまとめてある。
+CourseraのノートなどのサブWikiはgit-wikiにしてある。
+
 ## SubWIkiサイトのサブディレクトリとして公開
 
 最近はこの方法に移行した。

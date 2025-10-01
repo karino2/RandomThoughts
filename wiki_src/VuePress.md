@@ -8,7 +8,7 @@ nodejs製なのでサーバーサイドでprismjsなどを動かす事が出来�
 
 ## RandomThoughtsのVuePress化
 
-prism.jsでのmfgのシンタックスハイライトの対応をしたので、RandomThoughtsもそれに対応したい。
+prism.jsでのmfgのシンタックスハイライトの対応をしたので、[[RandomThoughts]]もそれに対応したい。
 いい機会なのでJekyllの[[GitWiki]]からVuePressに乗り換える方向で考えてみる。
 
 - [Sidebar - vuepress-theme-hope](https://theme-hope.vuejs.press/guide/layout/sidebar.html#string-format) Recentsはこの辺で頑張る
@@ -143,3 +143,6 @@ export default defineUserConfig({
     })
 })
 ```
+
+git logで時間をとってsortしているが、GitHub Actionsのcheckoutアクションではlog情報が無いっぽいので、
+recents.jsを作るスクリプトはローカルで定時でpushするスクリプトの方で動かしている。

@@ -34,13 +34,13 @@
 
 とりあえずは以下のようにするのが一番良いか。
 
-```
+```mfg
   let gray = to_xyza(input_u8(x, y)).y
 ```
 
 動作確認としては以下。
 
-```
+```mfg
 def result_u8 |x, y| {
   let gray = to_xyza(input_u8(x, y)).y
   [gray, gray, gray, 1.0] |> to_u8color(...)
@@ -58,7 +58,7 @@ def result_u8 |x, y| {
 2次元で使うならPCGかな。`hash(x + hash(y))` とするのがperlinノイズで使っていた手法とか。
 MFGはハットが累乗に使われているのでxorが関数なのに注意。
 
-```
+```mfg
 fn hash |i: i32| {
   let state = u32(i) * 747796405u + 2891336453u
   let word = xor((state >> ((state >> 28u) + 4u)), state) * 277803737u
@@ -72,7 +72,7 @@ fn hash_xy |x:i32, y:i32| {
 
 ちなみにuint32を0.0〜1.0にマップするには以下が良いとか。（関数の外はi32で統一、という方針に従い、i32で渡してu32にキャストして計算している）
 
-```
+```mfg
 fn map_to_f32 |uval: i32| {
   let inv = 1.0 / 4294967295.0
   f32(u32(uval))*inv

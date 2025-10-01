@@ -63,7 +63,7 @@ GPUだけでは閉じない。
 まずはグレースケールの場を作るためにグレースケールにしよう。
 [[MFG]]に書いたように、以下とする。
 
-```
+```mfg
 @bounds(input_u8.extent(0), input_u8.extent(1))
 def grayT |x, y| {
   to_xyza(input_u8(x, y)).y
@@ -89,7 +89,7 @@ grayTはリニアライズされた色になるので、RGBに戻す時はgamma�
 
 点はとりあえず2x2ピクセルとしよう。上下左右に3pxずつあけるとすると、格子は8x8か？
 
-```
+```mfg
 let GRID_SIZE = 8
 let inputEx = sampler<input_u8>(address=.ClampToEdge)
 
@@ -114,7 +114,7 @@ def result_u8 |x, y| {
 
 ハッシュは[[MFG]]に書いたPCGベースの奴でいいだろう（正直xorshiftとかxxHashでも十分良い気がしているが）。
 
-```
+```mfg
 fn hash |i: i32| {
   let state = u32(i) * 747796405u + 2891336453u
   let word = xor((state >> ((state >> 28u) + 4u)), state) * 277803737u
@@ -133,7 +133,7 @@ fn map_to_f32 |uval: i32| {
 
 ずらすのは`-3`から+3まででいいのかな。
 
-```
+```mfg
 let GRID_SIZE = 8
 let POINT_SIZE = 2
 let SPACE=(GRID_SIZE-POINT_SIZE)/2
@@ -160,7 +160,7 @@ let SPACE=(GRID_SIZE-POINT_SIZE)/2
 グレーの値は格子内の平均でいいかな。
 
 
-```
+```mfg
   let rf3 = hash(rand2) |> map_to_f32(...)
 
   let gavg = rsum(0..<GRID_SIZE, 0..<GRID_SIZE) |rx, ry| {
@@ -179,7 +179,7 @@ let SPACE=(GRID_SIZE-POINT_SIZE)/2
 
 とりあえずランダムにずらすとかやめて、隙間をもっと減らしてみよう。
 
-```
+```mfg
 let GRID_SIZE = 4
 let POINT_SIZE = 3
 ```
@@ -226,7 +226,7 @@ imge stipplingの時にはくっつくくらいそばになるケースを作ら
 
 ここまでの最終コードを書いておく。
 
-```
+```mfg
 @title "Stippling失敗"
 
 fn hash |i: i32| {
