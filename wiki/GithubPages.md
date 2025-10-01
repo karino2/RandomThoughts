@@ -4,6 +4,7 @@ github上にweb siteを持てる仕組み。
 ## 外部リンク
 
 - [GitHub Pages - Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.](https://pages.github.com/) 本家
+- [VuePress](VuePress) サイトジェネレータだがGithubPagesと合わせて使う事が多いのでここに置く。
 
 以下はjekyll関連でよく参照するもの。
 
