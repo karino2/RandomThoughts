@@ -1,7 +1,0 @@
-<template><div><h1 id="【書籍】社会契約論" tabindex="-1"><a class="header-anchor" href="#【書籍】社会契約論"><span>【書籍】社会契約論</span></a></h1>
-<p><a href="./社会科学.html">社会科学</a></p>
-<p><a href="https://amzn.to/4ly5OO3" target="_blank" rel="noopener noreferrer">amazon: 社会契約論／ジュネーヴ草稿 (光文社古典新訳文庫)</a></p>
-<p><a href="./【書籍】リヴァイアサン.html">【書籍】リヴァイアサン</a>を読んで、最後の方はなかなか良かったので次はルソーでも読むか、という事でKindle Unlimitedに入っていた社会契約論を読む事に。（2025-08-17 (日)）</p>
-</div></template>
-
-
