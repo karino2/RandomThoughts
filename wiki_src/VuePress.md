@@ -146,3 +146,47 @@ export default defineUserConfig({
 
 git logで時間をとってsortしているが、GitHub Actionsのcheckoutアクションではlog情報が無いっぽいので、
 recents.jsを作るスクリプトはローカルで定時でpushするスクリプトの方で動かしている。
+
+## Google Search ConsoleのSite verification
+
+これまではhtmlファイル置くのにしていたが、htmlのheadにタグを置く形に変更する。
+
+1. Google Search Consoleの設定に行く
+2. Ownership VerificationのHTML tagの所に行き、内容をコピー
+3. config.jsに以下を追加(contentは2でコピーした値)
+
+```
+    head: [
+      ['meta', { name: 'google-site-verification', content: 'XXX_SOME_ID_XXX' }]
+    ],
+```
+
+## themeをhopeに変更
+
+何故かnpm installの例が載ってないけれど、普通にnpm installで平気だった。
+
+```
+$  npm install -D vuepress-theme-hope@latest
+```
+
+デフォルトのhighlighterがshikiになっちゃうのでprismに変更。
+ついでにTaskListもenableにしておく。
+
+```js
+import { hopeTheme } from "vuepress-theme-hope";
+
+export default defineUserConfig({
+    theme: hopeTheme({
+      // navbarとかsidebarとかhomeはdefaultThemeと同じ内容なので割愛
+      markdown: {
+        highlighter: {
+          type: "prismjs"
+        },
+        tasklist: true,
+      }
+    }),
+  //...
+})
+```
+
+かなりいい感じになった。
