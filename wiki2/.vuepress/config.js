@@ -1,6 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
+import { hopeTheme } from "vuepress-theme-hope";
 
 const options = {
     linkPattern: /\[\[([\w\s/\u4E00-\u9FFFぁ-んァ-ヶ　-ー：！？｜]+)(\|([\w\s/\u4E00-\u9FFFぁ-んァ-ヶ　-ー：！？｜]+))?\]\]/,
@@ -23,12 +24,17 @@ import { recents } from './recents.js'
 export default defineUserConfig({
     base: "/RandomThoughts/",
     bundler: viteBundler(),
-    theme: defaultTheme({
+    theme: hopeTheme({
       navbar: [
         {text: "Home", link: "/Home.html"}
       ],
       sidebar: recents,
       home: "Home.html",
+      markdown: {
+        highlighter: {
+          type: "prismjs"
+        }
+      }
     }),
     head: [
       ['meta', { name: 'google-site-verification', content: 'OOVcbzSUlF4UfIyZcP3CCKeILC5dmVL0xRBcou-NvvU' }]
