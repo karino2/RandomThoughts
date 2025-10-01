@@ -91,6 +91,12 @@ extendじゃなくてextendsに変わってる事（三単現のs…）。
     encoded = urllib.parse.quote(unicodedata.normalize('NFC', original), safe='')
 ```
 
+とりあえずforkしたgithubを作り直してそれを使うようにしておこう。
+
+```
+npm install -D --save https://github.com/karino2/markdown-it-wikilinks.git#normalize_nfc_for_filename
+```
+
 ## タイトルとnavbar
 
 トップに戻る方法が無いとデバッグが面倒なので以下を追加。

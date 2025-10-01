@@ -1,5 +1,5 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki2/.vuepress/.temp/pages/イヤホン.html.vue"
-const data = JSON.parse("{\"path\":\"/%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3.html\",\"title\":\"イヤホン\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"イヤホン.md\"}")
+const data = JSON.parse("{\"path\":\"/%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3.html\",\"title\":\"イヤホン\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1759313168000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":3}],\"changelog\":[{\"hash\":\"41b5ce53ccfdc3ba5ef497df6730bc3669e8827d\",\"time\":1759313168000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"244e1b81d7763933e8e915de534d779c5d37de08\",\"time\":1704619360000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"9c70aec4480bf0f6fe592f1d9bcdccc5e08bf25c\",\"time\":1704614735000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"イヤホン.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

@@ -1,5 +1,5 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki2/.vuepress/.temp/pages/11ty.html.vue"
-const data = JSON.parse("{\"path\":\"/11ty.html\",\"title\":\"11ty\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"11ty.md\"}")
+const data = JSON.parse("{\"path\":\"/11ty.html\",\"title\":\"11ty\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1759313168000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":3}],\"changelog\":[{\"hash\":\"41b5ce53ccfdc3ba5ef497df6730bc3669e8827d\",\"time\":1759313168000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"3f60858b064d27cfbb485e8aba60c69ae0635d8b\",\"time\":1695038733000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"ec5b774bba9be6b7bc21c1d1fe3c704eef0609c8\",\"time\":1694966733000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"11ty.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

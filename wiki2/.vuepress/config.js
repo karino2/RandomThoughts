@@ -5,7 +5,11 @@ const options = {
     linkPattern: /\[\[([\w\s/\u4E00-\u9FFFぁ-んァ-ヶ　-ー：！？｜]+)(\|([\w\s/\u4E00-\u9FFFぁ-んァ-ヶ　-ー：！？｜]+))?\]\]/,
 }
 // import wikilinks from '@kwvanderlinde/markdown-it-wikilinks'
+// NFC normalized fork.
 import wikilinks from 'markdown-it-wikilinks'
+// import * as wikilinkLocalFork from './markdown-it-wikilinks-nfcfork.js'
+// const wikilinks = wikilinkLocalFork.default
+// import wikilinks from './markdown-it-wikilinks-nfcfork.cjs'
 
 export default defineUserConfig({
     bundler: viteBundler(),

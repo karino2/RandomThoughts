@@ -1,5 +1,5 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki2/.vuepress/.temp/pages/PowerShell.html.vue"
-const data = JSON.parse("{\"path\":\"/PowerShell.html\",\"title\":\"PowerShell\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"PowerShell.md\"}")
+const data = JSON.parse("{\"path\":\"/PowerShell.html\",\"title\":\"PowerShell\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1759313168000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":4}],\"changelog\":[{\"hash\":\"41b5ce53ccfdc3ba5ef497df6730bc3669e8827d\",\"time\":1759313168000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"617e181fba26d4e46bd02bb21554a81fad2a4d24\",\"time\":1757479085000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"1d8c7f52092dfa83d9e852317427cb840f3e6511\",\"time\":1757473586000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"c5d1afa5d02e6b06a09147fe63d4818697eba06d\",\"time\":1757383554000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"PowerShell.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

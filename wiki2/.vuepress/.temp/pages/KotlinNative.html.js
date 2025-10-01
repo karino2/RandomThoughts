@@ -1,5 +1,5 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki2/.vuepress/.temp/pages/KotlinNative.html.vue"
-const data = JSON.parse("{\"path\":\"/KotlinNative.html\",\"title\":\"KotlinNative\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"KotlinNative.md\"}")
+const data = JSON.parse("{\"path\":\"/KotlinNative.html\",\"title\":\"KotlinNative\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1759313168000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":3}],\"changelog\":[{\"hash\":\"41b5ce53ccfdc3ba5ef497df6730bc3669e8827d\",\"time\":1759313168000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"3fb439ffb2b4c1b71c04895dce4dfbc58d703c5d\",\"time\":1641526952000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"9dc03a5643eeee84b8f4b0119bf0d762feb82e1b\",\"time\":1641445602000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"KotlinNative.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
