@@ -115,3 +115,31 @@ npm install -D --save https://github.com/karino2/markdown-it-wikilinks.git#norma
 
 VuePressでやる方法がわからなかったので、シェルスクリプトで先頭に挟む事にする。
 
+## Recents
+
+シェルスクリプトでgitを叩いて作ったrecentsを、以下の形のjsファイルに整形して出力し、recents.jsという名前にして.vuepressフォルダに置き、
+
+```js
+export const recents = [
+ {text: "Recents:",
+   children: [
+     {link: "Hoge.html", text: "Hoge"},
+     {link: "Ika.html", text: "Ika"},
+   ...
+   ]
+  }
+]
+```
+
+config.jsを以下のようにした。
+
+```
+import { recents } from './recents.js'
+
+export default defineUserConfig({
+    theme: defaultTheme({
+      sidebar: recents,
+       ...
+    })
+})
+```
