@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/座椅子.html.vue"
 const data = JSON.parse("{\"path\":\"/%E5%BA%A7%E6%A4%85%E5%AD%90.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1736737696000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":9}],\"changelog\":[{\"hash\":\"914c7e821d8163676a3fdc45abccc4e31ac49308\",\"time\":1736737696000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"ea23b9d554ccdb07712dff2a5bdf43c47bf6d258\",\"time\":1736570179000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"baa63c77dd9c2a6e2f436418ef52c67c9311560f\",\"time\":1736564742000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"83504464fd027a277f7ec8904fdcff1c686beb51\",\"time\":1736345142000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"26be98a37d0b8b9bf551583422939873c06f19bc\",\"time\":1736327137000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"124b1aed37a29dd2c9551bf1d1109d3655d7a425\",\"time\":1736262496000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"8933fe9d1f46dbf4e86125babadca7fd64322862\",\"time\":1711530335000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"f21893c7857d29235cb1bc3836f3c36af248dbb4\",\"time\":1703388302000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"e0ef192678aa09fb532947adb6c5f056c99f2a97\",\"time\":1703383533000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"座椅子.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

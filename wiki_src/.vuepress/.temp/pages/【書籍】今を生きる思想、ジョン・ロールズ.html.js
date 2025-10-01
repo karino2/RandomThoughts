@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/【書籍】今を生きる思想、ジョン・ロールズ.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E4%BB%8A%E3%82%92%E7%94%9F%E3%81%8D%E3%82%8B%E6%80%9D%E6%83%B3%E3%80%81%E3%82%B8%E3%83%A7%E3%83%B3%E3%83%BB%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%BA.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1754733936000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":3}],\"changelog\":[{\"hash\":\"8a9f146141911d7f807592fb30b5ca0b3200392e\",\"time\":1754733936000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"3eb73ce325bed59112ede83be719dc0a79b5bab9\",\"time\":1753963541000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"12d42fd6e02a652ab90e0e15fdfaa53b1079c9d9\",\"time\":1753927548000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"【書籍】今を生きる思想、ジョン・ロールズ.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/スケーボーでサーフィンの陸トレ.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%9C%E3%83%BC%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%95%E3%82%A3%E3%83%B3%E3%81%AE%E9%99%B8%E3%83%88%E3%83%AC.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1656750357000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":2}],\"changelog\":[{\"hash\":\"259cb66a25754d097157f81719f9ce1cd53dbe0f\",\"time\":1656750357000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"30d42aa1e20014407da6d265adff9b481df5a262\",\"time\":1656044763000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"スケーボーでサーフィンの陸トレ.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

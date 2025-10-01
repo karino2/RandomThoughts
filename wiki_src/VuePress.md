@@ -47,6 +47,9 @@ $ npm install -D vuepress-markdown-it-wikilink
 
 なんかそれっぽくconfig.jsを書いてみたが動かない。
 
+buildの方をしたらエラーメッセージを吐いてくれた！
+
+
 理由はわからないが、単なるmdを手で呼ぶかなぁ。
 
 [[TeFWiki]]はjekyllの制約でリンクパターンをカスタマイズしていたので、以下を使ってたので同じのを使ってみる。

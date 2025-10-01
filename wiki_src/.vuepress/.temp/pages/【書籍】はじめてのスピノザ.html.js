@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/【書籍】はじめてのスピノザ.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%82%B9%E3%83%94%E3%83%8E%E3%82%B6.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1710817902000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":3}],\"changelog\":[{\"hash\":\"6cdd3a294dabce5df48ee23650105fb9fe22024b\",\"time\":1710817902000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"409829f7609330dde8c7db69747e5232c7743ee8\",\"time\":1710817538000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"ae196f64522497f5b6d8e9c6777024438480d009\",\"time\":1710813984000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"【書籍】はじめてのスピノザ.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

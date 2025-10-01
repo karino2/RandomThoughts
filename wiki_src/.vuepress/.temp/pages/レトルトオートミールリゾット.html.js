@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/レトルトオートミールリゾット.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%83%AC%E3%83%88%E3%83%AB%E3%83%88%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9F%E3%83%BC%E3%83%AB%E3%83%AA%E3%82%BE%E3%83%83%E3%83%88.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1735448803000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":4}],\"changelog\":[{\"hash\":\"f31c976a6c20d23a9766a05df63b51e27dee0d04\",\"time\":1735448803000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"8544aa00e8b1eb5442a5c619c1fadc3240c43b3d\",\"time\":1728821134000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"d1d85a42a2d394530a31f0eaee869057673b672a\",\"time\":1728382915000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"0fe1489143069ea6c47b3a4d41ea47ebc31ac17e\",\"time\":1727964343000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"レトルトオートミールリゾット.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

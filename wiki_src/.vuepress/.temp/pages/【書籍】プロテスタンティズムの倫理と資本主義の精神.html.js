@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/【書籍】プロテスタンティズムの倫理と資本主義の精神.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E3%83%97%E3%83%AD%E3%83%86%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%86%E3%82%A3%E3%82%BA%E3%83%A0%E3%81%AE%E5%80%AB%E7%90%86%E3%81%A8%E8%B3%87%E6%9C%AC%E4%B8%BB%E7%BE%A9%E3%81%AE%E7%B2%BE%E7%A5%9E.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1720096509000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":4}],\"changelog\":[{\"hash\":\"2d4a66b33fd7c408b3e43f7ab38ddab233805ac1\",\"time\":1720096509000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"2172cfe4147c1ca9b6de25d8df912627366d615e\",\"time\":1720094737000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"529f3e3f642d7e36c8de452fc37ebdb33b0975eb\",\"time\":1720023189000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"e284b41a4f6717e347d6215469d3817493803a93\",\"time\":1719147939000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"【書籍】プロテスタンティズムの倫理と資本主義の精神.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

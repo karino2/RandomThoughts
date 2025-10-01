@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/伊豆白浜計画.html.vue"
 const data = JSON.parse("{\"path\":\"/%E4%BC%8A%E8%B1%86%E7%99%BD%E6%B5%9C%E8%A8%88%E7%94%BB.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1667311662000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":6}],\"changelog\":[{\"hash\":\"cb5119a51ec5d7e98b733e228f13f5c166a1d5d2\",\"time\":1667311662000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"0eb26cda0e3c6c3fa0349097ea713e5a0b6b7796\",\"time\":1666184562000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"547eaae4f81471b34660b27e4f40c1a4c621ea3e\",\"time\":1666184475000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"d8c567738be2e1da164ef470a88a5145a3a35240\",\"time\":1666102952000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"715299a0797a9d1d8610cede295f7081114851b5\",\"time\":1665584307000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"028851c05a24d4e8bebf3e0a591f89f66e2cd79a\",\"time\":1665205059000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"伊豆白浜計画.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

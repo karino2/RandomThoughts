@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/サーフィン.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%82%B5%E3%83%BC%E3%83%95%E3%82%A3%E3%83%B3.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1758629147000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":8}],\"changelog\":[{\"hash\":\"9316b6debaa6b996a721a3938959741c89d42d36\",\"time\":1758629147000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"6408465d6d7a1b16624f317c45e7a308d1028550\",\"time\":1745057310000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"dcc39047c3ac3e6006a80e0fb62cb2c0065dd966\",\"time\":1744200337000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"938b7d679adf60a1a14c5935c40082c0b9eddf7c\",\"time\":1723202732000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"b2a80cea126d02932f43800a13f45e94464ec7c1\",\"time\":1722852338000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"43e1defbd3fcf958b03dfacab3d5d1b353f5d032\",\"time\":1719234340000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"c0348b23ae028fe4dedc561e21b3dc4226268d1f\",\"time\":1713881141000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"7b8e46b7633256c05229473f144e9f7ee324f360\",\"time\":1707021122000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"サーフィン.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}

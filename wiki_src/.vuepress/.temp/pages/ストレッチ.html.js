@@ -1,16 +1,3 @@
 import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/ストレッチ.html.vue"
 const data = JSON.parse("{\"path\":\"/%E3%82%B9%E3%83%88%E3%83%AC%E3%83%83%E3%83%81.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1691240785000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":15}],\"changelog\":[{\"hash\":\"8954f92107898ad0e9c24b2b4b0c990358c43999\",\"time\":1691240785000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"2f5b529fd1d51d0c42807699e7283d2ff632967f\",\"time\":1691237127000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"e3a8102ba3509983930b5f7dd51b746c5d970cff\",\"time\":1681012627000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"7a1f47c987c234255c22cea1c3badb0280882129\",\"time\":1674056599000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"592a00d6a12a6a5b1e4f58b02dafe8e7a8ba4794\",\"time\":1672289960000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"77cfc9c72613396387d67b8f82ea7e6db2426b2b\",\"time\":1670945891000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"1a8355c494c9a4fd9a9f30ae802beacd18f2cead\",\"time\":1670718867000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"cd5f65c6482056621a9e082239aa78d071c79588\",\"time\":1669982778000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"a46e7d7324021a54fe33d21d6e4d68486389d3ac\",\"time\":1668597300000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"028851c05a24d4e8bebf3e0a591f89f66e2cd79a\",\"time\":1665205059000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"dfb31bd2f0a4a80e845630267080c666564cb0ea\",\"time\":1660362671000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"f7d24ae0f80d2aa60443fcc642fde5643b36ceae\",\"time\":1660359493000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"6162057d6bdc51ccf982096ed33078d644466936\",\"time\":1654407745000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"f87d2e6f8c0f10d66116f06e61671934dc81d5ea\",\"time\":1647003915000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"51017249548fd4e283d16d9ca0128fdffff08bc9\",\"time\":1646308727000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"ストレッチ.md\"}")
 export { comp, data }
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
