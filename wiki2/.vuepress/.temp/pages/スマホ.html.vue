@@ -1,0 +1,105 @@
+<template><div><h1 id="スマホ" tabindex="-1"><a class="header-anchor" href="#スマホ"><span>スマホ</span></a></h1>
+<h2 id="moto-g53y" tabindex="-1"><a class="header-anchor" href="#moto-g53y"><span>moto g53y</span></a></h2>
+<p>2023-12-23 (土) に到着。1万4600円でポイントが900ポイントくらいだった気がする。1.37万円くらいか。</p>
+<ul>
+<li><a href="https://karino2.github.io/2023/12/28/bye_rakuten_mini_hello_moto_g53y.html" target="_blank" rel="noopener noreferrer">楽天ミニからMoto g53yに乗り換え - なーんだ、ただの水たまりじゃないか</a></li>
+<li><a href="https://www.ymobile.jp/lineup/motog53y/" target="_blank" rel="noopener noreferrer">moto g53y 5G｜スマートフォン｜製品｜Y!mobile - 格安SIM・スマホはワイモバイルで</a></li>
+<li><a href="https://www.gsmarena.com/motorola_moto_g53-12028.php" target="_blank" rel="noopener noreferrer">Motorola Moto G53 - Full phone specifications</a></li>
+</ul>
+<p>スペック抜粋</p>
+<ul>
+<li>約6.5インチ</li>
+<li>解像度 	1,600×720（HD＋）</li>
+<li>約W75×H163×D8.2mm</li>
+<li>約183g</li>
+<li>5,000mAh</li>
+<li>充電時間 約115分</li>
+<li>Snapdragon 480 + 5G（オクタコア）2.2GHz + 1.9GHz</li>
+<li>ROM/RAM: 128GB / 4GB</li>
+<li>microSDXC/ 最大1TB</li>
+<li>nanoSIM / eSIM</li>
+<li>5G / LTE / AXGP</li>
+<li>おさいふケータイ</li>
+<li>WiFiは2.4GHzと5GHz</li>
+</ul>
+<p>楽天ミニのバッテリがへたってきたので、2台持ちをやめて一台に集約しようと思って買った。</p>
+<p>スクショは 電源+音量下</p>
+<h2 id="moto-g8-power" tabindex="-1"><a class="header-anchor" href="#moto-g8-power"><span>Moto g8 power</span></a></h2>
+<ul>
+<li><a href="https://karino2.github.io/2021/09/23/new_phone_candidate.html" target="_blank" rel="noopener noreferrer">blog: 新しいスマホの検討</a></li>
+</ul>
+<p>1万7190円で新品未使用を楽天で買う。2021年10月15日に届く。</p>
+<p><a href="https://karino2.github.io/2021/10/15/moto_g8_power_newphone.html" target="_blank" rel="noopener noreferrer">blog: 新スマホ、Moto g8 powerを買った！</a></p>
+<h2 id="galaxynote3-sc-01f" tabindex="-1"><a class="header-anchor" href="#galaxynote3-sc-01f"><span>GalaxyNote3 (SC-01F)</span></a></h2>
+<ul>
+<li><a href="https://ja.wikipedia.org/wiki/SC-01F" target="_blank" rel="noopener noreferrer">SC-01F - Wikipedia</a></li>
+<li><a href="https://www.nttdocomo.co.jp/support/product/sc01f/spec.html" target="_blank" rel="noopener noreferrer">docomo GALAXY Note 3 SC-01F サポート情報 : サービス・機能とスペック</a></li>
+<li>2013年10月17日発売の端末</li>
+<li>1080×1920</li>
+<li>151mm x 79mm x 8.3mm</li>
+<li>MSM8974 2.3GHz（クアッドコア）</li>
+<li>RAM 3GB, ストレージ 32GB</li>
+</ul>
+<p>2016年3月に、2万9800円くらいで買っている。 <a href="https://karino2.livejournal.com/394344.html" target="_blank" rel="noopener noreferrer">GalaxyNote3買ったヽ(´ー｀)ノ - 南よ! 海の見える方! — LiveJournal</a></p>
+<p>2021年の9月ごろにWiFiがつながらなくなる。</p>
+<h2 id="新機種検討" tabindex="-1"><a class="header-anchor" href="#新機種検討"><span>新機種検討</span></a></h2>
+<p>Moto Gを中心に調べたメモを書いておく。</p>
+<h3 id="moto-gシリーズ" tabindex="-1"><a class="header-anchor" href="#moto-gシリーズ"><span>Moto Gシリーズ</span></a></h3>
+<p>Moto G 8 power (第一候補)</p>
+<ul>
+<li><a href="https://www.gsmarena.com/motorola_moto_g8_power-10052.php" target="_blank" rel="noopener noreferrer">Motorola Moto G8 Power - Full phone specifications</a></li>
+<li><a href="https://gajeota.com/device/motorola-moto-g-power" target="_blank" rel="noopener noreferrer">Motorola Moto G8 Powerのスペック、特徴、価格、対応バンド、Antutuスコア、レビュー、口コミ - ガジェオタ</a></li>
+<li><a href="https://gajeota.com/compare/motorola-moto-g-power,motorola-moto-g30" target="_blank" rel="noopener noreferrer">Motorola Moto G8 PowerとMotorola Moto G30の違いを解説。スペック・画面の大きさ・使いやすさを徹底比較 - ガジェオタ</a></li>
+<li><a href="https://gajeota.com/compare/motorola-moto-g-power,motorola-moto-g-pro" target="_blank" rel="noopener noreferrer">Motorola Moto G8 PowerとMotorola Moto G Proの違いを解説。スペック・画面の大きさ・使いやすさを徹底比較 - ガジェオタ</a></li>
+<li><a href="https://kakaku.com/keitai/smartphone/model/M0000000780/" target="_blank" rel="noopener noreferrer">moto g8 power｜価格比較・SIMフリー・最新情報 - 価格.com</a></li>
+<li>2020年2月発売, 2021年10月現在 17980円とか</li>
+<li>156 x 75.8 x 9.6 mm, 1080 x 2300</li>
+<li>197g</li>
+<li>5000mAh</li>
+<li>スナドラ665 オクタ</li>
+<li>RAM 4GB, ストレージは 32GBと64GBのモデルあり</li>
+<li>NFC無し、USB Type-C 2.0、 指紋認証</li>
+<li>microSDXC</li>
+</ul>
+<p>ストレージ64GBに我慢出来るならこれが一番良さそうな気がする。安いし。</p>
+<p>Moto G Pro</p>
+<ul>
+<li><a href="https://www.gsmarena.com/motorola_moto_g_pro-10269.php" target="_blank" rel="noopener noreferrer">Motorola Moto G Pro - Full phone specifications</a></li>
+<li><a href="https://momenttech.tokyo/moto-g-pro-oppo-reno3-a/" target="_blank" rel="noopener noreferrer">moto g PROとOPPO Reno3 Aをコスパ比較</a></li>
+<li>2020年5月発売、新品3万5800円、2021年10月現在のkakaku.comの表示 27,800円～36,980円</li>
+<li>スナドラ665 オクタコア</li>
+<li>1080x2300</li>
+<li>158.6mm x 75.8 x 9.2</li>
+<li>RAM 4GB, ストレージ 128GB</li>
+<li>microSDXC, NFCアリだがFeliCa非対応</li>
+<li>nano SIM (デュアル)</li>
+<li>指紋認証</li>
+</ul>
+<p>Moto G 30</p>
+<ul>
+<li><a href="https://photosku.com/archives/4486/" target="_blank" rel="noopener noreferrer">「moto g10」と「moto g30」の違い - フォトスク</a></li>
+<li>スナドラ 662オクタ (g10 はスナドラ460 オクタ)</li>
+<li>165.2 x 75.7 x 9.1 mm</li>
+<li>720 x 1600</li>
+<li>RAM 4GB, ストレージ 128GB (g10は64gB）</li>
+<li>microSDXC, NFCアリだがFeliCa非対応</li>
+<li>指紋認証</li>
+<li>G10は新品で17000円くらい、g30は20000万円くらい</li>
+</ul>
+<p>Moto G9 Play (G30と大差無しか)</p>
+<ul>
+<li><a href="https://gajeota.com/device/motorola-moto-g9-play" target="_blank" rel="noopener noreferrer">Motorola Moto G9 Playのスペック、特徴、価格、対応バンド、Antutuスコア、レビュー、口コミ - ガジェオタ</a></li>
+<li>2020年8月発売</li>
+<li>720 x 1600, 165.2 x 75.7 x 9.2 mm</li>
+<li>64GB 4GB RAM, 128GB 4GB RAM, microSDXC</li>
+</ul>
+<p>Moto G 100 (安い出物があれば検討）</p>
+<ul>
+<li>2021年5月発売、少し高機能</li>
+<li><a href="https://www.gsmarena.com/motorola_moto_g100-10791.php" target="_blank" rel="noopener noreferrer">Motorola Moto G100 - Full phone specifications</a></li>
+<li>68.4 x 74 x 9.7 mm, 1080 x 2520</li>
+<li>RAM、ストレージ 8GB, 128GBモデルと 12GB 256GBモデルあり</li>
+</ul>
+</div></template>
+
+

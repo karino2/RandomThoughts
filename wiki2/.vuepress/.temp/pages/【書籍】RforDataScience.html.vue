@@ -1,0 +1,175 @@
+<template><div><h1 id="【書籍】rfordatascience" tabindex="-1"><a class="header-anchor" href="#【書籍】rfordatascience"><span>【書籍】RforDataScience</span></a></h1>
+<ul>
+<li><a href="https://r4ds.had.co.nz/" target="_blank" rel="noopener noreferrer">R for Data Science</a></li>
+</ul>
+<p>略称はr4dsらしい。tidyverseの作者自ら書いたデータ分析の入門書。</p>
+<p>tidyverseを使ってデータ分析をしよう、という本。tidyverseはggplot2とかdplyrとかをすべて含めたもの。</p>
+<p>web上で公開されているのが十分BOOXで読みやすかったので、webを読む。コードをCopyボタンでコピーしてR Studioで試す事が出来るので、便利で良いね、web版。</p>
+<p><a href="./R.html">R</a></p>
+<h2 id="os-xへのr-studioのインストール" tabindex="-1"><a class="header-anchor" href="#os-xへのr-studioのインストール"><span>OS XへのR Studioのインストール</span></a></h2>
+<p>ちょっと3章のbar chartのidentityの説明で、挙動が想像と違ったので、実際のデータで試したくなる。
+R Studioをインストールするか。
+brewとかも探せばありそうだが、この本のintroductionのやり方に従ってインストールする事にする。</p>
+<p>手元のMacは12.0.1なのであまり記述がないけれど、指示通りにやってみよう。</p>
+<p>Rに4系列というのが出来ているな。RStudioは対応しているんだろうか？R Studioは3.0以上と書いてあるが…</p>
+<p>まぁいいか、最新のを入れてみよう。
+という事でR-4.1.2.pkgをインストールする。</p>
+<p>そのあとRStudioをインストールしたが普通に動いた。4系列で問題無さそうね。よしよし。</p>
+<h2 id="_3章-data-visualization" tabindex="-1"><a class="header-anchor" href="#_3章-data-visualization"><span>3章 Data Visualization</span></a></h2>
+<p>3章はggplot2の入門。この辺はもう十分詳しいのでサラサラ読む。</p>
+<p>3章のbar chardのidentityの説明が、色が変わっているだけに見えて、おや？と思ってR Studioをインストールして試してみる。
+良く見ると左のカウントが変わっていて、高さの比が同じに見えるのは単なる偶然っぽい。
+これはややこしいな。</p>
+<p>やはりidentityは原点からすべて重なってプロットしているようだ。</p>
+<p>4章はRの入門。さすがに分からない事はほとんど無いが、R Studioに関わる事は知らないものもあるので軽く眺めてはおく。</p>
+<h2 id="_5章-data-transformation" tabindex="-1"><a class="header-anchor" href="#_5章-data-transformation"><span>5章 Data transformation</span></a></h2>
+<p>dplyrの入門。
+ggplot2本で少し見た事があるが、実際に触ってみるのは今回が初。</p>
+<p>なかなか素晴らしいね、dplyr。分かりやすいし強力だし。データ整形をこう解決出来る、と気づいたのは凄いよなぁ。</p>
+<p>filterやmutateで順番を変えないように統一する所が発明だよな。
+普通に実装すればfilterする時にarrangeもされてしまう訳だが、それをしないように実装する事で、これらを組み合わせる事が出来るようになる。</p>
+<p>自分の普段のプログラムにもきっとこういう要素はあるのだろうな。
+個々の要素をちょっと面倒にする事で全体がすごく簡単になる、という。</p>
+<h3 id="filterでのdescの振る舞いを考える" tabindex="-1"><a class="header-anchor" href="#filterでのdescの振る舞いを考える"><span>filterでのdescの振る舞いを考える</span></a></h3>
+<p>5.7を見ていたら、こんな感じの例があった（実際はちょっと違うが論点を明確にする為に変更している、元の記事を見たい人はこちら <a href="https://r4ds.had.co.nz/transform.html#grouped-mutates-and-filters" target="_blank" rel="noopener noreferrer">5 Data transformation - R for Data Science</a>）</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">> flights %>%</span>
+<span class="line">+ select(year, month, day, arr_delay, dep_time) %>%</span>
+<span class="line">+ filter(rank(desc(arr_delay)) &lt; 10)</span>
+<span class="line"># A tibble: 9 × 5</span>
+<span class="line">   year month   day arr_delay dep_time</span>
+<span class="line">  &lt;int> &lt;int> &lt;int>     &lt;dbl>    &lt;int></span>
+<span class="line">1  2013     1     9      1272      641</span>
+<span class="line">2  2013     1    10      1109     1121</span>
+<span class="line">3  2013    12     5       878      756</span>
+<span class="line">4  2013     3    17       915     2321</span>
+<span class="line">5  2013     4    10       931     1100</span>
+<span class="line">6  2013     6    15      1127     1432</span>
+<span class="line">7  2013     7    22       989      845</span>
+<span class="line">8  2013     7    22       895     2257</span>
+<span class="line">9  2013     9    20      1007     1139</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>filterの中にdescがある。これはarr_delayのトップ10を表示している事は分かる。
+だが、結果はarr_delayでソートされていない。</p>
+<p>arrangeじゃないから当然ではある。</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">> flights %>%</span>
+<span class="line">+ select(year, month, day, arr_delay, dep_time) %>%</span>
+<span class="line">+ arrange(desc(arr_delay))</span>
+<span class="line"># A tibble: 336,776 × 5</span>
+<span class="line">    year month   day arr_delay dep_time</span>
+<span class="line">   &lt;int> &lt;int> &lt;int>     &lt;dbl>    &lt;int></span>
+<span class="line"> 1  2013     1     9      1272      641</span>
+<span class="line"> 2  2013     6    15      1127     1432</span>
+<span class="line"> 3  2013     1    10      1109     1121</span>
+<span class="line"> 4  2013     9    20      1007     1139</span>
+<span class="line"> 5  2013     7    22       989      845</span>
+<span class="line"> 6  2013     4    10       931     1100</span>
+<span class="line"> 7  2013     3    17       915     2321</span>
+<span class="line"> 8  2013     7    22       895     2257</span>
+<span class="line"> 9  2013    12     5       878      756</span>
+<span class="line">10  2013     5     3       875     1133</span>
+<span class="line"># … with 336,766 more rows</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>確かにトップ10にはなってそう。filterはどう動いているのだろうか？</p>
+<p>rankを求めるにはdescにソートする必要はあるだろう。
+一番ナイーブに考えれば、元の並び順を覚えておきつつsortして、rankのカラムを追加し、それを元の並び順に戻せば、あとは普通の条件式になる。</p>
+<p>でもどうしてこの場合にそう振る舞うのかがいまいち納得いかないな。もうちょっとfilter全般の挙動を理解出来るような考え方がありそうなものだが。</p>
+<p>ようするにfilterが各rowを見ていく時にTRUEかFALSEがわかればいいんだよな。
+つまり、descはその値とrowindexのペアをソートして、そのrowindexを添え字とした配列で、条件式のTRUE、FLASEを格納すればいいのか。
+実際にそういう実装になっているかは置いといてこんな感じに解釈すれば一般的に考えられる気がするな。</p>
+<p>つまりfilterの中の条件はrowindexのTRUE, FALSEの配列を作るようなものになっている。</p>
+<h3 id="group-byとfilterを考える" tabindex="-1"><a class="header-anchor" href="#group-byとfilterを考える"><span>group_byとfilterを考える</span></a></h3>
+<p>その少しあとでこんな例がある。</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">popular_dests &lt;- flights %>%</span>
+<span class="line">  group_by(dest) %>%</span>
+<span class="line">  filter( n() > 365)</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>これは各グループのサイズが365以上のグループだけ残す訳だが、summariseはされてないのでグループに属する各行が残る。
+これをどう考えるべきだろうか？</p>
+<p>group_byはヘルプを見るとgrouped_dfというのを返すとなっている。</p>
+<p>group_by(year, month, day)とすると365とインデックスの数が出ていて、yearはどうもこのデータでは2013年のしか無さそうなので、
+monthとdayのタプルのユニークなペアの数になっているな。</p>
+<p>つまり、year, month, dayとあったら、(year, month, day)のタプルをsortしてrankしたものをidとするようなカラムを追加すると思えば良いのだろう。</p>
+<p>で、nはこの各グループidごとにカウントしたものとなるが、filter出来る為にはグループごとに潰す前のrowindexからこの値を見る事が出来るべきだよなぁ。</p>
+<p>一番単純に考えれば、<code v-pre>n()</code>はグループごとに個数を計算したあとに、元のgrouped_dfの各rowindexに対してグループidを引いてその値を新しいカラムに追加していく、と考えればいいんだろうか。
+グループのidは配列の添字として使えるのでそんなに遅くも無いか。
+なんか無駄は多い気もするが、そこから先は最適化の範疇だろう。</p>
+<p>追記：5.7の最後にgrouped filterはgrouped mutateのあとにungrouped filterが続くような挙動だ、と書いてあった。自分の理解は割と正しそうだな。<code v-pre>vignette(&quot;window-functions&quot;)</code>を読めと書いてあったので読んでみたが大半は本書と同じ内容だった。</p>
+<h2 id="_6章、7章は眺める程度" tabindex="-1"><a class="header-anchor" href="#_6章、7章は眺める程度"><span>6章、7章は眺める程度</span></a></h2>
+<p>6章はRStudioの使い方なのでサラッと読む。</p>
+<p>7章は実際に仮説を立ててvisualizeしてさらに新しい仮説を立てて〜というのを実際にやってみるという章。
+気になったものは写経してみて少しいじったりするが、
+この話はggplot2本ですでにやっているので適当に読み飛ばす。</p>
+<p>今回初めてRStudioと ggplot2+dplyrを使ってみたが、なかなかいいね。
+昔Rを触って感じたRの良さが増幅されている。この辺を作ってる人たちは良く分かっているよな。
+小規模データを快適にいじれる大切さ、みたいなの。</p>
+<h2 id="_10章、tibbles" tabindex="-1"><a class="header-anchor" href="#_10章、tibbles"><span>10章、Tibbles</span></a></h2>
+<p>tibbleは初めて学ぶのでちゃんと読む。Rのdata.frameの癖のある所を現代風に直したものだな。</p>
+<p>11章のimportはそんな難しい事も無いのでさっと読む。</p>
+<h2 id="_12章、tidy-data" tabindex="-1"><a class="header-anchor" href="#_12章、tidy-data"><span>12章、Tidy data</span></a></h2>
+<p>tidy dataの論文はhttpsじゃない所に置いてある。<a href="http://www.jstatsoft.org/v59/i10/paper" target="_blank" rel="noopener noreferrer">http://www.jstatsoft.org/v59/i10/paper</a>。
+そのうち読みたい。</p>
+<p>影響されて、ファイル操作の文法というのを考えてみる。<a href="./GoFO.html">GoFO</a></p>
+<p>pivot_longer, pivot_wider, separateの３つとmissing value関連が基本か。
+割と単純だがこれだけで十分なんだろうか？最後の例はなかなか複雑で、これがここまで素直に扱えるならだいたいのケースでOKという気もするが。</p>
+<p>tapplyとか使うよりはずっと楽だね。</p>
+<h2 id="_13章-relation" tabindex="-1"><a class="header-anchor" href="#_13章-relation"><span>13章 Relation</span></a></h2>
+<p>joinとかの便利関数についての説明。relational algebraを自前で実装している感じだな。
+それほど驚きの何かがある訳では無い。</p>
+<h2 id="_19-6-2-パイプライン関数の書き方" tabindex="-1"><a class="header-anchor" href="#_19-6-2-パイプライン関数の書き方"><span>19.6.2 パイプライン関数の書き方</span></a></h2>
+<p>19.6.2でパイプライン関数の書き方という説明がある。
+パイプラインは大きくtransformationとside-effectに分けられて、side-effectはinvisiblyに自身を返すべきだ、という事が書いてある。</p>
+<p>invisibleという関数があってこれで返すとrepl上に表示されないらしい。へー。</p>
+<p>パイプについては多くの関数型っぽい言語で良く使われているが、
+パイプでコードを書く時の原則みたいなものはそんなに深堀りされていない気がするな。
+難しく考えなくても書けるのが良い所でもあるけれど、
+良いコーディング原則はこういう新しいもの（というほど新しくも無いが）に対してもちゃんと考えられるべきだよなぁ。</p>
+<h2 id="_29-6、ダッシュボードが面白い" tabindex="-1"><a class="header-anchor" href="#_29-6、ダッシュボードが面白い"><span>29.6、ダッシュボードが面白い</span></a></h2>
+<p><a href="https://r4ds.had.co.nz/r-markdown-formats.html#dashboards" target="_blank" rel="noopener noreferrer">29.6 R Markdown formats, dashboards</a></p>
+<p>おー、簡単に作れていいな。
+こういうUIを簡単に作る系はいろんなところでいろんな人が独自に作ってる感じがあるが、
+それぞれ良さがあるよねぇ。</p>
+<p>flexdashboardというのを使うらしい。 <a href="https://pkgs.rstudio.com/flexdashboard/" target="_blank" rel="noopener noreferrer">R Markdown Format for Flexible Dashboards • flexdashboard</a></p>
+<h2 id="_30-lab-notebook" tabindex="-1"><a class="header-anchor" href="#_30-lab-notebook"><span>30. Lab Notebook</span></a></h2>
+<p>これは結構興味ある話題なので独立したページを作る。 <a href="./LabNotebook.html">LabNotebook</a></p>
+<h2 id="読み終わった感想、tidyverseや現代的なr環境を学ぶのには良かった" tabindex="-1"><a class="header-anchor" href="#読み終わった感想、tidyverseや現代的なr環境を学ぶのには良かった"><span>読み終わった感想、tidyverseや現代的なR環境を学ぶのには良かった</span></a></h2>
+<p>理論には詳しいがプログラムは素人、みたいなRの入門者向けの、データ分析の入門書。
+ggplot2やdplyrで有名なHadley Wickhamみずから書いた入門書。なかなかこういう本は無いよなぁ。</p>
+<p>扱う内容も幅広く、プログラムの基礎みたいなもの、tidyverse関連、モデル関連、R Markdownといった事を扱う。
+しかも開幕がggplot2とかビジュアライズ周りから始まる。</p>
+<p>そんな幅広い事を扱う入門者向けのものではあるが、tidyrを使ったデータ整形やdplyrを使った変形などはかなり複雑な例もあり、
+tidyverse関連の内容としてはかなり詳しい方に属するんじゃないか。
+自分もその辺を知りたくて読んだのだが、そこに関しては非常に満足の行くものだった。
+ggplot2とdplyrは素晴らしいよなぁ。</p>
+<p>一方でさすがにforループだとか関数だとか条件分岐や文字列やdateの扱いなどの話は自分にはあまり必要な内容では無かった。
+そういうところは適宜読み飛ばしていくのが正しい読み方だろう（自分は結構読んでみたが）。</p>
+<p>昔Rを結構使ってた自分だが、いろいろと落とし穴の多いところに関しては代替のパッケージがいろいろと生まれていて、
+言語組み込みのライブラリよりそちらを使う方が良いようで、
+そういうものの紹介が多いのも今風のRの入門として良いように思う。
+そういう訳でベテランのプログラマであっても最近のRを知らなければ得るものは思ったより多い。</p>
+<p>なお、本来のターゲットである、ちゃんと理論を勉強した人向けのデータ分析の実務の入門書としては、なかなか素晴らしいんじゃないか。
+本がどうこう、というより、R Studioおよびtidyverse周辺の環境は、Pythonよりもデータ分析屋向けだよなぁ、と思った。
+知らないといけない事が少ないし、
+少ないプログラムやライブラリの知識でより多くが出来る。
+逆にそういう人が多い組織はRを選ぶメリットは大きいとも言える。
+ただ本が良く出来ているという側面も確かにある。
+やはりWickham御大自らが書く本は説得力が違うよなぁ。
+たぶん現存するデータ分析の本の中で、圧倒的にもっともプログラム能力の高い人間の書いた本だよなぁ、これ。
+こんな本が無料で公開されてしまっているって凄い話だ。</p>
+<p>自分は、当初はtidyverse関連の章だけ読んで終わりにするつもりだったが、結局だいたいは読んでしまった。
+自分のようなプログラマでもそれなりに得るものがある、と思うような内容だったのだろう。</p>
+<h3 id="tidyverseのようなものを作る仕事という可能性" tabindex="-1"><a class="header-anchor" href="#tidyverseのようなものを作る仕事という可能性"><span>tidyverseのようなものを作る仕事という可能性</span></a></h3>
+<p>データ分析の仕事を結構してきたが、分析のある程度分かるプログラマというのはだいたいインフラ周りに行きがちで、
+分析自体をする人は少なかった。分析をする人でもプログラムの能力はMLOpsというか、
+デプロイとかそっち側に注がれる事が多い気がする。</p>
+<p>また、プログラムも出来るとイキりたい若者などはデータ分析にとどまらずサービス開発もやる、というスタンスを取りたがり、
+やがて単なるサービス開発屋になるというのがパターンに思った。</p>
+<p>でも本来、プログラマが分析も出来るというなら、やるべきは分析の力をプログラミングで強化する事で、
+それはまさにtidyverseみたいなライブラリとかを整備していく事だよなぁ。
+ある程度分析屋が居て分析対象が同じような対象である組織なら、きっとそういう仕事はあった方が良いと思う。
+特にtibbleとかdplyrを作るってほとんどのデータ分析屋には不可能なのだから、
+ちゃんとしたプログラマが関わる必要があるよな。
+そういう仕事はもっとやってみてもいいんじゃないか。</p>
+<p>そんな事が出来るのは地球にはWickhamただ一人しか存在しない可能性もあるけれど。</p>
+</div></template>
+
+

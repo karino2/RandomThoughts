@@ -1,0 +1,36 @@
+<template><div><h1 id="イヤーマフ" tabindex="-1"><a class="header-anchor" href="#イヤーマフ"><span>イヤーマフ</span></a></h1>
+<ul>
+<li><a href="./耳栓.html">耳栓</a></li>
+<li><a href="https://karino2.github.io/2021/07/04/try_yearmuff.html" target="_blank" rel="noopener noreferrer">イヤーマフを買ってみる - なーんだ、ただの水たまりじゃないか</a></li>
+</ul>
+<p>まぁまぁ騒音がうるさい部屋なので、イヤーマフを買ってみたらすごく良かった。</p>
+<h2 id="x4a" tabindex="-1"><a class="header-anchor" href="#x4a"><span>X4A</span></a></h2>
+<p>以前、<a href="https://karino2.github.io/2021/07/04/try_yearmuff.html" target="_blank" rel="noopener noreferrer">イヤーマフを買ってみる - なーんだ、ただの水たまりじゃないか</a>で書いたように、X4Aというイヤーマフを買った。</p>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=en_US&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01BHF3YOA&linkId=6300c4af5b8df60aae9866ab67fc0efc"></iframe>
+<p>これは防音性能は非常に満足しているのだが、押さえつけが強すぎて長時間つけていると耳が痛くなる。
+本当に静かなのがいい時はこれでいいのだが、ここまで防音性能が高くなくてもっと楽なヤツも欲しいな。</p>
+<h2 id="x1a" tabindex="-1"><a class="header-anchor" href="#x1a"><span>X1A</span></a></h2>
+<p>もっと長時間つけていても痛くないかわりに遮音性能が低いカジュアルなヤツが欲しくて、X1Aも買ってみた。</p>
+<p><a href="https://hb.afl.rakuten.co.jp/ichiba/283afb2d.7ff70445.283afb2e.0728e0b3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftrshop%2Fx1a-3m-peltor%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  >楽天：3M イヤーマフ X1A<br><img src="https://hbb.afl.rakuten.co.jp/hgb/283afb2d.7ff70445.283afb2e.0728e0b3/?me_id=1368878&item_id=10000000&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Ftrshop%2Fcabinet%2Fimgrc0093738347.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a></p>
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=en_US&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01BHF3XZK&linkId=5da50e06bac11fc9c23574e8d7aecae6"></iframe>
+<p>X4Aは届いた時はすぐに痛くなって数分しかつけられず、しばらく何かを挟んだ状態で一晩おいて広がってからは使えるようになった感じだが、X1Aは最初から普通につけられて大して痛くないな。ヘッドフォンくらい。</p>
+<p>防音性能はこれで十分だな。というかほとんど何も聞こえないので違いが良く分からないレベルだ。</p>
+<h3 id="翌日の感想" tabindex="-1"><a class="header-anchor" href="#翌日の感想"><span>翌日の感想</span></a></h3>
+<p>一晩ギターに挟んで置いて広げてからさらに使ってみた。遮音性能はこれで十分だな。</p>
+<p>今日は掃除の人が来て廊下とかを掃除する日でまぁまぁうるさいはずだが、特に問題無い。
+壁に何ががぶつかる音とかは少し聞こえるし、喋り声も大きい声は少し聞こえるが、
+気になるほどでは無い。
+結局騒音って大きいから嫌なんであって、かすかに聞こえるくらいではなんでも無いんだよな。
+X1Aでも十分そのレベルになるのでこれで何も問題を感じない。</p>
+<p>しばらくつけてみて、長時間装着時にどうかを評価したい。</p>
+<h2 id="最近は耳栓の方が良く使う-2024-02-07-水" tabindex="-1"><a class="header-anchor" href="#最近は耳栓の方が良く使う-2024-02-07-水"><span>最近は耳栓の方が良く使う 2024-02-07 (水)</span></a></h2>
+<p>引っ越して以前ほどうるさいシチュエーションが無くなったので、イヤーマフを使う事も減ってきた。
+旅先などでは使う事もあるけれど、<a href="./耳栓.html">耳栓</a>で十分な事が多く、耳栓の方が長時間つけていても問題ないので耳栓を使う事が多い。</p>
+<p>ただちょっと騒音がストレスに感じた時にイヤーマフをつけると完全に消えるので、気分は良い。
+しばらく全く騒音のない異空間に行くような感じなんだよな。
+制限時間はあるがその間は静寂が訪れる、みたいな。</p>
+<p>そういう訳で30分くらい完全に騒音のない所に移動していたい、みたいな気分の時に使うのに良い。
+他の客が出立の準備をしていて玄関のあたりを行ったり来たりしている時とか宿のスタッフが廊下を掃除している時とか。</p>
+</div></template>
+
+
