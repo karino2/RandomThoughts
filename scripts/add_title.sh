@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 FNAME=`basename $1`
 DST="../wiki2/$FNAME"

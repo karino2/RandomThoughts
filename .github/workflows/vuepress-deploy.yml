@@ -15,8 +15,6 @@ jobs:
     - name: vuepress-setup
       uses: actions/setup-node@v5
     - run: npm ci
-    - name: python setup
-      uses: actions/setup-python@v5
     - name: make script executable
       run: chmod +x ./scripts/*.sh
     - name: Preprocess
