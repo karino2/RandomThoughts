@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 SCRIPTS_DIR=$(dirname $0)
 WIKI2_DIR="${SCRIPTS_DIR}/../wiki2"

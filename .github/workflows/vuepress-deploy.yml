@@ -9,17 +9,18 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./scripts    
     steps:
     - name: Checkout
       uses: actions/checkout@master
     - name: vuepress-setup
       uses: actions/setup-node@v5
     - run: npm ci
+    - name: python setup
+      uses: actions/setup-python@v5
+    - name: make script executable
+      run: chmod +x ./scripts/*.sh
     - name: Preprocess
-      run: ./server_all.sh
+      run: ./scripts/server_all.sh
     - run: npm run wiki2:build
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
