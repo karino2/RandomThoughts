@@ -1,15 +1,15 @@
 <template><div><ul>
-<li>[[JetpackCompose]]</li>
-<li>[[StorageAccessFramework]]</li>
-<li>[[RecyclerView]]</li>
-<li>[[Kotlin]]</li>
+<li><a href="./JetpackCompose.html">JetpackCompose</a></li>
+<li><a href="./StorageAccessFramework.html">StorageAccessFramework</a></li>
+<li><a href="./RecyclerView.html">RecyclerView</a></li>
+<li><a href="./Kotlin.html">Kotlin</a></li>
 <li><a href="https://developer.android.com/studio/command-line/adb" target="_blank" rel="noopener noreferrer">Android Debug Bridge (adb)  :  Android Developers</a> WiFiデバッグの説明。</li>
 <li><a href="https://cs.android.com" target="_blank" rel="noopener noreferrer">Android code search</a></li>
 <li><a href="https://developer.android.com/jetpack/androidx/versions/stable-channel" target="_blank" rel="noopener noreferrer">Stable Releases  -  Jetpack  |  Android Developers</a></li>
-<li>[[あおぞらAndroid教室]]</li>
+<li><a href="./あおぞらAndroid教室.html">あおぞらAndroid教室</a></li>
 <li><a href="https://developer.android.com/guide/topics/connectivity/nfc/nfc?hl=ja" target="_blank" rel="noopener noreferrer">NFC の基本  -  Connectivity  |  Android Developers</a></li>
 <li><a href="https://developer.android.com/courses/android-basics-kotlin/course" target="_blank" rel="noopener noreferrer">Android Basics in Kotlin course  -  Android Developers</a> code labsとか</li>
-<li>[[FDroid]]</li>
+<li><a href="./FDroid.html">FDroid</a></li>
 <li><a href="https://developer.android.com/develop/ui/views/graphics/agsl" target="_blank" rel="noopener noreferrer">Android Graphics Shading Language (AGSL)  -  Views  -  Android Developers</a> AGSLなんて出来てたのか。びっくりするほどドキュメントがなくGLSLとの違いが全然分からんが。</li>
 <li><a href="https://fonts.google.com/icons" target="_blank" rel="noopener noreferrer">Material Symbols &amp; Icons - Google Fonts</a> マテリアルデザインのアイコン</li>
 </ul>

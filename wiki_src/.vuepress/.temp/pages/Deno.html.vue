@@ -1,5 +1,5 @@
-<template><div><p>[[技術的なメモ]]</p>
-<p>[[TypeScript]]のインタープリタ。nodeのモジュールもまぁまぁ使える。[[WebUI]]が公式サポートしているのが自分の中でホット。</p>
+<template><div><p><a href="./技術的なメモ.html">技術的なメモ</a></p>
+<p><a href="./TypeScript.html">TypeScript</a>のインタープリタ。nodeのモジュールもまぁまぁ使える。<a href="./WebUI.html">WebUI</a>が公式サポートしているのが自分の中でホット。</p>
 <ul>
 <li><a href="https://deno.com/" target="_blank" rel="noopener noreferrer">Deno, The next-generation JavaScript runtime</a> 公式ページ
 <ul>
@@ -8,16 +8,16 @@
 <li><a href="https://deno.land/x" target="_blank" rel="noopener noreferrer">Third Party Modules - Deno</a></li>
 </ul>
 </li>
-<li>[[TypeScript]]</li>
-<li>[[WebUI]] Denoで書くのがよさそう
+<li><a href="./TypeScript.html">TypeScript</a></li>
+<li><a href="./WebUI.html">WebUI</a> Denoで書くのがよさそう
 <ul>
-<li>[[MDDeck]]はDenoで書いた</li>
+<li><a href="./MDDeck.html">MDDeck</a>はDenoで書いた</li>
 </ul>
 </li>
 </ul>
-<p>プロジェクト開始は[[WebUI]]の方に書いた。</p>
+<p>プロジェクト開始は<a href="./WebUI.html">WebUI</a>の方に書いた。</p>
 <h2 id="file-dialog" tabindex="-1"><a class="header-anchor" href="#file-dialog"><span>file dialog</span></a></h2>
-<p>[[WebUI]]などで、Deno上でOSのfile dialogを出したい事がある。</p>
+<p><a href="./WebUI.html">WebUI</a>などで、Deno上でOSのfile dialogを出したい事がある。</p>
 <p>現時点での結論は</p>
 <ul>
 <li>Windowsは <a href="https://github.com/manorit2001/node-file-dialog" target="_blank" rel="noopener noreferrer">GitHub - manorit2001/node-file-dialog: Opens file dialog gui in nodejs server side</a> を使う</li>

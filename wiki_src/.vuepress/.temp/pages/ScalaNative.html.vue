@@ -1,4 +1,4 @@
-<template><div><p>[[KotlinNative]]を見ていて、Scala Nativeというものを知る。</p>
+<template><div><p><a href="./KotlinNative.html">KotlinNative</a>を見ていて、Scala Nativeというものを知る。</p>
 <ul>
 <li><a href="https://scala-native.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">Scala Native — Scala Native 0.4.3-SNAPSHOT documentation</a></li>
 <li><a href="https://www.youtube.com/watch?v=u2CnE-sRdBw" target="_blank" rel="noopener noreferrer">An introduction to Scala Native ｜ Let's talk about Scala 3 - YouTube</a>
@@ -11,7 +11,7 @@
 <p><a href="https://www.youtube.com/watch?v=iATmBDxlYAA" target="_blank" rel="noopener noreferrer">Getting started with Metals IDE ｜ Let's talk about Scala 3 - YouTube</a></p>
 <p>なかなか良さそうじゃないか？これ。</p>
 <p>Scala Nativeは基礎的なライブラリに関してはScalaで再実装したJVM版とコンパチブルなものを使うようになっている。
-そうそう、こっちの方が[[KotlinNative]]よりいいよな。</p>
+そうそう、こっちの方が<a href="./KotlinNative.html">KotlinNative</a>よりいいよな。</p>
 </div></template>
 
 

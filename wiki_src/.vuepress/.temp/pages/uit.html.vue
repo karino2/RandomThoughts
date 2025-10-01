@@ -4,8 +4,8 @@
 <h2 id="リンク" tabindex="-1"><a class="header-anchor" href="#リンク"><span>リンク</span></a></h2>
 <ul>
 <li><a href="https://github.com/karino2/uit" target="_blank" rel="noopener noreferrer">karino2/uit: Unique it file sync and manage system.</a></li>
-<li>[[FSharp]]</li>
-<li>[[自作アプリ]]</li>
+<li><a href="./FSharp.html">FSharp</a></li>
+<li><a href="./自作アプリ.html">自作アプリ</a></li>
 </ul>
 <p>以下はブログに書いたメモとか作業ログ</p>
 <ul>

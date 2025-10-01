@@ -1,11 +1,11 @@
-<template><div><p>[[並列プログラム]]</p>
+<template><div><p><a href="./並列プログラム.html">並列プログラム</a></p>
 <p>C++ Concurrency in Action の第二版。
 WikiNameとしてはプラス記号は使いたくないのでCppと書いたが。</p>
 <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B0977ZDXX5&linkId=08364ee74f9548da315bcaa41180e646"></iframe>
 <p>本家のmanningのサイトで安売りしてたのでこっちで買う。</p>
 <p><a href="https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition?ar=true&amp;lpse=A" target="_blank" rel="noopener noreferrer">C++ Concurrency in Action, Second Edition</a></p>
 <h2 id="読み始めた雑感-2023-10-28-土" tabindex="-1"><a class="header-anchor" href="#読み始めた雑感-2023-10-28-土"><span>読み始めた雑感 2023-10-28 (土)</span></a></h2>
-<p>[[【書籍】ConcurrentProgrammingOnWindows]]の並列データ構造系のを読もうとしたら、.NETでC++ではそのままでは実現しづらいコードや、
+<p><a href="./【書籍】ConcurrentProgrammingOnWindows.html">【書籍】ConcurrentProgrammingOnWindows</a>の並列データ構造系のを読もうとしたら、.NETでC++ではそのままでは実現しづらいコードや、
 C++特有の可視性周りの落とし穴がありそうな所などが目について、
 やっぱC++の本じゃないとダメだなぁ、と思いこの本を買ってみた。</p>
 <p>自分の手持ちでは、The Art of Multiprocessor Programmingが一番しっかりした教科書なんだが、</p>
@@ -46,7 +46,7 @@ C++特有の可視性周りの落とし穴がありそうな所などが目に�
 <p>3章のsharing dataで、3.3のstaticの話とかはなかなか良い。
 標準として関数内staticは呼び出しが一つのスレッドに保証されて、他のスレッドからアクセスする時は初期化が終わっている事が保証されているらしい。
 へー、随分と強い制約だね。
-なんか昔どこかで聞いた事ある気もするが、覚えていなかったので勉強になった。＞[[Cpp]]に関連メモを残す</p>
+なんか昔どこかで聞いた事ある気もするが、覚えていなかったので勉強になった。＞<a href="./Cpp.html">Cpp</a>に関連メモを残す</p>
 <p>こういうC++特有の話は良いね。2章は印象悪かったが3章の後半はだいぶ印象が改善した。</p>
 <h3 id="_4章-concurrency-ts関連の印象" tabindex="-1"><a class="header-anchor" href="#_4章-concurrency-ts関連の印象"><span>4章 Concurrency TS関連の印象</span></a></h3>
 <p>4章の前半はfutureの話とか関数型とかメッセージパッシングがどうとかのポエムばかりで全く実用性を感じないが、
@@ -83,7 +83,7 @@ C++のロックフリーのコンテナはJavaや<code v-pre>C#</code>に比べ�
 メモリ管理の話がややこしすぎてやれる気がしないけれど、
 こういうのはC++じゃないと扱えない話題なので、他の本で見た事は無く、
 そうそう、こういう話が見たかったんだよ、という内容だ。</p>
-<p>[[【書籍】ConcurrentProgrammingOnWindows]]を見た時に、「あれ？これあ<code v-pre>C#</code>ならGCがどうにかしてくれるだろうけれど、C++だとどうしたらいいんだ？」と思った事がちょくちょくあったが、
+<p><a href="./【書籍】ConcurrentProgrammingOnWindows.html">【書籍】ConcurrentProgrammingOnWindows</a>を見た時に、「あれ？これあ<code v-pre>C#</code>ならGCがどうにかしてくれるだろうけれど、C++だとどうしたらいいんだ？」と思った事がちょくちょくあったが、
 やはりC++だとめちゃくちゃ面倒くさい、という事が良く分かる。
 一方でlock freeを諦めてshread_ptrでカウンタを管理すればだいぶ楽になるし、
 また解放に関しても何らかの方法でそれが安全だと分かるならこれらの面倒を大きく迂回出来るが、

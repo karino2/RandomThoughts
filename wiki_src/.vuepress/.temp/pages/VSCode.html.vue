@@ -1,4 +1,4 @@
-<template><div><p>みんな大好きVSCode。[[VisualStudio]]</p>
+<template><div><p>みんな大好きVSCode。<a href="./VisualStudio.html">VisualStudio</a></p>
 <h2 id="キーボードショートカット" tabindex="-1"><a class="header-anchor" href="#キーボードショートカット"><span>キーボードショートカット</span></a></h2>
 <ul>
 <li>C-w ウィンドウ切り替え</li>
@@ -13,7 +13,7 @@
 <p>settingで<code v-pre>&quot;editor.emptySelectionClipboard&quot;: false</code>相当の事をする。（GUIからemptySeletionで絞り込みしてチェックを外す）</p>
 <h2 id="extensionの作り方" tabindex="-1"><a class="header-anchor" href="#extensionの作り方"><span>extensionの作り方</span></a></h2>
 <p><a href="https://engineering.linecorp.com/ja/blog/uit-enhancement-vscode/" target="_blank" rel="noopener noreferrer">業務で役に立つVS Code機能拡張を作ってみた話 - LINE ENGINEERING</a></p>
-<p>[[OilShell]]でシンタックスハイライトの作業をしてみたので、関連情報が割とそちらに書いてある。</p>
+<p><a href="./OilShell.html">OilShell</a>でシンタックスハイライトの作業をしてみたので、関連情報が割とそちらに書いてある。</p>
 <h2 id="watch式でのキャスト" tabindex="-1"><a class="header-anchor" href="#watch式でのキャスト"><span>watch式でのキャスト</span></a></h2>
 <p><code v-pre>,c</code>とか足すとその型で見れる。
 他にもb, o, xなどがある。</p>

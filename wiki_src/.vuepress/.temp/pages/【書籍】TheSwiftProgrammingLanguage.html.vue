@@ -1,4 +1,4 @@
-<template><div><p>[[Swift]]</p>
+<template><div><p><a href="./Swift.html">Swift</a></p>
 <ul>
 <li><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/" target="_blank" rel="noopener noreferrer">The Swift Programming Language - Documentation</a> we版。</li>
 <li>ebook <a href="https://www.apple.com/swift/" target="_blank" rel="noopener noreferrer">Swift - Apple</a>でApple Book Storeから無料でダウンロード出来る。</li>

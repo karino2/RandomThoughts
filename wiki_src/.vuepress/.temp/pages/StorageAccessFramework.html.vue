@@ -1,4 +1,4 @@
-<template><div><p>[[Android]]のSAF関連。</p>
+<template><div><p><a href="./Android.html">Android</a>のSAF関連。</p>
 <ul>
 <li><a href="https://techblog.lycorp.co.jp/ja/20240828a" target="_blank" rel="noopener noreferrer">DocumentsProviderによるデータアクセスをよりセキュアにする工夫</a></li>
 <li><a href="https://www.javaer101.com/en/article/92932287.html" target="_blank" rel="noopener noreferrer">DocumentFileをACTION_VIEWにわたす</a></li>
@@ -66,7 +66,7 @@ Photo Pickerでいい気がしてきた。</p>
 <li>where句でidと一致するのをupdateしていたが、urlを直接指定するように変更</li>
 </ul>
 <h3 id="getexternalstoragepublicdirectory周辺" tabindex="-1"><a class="header-anchor" href="#getexternalstoragepublicdirectory周辺"><span>getExternalStoragePublicDirectory周辺</span></a></h3>
-<p>[[あおぞらAndroid教室]]でファイル周りの解説でも書こうかと思っていて、getExternalStoragePublicDirectoryを使おうと思ったらdeprecatedとなっているな。</p>
+<p><a href="./あおぞらAndroid教室.html">あおぞらAndroid教室</a>でファイル周りの解説でも書こうかと思っていて、getExternalStoragePublicDirectoryを使おうと思ったらdeprecatedとなっているな。</p>
 <p><a href="https://developer.android.com/reference/android/os/Environment#getExternalStoragePublicDirectory(java.lang.String)" target="_blank" rel="noopener noreferrer">Environment  -  Android Developers</a></p>
 <p>だが同じ役割をする代替が無さそう。</p>
 <p><a href="https://stackoverflow.com/questions/56468539/getexternalstoragepublicdirectory-deprecated-in-android-q" target="_blank" rel="noopener noreferrer">getExternalStoragePublicDirectory deprecated in Android Q - Stack Overflow</a></p>

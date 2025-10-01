@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[オーディオブック]]</li>
-<li>[[書籍]]</li>
+<li><a href="./オーディオブック.html">オーディオブック</a></li>
+<li><a href="./書籍.html">書籍</a></li>
 </ul>
 <p><a href="https://amzn.to/3ZCACV1" target="_blank" rel="noopener noreferrer">amazon: 戦争の地政学 (講談社現代新書) </a></p>
 <h2 id="_2024-12-15-日" tabindex="-1"><a class="header-anchor" href="#_2024-12-15-日"><span>2024-12-15 (日)</span></a></h2>

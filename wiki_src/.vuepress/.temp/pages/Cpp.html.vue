@@ -3,10 +3,10 @@
 <li><a href="https://karino2.github.io/2020/03/31/cpp_book.html" target="_blank" rel="noopener noreferrer">最近読んだC++の本2冊の感想 - なーんだ、ただの水たまりじゃないか</a></li>
 <li><a href="https://github.com/inkooboo/thread-pool-cpp" target="_blank" rel="noopener noreferrer">inkooboo/thread-pool-cpp: High performance C++11 thread pool</a> cppのスレッドプール実装、小さくて早いとか。そのうち読んでみたい。</li>
 <li><a href="https://github.com/abseil/abseil-cpp/tree/master" target="_blank" rel="noopener noreferrer">GitHub - abseil/abseil-cpp: Abseil Common Libraries (C++)</a> Google製のC++の標準ライブラリ拡張系。</li>
-<li>[[【書籍】CppConcurrencyInAction]]</li>
-<li>[[【書籍】ConcurrentProgrammingOnWindows]]も一部C++</li>
-<li>[[1024cores]]</li>
-<li>[[並列プログラム]]</li>
+<li><a href="./【書籍】CppConcurrencyInAction.html">【書籍】CppConcurrencyInAction</a></li>
+<li><a href="./【書籍】ConcurrentProgrammingOnWindows.html">【書籍】ConcurrentProgrammingOnWindows</a>も一部C++</li>
+<li><a href="./1024cores.html">1024cores</a></li>
+<li><a href="./並列プログラム.html">並列プログラム</a></li>
 <li><a href="https://github.com/rigtorp/awesome-modern-cpp?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">GitHub - rigtorp/awesome-modern-cpp: A collection of resources on modern C++</a> C++の本の一覧</li>
 <li><a href="https://github.com/stlab/libraries/tree/main" target="_blank" rel="noopener noreferrer">stlab/libraries: ASL libraries will be migrated here in the stlab namespace, new libraries will be created here.</a> Adobeのオープンソースライブラリ</li>
 <li><a href="https://cppmap.github.io/learn/studymeetings/" target="_blank" rel="noopener noreferrer">国内の C++ 勉強会 - C++ の歩き方 - cppmap</a> 結構良さそう。自分もここで発表するのがいいかもしれん。</li>
@@ -41,7 +41,7 @@ string型をmapのキーにしてSubStringでfindしたい、みたいな時。<
 </ul>
 <h2 id="static-storage-durationの初期化とマルチスレッド" tabindex="-1"><a class="header-anchor" href="#static-storage-durationの初期化とマルチスレッド"><span>static storage durationの初期化とマルチスレッド</span></a></h2>
 <p>グローバル変数などはstatic storage durationという事になる。
-static storage durationのコンストラクタは一つのスレッドだけで行われて、それを触るどのスレッドからも終わった状態でアクセスされる事が保証されているっぽい事が[[【書籍】CppConcurrencyInAction]]の3.3.1の最後に書いてある。</p>
+static storage durationのコンストラクタは一つのスレッドだけで行われて、それを触るどのスレッドからも終わった状態でアクセスされる事が保証されているっぽい事が<a href="./【書籍】CppConcurrencyInAction.html">【書籍】CppConcurrencyInAction</a>の3.3.1の最後に書いてある。</p>
 <p>C++ 14のworking draftで関連しそうな記述だと3.6.2の所の記述がそれっぽい。</p>
 <blockquote>
 <ol start="4">

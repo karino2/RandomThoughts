@@ -1,4 +1,4 @@
-<template><div><p>[[プログラム雑談]]にお便りコーナーを作ります。</p>
+<template><div><p><a href="./プログラム雑談.html">プログラム雑談</a>にお便りコーナーを作ります。</p>
 <h2 id="告知のブログポスト" tabindex="-1"><a class="header-anchor" href="#告知のブログポスト"><span>告知のブログポスト</span></a></h2>
 <p>基本的な事は以下のブログポストを参考に。</p>
 <p><a href="https://karino2.github.io/2022/05/12/podcast_mail_box.html" target="_blank" rel="noopener noreferrer">プログラム雑談で、お便りのコーナーを始めます - なーんだ、ただの水たまりじゃないか</a></p>

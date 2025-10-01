@@ -4,7 +4,7 @@
 </ul>
 <p>C# で書いた、readlineっぽいライブラリ。CJKをまぁまぁちゃんとハンドルする。
 エスケープシーケンスとかは使わずにConsoleのAPIだけで書いている。</p>
-<p>とりあえず[[FSharpLesson]]のToyRelで使いたい。</p>
+<p>とりあえず<a href="./FSharpLesson.html">FSharpLesson</a>のToyRelで使いたい。</p>
 <h3 id="リリース作業メモ" tabindex="-1"><a class="header-anchor" href="#リリース作業メモ"><span>リリース作業メモ</span></a></h3>
 <ul>
 <li>csprojのバージョンを更新</li>

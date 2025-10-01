@@ -64,7 +64,7 @@ VSCodeにはクリップボード経由でリンクを手動で入れる感じ�
 <p>ファイル名とかは自分で決めたくない。タイムスタンプから適当に生成する感じで。</p>
 <p>アプリは画像のリストを表示しておいて、それをタップするとリンクがクリップボードに入る感じにしたい。</p>
 <h2 id="開発日記" tabindex="-1"><a class="header-anchor" href="#開発日記"><span>開発日記</span></a></h2>
-<p>とりあえず[[Wails]]で作ってみようかな。[[Folang]]も使うか。
+<p>とりあえず<a href="./Wails.html">Wails</a>で作ってみようかな。<a href="./Folang.html">Folang</a>も使うか。
 ファイル関連の処理はFolangで書き、それをapp.goから呼ぶ感じにしてみるか。</p>
 <p>まずは指定フォルダに含まれる画像をリストで表示する所から始めよう。</p>
 <h3 id="設定の保存いろいろ" tabindex="-1"><a class="header-anchor" href="#設定の保存いろいろ"><span>設定の保存いろいろ</span></a></h3>
@@ -122,7 +122,7 @@ VSCodeにはクリップボード経由でリンクを手動で入れる感じ�
 </ol>
 <p>このくらいならそんな大変でも無いか。</p>
 <h3 id="実装完了" tabindex="-1"><a class="header-anchor" href="#実装完了"><span>実装完了</span></a></h3>
-<p>という事で半日くらい掛けて実装してみた。ほとんど[[Wails]]になれるための時間、という感じだが。
+<p>という事で半日くらい掛けて実装してみた。ほとんど<a href="./Wails.html">Wails</a>になれるための時間、という感じだが。
 とりあえずこれで実際にブログを書いてみよう。</p>
 <h2 id="クリップボード対応" tabindex="-1"><a class="header-anchor" href="#クリップボード対応"><span>クリップボード対応</span></a></h2>
 <p>使ってみるとやはりスクリーンショットをコピペしたい、という事で、対応する。
@@ -153,8 +153,8 @@ jekyllで使いたい場合は、テンプレートの所にたとえば以下�
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>MFG_BasicShapeはお好みに合わせて。 <code v-pre>$1</code> の所がファイル名に置換される。ドル記号のエスケープとかやってないのでそういうのが入るパターンは今の所書けない。</p>
 <h2 id="tefwikiもインライン画像表示に対応" tabindex="-1"><a class="header-anchor" href="#tefwikiもインライン画像表示に対応"><span>TeFWikiもインライン画像表示に対応</span></a></h2>
-<p>MdImgrがかなりいい感じなので、ここ（[[RandomThoughts]]）でも使いたいという事で[[TeFWiki]]のインライン画像を対応する（これはMdImgrの話ではないが）。</p>
-<p>[[【書籍】魔法の人物ドローイング]]に描いた絵を貼れるようになった。画像のディレクトリも自分が考えた名前に出来て管理しやすく、いい感じだ。</p>
+<p>MdImgrがかなりいい感じなので、ここ（<a href="./RandomThoughts.html">RandomThoughts</a>）でも使いたいという事で<a href="./TeFWiki.html">TeFWiki</a>のインライン画像を対応する（これはMdImgrの話ではないが）。</p>
+<p><a href="./【書籍】魔法の人物ドローイング.html">【書籍】魔法の人物ドローイング</a>に描いた絵を貼れるようになった。画像のディレクトリも自分が考えた名前に出来て管理しやすく、いい感じだ。</p>
 <h2 id="複数のフォルダを切り替える機能がほしい" tabindex="-1"><a class="header-anchor" href="#複数のフォルダを切り替える機能がほしい"><span>複数のフォルダを切り替える機能がほしい</span></a></h2>
 <p>複数のページを行ったり来たりする時に、いちいちテンプレートとディレクトリの設定をやり直すのがかったるい。
 この２つはセットだし、だいたいは過去のヒストリーに入っている量で十分だ。</p>

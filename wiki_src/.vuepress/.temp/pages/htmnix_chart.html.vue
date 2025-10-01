@@ -11,13 +11,13 @@ webviewにchart.jsをembedしている。</p>
 <h2 id="参考リンク" tabindex="-1"><a class="header-anchor" href="#参考リンク"><span>参考リンク</span></a></h2>
 <ul>
 <li><a href="https://www.chartjs.org/docs/latest/" target="_blank" rel="noopener noreferrer">Chart.js</a></li>
-<li>[[Unix的GUIツール]]の一種</li>
-<li>[[htmnix]]の親戚</li>
+<li><a href="./Unix的GUIツール.html">Unix的GUIツール</a>の一種</li>
+<li><a href="./htmnix.html">htmnix</a>の親戚</li>
 </ul>
 <h2 id="作ったモチベーション" tabindex="-1"><a class="header-anchor" href="#作ったモチベーション"><span>作ったモチベーション</span></a></h2>
 <p>gnuplotをhomebrewでインストールしようとしたらめちゃくちゃ依存がいろいろひっついてきてWiFiの制限にかかってしまった。
 Macで単にプロットするのに大げさだなぁ、と思ったので、Macで簡単にコマンドラインからプロットするツールを作る事にした。</p>
-<p>[[photino]]とchart.jsで5MBくらいで依存もずっと少ない。</p>
+<p><a href="./photino.html">photino</a>とchart.jsで5MBくらいで依存もずっと少ない。</p>
 <p>chart.jsにわたすjsonは複雑なのでそれなりに外側にもプログラムが必要だが、
 その分汎用性は高い。</p>
 <p>簡単なプロットは例えば以下のawkスクリプトを参照。（同フォルダのtest_data.csvを処理する事を念頭に置いている）</p>

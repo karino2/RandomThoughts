@@ -1,7 +1,7 @@
 <template><div><ul>
-<li>[[サーフボード]]</li>
-<li>[[ソフトボード]]</li>
-<li>[[KumaFish]]</li>
+<li><a href="./サーフボード.html">サーフボード</a></li>
+<li><a href="./ソフトボード.html">ソフトボード</a></li>
+<li><a href="./KumaFish.html">KumaFish</a></li>
 </ul>
 <h2 id="_2021-mf-little-marley-5-8-39l" tabindex="-1"><a class="header-anchor" href="#_2021-mf-little-marley-5-8-39l"><span>2021 MF LITTLE MARLEY 5'8 39l</span></a></h2>
 <p>ソフトトップと言われるボード。EPSの外側にソフトボードの素材を巻いてあるらしい。</p>
@@ -30,7 +30,7 @@
 <p>ただ大きいので、よっこらしょっというかんじで動かすかんじになる。
 ワガエはそれなりに掘れるのでもっと小さくても良いのでは？と思っているが、
 ひょっとしたらこのボードがすごく良い可能性もある。
-もうちょっと小さいボードも試してみよう、と思い[[KumaFish]]をポチってみた。
+もうちょっと小さいボードも試してみよう、と思い<a href="./KumaFish.html">KumaFish</a>をポチってみた。
 両方乗ってみて、気に入った方を残そうと思う。</p>
 <p>本当はlittle marleyの5'4くらいがベストな気がしているが、あまり安く手に入らないので、kuma fishで。super evaがどのくらい違うのかもためしてみたいが。</p>
 <h3 id="メルカリで売却-2024-10" tabindex="-1"><a class="header-anchor" href="#メルカリで売却-2024-10"><span>メルカリで売却 2024-10</span></a></h3>

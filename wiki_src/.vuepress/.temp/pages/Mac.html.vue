@@ -1,12 +1,12 @@
 <template><div><ul>
-<li>[[Macショートカット]]</li>
-<li>[[Metal]]</li>
-<li>[[ObjectiveC]]</li>
-<li>[[Swift]]</li>
+<li><a href="./Macショートカット.html">Macショートカット</a></li>
+<li><a href="./Metal.html">Metal</a></li>
+<li><a href="./ObjectiveC.html">ObjectiveC</a></li>
+<li><a href="./Swift.html">Swift</a></li>
 <li><a href="https://support.apple.com/kb/SP809?locale=en_US" target="_blank" rel="noopener noreferrer">MacBook Pro (16-inch, 2019) - Technical Specifications</a> 仕事マシンはMacBook Pro 2019 16-inch</li>
 </ul>
 <h2 id="vscode関連" tabindex="-1"><a class="header-anchor" href="#vscode関連"><span>VSCode関連</span></a></h2>
-<p>[[VSCode]]の環境設定などをちょこちょこブログに書いているのでここにリンクをまとめておく。</p>
+<p><a href="./VSCode.html">VSCode</a>の環境設定などをちょこちょこブログに書いているのでここにリンクをまとめておく。</p>
 <ul>
 <li><a href="https://karino2.github.io/2020/11/17/osx_cppdbg.html" target="_blank" rel="noopener noreferrer">OS XでVS Codeのcppdbgを動かす - なーんだ、ただの水たまりじゃないか</a></li>
 <li><a href="https://karino2.github.io/2020/04/13/mid_cppproj_vscode_mac.html" target="_blank" rel="noopener noreferrer">MacでVSCodeとclangで中規模のC++開発（コンソールアプリ）をする - なーんだ、ただの水たまりじゃないか</a> 2020年。ちょっと古くなっている。</li>
@@ -82,7 +82,7 @@ Command+Wをクローズにするのは出来たが、Command+TabをCtrl+Tabに�
 <h2 id="xcodeのバージョンセレクタ" tabindex="-1"><a class="header-anchor" href="#xcodeのバージョンセレクタ"><span>Xcodeのバージョンセレクタ</span></a></h2>
 <p><a href="https://github.com/XcodesOrg/xcodes" target="_blank" rel="noopener noreferrer">XcodesOrg/xcodes: The best command-line tool to install and switch between multiple versions of Xcode.</a></p>
 <h2 id="iosのビデオ配信周り" tabindex="-1"><a class="header-anchor" href="#iosのビデオ配信周り"><span>iOSのビデオ配信周り</span></a></h2>
-<p>[[動画配信]]</p>
+<p><a href="./動画配信.html">動画配信</a></p>
 <h2 id="core-animation" tabindex="-1"><a class="header-anchor" href="#core-animation"><span>Core Animation</span></a></h2>
 <p>ちょっとCALayerなどを使いたくなったので調べてみる。</p>
 <ul>

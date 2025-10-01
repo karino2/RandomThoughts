@@ -1,22 +1,22 @@
 <template><div><ul>
-<li>[[技術的なメモ]]</li>
-<li>[[MFG]]</li>
-<li>[[Metal]]</li>
-<li>[[ガンマ補正]]</li>
+<li><a href="./技術的なメモ.html">技術的なメモ</a></li>
+<li><a href="./MFG.html">MFG</a></li>
+<li><a href="./Metal.html">Metal</a></li>
+<li><a href="./ガンマ補正.html">ガンマ補正</a></li>
 <li><a href="https://www.reddit.com/r/GraphicsProgramming/comments/olbkpi/are_there_any_books_on_shaders/" target="_blank" rel="noopener noreferrer">Are there any books on shaders? : r/GraphicsProgramming</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5" target="_blank" rel="noopener noreferrer">ShaderToy Tutorials - YouTube</a></li>
 <li><a href="https://www.shadertoy.com/" target="_blank" rel="noopener noreferrer">Shadertoy BETA</a></li>
 <li><a href="https://www.youtube.com/watch?v=DREz3n7gZPw" target="_blank" rel="noopener noreferrer">XDC 2022 - Implementing the graphics pipeline on compute - Erik Faye-Lund - YouTube</a></li>
-<li>[[【書籍】PrinciplesOfDigitalImageProcessing]]</li>
-<li>[[【書籍】OpenGL4ShadingLanguageCook]]</li>
-<li>[[【書籍】HLSLシェーダーの魔導書]]</li>
+<li><a href="./【書籍】PrinciplesOfDigitalImageProcessing.html">【書籍】PrinciplesOfDigitalImageProcessing</a></li>
+<li><a href="./【書籍】OpenGL4ShadingLanguageCook.html">【書籍】OpenGL4ShadingLanguageCook</a></li>
+<li><a href="./【書籍】HLSLシェーダーの魔導書.html">【書籍】HLSLシェーダーの魔導書</a></li>
 <li><a href="https://stackoverflow.com/questions/23319289/is-there-a-good-glsl-hash-function" target="_blank" rel="noopener noreferrer">math - Is there a good GLSL hash function? - Stack Overflow</a> シェーダーでのハッシュ関数。randでは無くハッシュが欲しい事もあるんだよな。
 <ul>
 <li><a href="https://jcgt.org/published/0009/03/02/" target="_blank" rel="noopener noreferrer">Hash Functions for GPU Rendering (JCGT)</a> リンクされてたこの論文は決定版ではないか。</li>
 </ul>
 </li>
-<li>[[Stippling]]</li>
-<li>[[ハーフトーン]]</li>
+<li><a href="./Stippling.html">Stippling</a></li>
+<li><a href="./ハーフトーン.html">ハーフトーン</a></li>
 </ul>
 <h2 id="gpuでのpath描画" tabindex="-1"><a class="header-anchor" href="#gpuでのpath描画"><span>GPUでのPath描画</span></a></h2>
 <p>misreading chatで紹介していたエピソードが興味深かったので、関連論文を読みたい。</p>
@@ -101,13 +101,13 @@ b0を0, 0に変換して、b0b1を(1/2, 0)に、b0b2を(1, 1)に変換すれば�
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>こちらは難しくは無いが、へーって感じするよね。xとyの中心からの距離を出して、step関数を使って掛け算する。</p>
 <h2 id="oklabカラースペース" tabindex="-1"><a class="header-anchor" href="#oklabカラースペース"><span>OKlabカラースペース</span></a></h2>
-<p>[[【書籍】PrinciplesOfDigitalImageProcessing]]にはCIELabやCIELuvが解説されていたが、それの改善版としてOKlabというのがあるらしい。lは小文字か。</p>
+<p><a href="./【書籍】PrinciplesOfDigitalImageProcessing.html">【書籍】PrinciplesOfDigitalImageProcessing</a>にはCIELabやCIELuvが解説されていたが、それの改善版としてOKlabというのがあるらしい。lは小文字か。</p>
 <p><a href="https://bottosson.github.io/posts/oklab/" target="_blank" rel="noopener noreferrer">A perceptual color space for image processing</a></p>
 <p>計算は割と簡単だな。xyzへの変換も3x3の行列になっているので、掛けた結果の行列をあらかじめ求めておけば単なる行列適用と簡単な指数乗の組み合わせで求められる。いいね。</p>
 <h2 id="xyzとsrgbの変換" tabindex="-1"><a class="header-anchor" href="#xyzとsrgbの変換"><span>xyzとsRGBの変換</span></a></h2>
-<p>まず[[ガンマ補正]]してから計算する。</p>
+<p>まず<a href="./ガンマ補正.html">ガンマ補正</a>してから計算する。</p>
 <ul>
-<li>[[【書籍】PrinciplesOfDigitalImageProcessing]] の2冊目（Core Algorithm）の6.3.1 (p107)から詳しい解説がある。</li>
+<li><a href="./【書籍】PrinciplesOfDigitalImageProcessing.html">【書籍】PrinciplesOfDigitalImageProcessing</a> の2冊目（Core Algorithm）の6.3.1 (p107)から詳しい解説がある。</li>
 <li><a href="https://fujiwaratko.sakura.ne.jp/infosci/colorspace/colorspace2_e.html" target="_blank" rel="noopener noreferrer">Color space conversion (2)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/SRGB" target="_blank" rel="noopener noreferrer">sRGB - Wikipedia</a></li>
 <li><a href="http://www.brucelindbloom.com/index.html?Eqn_RGB_to_XYZ.html" target="_blank" rel="noopener noreferrer">Bruce Lindbloom: RGB to XYZ</a></li>

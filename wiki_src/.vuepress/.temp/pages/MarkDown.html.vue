@@ -1,8 +1,8 @@
 <template><div><p>みんな大好きマークダウン。</p>
 <h2 id="コマンドラインのマークダウンビュワー" tabindex="-1"><a class="header-anchor" href="#コマンドラインのマークダウンビュワー"><span>コマンドラインのマークダウンビュワー</span></a></h2>
-<p>暫定結論: mdcatと自作の[[mdvcat]]を使い分けるのが良さそう</p>
+<p>暫定結論: mdcatと自作の<a href="./mdvcat.html">mdvcat</a>を使い分けるのが良さそう</p>
 <h3 id="あらすじ" tabindex="-1"><a class="header-anchor" href="#あらすじ"><span>あらすじ</span></a></h3>
-<p>過去の[[サブWiki]]を検索して見る時、現状はgrepしてlessで見ているが、もうちょっといい感じにしたい。
+<p>過去の<a href="./サブWiki.html">サブWiki</a>を検索して見る時、現状はgrepしてlessで見ているが、もうちょっといい感じにしたい。
 GUIアプリでgrepとマークダウンビューがくっついたようなのがあってもいいが、
 もうちょっとUnix的に解決出来ないかなぁ、と思う。</p>
 <p>ようするにコマンドラインから使えるマークダウンビュワーがあればいいんだよな、とググって以下のページを見つける。</p>
@@ -27,8 +27,8 @@ GUIアプリでgrepとマークダウンビューがくっついたようなの�
 npmでインストールして使ってみる。</p>
 <p>ちょっと表示までに時間が掛かるが見た目は良いしウィンドウ閉じれば終わるし、手軽でいいな。</p>
 <h3 id="mdvcat" tabindex="-1"><a class="header-anchor" href="#mdvcat"><span>mdvcat</span></a></h3>
-<p>vmdがいい感じだが遅いのとメンテされてなさそうなので、[[photino]]で同じようなものを作ってみた。
-まだ途中だけど、軽快に動いてかなり良い気がする。 ＞[[mdvcat]]へ</p>
+<p>vmdがいい感じだが遅いのとメンテされてなさそうなので、<a href="./photino.html">photino</a>で同じようなものを作ってみた。
+まだ途中だけど、軽快に動いてかなり良い気がする。 ＞<a href="./mdvcat.html">mdvcat</a>へ</p>
 <h2 id="grepとpercolと組み合わせよう" tabindex="-1"><a class="header-anchor" href="#grepとpercolと組み合わせよう"><span>grepとpercolと組み合わせよう</span></a></h2>
 <p>grepとかagしてpercolで絞り込んで開く、が基本の使い方なので、この用途に使うpercolとviewerを組み合わせたエイリアスをzshで作っておく。</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">alias pcpath="percol | sed 's/:.*\$//'"</span>

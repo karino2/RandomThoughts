@@ -1,16 +1,16 @@
 <template><div><h2 id="関連wikiname" tabindex="-1"><a class="header-anchor" href="#関連wikiname"><span>関連WikiName</span></a></h2>
 <ul>
-<li>[[guash]]</li>
-<li>[[unimemo]]</li>
-<li>[[uit]]</li>
-<li>[[コマンドラインツールを書くための言語]]</li>
-<li>[[photino]]</li>
-<li>[[FParsec]]</li>
-<li>[[GoFO]]</li>
-<li>[[mdvcat]]</li>
-<li>[[csvplr]]</li>
-<li>[[FSharpLesson]]</li>
-<li>[[Folang]] これはFSharpじゃないけど。</li>
+<li><a href="./guash.html">guash</a></li>
+<li><a href="./unimemo.html">unimemo</a></li>
+<li><a href="./uit.html">uit</a></li>
+<li><a href="./コマンドラインツールを書くための言語.html">コマンドラインツールを書くための言語</a></li>
+<li><a href="./photino.html">photino</a></li>
+<li><a href="./FParsec.html">FParsec</a></li>
+<li><a href="./GoFO.html">GoFO</a></li>
+<li><a href="./mdvcat.html">mdvcat</a></li>
+<li><a href="./csvplr.html">csvplr</a></li>
+<li><a href="./FSharpLesson.html">FSharpLesson</a></li>
+<li><a href="./Folang.html">Folang</a> これはFSharpじゃないけど。</li>
 </ul>
 <h2 id="自分のブログ" tabindex="-1"><a class="header-anchor" href="#自分のブログ"><span>自分のブログ</span></a></h2>
 <ul>

@@ -1,6 +1,6 @@
-<template><div><p>[[雑多なメモ]]</p>
+<template><div><p><a href="./雑多なメモ.html">雑多なメモ</a></p>
 <h2 id="カシオmrw-200hj-1bjh-2024-02-04" tabindex="-1"><a class="header-anchor" href="#カシオmrw-200hj-1bjh-2024-02-04"><span>カシオMRW-200HJ-1BJH 2024-02-04</span></a></h2>
-<p>[[サーフィン]]してて、時間を知りたくなる事が多いため、防水の腕時計を買う。</p>
+<p><a href="./サーフィン.html">サーフィン</a>してて、時間を知りたくなる事が多いため、防水の腕時計を買う。</p>
 <ul>
 <li><a href="https://www.casio.com/jp/watches/casio/product.MRW-200HJ-1B/" target="_blank" rel="noopener noreferrer">MRW-200HJ-1BJH - CASIO</a></li>
 <li><a href="https://www.yodobashi.com/product/100000001006250463/" target="_blank" rel="noopener noreferrer">ヨドバシ.com - カシオ CASIO MRW-200HJ-1BJH [スタンダードウォッチ] 通販【全品無料配達】</a></li>

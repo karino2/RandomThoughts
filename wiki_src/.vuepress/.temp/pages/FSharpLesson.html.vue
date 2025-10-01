@@ -2,7 +2,7 @@
 <p>fsharp-lessonが略称かな。</p>
 <ul>
 <li><a href="https://karino2.github.io/fsharp-lesson/" target="_blank" rel="noopener noreferrer">karino2の暇つぶしプログラム教室 F#編</a></li>
-<li>[[FSharp]]</li>
+<li><a href="./FSharp.html">FSharp</a></li>
 </ul>
 <h2 id="個人的メモ" tabindex="-1"><a class="header-anchor" href="#個人的メモ"><span>個人的メモ</span></a></h2>
 <ul>
@@ -14,7 +14,7 @@
 <p><a href="https://stackoverflow.com/questions/2024170/is-there-a-net-library-similar-to-gnu-readline" target="_blank" rel="noopener noreferrer">c# - Is there a .Net library similar to GNU readline? - Stack Overflow</a></p>
 <p>を見ていろいろ試したが、今の所ちゃんと扱えるのを見つけられていない。</p>
 <p>ブログにした。 <a href="https://karino2.github.io/2022/08/26/dotnet_readline_like_lib_for_japanese.html" target="_blank" rel="noopener noreferrer">dotnetで使えるReadLineっぽいライブラリで日本語が使えるのは無いのだろうか？ - なーんだ、ただの水たまりじゃないか</a></p>
-<p>自分で作る事にした。＞[[ReCJKLine]]</p>
+<p>自分で作る事にした。＞<a href="./ReCJKLine.html">ReCJKLine</a></p>
 <h3 id="ベンチマーク" tabindex="-1"><a class="header-anchor" href="#ベンチマーク"><span>ベンチマーク</span></a></h3>
 <p>第三回ではメモリと時間を測りたい。</p>
 <ul>

@@ -1,4 +1,4 @@
-<template><div><p>[[Shell]]で良く使われる</p>
+<template><div><p><a href="./Shell.html">Shell</a>で良く使われる</p>
 <h2 id="同じファイルに出力する" tabindex="-1"><a class="header-anchor" href="#同じファイルに出力する"><span>同じファイルに出力する</span></a></h2>
 <p>よく同じファイルに出力するオプションを忘れるが、<code v-pre>-i</code>。
 mac版は<code v-pre>-i</code>のあとに拡張子があるので、空文字列をつける。</p>

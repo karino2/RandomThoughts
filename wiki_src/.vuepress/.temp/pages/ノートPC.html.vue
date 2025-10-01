@@ -1,7 +1,7 @@
 <template><div><h2 id="hp-pavilion-15-eh-2023年モデル-15-6インチ-2023-11-11-土" tabindex="-1"><a class="header-anchor" href="#hp-pavilion-15-eh-2023年モデル-15-6インチ-2023-11-11-土"><span>HP Pavilion 15-eh 2023年モデル 15.6インチ 2023-11-11 (土)</span></a></h2>
 <p>WindowsのノートPCを買った。という事でそれ関連のメモ。</p>
 <h3 id="あらすじ" tabindex="-1"><a class="header-anchor" href="#あらすじ"><span>あらすじ</span></a></h3>
-<p>ビルドや開発用途には[[ミニPC]]で割と満足しているが、
+<p>ビルドや開発用途には<a href="./ミニPC.html">ミニPC</a>で割と満足しているが、
 サーフトリップなどで長く家を空ける時にWindowsのビルドブレイクが直せなくなるのは不満もある。
 そして経費をもうちょっと使いたいという気分もあり、またWindowsノートが欲しい気分になっている。</p>
 <p>家ではリモートデスクトップで使い、旅先ではたまにビルドが壊れてないか確認する程度、という訳で、今回はそんなにスペックはいらない。
@@ -75,7 +75,7 @@
 <p><a href="https://www.cpu-monkey.com/ja/compare_cpu-amd_ryzen_7_5800h-vs-amd_ryzen_9_5900hx" target="_blank" rel="noopener noreferrer">AMD Ryzen 7 5800H vs. AMD Ryzen 9 5900HX - ベンチマーク、テスト、および仕様</a></p>
 <h3 id="ミニpc" tabindex="-1"><a class="header-anchor" href="#ミニpc"><span>ミニPC</span></a></h3>
 <p>ノートPCじゃないのでWikiNameを分ける。</p>
-<p>[[ミニPC]]</p>
+<p><a href="./ミニPC.html">ミニPC</a></p>
 </div></template>
 
 

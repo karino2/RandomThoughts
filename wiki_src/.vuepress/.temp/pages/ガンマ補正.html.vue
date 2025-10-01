@@ -1,10 +1,10 @@
 <template><div><ul>
-<li>[[CG]]</li>
-<li>[[【書籍】PrinciplesOfDigitalImageProcessing]] 1巻、Fundamental Techniquesの4.7（p77）にガンマ補正の話</li>
+<li><a href="./CG.html">CG</a></li>
+<li><a href="./【書籍】PrinciplesOfDigitalImageProcessing.html">【書籍】PrinciplesOfDigitalImageProcessing</a> 1巻、Fundamental Techniquesの4.7（p77）にガンマ補正の話</li>
 <li><a href="https://www.youtube.com/watch?v=LKnqECcg6Gw" target="_blank" rel="noopener noreferrer">Computer Color is Broken - YouTube</a> ガンマ補正について分かりやすいyoutube動画</li>
 <li><a href="https://www.jstage.jst.go.jp/article/iieej/35/6/35_6_935/_pdf" target="_blank" rel="noopener noreferrer">sRGB色空間と国際標準化.pdf</a> jstageのpdf。キャノンと三菱電機の人が書いてて良く書けている。</li>
 </ul>
-<p>[[【書籍】PrinciplesOfDigitalImageProcessing]]の話をベースにいろいろ書き足していく。（以下では「教科書」といったらこの本）</p>
+<p><a href="./【書籍】PrinciplesOfDigitalImageProcessing.html">【書籍】PrinciplesOfDigitalImageProcessing</a>の話をベースにいろいろ書き足していく。（以下では「教科書」といったらこの本）</p>
 <p>ガンマ補正はどちらが補正されていてどれが元の値かよくわからなくなるので以下にメモを書いておく。</p>
 <p>カメラなどのセンサーの受け取る強度と人の目の知覚は異なる。
 そこで画像データなどはセンサーの強度ではなく、それをガンマ補正した値を保存している。
@@ -40,7 +40,7 @@
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">if(rgb &lt;= 0.0031308) {  rgb*12.9231 } else { 1.055*rgb^(1.0/2.4) - 0.055 }</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="srgbのlinearとnon-linearの具体的な値のテーブル" tabindex="-1"><a class="header-anchor" href="#srgbのlinearとnon-linearの具体的な値のテーブル"><span>sRGBのlinearとnon linearの具体的な値のテーブル</span></a></h2>
-<p>[[【書籍】PrinciplesOfDigitalImageProcessing]]の2冊目、Core Algorithmの6.3.4 p 110のTable 6.5に、linearとnon linearの50%グレーなどの時の値がある。検算に良さそうなのでメモしておく。</p>
+<p><a href="./【書籍】PrinciplesOfDigitalImageProcessing.html">【書籍】PrinciplesOfDigitalImageProcessing</a>の2冊目、Core Algorithmの6.3.4 p 110のTable 6.5に、linearとnon linearの50%グレーなどの時の値がある。検算に良さそうなのでメモしておく。</p>
 </div></template>
 
 

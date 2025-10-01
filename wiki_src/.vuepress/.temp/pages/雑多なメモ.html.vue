@@ -1,120 +1,120 @@
-<template><div><p>どこに置くか悩むものをとりあえず置いとく場所。[[技術的なメモ]]。[[グッズ関連]]</p>
+<template><div><p>どこに置くか悩むものをとりあえず置いとく場所。<a href="./技術的なメモ.html">技術的なメモ</a>。<a href="./グッズ関連.html">グッズ関連</a></p>
 <h2 id="アクティブな内容" tabindex="-1"><a class="header-anchor" href="#アクティブな内容"><span>アクティブな内容</span></a></h2>
 <ul>
-<li>[[ストレッチ]]</li>
-<li>[[サーフボード]]</li>
-<li>[[SurfLog]]</li>
+<li><a href="./ストレッチ.html">ストレッチ</a></li>
+<li><a href="./サーフボード.html">サーフボード</a></li>
+<li><a href="./SurfLog.html">SurfLog</a></li>
 </ul>
 <h2 id="食事関連" tabindex="-1"><a class="header-anchor" href="#食事関連"><span>食事関連</span></a></h2>
 <ul>
-<li>[[食事関連]]</li>
-<li>[[浄水ポット]]</li>
-<li>[[飲み物]]</li>
-<li>[[ネットスーパー]]
+<li><a href="./食事関連.html">食事関連</a></li>
+<li><a href="./浄水ポット.html">浄水ポット</a></li>
+<li><a href="./飲み物.html">飲み物</a></li>
+<li><a href="./ネットスーパー.html">ネットスーパー</a>
 <ul>
-<li>[[おうちコープ]]</li>
+<li><a href="./おうちコープ.html">おうちコープ</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="学問" tabindex="-1"><a class="header-anchor" href="#学問"><span>学問</span></a></h2>
 <ul>
-<li>[[生物学]]</li>
-<li>[[イタリア語]]</li>
-<li>[[英語]]</li>
-<li>[[社会科学]]
+<li><a href="./生物学.html">生物学</a></li>
+<li><a href="./イタリア語.html">イタリア語</a></li>
+<li><a href="./英語.html">英語</a></li>
+<li><a href="./社会科学.html">社会科学</a>
 <ul>
-<li>[[経済]]</li>
-<li>[[日本史]]
+<li><a href="./経済.html">経済</a></li>
+<li><a href="./日本史.html">日本史</a>
 <ul>
-<li>[[大河ドラマ]]</li>
+<li><a href="./大河ドラマ.html">大河ドラマ</a></li>
 </ul>
 </li>
-<li>[[世界史]]</li>
+<li><a href="./世界史.html">世界史</a></li>
 </ul>
 </li>
-<li>[[【書籍】伊藤真の刑法入門]]</li>
-<li>[[【書籍】集合・位相入門]]</li>
-<li>[[大学への数学]]</li>
+<li><a href="./【書籍】伊藤真の刑法入門.html">【書籍】伊藤真の刑法入門</a></li>
+<li><a href="./【書籍】集合・位相入門.html">【書籍】集合・位相入門</a></li>
+<li><a href="./大学への数学.html">大学への数学</a></li>
 </ul>
 <h2 id="グッズ関連" tabindex="-1"><a class="header-anchor" href="#グッズ関連"><span>グッズ関連</span></a></h2>
-<p>[[グッズ関連]]に移動。</p>
+<p><a href="./グッズ関連.html">グッズ関連</a>に移動。</p>
 <h2 id="mooc関連" tabindex="-1"><a class="header-anchor" href="#mooc関連"><span>MOOC関連</span></a></h2>
 <ul>
-<li>[[edX]]
+<li><a href="./edX.html">edX</a>
 <ul>
-<li>[[MITxBio]]</li>
-<li>[[ClassCentral]]</li>
+<li><a href="./MITxBio.html">MITxBio</a></li>
+<li><a href="./ClassCentral.html">ClassCentral</a></li>
 </ul>
 </li>
-<li>[[手書きとテキストの共存]]</li>
-<li>[[ノート関連]]</li>
+<li><a href="./手書きとテキストの共存.html">手書きとテキストの共存</a></li>
+<li><a href="./ノート関連.html">ノート関連</a></li>
 </ul>
 <h2 id="技術よりっぽいもの" tabindex="-1"><a class="header-anchor" href="#技術よりっぽいもの"><span>技術よりっぽいもの</span></a></h2>
-<p>[[技術的なメモ]]ほどじゃないけど技術よりのもの。[[プログラミングエッセイ]]が多いか。</p>
+<p><a href="./技術的なメモ.html">技術的なメモ</a>ほどじゃないけど技術よりのもの。<a href="./プログラミングエッセイ.html">プログラミングエッセイ</a>が多いか。</p>
 <ul>
-<li>[[仕事のやる気が出ない時対策]]</li>
-<li>[[電子書籍]]</li>
-<li>[[ポモドーロテクニック]]</li>
-<li>[[技術的な事を話すweb上の場]]
+<li><a href="./仕事のやる気が出ない時対策.html">仕事のやる気が出ない時対策</a></li>
+<li><a href="./電子書籍.html">電子書籍</a></li>
+<li><a href="./ポモドーロテクニック.html">ポモドーロテクニック</a></li>
+<li><a href="./技術的な事を話すweb上の場.html">技術的な事を話すweb上の場</a>
 <ul>
-<li>[[GitHubを使ったSNSを考える]]</li>
+<li><a href="./GitHubを使ったSNSを考える.html">GitHubを使ったSNSを考える</a></li>
 </ul>
 </li>
-<li>[[一人で使うタイムライン的な何かが欲しい]]</li>
-<li>[[プログラマライフ]]
+<li><a href="./一人で使うタイムライン的な何かが欲しい.html">一人で使うタイムライン的な何かが欲しい</a></li>
+<li><a href="./プログラマライフ.html">プログラマライフ</a>
 <ul>
-<li>[[40代の働き方のスタイル]]</li>
-<li>[[40代のプログラマ目標]]</li>
-<li>[[40代後半からアラフィフのプログラマライフについて考える]]</li>
-<li>[[40代前半のプログラマライフの振り返り]]</li>
+<li><a href="./40代の働き方のスタイル.html">40代の働き方のスタイル</a></li>
+<li><a href="./40代のプログラマ目標.html">40代のプログラマ目標</a></li>
+<li><a href="./40代後半からアラフィフのプログラマライフについて考える.html">40代後半からアラフィフのプログラマライフについて考える</a></li>
+<li><a href="./40代前半のプログラマライフの振り返り.html">40代前半のプログラマライフの振り返り</a></li>
 </ul>
 </li>
-<li>[[プログラム雑談]]</li>
-<li>[[プログラマとしてのピークをどこに持っていくか]]</li>
-<li>[[サーファープログラマー]]</li>
-<li>[[何かを言うだけと積み重ねる事]]</li>
+<li><a href="./プログラム雑談.html">プログラム雑談</a></li>
+<li><a href="./プログラマとしてのピークをどこに持っていくか.html">プログラマとしてのピークをどこに持っていくか</a></li>
+<li><a href="./サーファープログラマー.html">サーファープログラマー</a></li>
+<li><a href="./何かを言うだけと積み重ねる事.html">何かを言うだけと積み重ねる事</a></li>
 </ul>
 <h2 id="そのほか雑多なもの" tabindex="-1"><a class="header-anchor" href="#そのほか雑多なもの"><span>そのほか雑多なもの</span></a></h2>
 <ul>
-<li>[[バイク]]</li>
-<li>[[漫画喫茶]]</li>
-<li>[[サーフィン]]</li>
-<li>[[税制の比較の論点]]</li>
-<li>[[少子高齢化]]
+<li><a href="./バイク.html">バイク</a></li>
+<li><a href="./漫画喫茶.html">漫画喫茶</a></li>
+<li><a href="./サーフィン.html">サーフィン</a></li>
+<li><a href="./税制の比較の論点.html">税制の比較の論点</a></li>
+<li><a href="./少子高齢化.html">少子高齢化</a>
 <ul>
-<li>[[少子高齢化の対策]]</li>
+<li><a href="./少子高齢化の対策.html">少子高齢化の対策</a></li>
 </ul>
 </li>
-<li>[[スマホ]]</li>
-<li>[[花粉]]
+<li><a href="./スマホ.html">スマホ</a></li>
+<li><a href="./花粉.html">花粉</a>
 <ul>
-<li>[[2022年の花粉の記録]]</li>
+<li><a href="./2022年の花粉の記録.html">2022年の花粉の記録</a></li>
 </ul>
 </li>
-<li>[[サブWikiリンク]]</li>
-<li>[[投資の勉強]]</li>
-<li>[[インターネットリテラシー]]</li>
-<li>[[ワーケーション]]
+<li><a href="./サブWikiリンク.html">サブWikiリンク</a></li>
+<li><a href="./投資の勉強.html">投資の勉強</a></li>
+<li><a href="./インターネットリテラシー.html">インターネットリテラシー</a></li>
+<li><a href="./ワーケーション.html">ワーケーション</a>
 <ul>
-<li>[[成田空港]]</li>
+<li><a href="./成田空港.html">成田空港</a></li>
 </ul>
 </li>
-<li>[[引っ越し計画]]</li>
-<li>[[絵師がAIについて語るのが辛い]]</li>
-<li>[[オーディオブック]]</li>
-<li>[[ギター]]</li>
-<li>[[風神録]]</li>
-<li>[[ネット通販]]</li>
-<li>[[雑多な統計]]</li>
-<li>[[お絵描き]]</li>
-<li>[[将棋]]</li>
-<li>[[WiMax]]</li>
+<li><a href="./引っ越し計画.html">引っ越し計画</a></li>
+<li><a href="./絵師がAIについて語るのが辛い.html">絵師がAIについて語るのが辛い</a></li>
+<li><a href="./オーディオブック.html">オーディオブック</a></li>
+<li><a href="./ギター.html">ギター</a></li>
+<li><a href="./風神録.html">風神録</a></li>
+<li><a href="./ネット通販.html">ネット通販</a></li>
+<li><a href="./雑多な統計.html">雑多な統計</a></li>
+<li><a href="./お絵描き.html">お絵描き</a></li>
+<li><a href="./将棋.html">将棋</a></li>
+<li><a href="./WiMax.html">WiMax</a></li>
 </ul>
 <h2 id="ノート関連" tabindex="-1"><a class="header-anchor" href="#ノート関連"><span>ノート関連</span></a></h2>
 <ul>
-<li>[[Wikiとノート]]</li>
-<li>[[講義ノート]]</li>
-<li>[[ぼくのかんがえた最強の講義ノート]]</li>
+<li><a href="./Wikiとノート.html">Wikiとノート</a></li>
+<li><a href="./講義ノート.html">講義ノート</a></li>
+<li><a href="./ぼくのかんがえた最強の講義ノート.html">ぼくのかんがえた最強の講義ノート</a></li>
 </ul>
 <h2 id="ページを作るほどじゃないものを置いとく所" tabindex="-1"><a class="header-anchor" href="#ページを作るほどじゃないものを置いとく所"><span>ページを作るほどじゃないものを置いとく所</span></a></h2>
 <p>practical monitoring</p>

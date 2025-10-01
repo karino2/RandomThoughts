@@ -1,4 +1,4 @@
-<template><div><p>[[バイク]]</p>
+<template><div><p><a href="./バイク.html">バイク</a></p>
 <h1 id="dio110" tabindex="-1"><a class="header-anchor" href="#dio110"><span>Dio110</span></a></h1>
 <p>2025年9月15日納車。現在のメインスクーター。</p>
 <ul>

@@ -1,4 +1,4 @@
-<template><div><p>[[ネットスーパー]]</p>
+<template><div><p><a href="./ネットスーパー.html">ネットスーパー</a></p>
 <p>うちの地域（神奈川県など）の生協の宅配サービスの名前。</p>
 <ul>
 <li><a href="https://www.ouchi.coop/" target="_blank" rel="noopener noreferrer">おうちＣＯ-ＯＰ（おうちコープ）生協の宅配</a></li>

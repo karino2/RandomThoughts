@@ -1,4 +1,4 @@
-<template><div><p>[[Mac]]/iOSのMetal関連。[[CG]]</p>
+<template><div><p><a href="./Mac.html">Mac</a>/iOSのMetal関連。<a href="./CG.html">CG</a></p>
 <ul>
 <li><a href="https://developer.apple.com/metal/" target="_blank" rel="noopener noreferrer">Metal Overview - Apple Developer</a> いろんな所へのリンクがある。</li>
 <li><a href="https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf" target="_blank" rel="noopener noreferrer">Metal-Shading-Language-Specification.pdf</a></li>
@@ -17,7 +17,7 @@
 <p>このページにはXCodeの設定も書いてある。Foundation, QuartzCore, Metalをリンクに足せと言っている。</p>
 <p><a href="https://twitter.com/graphicsguyale/status/1511494953846800386" target="_blank" rel="noopener noreferrer">サンプルのツイート</a> これはサンプルへのリンクっぽい。</p>
 <h3 id="halideではどうしているか" tabindex="-1"><a class="header-anchor" href="#halideではどうしているか"><span>Halideではどうしているか？</span></a></h3>
-<p>[[Halide]]のCMakeList.txtを見ているとこの辺をやっている場所は良く分からないな。Makefileはframework Metalとframekwork Foundationを足しているが…</p>
+<p><a href="./Halide.html">Halide</a>のCMakeList.txtを見ているとこの辺をやっている場所は良く分からないな。Makefileはframework Metalとframekwork Foundationを足しているが…</p>
 <p>ただ、TEST_METALというのが定義されて、それがgpu_context.hで</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">#include &lt;Metal/MTLCommandQueue.h></span>
 <span class="line">#include &lt;Metal/MTLDevice.h></span>

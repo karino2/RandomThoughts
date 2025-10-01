@@ -1,32 +1,32 @@
 <template><div><ul>
-<li>[[BaseFood]]</li>
-<li>[[配食サービス]]
+<li><a href="./BaseFood.html">BaseFood</a></li>
+<li><a href="./配食サービス.html">配食サービス</a>
 <ul>
-<li>[[配食のふれ愛]]</li>
-<li>[[kanau]]</li>
+<li><a href="./配食のふれ愛.html">配食のふれ愛</a></li>
+<li><a href="./kanau.html">kanau</a></li>
 </ul>
 </li>
-<li>[[ミールキット]]</li>
-<li>[[飲み物]]</li>
-<li>[[ネットスーパー]]
+<li><a href="./ミールキット.html">ミールキット</a></li>
+<li><a href="./飲み物.html">飲み物</a></li>
+<li><a href="./ネットスーパー.html">ネットスーパー</a>
 <ul>
-<li>[[おうちコープ]]</li>
+<li><a href="./おうちコープ.html">おうちコープ</a></li>
 </ul>
 </li>
-<li>[[【書籍】科学者たちが語る食欲]]</li>
-<li>[[【書籍】世界一シンプルで科学的に証明された究極の食事]]
+<li><a href="./【書籍】科学者たちが語る食欲.html">【書籍】科学者たちが語る食欲</a></li>
+<li><a href="./【書籍】世界一シンプルで科学的に証明された究極の食事.html">【書籍】世界一シンプルで科学的に証明された究極の食事</a>
 <ul>
 <li><a href="https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/" target="_blank" rel="noopener noreferrer">What Should I Eat? - The Nutrition Source - Harvard T.H. Chan School of Public Health</a> 紹介されてたリンク。だいたい自分もこれをベースに考えている。</li>
 </ul>
 </li>
-<li>[[【書籍】太らない間食]]</li>
-<li>[[【書籍】ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法]]</li>
-<li>[[【書籍】本当に役立つ栄養学]]</li>
+<li><a href="./【書籍】太らない間食.html">【書籍】太らない間食</a></li>
+<li><a href="./【書籍】ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法.html">【書籍】ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法</a></li>
+<li><a href="./【書籍】本当に役立つ栄養学.html">【書籍】本当に役立つ栄養学</a></li>
 </ul>
 <h2 id="オートミール" tabindex="-1"><a class="header-anchor" href="#オートミール"><span>オートミール</span></a></h2>
-<p>最近の主食。[[オートミール]]</p>
+<p>最近の主食。<a href="./オートミール.html">オートミール</a></p>
 <h2 id="レトルトオートミールリゾット" tabindex="-1"><a class="header-anchor" href="#レトルトオートミールリゾット"><span>レトルトオートミールリゾット</span></a></h2>
-<p>ページ分ける事に。[[レトルトオートミールリゾット]]</p>
+<p>ページ分ける事に。<a href="./レトルトオートミールリゾット.html">レトルトオートミールリゾット</a></p>
 <h2 id="レトルト玄米" tabindex="-1"><a class="header-anchor" href="#レトルト玄米"><span>レトルト玄米</span></a></h2>
 <p>下記の発芽玄米が売り切れだったので、別のを探して以下のレトルト玄米を見つける。</p>
 <p><a href="https://hb.afl.rakuten.co.jp/ichiba/3f5ca30c.63ec745c.3f5ca30d.25975799/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkomachilab%2Fyaso_0008%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"><img src="https://hbb.afl.rakuten.co.jp/hgb/3f5ca30c.63ec745c.3f5ca30d.25975799/?me_id=1412467&item_id=10000010&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fkomachilab%2Fcabinet%2Fshohin%2Fyaso_0008_00.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""><br>
@@ -41,7 +41,7 @@
 <h2 id="ldlコレステロール対策-2024-08-24" tabindex="-1"><a class="header-anchor" href="#ldlコレステロール対策-2024-08-24"><span>LDLコレステロール対策 2024-08-24</span></a></h2>
 <p>最近のLDLコレステロール対策をまとめておく。</p>
 <ul>
-<li>ごはんをレトルト発芽玄米に（追記：現在は[[レトルトオートミールリゾット]]になっている）</li>
+<li>ごはんをレトルト発芽玄米に（追記：現在は<a href="./レトルトオートミールリゾット.html">レトルトオートミールリゾット</a>になっている）</li>
 <li>間食をいわし魚肉ソーセージ</li>
 <li>間食を脂肪ゼロヨーグルトに</li>
 <li>たまに納豆や豆腐</li>
@@ -80,23 +80,23 @@ LDLコレステロール対策として青魚を食べようとしているが�
 無脂肪のものならLDLコレステロールとしては問題無い、と知ったのと、
 とりあえず現在はLDLコレステロール値を下げる方が動物性脂肪うんぬんみたいなものより優先度が高いと思い、
 無脂肪ヨーグルトにしてみた。</p>
-<p>朝食は変わらずミューズリだが、たまに辛くなってきたら妥協して[[BaseFood]]にしている。</p>
+<p>朝食は変わらずミューズリだが、たまに辛くなってきたら妥協して<a href="./BaseFood.html">BaseFood</a>にしている。</p>
 <p>昼食、夕食は、配食サービスをおかずのみに変更して、レトルト発芽玄米にした。＞<a href="https://karino2.github.io/2024/08/09/retort_genmai_and_food_deli.html" target="_blank" rel="noopener noreferrer">レトルト玄米とおかずのみ配食サービスにした - なーんだ、ただの水たまりじゃないか</a></p>
-<p>これに[[おうちコープ]]の果物を足すのが基本で、
+<p>これに<a href="./おうちコープ.html">おうちコープ</a>の果物を足すのが基本で、
 たまにサーフィンなどでもう少し食べたい時には、ここに豆腐や納豆を足している。</p>
 <p>そろそろまた差分ではなく最新版をまとめた方がいいかもなぁ。</p>
 <h2 id="自分の食事差分-2023-06-06" tabindex="-1"><a class="header-anchor" href="#自分の食事差分-2023-06-06"><span>自分の食事差分 （2023-06-06）</span></a></h2>
 <p>前回とそんなに変わってないが、差分をメモしておく。</p>
 <p>プロテインゼリーはプロテインバーに変更した。20g入りの奴。これは楽天で箱で買っている。（たまに売ってない事もある）</p>
-<p>飲み物はドリップバッグのコーヒーを飲むようになったり細かく変更があるが、[[飲み物]]の方に書いている。</p>
+<p>飲み物はドリップバッグのコーヒーを飲むようになったり細かく変更があるが、<a href="./飲み物.html">飲み物</a>の方に書いている。</p>
 <h2 id="自分の食事-2021-12-26" tabindex="-1"><a class="header-anchor" href="#自分の食事-2021-12-26"><span>自分の食事 （2021-12-26）</span></a></h2>
 <p>ちょくちょく変わるので現時点の食事を記録しておく。</p>
 <h3 id="基本的な三食" tabindex="-1"><a class="header-anchor" href="#基本的な三食"><span>基本的な三食</span></a></h3>
 <p>朝はカントリーファームのミューズリを、スキムミルクで食べている。スキムミルクとミューズリはヨドバシで買っている。
 ミューズリはちょくちょく在庫が無くなるが。</p>
-<p>飽きたら[[BaseFood]]のパンにする事もある。</p>
-<p>昼と夕は[[配食サービス]]に、デザートに果物を足す。今の時期はりんご。楽天で箱で買ってる。</p>
-<p>配食サービスが無い日は[[BaseFood]]のアジアンを、刻み海苔とそばつゆでもりそばとして食べている。結構美味しい。</p>
+<p>飽きたら<a href="./BaseFood.html">BaseFood</a>のパンにする事もある。</p>
+<p>昼と夕は<a href="./配食サービス.html">配食サービス</a>に、デザートに果物を足す。今の時期はりんご。楽天で箱で買ってる。</p>
+<p>配食サービスが無い日は<a href="./BaseFood.html">BaseFood</a>のアジアンを、刻み海苔とそばつゆでもりそばとして食べている。結構美味しい。</p>
 <h3 id="間食いろいろ" tabindex="-1"><a class="header-anchor" href="#間食いろいろ"><span>間食いろいろ</span></a></h3>
 <p>間食は昼と夕の間に一回。
 ミックスナッツローストを左手の平にいっぱい分か、プロテイン系ゼリー（RIZAPのが良い気がしている）か、asahiのフルーツグラノーラハンディタイプ（糖質25%off）にしている。</p>
@@ -123,7 +123,7 @@ LDLコレステロール対策として青魚を食べようとしているが�
 <p>以前はミルクティーとか紅茶も飲んでたし、夕方以降はハーブティーとかルイボスティーにしていたが、
 最近はそこまで量を飲まなくなったのでコーヒーだけで十分かな、と思っている。
 仕事を再開したらここは変わるかも。</p>
-<p>[[飲み物]]</p>
+<p><a href="./飲み物.html">飲み物</a></p>
 <h2 id="朝食のミューズリ" tabindex="-1"><a class="header-anchor" href="#朝食のミューズリ"><span>朝食のミューズリ</span></a></h2>
 <p>以前はヨドバシで買っていたが、最近（2022-09-15）は楽天で箱で8袋を買う事にした。
 ヨドバシは品切れの事も多いし、8袋買う方がだいぶ割安だし、保存も効くものだし。

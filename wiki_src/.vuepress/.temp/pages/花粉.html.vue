@@ -6,7 +6,7 @@
 <li><a href="https://karino2.github.io/2019/04/03/224245.html" target="_blank" rel="noopener noreferrer">2019年花粉症記録 - なーんだ、ただの水たまりじゃないか</a></li>
 <li><a href="https://karino2.github.io/2020/07/01/024747.html" target="_blank" rel="noopener noreferrer">2020年花粉症記録 - なーんだ、ただの水たまりじゃないか</a></li>
 <li><a href="https://karino2.github.io/2021/02/18/pollen_2021.html" target="_blank" rel="noopener noreferrer">2021年の花粉の記録 - なーんだ、ただの水たまりじゃないか</a></li>
-<li>[[2022年の花粉の記録]]</li>
+<li><a href="./2022年の花粉の記録.html">2022年の花粉の記録</a></li>
 </ul>
 </div></template>
 

@@ -1,4 +1,4 @@
-<template><div><p>[[グッズ関連]]</p>
+<template><div><p><a href="./グッズ関連.html">グッズ関連</a></p>
 <h2 id="封筒型毛布" tabindex="-1"><a class="header-anchor" href="#封筒型毛布"><span>封筒型毛布</span></a></h2>
 <p><a href="https://amzn.to/4iEWoQC" target="_blank" rel="noopener noreferrer">amazon: Softime 筒型毛布</a></p>
 <h3 id="購入-2024-12-18-水" tabindex="-1"><a class="header-anchor" href="#購入-2024-12-18-水"><span>購入 2024-12-18 (水)</span></a></h3>

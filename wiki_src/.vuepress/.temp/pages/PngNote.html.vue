@@ -5,14 +5,14 @@
 <li><a href="https://www.reddit.com/r/Onyx_Boox/comments/p5hygq/pngnote_for_boox_note_app_for_boox_device_only/" target="_blank" rel="noopener noreferrer">redditのPngNoteのスレ</a> 割とメインでやっている場所</li>
 <li><a href="https://karino2.github.io/2021/07/23/pngnote_for_boox.html" target="_blank" rel="noopener noreferrer">blog: PngNote for BOOX開発記</a></li>
 <li><a href="https://karino2.github.io/2021/08/19/pngnoteloupe.html" target="_blank" rel="noopener noreferrer">blog: PngNoteLoupe</a> Android用の拡大機能のプロトタイプ</li>
-<li>[[GithubPagesGallery]]を公開に使っている。</li>
+<li><a href="./GithubPagesGallery.html">GithubPagesGallery</a>を公開に使っている。</li>
 </ul>
 <h3 id="コンセプト" tabindex="-1"><a class="header-anchor" href="#コンセプト"><span>コンセプト</span></a></h3>
 <ul>
 <li>BOOXのNote3でペンが快適に使える事</li>
 <li>単なるpngの連番ファイルとディレクトリ</li>
 <li>低機能で使っていて迷う所が無いような選択肢の少ないUI</li>
-<li>講義ノートなどを取るのに特化した機能＞[[講義ノート]]</li>
+<li>講義ノートなどを取るのに特化した機能＞<a href="./講義ノート.html">講義ノート</a></li>
 </ul>
 <h3 id="雑感" tabindex="-1"><a class="header-anchor" href="#雑感"><span>雑感</span></a></h3>
 <p>BOOX Note3のペンは非常に良い。
@@ -65,7 +65,7 @@ pen_settings.txtというファイルがあったらその中身をパースし�
 <p>なお、現状はbackground.pngを置くUIは無い。自分で画像を用意して手で置く。
 自分はこれを使っている。 <a href="https://github.com/karino2/PngNote/blob/main/images/background.png" target="_blank" rel="noopener noreferrer">https://github.com/karino2/PngNote/blob/main/images/background.png</a></p>
 <h3 id="github-pagesへの公開" tabindex="-1"><a class="header-anchor" href="#github-pagesへの公開"><span>github pagesへの公開</span></a></h3>
-<p>公開には[[GithubPagesGallery]]を使っている。</p>
+<p>公開には<a href="./GithubPagesGallery.html">GithubPagesGallery</a>を使っている。</p>
 </div></template>
 
 

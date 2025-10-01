@@ -1,4 +1,4 @@
-<template><div><p>大河ドラマの平清盛と鎌倉殿の13人を見る予定なので、WikiNameを作ってみた。＞[[日本史]]</p>
+<template><div><p>大河ドラマの平清盛と鎌倉殿の13人を見る予定なので、WikiNameを作ってみた。＞<a href="./日本史.html">日本史</a></p>
 <h2 id="平清盛" tabindex="-1"><a class="header-anchor" href="#平清盛"><span>平清盛</span></a></h2>
 <ul>
 <li><a href="https://www.nhk-ondemand.jp/program/P202100265400000/" target="_blank" rel="noopener noreferrer">NHKオンデマンド 大河ドラマ　平清盛</a></li>
@@ -11,7 +11,7 @@
 ちょうど最近読んでいた本の復習になって良さそう。</p>
 <h3 id="_2023-08-04-金" tabindex="-1"><a class="header-anchor" href="#_2023-08-04-金"><span>2023-08-04 (金)</span></a></h3>
 <p>一話が1時間以上あって、一気に見るのがなかなかきつい。ただやはりドラマはそれぞれの人物の区別がつきやすいな。</p>
-<p>そして[[日本史]]のまとめを作っておいて良かった。これ見ながらじゃないとわからん。</p>
+<p>そして<a href="./日本史.html">日本史</a>のまとめを作っておいて良かった。これ見ながらじゃないとわからん。</p>
 <p>とりあえず一気に見ようと頑張らずにちょっとずつ気が向く程度に見ていこうと思う。
 オンデマンドが二ヶ月や三ヶ月にまたがってもいいだろう。</p>
 <h3 id="鳥羽上皇の時代" tabindex="-1"><a class="header-anchor" href="#鳥羽上皇の時代"><span>鳥羽上皇の時代</span></a></h3>

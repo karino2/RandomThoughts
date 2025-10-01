@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[書籍]]</li>
-<li>[[オーディオブック]]</li>
+<li><a href="./書籍.html">書籍</a></li>
+<li><a href="./オーディオブック.html">オーディオブック</a></li>
 </ul>
 <p><a href="https://amzn.to/3H9wkvk" target="_blank" rel="noopener noreferrer">amazon: バカと無知―人間、この不都合な生きもの―（新潮新書）</a> 橘玲 著</p>
 <h2 id="_2024-01-09-火-聞き終わり" tabindex="-1"><a class="header-anchor" href="#_2024-01-09-火-聞き終わり"><span>2024-01-09 (火) 聞き終わり</span></a></h2>

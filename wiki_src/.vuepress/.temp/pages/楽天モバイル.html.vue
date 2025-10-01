@@ -1,11 +1,11 @@
 <template><div><p>我が家のスマホは楽天モバイル。</p>
 <h2 id="家のネットも楽天モバイルのsimに-2024-10-11-金" tabindex="-1"><a class="header-anchor" href="#家のネットも楽天モバイルのsimに-2024-10-11-金"><span>家のネットも楽天モバイルのSIMに 2024-10-11 (金)</span></a></h2>
-<p>[[WiMax]]と値段が結構違うのに速度があまり変わらないのと、一年のうちの結構の時間を過ごす奄美の宿にWiMaxが入らない事から、
+<p><a href="./WiMax.html">WiMax</a>と値段が結構違うのに速度があまり変わらないのと、一年のうちの結構の時間を過ごす奄美の宿にWiMaxが入らない事から、
 家のネットを楽天モバイルのSIMをGalaxy 5Gルーターに入れて使う事にする。</p>
 <p>これで楽天2回線になった。</p>
 <h2 id="テザリングでのpcからの速度計測" tabindex="-1"><a class="header-anchor" href="#テザリングでのpcからの速度計測"><span>テザリングでのPCからの速度計測</span></a></h2>
-<p>我が家は[[WiMax]]が割と不安定で入りが悪いので、モバイルルーターも楽天モバイルでもいいのでは？と思い、いろいろ調べる。</p>
-<p><a href="https://minsoku.net/searches/results?word=WiMax+%E9%8E%8C%E5%80%89" target="_blank" rel="noopener noreferrer">みんそく</a>で速度を測って、[[WiMax]]と比較する。</p>
+<p>我が家は<a href="./WiMax.html">WiMax</a>が割と不安定で入りが悪いので、モバイルルーターも楽天モバイルでもいいのでは？と思い、いろいろ調べる。</p>
+<p><a href="https://minsoku.net/searches/results?word=WiMax+%E9%8E%8C%E5%80%89" target="_blank" rel="noopener noreferrer">みんそく</a>で速度を測って、<a href="./WiMax.html">WiMax</a>と比較する。</p>
 <table>
 <thead>
 <tr>

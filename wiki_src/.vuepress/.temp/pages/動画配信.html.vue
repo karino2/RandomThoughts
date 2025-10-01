@@ -1,5 +1,5 @@
-<template><div><p>[[Mac]]より。iOS関連で動画のエンコードや配信周りがどうなっているかを調べる。WikiNameとしてはOS関係なく動画配信全般にしておく。</p>
-<p>[[YouTubeAPI]]や[[Twitch]]で配信するようなケースで、iOS側はどうなっているかを調べるメモ。</p>
+<template><div><p><a href="./Mac.html">Mac</a>より。iOS関連で動画のエンコードや配信周りがどうなっているかを調べる。WikiNameとしてはOS関係なく動画配信全般にしておく。</p>
+<p><a href="./YouTubeAPI.html">YouTubeAPI</a>や<a href="./Twitch.html">Twitch</a>で配信するようなケースで、iOS側はどうなっているかを調べるメモ。</p>
 <p><a href="https://developer.apple.com/documentation/http-live-streaming" target="_blank" rel="noopener noreferrer">HTTP Live Streaming - Apple Developer Documentation</a> あたりから見るのか？</p>
 <h2 id="fragmented-mpeg-4とavassetwriter" tabindex="-1"><a class="header-anchor" href="#fragmented-mpeg-4とavassetwriter"><span>Fragmented MPEG-4とAVAssetWriter</span></a></h2>
 <p><a href="https://developer.apple.com/videos/play/wwdc2020/10011" target="_blank" rel="noopener noreferrer">Author fragmented MPEG-4 content with AVAssetWriter - WWDC20 - Videos - Apple Developer</a></p>

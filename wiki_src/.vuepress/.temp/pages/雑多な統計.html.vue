@@ -1,4 +1,4 @@
-<template><div><p>[[雑多なメモ]]</p>
+<template><div><p><a href="./雑多なメモ.html">雑多なメモ</a></p>
 <p>ちょっとした統計をググった時などのメモを置く場所。</p>
 <h2 id="結婚していない人、子育てをしていない人の割合" tabindex="-1"><a class="header-anchor" href="#結婚していない人、子育てをしていない人の割合"><span>結婚していない人、子育てをしていない人の割合</span></a></h2>
 <p><a href="https://www.stat.go.jp/data/kokusei/2020/kekka/pdf/outline_01.pdf" target="_blank" rel="noopener noreferrer">令和二年国勢調査概要</a></p>

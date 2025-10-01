@@ -9,7 +9,7 @@ IUPAC nameの所で毎回出てくる。</p>
 <li>アルケン (alkene）アルカンの一つが二重結合になったもの</li>
 <li>アルキル基 (alkyl group) アルカンからHが一つ無くなった官能基</li>
 </ul>
-<p>[[化学]]より。</p>
+<p><a href="./化学.html">化学</a>より。</p>
 </div></template>
 
 

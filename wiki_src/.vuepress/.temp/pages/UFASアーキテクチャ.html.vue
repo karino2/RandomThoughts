@@ -2,18 +2,18 @@
 ユーファスと読む。</p>
 <h2 id="ufasアーキテクチャで作られたアプリ" tabindex="-1"><a class="header-anchor" href="#ufasアーキテクチャで作られたアプリ"><span>UFASアーキテクチャで作られたアプリ</span></a></h2>
 <ul>
-<li>[[てきすとでっき]]</li>
-<li>[[てきすとTL]]</li>
-<li>[[PngNote]]</li>
-<li>[[TeFWiki]]</li>
-<li>[[カキオク]]</li>
-<li>[[いつなに]]</li>
+<li><a href="./てきすとでっき.html">てきすとでっき</a></li>
+<li><a href="./てきすとTL.html">てきすとTL</a></li>
+<li><a href="./PngNote.html">PngNote</a></li>
+<li><a href="./TeFWiki.html">TeFWiki</a></li>
+<li><a href="./カキオク.html">カキオク</a></li>
+<li><a href="./いつなに.html">いつなに</a></li>
 </ul>
 <h2 id="基本的な考え" tabindex="-1"><a class="header-anchor" href="#基本的な考え"><span>基本的な考え</span></a></h2>
 <p>概ね以下のようなアーキテクチャ</p>
 <ul>
 <li>Unix的なプレーンなファイルをStorage Access Frameworkで保存</li>
-<li>ネットワークのpermissionはアプリには無しで、ローカルに保存し、[[Syncthing]]などのフォルダsyncのアプリでPCと共有</li>
+<li>ネットワークのpermissionはアプリには無しで、ローカルに保存し、<a href="./Syncthing.html">Syncthing</a>などのフォルダsyncのアプリでPCと共有</li>
 </ul>
 <p>以下この二つの要素を説明していく。</p>
 <h2 id="unix的なプレーンなファイルをstorage-access-frameworkで" tabindex="-1"><a class="header-anchor" href="#unix的なプレーンなファイルをstorage-access-frameworkで"><span>Unix的なプレーンなファイルをStorage Access Frameworkで</span></a></h2>
@@ -61,7 +61,7 @@ UFASアーキテクチャは最も小さくアプリの開発を始める方法�
 <p>アプリの数を増やす時に、アカウントの設定というのは大きな手間だ。
 スマホなどは定期的に端末を乗り換える、という事が起こるし新たなデバイスが追加される事も多い。</p>
 <p>こうした時にアプリごとにアカウントの設定が必要になると、多くのアプリを使うのが面倒になる。</p>
-<p>UFASアーキテクチャなら[[Syncthing]]などの設定を一回行えれば、個々のアプリはフォルダを指定するだけで、面倒がない。</p>
+<p>UFASアーキテクチャなら<a href="./Syncthing.html">Syncthing</a>などの設定を一回行えれば、個々のアプリはフォルダを指定するだけで、面倒がない。</p>
 <p>そのおかげで小さなアプリをたくさん使うのが容易になるので、アプリを小さく作りやすい。
 小さいアプリはメンテナンスも容易になるので、先に述べたメンテナンスの容易さにも寄与することになる。</p>
 <h3 id="データが長期間安定しやすい" tabindex="-1"><a class="header-anchor" href="#データが長期間安定しやすい"><span>データが長期間安定しやすい</span></a></h3>
@@ -77,13 +77,13 @@ UFASアーキテクチャは最も小さくアプリの開発を始める方法�
 <p>ツールの開発を終えてもデータはそのまま使える事が期待できる。</p>
 <h3 id="データの独立性が高まる-他のアプリと連携しやすい" tabindex="-1"><a class="header-anchor" href="#データの独立性が高まる-他のアプリと連携しやすい"><span>データの独立性が高まる（他のアプリと連携しやすい）</span></a></h3>
 <p>Unix的なファイルというのは他のツールからも操作しやすい。
-同じデータを扱うPC用の[[Electron]]のアプリを作るのは多くの場合容易だし、実際自分も良く作っている。
+同じデータを扱うPC用の<a href="./Electron.html">Electron</a>のアプリを作るのは多くの場合容易だし、実際自分も良く作っている。
 エディタの拡張などで扱う事もしやすい。</p>
 <p>こうしたヘテロジーニアスな環境のそれぞれで共通のデータを扱いやすいというのも大きな強みと言える。</p>
 <p>またデータ自体が他のアプリに開かれている結果、アプリ自体の開発が終わったり寿命がきても、データはその後も使い続ける事が出来る。</p>
 <p>また、当然ながらサーバーやサービスへのロックインというのも必要最小限で済む。</p>
-<p>例えば今フォルダsyncには[[Syncthing]]を使っているが、機能が単純なのでいつでも他のシステムに乗り換える事が出来る。</p>
-<p>また、公開にはスクリプトでデータを加工して[[GithubPages]]で公開しているものが多いが、
+<p>例えば今フォルダsyncには<a href="./Syncthing.html">Syncthing</a>を使っているが、機能が単純なのでいつでも他のシステムに乗り換える事が出来る。</p>
+<p>また、公開にはスクリプトでデータを加工して<a href="./GithubPages.html">GithubPages</a>で公開しているものが多いが、
 これもスクリプトを変更すれば他のサービスに乗り換える事はいつでも出来る。
 データ自体はこれらに依存していないので、これらのサービスの寿命よりも長く生きる事が期待出来る。</p>
 <h3 id="データのメンテナンスが容易" tabindex="-1"><a class="header-anchor" href="#データのメンテナンスが容易"><span>データのメンテナンスが容易</span></a></h3>
@@ -96,8 +96,8 @@ UFASアーキテクチャは最も小さくアプリの開発を始める方法�
 <ul>
 <li><a href="https://karino2.github.io/2020/12/12/textdeck.html" target="_blank" rel="noopener noreferrer">メモアプリ、「てきすとでっき」を作った。その思想など。 - なーんだ、ただの水たまりじゃないか</a></li>
 <li><a href="http://0xcc.net/unimag/1/" target="_blank" rel="noopener noreferrer">横着プログラミング 第1回: Unixのメモ技術</a></li>
-<li>[[【書籍】TheArtOfUnixProgramming]]</li>
-<li>[[Unix的GUIツール]]</li>
+<li><a href="./【書籍】TheArtOfUnixProgramming.html">【書籍】TheArtOfUnixProgramming</a></li>
+<li><a href="./Unix的GUIツール.html">Unix的GUIツール</a></li>
 </ul>
 </div></template>
 

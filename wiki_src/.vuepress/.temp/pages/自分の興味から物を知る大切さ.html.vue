@@ -1,4 +1,4 @@
-<template><div><p><a href="https://karino2.github.io/2021/09/22/away_from_news.html" target="_blank" rel="noopener noreferrer">ニュースから距離を置く大切さ</a>と類似の話題だが。（[[インターネットリテラシー]]にリンクをまとめる事に）</p>
+<template><div><p><a href="https://karino2.github.io/2021/09/22/away_from_news.html" target="_blank" rel="noopener noreferrer">ニュースから距離を置く大切さ</a>と類似の話題だが。（<a href="./インターネットリテラシー.html">インターネットリテラシー</a>にリンクをまとめる事に）</p>
 <p>SNSやニュースで見た事を調べる、というのはあまり良くない気がしている。
 皆が同じものを見る事になるという点で社会の多様性が減り不安定になる気がするし、
 その結果、煽動などにも脆弱になる気もする。

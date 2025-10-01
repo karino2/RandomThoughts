@@ -1,4 +1,4 @@
-<template><div><p>[[VisualStudio]]、[[VSCode]]</p>
+<template><div><p><a href="./VisualStudio.html">VisualStudio</a>、<a href="./VSCode.html">VSCode</a></p>
 <ul>
 <li><a href="https://learn.microsoft.com/ja-jp/vcpkg/reference/vcpkg-json" target="_blank" rel="noopener noreferrer">vcpkg.json リファレンス - Microsoft Learn</a></li>
 </ul>

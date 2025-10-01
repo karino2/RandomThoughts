@@ -1,8 +1,8 @@
-<template><div><p>[[雑多なメモ]]</p>
+<template><div><p><a href="./雑多なメモ.html">雑多なメモ</a></p>
 <p>少子高齢化についてたまになにか思った時に書く場所。</p>
 <h2 id="関連リンク" tabindex="-1"><a class="header-anchor" href="#関連リンク"><span>関連リンク</span></a></h2>
 <ul>
-<li>[[少子高齢化の対策]]</li>
+<li><a href="./少子高齢化の対策.html">少子高齢化の対策</a></li>
 <li>関連ブログ: <a href="https://karino2.github.io/2023/01/30/aged_population_current_status.html" target="_blank" rel="noopener noreferrer">高齢化社会の現状の雑感 - なーんだ、ただの水たまりじゃないか</a></li>
 </ul>
 <h2 id="_2025年現在は、一番少子高齢化が大変かもしれない時期-2025-04-29-火" tabindex="-1"><a class="header-anchor" href="#_2025年現在は、一番少子高齢化が大変かもしれない時期-2025-04-29-火"><span>2025年現在は、一番少子高齢化が大変かもしれない時期 2025-04-29 (火)</span></a></h2>

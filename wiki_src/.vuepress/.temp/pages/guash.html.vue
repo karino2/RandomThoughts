@@ -1,11 +1,11 @@
 <template><div><ul>
 <li><a href="https://github.com/karino2/guash" target="_blank" rel="noopener noreferrer">github: karino2/guash: GUI app scripting by shell script.</a></li>
 </ul>
-<p>[[FSharp]]で書いている、GUIツールをシェルスクリプトで書く為のコマンド。</p>
+<p><a href="./FSharp.html">FSharp</a>で書いている、GUIツールをシェルスクリプトで書く為のコマンド。</p>
 <p>シェルスクリプトでGUIツールを作る為のF# で書いたコマンドラインツール。
 日常的なツールを書くのに便利に使っている。</p>
 <h2 id="インストール" tabindex="-1"><a class="header-anchor" href="#インストール"><span>インストール</span></a></h2>
-<p>[[Homebrew]]のtapに対応したので、Macなら以下でインストール出来る。</p>
+<p><a href="./Homebrew.html">Homebrew</a>のtapに対応したので、Macなら以下でインストール出来る。</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ brew tap karino2/tap</span>
 <span class="line">$ brew install karino2/tap/guash</span>
 <span class="line"></span></code></pre>

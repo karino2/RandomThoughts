@@ -2,7 +2,7 @@
 <p><a href="https://www.youtube.com/watch?v=lGU90R0dVDk&amp;list=PLFSPMh3GSI36-Vs6BMmgaJlYdOltVFedG&amp;index=2" target="_blank" rel="noopener noreferrer">アコギの弦高調整とネック調整のやり方　初心者のためのギター講座 - YouTube</a></p>
 <hr>
 <h2 id="ブルースギター" tabindex="-1"><a class="header-anchor" href="#ブルースギター"><span>ブルースギター</span></a></h2>
-<p>長くなってきたので[[ブルースギター]]に移動。</p>
+<p>長くなってきたので<a href="./ブルースギター.html">ブルースギター</a>に移動。</p>
 <hr>
 <p>ソロギター強化月間。(2021-12-01）</p>
 <p>なかなか手応えがあったので、1月以降も継続。</p>

@@ -1,7 +1,7 @@
-<template><div><p>[[Electron]]</p>
+<template><div><p><a href="./Electron.html">Electron</a></p>
 <ul>
 <li><a href="https://webui.me/" target="_blank" rel="noopener noreferrer">公式</a></li>
-<li>[[MDDeck]]はWebUIで作ってみた。</li>
+<li><a href="./MDDeck.html">MDDeck</a>はWebUIで作ってみた。</li>
 </ul>
 <h2 id="始め方" tabindex="-1"><a class="header-anchor" href="#始め方"><span>始め方</span></a></h2>
 <p>新規にプロジェクトを作るときに微妙にやることが多いのでメモしておく。</p>
@@ -53,7 +53,7 @@
 <span class="line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="しばらく触っての雑感-2023-12-28-木" tabindex="-1"><a class="header-anchor" href="#しばらく触っての雑感-2023-12-28-木"><span>しばらく触っての雑感 - 2023-12-28 (木)</span></a></h3>
-<p>[[MDDeck]]をWebUIで作ってみて使っているが、Mac版はなんかしばらく放っておくと勝手に終了してしまう。
+<p><a href="./MDDeck.html">MDDeck</a>をWebUIで作ってみて使っているが、Mac版はなんかしばらく放っておくと勝手に終了してしまう。
 何が原因か分からないが不便なのでElectronで作り直そうかなぁ、という感じ。</p>
 <p>あとDockがChromeになるのだけれどこれをクリックすると新規Chromeが立ち上がってしまってWebUIアプリをアクティブにする都度毎回空のChromeウィンドウを消さないといけないのがだるい。
 全体的にMacでの体験が悪いか。</p>

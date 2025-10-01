@@ -1,4 +1,4 @@
-<template><div><p>シェル関連を置くところ。[[sed]]や[[awk]]も関係しがち。</p>
+<template><div><p>シェル関連を置くところ。<a href="./sed.html">sed</a>や<a href="./awk.html">awk</a>も関係しがち。</p>
 <h2 id="コマンドの記録" tabindex="-1"><a class="header-anchor" href="#コマンドの記録"><span>コマンドの記録</span></a></h2>
 <ul>
 <li><a href="https://stackoverflow.com/questions/30249853/save-zsh-history-to-persistent-history" target="_blank" rel="noopener noreferrer">bash - Save Zsh history to ~/.persistent_history - Stack Overflow</a></li>
@@ -28,7 +28,7 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="雑多なメモ" tabindex="-1"><a class="header-anchor" href="#雑多なメモ"><span>雑多なメモ</span></a></h2>
 <ul>
 <li><a href="https://the.exa.website/" target="_blank" rel="noopener noreferrer">exa · a modern replacement for ls</a> lsの代替らしい</li>
-<li>[[OilShell]]</li>
+<li><a href="./OilShell.html">OilShell</a></li>
 <li><a href="https://github.com/google/zx" target="_blank" rel="noopener noreferrer">google/zx: A tool for writing better scripts</a></li>
 </ul>
 <h2 id="シェルの再起動" tabindex="-1"><a class="header-anchor" href="#シェルの再起動"><span>シェルの再起動</span></a></h2>

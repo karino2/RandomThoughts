@@ -1,14 +1,14 @@
 <template><div><ul>
-<li>[[mdvcat]]</li>
-<li>[[mdvtbl]]</li>
-<li>[[guash]] (これは不完全で、完全にはUnix的に出来なかったのだが）</li>
+<li><a href="./mdvcat.html">mdvcat</a></li>
+<li><a href="./mdvtbl.html">mdvtbl</a></li>
+<li><a href="./guash.html">guash</a> (これは不完全で、完全にはUnix的に出来なかったのだが）</li>
 </ul>
 <p>などは、GUIツールでありながらUnix的な使い方を想定している。
 その特徴に「Unix的GUIツール」という名前をつけて、それがどういうものか示しておきたい。</p>
 <p>なお、以下はこのページを書いていて思いついたものだが、同じコンセプトを共有している</p>
 <ul>
-<li>[[htmnix]]</li>
-<li>[[htmnix_chart]]</li>
+<li><a href="./htmnix.html">htmnix</a></li>
+<li><a href="./htmnix_chart.html">htmnix_chart</a></li>
 </ul>
 <h2 id="コマンドラインから実行して、何かをして、終わる" tabindex="-1"><a class="header-anchor" href="#コマンドラインから実行して、何かをして、終わる"><span>コマンドラインから実行して、何かをして、終わる</span></a></h2>
 <p>GUIツールがUnix的に使える為の条件としては、何か一つのタスクを実行して終わる、という前提がある。
@@ -44,19 +44,19 @@
 GUIのツールではずっと立ち上がっていて欲しいものが多い。
 それを毎回起動するのは面倒もある。</p>
 <p>Unix的GUIツールを作る手頃な方法が無い。
-現状は[[FSharp]]+[[photino]]でシングルバイナリにしてhomebrewで配る、
+現状は<a href="./FSharp.html">FSharp</a>+<a href="./photino.html">photino</a>でシングルバイナリにしてhomebrewで配る、
 という方式を取っているが、もうちょっとここもUnix的にならんものか。</p>
 <p>適当なコンベンションに従ったhtml片を書くとこの手のツールが作れる、というツールを作れないか？
-＞[[htmnix]]と名付ける。</p>
+＞<a href="./htmnix.html">htmnix</a>と名付ける。</p>
 <h2 id="既存の例" tabindex="-1"><a class="header-anchor" href="#既存の例"><span>既存の例</span></a></h2>
 <p>PowerShellのOut-GridViewは同じ特徴を持つ。</p>
 <p><a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/out-gridview?view=powershell-7.2" target="_blank" rel="noopener noreferrer">Out-GridView (Microsoft.PowerShell.Utility) - PowerShell - Microsoft Docs</a></p>
 <p>percolもGUIツールと呼んで良いかは分からないけれど、同じように使える。<a href="https://github.com/mooz/percol" target="_blank" rel="noopener noreferrer">mooz/percol: adds flavor of interactive filtering to the traditional pipe concept of UNIX shell</a></p>
 <h2 id="例題-てきすとでっきのアーカイブ機能" tabindex="-1"><a class="header-anchor" href="#例題-てきすとでっきのアーカイブ機能"><span>例題：てきすとでっきのアーカイブ機能</span></a></h2>
-<p>[[てきすとでっき]]には、古くなったメモのアーカイブ機能が無い。
+<p><a href="./てきすとでっき.html">てきすとでっき</a>には、古くなったメモのアーカイブ機能が無い。
 現状はテキストエディタで別ファイルに手動で移動していて、こういう事が出来るのがてきすとでっきの良い所でもあるけれど、
 GUIでポチポチ選んでアーカイブ、とやりたいという気持ちもある。</p>
-<p>こういう時に、[[てきすとでっき]]自体に機能を追加してくのでは無く、この作業をする「Unix的GUIツール」を作れないだろうか？</p>
+<p>こういう時に、<a href="./てきすとでっき.html">てきすとでっき</a>自体に機能を追加してくのでは無く、この作業をする「Unix的GUIツール」を作れないだろうか？</p>
 <p>てきすとでっきはプレーンテキストを空行で区切ったブロックとして扱う。
 だからGUIとしてもブロックを複数選択してアーカイブ、とボタンを押したらアーカイブされて欲しい。</p>
 <p>こうした事を行うUnix的GUIツールとはどうあるべきか？</p>
@@ -78,10 +78,10 @@ GUIでポチポチ選んでアーカイブ、とやりたいという気持ち�
 <p><strong>ブロックを選んで、選ばれたブロックの行数を出力する</strong></p>
 <p>という問題とそれ以外の問題に分けて、前者をGUIツールとして解決する考え方。</p>
 <h3 id="作ってみた、htmnix" tabindex="-1"><a class="header-anchor" href="#作ってみた、htmnix"><span>作ってみた、htmnix</span></a></h3>
-<p>[[htmnix]]という名前のツールを作り、これでてきすとでっきのアーカイブ機能を実装してみた。
-htmnix以外の部分は既存の[[てきすとでっき]]のコードをひっぺがして、nodeで処理するコマンドを作るという形で解決した。</p>
+<p><a href="./htmnix.html">htmnix</a>という名前のツールを作り、これでてきすとでっきのアーカイブ機能を実装してみた。
+htmnix以外の部分は既存の<a href="./てきすとでっき.html">てきすとでっき</a>のコードをひっぺがして、nodeで処理するコマンドを作るという形で解決した。</p>
 <p>nodeでの処理はいまいちで、適切な言語を使えばもっと短く簡単に書けるとは思ったが、既存のコードがあるのでまぁいいか、という結論。</p>
-<p>[[htmnix]]自体は数時間で作れるような簡単なツールで、最初に作ったあとはほとんど修正が必要無かった。
+<p><a href="./htmnix.html">htmnix</a>自体は数時間で作れるような簡単なツールで、最初に作ったあとはほとんど修正が必要無かった。
 開発時間のほとんどはその上のnodeやシェルクスクリプトの試行錯誤なので、
 アーカイブ機能を持ったGUIの開発という問題を、ちょっとのGUIツールの開発と大多数の通常のUnixシェルスクリプトの開発という問題に分解出来た気がする。</p>
 <h2 id="関連リンク等" tabindex="-1"><a class="header-anchor" href="#関連リンク等"><span>関連リンク等</span></a></h2>

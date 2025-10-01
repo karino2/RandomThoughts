@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[書籍]]</li>
-<li>[[オーディオブック]]</li>
+<li><a href="./書籍.html">書籍</a></li>
+<li><a href="./オーディオブック.html">オーディオブック</a></li>
 </ul>
 <p><a href="https://amzn.to/4fIsIiO" target="_blank" rel="noopener noreferrer">amazon: イーロン・マスク 上 </a></p>
 <h2 id="paypalくらいまで聞いた-2025-01-04-土" tabindex="-1"><a class="header-anchor" href="#paypalくらいまで聞いた-2025-01-04-土"><span>paypalくらいまで聞いた 2025-01-04 (土)</span></a></h2>

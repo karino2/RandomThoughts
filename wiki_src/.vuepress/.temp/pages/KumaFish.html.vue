@@ -1,7 +1,7 @@
 <template><div><ul>
-<li>[[サーフボード]]</li>
-<li>[[ソフトボード]]</li>
-<li>[[LittleMarley]]</li>
+<li><a href="./サーフボード.html">サーフボード</a></li>
+<li><a href="./ソフトボード.html">ソフトボード</a></li>
+<li><a href="./LittleMarley.html">LittleMarley</a></li>
 </ul>
 <p>MFのソフトボードのkuma fishをこのページではKumaFishと呼ぶことにする。</p>
 <h1 id="mf-kuma-fish-5-8-32-74l-2021" tabindex="-1"><a class="header-anchor" href="#mf-kuma-fish-5-8-32-74l-2021"><span>MF kuma fish 5'8 32.74l (2021？)</span></a></h1>

@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[囲碁]]</li>
-<li>[[自作アプリ]]</li>
+<li><a href="./囲碁.html">囲碁</a></li>
+<li><a href="./自作アプリ.html">自作アプリ</a></li>
 </ul>
 <h2 id="url" tabindex="-1"><a class="header-anchor" href="#url"><span>url</span></a></h2>
 <ul>
@@ -257,7 +257,7 @@ Go81がいい感じに弱い可能性もあるが、強さが分からない段�
 <p>以下にこの辺のエンジンのKGSの棋力が載っている。</p>
 <p><a href="https://note.com/gouponline/n/n8d98d6ca422e" target="_blank" rel="noopener noreferrer">かつて存在した「初心者向け囲碁対局サイトGo-Up!」について（墓標）｜Go-Up</a></p>
 <h3 id="gtpエンジン同士を戦わせる" tabindex="-1"><a class="header-anchor" href="#gtpエンジン同士を戦わせる"><span>GTPエンジン同士を戦わせる</span></a></h3>
-<p>[[囲碁エンジン評価]]に移動。</p>
+<p><a href="./囲碁エンジン評価.html">囲碁エンジン評価</a>に移動。</p>
 <h3 id="続-gobandroidのgnugoプラグインのコードを読む" tabindex="-1"><a class="header-anchor" href="#続-gobandroidのgnugoプラグインのコードを読む"><span>続： gobandroidのGnuGoプラグインのコードを読む</span></a></h3>
 <p>gnugoのコードベースの理解が進んだのでもう一度gobandroid用のエンジンのサービスのコードを軽く眺める。
 どうも口としてはplayGtpというものだけにして、文字列を送る感じにしているようだ。

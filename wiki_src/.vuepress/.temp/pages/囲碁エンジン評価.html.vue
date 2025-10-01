@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[囲碁]]</li>
-<li>[[パオ碁]]</li>
+<li><a href="./囲碁.html">囲碁</a></li>
+<li><a href="./パオ碁.html">パオ碁</a></li>
 <li><a href="https://gorogoronyan.web.fc2.com/igo/kgs_bot1.html" target="_blank" rel="noopener noreferrer">囲碁・KGSの思考エンジンと棋譜</a></li>
 </ul>
 <p>適度に弱いエンジンを求めてパラメータをいろいろ調整したりするページ。</p>

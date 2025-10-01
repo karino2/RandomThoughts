@@ -1,4 +1,4 @@
-<template><div><p>[[【書籍】「学力」の経済学]]のAmazonレビューで批判的なものを幾つか見た時に思った事。</p>
+<template><div><p><a href="./【書籍】「学力」の経済学.html">【書籍】「学力」の経済学</a>のAmazonレビューで批判的なものを幾つか見た時に思った事。</p>
 <h2 id="実験経済学の手法と長所、短所" tabindex="-1"><a class="header-anchor" href="#実験経済学の手法と長所、短所"><span>実験経済学の手法と長所、短所</span></a></h2>
 <p>実験経済学の手法とは、いわゆるLaboratory experimentと経済学で言われている物で、経済学の問題でもrandomized double blindの実験を行う、というもの。</p>
 <p>もちろん経済全体には行えないので、小さな規模で知りたい事を試せるような実験をデザインする訳だ。</p>

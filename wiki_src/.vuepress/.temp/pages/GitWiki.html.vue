@@ -1,5 +1,5 @@
 <template><div><p>git-wiki。ファイル名にハイフンが入るのがなんか嫌なのでGitWikiというWikiNameにしたが。</p>
-<p>[[GithubPages]]のテンプレートとして実装されているwiki。[[サブWiki]]の公開に使っている。
+<p><a href="./GithubPages.html">GithubPages</a>のテンプレートとして実装されているwiki。<a href="./サブWiki.html">サブWiki</a>の公開に使っている。
 なかなか良く出来ていると思うが、びっくりするほどググれない。</p>
 <ul>
 <li><a href="https://github.com/Drassil/git-wiki" target="_blank" rel="noopener noreferrer">git-wiki</a>
@@ -26,7 +26,7 @@ urlをMarkdown形式でコピーするExtensionとかの振る舞いがいまい
 <p>文字回りはLiquidのドキュメントが良さそう。</p>
 <p><a href="https://shopify.github.io/liquid/basics/introduction/" target="_blank" rel="noopener noreferrer">Introduction – Liquid template language</a></p>
 <p>head.htmlでタイトルを生成して適当な変数にassignしておく。ついでにtitleタグもここで生成する。</p>
-<p>meta.htmlのseoでtitleが生成されているようだが、git-wikiではseoはあまり役に立つ情報を生成しているようには見えないので、これをmeta.htmlから外す。ついでに<code v-pre>og:title</code>をhead.htmlで作ったものに更新しておく。（追記： [[GithubPages]]で同じ作業をした時に、seoに<code v-pre>title=false</code>を指定する事が出来るのを知ったので、もっと良いやり方もありそう）</p>
+<p>meta.htmlのseoでtitleが生成されているようだが、git-wikiではseoはあまり役に立つ情報を生成しているようには見えないので、これをmeta.htmlから外す。ついでに<code v-pre>og:title</code>をhead.htmlで作ったものに更新しておく。（追記： <a href="./GithubPages.html">GithubPages</a>で同じ作業をした時に、seoに<code v-pre>title=false</code>を指定する事が出来るのを知ったので、もっと良いやり方もありそう）</p>
 <p>あとはページのトップにh1で表示すればいいか。
 これは<code v-pre>_includes/git-wiki/sections/content/content.html</code>が手頃に見えたので、tocの上にh1でタイトルを表示しておく。
 ついでにtocと記事の区切りがわかりにくいと思っていたのでhrを挟んでおく。

@@ -1,8 +1,8 @@
-<template><div><p>[[技術的なメモ]], [[JavaScript]]</p>
+<template><div><p><a href="./技術的なメモ.html">技術的なメモ</a>, <a href="./JavaScript.html">JavaScript</a></p>
 <p>みんな大好きTypeScript。</p>
 <ul>
 <li><a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html" target="_blank" rel="noopener noreferrer">TypeScript: Documentation - TypeScript for JavaScript Programmers</a></li>
-<li>[[Deno]]</li>
+<li><a href="./Deno.html">Deno</a></li>
 <li><a href="https://exploringjs.com/tackling-ts/ch_typescript-essentials.html" target="_blank" rel="noopener noreferrer">The essentials of TypeScript • Tackling TypeScript</a> 入門記事</li>
 </ul>
 <p><strong>VSCode 関連</strong></p>

@@ -1,4 +1,4 @@
-<template><div><p>[[Mac]]</p>
+<template><div><p><a href="./Mac.html">Mac</a></p>
 <h2 id="macショートカット" tabindex="-1"><a class="header-anchor" href="#macショートカット"><span>Macショートカット</span></a></h2>
 <ul>
 <li>隠しファイルの表示方法: Shift+Cmd+.</li>

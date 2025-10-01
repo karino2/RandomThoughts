@@ -1,4 +1,4 @@
-<template><div><p>[[自作アプリ]]</p>
+<template><div><p><a href="./自作アプリ.html">自作アプリ</a></p>
 <ul>
 <li><a href="https://play.google.com/store/apps/details?id=io.github.karino2.mddeck" target="_blank" rel="noopener noreferrer">MDDeck - Google Play のアプリ</a>
 <ul>
@@ -9,20 +9,20 @@
 <li><a href="https://karino2.github.io/2024/01/06/mddeck_release.html" target="_blank" rel="noopener noreferrer">MDDeckというアプリを作ってリリースしました！ - なーんだ、ただの水たまりじゃないか</a></li>
 </ul>
 <h2 id="あらすじ" tabindex="-1"><a class="header-anchor" href="#あらすじ"><span>あらすじ</span></a></h2>
-<p>仕事のメモは[[TeFWiki]]を使っているのだが、情報として残したい訳ではないとりあえずのメモでいちいち置く場所とかを考えるのがかったるい。
+<p>仕事のメモは<a href="./TeFWiki.html">TeFWiki</a>を使っているのだが、情報として残したい訳ではないとりあえずのメモでいちいち置く場所とかを考えるのがかったるい。
 mdでGitHubのissueみたいに足していけるのが欲しい。</p>
-<p>[[てきすとでっき]]とすごく似ているが、コンフリクトせず、1セル1ファイルのmd。
-[[てきすとTL]]のmd版という感じ。</p>
-<p>似たようなアプリ三つも作るのはどうなんだとも思うが、まぁいい。PC版は[[Electron]]で作った。</p>
+<p><a href="./てきすとでっき.html">てきすとでっき</a>とすごく似ているが、コンフリクトせず、1セル1ファイルのmd。
+<a href="./てきすとTL.html">てきすとTL</a>のmd版という感じ。</p>
+<p>似たようなアプリ三つも作るのはどうなんだとも思うが、まぁいい。PC版は<a href="./Electron.html">Electron</a>で作った。</p>
 <h2 id="仕様" tabindex="-1"><a class="header-anchor" href="#仕様"><span>仕様</span></a></h2>
-<p>[[てきすとTL]]と同じ感じだがmdなところが違うだけ。</p>
+<p><a href="./てきすとTL.html">てきすとTL</a>と同じ感じだがmdなところが違うだけ。</p>
 <h2 id="現状と雑感-2024-01-06-土" tabindex="-1"><a class="header-anchor" href="#現状と雑感-2024-01-06-土"><span>現状と雑感 - 2024-01-06 (土)</span></a></h2>
 <p>Electron版、Android版ともに一通り完成してリリース作業を終えた。</p>
-<p>やはりコンフリクトを気にせずに追加出来るのは[[てきすとでっき]]より良いし、
+<p>やはりコンフリクトを気にせずに追加出来るのは<a href="./てきすとでっき.html">てきすとでっき</a>より良いし、
 セルの境界がファイルなのも分かりやすい。</p>
 <p>流れていってしまうのがどうなのかは現時点ではまだ分からない。もう少し使い続けて考えたい。</p>
 <h2 id="開発メモ" tabindex="-1"><a class="header-anchor" href="#開発メモ"><span>開発メモ</span></a></h2>
-<p>ビルド周りは[[てきすとでっき]]参照。</p>
+<p>ビルド周りは<a href="./てきすとでっき.html">てきすとでっき</a>参照。</p>
 <h2 id="android版メモ" tabindex="-1"><a class="header-anchor" href="#android版メモ"><span>Android版メモ</span></a></h2>
 <ul>
 <li><a href="https://github.com/commonmark/commonmark-java" target="_blank" rel="noopener noreferrer">commonmark/commonmark-java: Java library for parsing and rendering CommonMark (Markdown)</a> JetBrainsの<a href="https://github.com/JetBrains/markdown" target="_blank" rel="noopener noreferrer">JetBrains/markdown: Markdown parser written in kotlin</a>はリストの終わりの処理とかがバグってるのでcommon markに乗り換え</li>
@@ -43,7 +43,7 @@ mdでGitHubのissueみたいに足していけるのが欲しい。</p>
 <div class="language-kotlin line-numbers-mode" data-highlighter="prismjs" data-ext="kt"><pre v-pre><code class="language-kotlin"><span class="line">    <span class="token function">implementation</span><span class="token punctuation">(</span><span class="token string-literal singleline"><span class="token string">"com.github.Qawaz.compose-code-editor:codeeditor-android:v3.1.1"</span></span><span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="古くなった内容" tabindex="-1"><a class="header-anchor" href="#古くなった内容"><span>古くなった内容</span></a></h2>
-<p>最初は[[Deno]]と[[WebUI]]を使っていたがElectronに乗り換えたDenoとWebUIの頃のメモを以下に残しておく。</p>
+<p>最初は<a href="./Deno.html">Deno</a>と<a href="./WebUI.html">WebUI</a>を使っていたがElectronに乗り換えたDenoとWebUIの頃のメモを以下に残しておく。</p>
 <ul>
 <li><a href="https://github.com/karino2/MDDeck_WebUI" target="_blank" rel="noopener noreferrer">karino2/MDDeck_WebUI: MDDeck, desktop version (WebUI and Deno).</a>
 <ul>

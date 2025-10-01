@@ -3,7 +3,7 @@
 <h2 id="外部リンク" tabindex="-1"><a class="header-anchor" href="#外部リンク"><span>外部リンク</span></a></h2>
 <ul>
 <li><a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages - Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.</a> 本家</li>
-<li>[[VuePress]] サイトジェネレータだがGithubPagesと合わせて使う事が多いのでここに置く。</li>
+<li><a href="./VuePress.html">VuePress</a> サイトジェネレータだがGithubPagesと合わせて使う事が多いのでここに置く。</li>
 </ul>
 <p>以下はjekyll関連でよく参照するもの。</p>
 <ul>
@@ -56,15 +56,15 @@ minimaにサイドバー足す方向で進めよう。</p>
 <p>おお、これでいいじゃん。</p>
 <h2 id="github-pagesを使ったシステム" tabindex="-1"><a class="header-anchor" href="#github-pagesを使ったシステム"><span>github pagesを使ったシステム</span></a></h2>
 <ul>
-<li>[[GitWiki]]</li>
-<li>[[GithubPagesGallery]]</li>
+<li><a href="./GitWiki.html">GitWiki</a></li>
+<li><a href="./GithubPagesGallery.html">GithubPagesGallery</a></li>
 </ul>
-<p>どちらも良く出来ていて、[[サブWiki]]の公開に使ったり、[[PngNote]]の公開に使ったりしている。
+<p>どちらも良く出来ていて、<a href="./サブWiki.html">サブWiki</a>の公開に使ったり、<a href="./PngNote.html">PngNote</a>の公開に使ったりしている。
 このgithub pagesを使ったシステムは無料でありながらサーバーの運用をしなくても良くていいよな。</p>
 <p>どちらも既存のソフトをgithub pagesに対応しただけという感じになっていて、
 そんなにいろいろは頑張っていない。
 だがそのおかげで、割といじりやすく、足りないものは自分で足して行けて良い。</p>
-<p>同じようにSNS作れないかな？と一瞬考えたが無理だった。＞[[GitHubを使ったSNSを考える]]</p>
+<p>同じようにSNS作れないかな？と一瞬考えたが無理だった。＞<a href="./GitHubを使ったSNSを考える.html">GitHubを使ったSNSを考える</a></p>
 <h2 id="jsonのサーバーに出来ないか" tabindex="-1"><a class="header-anchor" href="#jsonのサーバーに出来ないか"><span>JSONのサーバーに出来ないか</span></a></h2>
 <p>統計グラフ！は、GAEでスクリプトを管理していたが、
 それほど動的である必要は無いので、github pagesでいいんじゃないか？</p>
@@ -85,8 +85,8 @@ minimaにサイドバー足す方向で進めよう。</p>
 少し見たが、includeとdataはフォルダが別っぽいな。やはり何も考えずにjsonを生成する方が良さそう。</p>
 <p>このgistが同じような事を解説しているな。</p>
 <p><a href="https://gist.github.com/MichaelCurrin/f8d908596276bdbb2044f04c352cb7c7" target="_blank" rel="noopener noreferrer">Jekyll - how to build a REST API</a></p>
-<p>追記： [[統計グラフ！]]に書いたように、結局jsonは毎回全部送る事にした。大したサイズでは無いので。If-Modified-Sinceで普段は送られないのでいいだろう。
-そしてhtmlの生成は遊びで[[TypeScript]]でやってみた。
+<p>追記： <a href="./統計グラフ！.html">統計グラフ！</a>に書いたように、結局jsonは毎回全部送る事にした。大したサイズでは無いので。If-Modified-Sinceで普段は送られないのでいいだろう。
+そしてhtmlの生成は遊びで<a href="./TypeScript.html">TypeScript</a>でやってみた。
 悪くないが、短かったのでJSで良かったな。</p>
 <h2 id="カスタマイズいろいろ" tabindex="-1"><a class="header-anchor" href="#カスタマイズいろいろ"><span>カスタマイズいろいろ</span></a></h2>
 <p>そこそこカスタマイズをいろいろやっているので、ここにリンクをまとめていきたい。</p>
@@ -102,7 +102,7 @@ minimaにサイドバー足す方向で進めよう。</p>
 <li><a href="https://github.com/karino2/karino2.github.io/commit/e143bf207dd27daddf8d0b4f5309876ce3bf8a2b" target="_blank" rel="noopener noreferrer">Fix prev tilte modification. · karino2/karino2.github.io@e143bf2</a></li>
 <li><a href="https://github.com/karino2/karino2.github.io/commit/21583b9bac95f588b2afe7d2251cafb49b5fe658" target="_blank" rel="noopener noreferrer">Update head.html · karino2/karino2.github.io@21583b9</a></li>
 </ul>
-<p>なお、[[GitWiki]]でも同じような作業をしている。</p>
+<p>なお、<a href="./GitWiki.html">GitWiki</a>でも同じような作業をしている。</p>
 <p>page.titleなどの変数は以下。 <a href="https://jekyllrb.com/docs/variables/" target="_blank" rel="noopener noreferrer">Variables - Jekyll • Simple, blog-aware, static sites</a></p>
 </div></template>
 

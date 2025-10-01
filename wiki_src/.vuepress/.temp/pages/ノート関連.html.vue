@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[Wikiとノート]]</li>
-<li>[[講義ノート]]</li>
+<li><a href="./Wikiとノート.html">Wikiとノート</a></li>
+<li><a href="./講義ノート.html">講義ノート</a></li>
 </ul>
 </div></template>
 

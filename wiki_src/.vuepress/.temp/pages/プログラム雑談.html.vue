@@ -1,5 +1,5 @@
 <template><div><p><a href="https://anchor.fm/karino2/" target="_blank" rel="noopener noreferrer">プログラム雑談@anchor.fm</a></p>
-<p>私がやっているpodcast。[[お便りコーナー]]とかを始めて見る。</p>
+<p>私がやっているpodcast。<a href="./お便りコーナー.html">お便りコーナー</a>とかを始めて見る。</p>
 <hr>
 <h2 id="番外編、youtubeライブ" tabindex="-1"><a class="header-anchor" href="#番外編、youtubeライブ"><span>番外編、YouTubeライブ</span></a></h2>
 <ul>
@@ -8,7 +8,7 @@
 </ul>
 <hr>
 <h2 id="プログラム雑談で聞いてみたいトピックなど" tabindex="-1"><a class="header-anchor" href="#プログラム雑談で聞いてみたいトピックなど"><span>プログラム雑談で聞いてみたいトピックなど</span></a></h2>
-<p>[[お便りコーナー]]などで出てそのうち話してみたいと思う話などをメモしておく。</p>
+<p><a href="./お便りコーナー.html">お便りコーナー</a>などで出てそのうち話してみたいと思う話などをメモしておく。</p>
 <ul>
 <li>フリーランスのよしあしや生活の実体についての話</li>
 <li>食べ物飲み物についての「これはよかった」的な話</li>

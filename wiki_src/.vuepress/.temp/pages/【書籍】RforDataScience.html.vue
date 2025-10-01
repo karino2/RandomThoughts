@@ -4,7 +4,7 @@
 <p>略称はr4dsらしい。tidyverseの作者自ら書いたデータ分析の入門書。</p>
 <p>tidyverseを使ってデータ分析をしよう、という本。tidyverseはggplot2とかdplyrとかをすべて含めたもの。</p>
 <p>web上で公開されているのが十分BOOXで読みやすかったので、webを読む。コードをCopyボタンでコピーしてR Studioで試す事が出来るので、便利で良いね、web版。</p>
-<p>[[R]]</p>
+<p><a href="./R.html">R</a></p>
 <h2 id="os-xへのr-studioのインストール" tabindex="-1"><a class="header-anchor" href="#os-xへのr-studioのインストール"><span>OS XへのR Studioのインストール</span></a></h2>
 <p>ちょっと3章のbar chartのidentityの説明で、挙動が想像と違ったので、実際のデータで試したくなる。
 R Studioをインストールするか。
@@ -107,7 +107,7 @@ monthとdayのタプルのユニークなペアの数になっているな。</p
 <h2 id="_12章、tidy-data" tabindex="-1"><a class="header-anchor" href="#_12章、tidy-data"><span>12章、Tidy data</span></a></h2>
 <p>tidy dataの論文はhttpsじゃない所に置いてある。<a href="http://www.jstatsoft.org/v59/i10/paper" target="_blank" rel="noopener noreferrer">http://www.jstatsoft.org/v59/i10/paper</a>。
 そのうち読みたい。</p>
-<p>影響されて、ファイル操作の文法というのを考えてみる。[[GoFO]]</p>
+<p>影響されて、ファイル操作の文法というのを考えてみる。<a href="./GoFO.html">GoFO</a></p>
 <p>pivot_longer, pivot_wider, separateの３つとmissing value関連が基本か。
 割と単純だがこれだけで十分なんだろうか？最後の例はなかなか複雑で、これがここまで素直に扱えるならだいたいのケースでOKという気もするが。</p>
 <p>tapplyとか使うよりはずっと楽だね。</p>
@@ -129,7 +129,7 @@ monthとdayのタプルのユニークなペアの数になっているな。</p
 それぞれ良さがあるよねぇ。</p>
 <p>flexdashboardというのを使うらしい。 <a href="https://pkgs.rstudio.com/flexdashboard/" target="_blank" rel="noopener noreferrer">R Markdown Format for Flexible Dashboards • flexdashboard</a></p>
 <h2 id="_30-lab-notebook" tabindex="-1"><a class="header-anchor" href="#_30-lab-notebook"><span>30. Lab Notebook</span></a></h2>
-<p>これは結構興味ある話題なので独立したページを作る。 [[LabNotebook]]</p>
+<p>これは結構興味ある話題なので独立したページを作る。 <a href="./LabNotebook.html">LabNotebook</a></p>
 <h2 id="読み終わった感想、tidyverseや現代的なr環境を学ぶのには良かった" tabindex="-1"><a class="header-anchor" href="#読み終わった感想、tidyverseや現代的なr環境を学ぶのには良かった"><span>読み終わった感想、tidyverseや現代的なR環境を学ぶのには良かった</span></a></h2>
 <p>理論には詳しいがプログラムは素人、みたいなRの入門者向けの、データ分析の入門書。
 ggplot2やdplyrで有名なHadley Wickhamみずから書いた入門書。なかなかこういう本は無いよなぁ。</p>

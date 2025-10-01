@@ -22,15 +22,16 @@ const options = {
 
 // import wikilinks from '@kwvanderlinde/markdown-it-wikilinks'
 import wikilinks from '@gardeners/markdown-it-wikilinks'
+// import wikilinks from 'markdown-it-wikilinks'
+        console.log("here")
 
-export default defineUserConfig({
-  bundler: viteBundler(),
-  theme: defaultTheme(),
-  // plugins: [wikilinks],
-  markdown: {
-    extendMarkdown: (md) => {
-      md.use(wikilinks(options))
-      // md.use(wikilinks({}))
-    },
-  },
-})
+  export default defineUserConfig({
+    bundler: viteBundler(),
+    theme: defaultTheme(),
+    // plugins: [wikilinks],
+      extendsMarkdown: md => {
+        console.log("here2")
+        md.use(wikilinks(options))
+        // md.use(wikilinks({}))
+      },
+  })

@@ -1,5 +1,5 @@
-<template><div><p>自分の過去のブログやtweetやノートなどをローカルのフォルダに[[MarkDown]]で保存して、
-grep出来るようにする、というシステムというかコンベンションに従ってデータを蓄積するスタイル。[[FSharp]]で書いている。</p>
+<template><div><p>自分の過去のブログやtweetやノートなどをローカルのフォルダに<a href="./MarkDown.html">MarkDown</a>で保存して、
+grep出来るようにする、というシステムというかコンベンションに従ってデータを蓄積するスタイル。<a href="./FSharp.html">FSharp</a>で書いている。</p>
 <ul>
 <li><a href="https://github.com/karino2/unimemo" target="_blank" rel="noopener noreferrer">karino2/unimemo: Convert my all memo to markdown.</a></li>
 <li><a href="https://karino2.github.io/2021/01/30/unimemo.html" target="_blank" rel="noopener noreferrer">自分の書いたブログやtweetなどをローカルでgrepできるようにしよう - なーんだ、ただの水たまりじゃないか</a> unimemoの基本的な構造</li>
@@ -9,7 +9,7 @@ grep出来るようにする、というシステムというかコンベンシ�
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ grep -RS "endonuclease" *</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>なんか最近Macのオプションが変わってRSが必要になった。</p>
-<p>[[mdvcat]]と組み合わせてすごく快適。</p>
+<p><a href="./mdvcat.html">mdvcat</a>と組み合わせてすごく快適。</p>
 <h3 id="google-keep" tabindex="-1"><a class="header-anchor" href="#google-keep"><span>Google Keep</span></a></h3>
 <p>exportしたhtmlをマークダウンにしようとして途中で止まった時のメモ。</p>
 <p><a href="https://github.com/djsudduth/keep-it-markdown" target="_blank" rel="noopener noreferrer">djsudduth/keep-it-markdown: Convert Google Keep notes dynamically to markdown for Obsidian and Notion using the unofficial Keep API</a> これとかほとんど同じ目的なのだが、APIでアクセスする為にログインするのと、そこで使うkeepのAPIが野良なのでちょっと信頼できん。</p>

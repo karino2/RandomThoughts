@@ -1,4 +1,4 @@
-<template><div><p>[[お絵描き]]の[[書籍]]。</p>
+<template><div><p><a href="./お絵描き.html">お絵描き</a>の<a href="./書籍.html">書籍</a>。</p>
 <ul>
 <li><a href="https://amzn.to/4d0zoYD" target="_blank" rel="noopener noreferrer">amazon: はじめてのデッサン教室 60秒右脳ドローイングで絵が感動的にうまくなる！</a></li>
 <li><a href="https://www.youtube.com/@user-qr1xb5fi9z/videos" target="_blank" rel="noopener noreferrer">はじめてのデッサン教室 - YouTube</a> 公式動画。これだけでも十分なくらい良く出来ている動画。実際に描いているのを見れるのは良いね。</li>

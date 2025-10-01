@@ -1,4 +1,4 @@
-<template><div><p>[[ゆっくり実況]]で[[git]]の解説を作ろう、企画。</p>
+<template><div><p><a href="./ゆっくり実況.html">ゆっくり実況</a>で<a href="./git.html">git</a>の解説を作ろう、企画。</p>
 <ul>
 <li><a href="https://www.youtube.com/playlist?list=PLxenskds9g0A5V8vJ0QrKHGaCDpN97hOy" target="_blank" rel="noopener noreferrer">ゆっくり中級git - YouTube</a></li>
 <li><a href="https://karino2.github.io/2024/02/12/yukkuri_git.html" target="_blank" rel="noopener noreferrer">中級gitのゆっくり解説動画を作り始めました - なーんだ、ただの水たまりじゃないか</a></li>
@@ -74,7 +74,7 @@
 割と最後まで見てもらえてそう。やはりゆっくり動画としての面白さがあると、最後まで見てもらいやすいよな。</p>
 <h2 id="作る前に思ってた事" tabindex="-1"><a class="header-anchor" href="#作る前に思ってた事"><span>作る前に思ってた事</span></a></h2>
 <p>ゆっくりkotlinを作ろうとしたが、kotlinはちょっと先が長いので、もう少し短いので反響を見たい気がする。
-という事でgitで何か作れないかな、と思っている。＞[[git]]</p>
+という事でgitで何か作れないかな、と思っている。＞<a href="./git.html">git</a></p>
 <p>入門は結構世の中にあるし、本当に学びたければ公式のPro Gitを読めばこれも良く書けている。
 やるならPro Git側かなぁ、という気もする。
 ただそこまで自分も詳しい訳では無いので、もうちょっとケーススタディ的な事をやりたい気がする。</p>

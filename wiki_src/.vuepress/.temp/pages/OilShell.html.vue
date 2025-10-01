@@ -71,7 +71,7 @@ interactiveに使ってもそんなに良い事は無く、シェルスクリプ
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="vs-code-extension" tabindex="-1"><a class="header-anchor" href="#vs-code-extension"><span>VS Code Extension</span></a></h2>
 <p>自分で作る事にした。</p>
-<p>[[OilShellVSCExtension]]</p>
+<p><a href="./OilShellVSCExtension.html">OilShellVSCExtension</a></p>
 </div></template>
 
 

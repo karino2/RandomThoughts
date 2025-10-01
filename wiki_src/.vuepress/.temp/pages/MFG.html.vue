@@ -1,4 +1,4 @@
-<template><div><p>[[技術的なメモ]]、[[CG]]</p>
+<template><div><p><a href="./技術的なメモ.html">技術的なメモ</a>、<a href="./CG.html">CG</a></p>
 <p>私（karino2）が仕事で作っているGPU用フィルタ記述言語。</p>
 <ul>
 <li>公式ページ <a href="https://modernfilterlanguageforgpu.org/" target="_blank" rel="noopener noreferrer">MFG - Modern Filter-language for GPU / MFG Studio</a></li>
@@ -8,7 +8,7 @@
 </ul>
 <h2 id="グレースケール" tabindex="-1"><a class="header-anchor" href="#グレースケール"><span>グレースケール</span></a></h2>
 <p>良く使うのでコードを書いておく。</p>
-<p>[[【書籍】PrinciplesOfDigitalImageProcessing]]の一冊目のp202とp203に以下のweightが載っている。</p>
+<p><a href="./【書籍】PrinciplesOfDigitalImageProcessing.html">【書籍】PrinciplesOfDigitalImageProcessing</a>の一冊目のp202とp203に以下のweightが載っている。</p>
 <ul>
 <li><code v-pre>(0.299, 0.587, 0.114)</code> テレビの信号処理で提案されて業界で良く使われているもの</li>
 <li><code v-pre>(0.215, 0.7154, 0.072)</code> ITU-BT.709の推奨、この本の他の場所ではこれを使っている</li>
@@ -19,7 +19,7 @@
 <li><code v-pre>(0.309, 0.609, 0.082)</code></li>
 </ul>
 <p>となっている。</p>
-<p>また、[[【書籍】OpenGL4ShadingLanguageCook]]のサンプルコードでは、例えばEdge Detectionのフィルタのluminanceは以下のベクトルをかけて求めている。</p>
+<p>また、<a href="./【書籍】OpenGL4ShadingLanguageCook.html">【書籍】OpenGL4ShadingLanguageCook</a>のサンプルコードでは、例えばEdge Detectionのフィルタのluminanceは以下のベクトルをかけて求めている。</p>
 <ul>
 <li><code v-pre>(0.2126, 0.7152, 0.0722)</code></li>
 </ul>

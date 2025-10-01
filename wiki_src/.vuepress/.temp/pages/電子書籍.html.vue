@@ -47,7 +47,7 @@
 <p>ポチったあとしばらく読めない。
 15時ころポチったら17時45分ころ見れるようになった。（メールが来る）
 気分が高まった時に読めないのはいまいち。</p>
-<p>また、[[【書籍】TheArtOfComputerProgramming]]などはコードのリストや数式などがすごい読みづらかった。Kindleの方がだいぶ良さそう。</p>
+<p>また、<a href="./【書籍】TheArtOfComputerProgramming.html">【書籍】TheArtOfComputerProgramming</a>などはコードのリストや数式などがすごい読みづらかった。Kindleの方がだいぶ良さそう。</p>
 <p>レイアウト固定とか文章主体のものを読むには悪くないので、そういったものを選ぶと、ポイント20%還元なので満足度は高い。
 エッセイとか語学書とかには良い。</p>
 <h2 id="雑多なメモ" tabindex="-1"><a class="header-anchor" href="#雑多なメモ"><span>雑多なメモ</span></a></h2>

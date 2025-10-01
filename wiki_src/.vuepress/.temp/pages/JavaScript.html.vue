@@ -1,9 +1,9 @@
 <template><div><p>みんな大好きJavaScript</p>
 <ul>
-<li>[[Electron]]</li>
-<li>[[TypeScript]]</li>
+<li><a href="./Electron.html">Electron</a></li>
+<li><a href="./TypeScript.html">TypeScript</a></li>
 <li><a href="https://2ality.com/2025/08/learning-web-dev-toc.html" target="_blank" rel="noopener noreferrer">New series of blog posts: learning web development</a> 現代的な入門としていいかもしれん。</li>
-<li>[[VuePress]] nodejs製のサイトジェネレータ</li>
+<li><a href="./VuePress.html">VuePress</a> nodejs製のサイトジェネレータ</li>
 </ul>
 <h2 id="jdoc" tabindex="-1"><a class="header-anchor" href="#jdoc"><span>JDoc</span></a></h2>
 <p><a href="https://karino2.github.io/2023/08/19/jsdoc_is_nice.html" target="_blank" rel="noopener noreferrer">JSDocいいね！ - なーんだ、ただの水たまりじゃないか</a></p>
@@ -34,8 +34,8 @@ markdownのリンクとして、けれど縦棒をハイフンに置き換える
 <h2 id="prismjs" tabindex="-1"><a class="header-anchor" href="#prismjs"><span>prismjs</span></a></h2>
 <p><a href="https://prismjs.com/" target="_blank" rel="noopener noreferrer">Prism</a></p>
 <p>JS製のシンタックスハイライト。小さい。</p>
-<p>[[TeFWiki]]のAndroid版はassetsにprismjsを入れている。こういう用途には小さくて良い。</p>
-<p>[[MFG]]のシンタックスハイライトも以下に用意した。＞<a href="https://github.com/karino2/MFG/tree/main/tools/prism-mfg" target="_blank" rel="noopener noreferrer">MFG/tools/prism-mfg at main · karino2/MFG</a></p>
+<p><a href="./TeFWiki.html">TeFWiki</a>のAndroid版はassetsにprismjsを入れている。こういう用途には小さくて良い。</p>
+<p><a href="./MFG.html">MFG</a>のシンタックスハイライトも以下に用意した。＞<a href="https://github.com/karino2/MFG/tree/main/tools/prism-mfg" target="_blank" rel="noopener noreferrer">MFG/tools/prism-mfg at main · karino2/MFG</a></p>
 </div></template>
 
 

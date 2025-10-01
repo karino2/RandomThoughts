@@ -1,4 +1,4 @@
-<template><div><p>[[Folang]]</p>
+<template><div><p><a href="./Folang.html">Folang</a></p>
 <p>開発日記などが長くなってきたので、古いものを置いておく場所。</p>
 <h2 id="開発日記過去ログ" tabindex="-1"><a class="header-anchor" href="#開発日記過去ログ"><span>開発日記過去ログ</span></a></h2>
 <p>昔のもの。</p>
@@ -267,7 +267,7 @@ golangの概念と被っているものを入れるのは良くない気もす�
 ポインタを扱いたい時に困るが、それはgoの型を持ち回るextern的な奴でラップする感じで凌ぎたい。</p>
 <p>これでざっと書いたftype.foがトランスパイル出来るはず、と動かしてみるとちょこちょこバグが出てくるがそれらを直していったら無事トランスパイル出来た。
 まだftype.goの機能はほとんど入ってないが、最初にUnitTest出来そうな単位が初めてコンパイル出来たという事で記念すべき一歩ではある。</p>
-<p>ftype.goを眺めているが、スライス周りのmapとかパイプライン演算子とか整備していけばだいたい[[FSharp]]っぽく書けそうだな。
+<p>ftype.goを眺めているが、スライス周りのmapとかパイプライン演算子とか整備していけばだいたい<a href="./FSharp.html">FSharp</a>っぽく書けそうだな。
 もう2〜3日くらい実装すれば基本的な事は書ける表現力に至れそうな気がする。やっぱfor文回すよりは楽だよなぁ。</p>
 <p>次のUnitTestに向けて使う関数を書いてみた。</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">let fargs (ft:FFunc) =</span>
@@ -407,7 +407,7 @@ slice.Takeはgenericsが必要な事に気づく。幸いgolangのgenericsは十
 <p>生成されたコードを見ていたら、パイプ演算子はインライン化した方が良かったなぁ、という気がしてきた。
 まぁ一般的な仕組みとしてこの辺を整備しつつ知ってるbinopは最適化する、というのが順番としては良さそうなので、まぁしばらくこのまま進めてあとで改善しよう。</p>
 <h3 id="_2025-02-01-土" tabindex="-1"><a class="header-anchor" href="#_2025-02-01-土"><span>2025-02-01 (土)</span></a></h3>
-<p>ちょっと開発日記が長くなってきたので古いのを置く場所を別途作る＞[[Folang過去ログ]]</p>
+<p>ちょっと開発日記が長くなってきたので古いのを置く場所を別途作る＞<a href="./Folang過去ログ.html">Folang過去ログ</a></p>
 <p>今日やりたい事、やった事</p>
 <ul>
 <li>[x] システムimport</li>
@@ -426,7 +426,7 @@ slice.Takeはgenericsが必要な事に気づく。幸いgolangのgenericsは十
 <p>そろそろコメントがほしいな。とりあえずCスタイルのコメントをスペースとして扱おう。＞実装した。</p>
 <p>次はレコードのフィールドアクセスを実装したいがちょっとやる気が尽きたので休憩。文字列連結も作っておきたいな。</p>
 <p>固まった仕様と検討を分離しておく。Discriminated Unionはページを分けたいが、まぁそのうちでいいか。</p>
-<p>文字列連結などはFSharpでは<code v-pre>+</code>なのだが、この二項演算は[[FSharp]]でも優先度が分かりにくい所。
+<p>文字列連結などはFSharpでは<code v-pre>+</code>なのだが、この二項演算は<a href="./FSharp.html">FSharp</a>でも優先度が分かりにくい所。
 以下のようなFSharpコードは</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">hoge a + b</span>
 <span class="line"></span></code></pre>
@@ -537,7 +537,7 @@ destructuringはどうしようかな。無しで済ますかletだけ実装す�
 </ul>
 <p>前からやろうと思っていたpackage_infoのアンダースコア対応をする。これで同じパッケージ内にwrapper.goとか置いてそこでfolangに足りない機能をgoで補う事が出来るようになった。</p>
 <p><code v-pre>&amp;&amp;</code>を使おうとして未実装な事に気づく。ぐぬぬ。＞実装した</p>
-<p>なんかセルフホストは目標が遠すぎるので、モチベーションを保つために現時点でもいろいろ使っていきたい気がする。[[csvplr]]でも移植しようかと思ったら、FParsecを使っていたり。まぁ大したパースじゃないはずなのでそのくらい自作してもいいんだが、最初の実用的なスクリプトにしては重いなぁ。</p>
+<p>なんかセルフホストは目標が遠すぎるので、モチベーションを保つために現時点でもいろいろ使っていきたい気がする。<a href="./csvplr.html">csvplr</a>でも移植しようかと思ったら、FParsecを使っていたり。まぁ大したパースじゃないはずなのでそのくらい自作してもいいんだが、最初の実用的なスクリプトにしては重いなぁ。</p>
 <p>やっぱりここまで来たら気合でセルフホスト進めるか、という気になって進める。</p>
 <p>フィールドアクセスが多段だと動かないのが面倒になってきたのでidentifierが並ぶケースだけ雑に対応。</p>
 <p>大なりと小なりをサポートするのが面倒になってきたので、関数呼び出しにするのでは無くちゃんとBinOpを特別扱いでgolangのネイティブの演算子を吐くように直す。</p>

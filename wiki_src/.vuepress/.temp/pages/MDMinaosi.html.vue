@@ -1,4 +1,4 @@
-<template><div><p>karino2が作っている、[[Electron]]製のマークダウンエディタ。見直しに特化している。</p>
+<template><div><p>karino2が作っている、<a href="./Electron.html">Electron</a>製のマークダウンエディタ。見直しに特化している。</p>
 <ul>
 <li><a href="https://karino2.github.io/2021/04/02/MDMinaosi.html" target="_blank" rel="noopener noreferrer">blog: Markdown見直し用ツール、MDMinaosi</a></li>
 </ul>
@@ -12,7 +12,7 @@
 そこにブロック単位で編集出来る、というもの。</p>
 <p>「小説家になろう」の誤字報告の機能が良くできているので、それに近い感覚で編集出来るアプリが欲しいと思い作った。</p>
 <p>Message Passingの記事の見直しに日常的に使っているが、とても良い。</p>
-<p>なお、Androidの似たコンセプトのアプリ、[[MDTouch]]を途中まで作っているが、まだリリースはしていない。</p>
+<p>なお、Androidの似たコンセプトのアプリ、<a href="./MDTouch.html">MDTouch</a>を途中まで作っているが、まだリリースはしていない。</p>
 </div></template>
 
 

@@ -1,17 +1,17 @@
-<template><div><p>[[TeFWiki]]の機能。</p>
+<template><div><p><a href="./TeFWiki.html">TeFWiki</a>の機能。</p>
 <h3 id="関連リンク" tabindex="-1"><a class="header-anchor" href="#関連リンク"><span>関連リンク</span></a></h3>
 <ul>
 <li><a href="https://karino2.github.io/2021/09/26/TeFWiki_subdir_support.html" target="_blank" rel="noopener noreferrer">blog: TeFWikiのサブディレクトリ対応</a></li>
 <li><a href="https://github.com/karino2/TeFWiki-Electron/blob/main/TeFWiki_concept.md" target="_blank" rel="noopener noreferrer">github: TeFWiki-Electron/TeFWiki_concept.md</a> 英語での簡単な説明</li>
-<li>[[Wikiとノート]]と[[講義ノート]]</li>
-<li>[[GitWiki]]</li>
-<li>[[サブWikiをTeFWIkiの外部機能に出来ないか]]</li>
+<li><a href="./Wikiとノート.html">Wikiとノート</a>と<a href="./講義ノート.html">講義ノート</a></li>
+<li><a href="./GitWiki.html">GitWiki</a></li>
+<li><a href="./サブWikiをTeFWIkiの外部機能に出来ないか.html">サブWikiをTeFWIkiの外部機能に出来ないか</a></li>
 <li><a href="https://karino2.github.io/2022/03/21/subwiki_retrospective.html" target="_blank" rel="noopener noreferrer">blog: サブWikiの振り返り</a> 概ね成功したアイデアだったと言って良さそう</li>
 </ul>
 <h3 id="公開しているサブwiki" tabindex="-1"><a class="header-anchor" href="#公開しているサブwiki"><span>公開しているサブWiki</span></a></h3>
-<p>[[サブWikiリンク]]にまとめた。</p>
+<p><a href="./サブWikiリンク.html">サブWikiリンク</a>にまとめた。</p>
 <h3 id="サブwikiの公開方法" tabindex="-1"><a class="header-anchor" href="#サブwikiの公開方法"><span>サブWikiの公開方法</span></a></h3>
-<p>[[サブWikiの公開手順]]</p>
+<p><a href="./サブWikiの公開手順.html">サブWikiの公開手順</a></p>
 <h3 id="サブwikiとは" tabindex="-1"><a class="header-anchor" href="#サブwikiとは"><span>サブWikiとは？</span></a></h3>
 <p>TeFWikiにはサブWikiという機能がある。
 サブWikiは複数の独立した子Wikiをつくる機能。</p>
@@ -47,7 +47,7 @@ Recent ChangesもそのサブWiki内のWikiNameのみを表示する。</p>
 <h3 id="講義のノートをサブwikiとして公開する" tabindex="-1"><a class="header-anchor" href="#講義のノートをサブwikiとして公開する"><span>講義のノートをサブWIkiとして公開する</span></a></h3>
 <p>また、サブWikiはedXで生物関連の講義ノートを作るために考えた機能でもある。
 講義ローカルの、ページ数が比較的少なく、講義を受け終わったらある程度フリーズされるような細かい単位のWikiを作りたい。
-この辺の事は[[Wikiとノート]]に書いた。</p>
+この辺の事は<a href="./Wikiとノート.html">Wikiとノート</a>に書いた。</p>
 <h3 id="何故ネームスペースじゃなくてサブwikiなのか" tabindex="-1"><a class="header-anchor" href="#何故ネームスペースじゃなくてサブwikiなのか"><span>何故ネームスペースじゃなくてサブWikiなのか？</span></a></h3>
 <p>Wikiの拡張では、ネームスペースは良く見る、準標準くらいの立ち位置にある機能と思う。例えばPukiWikiにはページの階層化、という名前でネームスペースがある。</p>
 <p><a href="https://pukiwiki.osdn.jp/?Use+PukiWiki/%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E9%9A%8E%E5%B1%A4%E5%8C%96" target="_blank" rel="noopener noreferrer">Use PukiWiki/ページの階層化 - PukiWiki-official</a></p>
@@ -62,7 +62,7 @@ Recent ChangesもそのサブWiki内のWikiNameのみを表示する。</p>
 <p>サブWikiは各サブWiki同士はもっと独立していて、そのサブWikiで閉じている。逆に言えばサブWiki同士でリンクを貼ったりはあまりやらない使い方を想定している。特に兄弟とか親へのリンクは貼らない前提（そういう機能も今の所無い）。
 そのサブWikiの中では普通のWikiのように編集をしていけば、自然とそのサブWiki内だけのWikiが出来るようになっている。</p>
 <h2 id="git-wikiでの複数ディレクトリ対応" tabindex="-1"><a class="header-anchor" href="#git-wikiでの複数ディレクトリ対応"><span>git-wikiでの複数ディレクトリ対応</span></a></h2>
-<p>サブWikiごとに別のレポジトリを持つのは面倒なので、[[GitWiki]]の一つのレポジトリに複数のサブディレクトリを掘ってそれぞれにサブWikiを置きたい。</p>
+<p>サブWikiごとに別のレポジトリを持つのは面倒なので、<a href="./GitWiki.html">GitWiki</a>の一つのレポジトリに複数のサブディレクトリを掘ってそれぞれにサブWikiを置きたい。</p>
 <ul>
 <li>recentsをサブディレクトリに</li>
 <li>サイトのタイトルをサブディレクトリの名前に</li>

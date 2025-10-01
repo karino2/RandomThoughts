@@ -2,8 +2,8 @@
 <li><a href="https://github.com/karino2/Calclark" target="_blank" rel="noopener noreferrer">github: karino2/Calclark</a></li>
 <li><a href="https://play.google.com/store/apps/details?id=io.github.karino2.calclark" target="_blank" rel="noopener noreferrer">Calclark - Apps on Google Play</a></li>
 </ul>
-<p>Calclarkとは、[[Starlark]]を電卓っぽく使えるようにしたAndroidアプリである。
-電卓として使う為に<code v-pre>**</code>のサポートなど、一部[[Starlark]]とは変更した部分があるforkである。</p>
+<p>Calclarkとは、<a href="./Starlark.html">Starlark</a>を電卓っぽく使えるようにしたAndroidアプリである。
+電卓として使う為に<code v-pre>**</code>のサポートなど、一部<a href="./Starlark.html">Starlark</a>とは変更した部分があるforkである。</p>
 <p>CalclarkはStarlarkの方言の言語名であると同時にAndroid版のアプリ名でもある。</p>
 <h2 id="コンセプト" tabindex="-1"><a class="header-anchor" href="#コンセプト"><span>コンセプト</span></a></h2>
 <p>pH計算などをしていると、既存の電卓アプリはどうも使いにくい。
@@ -24,11 +24,11 @@
 <h2 id="開発記録" tabindex="-1"><a class="header-anchor" href="#開発記録"><span>開発記録</span></a></h2>
 <p>ここに開発の過程のメモを記しておく。</p>
 <h3 id="はじまり" tabindex="-1"><a class="header-anchor" href="#はじまり"><span>はじまり</span></a></h3>
-<p>[[Starlark]]を電卓っぽく使えるAndroidアプリを作ろうと思う。
+<p><a href="./Starlark.html">Starlark</a>を電卓っぽく使えるAndroidアプリを作ろうと思う。
 ただ、Java版のStarlarkは<code v-pre>**</code>が無かったりmathモジュールが無かったりするので、forkする必要がありそう。</p>
 <p>という事で名前もStarlarkから変えた方がいいかという事でCalclarkという名前にする。
 CalclarkはStarlarkの方言の言語名であると同時にAndroid版のアプリ名でもある。</p>
-<p>[[Starlark]]側に書いたように、ビルドをして動くところまで来た。という事でとりあえずWikiNameを作る。
+<p><a href="./Starlark.html">Starlark</a>側に書いたように、ビルドをして動くところまで来た。という事でとりあえずWikiNameを作る。
 今後の方向性としては、</p>
 <ol>
 <li><code v-pre>**</code>に対応</li>

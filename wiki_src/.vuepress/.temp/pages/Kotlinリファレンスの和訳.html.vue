@@ -22,7 +22,7 @@
 </ul>
 <h2 id="_2023-12-02-土" tabindex="-1"><a class="header-anchor" href="#_2023-12-02-土"><span>2023-12-02 (土)</span></a></h2>
 <p>スコープ関数の和訳の残りを終える。
-[[あおぞらAndroid教室]]が終わったので、和訳もひとまずここで終わりにするかな。</p>
+<a href="./あおぞらAndroid教室.html">あおぞらAndroid教室</a>が終わったので、和訳もひとまずここで終わりにするかな。</p>
 <p>出来たらやりたかった所</p>
 <ul>
 <li>ビルダー関連
@@ -152,7 +152,7 @@ navbar的には一番上から継承までは和訳が終わっている状態�
 <h2 id="_2023-09-23-土" tabindex="-1"><a class="header-anchor" href="#_2023-09-23-土"><span>2023-09-23 (土)</span></a></h2>
 <h3 id="ツアーの和訳終了" tabindex="-1"><a class="header-anchor" href="#ツアーの和訳終了"><span>ツアーの和訳終了</span></a></h3>
 <p>一通りツアーを和訳した。＞<a href="https://karino2.github.io/kotlin-web-site-ja/docs/kotlin-tour-welcome.html" target="_blank" rel="noopener noreferrer">Kotlinツアーへようこそ！ - Kotlin Programming Language</a></p>
-<p>とりあえず[[あおぞらAndroid教室]]でやってもらう分は出来たかな。
+<p>とりあえず<a href="./あおぞらAndroid教室.html">あおぞらAndroid教室</a>でやってもらう分は出来たかな。
 ただリンク先が存在しなかったりする事も結構あるので、とりあえず既存の和訳を新しいファイル名などに対応させていく作業をしたい。</p>
 <h3 id="ナビゲーションの3階層対応" tabindex="-1"><a class="header-anchor" href="#ナビゲーションの3階層対応"><span>ナビゲーションの3階層対応</span></a></h3>
 <p>とりあえずファイル構成を直すにあたり、ナビゲーションバーの階層を深く出来るようにした。

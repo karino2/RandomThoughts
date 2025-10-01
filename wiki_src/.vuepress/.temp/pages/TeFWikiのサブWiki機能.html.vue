@@ -1,4 +1,4 @@
-<template><div><p>[[サブWIki]]に移動</p>
+<template><div><p><a href="./サブWIki.html">サブWIki</a>に移動</p>
 </div></template>
 
 

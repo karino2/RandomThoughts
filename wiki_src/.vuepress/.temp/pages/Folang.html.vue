@@ -1,14 +1,14 @@
 <template><div><ul>
-<li>[[技術的なメモ]]</li>
-<li>[[そのうちやりたい事]]</li>
-<li>[[コマンドラインツールを書くための言語]]</li>
+<li><a href="./技術的なメモ.html">技術的なメモ</a></li>
+<li><a href="./そのうちやりたい事.html">そのうちやりたい事</a></li>
+<li><a href="./コマンドラインツールを書くための言語.html">コマンドラインツールを書くための言語</a></li>
 </ul>
-<p>[[FSharp]]っぽい見た目で[[Go]]として動く言語を作りたいなぁ、と思い、Folangと名付けて開発をしている。</p>
+<p><a href="./FSharp.html">FSharp</a>っぽい見た目で<a href="./Go.html">Go</a>として動く言語を作りたいなぁ、と思い、Folangと名付けて開発をしている。</p>
 <h2 id="レポジトリ" tabindex="-1"><a class="header-anchor" href="#レポジトリ"><span>レポジトリ</span></a></h2>
 <p><a href="https://github.com/karino2/folang/tree/main" target="_blank" rel="noopener noreferrer">karino2/folang: Funcitonal language transpiler to golang.</a></p>
 <h2 id="開発動機" tabindex="-1"><a class="header-anchor" href="#開発動機"><span>開発動機</span></a></h2>
-<p>dotnetはやっぱりかったるさがあるので、runtimeやデプロイは[[Go]]が良いと思う。
-でも言語は[[FSharp]]みたいなのが好きなので、なんかトランスパイルでどうにかならんかな？
+<p>dotnetはやっぱりかったるさがあるので、runtimeやデプロイは<a href="./Go.html">Go</a>が良いと思う。
+でも言語は<a href="./FSharp.html">FSharp</a>みたいなのが好きなので、なんかトランスパイルでどうにかならんかな？
 実用にはならなくてもgoのお遊びとして結構やってみたい気もする。</p>
 <p>とりあえず簡単なシンボルのツリーからgoのソース生成するのを作って、それを発展させていってそれっぽいものに出来ないかしら？
 セルフホスト出来る感じに出来たらちまちま時間をかけて進めていけそうな気もするが。</p>
@@ -74,7 +74,7 @@
 <h2 id="仕様検討" tabindex="-1"><a class="header-anchor" href="#仕様検討"><span>仕様検討</span></a></h2>
 <h2 id="開発日記" tabindex="-1"><a class="header-anchor" href="#開発日記"><span>開発日記</span></a></h2>
 <p>やった事を書く場所が欲しくてとりあえずここに置いておく。</p>
-<p>[[Folang過去ログ]]</p>
+<p><a href="./Folang過去ログ.html">Folang過去ログ</a></p>
 <h3 id="グローバル変数定義対応、unionのgenerics対応-2025-03-02-日" tabindex="-1"><a class="header-anchor" href="#グローバル変数定義対応、unionのgenerics対応-2025-03-02-日"><span>グローバル変数定義対応、Unionのgenerics対応 2025-03-02 (日)</span></a></h3>
 <p>Unionのgenericsを対応するにあたり、再帰型の扱いが難しくなってきて、lookupを必要になるまで遅らせるように直したくなる。
 けれどいちいちlookupの辞書を全てに渡すのは嫌（大変更だから）なので、グローバル変数に対応しよう、と思い立つ。
@@ -85,7 +85,7 @@
 それをベースにUnionのgenerics対応をする。
 なんとなく動いている風味か？</p>
 <h3 id="_2025-03-03-月" tabindex="-1"><a class="header-anchor" href="#_2025-03-03-月"><span>2025-03-03 (月)</span></a></h3>
-<p>今後のタスクを考えたい。とりあえず[[csvplr]]を移植したいなぁ、と思っているので、
+<p>今後のタスクを考えたい。とりあえず<a href="./csvplr.html">csvplr</a>を移植したいなぁ、と思っているので、
 パーサーコンビネータを作りたいと思っている。簡単な奴。
 そのためにUnionのgenericsを実装したみたいな所もある。</p>
 <p>そのためにも必要なことを列挙してく</p>

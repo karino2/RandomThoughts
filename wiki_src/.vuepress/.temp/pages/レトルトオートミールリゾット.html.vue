@@ -1,4 +1,4 @@
-<template><div><p>[[食事関連]]</p>
+<template><div><p><a href="./食事関連.html">食事関連</a></p>
 <p>いつも買っているレトルト玄米がなんか売り切れが続いていて、他を物色していたらレトルトオートミールなるものを見つける。</p>
 <p>追記: 奄美ではprimeで送料無料に出来るamazonで買う事に。 <a href="https://amzn.to/3ZXQd1y" target="_blank" rel="noopener noreferrer">amazon: アイリスオーヤマ レンジでオートミール</a> なんかトマトは12個しか買えないが。</p>
 <p>追記: こちらの方が安かった

@@ -1,4 +1,4 @@
-<template><div><p>[[Android]]のRecyclerView。</p>
+<template><div><p><a href="./Android.html">Android</a>のRecyclerView。</p>
 <ul>
 <li><a href="https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView" target="_blank" rel="noopener noreferrer">RecyclerView  -  Android Developers</a></li>
 <li><a href="https://developer.android.com/develop/ui/views/layout/recyclerview#kotlin" target="_blank" rel="noopener noreferrer">Create dynamic lists with RecyclerView  -  Android Developers</a></li>

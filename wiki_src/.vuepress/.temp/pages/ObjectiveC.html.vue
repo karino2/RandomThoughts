@@ -1,4 +1,4 @@
-<template><div><p>[[Mac]]より。[[Swift]]</p>
+<template><div><p><a href="./Mac.html">Mac</a>より。<a href="./Swift.html">Swift</a></p>
 <h2 id="リンク等" tabindex="-1"><a class="header-anchor" href="#リンク等"><span>リンク等</span></a></h2>
 <p><a href="https://karino2.github.io/2020/05/23/iosdev.html" target="_blank" rel="noopener noreferrer">iOS開発に入門する - なーんだ、ただの水たまりじゃないか</a>
 にも書いたが、</p>

@@ -1,4 +1,4 @@
-<template><div><p>[[オーディオブック]]の聴き放題で運転中聞く枠。</p>
+<template><div><p><a href="./オーディオブック.html">オーディオブック</a>の聴き放題で運転中聞く枠。</p>
 <p><a href="https://amzn.to/3VTAaRK" target="_blank" rel="noopener noreferrer">amazon: スタンフォード式　疲れない体 </a></p>
 <h2 id="聴き終わり-2024-04-11-木" tabindex="-1"><a class="header-anchor" href="#聴き終わり-2024-04-11-木"><span>聴き終わり 2024-04-11 (木)</span></a></h2>
 <p>微妙な所がいろいろあるけれど、全体としては良い側に倒れると思う本。</p>

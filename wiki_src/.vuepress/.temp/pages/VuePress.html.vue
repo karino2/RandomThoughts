@@ -1,14 +1,14 @@
 <template><div><ul>
-<li>[[技術的なメモ]]</li>
-<li>[[GithubPages]]</li>
-<li>[[JavaScript]]</li>
+<li><a href="./技術的なメモ.html">技術的なメモ</a></li>
+<li><a href="./GithubPages.html">GithubPages</a></li>
+<li><a href="./JavaScript.html">JavaScript</a></li>
 <li><a href="https://v2.vuepress.vuejs.org/" target="_blank" rel="noopener noreferrer">VuePress</a> 公式</li>
 </ul>
-<p>[[JavaScript]]で書かれたサイトジェネレータ。
+<p><a href="./JavaScript.html">JavaScript</a>で書かれたサイトジェネレータ。
 nodejs製なのでサーバーサイドでprismjsなどを動かす事が出来る。</p>
 <h2 id="randomthoughtsのvuepress化" tabindex="-1"><a class="header-anchor" href="#randomthoughtsのvuepress化"><span>RandomThoughtsのVuePress化</span></a></h2>
 <p>prism.jsでのmfgのシンタックスハイライトの対応をしたので、RandomThoughtsもそれに対応したい。
-いい機会なのでJekyllの[[GitWiki]]からVuePressに乗り換える方向で考えてみる。</p>
+いい機会なのでJekyllの<a href="./GitWiki.html">GitWiki</a>からVuePressに乗り換える方向で考えてみる。</p>
 <ul>
 <li><a href="https://theme-hope.vuejs.press/guide/layout/sidebar.html#string-format" target="_blank" rel="noopener noreferrer">Sidebar - vuepress-theme-hope</a> Recentsはこの辺で頑張る</li>
 <li><a href="https://github.com/spencerwooo/vuepress-markdown-it-wikilink" target="_blank" rel="noopener noreferrer">spencerwooo/vuepress-markdown-it-wikilink: Wikimedia-style links for VuePress using the markdown-it parser</a> wikilinkはこれを試してみたい</li>
@@ -31,8 +31,9 @@ nodejs製なのでサーバーサイドでprismjsなどを動かす事が出来�
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ npm install -D vuepress-markdown-it-wikilink</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>なんかそれっぽくconfig.jsを書いてみたが動かない。</p>
+<p>buildの方をしたらエラーメッセージを吐いてくれた！</p>
 <p>理由はわからないが、単なるmdを手で呼ぶかなぁ。</p>
-<p>[[TeFWiki]]はjekyllの制約でリンクパターンをカスタマイズしていたので、以下を使ってたので同じのを使ってみる。</p>
+<p><a href="./TeFWiki.html">TeFWiki</a>はjekyllの制約でリンクパターンをカスタマイズしていたので、以下を使ってたので同じのを使ってみる。</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ npm i -D @kwvanderlinde/markdown-it-wikilinks</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></div></template>

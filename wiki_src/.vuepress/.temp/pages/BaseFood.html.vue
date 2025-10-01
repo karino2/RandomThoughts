@@ -1,4 +1,4 @@
-<template><div><p>いわゆる完全栄養食の一種。サブスクリプション型。月に一度届く。[[食事関連]]</p>
+<template><div><p>いわゆる完全栄養食の一種。サブスクリプション型。月に一度届く。<a href="./食事関連.html">食事関連</a></p>
 <ul>
 <li><a href="https://basefood.co.jp/" target="_blank" rel="noopener noreferrer">完全食 BASE FOOD（ベースフード）</a></li>
 <li><a href="https://karino2.github.io/2021/08/16/basefood_intro.html" target="_blank" rel="noopener noreferrer">blog: 毎週日曜の食事にBASE FOODを導入した</a></li>

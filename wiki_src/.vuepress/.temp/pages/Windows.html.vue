@@ -1,11 +1,11 @@
 <template><div><ul>
-<li>[[NuGet]]</li>
-<li>[[DirectCompute]]</li>
-<li>[[ノートPC]]</li>
-<li>[[ミニPC]]</li>
-<li>[[VSCode]]</li>
-<li>[[VisualStudio]]</li>
-<li>[[PowerShell]]</li>
+<li><a href="./NuGet.html">NuGet</a></li>
+<li><a href="./DirectCompute.html">DirectCompute</a></li>
+<li><a href="./ノートPC.html">ノートPC</a></li>
+<li><a href="./ミニPC.html">ミニPC</a></li>
+<li><a href="./VSCode.html">VSCode</a></li>
+<li><a href="./VisualStudio.html">VisualStudio</a></li>
+<li><a href="./PowerShell.html">PowerShell</a></li>
 </ul>
 <p>Windows上の環境設定のメモなど。そのうちまとめてブログにしたい。</p>
 <h2 id="ショートカット" tabindex="-1"><a class="header-anchor" href="#ショートカット"><span>ショートカット</span></a></h2>
@@ -65,12 +65,12 @@
 <span class="line">&lt;/Project></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="python-invokeの実行" tabindex="-1"><a class="header-anchor" href="#python-invokeの実行"><span>Python Invokeの実行</span></a></h2>
-<p>[[Python]]</p>
+<p><a href="./Python.html">Python</a></p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ python -m invoke --list</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>などとpythonコマンド越しに実行するのが楽そう。</p>
 <h2 id="書籍-concurrent-programming-on-windows" tabindex="-1"><a class="header-anchor" href="#書籍-concurrent-programming-on-windows"><span>書籍： Concurrent Programming on Windows</span></a></h2>
-<p>[[【書籍】ConcurrentProgrammingOnWindows]]</p>
+<p><a href="./【書籍】ConcurrentProgrammingOnWindows.html">【書籍】ConcurrentProgrammingOnWindows</a></p>
 <h2 id="リモートデスクトップにログイン出来ない" tabindex="-1"><a class="header-anchor" href="#リモートデスクトップにログイン出来ない"><span>リモートデスクトップにログイン出来ない</span></a></h2>
 <p>「お使いの資格情報は機能しませんでした」と表示され接続されない。いろいろ調査した結果、
 ホストマシンに一度MSアカウントとしてログインし直す必要がある模様。＞<a href="https://qiita.com/sfjwr/items/037aabef2c5637fe0e51" target="_blank" rel="noopener noreferrer">Microsoftアカウントでのリモートデスクトップ接続に苦労した話 #Windows - Qiita</a></p>

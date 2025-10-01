@@ -1,4 +1,4 @@
-<template><div><p>[[サーフボード]]</p>
+<template><div><p><a href="./サーフボード.html">サーフボード</a></p>
 <h1 id="libtech-rnf-redux-5-4-26l" tabindex="-1"><a class="header-anchor" href="#libtech-rnf-redux-5-4-26l"><span>libtech RNF Redux 5'4 26l</span></a></h1>
 <ul>
 <li>幅: 19.0</li>

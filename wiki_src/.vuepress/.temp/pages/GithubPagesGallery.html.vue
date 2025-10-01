@@ -3,7 +3,7 @@
 <li><a href="https://github.com/gautamkrishnar/github-pages-gallery" target="_blank" rel="noopener noreferrer">gautamkrishnar/github-pages-gallery</a></li>
 </ul>
 <p>github pagesを使った photo gallery のテンプレート。
-[[PngNote]]の公開に使っている。＞<a href="https://karino2.github.io/2021/07/27/use_ghg_for_pngnote_publish.html" target="_blank" rel="noopener noreferrer">blog: PngNoteのノートの公開にはGithub Pages Galleryを使う事にした</a></p>
+<a href="./PngNote.html">PngNote</a>の公開に使っている。＞<a href="https://karino2.github.io/2021/07/27/use_ghg_for_pngnote_publish.html" target="_blank" rel="noopener noreferrer">blog: PngNoteのノートの公開にはGithub Pages Galleryを使う事にした</a></p>
 <p>内部的には、<a href="https://thumbsup.github.io/" target="_blank" rel="noopener noreferrer">thumbsup</a>というコマンドラインツール（？）を使って静的ページを生成している。
 これは<a href="https://github.com/sachinchoolur/lightGallery" target="_blank" rel="noopener noreferrer">sachinchoolur/lightGallery</a>というjsライブラリを使ったページを生成する。</p>
 <h3 id="ページに直接リンクを貼りたい" tabindex="-1"><a class="header-anchor" href="#ページに直接リンクを貼りたい"><span>ページに直接リンクを貼りたい</span></a></h3>

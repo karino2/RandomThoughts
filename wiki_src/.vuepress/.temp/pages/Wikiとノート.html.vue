@@ -1,10 +1,10 @@
 <template><div><h3 id="関連リンク" tabindex="-1"><a class="header-anchor" href="#関連リンク"><span>関連リンク</span></a></h3>
 <ul>
-<li>[[TeFWiki]]</li>
+<li><a href="./TeFWiki.html">TeFWiki</a></li>
 <li><a href="https://karino2.github.io/2021/09/26/ideal_note.html" target="_blank" rel="noopener noreferrer">blog: 理想のノート（アプリ）について考える</a></li>
 <li><a href="https://karino2.github.io/2021/09/28/blog_vs_wiki.html" target="_blank" rel="noopener noreferrer">blog: Blogに向く事、Wikiに向く事</a></li>
-<li>[[サブWiki]]</li>
-<li>[[講義ノート]]</li>
+<li><a href="./サブWiki.html">サブWiki</a></li>
+<li><a href="./講義ノート.html">講義ノート</a></li>
 </ul>
 <h3 id="wikiで講義のノートを取るのに必要な事" tabindex="-1"><a class="header-anchor" href="#wikiで講義のノートを取るのに必要な事"><span>WIkiで講義のノートを取るのに必要な事</span></a></h3>
 <p>講義や本のノートをWikiで取る時に欲しい性質。</p>

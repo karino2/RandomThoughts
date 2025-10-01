@@ -1,4 +1,4 @@
-<template><div><p>[[化学]]より。</p>
+<template><div><p><a href="./化学.html">化学</a>より。</p>
 <p>CourseraのIntroduction to Chemistry: Structures and Solutionsのコース。</p>
 <p><a href="https://www.coursera.org/learn/basic-chemistry" target="_blank" rel="noopener noreferrer">Introduction to Chemistry: Structures and Solutions - Coursera</a></p>
 <p>年末年始に動画見て化学の知識でも深めるか、という気分には、やはりいつでも見れて動画の多いCourseraがいいんじゃないか、という事でこのコースを見てみる。</p>

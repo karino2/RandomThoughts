@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[CG]]</li>
-<li>[[書籍]]</li>
+<li><a href="./CG.html">CG</a></li>
+<li><a href="./書籍.html">書籍</a></li>
 <li><a href="https://github.com/PacktPublishing/OpenGL-4-Shading-Language-Cookbook-Third-Edition/tree/master" target="_blank" rel="noopener noreferrer">PacktPublishing/OpenGL-4-Shading-Language-Cookbook-Third-Edition: OpenGL 4 Shading Language Cookbook - Third Edition, published by Packt</a> サンプルコード</li>
 </ul>
 <p><a href="https://amzn.to/4cF8Qg0" target="_blank" rel="noopener noreferrer">amazon: OpenGL 4 Shading Language Cookbook: Build high-quality, real-time 3D graphics with OpenGL 4.6, GLSL 4.6 and C++17, 3rd Edition</a></p>

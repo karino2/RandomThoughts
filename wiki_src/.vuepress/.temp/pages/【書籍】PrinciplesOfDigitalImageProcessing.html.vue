@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[書籍]]</li>
-<li>[[CG]]</li>
+<li><a href="./書籍.html">書籍</a></li>
+<li><a href="./CG.html">CG</a></li>
 </ul>
 <p>Principles of Digital Image Processingという、3冊に分かれている画像処理の本。主に二次元。</p>
 <p>Springerの50%オフクーポンが来てたので手頃そうなのを探していて見つける。</p>
@@ -21,7 +21,7 @@ Javaのコードがあるおかげで解説が曖昧な部分が残っていな�
 結局全部必要という気はした。</p>
 <p>8章にカラーイメージの扱いの基礎がある（CMYKなど。xyzなどの本格的なものは2冊目）</p>
 <h3 id="_4-7-ガンマ補正" tabindex="-1"><a class="header-anchor" href="#_4-7-ガンマ補正"><span>4.7 ガンマ補正</span></a></h3>
-<p>長くなってきたのでページを分ける。＞[[ガンマ補正]]</p>
+<p>長くなってきたのでページを分ける。＞<a href="./ガンマ補正.html">ガンマ補正</a></p>
 <h3 id="_6章-edges-and-contours" tabindex="-1"><a class="header-anchor" href="#_6章-edges-and-contours"><span>6章 Edges and Contours</span></a></h3>
 <p>仕事でgradを使ったアルゴリズムで問題を解決できないか？と思う事があり、類似の問題という事でエッジ検出を読み直す。</p>
 <p>6.2がgradの求め方。6.3がそれを使ったエッジ検出、6.6がエッジシャープニングとなっている。</p>
@@ -54,7 +54,7 @@ Javaのコードがあるおかげで解説が曖昧な部分が残っていな�
 グレースケールとの変換でluminanceの求め方が出てくる。
 逆にluminanceからRGBにする時のweightも出てくる。（8.2.1の式8.6、8.7）。</p>
 <p>2冊目の6章でメトリックとして扱える色空間（CIE系列の話やxyzなど）がある。</p>
-<p>グレースケールは良く使うので[[MFG]]にコードを書いておく。</p>
+<p>グレースケールは良く使うので<a href="./MFG.html">MFG</a>にコードを書いておく。</p>
 </div></template>
 
 

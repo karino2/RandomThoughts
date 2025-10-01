@@ -22,7 +22,7 @@
 </ul>
 <p>うーむ、brewでビルドするもんかと思ったが、bottleを入れる方が普通なのか？</p>
 <h2 id="guashをhomebrewのtapで公開してみる" tabindex="-1"><a class="header-anchor" href="#guashをhomebrewのtapで公開してみる"><span>guashをhomebrewのtapで公開してみる</span></a></h2>
-<p>試しに[[guash]]をhomebrewで公開してみよう。</p>
+<p>試しに<a href="./guash.html">guash</a>をhomebrewで公開してみよう。</p>
 <p>dotnetのruntimeはcaskじゃなくてもあるのか。</p>
 <p>出来た！</p>
 <ul>

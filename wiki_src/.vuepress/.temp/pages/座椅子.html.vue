@@ -1,4 +1,4 @@
-<template><div><p>[[雑多なメモ]]</p>
+<template><div><p><a href="./雑多なメモ.html">雑多なメモ</a></p>
 <h2 id="jumei-座椅子" tabindex="-1"><a class="header-anchor" href="#jumei-座椅子"><span>Jumei 座椅子</span></a></h2>
 <p>今年も座椅子が欲しいと思いメモ。ドウシンシャのリクライニングが欲しかったが品切れ。
 同じのを買うのもなぁ、と思い違うのを探して以下がどうかな？と思う。</p>

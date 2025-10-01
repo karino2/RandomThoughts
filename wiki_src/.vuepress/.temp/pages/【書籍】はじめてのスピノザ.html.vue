@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[オーディオブック]]</li>
-<li>[[書籍]]</li>
+<li><a href="./オーディオブック.html">オーディオブック</a></li>
+<li><a href="./書籍.html">書籍</a></li>
 </ul>
 <p><a href="https://amzn.to/3ToJBWt" target="_blank" rel="noopener noreferrer">amaozn: はじめてのスピノザ 自由へのエチカ</a></p>
 <h2 id="_2024-03-19-火-聞き終わり、雑感など" tabindex="-1"><a class="header-anchor" href="#_2024-03-19-火-聞き終わり、雑感など"><span>2024-03-19 (火) 聞き終わり、雑感など</span></a></h2>

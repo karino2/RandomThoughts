@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[雑多なメモ]]</li>
-<li>[[書籍]]</li>
+<li><a href="./雑多なメモ.html">雑多なメモ</a></li>
+<li><a href="./書籍.html">書籍</a></li>
 </ul>
 <p><a href="https://amzn.to/4cEkW8Z" target="_blank" rel="noopener noreferrer">amazon: 集合・位相入門 (松坂和夫 数学入門シリーズ 1) </a></p>
 <p>集合論の教科書を一冊くらい手持ちで持っておきたいなぁ、と思い、確か菊田さんが勧めていてKindle版があったのでポチった。</p>

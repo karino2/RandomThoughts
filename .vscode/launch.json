@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Launch VuePress Dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "wiki_src:build"]
+      "runtimeArgs": ["run", "test"]
     }
   ]
 }

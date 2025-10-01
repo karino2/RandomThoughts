@@ -1,4 +1,4 @@
-<template><div><p>MITxの生物関連のコースの総称。[[生物学]]より。</p>
+<template><div><p>MITxの生物関連のコースの総称。<a href="./生物学.html">生物学</a>より。</p>
 <ul>
 <li><a href="http://web.mit.edu/mitxbio/courses.html" target="_blank" rel="noopener noreferrer">MITx Biology – courses</a></li>
 </ul>
@@ -18,7 +18,7 @@ MITのコースは3桁の数字で識別されていて、それの末尾にxを
 <h2 id="_705x-biochemistry-biomolecules-methods-and-mechanisms" tabindex="-1"><a class="header-anchor" href="#_705x-biochemistry-biomolecules-methods-and-mechanisms"><span>705x Biochemistry: Biomolecules, Methods, and Mechanisms</span></a></h2>
 <ul>
 <li>
-<p>[[705x]]</p>
+<p><a href="./705x.html">705x</a></p>
 </li>
 <li>
 <p><a href="https://karino2.github.io/Biochemistry705x/Home" target="_blank" rel="noopener noreferrer">Biochemistry 705xのノート用サブWiki</a></p>
@@ -29,12 +29,12 @@ MITのコースは3桁の数字で識別されていて、それの末尾にxを
 </ul>
 <h2 id="_728x-molecular-biology" tabindex="-1"><a class="header-anchor" href="#_728x-molecular-biology"><span>728x Molecular Biology</span></a></h2>
 <ul>
-<li>[[728x]]</li>
+<li><a href="./728x.html">728x</a></li>
 <li><a href="https://karino2.github.io/MolecularBiology728x/Home" target="_blank" rel="noopener noreferrer">Home - Molecular Biology 728x</a> ノート用サブWIki</li>
 </ul>
 <h2 id="_706x-cell-biology" tabindex="-1"><a class="header-anchor" href="#_706x-cell-biology"><span>706x Cell Biology</span></a></h2>
 <ul>
-<li>[[706x]]</li>
+<li><a href="./706x.html">706x</a></li>
 <li><a href="https://karino2.github.io/SubWiki/CellBiology706x/Home" target="_blank" rel="noopener noreferrer">Home - CellBiology706x</a></li>
 </ul>
 </div></template>

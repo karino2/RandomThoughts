@@ -11,7 +11,7 @@
 <li><a href="https://www.rfc-editor.org/rfc/rfc1951" target="_blank" rel="noopener noreferrer">RFC 1951: DEFLATE Compressed Data Format Specification version 1.3</a></li>
 <li><a href="https://www.zlib.net/" target="_blank" rel="noopener noreferrer">zlib Home Site</a></li>
 </ul>
-<p>出来た＞[[CppUnzip]]</p>
+<p>出来た＞<a href="./CppUnzip.html">CppUnzip</a></p>
 </div></template>
 
 

@@ -1,4 +1,4 @@
-<template><div><p>[[雑多なメモ]]</p>
+<template><div><p><a href="./雑多なメモ.html">雑多なメモ</a></p>
 <h2 id="one-by-wacom-2024-12-11-水" tabindex="-1"><a class="header-anchor" href="#one-by-wacom-2024-12-11-水"><span>One by Wacom 2024-12-11 (水)</span></a></h2>
 <p>Windowsでもペンのテストをしたいなぁ、と思い、
 でもメインはiPadなのでそんなには使わないから安くてコンパクトな板タブが欲しいな、と思い物色したところ、

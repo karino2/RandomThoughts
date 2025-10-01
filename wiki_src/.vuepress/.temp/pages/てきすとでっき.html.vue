@@ -1,4 +1,4 @@
-<template><div><p>[[自作アプリ]]より。</p>
+<template><div><p><a href="./自作アプリ.html">自作アプリ</a>より。</p>
 <ul>
 <li><a href="https://karino2.github.io/2020/12/12/textdeck.html" target="_blank" rel="noopener noreferrer">メモアプリ、「てきすとでっき」を作った。その思想など。 - なーんだ、ただの水たまりじゃないか</a></li>
 </ul>
@@ -12,7 +12,7 @@
 <code v-pre>out/make/zip/darwin/x64</code>にzipが出来ている。</p>
 <p><code v-pre>npm run deploy</code>でローカルでApplication下にコピーする。</p>
 <h2 id="アーカイブ処理" tabindex="-1"><a class="header-anchor" href="#アーカイブ処理"><span>アーカイブ処理</span></a></h2>
-<p>[[htmnix]]で書き捨てスクリプトを作って使っている。<a href="https://github.com/karino2/htmnix/blob/main/test/block2hn.js" target="_blank" rel="noopener noreferrer">github: htmnix/test/block2hn.js</a> にあるコードをシェルスクリプトでラップして実現している。</p>
+<p><a href="./htmnix.html">htmnix</a>で書き捨てスクリプトを作って使っている。<a href="https://github.com/karino2/htmnix/blob/main/test/block2hn.js" target="_blank" rel="noopener noreferrer">github: htmnix/test/block2hn.js</a> にあるコードをシェルスクリプトでラップして実現している。</p>
 </div></template>
 
 

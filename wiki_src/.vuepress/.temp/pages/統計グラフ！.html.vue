@@ -105,7 +105,7 @@
 <p>以下は古い話題。</p>
 <h2 id="バックエンドをgithub-pagesに変更したい-した" tabindex="-1"><a class="header-anchor" href="#バックエンドをgithub-pagesに変更したい-した"><span>バックエンドをgithub pagesに変更したい（した）</span></a></h2>
 <p>現状統計グラフ！は、バックエンドにjson engineとgoogle spread sheetを使っている。
-前者は単にjsonを吐いたりwebのリンク先urlを作っているだけなので、[[GithubPages]]に乗り換えたい。
+前者は単にjsonを吐いたりwebのリンク先urlを作っているだけなので、<a href="./GithubPages.html">GithubPages</a>に乗り換えたい。
 たまに触っては意外とTODOが多くて手がつかずに撤退、を繰り返しているので、少しここに作業メモを書いていく。</p>
 <p>やる事</p>
 <ol>
@@ -120,7 +120,7 @@
 <p>あとは4を作ればやる気になるかなぁ。ただその前に1を調べる方がいいか。</p>
 <p>If-Modified-Sinceは普通に動いている。これで良さそう。</p>
 <p>あとは4のサイトを生成する所だけやったらアプリ側を変えようか、という気分になった。</p>
-<p>[[TypeScript]]の勉強も兼ねてやって4をやってみたらあっさり出来る。やりたい事が片付けられた、というのは印象良いね。
+<p><a href="./TypeScript.html">TypeScript</a>の勉強も兼ねてやって4をやってみたらあっさり出来る。やりたい事が片付けられた、というのは印象良いね。
 TypeScriptは別の言語というよりはJSにtype annotation入れてるだけって感じで、ほとんど学ばなくても使い始める事は出来るな。</p>
 <p>という事で1, 3, 4が終わった。あとは2と5だけだな。</p>
 <ul>

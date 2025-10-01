@@ -8,7 +8,7 @@
 公式ドキュメントのソースは以下か。</p>
 <p><a href="https://github.com/11ty/11ty-website/tree/main" target="_blank" rel="noopener noreferrer">11ty/11ty-website: Documentation site for the Eleventy static site generator.</a></p>
 <h2 id="あらすじ" tabindex="-1"><a class="header-anchor" href="#あらすじ"><span>あらすじ</span></a></h2>
-<p>最近、[[GithubPages]]でいろいろやる時に、ローカルのnodeでいろいろと前処理をする事が多い。
+<p>最近、<a href="./GithubPages.html">GithubPages</a>でいろいろやる時に、ローカルのnodeでいろいろと前処理をする事が多い。
 でも結局ローカルでいろいろとビルドして生成するなら、ローカルでhtmlを生成するもっとシンプルなシステムで良いのでは無いか、という気はしていた。</p>
 <p>で、見つけたのがこの11ty。</p>
 <p>そのうち試してみたい。</p>

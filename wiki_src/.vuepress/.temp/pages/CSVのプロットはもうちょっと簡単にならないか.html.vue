@@ -35,9 +35,9 @@ awkっぽいdplyrがあればいいんだけどなぁ。</p>
 <p>もうちょっと考えてみた。</p>
 <p>ようするにawkと同じ感じのコマンドライン型の言語と、gnuplotか何かのplotのコマンドと、
 それらを統合するGUIの３つに分けるのが良さそうな気がする。</p>
-<p>コマンドライン型の言語は以前PoCとして作った[[GoFO]]に毛が生えた程度なんじゃなかろうか？</p>
+<p>コマンドライン型の言語は以前PoCとして作った<a href="./GoFO.html">GoFO</a>に毛が生えた程度なんじゃなかろうか？</p>
 <p>plotはとりあえずgnuplotで良い気がする。</p>
-<p>統合するGUIは最近のパターンの[[FSharp]]+[[photino]]でそんなに難しくなさそう。</p>
+<p>統合するGUIは最近のパターンの<a href="./FSharp.html">FSharp</a>+<a href="./photino.html">photino</a>でそんなに難しくなさそう。</p>
 <p>そもそもGUI要るのか？dplyrっぽいawkとgnuplotのラッパーだけで良いのでは？</p>
 <h2 id="もっとunix的にならないか" tabindex="-1"><a class="header-anchor" href="#もっとunix的にならないか"><span>もっとUnix的にならないか？</span></a></h2>
 <p>しばらく考えてみて、どうも中途半端なものならRを使えばいいや、という気分になってきた。
@@ -77,7 +77,7 @@ group_byカラムが追加されて一意のidが振られるとかで良いか�
 <span class="line"> | cpr_summarise 'perday=sum(pollen)'</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>いまいち度はまあり変わらないか。このくらいならエイリアスで良い気もする。</p>
-<p>なんかこれはアリな気がしてきた。正式に名前をつけよう。[[csvplr]]</p>
+<p>なんかこれはアリな気がしてきた。正式に名前をつけよう。<a href="./csvplr.html">csvplr</a></p>
 </div></template>
 
 

@@ -1,4 +1,4 @@
-<template><div><p>[[ワーケーション]]というかサーフトリップ的に、常陸のあたりの友人宅にお邪魔しようプラン。</p>
+<template><div><p><a href="./ワーケーション.html">ワーケーション</a>というかサーフトリップ的に、常陸のあたりの友人宅にお邪魔しようプラン。</p>
 <ul>
 <li><a href="https://www.surf-life.blue/surf/spots/%E8%8C%A8%E5%9F%8E%E7%9C%8C/" target="_blank" rel="noopener noreferrer">茨城県のサーフポイント＆波情報｜Surf life</a></li>
 <li><a href="http://nosurfing-nolife.com/spot/ibaraki.html" target="_blank" rel="noopener noreferrer">茨城のおススメのサーフィンスポット　-　サーフィンライフ</a></li>

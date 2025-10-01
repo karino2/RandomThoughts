@@ -1,5 +1,5 @@
 <template><div><p>このWikiを作るのに使っている、自作のローカルWiki。mdのテキストファイルのWiki。
-[[Electron]]版とAndroid版があって、Google Driveでデータを共有して使っている。サーバー要らず。</p>
+<a href="./Electron.html">Electron</a>版とAndroid版があって、Google Driveでデータを共有して使っている。サーバー要らず。</p>
 <h3 id="関連リンク" tabindex="-1"><a class="header-anchor" href="#関連リンク"><span>関連リンク</span></a></h3>
 <ul>
 <li><a href="https://karino2.github.io/2021/04/17/tefwiki_ja.html" target="_blank" rel="noopener noreferrer">blog: TeFWiki：テキストファイルのmd+WikiLink</a>
@@ -9,9 +9,9 @@
 </li>
 <li><a href="https://github.com/karino2/TeFWiki-Electron" target="_blank" rel="noopener noreferrer">github:TeFWiki-Electron</a></li>
 <li><a href="https://github.com/karino2/TeFWiki/" target="_blank" rel="noopener noreferrer">github:TeFWiki: TeFWiki for Android</a></li>
-<li>[[Wikiとノート]]</li>
-<li>[[サブWiki]]</li>
-<li>[[講義ノート]]</li>
+<li><a href="./Wikiとノート.html">Wikiとノート</a></li>
+<li><a href="./サブWiki.html">サブWiki</a></li>
+<li><a href="./講義ノート.html">講義ノート</a></li>
 </ul>
 <h3 id="コンセプト" tabindex="-1"><a class="header-anchor" href="#コンセプト"><span>コンセプト</span></a></h3>
 <ul>
@@ -40,8 +40,8 @@
 TeFWiki自体は必要最小限の機能に留めようとしている。
 TeFWikiのファイルはTeFWIki以外のアプリやUnixコマンドなどでも作り編集されていく事を期待している。</p>
 <p>実際自分はjekyllのブログのファイルをハードリンクで貼ってTeFWIkiのデータにしていたりもするし、
-[[いつなに]]も勝手にマークダウンを編集していく。
-また、マークダウンのエディタとしても外部エディタとして[[MDTouch]]（PCでは[[MDMinaosi]]）をちょくちょく使っている。</p>
+<a href="./いつなに.html">いつなに</a>も勝手にマークダウンを編集していく。
+また、マークダウンのエディタとしても外部エディタとして<a href="./MDTouch.html">MDTouch</a>（PCでは<a href="./MDMinaosi.html">MDMinaosi</a>）をちょくちょく使っている。</p>
 <p>例えばPC側はelispやvim scriptの拡張で同じデータを作っていっても、問題無くAndroid版アプリと組み合わせて使える、
 というような、開かれたメモ環境を指向している。</p>
 <p>アプリの中にいろんな機能を実装していくんじゃなくて、プレーンなファイルとディレクトリがあって、
@@ -57,8 +57,8 @@ TeFWikiのファイルはTeFWIki以外のアプリやUnixコマンドなどで�
 <h3 id="メモ" tabindex="-1"><a class="header-anchor" href="#メモ"><span>メモ</span></a></h3>
 <p>gradleのタスクでlicenseReleaseReportを実行してライセンス生成するとasset下が直接書き換わる。これにはbluma.cssなどが入らないのでimgs/js_licenses.txtの中身を足す事。</p>
 <h3 id="インライン画像サポート-2025-08-19-火" tabindex="-1"><a class="header-anchor" href="#インライン画像サポート-2025-08-19-火"><span>インライン画像サポート 2025-08-19 (火)</span></a></h3>
-<p>[[【書籍】魔法の人物ドローイング]]などのお絵描き系ハウツーをやるにあたり、画像のインライン表示を対応する事にする。</p>
-<p>ただフォルダを掘ったり画像を置いたりは[[MdImgr]]でやる事にして、
+<p><a href="./【書籍】魔法の人物ドローイング.html">【書籍】魔法の人物ドローイング</a>などのお絵描き系ハウツーをやるにあたり、画像のインライン表示を対応する事にする。</p>
+<p>ただフォルダを掘ったり画像を置いたりは<a href="./MdImgr.html">MdImgr</a>でやる事にして、
 TeFWikiとしては相対パスの画像を表示する、というだけにする。</p>
 <p>TeFWikiは実際にファイルオープンをそのまま使うのでは無くサブWikiの外には出られないように自分でどこのファイルを開くかを管理しているので、
 画像もmarkdown-itで相対パスのインラインイメージを <code v-pre>tefwikimg://</code> にしてElectronのカスタムスキーム対応で手で取得している。</p>

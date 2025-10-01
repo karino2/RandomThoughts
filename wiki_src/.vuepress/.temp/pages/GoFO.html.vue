@@ -23,8 +23,8 @@ mutateでタプルを増やしfilterでフィルタし、execで何かを実行�
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>トップレベルは関数コールとパイプ記号だけでいいか？変数に入れたいとかあるかもしれないが、最初は無しでいい気もする。</p>
 <h2 id="開発記録" tabindex="-1"><a class="header-anchor" href="#開発記録"><span>開発記録</span></a></h2>
-<p>とりあえず[[FSharp]]で作ってみる。パーサーなんか無いかな？と適当にググってFParsecを使ってみる事に。</p>
-<p>[[FParsec]]</p>
+<p>とりあえず<a href="./FSharp.html">FSharp</a>で作ってみる。パーサーなんか無いかな？と適当にググってFParsecを使ってみる事に。</p>
+<p><a href="./FParsec.html">FParsec</a></p>
 <p>まずはlsが動くところまで頑張ろう。</p>
 <h3 id="_2022-01-09" tabindex="-1"><a class="header-anchor" href="#_2022-01-09"><span>2022-01-09</span></a></h3>
 <p>とりあえずlsのパースの中でlsを実行する感じで動いた。

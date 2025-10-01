@@ -1,8 +1,8 @@
-<template><div><p>[[お絵描き]]の[[書籍]]</p>
+<template><div><p><a href="./お絵描き.html">お絵描き</a>の<a href="./書籍.html">書籍</a></p>
 <p><a href="https://amzn.to/4mdCUDV" target="_blank" rel="noopener noreferrer">amazon:１本の線で思いどおりに描ける！魔法の人物ドローイング</a></p>
 <p>エクスクラメーションマークはjekyllではファイル名に使えないので、WikiNameは魔法の人物ドローイング、で。</p>
 <p>Kindle Unlimitedで流れてきた本で、ちょっと板タブに慣れるためにまた何か描こうかな、と思って読み始める。（2025-08-15 (金)）</p>
-<p>[[MdImgr]]用のテンプレートを貼っておく。<code v-pre>![imgs/GestureDrawing/$1](imgs/GestureDrawing/$1)</code></p>
+<p><a href="./MdImgr.html">MdImgr</a>用のテンプレートを貼っておく。<code v-pre>![imgs/GestureDrawing/$1](imgs/GestureDrawing/$1)</code></p>
 <h2 id="練習開始-2025-08-15-金" tabindex="-1"><a class="header-anchor" href="#練習開始-2025-08-15-金"><span>練習開始 2025-08-15 (金)</span></a></h2>
 <p>とりあえずやってみようと思うが、解説が長くてなかなか練習が始まらない。
 一応イメージラインを描いてみようという所や線の引き方とかはやってみているが、
@@ -21,7 +21,7 @@
 <p>手本と同じものを目指すと全然駄目で、自分が写真から読み取った印象を反映するように描かないと駄目みたいだ。</p>
 <p>バランスをとろうと描く絵に比べるとバランスは悪くなるし見た目もいまいちだが、動きや勢いは出やすくなってる気がするので、
 この本の言わんとする事は出来て来た気がする。</p>
-<p>それにしてもここに絵を貼りたいな。今度[[TeFWiki]]のインラインイメージサポートをやるか。（追記: やって貼れるようにした）</p>
+<p>それにしてもここに絵を貼りたいな。今度<a href="./TeFWiki.html">TeFWiki</a>のインラインイメージサポートをやるか。（追記: やって貼れるようにした）</p>
 <h2 id="棒人間続きから1分ラインマンへ-2025-08-18-月" tabindex="-1"><a class="header-anchor" href="#棒人間続きから1分ラインマンへ-2025-08-18-月"><span>棒人間続きから1分ラインマンへ 2025-08-18 (月)</span></a></h2>
 <p>今日もしばらく棒人間を描いてみた。バランスはいまいちだが勢いというかなんか描こうとしてる何かは描けている気がするので、こういうものと割り切って次に進む。</p>
 <p>1分ラインマン、最初は棒人間をつなげて描こうとして勢いがなくなって駄目じゃん、となっていたが、
@@ -142,7 +142,7 @@
 <p>どっちでもいい気はする。どうしようかな。</p>
 <p><a href="https://www.youtube.com/playlist?list=PLKl89tG4IBEvpGLIgVHAhgyhc9win4uAS" target="_blank" rel="noopener noreferrer">たてなか流クイックスケッチ - YouTube</a></p>
 <p>これをやってみようかな。</p>
-<p>やってみる事に＞[[たてなか流クイックスケッチ]]</p>
+<p>やってみる事に＞<a href="./たてなか流クイックスケッチ.html">たてなか流クイックスケッチ</a></p>
 </div></template>
 
 

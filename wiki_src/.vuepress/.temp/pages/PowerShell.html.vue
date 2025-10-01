@@ -1,4 +1,4 @@
-<template><div><p>[[Windows]]のシェル。[[技術的なメモ]]</p>
+<template><div><p><a href="./Windows.html">Windows</a>のシェル。<a href="./技術的なメモ.html">技術的なメモ</a></p>
 <h2 id="こまごまとしたこと" tabindex="-1"><a class="header-anchor" href="#こまごまとしたこと"><span>こまごまとしたこと</span></a></h2>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">PS> notepad $PROFILE</span>
 <span class="line">PS> echo $env:APPDATA</span>

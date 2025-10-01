@@ -1,4 +1,4 @@
-<template><div><p>[[経済]]</p>
+<template><div><p><a href="./経済.html">経済</a></p>
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B08K33ZN6V&linkId=c9df402177bbeb27aa31ec801e85c2cb"></iframe>
 <h2 id="読み始めたきっかけ" tabindex="-1"><a class="header-anchor" href="#読み始めたきっかけ"><span>読み始めたきっかけ</span></a></h2>
 <p>MastodonでMMTに言及してる人が居て、名前だけは良く聞くがMMT知らんな、と思った。</p>

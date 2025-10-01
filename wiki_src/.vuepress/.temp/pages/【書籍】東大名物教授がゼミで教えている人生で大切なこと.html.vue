@@ -1,5 +1,5 @@
 <template><div><iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00MF9WW96&linkId=dbc7d571123b33832810cb0359127a1c"></iframe>
-<p>[[オーディオブック]]で聴いている。</p>
+<p><a href="./オーディオブック.html">オーディオブック</a>で聴いている。</p>
 <p>この本の著者である伊藤元重先生は新聞とかでたまに連載している時に読んでいたが、バランスが取れていながら経済学的に当然ちゃんとしていて、
 日本人経済学者の中で一般向けに何かを語るのに一番向いている人なんじゃないか、と思っている。</p>
 <p>この本自体は勉強の仕方的な話で経済学の本では無い。

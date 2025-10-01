@@ -88,7 +88,7 @@ UQ-WiMaxに乗り換える事に。</p>
 <span class="line">上り	6.85Mbps(遅い)</span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="楽天モバイルのテザリング" tabindex="-1"><a class="header-anchor" href="#楽天モバイルのテザリング"><span>楽天モバイルのテザリング</span></a></h3>
-<p>[[楽天モバイル]]へ。</p>
+<p><a href="./楽天モバイル.html">楽天モバイル</a>へ。</p>
 <h3 id="解約した-2024-10-14-月" tabindex="-1"><a class="header-anchor" href="#解約した-2024-10-14-月"><span>解約した 2024-10-14 (月)</span></a></h3>
 <p>楽天モバイルで問題無さそうなので解約する事に。解約手続きはあっさりで、日割りで請求らしい。今月分は払う気でいたが、日割りになるのか。
 解約の体験は割と好印象。</p>

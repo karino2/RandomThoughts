@@ -1,4 +1,4 @@
-<template><div><p>[[プログラム言語]]</p>
+<template><div><p><a href="./プログラム言語.html">プログラム言語</a></p>
 <p>みんなだいすきPython。</p>
 <ul>
 <li><a href="https://marimo.io/" target="_blank" rel="noopener noreferrer">marimo - a next-generation Python notebook</a> Jupyter NotebookのUI、面白い</li>
@@ -11,7 +11,7 @@
 <span class="line"><span class="token string">'{:#x}'</span><span class="token punctuation">.</span><span class="token builtin">format</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">3</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">**</span><span class="token number">32</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="trioとstructured-concurrency" tabindex="-1"><a class="header-anchor" href="#trioとstructured-concurrency"><span>TrioとStructured Concurrency</span></a></h2>
-<p>[[SwiftConcurrency]]のクリスラトナーのマニフェストのコメントにリンクされていたので見てみる。</p>
+<p><a href="./SwiftConcurrency.html">SwiftConcurrency</a>のクリスラトナーのマニフェストのコメントにリンクされていたので見てみる。</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=oLkfnc_UMcE" target="_blank" rel="noopener noreferrer">Nathaniel J. Smith - Trio: Async concurrency for mere mortals - PyCon 2018 - YouTube</a></li>
 <li><a href="https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/" target="_blank" rel="noopener noreferrer">Notes on structured concurrency, or: Go statement considered harmful — njs blog</a></li>
@@ -20,7 +20,7 @@
 <p>ようするに複数のコルーチンをグルーピングする仕組みとスコープを組み合わせるという話だな。
 Kotlinなんかはデフォルトでそうなのでどこが新しいのか一瞬分からなかったが。</p>
 <h3 id="python-invokeのwindowsでの実行" tabindex="-1"><a class="header-anchor" href="#python-invokeのwindowsでの実行"><span>Python InvokeのWindowsでの実行</span></a></h3>
-<p>[[Windows]]参照</p>
+<p><a href="./Windows.html">Windows</a>参照</p>
 </div></template>
 
 

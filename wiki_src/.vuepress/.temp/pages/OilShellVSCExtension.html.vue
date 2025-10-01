@@ -1,4 +1,4 @@
-<template><div><p>[[OilShell]]のVSCode Extension。</p>
+<template><div><p><a href="./OilShell.html">OilShell</a>のVSCode Extension。</p>
 <ul>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=karino2.oilshell-extension" target="_blank" rel="noopener noreferrer">OilShell extension - Visual Studio Marketplace</a></li>
 <li><a href="https://github.com/karino2/vscode-oilshell" target="_blank" rel="noopener noreferrer">karino2/vscode-oilshell: VSCode extension for oil shell script.</a></li>

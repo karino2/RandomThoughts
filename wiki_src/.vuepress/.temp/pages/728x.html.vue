@@ -1,4 +1,4 @@
-<template><div><p>[[edX]]でやっているMITのMolecular Biology, つまり分子生物学のコースの略称。[[MITxBio]]の一つ。</p>
+<template><div><p><a href="./edX.html">edX</a>でやっているMITのMolecular Biology, つまり分子生物学のコースの略称。<a href="./MITxBio.html">MITxBio</a>の一つ。</p>
 <p><a href="https://www.edx.org/course/molecular-biology-part-1-dna-replication-and-repair" target="_blank" rel="noopener noreferrer">Molecular Biology - Part 1: DNA Replication and Repair</a>などの通称。 厳密には7.28xだが、ハッシュタグなどには小数点が入ってないのでWikiNameにも入れない。</p>
 <p>7.28xは３つのコースに分かれているが、これらをまとめて728xと呼ぶ。</p>
 <ul>

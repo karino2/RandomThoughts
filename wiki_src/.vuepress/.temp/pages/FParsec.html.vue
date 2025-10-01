@@ -1,9 +1,9 @@
-<template><div><p>[[FSharp]]のパーサーコンビネータライブラリ。</p>
+<template><div><p><a href="./FSharp.html">FSharp</a>のパーサーコンビネータライブラリ。</p>
 <ul>
 <li><a href="http://www.quanttec.com/fparsec/tutorial.html" target="_blank" rel="noopener noreferrer">FParsecのチュートリアル</a></li>
 <li><a href="https://github.com/stephan-tolksdorf/fparsec/tree/master/Samples" target="_blank" rel="noopener noreferrer">fparsec/Samples at master · stephan-tolksdorf/fparsec</a></li>
 <li><a href="https://rosalogia.me/posts/functional-parsing/" target="_blank" rel="noopener noreferrer">Parsing Programming Languages with FParsec :: Ambika Eshwar — Functional Programmer and PLT Enthusiast</a></li>
-<li>[[GoFO]]を作るのに使おうと思う。[[csvplr]]を作るのにも使っている。</li>
+<li><a href="./GoFO.html">GoFO</a>を作るのに使おうと思う。<a href="./csvplr.html">csvplr</a>を作るのにも使っている。</li>
 </ul>
 <h2 id="fs0030とその対策" tabindex="-1"><a class="header-anchor" href="#fs0030とその対策"><span>FS0030とその対策</span></a></h2>
 <p>tutorialをコピペしていじろうとしたら、以下のコードでFS0030のエラーが。</p>

@@ -1,12 +1,12 @@
 <template><div><p>バイク関連のグッズをまとめるページ。</p>
 <h2 id="dio-110" tabindex="-1"><a class="header-anchor" href="#dio-110"><span>Dio 110</span></a></h2>
-<p>[[Dio110]]</p>
+<p><a href="./Dio110.html">Dio110</a></p>
 <h2 id="ハンドルバーバッグ" tabindex="-1"><a class="header-anchor" href="#ハンドルバーバッグ"><span>ハンドルバーバッグ</span></a></h2>
 <p>以下をポチる。(2025-09-19 (金))</p>
 <p><a href="https://amzn.to/46sisIV" target="_blank" rel="noopener noreferrer">amazon: ROCKBROS バイク バッグ</a></p>
 <p>3180円だった。</p>
 <h3 id="第一印象-2025-09-20-土" tabindex="-1"><a class="header-anchor" href="#第一印象-2025-09-20-土"><span>第一印象 2025-09-20 (土)</span></a></h3>
-<p>届いたのでつけて軽く走ってきた。心配だった[[Dio110]]につくのか、という所はバッチリついた。ちょうどいい感じだね。
+<p>届いたのでつけて軽く走ってきた。心配だった<a href="./Dio110.html">Dio110</a>につくのか、という所はバッチリついた。ちょうどいい感じだね。
 軽く走ってみると、つけた状態で走るのは特に問題もなく、すごくいい感じだ。</p>
 <p>一方、外した時に扱いにはやや困る。ちょっとかさばるので。</p>
 <p>つけっぱなしにしてショルダーバッグを突っ込んで使うのがいいか、少し遠くに行く時だけ使うようにするのがいいか、
@@ -38,7 +38,7 @@
 <p>雨の日に使ったら感想を追記していきたい。</p>
 <hr>
 <h2 id="vtz-250" tabindex="-1"><a class="header-anchor" href="#vtz-250"><span>VTZ 250</span></a></h2>
-<p>以前のバイク。[[VTZ250]]</p>
+<p>以前のバイク。<a href="./VTZ250.html">VTZ250</a></p>
 </div></template>
 
 

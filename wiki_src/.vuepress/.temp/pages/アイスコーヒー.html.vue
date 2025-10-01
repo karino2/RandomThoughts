@@ -1,7 +1,7 @@
 <template><div><ul>
-<li>[[食事関連]]
+<li><a href="./食事関連.html">食事関連</a>
 <ul>
-<li>[[飲み物]]</li>
+<li><a href="./飲み物.html">飲み物</a></li>
 </ul>
 </li>
 </ul>

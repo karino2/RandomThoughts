@@ -1,5 +1,5 @@
-<template><div><p>[[サーフィン]]</p>
-<p>最近[[ステッパー]]しながらyoutubeでパドリング動画をいろいろ見るのがマイブームとなっている。</p>
+<template><div><p><a href="./サーフィン.html">サーフィン</a></p>
+<p>最近<a href="./ステッパー.html">ステッパー</a>しながらyoutubeでパドリング動画をいろいろ見るのがマイブームとなっている。</p>
 <p>何人かの見ているが、まさしんごTVというチャンネルがプールで検証しているので一番納得出来る。</p>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=9qjruNh_I2M" target="_blank" rel="noopener noreferrer">【週末サーファー最短上達！HOWTOシリーズ#2】パドル・テイクオフが速くなる「足の閉じ方」教えちゃいます。（プロのパドル動画あり） - YouTube</a> 足は開くのか閉じるのかどっちなのかなぁ、と思っていたが閉じるらしい。</li>

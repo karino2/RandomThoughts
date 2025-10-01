@@ -1,4 +1,4 @@
-<template><div><p>[[CSVのプロットはもうちょっと簡単にならないか]]で考えついたアイデア。[[FSharp]]製。</p>
+<template><div><p><a href="./CSVのプロットはもうちょっと簡単にならないか.html">CSVのプロットはもうちょっと簡単にならないか</a>で考えついたアイデア。<a href="./FSharp.html">FSharp</a>製。</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ cat pollen_data.csv |</span>
 <span class="line"> csvplr filter 'pollen != -9999' |</span>
 <span class="line"> csvplr mutate 'day=date(date)' |</span>
@@ -7,7 +7,7 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>csvをコマンドラインからdplyrっぽく操作したい。
 Unixのコマンド群としてdplyrのような操作を実装する。
-最後のplotは別コマンドで。([[htmnix_chart]]を使う気だが、テキストからグラフが作れるコマンドならなんでも良い感じ）</p>
+最後のplotは別コマンドで。(<a href="./htmnix_chart.html">htmnix_chart</a>を使う気だが、テキストからグラフが作れるコマンドならなんでも良い感じ）</p>
 <p>入力は標準入力、出力は標準出力でどちらも基本的にはcsv。</p>
 <p>追記： dplyrなんだからcsvplyrにすべきだった、と後で気づいたが、ちょと文字数多い気がするしまぁいいか。</p>
 <h2 id="レポジトリ" tabindex="-1"><a class="header-anchor" href="#レポジトリ"><span>レポジトリ</span></a></h2>

@@ -1,4 +1,4 @@
-<template><div><p>[[技術的なメモ]]</p>
+<template><div><p><a href="./技術的なメモ.html">技術的なメモ</a></p>
 <p>Embedで使える手頃な言語がたまに欲しくなるのでそのメモを。</p>
 <p><a href="https://github.com/dbohdan/embedded-scripting-languages?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">dbohdan/embedded-scripting-languages: A list of embedded scripting languages</a>に結構たくさんのリストがあって、それを見ていって思ったもの。</p>
 <h2 id="chatscript" tabindex="-1"><a class="header-anchor" href="#chatscript"><span>ChatScript</span></a></h2>

@@ -1,4 +1,4 @@
-<template><div><p>[[自作アプリ]]</p>
+<template><div><p><a href="./自作アプリ.html">自作アプリ</a></p>
 <ul>
 <li><a href="https://github.com/karino2/BikeSeibiMemo" target="_blank" rel="noopener noreferrer">karino2/BikeSeibiMemo: Android bike maintenance memo tool.</a></li>
 </ul>

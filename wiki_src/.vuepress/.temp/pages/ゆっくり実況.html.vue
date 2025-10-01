@@ -8,7 +8,7 @@
 <p>自分が作ってるのは実況ではないのだが、WikiNameは実況にしてしまった。まぁいい。</p>
 <h2 id="自分が作ってるシリーズ" tabindex="-1"><a class="header-anchor" href="#自分が作ってるシリーズ"><span>自分が作ってるシリーズ</span></a></h2>
 <ul>
-<li>[[ゆっくり中級git]]</li>
+<li><a href="./ゆっくり中級git.html">ゆっくり中級git</a></li>
 </ul>
 <h2 id="表情" tabindex="-1"><a class="header-anchor" href="#表情"><span>表情</span></a></h2>
 <h3 id="魔理沙" tabindex="-1"><a class="header-anchor" href="#魔理沙"><span>魔理沙</span></a></h3>
@@ -20,7 +20,7 @@
 <p>わからーん</p>
 <p>眉 02.png、目 06.png、口 03.png、</p>
 <h2 id="風神録" tabindex="-1"><a class="header-anchor" href="#風神録"><span>風神録</span></a></h2>
-<p>[[風神録]]</p>
+<p><a href="./風神録.html">風神録</a></p>
 </div></template>
 
 

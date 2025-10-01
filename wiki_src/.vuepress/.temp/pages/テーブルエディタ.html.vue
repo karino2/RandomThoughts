@@ -1,5 +1,5 @@
 <template><div><p>ちょろっとテーブルを書く時に使うphotinoで使えるようなツールとか作れないかな？と思い簡単に調査。
-結論は[[editorjs]]が良さそう、という事で[[mdvtbl]]を作った。</p>
+結論は<a href="./editorjs.html">editorjs</a>が良さそう、という事で<a href="./mdvtbl.html">mdvtbl</a>を作った。</p>
 <hr>
 <p>以下は調査した時のメモ。</p>
 <ul>
@@ -24,7 +24,7 @@
 </ul>
 <p>エディタだけど</p>
 <ul>
-<li>[[editorjs]] テーブルの体験が良い。このテーブルだけでいいんだが、どのくらいの大きさだろうか？</li>
+<li><a href="./editorjs.html">editorjs</a> テーブルの体験が良い。このテーブルだけでいいんだが、どのくらいの大きさだろうか？</li>
 </ul>
 </div></template>
 

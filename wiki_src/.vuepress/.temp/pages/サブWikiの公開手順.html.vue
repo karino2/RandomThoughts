@@ -1,5 +1,5 @@
-<template><div><p>[[サブWiki]]より。</p>
-<p>ディレクトリをgit-wikiとして公開する運用にしている。＞[[GitWiki]]へ</p>
+<template><div><p><a href="./サブWiki.html">サブWiki</a>より。</p>
+<p>ディレクトリをgit-wikiとして公開する運用にしている。＞<a href="./GitWiki.html">GitWiki</a>へ</p>
 <h2 id="subwikiサイトのサブディレクトリとして公開" tabindex="-1"><a class="header-anchor" href="#subwikiサイトのサブディレクトリとして公開"><span>SubWIkiサイトのサブディレクトリとして公開</span></a></h2>
 <p>最近はこの方法に移行した。</p>
 <p>実際に新しいのを追加してみないとうまくいくかは分からないが、現時点の認識を書いておく。</p>
@@ -42,7 +42,7 @@
 <ul>
 <li>scripts下にTeFWikiのmdをwiki_srcにコピーするスクリプトを置く</li>
 <li>scripts下にwiki_srcからwikiへWikiLinkをコンバートするスクリプトを置く</li>
-<li>recentsを生成する（[[GitWiki]]の「サイドバーのrecentsの日付が反映されていないのを修正」を参照）</li>
+<li>recentsを生成する（<a href="./GitWiki.html">GitWiki</a>の「サイドバーのrecentsの日付が反映されていないのを修正」を参照）</li>
 </ul>
 <p>これでscripts下でスクリプトを実行するとTeFWikiのサブディレクトリがコピーされて公開準備が整うので、git commitしてpushする。</p>
 <p>タイトルのカスタマイズは、</p>

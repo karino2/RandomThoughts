@@ -1,7 +1,7 @@
 <template><div><ul>
 <li><a href="https://github.com/karino2/fa-script" target="_blank" rel="noopener noreferrer">karino2/fa-script: Find and ShellScript app by Electron.</a></li>
-<li>[[そのうちやりたい事]]</li>
-<li>[[Electron]]</li>
+<li><a href="./そのうちやりたい事.html">そのうちやりたい事</a></li>
+<li><a href="./Electron.html">Electron</a></li>
 </ul>
 <p>Find and Replaceのreplaceの所をシェルスクリプトにする、Find and Shell Script、略してFAScript。</p>
 <h2 id="概要" tabindex="-1"><a class="header-anchor" href="#概要"><span>概要</span></a></h2>
@@ -46,7 +46,7 @@ Submitボタンを押すと指定された範囲を<code v-pre>$OUTPUT</code>の
 <li>編集対象領域に対してアクションを複数書く</li>
 <li>アクションを適用した結果のプレビューが出る、その後はy, y, yという感じでどれに適用してどれに適用しないかが選べる</li>
 </ol>
-<p>言語と環境は何にするかなぁ。[[Electron]]でいい気もするが、F#とphotinoでもいい気もする。うーん。</p>
+<p>言語と環境は何にするかなぁ。<a href="./Electron.html">Electron</a>でいい気もするが、F#とphotinoでもいい気もする。うーん。</p>
 <p>nodeの<a href="https://www.npmjs.com/package/file-matcher" target="_blank" rel="noopener noreferrer">file-matcher - npm</a>で1と2は良い気がする。という事でとりあえずElectronで作る。＞行が取れなかったので結局globで自分で書く事に…</p>
 <h2 id="もっと手抜き出来ないか" tabindex="-1"><a class="header-anchor" href="#もっと手抜き出来ないか"><span>もっと手抜き出来ないか？</span></a></h2>
 <p>少し作ろうとしてみたが結構面倒くさい。

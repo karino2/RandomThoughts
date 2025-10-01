@@ -12,10 +12,11 @@
   },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "wiki_src:dev": "vuepress dev wiki_src",
+    "test": "node test.js",
+    "wiki_src:dev": "vuepress dev wiki_src --debug",
     "wiki_src:build": "vuepress build wiki_src"
   },
   "devDependencies": {
@@ -23,6 +24,8 @@
     "@kwvanderlinde/markdown-it-wikilinks": "^1.0.2",
     "@vuepress/bundler-vite": "^2.0.0-rc.24",
     "@vuepress/theme-default": "^2.0.0-rc.112",
+    "markdown-it": "^14.1.0",
+    "markdown-it-wikilinks": "^1.4.0",
     "sass-embedded": "^1.93.2",
     "vuepress": "^2.0.0-rc.24",
     "vuepress-markdown-it-wikilink": "^1.0.1"

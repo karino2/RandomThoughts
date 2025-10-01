@@ -1,4 +1,4 @@
-<template><div><p>[[技術的なメモ]]</p>
+<template><div><p><a href="./技術的なメモ.html">技術的なメモ</a></p>
 <p>YouTubeのサービス関連のAPIをまとめるページ。</p>
 <ul>
 <li><a href="https://developers.google.com/youtube" target="_blank" rel="noopener noreferrer">YouTube  -  Google for Developers</a>

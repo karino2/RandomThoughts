@@ -1,6 +1,6 @@
-<template><div><p>[[CG]]</p>
-<p>[[Stippling]]を調べていて、ハーフトーンの方が[[MFG]]で作れそうだな、と思い、関連ページを作る。</p>
-<p>[[MdImgr]]のテンプレート<code v-pre>![imgs/Halftone/$1](imgs/Halftone/$1)</code></p>
+<template><div><p><a href="./CG.html">CG</a></p>
+<p><a href="./Stippling.html">Stippling</a>を調べていて、ハーフトーンの方が<a href="./MFG.html">MFG</a>で作れそうだな、と思い、関連ページを作る。</p>
+<p><a href="./MdImgr.html">MdImgr</a>のテンプレート<code v-pre>![imgs/Halftone/$1](imgs/Halftone/$1)</code></p>
 <h2 id="リンク集" tabindex="-1"><a class="header-anchor" href="#リンク集"><span>リンク集</span></a></h2>
 <ul>
 <li><a href="https://www.shadertoy.com/view/XslGRM" target="_blank" rel="noopener noreferrer">Halftone</a> shadertoyにあった実装</li>

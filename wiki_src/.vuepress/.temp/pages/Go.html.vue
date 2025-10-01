@@ -1,5 +1,5 @@
-<template><div><p>[[技術的なメモ]]</p>
-<p>go言語、golangなどと呼ばれる。関連して[[Folang]]のリンクも張っておく。</p>
+<template><div><p><a href="./技術的なメモ.html">技術的なメモ</a></p>
+<p>go言語、golangなどと呼ばれる。関連して<a href="./Folang.html">Folang</a>のリンクも張っておく。</p>
 <ul>
 <li><a href="https://go.dev/doc/tutorial/" target="_blank" rel="noopener noreferrer">Tutorials - The Go Programming Language</a></li>
 <li><a href="https://gobyexample.com/" target="_blank" rel="noopener noreferrer">Go by Example</a></li>
@@ -8,7 +8,7 @@
 <li><a href="https://pkg.go.dev/fmt" target="_blank" rel="noopener noreferrer">fmt package - fmt - Go Packages</a> standard libraryのリファレンス、とりあえずfmtを貼っておく</li>
 <li><a href="https://cs.opensource.google/go/go" target="_blank" rel="noopener noreferrer">go - Go</a> 処理系のソース。</li>
 <li><a href="https://github.com/alecthomas/participle/tree/master" target="_blank" rel="noopener noreferrer">alecthomas/participle: A parser library for Go</a> パーサーはこれが良い。</li>
-<li>[[Wails]] Go向けの[[Electron]]代替。</li>
+<li><a href="./Wails.html">Wails</a> Go向けの<a href="./Electron.html">Electron</a>代替。</li>
 </ul>
 <h2 id="モジュール" tabindex="-1"><a class="header-anchor" href="#モジュール"><span>モジュール</span></a></h2>
 <ul>
@@ -103,11 +103,11 @@
 <li><a href="https://wails.io/docs/introduction/" target="_blank" rel="noopener noreferrer">Introduction - Wails</a></li>
 <li><a href="https://github.com/zserge/lorca" target="_blank" rel="noopener noreferrer">zserge/lorca: Build cross-platform modern desktop apps in Go + HTML5</a></li>
 </ul>
-<p>[[Wails]]は[[Electron]]の代替としてより本格的なもの。出来上がったものもMacではちゃんとapp bundleになる。
+<p><a href="./Wails.html">Wails</a>は<a href="./Electron.html">Electron</a>の代替としてより本格的なもの。出来上がったものもMacではちゃんとapp bundleになる。
 ただgo installとかで結果が入る感じにはならない。</p>
 <p>lorcaはChromeのデバッグなんちゃらの機能を使って動くとの事で、Chromeが立ち上がる。
 ただ出来上がったものは普通にgo install出来そう。</p>
-<p>[[mdvcat]]を移植してみた＞<a href="https://github.com/karino2/mdvcat_lorca" target="_blank" rel="noopener noreferrer">karino2/mdvcat_lorca: lorca porting of mdvcat.</a></p>
+<p><a href="./mdvcat.html">mdvcat</a>を移植してみた＞<a href="https://github.com/karino2/mdvcat_lorca" target="_blank" rel="noopener noreferrer">karino2/mdvcat_lorca: lorca porting of mdvcat.</a></p>
 <p>こういうのはこれでいいかもな。</p>
 <h2 id="astのノード的な表現" tabindex="-1"><a class="header-anchor" href="#astのノード的な表現"><span>ASTのノード的な表現</span></a></h2>
 <p>Exprのstructを定義する、みたいな時に、空のメソッドをインターフェースにいれる事で表現するイディオムがあるっぽい。

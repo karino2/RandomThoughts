@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[雑多なメモ]]</li>
-<li>[[奄美大島計画]]</li>
+<li><a href="./雑多なメモ.html">雑多なメモ</a></li>
+<li><a href="./奄美大島計画.html">奄美大島計画</a></li>
 </ul>
 <h2 id="nex" tabindex="-1"><a class="header-anchor" href="#nex"><span>NEX</span></a></h2>
 <ul>

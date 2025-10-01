@@ -1,4 +1,4 @@
-<template><div><p>[[オーディオブック]]で聴き放題に入ってたので聞いたところ、なかなかの当たり。</p>
+<template><div><p><a href="./オーディオブック.html">オーディオブック</a>で聴き放題に入ってたので聞いたところ、なかなかの当たり。</p>
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B00ZTXKHQ0&linkId=e2b8634e1ae37d6c95b3496f57283327"></iframe>
 <p>Amazonではなかなか批判レビューも多いな。</p>
 <h2 id="批判レビューに対して思う事" tabindex="-1"><a class="header-anchor" href="#批判レビューに対して思う事"><span>批判レビューに対して思う事</span></a></h2>
@@ -6,7 +6,7 @@
 <p>この本が実験経済学の手法で教育を考えるという本なのは明らかで、実験経済学の批判自体は本の批判としては弱いと思う（まさに嫌なら読まなきゃいい、というだけで）。
 この本に期待される内容は実験経済学の手法を正しいとするとどういう結論が得られるかで、批判としては実験経済学のやり方の枠内でどう間違っているか、という話をすべきだろう。</p>
 <p>一方で実験経済学の手法自身には多くの批判や議論は当然あるべきで、それはこの本のレビューじゃなくてもっと大きなトピックとして行うべき事に思う。</p>
-<p>[[実験経済学の手法に関する議論]]</p>
+<p><a href="./実験経済学の手法に関する議論.html">実験経済学の手法に関する議論</a></p>
 <h2 id="内発的動機" tabindex="-1"><a class="header-anchor" href="#内発的動機"><span>内発的動機</span></a></h2>
 <p>外発的動機づけが内発的動機づけを減らしてしまう、というのはCourseraのゲームフィケーションの授業とかでは聞いていたが、
 この本では否定されてて、へーって思った。</p>

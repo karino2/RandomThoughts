@@ -1,7 +1,7 @@
-<template><div><p>[[Mac]]のプログラム言語。</p>
+<template><div><p><a href="./Mac.html">Mac</a>のプログラム言語。</p>
 <ul>
 <li><a href="https://www.apple.com/swift/" target="_blank" rel="noopener noreferrer">Swift - Apple</a></li>
-<li>[[【書籍】TheSwiftProgrammingLanguage]]
+<li><a href="./【書籍】TheSwiftProgrammingLanguage.html">【書籍】TheSwiftProgrammingLanguage</a>
 上記の公式ページから、「The Swift Programming Language」という電子書籍がApple Book Storeから無料で読むことが出来る。
 <ul>
 <li><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/" target="_blank" rel="noopener noreferrer">The Swift Programming Language (5.10) - Documentation</a> web版のリンクをこちらも貼っておく</li>
@@ -15,7 +15,7 @@
 </ul>
 <h2 id="swift-concurrency" tabindex="-1"><a class="header-anchor" href="#swift-concurrency"><span>Swift Concurrency</span></a></h2>
 <p>長くなったのでページを分ける。</p>
-<p>[[SwiftConcurrency]]</p>
+<p><a href="./SwiftConcurrency.html">SwiftConcurrency</a></p>
 <h2 id="swiftpm" tabindex="-1"><a class="header-anchor" href="#swiftpm"><span>SwiftPM</span></a></h2>
 <p>Swiftのパッケージマネージャ。<a href="https://www.swift.org/documentation/package-manager/" target="_blank" rel="noopener noreferrer">Swift.org - Package Manager</a></p>
 <p>Xcodeのプロジェクトは最初から対応が入っていて、右クリックから追加で追加出来る。

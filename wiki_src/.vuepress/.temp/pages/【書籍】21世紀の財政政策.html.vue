@@ -1,4 +1,4 @@
-<template><div><p>[[経済]]</p>
+<template><div><p><a href="./経済.html">経済</a></p>
 <p><a href="https://amzn.to/4cuN5zB" target="_blank" rel="noopener noreferrer">amazon: 21世紀の財政政策 低金利・高債務下の正しい経済戦略（オリヴィエ・ブランシャール (著), 田代毅 (翻訳)）</a></p>
 <p>最近低成長の話やターゲットを4%に上げる提言など、政策の話を良くしていたブランシャールが、
 ちゃんと本を書いてくれた、というもの。「21世紀の財政政策　低金利・高債務下の正しい経済戦略」</p>

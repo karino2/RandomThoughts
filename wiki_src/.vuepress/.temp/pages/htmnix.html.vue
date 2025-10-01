@@ -1,4 +1,4 @@
-<template><div><p>html片を書いて[[Unix的GUIツール]]を作る為のツール。
+<template><div><p>html片を書いて<a href="./Unix的GUIツール.html">Unix的GUIツール</a>を作る為のツール。
 htmlnixは先人が居たのでhtmnixで。</p>
 <h2 id="レポジトリ" tabindex="-1"><a class="header-anchor" href="#レポジトリ"><span>レポジトリ</span></a></h2>
 <p><a href="https://github.com/karino2/htmnix" target="_blank" rel="noopener noreferrer">karino2/htmnix</a></p>
@@ -10,7 +10,7 @@ htmlnixは先人が居たのでhtmnixで。</p>
 <h2 id="アイデア" tabindex="-1"><a class="header-anchor" href="#アイデア"><span>アイデア</span></a></h2>
 <p>htmnixコマンドの標準入力にhtml片を渡すと、それが表示される。
 <code v-pre>hn-</code>で始まる特殊なクラスをつけると、特別な振る舞いをする。
-html片は[[bulma]]でスタイル付け出来る。</p>
+html片は<a href="./bulma.html">bulma</a>でスタイル付け出来る。</p>
 <p>jsは書かない。htmlとcssだけ。</p>
 <p>例えば以下のようなcssクラスをつけると、それっぽく振る舞うjsのハンドラが勝手にぶら下がる。</p>
 <ul>
@@ -18,9 +18,9 @@ html片は[[bulma]]でスタイル付け出来る。</p>
 <li><code v-pre>hn-cancel</code> キャンセルボタン</li>
 <li><code v-pre>hn-mul-sel</code> マルチセレクション、このクラスたついたものは複数選択されて、結果は<code v-pre>hn-value</code> attributeに書いてある値が出力される（1行1<code v-pre>hn-value</code>で）</li>
 </ul>
-<p>まずはこれだけ。[[てきすとでっき]]の古くなったメモをアーカイブ用テキストファイルに移すGUIツールを作るのに使う機能から始める。</p>
-<p>pythonとかgolangでhtml片を生成する部分とこのhtmnixでGUIを表示する部分に分ければいろんな[[Unix的GUIツール]]がスクリプトで書けるようになるんじゃないか。</p>
-<p>[[FSharp]]、[[bulma]]、[[photino]]あたりで作る。</p>
+<p>まずはこれだけ。<a href="./てきすとでっき.html">てきすとでっき</a>の古くなったメモをアーカイブ用テキストファイルに移すGUIツールを作るのに使う機能から始める。</p>
+<p>pythonとかgolangでhtml片を生成する部分とこのhtmnixでGUIを表示する部分に分ければいろんな<a href="./Unix的GUIツール.html">Unix的GUIツール</a>がスクリプトで書けるようになるんじゃないか。</p>
+<p><a href="./FSharp.html">FSharp</a>、<a href="./bulma.html">bulma</a>、<a href="./photino.html">photino</a>あたりで作る。</p>
 <p>あっさり出来た。なかなか簡単につくれたので筋の良さを感じる。</p>
 <h2 id="使った印象" tabindex="-1"><a class="header-anchor" href="#使った印象"><span>使った印象</span></a></h2>
 <p>なかなか良いが、これは汎用にすべきなのかブロック選択専用にすべきかは良く分からないな。

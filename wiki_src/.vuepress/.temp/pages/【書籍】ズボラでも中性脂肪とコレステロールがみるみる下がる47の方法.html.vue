@@ -1,4 +1,4 @@
-<template><div><p>[[オーディオブック]]</p>
+<template><div><p><a href="./オーディオブック.html">オーディオブック</a></p>
 <p><a href="https://amzn.to/49jPScM" target="_blank" rel="noopener noreferrer">amazon: ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法</a></p>
 <h3 id="聞き終わり-2024-02-17-土" tabindex="-1"><a class="header-anchor" href="#聞き終わり-2024-02-17-土"><span>聞き終わり 2024-02-17 (土)</span></a></h3>
 <p>健康診断でLDLコレステロールが高めと出たので、何を気を付けるべきか知りたくてaudiobookの聞き放題を探したら引っかかったので聞いてみた。

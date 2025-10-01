@@ -1,4 +1,4 @@
-<template><div><p>[[バイク]]</p>
+<template><div><p><a href="./バイク.html">バイク</a></p>
 <p>VTZ 250。</p>
 <ul>
 <li>2013年2月15日購入</li>

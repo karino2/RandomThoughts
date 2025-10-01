@@ -1,8 +1,8 @@
-<template><div><p>[[MarkDown]]で、vmdがいい感じだが遅いのとメンテされてなさそうなので、[[photino]]で同じようなものを作ってみた。[[FSharp]]製。</p>
+<template><div><p><a href="./MarkDown.html">MarkDown</a>で、vmdがいい感じだが遅いのとメンテされてなさそうなので、<a href="./photino.html">photino</a>で同じようなものを作ってみた。<a href="./FSharp.html">FSharp</a>製。</p>
 <ul>
 <li><a href="https://github.com/karino2/mdvcat" target="_blank" rel="noopener noreferrer">github: karino2/mdvcat</a></li>
 </ul>
-<p><a href="https://github.com/xoofx/markdig" target="_blank" rel="noopener noreferrer">markdig</a>を使って、[[bulma]]でそれっぽくレンダリングしてみた。</p>
+<p><a href="https://github.com/xoofx/markdig" target="_blank" rel="noopener noreferrer">markdig</a>を使って、<a href="./bulma.html">bulma</a>でそれっぽくレンダリングしてみた。</p>
 <p>パフォーマンスがだいぶ良いので、コマンドラインオプションをつけてhomebrewで公開すれば流行るかもしれない。</p>
 <h2 id="usage" tabindex="-1"><a class="header-anchor" href="#usage"><span>usage</span></a></h2>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ mdvcat some/path/to/file.md</span>

@@ -1,5 +1,5 @@
-<template><div><p>[[技術的なメモ]]</p>
-<p>[[YouTubeAPI]]があまりにもドキュメントやサンプルにやる気が無いので、Twitchを調べてみる。</p>
+<template><div><p><a href="./技術的なメモ.html">技術的なメモ</a></p>
+<p><a href="./YouTubeAPI.html">YouTubeAPI</a>があまりにもドキュメントやサンプルにやる気が無いので、Twitchを調べてみる。</p>
 <p>Twitch、ゲーム実況などで割と使われている印象で、以前シェアハウスで良く見ている人が居て隣で見てた事があるが、
 自分ではあまり見た事が無いので良く知らない。</p>
 <p><a href="https://dev.twitch.tv/gamedevelopers/" target="_blank" rel="noopener noreferrer">Twitch Game Developer Playbook - Twitch Developers</a> ゲーム開発者向けの情報が充実してそうな雰囲気だな。読んでみよう。
@@ -12,7 +12,7 @@
 </ul>
 </li>
 </ul>
-<p>iOS側は[[Mac]]にまとめるか。</p>
+<p>iOS側は<a href="./Mac.html">Mac</a>にまとめるか。</p>
 </div></template>
 
 

@@ -1,5 +1,5 @@
 <template><div><h2 id="f" tabindex="-1"><a class="header-anchor" href="#f"><span>F#</span></a></h2>
-<p>以前F#で良いという結論を出したが、その辺の事から。[[FSharp]]</p>
+<p>以前F#で良いという結論を出したが、その辺の事から。<a href="./FSharp.html">FSharp</a></p>
 <ul>
 <li><a href="https://karino2.github.io/2020/11/15/how_about_fsharp.html" target="_blank" rel="noopener noreferrer">MacとWindowsの両方で使う雑用コマンドライン言語にF#はどうだろう？ - なーんだ、ただの水たまりじゃないか</a></li>
 <li><a href="https://karino2.github.io/2020/12/10/fsharp_for_zatuyou.html" target="_blank" rel="noopener noreferrer">F#が雑用言語に良い。 - なーんだ、ただの水たまりじゃないか</a></li>
@@ -16,8 +16,8 @@ golangとpythonならみんな持ってるので、githubをクローンして�
 一方で.NET Coreを入れるところから、となると、ちょっと試してもらう敷居は高い。</p>
 <p>なんかこう、身近な人が試して反応がもらえないと、それ以上広めることは出来ないよなぁ、とは思っている。</p>
 <h2 id="kotlin-nativeとscala-native" tabindex="-1"><a class="header-anchor" href="#kotlin-nativeとscala-native"><span>Kotlin NativeとScala Native</span></a></h2>
-<p>[[GoFO]]のようなアイデアをちょっと実装してみるのになんか手頃な言語は無いかなぁ、と思って、[[KotlinNative]]とか[[ScalaNative]]のページや動画を見てみる。
-[[ScalaNative]]良いのでは？</p>
+<p><a href="./GoFO.html">GoFO</a>のようなアイデアをちょっと実装してみるのになんか手頃な言語は無いかなぁ、と思って、<a href="./KotlinNative.html">KotlinNative</a>とか<a href="./ScalaNative.html">ScalaNative</a>のページや動画を見てみる。
+<a href="./ScalaNative.html">ScalaNative</a>良いのでは？</p>
 <p>以下はちょっと動画見た程度の認識なので間違いとかもあるかも。</p>
 <h3 id="kotlin-nativeとscala-nativeの違い" tabindex="-1"><a class="header-anchor" href="#kotlin-nativeとscala-nativeの違い"><span>Kotlin NativeとScala Nativeの違い</span></a></h3>
 <p>両者、single binaryで必要なものは全部静的リンクしても比較的小さい実行ファイルが出来る、という事では違いは無い。</p>
@@ -39,14 +39,14 @@ Kotlin Nativeはかなり早い。
 いざKotlin NativeやScala Nativeを前にしてみると、どうもそういう問題でも無い気はしてきた。</p>
 <p>例えば今Kotlin Nativeで何かコマンドを作ったとして、それをgolangほど気楽に試してもらえる気はしない。
 golangやpythonやnpmがすぐ試してもらえるのは、それがみんなの手元にあるからだよなぁ。</p>
-<p>ようするにbrew化してあればF#でもいいんじゃないか？と思って[[Homebrew]]のドキュメントをちょっと読んでいたところ、
+<p>ようするにbrew化してあればF#でもいいんじゃないか？と思って<a href="./Homebrew.html">Homebrew</a>のドキュメントをちょっと読んでいたところ、
 dotnet coreがある事に気づく。
 むしろシングルバイナリにしなくてもちゃんとbrewでインストール出来るようにしてあれば意外と十分なのではなかろうか。</p>
 <h2 id="folang" tabindex="-1"><a class="header-anchor" href="#folang"><span>Folang</span></a></h2>
 <p>homebrewのdotnetのバージョンが上がった結果これまで作ったコマンドが動かなくなって（ビルドし直せば動く）、
 やはりdotnetは面倒だな、という気になる。</p>
 <p>言語としてはF#で良いので、似たような言語をgolangにトランスパイルする、というのを作ってみている。
-これをFolangと名付けた。＞[[Folang]]</p>
+これをFolangと名付けた。＞<a href="./Folang.html">Folang</a></p>
 </div></template>
 
 

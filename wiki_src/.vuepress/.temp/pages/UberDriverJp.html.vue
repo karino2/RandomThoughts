@@ -1,4 +1,4 @@
-<template><div><p>[[サーフボード]]</p>
+<template><div><p><a href="./サーフボード.html">サーフボード</a></p>
 <h1 id="プレセボ-uber-driver-jp-5-6" tabindex="-1"><a class="header-anchor" href="#プレセボ-uber-driver-jp-5-6"><span>プレセボ UBER DRIVER JP 5'6</span></a></h1>
 <p><strong>スペック</strong></p>
 <ul>

@@ -2,11 +2,11 @@
 <ul>
 <li><a href="https://play.google.com/store/apps/details?id=io.github.karino2.mdtouch" target="_blank" rel="noopener noreferrer">MDTouch - Apps on Google Play</a></li>
 <li><a href="https://github.com/karino2/MDTouch" target="_blank" rel="noopener noreferrer">github: MDTouch</a> ソースコード</li>
-<li>[[MDMinaosi]] PC版の類似の自作アプリ。</li>
+<li><a href="./MDMinaosi.html">MDMinaosi</a> PC版の類似の自作アプリ。</li>
 </ul>
-<p>機能的には[[MDMinaosi]]のほぼAndroid版という感じだが、タッチで使うので意味合いが違ってくる部分が結構ある。
+<p>機能的には<a href="./MDMinaosi.html">MDMinaosi</a>のほぼAndroid版という感じだが、タッチで使うので意味合いが違ってくる部分が結構ある。
 違う事をしようとして結果として同じ機能になっている、という感じ。</p>
-<p>[[TeFWiki]]のexternal editorとして使っている。</p>
+<p><a href="./TeFWiki.html">TeFWiki</a>のexternal editorとして使っている。</p>
 <h3 id="思想とコンセプト" tabindex="-1"><a class="header-anchor" href="#思想とコンセプト"><span>思想とコンセプト</span></a></h3>
 <p>カーソルの移動というのは非常にタッチと相性が悪い。使っていて気持ちよく使えない。
 だから移動はカーソルでは無く、通常のリストビューのような形でスクロールするのを主体とする。</p>
@@ -21,7 +21,7 @@
 ファイル自身はアプリは管理せず、あくまで既に存在しているファイルを編集する一外部アプリに過ぎないようにしてある。
 これは気軽にファイラーやGoogleDriveから使えるシンプルなマークダウンエディタとして使う事を想定している。</p>
 <p>既存の多くのマークダウンエディタはドキュメントを抱え込む形のドキュメントマネージメントシステムのような構造になってしまっていて、PCなどの外部と手軽にやりとり出来るというマークダウンの良さを損ねてしまっていると思ってこうした。</p>
-<p>実際自分は、[[TeFWiki]]のexternal editorとして使っている。</p>
+<p>実際自分は、<a href="./TeFWiki.html">TeFWiki</a>のexternal editorとして使っている。</p>
 <h3 id="jetpack-composeを使ったネイティブのmarkdown-view" tabindex="-1"><a class="header-anchor" href="#jetpack-composeを使ったネイティブのmarkdown-view"><span>Jetpack Composeを使ったネイティブのMarkdown View</span></a></h3>
 <p>ユーザー視点ではどうでもいい事だけれど、Jetpack Composeを使ったMarkdown表示のネイティブ実装が含まれている。
 WebView使ってません。パーサーもjetbrainのマークダウンパーサー使ってます。</p>

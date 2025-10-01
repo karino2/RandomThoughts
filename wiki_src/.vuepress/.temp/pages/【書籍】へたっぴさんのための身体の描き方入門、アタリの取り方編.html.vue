@@ -1,7 +1,7 @@
-<template><div><p>[[お絵描き]]</p>
+<template><div><p><a href="./お絵描き.html">お絵描き</a></p>
 <p><a href="https://amzn.to/4g4BtVN" target="_blank" rel="noopener noreferrer">amaozn: へたっぴさんのための身体の描き方入門　アタリの取り方編</a></p>
 <h2 id="始めるモチベーション-2024-09-01-日" tabindex="-1"><a class="header-anchor" href="#始めるモチベーション-2024-09-01-日"><span>始めるモチベーション 2024-09-01 (日)</span></a></h2>
-<p>[[【書籍】マンガキャラアタリ練習帳]]のアタリがすでに体の曲線を含んでいて、少し出来る気がしなかったので、
+<p><a href="./【書籍】マンガキャラアタリ練習帳.html">【書籍】マンガキャラアタリ練習帳</a>のアタリがすでに体の曲線を含んでいて、少し出来る気がしなかったので、
 もうちょっと簡単なアタリをいろいろ描きたい、と思った。
 そこでKindle Unlimitedで何か無いかな〜と思い見かけたのでやってみている。</p>
 <h3 id="少しやってみた" tabindex="-1"><a class="header-anchor" href="#少しやってみた"><span>少しやってみた</span></a></h3>

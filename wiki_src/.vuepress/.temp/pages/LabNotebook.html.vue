@@ -1,7 +1,7 @@
 <template><div><p>データ分析やプログラムの作業ログを作る時に、なんかちゃんとしたノウハウ無いかなぁ、と思ってLab notebookとかには興味がある。</p>
 <p>例えばパーフォマンス改善とかは記録を取るのが難しいんだけど必要になる度合いも高いのでもうちょっとなんとか出来たらいいんだけどなぁ。</p>
 <h2 id="r-for-data-scicence" tabindex="-1"><a class="header-anchor" href="#r-for-data-scicence"><span>R for Data Scicence</span></a></h2>
-<p>[[【書籍】RforDataScience]]の30章で少し言及がある。</p>
+<p><a href="./【書籍】RforDataScience.html">【書籍】RforDataScience</a>の30章で少し言及がある。</p>
 <ul>
 <li><a href="https://r4ds.had.co.nz/r-markdown-workflow.html" target="_blank" rel="noopener noreferrer">30 R Markdown workflow ｜ R for Data Science</a>
 <ul>
@@ -27,7 +27,7 @@
 <p>Labでは無いから違って当然ではあるのだが、一方で残す事について何か基本的な方針みたいなのはあっても良い気がするな。</p>
 <h2 id="linus-paulingのresearch-notebook" tabindex="-1"><a class="header-anchor" href="#linus-paulingのresearch-notebook"><span>Linus Paulingのresearch notebook</span></a></h2>
 <p><a href="http://scarc.library.oregonstate.edu/coll/pauling/rnb/" target="_blank" rel="noopener noreferrer">Linus Pauling Research Notebooks - Special Collections &amp; Archives Research Center</a></p>
-<p>[[LinusPauling]]のノートブックが公開されてる！凄いね。</p>
+<p><a href="./LinusPauling.html">LinusPauling</a>のノートブックが公開されてる！凄いね。</p>
 </div></template>
 
 

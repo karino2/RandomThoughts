@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[技術的なメモ]]</li>
-<li>[[CG]]</li>
+<li><a href="./技術的なメモ.html">技術的なメモ</a></li>
+<li><a href="./CG.html">CG</a></li>
 </ul>
 <p>ゲーム系のカンファレンス。</p>
 <h2 id="cedec2024" tabindex="-1"><a class="header-anchor" href="#cedec2024"><span>CEDEC2024</span></a></h2>

@@ -1,4 +1,4 @@
-<template><div><p>[[Swift]]のasyncとかawaitの話。</p>
+<template><div><p><a href="./Swift.html">Swift</a>のasyncとかawaitの話。</p>
 <p>なんかGCDと結構別物っぽいので真面目に勉強する。</p>
 <ul>
 <li><a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/" target="_blank" rel="noopener noreferrer">Concurrency - Documentation</a></li>
@@ -123,7 +123,7 @@ asyncじゃないコンテキストから実行する時などに使う。
 キャンセレーションやエラーなどのporpagateを手でやってやる必要がる（Taskオブジェクトが帰ってきてそれで行う）</p>
 <p>なお、Task.detachedでunstructureよりさらに独立で、Actorやpriorityなどが共有されないタスクが作られるとか。Actorはまだ出てきてないので他の動画を見る必要がありそう。</p>
 <h3 id="structured-concurrencyの元ネタはpythonのtrioらしい" tabindex="-1"><a class="header-anchor" href="#structured-concurrencyの元ネタはpythonのtrioらしい"><span>Structured Concurrencyの元ネタはPythonのTrioらしい</span></a></h3>
-<p>[[Python]]に関連リンクを置いておく。</p>
+<p><a href="./Python.html">Python</a>に関連リンクを置いておく。</p>
 <h2 id="protect-mutable-state-with-swift-actors-wwdc21" tabindex="-1"><a class="header-anchor" href="#protect-mutable-state-with-swift-actors-wwdc21"><span>Protect mutable state with Swift actors - WWDC21</span></a></h2>
 <p>という事で次はActorを説明しているらしい以下を見る。</p>
 <p><a href="https://developer.apple.com/videos/play/wwdc2021/10133" target="_blank" rel="noopener noreferrer">Protect mutable state with Swift actors - WWDC21 - Videos - Apple Developer</a></p>
@@ -189,7 +189,7 @@ DispatchQueueはそれが保護するリソースとDispatchQueueの関係がimp
 安全であると同時に一部を効率のために限定された形で共有する事を許す、というのが可能になっている。
 これはasync/awaitとも良く組み合わさり、開発者がより柔軟にトレードオフを選択出来るactorモデルとなっている。</p>
 <h3 id="pythonのtrioによるstructured-concurrency" tabindex="-1"><a class="header-anchor" href="#pythonのtrioによるstructured-concurrency"><span>Pythonのtrioによるstructured concurrency</span></a></h3>
-<p>上記のマニフェストのコメントでリンクが貼られていたので見てみる。[[Python]]に続く。</p>
+<p>上記のマニフェストのコメントでリンクが貼られていたので見てみる。<a href="./Python.html">Python</a>に続く。</p>
 <h2 id="update-a-sample-app-の動画" tabindex="-1"><a class="header-anchor" href="#update-a-sample-app-の動画"><span>Update a sample app の動画</span></a></h2>
 <p>もうだいたい理解したので作業を開始しようと思ったら意外と手が動かなかったので、
 既存のサンプルをSwift Concurrencyバージョンに直す、という以下の動画を見る事に。</p>

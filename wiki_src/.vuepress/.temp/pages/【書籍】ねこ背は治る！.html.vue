@@ -1,4 +1,4 @@
-<template><div><p>[[オーディオブック]]</p>
+<template><div><p><a href="./オーディオブック.html">オーディオブック</a></p>
 <ul>
 <li><a href="https://amzn.to/487r5Y6" target="_blank" rel="noopener noreferrer">amazon: ねこ背は治る！［新装版］――知るだけで体が改善する「４つの意識」</a></li>
 </ul>

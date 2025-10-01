@@ -1,7 +1,7 @@
-<template><div><p>[[CG]]</p>
+<template><div><p><a href="./CG.html">CG</a></p>
 <p>Wikipediaの日本語では<a href="https://ja.wikipedia.org/wiki/%E7%82%B9%E5%88%BB" target="_blank" rel="noopener noreferrer">点刻 - Wikipedia</a>となっている。
-[[MFG]]でStipplingとか出来ないかなぁ、と思って情報を集めたり、実装のメモをしたりするページ。</p>
-<p>[[MdImgr]]用のテンプレートを貼っておく。<code v-pre>![imgs/Stippling/$1](imgs/Stippling/$1)</code></p>
+<a href="./MFG.html">MFG</a>でStipplingとか出来ないかなぁ、と思って情報を集めたり、実装のメモをしたりするページ。</p>
+<p><a href="./MdImgr.html">MdImgr</a>用のテンプレートを貼っておく。<code v-pre>![imgs/Stippling/$1](imgs/Stippling/$1)</code></p>
 <h2 id="weighted-voronoi-centroidによるstippling" tabindex="-1"><a class="header-anchor" href="#weighted-voronoi-centroidによるstippling"><span>Weighted Voronoi Centroidによるstippling</span></a></h2>
 <p>たぶん一番基礎となるImage Stipplingの論文は以下の2002のSecordの論文と思う。</p>
 <p><a href="https://dl.acm.org/doi/abs/10.1145/508530.508537" target="_blank" rel="noopener noreferrer">Weighted Voronoi stippling - Proceedings of the 2nd international symposium on Non-photorealistic animation and rendering</a></p>
@@ -37,7 +37,7 @@ GPUだけでは閉じない。</p>
 <p>というあたりに不安もあるが、まずは実装してみて考えよう。</p>
 <h3 id="グレースケール化" tabindex="-1"><a class="header-anchor" href="#グレースケール化"><span>グレースケール化</span></a></h3>
 <p>まずはグレースケールの場を作るためにグレースケールにしよう。
-[[MFG]]に書いたように、以下とする。</p>
+<a href="./MFG.html">MFG</a>に書いたように、以下とする。</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">@bounds(input_u8.extent(0), input_u8.extent(1))</span>
 <span class="line">def grayT |x, y| {</span>
 <span class="line">  to_xyza(input_u8(x, y)).y</span>
@@ -74,7 +74,7 @@ GPUだけでは閉じない。</p>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="@source/imgs/Stippling/2025_0820_210217.png" alt="imgs/Stippling/2025_0820_210217.png"></p>
 <p>なんかあってそうか。でもサイズ2はちょっと小さいな。スペース広すぎか。</p>
 <p>まぁいい。これを少しずらす。</p>
-<p>ハッシュは[[MFG]]に書いたPCGベースの奴でいいだろう（正直xorshiftとかxxHashでも十分良い気がしているが）。</p>
+<p>ハッシュは<a href="./MFG.html">MFG</a>に書いたPCGベースの奴でいいだろう（正直xorshiftとかxxHashでも十分良い気がしているが）。</p>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">fn hash |i: i32| {</span>
 <span class="line">  let state = u32(i) * 747796405u + 2891336453u</span>
 <span class="line">  let word = xor((state >> ((state >> 28u) + 4u)), state) * 277803737u</span>
@@ -226,7 +226,7 @@ imge stipplingの時にはくっつくくらいそばになるケースを作ら
 それである程度連続に間隔が変化する点を打てるのではないか。</p>
 <p>ただこの考えはここまで書いたコードと全然違うので一旦中断。</p>
 <h3 id="ハーフトーンはどうだろう" tabindex="-1"><a class="header-anchor" href="#ハーフトーンはどうだろう"><span>ハーフトーンはどうだろう？</span></a></h3>
-<p>ハーフトーンを作る方が簡単そうな上に使い道もありそう。[[ハーフトーン]]</p>
+<p>ハーフトーンを作る方が簡単そうな上に使い道もありそう。<a href="./ハーフトーン.html">ハーフトーン</a></p>
 </div></template>
 
 

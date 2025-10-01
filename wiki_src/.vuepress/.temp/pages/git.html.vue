@@ -1,6 +1,6 @@
 <template><div><p>みんな大好きgit。</p>
 <ul>
-<li>[[ゆっくり中級git]] 最近自分が作ってる中級を目指す[[ゆっくり実況]]</li>
+<li><a href="./ゆっくり中級git.html">ゆっくり中級git</a> 最近自分が作ってる中級を目指す<a href="./ゆっくり実況.html">ゆっくり実況</a></li>
 </ul>
 <h2 id="外部リンク" tabindex="-1"><a class="header-anchor" href="#外部リンク"><span>外部リンク</span></a></h2>
 <ul>
@@ -69,7 +69,7 @@
 <li><a href="https://github.com/git/git/tree/master/gitk-git" target="_blank" rel="noopener noreferrer">git/gitk-git at master · git/git</a></li>
 </ul>
 <p>ちょっといじりたいと思ったが、なかなか気力がわかないな。
-誰か[[WebUI]]で同じの作って。</p>
+誰か<a href="./WebUI.html">WebUI</a>で同じの作って。</p>
 <h2 id="gitのクライアントいろいろ" tabindex="-1"><a class="header-anchor" href="#gitのクライアントいろいろ"><span>gitのクライアントいろいろ</span></a></h2>
 <ul>
 <li><a href="https://jonas.github.io/tig/" target="_blank" rel="noopener noreferrer">Introduction · Tig - Text-mode interface for Git</a> ncursesのUI。生きていけそうではあるがショートカットとか覚えるのがだるい</li>

@@ -1,4 +1,4 @@
-<template><div><p>[[Cpp]]</p>
+<template><div><p><a href="./Cpp.html">Cpp</a></p>
 <p><a href="https://www.1024cores.net/home" target="_blank" rel="noopener noreferrer">1024cores</a></p>
 <p>Dmitry Vyukovによるブログ。200X年代末期に書かれていたブログだが、lock free関連の情報としては2023年現在でもインターネット1ではなかろうか。
 言語はC++だが実質C言語、みたいなコードではある。</p>

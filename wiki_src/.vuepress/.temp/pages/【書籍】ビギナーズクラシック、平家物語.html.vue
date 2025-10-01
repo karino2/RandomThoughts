@@ -1,6 +1,6 @@
 <template><div><ul>
-<li>[[日本史]]</li>
-<li>[[書籍]]</li>
+<li><a href="./日本史.html">日本史</a></li>
+<li><a href="./書籍.html">書籍</a></li>
 </ul>
 <p><a href="https://amzn.to/4cUuagQ" target="_blank" rel="noopener noreferrer">amazon: 平家物語　ビギナーズ・クラシックス</a></p>
 <h2 id="購入-2023-07-30-日" tabindex="-1"><a class="header-anchor" href="#購入-2023-07-30-日"><span>購入 2023-07-30 (日)</span></a></h2>

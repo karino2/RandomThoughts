@@ -1,4 +1,4 @@
-<template><div><p>[[技術的なメモ]]</p>
+<template><div><p><a href="./技術的なメモ.html">技術的なメモ</a></p>
 <p>私が主催するもくもく会。
 逗子市の無料で使えるスペースでAndroidアプリ開発を皆が勝手にする、みたいな会にしたい。</p>
 <p><a href="https://zushi-android-mokmok.connpass.com/" target="_blank" rel="noopener noreferrer">逗子Androidアプリ開発もくもく会 - connpass</a></p>
@@ -8,7 +8,7 @@
 <li>逗子市民交流センター（詳細は上記connpassのイベント参照)</li>
 </ul>
 <h2 id="概要" tabindex="-1"><a class="header-anchor" href="#概要"><span>概要</span></a></h2>
-<p>以前[[あおぞらAndroid教室]]でやってたような感じで、集まってAndroidアプリ開発をする。
+<p>以前<a href="./あおぞらAndroid教室.html">あおぞらAndroid教室</a>でやってたような感じで、集まってAndroidアプリ開発をする。
 今の所自分ともうひとりでやろうと思っているが、もう2〜3人増やしてもいいかな、と思ってるので一般の人の参加も受け入れてみる試み。</p>
 <p>基本的には最初に何をやるつもりか簡単に説明し、帰る前に一人5分くらいで簡単にやった事を話して解散、という流れ。</p>
 <p>途中で参加したり帰ったりはOKだけど、参加した時に何をやるのかの説明と、帰る前に何をやったかの説明はやって欲しい。</p>

@@ -1,4 +1,4 @@
-<template><div><p>[[go]]向けの[[Electron]]代替。</p>
+<template><div><p><a href="./go.html">go</a>向けの<a href="./Electron.html">Electron</a>代替。</p>
 <ul>
 <li><a href="https://wails.io/" target="_blank" rel="noopener noreferrer">The Wails Project - Wails</a></li>
 <li><a href="https://github.com/wailsapp/awesome-wails?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">wailsapp/awesome-wails: ⭐ A carefully selected list of Wails applications</a> サンプルアプリを探すのに良い。</li>

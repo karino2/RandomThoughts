@@ -1,189 +1,189 @@
 <template><div><h2 id="プログラム言語" tabindex="-1"><a class="header-anchor" href="#プログラム言語"><span>プログラム言語</span></a></h2>
 <ul>
-<li>[[Kotlin]]
+<li><a href="./Kotlin.html">Kotlin</a>
 <ul>
-<li>[[Kotlinリファレンスの和訳]]</li>
+<li><a href="./Kotlinリファレンスの和訳.html">Kotlinリファレンスの和訳</a></li>
 </ul>
 </li>
-<li>[[Swift]]
+<li><a href="./Swift.html">Swift</a>
 <ul>
-<li>[[SwiftConcurrency]]</li>
+<li><a href="./SwiftConcurrency.html">SwiftConcurrency</a></li>
 </ul>
 </li>
-<li>[[Cpp]]</li>
-<li>[[ObjectiveC]]</li>
-<li>[[R]]</li>
-<li>[[Folang]]</li>
-<li>[[FSharp]]</li>
-<li>[[Electron]]</li>
-<li>[[Go]]</li>
-<li>[[WebUI]]</li>
-<li>[[Flutter]]</li>
-<li>[[JavaScript]]
+<li><a href="./Cpp.html">Cpp</a></li>
+<li><a href="./ObjectiveC.html">ObjectiveC</a></li>
+<li><a href="./R.html">R</a></li>
+<li><a href="./Folang.html">Folang</a></li>
+<li><a href="./FSharp.html">FSharp</a></li>
+<li><a href="./Electron.html">Electron</a></li>
+<li><a href="./Go.html">Go</a></li>
+<li><a href="./WebUI.html">WebUI</a></li>
+<li><a href="./Flutter.html">Flutter</a></li>
+<li><a href="./JavaScript.html">JavaScript</a>
 <ul>
-<li>[[VuePress]]</li>
+<li><a href="./VuePress.html">VuePress</a></li>
 </ul>
 </li>
-<li>[[TypeScript]]</li>
-<li>[[Deno]]</li>
-<li>[[Python]]
+<li><a href="./TypeScript.html">TypeScript</a></li>
+<li><a href="./Deno.html">Deno</a></li>
+<li><a href="./Python.html">Python</a>
 <ul>
-<li>[[Starlark]]</li>
+<li><a href="./Starlark.html">Starlark</a></li>
 </ul>
 </li>
-<li>[[並列プログラム]] 明らかに言語では無いが他に置き場がなかったのでここに置く</li>
-<li>[[EmbeddedLang]]</li>
-<li>[[【書籍】ModernCompilerImplementationInML]]</li>
-<li>[[MFG]]</li>
+<li><a href="./並列プログラム.html">並列プログラム</a> 明らかに言語では無いが他に置き場がなかったのでここに置く</li>
+<li><a href="./EmbeddedLang.html">EmbeddedLang</a></li>
+<li><a href="./【書籍】ModernCompilerImplementationInML.html">【書籍】ModernCompilerImplementationInML</a></li>
+<li><a href="./MFG.html">MFG</a></li>
 </ul>
 <h2 id="unixっぽいもの" tabindex="-1"><a class="header-anchor" href="#unixっぽいもの"><span>Unixっぽいもの</span></a></h2>
 <ul>
-<li>[[awk]]</li>
-<li>[[sed]]</li>
-<li>[[Shell]]</li>
-<li>[[OilShell]]</li>
-<li>[[sdbm]]</li>
-<li>[[git]]</li>
-<li>[[Syncthing]] 違う気もするが置き場が無いので。</li>
+<li><a href="./awk.html">awk</a></li>
+<li><a href="./sed.html">sed</a></li>
+<li><a href="./Shell.html">Shell</a></li>
+<li><a href="./OilShell.html">OilShell</a></li>
+<li><a href="./sdbm.html">sdbm</a></li>
+<li><a href="./git.html">git</a></li>
+<li><a href="./Syncthing.html">Syncthing</a> 違う気もするが置き場が無いので。</li>
 </ul>
 <h2 id="windows-macなど" tabindex="-1"><a class="header-anchor" href="#windows-macなど"><span>Windows, Macなど</span></a></h2>
 <ul>
-<li>[[Mac]]
+<li><a href="./Mac.html">Mac</a>
 <ul>
-<li>[[Macショートカット]]</li>
-<li>[[Metal]]</li>
-<li>[[ObjectiveC]]</li>
-<li>[[Homebrew]]</li>
-<li>[[Swift]]</li>
-<li>[[動画配信]]</li>
+<li><a href="./Macショートカット.html">Macショートカット</a></li>
+<li><a href="./Metal.html">Metal</a></li>
+<li><a href="./ObjectiveC.html">ObjectiveC</a></li>
+<li><a href="./Homebrew.html">Homebrew</a></li>
+<li><a href="./Swift.html">Swift</a></li>
+<li><a href="./動画配信.html">動画配信</a></li>
 </ul>
 </li>
-<li>[[Scoop]]</li>
-<li>[[Windows]]
+<li><a href="./Scoop.html">Scoop</a></li>
+<li><a href="./Windows.html">Windows</a>
 <ul>
-<li>[[NuGet]]</li>
-<li>[[DirectCompute]]</li>
-<li>[[VisualStudio]]</li>
-<li>[[vcpkg]]</li>
-<li>[[PowerShell]]</li>
+<li><a href="./NuGet.html">NuGet</a></li>
+<li><a href="./DirectCompute.html">DirectCompute</a></li>
+<li><a href="./VisualStudio.html">VisualStudio</a></li>
+<li><a href="./vcpkg.html">vcpkg</a></li>
+<li><a href="./PowerShell.html">PowerShell</a></li>
 </ul>
 </li>
-<li>[[ChromeOS]]</li>
+<li><a href="./ChromeOS.html">ChromeOS</a></li>
 </ul>
 <h2 id="ライブラリ、アプリ、android、要素技術等" tabindex="-1"><a class="header-anchor" href="#ライブラリ、アプリ、android、要素技術等"><span>ライブラリ、アプリ、Android、要素技術等</span></a></h2>
 <ul>
-<li>[[Android]]
+<li><a href="./Android.html">Android</a>
 <ul>
-<li>[[FDroid]]</li>
+<li><a href="./FDroid.html">FDroid</a></li>
 </ul>
 </li>
-<li>[[bulma]]</li>
-<li>[[VSCode]]
+<li><a href="./bulma.html">bulma</a></li>
+<li><a href="./VSCode.html">VSCode</a>
 <ul>
-<li>[[VisualStudio]] ついでに</li>
+<li><a href="./VisualStudio.html">VisualStudio</a> ついでに</li>
 </ul>
 </li>
-<li>[[MarkDown]]</li>
-<li>[[VM]]</li>
-<li>[[テーブルエディタ]]</li>
-<li>[[CMake]]</li>
-<li>[[sitabot]]</li>
-<li>[[LEAP]]</li>
-<li>[[Qt]]</li>
-<li>[[zip]]</li>
-<li>[[CG]]
+<li><a href="./MarkDown.html">MarkDown</a></li>
+<li><a href="./VM.html">VM</a></li>
+<li><a href="./テーブルエディタ.html">テーブルエディタ</a></li>
+<li><a href="./CMake.html">CMake</a></li>
+<li><a href="./sitabot.html">sitabot</a></li>
+<li><a href="./LEAP.html">LEAP</a></li>
+<li><a href="./Qt.html">Qt</a></li>
+<li><a href="./zip.html">zip</a></li>
+<li><a href="./CG.html">CG</a>
 <ul>
-<li>[[CEDEC]]</li>
+<li><a href="./CEDEC.html">CEDEC</a></li>
 </ul>
 </li>
-<li>[[囲碁]]</li>
+<li><a href="./囲碁.html">囲碁</a></li>
 </ul>
 <h3 id="ライブ配信" tabindex="-1"><a class="header-anchor" href="#ライブ配信"><span>ライブ配信</span></a></h3>
 <ul>
-<li>[[YouTubeAPI]]</li>
-<li>[[Twitch]]</li>
+<li><a href="./YouTubeAPI.html">YouTubeAPI</a></li>
+<li><a href="./Twitch.html">Twitch</a></li>
 </ul>
 <h2 id="非プログラム関連" tabindex="-1"><a class="header-anchor" href="#非プログラム関連"><span>非プログラム関連</span></a></h2>
 <ul>
-<li>[[GithubPages]]
+<li><a href="./GithubPages.html">GithubPages</a>
 <ul>
-<li>[[GitWiki]]</li>
-<li>[[GithubPagesGallery]]</li>
+<li><a href="./GitWiki.html">GitWiki</a></li>
+<li><a href="./GithubPagesGallery.html">GithubPagesGallery</a></li>
 </ul>
 </li>
-<li>[[11ty]]</li>
-<li>[[ポモドーロテクニック]]</li>
-<li>[[LabNotebook]]</li>
-<li>[[ノートPC]]
+<li><a href="./11ty.html">11ty</a></li>
+<li><a href="./ポモドーロテクニック.html">ポモドーロテクニック</a></li>
+<li><a href="./LabNotebook.html">LabNotebook</a></li>
+<li><a href="./ノートPC.html">ノートPC</a>
 <ul>
-<li>[[ミニPC]]</li>
+<li><a href="./ミニPC.html">ミニPC</a></li>
 </ul>
 </li>
-<li>[[スマホ]]</li>
-<li>[[GoogleForms]]</li>
-<li>[[KindleFire]]</li>
-<li>[[WiMax]]</li>
-<li>[[ゆっくり実況]]
+<li><a href="./スマホ.html">スマホ</a></li>
+<li><a href="./GoogleForms.html">GoogleForms</a></li>
+<li><a href="./KindleFire.html">KindleFire</a></li>
+<li><a href="./WiMax.html">WiMax</a></li>
+<li><a href="./ゆっくり実況.html">ゆっくり実況</a>
 <ul>
-<li>[[ゆっくり中級git]]</li>
+<li><a href="./ゆっくり中級git.html">ゆっくり中級git</a></li>
 </ul>
 </li>
 </ul>
 <h2 id="自分関連" tabindex="-1"><a class="header-anchor" href="#自分関連"><span>自分関連</span></a></h2>
 <ul>
-<li>[[そのうちやりたい事]]</li>
-<li>[[自作アプリ]]
+<li><a href="./そのうちやりたい事.html">そのうちやりたい事</a></li>
+<li><a href="./自作アプリ.html">自作アプリ</a>
 <ul>
-<li>[[TeFWiki]]</li>
+<li><a href="./TeFWiki.html">TeFWiki</a></li>
 </ul>
 </li>
-<li>[[あおぞらAndroid教室]]</li>
-<li>[[逗子Androidアプリ開発もくもく会]]</li>
+<li><a href="./あおぞらAndroid教室.html">あおぞらAndroid教室</a></li>
+<li><a href="./逗子Androidアプリ開発もくもく会.html">逗子Androidアプリ開発もくもく会</a></li>
 </ul>
 <h2 id="書籍関連" tabindex="-1"><a class="header-anchor" href="#書籍関連"><span>書籍関連</span></a></h2>
-<p>[[書籍]]に自動生成で集められるが、最初に作る時のエントリポイントとして。</p>
+<p><a href="./書籍.html">書籍</a>に自動生成で集められるが、最初に作る時のエントリポイントとして。</p>
 <ul>
-<li>[[【書籍】ggplot2、ElegantGraphicsForDataAnalysis]]</li>
-<li>[[【書籍】TheArtOfUnixProgramming]]</li>
-<li>[[【書籍】TheArtOfMultiprocessorProgramming]] [[並列プログラム]]にリンクがあるんだが良く行方不明になるのでここにも貼っとく。</li>
-<li>[[【書籍】まつもとゆきひろ、言語のしくみ]]</li>
-<li>[[【書籍】PrinciplesOfDigitalImageProcessing]]</li>
-<li>[[【書籍】TheArtOfComputerProgramming]]</li>
-<li>[[【書籍】IntroductionToAlgorithms]]</li>
-<li>[[【書籍】プログラミングの心理学]]</li>
-<li>[[【書籍】情熱プログラマー]]</li>
-<li>[[【書籍】アドレナリンジャンキー]]</li>
-<li>[[【書籍】CppConcurrencyInAction]]</li>
-<li>[[【書籍】CodeComplete]]</li>
-<li>[[並列プログラム]] に書籍へのリンクもそれなりにある。</li>
+<li><a href="./【書籍】ggplot2、ElegantGraphicsForDataAnalysis.html">【書籍】ggplot2、ElegantGraphicsForDataAnalysis</a></li>
+<li><a href="./【書籍】TheArtOfUnixProgramming.html">【書籍】TheArtOfUnixProgramming</a></li>
+<li><a href="./【書籍】TheArtOfMultiprocessorProgramming.html">【書籍】TheArtOfMultiprocessorProgramming</a> <a href="./並列プログラム.html">並列プログラム</a>にリンクがあるんだが良く行方不明になるのでここにも貼っとく。</li>
+<li><a href="./【書籍】まつもとゆきひろ、言語のしくみ.html">【書籍】まつもとゆきひろ、言語のしくみ</a></li>
+<li><a href="./【書籍】PrinciplesOfDigitalImageProcessing.html">【書籍】PrinciplesOfDigitalImageProcessing</a></li>
+<li><a href="./【書籍】TheArtOfComputerProgramming.html">【書籍】TheArtOfComputerProgramming</a></li>
+<li><a href="./【書籍】IntroductionToAlgorithms.html">【書籍】IntroductionToAlgorithms</a></li>
+<li><a href="./【書籍】プログラミングの心理学.html">【書籍】プログラミングの心理学</a></li>
+<li><a href="./【書籍】情熱プログラマー.html">【書籍】情熱プログラマー</a></li>
+<li><a href="./【書籍】アドレナリンジャンキー.html">【書籍】アドレナリンジャンキー</a></li>
+<li><a href="./【書籍】CppConcurrencyInAction.html">【書籍】CppConcurrencyInAction</a></li>
+<li><a href="./【書籍】CodeComplete.html">【書籍】CodeComplete</a></li>
+<li><a href="./並列プログラム.html">並列プログラム</a> に書籍へのリンクもそれなりにある。</li>
 </ul>
 <h2 id="エッセイ的なもの" tabindex="-1"><a class="header-anchor" href="#エッセイ的なもの"><span>エッセイ的なもの</span></a></h2>
 <ul>
-<li>[[CSVのプロットはもうちょっと簡単にならないか]]</li>
-<li>[[Unix的GUIツール]]</li>
-<li>[[コマンドラインツールを書くための言語]]</li>
-<li>[[プログラム雑談]]
+<li><a href="./CSVのプロットはもうちょっと簡単にならないか.html">CSVのプロットはもうちょっと簡単にならないか</a></li>
+<li><a href="./Unix的GUIツール.html">Unix的GUIツール</a></li>
+<li><a href="./コマンドラインツールを書くための言語.html">コマンドラインツールを書くための言語</a></li>
+<li><a href="./プログラム雑談.html">プログラム雑談</a>
 <ul>
-<li>[[お便りコーナー]]</li>
+<li><a href="./お便りコーナー.html">お便りコーナー</a></li>
 </ul>
 </li>
-<li>[[プログラミングエッセイ]]
+<li><a href="./プログラミングエッセイ.html">プログラミングエッセイ</a>
 <ul>
-<li>[[サーファープログラマー]]</li>
+<li><a href="./サーファープログラマー.html">サーファープログラマー</a></li>
 </ul>
 </li>
-<li>[[UFASアーキテクチャ]]</li>
-<li>[[技術文書の読み方]]</li>
-<li>[[Wikiとhowmとメモツール]]</li>
-<li>[[カジュアルな勉強会]]</li>
-<li>[[ポータブルなUI]]</li>
+<li><a href="./UFASアーキテクチャ.html">UFASアーキテクチャ</a></li>
+<li><a href="./技術文書の読み方.html">技術文書の読み方</a></li>
+<li><a href="./Wikiとhowmとメモツール.html">Wikiとhowmとメモツール</a></li>
+<li><a href="./カジュアルな勉強会.html">カジュアルな勉強会</a></li>
+<li><a href="./ポータブルなUI.html">ポータブルなUI</a></li>
 </ul>
 <h2 id="外部リンク等" tabindex="-1"><a class="header-anchor" href="#外部リンク等"><span>外部リンク等</span></a></h2>
 <ul>
 <li><a href="https://w.atwiki.jp/karino2/pages/42.html" target="_blank" rel="noopener noreferrer">Unixコマンドで作るリレーショナルデータベース - karino2 @ ウィキ - atwiki（アットウィキ）</a></li>
 <li><a href="https://tcs.c.titech.ac.jp/csbook/c_lang/index.html" target="_blank" rel="noopener noreferrer">Lecture Notes</a> C言語の入門、割とよくできている気がする。</li>
 <li><a href="https://jax.readthedocs.io/en/latest/index.html" target="_blank" rel="noopener noreferrer">JAX reference documentation — JAX documentation</a></li>
-<li>[[GeoGebra]]</li>
+<li><a href="./GeoGebra.html">GeoGebra</a></li>
 <li><a href="https://github.com/freebsd/freebsd-src/blob/main/bin/pwd/pwd.c" target="_blank" rel="noopener noreferrer">freebsd-src/pwd.c at main · freebsd/freebsd-src</a></li>
 <li><a href="https://commonsware.com/catalog" target="_blank" rel="noopener noreferrer">CommonsWare's Books</a></li>
 <li><a href="https://zencastr.com/" target="_blank" rel="noopener noreferrer">zencastr</a> 人とpodcastとる時にzencastrが良いと聞きメモ。</li>

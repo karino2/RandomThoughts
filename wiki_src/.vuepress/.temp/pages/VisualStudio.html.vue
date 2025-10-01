@@ -1,7 +1,7 @@
 <template><div><ul>
-<li>[[Windows]]</li>
-<li>[[VSCode]]</li>
-<li>[[vcpkg]]</li>
+<li><a href="./Windows.html">Windows</a></li>
+<li><a href="./VSCode.html">VSCode</a></li>
+<li><a href="./vcpkg.html">vcpkg</a></li>
 </ul>
 <h2 id="同期実行ビジュアライザ" tabindex="-1"><a class="header-anchor" href="#同期実行ビジュアライザ"><span>同期実行ビジュアライザ</span></a></h2>
 <p>同期実行ビジュアライザは拡張機能。Concurrency Visualizerでインストール。</p>
