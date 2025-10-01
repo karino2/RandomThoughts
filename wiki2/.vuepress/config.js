@@ -30,6 +30,9 @@ export default defineUserConfig({
       sidebar: recents,
       home: "Home.html",
     }),
+    head: [
+      ['meta', { name: 'google-site-verification', content: 'OOVcbzSUlF4UfIyZcP3CCKeILC5dmVL0xRBcou-NvvU' }]
+    ],
     title: "RandomThoughts",
     description: "公開用Wiki、雑多なジャンルのメモを全部入れておく所",
     extendsMarkdown: md => {
