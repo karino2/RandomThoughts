@@ -1,0 +1,16 @@
+import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/40代の働き方のスタイル.html.vue"
+const data = JSON.parse("{\"path\":\"/40%E4%BB%A3%E3%81%AE%E5%83%8D%E3%81%8D%E6%96%B9%E3%81%AE%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1700741133000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":3}],\"changelog\":[{\"hash\":\"846ee8ea3eb643c6fc8cf7ddf94f95a39c44460f\",\"time\":1700741133000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"ec7b14e7ee257ec6d5eb2bfcfa626f2ef20eda22\",\"time\":1641790997000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"1aeaf58e8dd62d61c39b685e4ad2d0dbfc3695d3\",\"time\":1641707919000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"40代の働き方のスタイル.md\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

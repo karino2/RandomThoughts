@@ -1,0 +1,16 @@
+import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/【書籍】TheArtOfMultiprocessorProgramming.html.vue"
+const data = JSON.parse("{\"path\":\"/%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91TheArtOfMultiprocessorProgramming.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1701266729000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":4}],\"changelog\":[{\"hash\":\"8fe222a892a8ad03b3a1752db3e0853cd96ede10\",\"time\":1701266729000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"8a0154f2734f838b4ed368c3afecbbcac1492751\",\"time\":1701000844000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"ea1e284c294afb4250e59dd796f4ffccc6e4848d\",\"time\":1700035528000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"4a1a02c8fb8ca38362673483355bec315608542e\",\"time\":1699766641000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"【書籍】TheArtOfMultiprocessorProgramming.md\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

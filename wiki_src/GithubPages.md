@@ -87,7 +87,7 @@ MDNはどうしているんだろう？と以下のサイトをデベロッパ�
 
 なんかdetailsとかいうタグを使っている。
 
-[<details>: The Details disclosure element - HTML: HyperText Markup Language - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+[details: The Details disclosure element - HTML: HyperText Markup Language - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 
 おお、これでいいじゃん。
 

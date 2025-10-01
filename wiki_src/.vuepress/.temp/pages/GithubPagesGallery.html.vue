@@ -1,0 +1,47 @@
+<template><div><h3 id="概要" tabindex="-1"><a class="header-anchor" href="#概要"><span>概要</span></a></h3>
+<ul>
+<li><a href="https://github.com/gautamkrishnar/github-pages-gallery" target="_blank" rel="noopener noreferrer">gautamkrishnar/github-pages-gallery</a></li>
+</ul>
+<p>github pagesを使った photo gallery のテンプレート。
+[[PngNote]]の公開に使っている。＞<a href="https://karino2.github.io/2021/07/27/use_ghg_for_pngnote_publish.html" target="_blank" rel="noopener noreferrer">blog: PngNoteのノートの公開にはGithub Pages Galleryを使う事にした</a></p>
+<p>内部的には、<a href="https://thumbsup.github.io/" target="_blank" rel="noopener noreferrer">thumbsup</a>というコマンドラインツール（？）を使って静的ページを生成している。
+これは<a href="https://github.com/sachinchoolur/lightGallery" target="_blank" rel="noopener noreferrer">sachinchoolur/lightGallery</a>というjsライブラリを使ったページを生成する。</p>
+<h3 id="ページに直接リンクを貼りたい" tabindex="-1"><a class="header-anchor" href="#ページに直接リンクを貼りたい"><span>ページに直接リンクを貼りたい</span></a></h3>
+<p>ノートの特定のページへのリンクを貼りたいので、方法を調べる。
+lightGallery的にはhashというプラグインがあって、これを有効にすればurlにハッシュが付きそう。</p>
+<p>ver 1のデモだが、<a href="https://sachinchoolur.github.io/lightgallery.js/demos/share.html" target="_blank" rel="noopener noreferrer">lightGallery: Hash</a>を見るとどういう感じか分かる。</p>
+<p>プラグインを有効にする方法はトップページ、<a href="https://github.com/sachinchoolur/lightGallery" target="_blank" rel="noopener noreferrer">sachinchoolur/lightGallery</a>のInstallationに書いてあり、</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">&lt;script src="js/plugins/lg-zoom.umd.js">&lt;/script></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>とか足して、</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">&lt;script type="text/javascript"></span>
+<span class="line">    lightGallery(document.getElementById('lightgallery'), {</span>
+<span class="line">        plugins: [lgZoom, lgThumbnail],</span>
+<span class="line">        speed: 500,</span>
+<span class="line">        licenseKey: 'your_license_key'</span>
+<span class="line">        ... other settings</span>
+<span class="line">    });</span>
+<span class="line">&lt;/script></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>とすればいいらしい。
+これは例えば自分の例だと、gh-pagesブランチの<a href="https://github.com/karino2/ImageGallery/blob/gh-pages/Biochemistry705x.html" target="_blank" rel="noopener noreferrer">ImageGallery/Biochemistry705x.html at gh-pages · karino2/ImageGallery</a>に該当箇所があるので、
+これをカスタマイズ出来れば良さそう。</p>
+<p>どうやってthumbsupで有効にするかは分からないが、本家のissueではテーマで出来ると言っている。
+<a href="https://github.com/thumbsup/thumbsup/issues/35" target="_blank" rel="noopener noreferrer">Major missing feature: direct linking to pictures, that would allow sharing · Issue #35 · thumbsup/thumbsup</a></p>
+<p><a href="https://thumbsup.github.io/docs/4-themes/create/" target="_blank" rel="noopener noreferrer">Creating a theme  ｜ thumbsup</a>に作り方が載っているがhtmlの生成のカスタマイズはどうやるんだろう？album.hbsのカスタマイズで良さそう。＞<a href="https://github.com/thumbsup/thumbsup/issues/248" target="_blank" rel="noopener noreferrer">Add option to rotate images on browser · Issue #248 · thumbsup/thumbsup</a></p>
+<p>テーマクラシックは以下にある。<a href="https://github.com/thumbsup/theme-classic" target="_blank" rel="noopener noreferrer">thumbsup/theme-classic: Thumbsup classic theme</a>。
+自分が使っているcardsはこっちか。<a href="https://github.com/thumbsup/theme-cards" target="_blank" rel="noopener noreferrer">thumbsup/theme-cards: Thumbsup cards theme</a></p>
+<p>これをdupしてalbum.hbsを書き換えれば良さそう。
+Creating a themeのページにローカルのテーマを適用する方法は載っているが、これをgithub-pages-galleryでやる方法はどうやるのだろう？</p>
+<p>config.jsonを使っているので、<a href="https://thumbsup.github.io/docs/3-configuration/misc-settings/" target="_blank" rel="noopener noreferrer">Miscellaneous</a>と<a href="https://thumbsup.github.io/docs/3-configuration/cheat-sheet/" target="_blank" rel="noopener noreferrer">Cheat sheet</a>をあわせて考えると、config.jsonにtheme-pathを足せば良さそう。</p>
+<hr>
+<p>なんか試してみた所、以下のlgHashでスクリプトエラーが出る。</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">        plugins: [lgHash],</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>どうもlg-hash.jsをスクリプトタグでincludeすればその時点でプラグインは有効になるように変更されたっぽい？
+という事でこの行を無くして無事有効になった。</p>
+<p><a href="https://github.com/karino2/ImageGallery" target="_blank" rel="noopener noreferrer">karino2/ImageGallery: Image gallery for PngNote</a> で動いているのが確認出来るはず。</p>
+<p>一応手順をブログにまとめておいた。＞ <a href="https://karino2.github.io/2021/10/23/thumbsup_with_direct_link.html" target="_blank" rel="noopener noreferrer">blog: thumbsupで各画像へのリンクを貼れるようにする</a></p>
+</div></template>
+
+

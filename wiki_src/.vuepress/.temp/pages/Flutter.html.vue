@@ -1,0 +1,28 @@
+<template><div><p>Macのデスクトップアプリ作るのにちょっと評価してみる。</p>
+<h2 id="desktopの動画" tabindex="-1"><a class="header-anchor" href="#desktopの動画"><span>Desktopの動画</span></a></h2>
+<ul>
+<li><a href="https://docs.flutter.dev/desktop" target="_blank" rel="noopener noreferrer">Desktop support for Flutter - Flutter</a></li>
+</ul>
+<p>2022/03/24時点ではβ版らしいが、立ち上がったデモは割と軽快に動いたので好印象ではある。
+なんかReact Nativeと似たような開発スタイルだなぁ。</p>
+<p>動画を見てみた。</p>
+<p>GUIはいいとして、ファイルとかはどうやって操作するのかしら？</p>
+<h2 id="desktopのcodelabs" tabindex="-1"><a class="header-anchor" href="#desktopのcodelabs"><span>Desktopのcodelabs</span></a></h2>
+<p><a href="https://codelabs.developers.google.com/codelabs/flutter-github-client#0" target="_blank" rel="noopener noreferrer">Write a Flutter desktop application  - Google Codelabs</a></p>
+<p>これを見たらだいたいどんな感じかは分かったかなぁ。
+dart.ioってのがあるのか。</p>
+<p>そしてdart、全然ときめかない言語だな。
+JSの方がだいぶマシという気がする。</p>
+<p>ただこれを我慢すると小さくて速く立ち上がるアプリが書ける、と言われたら我慢しても良いシチュエーションはありそうだな。
+小さいは正義。</p>
+<p>デスクトップがどういう感じかはだいたい分かったのでFlutter自体を少し学びたいな。</p>
+<h2 id="getting-started的なcodelab" tabindex="-1"><a class="header-anchor" href="#getting-started的なcodelab"><span>Getting Started的なcodelab</span></a></h2>
+<p><a href="https://docs.flutter.dev/get-started/codelab" target="_blank" rel="noopener noreferrer">Write your first Flutter app, part 1 - Flutter</a></p>
+<p>コードはだいぶシンプルなので、これをデスクトップで動かしてみるかなぁ。</p>
+<h2 id="そのほかリンク" tabindex="-1"><a class="header-anchor" href="#そのほかリンク"><span>そのほかリンク</span></a></h2>
+<ul>
+<li><a href="https://github.com/qianniancn/flutter-desktop-demo" target="_blank" rel="noopener noreferrer">qianniancn/flutter-desktop-demo: go-flutter windows</a></li>
+</ul>
+</div></template>
+
+

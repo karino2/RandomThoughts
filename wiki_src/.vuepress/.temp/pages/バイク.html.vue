@@ -1,0 +1,44 @@
+<template><div><p>バイク関連のグッズをまとめるページ。</p>
+<h2 id="dio-110" tabindex="-1"><a class="header-anchor" href="#dio-110"><span>Dio 110</span></a></h2>
+<p>[[Dio110]]</p>
+<h2 id="ハンドルバーバッグ" tabindex="-1"><a class="header-anchor" href="#ハンドルバーバッグ"><span>ハンドルバーバッグ</span></a></h2>
+<p>以下をポチる。(2025-09-19 (金))</p>
+<p><a href="https://amzn.to/46sisIV" target="_blank" rel="noopener noreferrer">amazon: ROCKBROS バイク バッグ</a></p>
+<p>3180円だった。</p>
+<h3 id="第一印象-2025-09-20-土" tabindex="-1"><a class="header-anchor" href="#第一印象-2025-09-20-土"><span>第一印象 2025-09-20 (土)</span></a></h3>
+<p>届いたのでつけて軽く走ってきた。心配だった[[Dio110]]につくのか、という所はバッチリついた。ちょうどいい感じだね。
+軽く走ってみると、つけた状態で走るのは特に問題もなく、すごくいい感じだ。</p>
+<p>一方、外した時に扱いにはやや困る。ちょっとかさばるので。</p>
+<p>つけっぱなしにしてショルダーバッグを突っ込んで使うのがいいか、少し遠くに行く時だけ使うようにするのがいいか、
+ちょっと使い方は悩むな。</p>
+<h2 id="防水関連" tabindex="-1"><a class="header-anchor" href="#防水関連"><span>防水関連</span></a></h2>
+<p>この前バイク屋に持っていった時に結構ひどい雨に降られたのだが、
+ダイソーで買った靴用レインカバー的なのが非常に良くて、足が全然濡れなかった。
+しかもビニール袋と違ってちゃんと靴底があるので歩いたりバイク操作にも支障がない。</p>
+<p>かっぱと手袋は雨がしみていまいちだったが、靴が濡れないならこの辺ももうちょっと良いのを装備すれば雨でも走れるのでは無いか？
+と思い、装備を見直す。</p>
+<h3 id="レインスーツ" tabindex="-1"><a class="header-anchor" href="#レインスーツ"><span>レインスーツ</span></a></h3>
+<p>これまではホムセンで買った雨合羽を使っていたが、そろそろ寿命だったのもあり、
+少しいいヤツにしてみよう、という事で楽天を物色。
+以下を買う。(2022-05-09）</p>
+<p><a href="https://hb.afl.rakuten.co.jp/ichiba/276c9280.0c50a22c.276c9281.538d72d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhatoya-2%2Fsm20210416001%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  >HATOYA: HR-002 軽量ストレッチレインスーツ<br><img src="https://hbb.afl.rakuten.co.jp/hgb/276c9280.0c50a22c.276c9281.538d72d2/?me_id=1389765&item_id=11203147&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fhatoya-2%2Fcabinet%2Fyamaoka_1%2Fsm20210416001_1.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a></p>
+<p>Lのオレンジを買った。
+雨の日に使ったら感想を追記していきたい。</p>
+<p><strong>2022-11-29</strong> 帰りに大雨に降られたので性能を試せた。バイクに乗っている間は全く濡れて無くてすごく快適だった。
+だが部屋に帰ってからジーンズのモモが少し濡れている事に気づく。短時間なので肌側にはしみてなかっただけかもしれないが、
+レインスーツを部屋に持ち込んで干したりしている時に当たってた可能性もあるのでどっちかわからない。</p>
+<p>ただ何にせよ、めちゃくちゃ防水性能は高く、蒸れずにとても快適だった。普通の雨だったら全然平気そうね。買ってよかった。</p>
+<h3 id="グローブ" tabindex="-1"><a class="header-anchor" href="#グローブ"><span>グローブ</span></a></h3>
+<p>グローブは普段は使わないで雨の日専用のを買いたくて、以下をポチる。(2022-05-09）</p>
+<p><a href="https://www.yodobashi.com/product/100000001003372551/" target="_blank" rel="noopener noreferrer">ヨドバシ：DAYTONA デイトナ RIDEMITT ＃003 ネオプレン 防水グローブ Sサイズ ブラック</a></p>
+<p>楽天やAmazonを見てRIDEMITT 003が良さそうと思ったが、送料を考えるとヨドが安かったのでヨドで。
+ただ間違ってSを買ってしまった。
+装着すると指の長さは足りているので別にSでも良い気はするが、ちょっと締め付ける感じはある。
+伸長170cmの自分にはMくらいがベストサイズだったかもしれない。</p>
+<p>雨の日に使ったら感想を追記していきたい。</p>
+<hr>
+<h2 id="vtz-250" tabindex="-1"><a class="header-anchor" href="#vtz-250"><span>VTZ 250</span></a></h2>
+<p>以前のバイク。[[VTZ250]]</p>
+</div></template>
+
+

@@ -15,6 +15,14 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "wiki_src:dev": "vuepress dev wiki_src",
+    "wiki_src:build": "vuepress build wiki_src"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.24",
+    "@vuepress/theme-default": "^2.0.0-rc.112",
+    "sass-embedded": "^1.93.2",
+    "vuepress": "^2.0.0-rc.24",
+    "vuepress-markdown-it-wikilink": "^1.0.1"
   }
 }

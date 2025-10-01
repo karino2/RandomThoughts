@@ -1,0 +1,16 @@
+import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/続ゆっくりじっくりイタリア語.html.vue"
+const data = JSON.parse("{\"path\":\"/%E7%B6%9A%E3%82%86%E3%81%A3%E3%81%8F%E3%82%8A%E3%81%98%E3%81%A3%E3%81%8F%E3%82%8A%E3%82%A4%E3%82%BF%E3%83%AA%E3%82%A2%E8%AA%9E.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1687151126000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":2}],\"changelog\":[{\"hash\":\"d393af4d6cc859918daa2f551562f8d569bc6cc4\",\"time\":1687151126000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"23448159b1a1fca7cdb1ae6944dbd82532c9f34b\",\"time\":1687148471000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"続ゆっくりじっくりイタリア語.md\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

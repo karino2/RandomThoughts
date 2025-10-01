@@ -1,0 +1,16 @@
+import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/Unix的GUIツール.html.vue"
+const data = JSON.parse("{\"path\":\"/Unix%E7%9A%84GUI%E3%83%84%E3%83%BC%E3%83%AB.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1647003915000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":7}],\"changelog\":[{\"hash\":\"f87d2e6f8c0f10d66116f06e61671934dc81d5ea\",\"time\":1647003915000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"ed5ef387ec54fe1e3c6ad77a0770dde441429b74\",\"time\":1646634754000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"dbe17004f37cdce6e6b2605be089e5d11ec0850a\",\"time\":1645841324000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"abef1e03e99c2aed4e45196b1ee972c8909d2bb4\",\"time\":1645763136000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"40cdc281dc19d11cf9a5943b56b8b06cf283b931\",\"time\":1645763032000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"e457a3a09b3f7d4fdc8c7cd209b7db04849fb67a\",\"time\":1645762813000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"d88b6b8e0652dfa6733aa36d6f0f44584124d831\",\"time\":1645761930000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"Unix的GUIツール.md\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

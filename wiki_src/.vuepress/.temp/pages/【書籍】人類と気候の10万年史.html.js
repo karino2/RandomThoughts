@@ -1,0 +1,16 @@
+import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/【書籍】人類と気候の10万年史.html.vue"
+const data = JSON.parse("{\"path\":\"/%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E4%BA%BA%E9%A1%9E%E3%81%A8%E6%B0%97%E5%80%99%E3%81%AE10%E4%B8%87%E5%B9%B4%E5%8F%B2.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1683205527000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":3}],\"changelog\":[{\"hash\":\"59ff6845f067693610318c0d88f7159da6c7cdf3\",\"time\":1683205527000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"d033d37db515df8a4aa4b602a7c0dd1a1183667a\",\"time\":1643511028000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"fc578c9e03556c59df5d96a56f3754701be4d57a\",\"time\":1643101837000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"【書籍】人類と気候の10万年史.md\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

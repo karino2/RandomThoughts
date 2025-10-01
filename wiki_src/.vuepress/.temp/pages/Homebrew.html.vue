@@ -1,0 +1,66 @@
+<template><div><ul>
+<li><a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">The Missing Package Manager for macOS (or Linux) — Homebrew</a></li>
+</ul>
+<p>自分のアプリを試すためのformulaの書き方を覚えたいなぁ、と以下を読む。</p>
+<p><a href="https://docs.brew.sh/Formula-Cookbook" target="_blank" rel="noopener noreferrer">Formula Cookbook — Homebrew Documentation</a></p>
+<p>割と理解出来た気がする。そのうち試してみたい。</p>
+<h2 id="自作のtapの公開方法" tabindex="-1"><a class="header-anchor" href="#自作のtapの公開方法"><span>自作のtapの公開方法</span></a></h2>
+<ul>
+<li><a href="https://www.rasukarusan.com/entry/2019/11/03/211338" target="_blank" rel="noopener noreferrer">【備忘録】Homebrewで自作ツールを配布する - ハイパーマッスルエンジニア</a></li>
+<li><a href="https://tomokazu-kozuma.com/how-to-release-golangs-homebrew-application-with-brew-tap/" target="_blank" rel="noopener noreferrer">brew tapでGolangの自作アプリケーションを公開する方法 - ブロックチェーンエンジニアとして生きる</a></li>
+<li><a href="https://betterprogramming.pub/a-step-by-step-guide-to-create-homebrew-taps-from-github-repos-f33d3755ba74" target="_blank" rel="noopener noreferrer">A Step-by-Step Guide To Create Homebrew Taps From GitHub Repos | by Shinichi Okada | Better Programming</a></li>
+<li><a href="https://hkob.hatenablog.com/entry/2020/12/02/140000" target="_blank" rel="noopener noreferrer">野良 homebrew-cask の作成 - M1 MacBook Air インストール覚書(8) - hkob’s blog</a></li>
+</ul>
+<p>github決め打ちなので試すのにurlが要らないのはいいね。公式のManpageのtapのあたりも良くまとまっている。</p>
+<h2 id="ローカルのformula" tabindex="-1"><a class="header-anchor" href="#ローカルのformula"><span>ローカルのFormula</span></a></h2>
+<p><code v-pre>/usr/local/Homebrew/Library/Taps</code> 下にある。なお、正しくは<code v-pre>brew --repository</code> でHomebrewまでのパスは分かる。
+これをgrepしていくとだいたい書き方が分かる。</p>
+<h2 id="electronアプリのtap" tabindex="-1"><a class="header-anchor" href="#electronアプリのtap"><span>Electronアプリのtap</span></a></h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/tweet-app?activeTab=readme" target="_blank" rel="noopener noreferrer">tweet-app - npm</a></li>
+<li><a href="https://github.com/rhysd/tweet-app/blob/master/Casks/tweet.rb" target="_blank" rel="noopener noreferrer">tweet-app/tweet.rb at master · rhysd/tweet-app</a></li>
+</ul>
+<p>うーむ、brewでビルドするもんかと思ったが、bottleを入れる方が普通なのか？</p>
+<h2 id="guashをhomebrewのtapで公開してみる" tabindex="-1"><a class="header-anchor" href="#guashをhomebrewのtapで公開してみる"><span>guashをhomebrewのtapで公開してみる</span></a></h2>
+<p>試しに[[guash]]をhomebrewで公開してみよう。</p>
+<p>dotnetのruntimeはcaskじゃなくてもあるのか。</p>
+<p>出来た！</p>
+<ul>
+<li><a href="https://github.com/karino2/homebrew-tap" target="_blank" rel="noopener noreferrer">github: karino2/homebrew-tap</a></li>
+<li><a href="https://karino2.github.io/2022/01/28/homebrew_tap_for_guash.html" target="_blank" rel="noopener noreferrer">guashをhomebrew tapでインストール出来るようにした - なーんだ、ただの水たまりじゃないか</a></li>
+</ul>
+<p>以後新しいFormulaを追加する手順をまとめておこう。</p>
+<h3 id="新しいアプリをtapに加える手順" tabindex="-1"><a class="header-anchor" href="#新しいアプリをtapに加える手順"><span>新しいアプリをtapに加える手順</span></a></h3>
+<ul>
+<li>タグを打ってバイナリをgithubのreleasesにアップロード</li>
+<li>バイナリのurlに対して<code v-pre>brew create &lt;url&gt;</code></li>
+<li>Formulaの雛形がエディタで開かれるので編集して保存</li>
+<li>tapのレポジトリにmvして加える</li>
+</ul>
+<h3 id="tapのアップデートってどうやってやるんだろう" tabindex="-1"><a class="header-anchor" href="#tapのアップデートってどうやってやるんだろう"><span>tapのアップデートってどうやってやるんだろう？</span></a></h3>
+<p>公式に含まれているものならbump-formula-prというのにurlを渡せばPRを作る所まで良きにはからってやってくれそうだが、
+野良tapの場合はどうするのがいいんだろう？</p>
+<p>とりあえず<code v-pre>brew create &lt;url&gt;</code>でFormulaを作ってurlとshaをFormulaにコピペして作られたFormulaを手で消す、
+という作業でアップデートは出来た。</p>
+<p>upgradeのやり方は良くわからないが、</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ brew upgrade karino2/tap</span>
+<span class="line">$ brew upgrade karino2/tap/guash</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>とかをぐちゃぐちゃやっていたらなんか成功してしまった。
+正しいやり方がわかったらここは直す。</p>
+<p>お、上記のページにUpdate routineというのがあったな。</p>
+<p><a href="https://betterprogramming.pub/a-step-by-step-guide-to-create-homebrew-taps-from-github-repos-f33d3755ba74" target="_blank" rel="noopener noreferrer">A Step-by-Step Guide To Create Homebrew Taps From GitHub Repos</a></p>
+<p>createで作ってコピペして手で消すらしい…まぁいいか。</p>
+<p>正しい手順は</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ brew upgrade</span>
+<span class="line">$ brew install karino2/tap/guash</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>っぽい？後者はupgradeで出来そうな気もしているが。</p>
+<p>追記: なんか上記手順ではFormulaは更新されないなぁ。
+エラーメッセージが最後に出るが、以下のコマンドで更新されているように見える。</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">$ brew upgrade karino2/tap/</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>正しいやり方が謎だが、まぁこれで更新されるので、あとはbrew installなりbrew upgradeなり出来るからいいか。</p>
+</div></template>
+
+

@@ -1,0 +1,16 @@
+import comp from "/Users/arinokazuma/work/GitHub/RandomThoughts/wiki_src/.vuepress/.temp/pages/アイスコーヒー.html.vue"
+const data = JSON.parse("{\"path\":\"/%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{\"updatedTime\":1726971089000,\"contributors\":[{\"name\":\"Kazuma Arino\",\"username\":\"\",\"email\":\"hogeika2@gmail.com\",\"commits\":4}],\"changelog\":[{\"hash\":\"ce9a19b7d747041c360083a70fbce0beb47f3f02\",\"time\":1726971089000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"10f2ab551db39ae779201eaab6f39dd157ccfe3b\",\"time\":1725933945000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"32632bbcfa2bccbfce4695854ec9da63416ba707\",\"time\":1725422738000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"},{\"hash\":\"4cd310a48356a0a2af22f046930f76c777da87d7\",\"time\":1724555146000,\"email\":\"hogeika2@gmail.com\",\"author\":\"Kazuma Arino\",\"message\":\"update\"}]},\"filePathRelative\":\"アイスコーヒー.md\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
