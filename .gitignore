@@ -1,3 +1,9 @@
 _site
 Gemfile.*.lock
 .sass-cache
+wiki2/.vuepress/.cache/deps
+wiki2/.vuepress/.temp
+node_modules
+wiki2/.vuepress/recents.js
+wiki2/imgs
+wiki2/*.md
