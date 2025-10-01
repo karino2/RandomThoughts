@@ -21,6 +21,7 @@ Prism.languages.mfg = PrismMfg.grammar
 import { recents } from './recents.js'
 
 export default defineUserConfig({
+    base: "/RandomThoughts/",
     bundler: viteBundler(),
     theme: defaultTheme({
       navbar: [
