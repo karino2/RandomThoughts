@@ -6,7 +6,24 @@
 [[JavaScript]]で書かれたサイトジェネレータ。
 nodejs製なのでサーバーサイドでprismjsなどを動かす事が出来る。
 
+## いろいろ触った雑感
+
+以下の２つで使ってみた
+
+- [[RandomThoughts]]
+- [[MFG]]のリファレンス
+
+とても早く、md自体にはあまり手を入れずにデフォルトでもかなりいい感じになる。
+本当にページの遷移とか画像読み込みが早い。staticなページより全然早い。凄い。
+
+そしてSPA特有の戻るとかURLが使いづらいとかいう事も全く無く、
+モバイルでもめちゃいい感じに動く。
+
+これはVue.js勢の実力を示すものだなぁ。素晴らしい。
+
 ## RandomThoughtsのVuePress化
+
+[karino2/RandomThoughts: Wiki repository for random thoughts](https://github.com/karino2/RandomThoughts)のレポジトリで行った作業のメモ。
 
 prism.jsでのmfgのシンタックスハイライトの対応をしたので、[[RandomThoughts]]もそれに対応したい。
 いい機会なのでJekyllの[[GitWiki]]からVuePressに乗り換える方向で考えてみる。
