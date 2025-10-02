@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "Cpp.html", "text": "Cpp"},
     {"link": "%E3%83%91%E3%82%AA%E7%A2%81.html", "text": "パオ碁"},
     {"link": "VuePress.html", "text": "VuePress"},
     {"link": "MFG.html", "text": "MFG"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "LenovoTabP12.html", "text": "LenovoTabP12"},
     {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
     {"link": "SurfLog.html", "text": "SurfLog"},
-    {"link": "%E3%81%9F%E3%81%A6%E3%81%AA%E3%81%8B%E6%B5%81%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81.html", "text": "たてなか流クイックスケッチ"},
    ]
 }
 ]
