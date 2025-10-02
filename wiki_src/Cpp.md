@@ -1,16 +1,30 @@
 みんな大好きC++。
 
 - [amazon: プログラミング言語C++ 第4版](https://amzn.to/46OgXFc) みんなだいすきstroustrup本
-- [最近読んだC++の本2冊の感想 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/03/31/cpp_book.html)
-- [inkooboo/thread-pool-cpp: High performance C++11 thread pool](https://github.com/inkooboo/thread-pool-cpp) cppのスレッドプール実装、小さくて早いとか。そのうち読んでみたい。
-- [GitHub - abseil/abseil-cpp: Abseil Common Libraries (C++)](https://github.com/abseil/abseil-cpp/tree/master) Google製のC++の標準ライブラリ拡張系。
+   - [Stroustrup: The C++ Programming Language (4th Edition)](https://www.stroustrup.com/4th.html) 自分が読んだのはこっちの英語版だが。
 - [[【書籍】CppConcurrencyInAction]]
 - [[【書籍】ConcurrentProgrammingOnWindows]]も一部C++
 - [[1024cores]]
 - [[並列プログラム]]
+- [[VSCode]], [[VisualStudio]]
+
+自分のブログ
+
+- [MacでVSCodeとclangで中規模のC++開発（コンソールアプリ）をする - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/04/13/mid_cppproj_vscode_mac.html)
+- [CMake+Ninjaの組み合わせが素晴らしい - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/03/12/cmake_plus_ninja.html)
+- [MacでVSCodeとclangで小規模のC++開発（コンソールアプリ）をする手順 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/09/01/small_cppproj_vscode_mac.html)
+- [最近読んだC++の本2冊の感想 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/03/31/cpp_book.html)
+
+
+
+## ライブラリ等
+
+- [inkooboo/thread-pool-cpp: High performance C++11 thread pool](https://github.com/inkooboo/thread-pool-cpp) cppのスレッドプール実装、小さくて早いとか。そのうち読んでみたい。
+- [GitHub - abseil/abseil-cpp: Abseil Common Libraries (C++)](https://github.com/abseil/abseil-cpp/tree/master) Google製のC++の標準ライブラリ拡張系。
 - [GitHub - rigtorp/awesome-modern-cpp: A collection of resources on modern C++](https://github.com/rigtorp/awesome-modern-cpp?tab=readme-ov-file) C++の本の一覧
 - [stlab/libraries: ASL libraries will be migrated here in the stlab namespace, new libraries will be created here.](https://github.com/stlab/libraries/tree/main) Adobeのオープンソースライブラリ
 - [国内の C++ 勉強会 - C++ の歩き方 - cppmap](https://cppmap.github.io/learn/studymeetings/) 結構良さそう。自分もここで発表するのがいいかもしれん。
+
 
 ## mapのキーと違う型でfindしたい時
 
