@@ -1,14 +1,23 @@
+## このWiki内の関連リンク
+
 - [[JetpackCompose]]
 - [[StorageAccessFramework]]
 - [[RecyclerView]]
 - [[Kotlin]]
+- [[LenovoTabP12]]
+- [[スマホ]]
+- [[KindleFire]]
+- [[FDroid]]
+- [[PDF]]
+
+## 開発リンク
+
 - [Android Debug Bridge (adb)  :  Android Developers](https://developer.android.com/studio/command-line/adb) WiFiデバッグの説明。
 - [Android code search](https://cs.android.com)
 - [Stable Releases  -  Jetpack  |  Android Developers](https://developer.android.com/jetpack/androidx/versions/stable-channel)
 - [[あおぞらAndroid教室]]
 - [NFC の基本  -  Connectivity  |  Android Developers](https://developer.android.com/guide/topics/connectivity/nfc/nfc?hl=ja)
 - [Android Basics in Kotlin course  -  Android Developers](https://developer.android.com/courses/android-basics-kotlin/course) code labsとか
-- [[FDroid]]
 - [Android Graphics Shading Language (AGSL)  -  Views  -  Android Developers](https://developer.android.com/develop/ui/views/graphics/agsl) AGSLなんて出来てたのか。びっくりするほどドキュメントがなくGLSLとの違いが全然分からんが。
 - [Material Symbols & Icons - Google Fonts](https://fonts.google.com/icons) マテリアルデザインのアイコン
 
