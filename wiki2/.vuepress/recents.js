@@ -1,8 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
-    {"link": "%E5%9B%B2%E7%A2%81.html", "text": "囲碁"},
     {"link": "%E3%83%91%E3%82%AA%E7%A2%81.html", "text": "パオ碁"},
+    {"link": "%E5%9B%B2%E7%A2%81.html", "text": "囲碁"},
     {"link": "Home.html", "text": "Home"},
     {"link": "%E3%83%8E%E3%83%BC%E3%83%88PC%E7%94%A8%E9%9B%BB%E6%BA%90.html", "text": "ノートPC用電源"},
     {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
