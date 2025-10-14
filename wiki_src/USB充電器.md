@@ -4,7 +4,8 @@
 
 ## UGREEN Nexode Mini 30W PD 充電器 USB-C 急速充電器 2025-10-14 (火)
 
-[amazon: UGREEN Nexode Mini 30W PD 充電器 USB-C 急速充電器 ](https://amzn.to/4nnfyvD)
+- [amazon: UGREEN Nexode Mini 30W PD 充電器 USB-C 急速充電器 ](https://amzn.to/4nnfyvD)
+- [UGREEN Nexode Mini 30W GaN 急速充電器 白](https://ugreen.jp/products/nexode-mini-30w-gan-fast-charger-white)
 
 1881円で購入。
 
@@ -12,6 +13,9 @@
 こちらが30W出ているかは良くわからないが、40%くらいから充電しても40分とか表示されていたので結構早く充電は出来てそう。
 
 1ポートでコンパクトなタイプ。口はC。悪くなさそうな気はしている。
+
+UGREENって初めて購入してみたが、レビューは悪くないし、製品の印象も悪くなさそう。
+ただ公式サイトにpdfのマニュアルが無いな。
 
 ## RISUKAI PD30W 3ポート充電器 2025-10-04 (土)
 
