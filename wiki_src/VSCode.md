@@ -55,3 +55,32 @@ C-Shift-p でOpen Keyboard Shortcut(JSON)を選び、以下を書いている。
         }
     }
 ```
+
+## lldbかえってこない問題
+
+定期的に発生して毎回解決出来ないが、試す事を一応メモしておく。
+
+configurationに以下を追加
+
+```
+				"logging": {
+						"engineLogging": true,
+						"trace": true,
+						"traceResponse": true
+				},
+```
+
+デバッグコンソールでlldbのログが出るようになる。
+
+以下で帰ってこなくなる。
+
+```
+<-1050-var-create - - "builder" --thread 1 --frame 0
+```
+
+以下を削除
+
+```
+~/Library/Application Support/Code/Cache
+~/Library/Application Support/Code/CachedData
+```
