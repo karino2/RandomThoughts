@@ -1,6 +1,9 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "zx.html", "text": "zx"},
+    {"link": "OilShell.html", "text": "OilShell"},
+    {"link": "JavaScript.html", "text": "JavaScript"},
     {"link": "%E3%81%A6%E3%81%8D%E3%81%99%E3%81%A8TL.html", "text": "てきすとTL"},
     {"link": "htmnix.html", "text": "htmnix"},
     {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
@@ -13,9 +16,6 @@ export const recents = [
     {"link": "Home.html", "text": "Home"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "%E5%9B%B2%E7%A2%81.html", "text": "囲碁"},
-    {"link": "%E3%83%8E%E3%83%BC%E3%83%88PC%E7%94%A8%E9%9B%BB%E6%BA%90.html", "text": "ノートPC用電源"},
-    {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
-    {"link": "LenovoTabP12.html", "text": "LenovoTabP12"},
    ]
 }
 ]
