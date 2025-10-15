@@ -1,6 +1,7 @@
 [[技術的なメモ]]
 
 - [買った物メモとWikiNameとタグ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2024/02/06/wikiname_tag_goodsmemo.html)
+- [メモとWikiについての覚え書き - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2025/10/15/memo_wiki_note.html)
 
 この話は定期的に考えている気がするのでここにWikiNameを作っておく。
 
