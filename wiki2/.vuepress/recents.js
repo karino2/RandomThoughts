@@ -1,8 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
-    {"link": "zx.html", "text": "zx"},
     {"link": "Wiki%E3%81%A8howm%E3%81%A8%E3%83%A1%E3%83%A2%E3%83%84%E3%83%BC%E3%83%AB.html", "text": "Wikiとhowmとメモツール"},
+    {"link": "zx.html", "text": "zx"},
     {"link": "2025%E5%B9%B410%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年10月中旬の雑記"},
     {"link": "OilShell.html", "text": "OilShell"},
     {"link": "JavaScript.html", "text": "JavaScript"},
