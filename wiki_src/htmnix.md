@@ -1,5 +1,5 @@
 html片を書いて[[Unix的GUIツール]]を作る為のツール。
-htmlnixは先人が居たのでhtmnixで。
+htmlnixは先人が居たのでhtmnixで。[[自作アプリ]]
 
 ## レポジトリ
 
