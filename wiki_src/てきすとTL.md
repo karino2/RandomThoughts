@@ -70,3 +70,10 @@ ElectronのアプリやAndroidのアプリでぽちぽち書いて、TeFWikiと�
 ## ブログも書いてみた
 
 [ローカルで使うタイムライン、てきすとTLを作っている - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/01/23/texttl_standalone_tl.html)
+
+## TeFWikiへのexport
+
+[メモとWikiについての覚え書き - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2025/10/15/memo_wiki_note.html) を書いていた結果、てきすとTLからTeFWikiのどれかのファイルに書き出す機能があればいいんじゃないか、という結論になる。
+
+まずは[[htmnix]]でてきすとでっきのアーカイブに使っているスクリプトを適当に変えて固定ファイルに書き出す所から始めてみよう。
+その結果を[[GUIShell]]で
