@@ -1,4 +1,5 @@
 - [Oil](https://www.oilshell.org/)
+- [[zx]] nodeでやる方がいいのでは？的な対抗馬。
 
 shell scriptのスクリプティングの所だけモダンにしよう、というコンセプトのシェル。pythonで書かれているとか。
 
@@ -118,3 +119,27 @@ fork { mdvcat oil-help-topics.md }
 自分で作る事にした。
 
 [[OilShellVSCExtension]]
+
+## 最近のアップデート 2025-10-15 (水)
+
+久しぶりに触ったらいろいろ変わっている。
+まずこれまでoilと呼んでいたコマンドはyshになったらしい。
+
+```
+#!/usr/bin/env ysh
+```
+
+そして、readした結果はなんか変数に受けてsplitしたりするっぽい。
+
+[A Tour of YSH](https://oils.pub/release/latest/doc/ysh-tour.html)
+
+```
+var paths
+cat $temp_targets | read --all (&paths)
+
+for i, item in @[split(paths)] {
+  echo "$i, $item"
+}
+```
+
+splitの所は良く理解してないが、まぁいいだろう。
