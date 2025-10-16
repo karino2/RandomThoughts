@@ -43,3 +43,47 @@ $ fdroid checkupdates io.github.karino2.texttl
 ```
 
 おや、エラーと言われた。そしてエラーメッセージが日本語なのでググってもひっっからない…
+
+エラーメッセージから見ると、どうもさっきimportで作ったymlをコミットしてないといけないっぽい。
+手順には書いてないがコミットしてみよう。（ブランチは切ってある）
+
+```
+$ git add metadata/io.github.karino2.texttl.yml
+$ git commit -m "New app: TextTL"
+$ fdroid checkupdates io.github.karino2.texttl
+2025-10-16 22:09:30,006 INFO: io.github.karino2.texttlを処理
+2025-10-16 22:09:42,412 ERROR: 環境変数{env: serverwebroot}が未設定です！
+2025-10-16 22:09:42,412 ERROR: serverwebroot: has blank value!
+```
+
+えー、知らないよ…
+
+Geminiに聞いたら、ダミーを設定しろ、と言ってきた。ほんとかな…
+少しググったがわからなかったのでgeminiに従う。
+
+```
+$  export serverwebroot="/tmp/fdroid/repo"
+$ fdroid checkupdates io.github.karino2.texttl
+```
+
+お、うまくいった。次はlintをしろと言っているな。
+
+```
+ % fdroid lint io.github.karino2.texttl
+io.github.karino2.texttl: カテゴリーが設定されていません
+io.github.karino2.texttl: 予期されていないライセンスタグ「Unknown」です！https://spdx.org/license-list から、FSFまたはOSIにより認証されたタグのみを使用してください
+```
+
+おや、レポジトリにLICENSEファイルあるはずだが。Metadataのリファレンスは読んでおけというドキュメントの中にあったな。以下か。
+
+[Build Metadata Reference - F-Droid - Free and Open Source Android App Repository](https://f-droid.org/docs/Build_Metadata_Reference/)
+
+他人のymlを参考に手直していおく。
+lintも通った。良さそう。
+
+次はビルド。
+
+```
+% fdroid build -v -l  io.github.karino2.texttl
+```
+
