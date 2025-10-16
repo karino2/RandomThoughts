@@ -87,3 +87,47 @@ lintも通った。良さそう。
 % fdroid build -v -l  io.github.karino2.texttl
 ```
 
+なんかすぐ終わってしまったが、バイナリは出来てなさそうだな。
+
+どうも.ymlのBuildセクションをテンプレートを参考に手直ししろ、という事らしい。
+disableの行を消せばだいたいいいかな。
+
+で、実行。
+
+```
+2025-10-16 23:21:59,108 ERROR: Could not build app io.github.karino2.texttl: OSError while trying to execute /usr/local/Cellar/fdroidserver/2.4.2/libexec/lib/python3.14/site-packages/gradlew-fdroid clean: [Errno 2] No such file or directory: '/usr/local/Cellar/fdroidserver/2.4.2/libexec/lib/python3.14/site-packages/gradlew-fdroid'
+```
+
+えー、知らないよ…
+とりあえずuninstallしてinstallしなおすか。結果変わらず。うーん。
+
+ググってみたら以下がひっかかる。
+
+[F-Droid / gradlew-fdroid · GitLab](https://gitlab.com/fdroid/gradlew-fdroid)
+
+とりあえずこのシェルスクリプトを該当フォルダに置いて見るか。
+
+お、なんかビルドされたっぽい。
+ただビルドは成功したっぽいがそのあとのフェースでエラーになってるな。
+
+```
+2025-10-16 23:36:59,824 INFO: Scanning source for common problems...
+2025-10-16 23:36:59,831 DEBUG: scanner is configured to use signature data from: 'suss'
+2025-10-16 23:36:59,832 DEBUG: 'https://fdroid.gitlab.io/fdroid-suss/suss.json'をダウンロードしています
+2025-10-16 23:37:01,062 DEBUG: write 'suss.json' to cache
+2025-10-16 23:37:01,064 DEBUG: 次のsuss.jsonキャッシュの更新まで23:59:59.995536
+2025-10-16 23:37:01,110 ERROR: Found usual suspect 'com.android.application.*8.13.0' at build.gradle
+2025-10-16 23:37:01,122 INFO: Removing gradle-wrapper.jar at gradle/wrapper/gradle-wrapper.jar
+2025-10-16 23:37:01,125 ERROR: Could not build app io.github.karino2.texttl: スキャン時に1個のエラーが発生したためビルドできません
+```
+
+なんだろう？issueを検索すると、二ヶ月前に直した形跡があるな。
+
+[Build fails due to com.android.application.*8.12.0 flagged by scanner [ com.maazm7d.quickse ] (#3601) · Issue · fdroid/fdroiddata](https://gitlab.com/fdroid/fdroiddata/-/issues/3601)
+
+そして今のバージョンは6月にリリースされてるっぽいな。うーん、まだ入ってないということか？
+いや、リンク先を見たらまだopenだな、これ。
+
+[aapt2 fails to run on the buildserver - AGP 8.12.0-alpha07 is latest compatible (#593) · Issue · fdroid/admin](https://gitlab.com/fdroid/admin/-/issues/593)
+
+うーん、今日のところはこのくらいにしておいてやるか。
