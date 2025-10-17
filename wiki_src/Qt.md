@@ -6,13 +6,13 @@ Qt関連のリンクとかを貼っておく場所。
 - [CopperSpice](https://www.copperspice.com/) forkしてC++っぽくしている奴。良いかも？
 - [qt-cmakeとvcpkgの共存 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2025/04/22/qt_vcpkg_cmake.html)
 
-### QMLデバッガに接続出来ませんでした、的なエラー
+## QMLデバッガに接続出来ませんでした、的なエラー
 
 プロジェクト＞ビルドと実行の下のキット＞実行 の中にDebugger settingsというのがあって、ここのQML debuggerを無効にすると無くせる。
 
 ビルドの方ばかり見ていたが実行の方だった。
 
-### Windowsでのパラレルビルド
+## Windowsでのパラレルビルド
 
 おおむね以下が正しいが、jom.exeが無い。 [parallel multi-cpu multi-core build - Qt Forum](https://forum.qt.io/topic/70247/parallel-multi-cpu-multi-core-build/5)
 
@@ -23,9 +23,15 @@ jom.exeを手動で入れる。
 そしてプロジェクトからビルドと実行の使ってるキットの実行で、nmake.exeの代わりに実行するコマンド、
 でさきほどダウンロードしたjom.exeを指定したらできた。
 
-### QTextCharFormatのcopy assignment
+## QTextCharFormatのcopy assignment
 
 [QTextCharFormat Class - Qt GUI 6.6.1](https://doc.qt.io/qt-6/qtextcharformat.html)　を見ていたら、copy assignmentがないように見えるが、
 ホバーでツールチップをみると定義されているように見える。
 このケースではデフォルトのcopy assignmentが定義されて、baseのcopy assignmentが呼ばれるっぽいか？
 ドキュメントからわからないってどうなの？と思ってしまうが。
+
+## QListViewとQListWidget
+
+QListViewでカスタムなwidgetをアイテムごとに設定出来ないかなぁ、と調べていたら、昔のQListWidgetの方はその辺がちゃんとある事を知る。これは酷い。
+
+[Qt List Widget Customization: itemWidget vs. Delegates vs. Custom Models](https://runebook.dev/en/articles/qt/qlistwidget/itemWidget)
