@@ -145,3 +145,61 @@ Build your appのセクションを見ると、以下を実行すればいいか
 ```
 docker run --rm -v $ANDROID_HOME:/opt/android-sdk -v $(pwd):/repo -e ANDROID_HOME:/opt/android-sdk registry.gitlab.com/fdroid/docker-executable-fdroidserver:master build io.github.karino2.texttl:1 -v
 ```
+
+無事動いてそうだが、同じエラーになった。
+
+```
+2025-10-18 02:06:06,319 ERROR: Found usual suspect 'com.android.application.*8.13.0' at build.gradle
+```
+
+これは駄目そうだがfdroidserverのセットアップ周りの問題がない分docker imageの方が良さそうだな。
+
+### usual suspectのエラーを真面目に解決
+
+ちょっと真面目にこのエラーを調べてみた。以下のissueがそれなんだが、長くてわかりにくい。
+
+[aapt2 fails to run on the buildserver - AGP 8.12.0-alpha07 is latest compatible (#593) · Issue · fdroid/admin](https://gitlab.com/fdroid/admin/-/issues/593)
+
+どうも特定のgradleとAGPのバージョンの組み合わせはエラーになっていて、一時的に古いAGPを使え、という事っぽい。
+そしてそのためにはとりあえずsedを使え、と言っている。
+
+grepで他の人がどうやってるかを見る。
+
+```
+cd metadata
+grep "8\.13" *.yml
+```
+
+どうも関連する所を見ると以下っぽいか？
+
+```
+prebuild: sed -i -e 's/8.13.0/8.11.1/' ../build.gradle
+```
+
+相対パスがどこをさしているのかとか良くわからないが、とりあえずymlにコピペしてみるか。
+
+おぉ、ビルド通った。これで良さそう。
+
+### dockerで手順をちゃんと進めてみる
+
+ビルドが出来たので最初からやっていこう。
+以下のドキュメントのBuilding itをもう一度進めてみる。
+
+[CONTRIBUTING.md · master · F-Droid / Data · GitLab](https://gitlab.com/fdroid/fdroiddata/blob/master/CONTRIBUTING.md)
+
+とりあえずlintをもう一回やってみたらいいかな。dockerでのlintは以下か？
+
+```
+docker run --rm -v $ANDROID_HOME:/opt/android-sdk -v $(pwd):/repo -e ANDROID_HOME:/opt/android-sdk registry.gitlab.com/fdroid/docker-executable-fdroidserver:master lint io.github.karino2.texttl -v
+```
+
+問題無さそうね。
+
+次はこれを自分のforkにpushして、Common steps for both methodsのセクションを進める感じか。
+ブランチをpushしてみよう。
+
+そしてgitlabのCI/CDセクションを見る、か。左側のペイン（隠れているが右上のボタンで開けた）でBuildの下のpipelinesを見る。
+
+おや、failしている。git labでaccountをverifyしろ、とか言われているな。したような気がするが…
+
+Verify My Accountというボタンがあるので押して見ると、電話番号を入力させられてSMSが来た。これはやってないな。
