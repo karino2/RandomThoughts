@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "TeFWiki.html", "text": "TeFWiki"},
     {"link": "FDroid.html", "text": "FDroid"},
     {"link": "2025%E5%B9%B410%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年10月中旬の雑記"},
     {"link": "USB%E5%85%85%E9%9B%BB%E5%99%A8.html", "text": "USB充電器"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "OilShell.html", "text": "OilShell"},
     {"link": "JavaScript.html", "text": "JavaScript"},
     {"link": "%E3%81%A6%E3%81%8D%E3%81%99%E3%81%A8TL.html", "text": "てきすとTL"},
-    {"link": "htmnix.html", "text": "htmnix"},
    ]
 }
 ]
