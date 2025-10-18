@@ -203,3 +203,7 @@ docker run --rm -v $ANDROID_HOME:/opt/android-sdk -v $(pwd):/repo -e ANDROID_HOM
 おや、failしている。git labでaccountをverifyしろ、とか言われているな。したような気がするが…
 
 Verify My Accountというボタンがあるので押して見ると、電話番号を入力させられてSMSが来た。これはやってないな。
+
+verifyしたので再実行しようとしたがやり方が良くわからんな。New Pipelineというのを選んでinputを入れろというのを何もせずにNewを選んだら、なんかいろいろ走り出した。
+
+無事パスしたが、MR作ろうとしたらこのコミットのCIのfailアイコンが目立って感じ悪いので、メッセージだけ少し修正してforce pushでやりなおし。
