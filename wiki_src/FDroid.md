@@ -131,3 +131,17 @@ disableの行を消せばだいたいいいかな。
 [aapt2 fails to run on the buildserver - AGP 8.12.0-alpha07 is latest compatible (#593) · Issue · fdroid/admin](https://gitlab.com/fdroid/admin/-/issues/593)
 
 うーん、今日のところはこのくらいにしておいてやるか。
+
+### Dockerを試してみる 2025-10-18 (土)
+
+少し時間をあけて冷静に考えた所、Mac版は面倒そうなのでDocker版を使おう、と思い立つ。
+
+公式リンクから辿って以下。
+
+[F-Droid / docker-executable-fdroidserver · GitLab](https://gitlab.com/fdroid/docker-executable-fdroidserver)
+
+Build your appのセクションを見ると、以下を実行すればいいか？
+
+```
+docker run --rm -v $ANDROID_HOME:/opt/android-sdk -v $(pwd):/repo -e ANDROID_HOME:/opt/android-sdk registry.gitlab.com/fdroid/docker-executable-fdroidserver:master build io.github.karino2.texttl:1 -v
+```
