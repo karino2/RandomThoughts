@@ -193,7 +193,7 @@ prebuild: sed -i -e 's/8.13.0/8.11.1/' ../build.gradle
 docker run --rm -v $ANDROID_HOME:/opt/android-sdk -v $(pwd):/repo -e ANDROID_HOME:/opt/android-sdk registry.gitlab.com/fdroid/docker-executable-fdroidserver:master lint io.github.karino2.texttl -v
 ```
 
-問題無さそうね。
+問題無さそうね。＞問題あったっぽいがなんか表示されてなかった（なんで？）
 
 次はこれを自分のforkにpushして、Common steps for both methodsのセクションを進める感じか。
 ブランチをpushしてみよう。
@@ -207,3 +207,9 @@ Verify My Accountというボタンがあるので押して見ると、電話番
 verifyしたので再実行しようとしたがやり方が良くわからんな。New Pipelineというのを選んでinputを入れろというのを何もせずにNewを選んだら、なんかいろいろ走り出した。
 
 無事パスしたが、MR作ろうとしたらこのコミットのCIのfailアイコンが目立って感じ悪いので、メッセージだけ少し修正してforce pushでやりなおし。
+
+### MRを作っての印象
+
+- リモートのmasterをforkのmasterにsyncし忘れてpullを試していた
+- MRのCIでlintが何故か失敗した（なぜforkで成功しているのかは良くわからない。prebuildの位置を変えろと言ってきたので直す）
+- fastlaneでのビルドは必須ではないがMRのテンプレートでstrongly recommendedとされていた（次は試したい）
