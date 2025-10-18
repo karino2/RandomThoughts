@@ -102,3 +102,19 @@ geminiに聞いたらsetAsDefaultProtocolClientを使え、というのでぐぐ
 ```
 
 よしよし。
+あとは[[guash]]を使って、以下みたいにすればいいな。
+
+```
+#!/usr/bin/env guash
+
+ls -t  ~/work/syncthing_dirs/TeFWiki/RandomThoughts/*.md | guash_filter "Select Dest"
+RES=($(guash_doquery))
+test $? -ne 0 && exit 1
+
+FNAME=$(basename ${RES[0]})
+open "tefwiki://open?path=RandomThoughts/${FNAME}"
+```
+
+いい感じだ。
+
+Windowsで動くかはちょっとまだ試してないが、まぁしばらくはMacでしか使わないので時が来るまではこのままでいいだろう。
