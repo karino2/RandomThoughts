@@ -83,3 +83,22 @@ TeFWikiは実際にファイルオープンをそのまま使うのでは無く�
 画像もmarkdown-itで相対パスのインラインイメージを `tefwikimg://` にしてElectronのカスタムスキーム対応で手で取得している。
 
 Android版もほぼ同じ構成で、WebViewのinterceptでSAFにつなげる。ファイル権限無しで動くのは正しいAndroidアプリって感じだぜ。
+
+### Electron版で外部からのファイルopen依頼 2025-10-18 (土)
+
+検索が欲しくなったが、アプリの中に実装したくはない。
+そこで外部から相対パスでWikiNameを指定するとそれを開くようにしたい。
+
+geminiに聞いたらsetAsDefaultProtocolClientを使え、というのでぐぐってみたら以下にあたる。
+
+[Deep Links - Electron](https://www.electronjs.org/docs/latest/tutorial/launch-app-from-url-in-another-app)
+
+試してみよう。
+
+以下で開けるようになった。
+
+```
+% open "tefwiki://open?path=RandomThoughts/TeFWiki.md"
+```
+
+よしよし。
