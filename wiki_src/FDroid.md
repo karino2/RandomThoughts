@@ -221,7 +221,7 @@ MRのフィードバックでfastlaneを追加してね、とだけ帰ってき�
 
 実質必須だと思っておく方が良さそうだ。
 
-まずbrew installでfastlaneを入れる。
+まずbrew installでfastlaneを入れる。（追記：この辺は不要だった）
 
 [fastlane docs](https://docs.fastlane.tools/)
 
@@ -278,3 +278,10 @@ fastlane/metadata/android/en-US/images/phoneScreenshots/2.png: 'max:min' edge ra
 ```
 
 なんで俺のスマホのスクショじゃ駄目なん？とりあえず幅を広げて2:1くらいにして無事パス。
+
+### fastlane関連で必要な事
+
+ようするにF-Droidで公開されるページのデータだけが必要っぽい。
+という事でfastlaneのインストールは不要な気がする。
+
+単にfastlane/metadata下を他の人を参考に作り、dockerのlsupply-metadataという奴で確認すれば十分っぽい。
