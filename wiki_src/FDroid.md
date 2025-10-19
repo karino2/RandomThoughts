@@ -213,3 +213,68 @@ verifyしたので再実行しようとしたがやり方が良くわからん�
 - リモートのmasterをforkのmasterにsyncし忘れてpullを試していた
 - MRのCIでlintが何故か失敗した（なぜforkで成功しているのかは良くわからない。prebuildの位置を変えろと言ってきたので直す）
 - fastlaneでのビルドは必須ではないがMRのテンプレートでstrongly recommendedとされていた（次は試したい）
+
+### fastlane対応 2025-10-19 (日)
+
+MRのフィードバックでfastlaneを追加してね、とだけ帰ってきた。必須では無いんじゃなの？という気もするが、
+やりとりするよりもfastlaneを加える方が早そう。
+
+実質必須だと思っておく方が良さそうだ。
+
+まずbrew installでfastlaneを入れる。
+
+[fastlane docs](https://docs.fastlane.tools/)
+
+で、次はfastlane initをすればいいっぽいか。
+
+[Setup - fastlane docs](https://docs.fastlane.tools/getting-started/android/setup/)
+
+なぜかパッケージ名が全然違うものが出てきたので自分のものを入れる。
+
+Google Playにアップロードするならauth系の情報が必要だ、と言われるが、それはやらないのでスルー。
+
+で、終わってみたが、生成されたタスクが以下の３つ。
+
+- テストを走らせる
+- Crashlytics Betaにsubmit
+- Google Playにsubmit
+
+どれも必要そうには見えない。fastlaneで何をしろ、というのだろう？
+
+すでにサブミットされているアプリを見てみると、以下のようになっている。
+
+[super-productivity/fastlane at master · johannesjo/super-productivity](https://github.com/johannesjo/super-productivity/tree/master/fastlane)
+
+FastfileもAppfileも無いな。
+
+少しググってみて、以下の２つにたどり着く
+
+- [Fastlane file structure ($1895688) · Snippets · GitLab](https://gitlab.com/-/snippets/1895688)
+- [Fastlane · Wiki · IzzyOnDroid / repo · GitLab](https://gitlab.com/IzzyOnDroid/repo/-/wikis/Fastlane)
+
+後者の記述は詳しいが、ようするにmetadataだけで良さそうに読める。
+とりあえずfastfileとappfileを削除してmetadataを作ってみよう。
+
+```
+% cd fastlane
+% mkdir -p metadata/android/en-US
+% cd metadata/android/en-US
+```
+
+で、それっぽいのを一通り埋めたが、このあとどうしたらいいんだ？
+
+docker imageでvalidatio出来そうか。以下を実行。
+
+```
+% docker run --rm --workdir /app --mount type=bind,source="$(pwd)",target=/app \
+   ashutoshgngwr/validate-fastlane-supply-metadata:v1 -fastlane-path ./fastlane
+```
+
+いくつかすぐに分かるミスが出てきたのでそれを直し、最後に以下が残る。
+
+```
+fastlane/metadata/android/en-US/images/phoneScreenshots/1.png: 'max:min' edge radio should be at most 2.0: got=2.22
+fastlane/metadata/android/en-US/images/phoneScreenshots/2.png: 'max:min' edge radio should be at most 2.0: got=2.22
+```
+
+なんで俺のスマホのスクショじゃ駄目なん？とりあえず幅を広げて2:1くらいにして無事パス。
