@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%83%91%E3%82%AA%E7%A2%81.html", "text": "パオ碁"},
     {"link": "FDroid.html", "text": "FDroid"},
     {"link": "2025%E5%B9%B410%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年10月中旬の雑記"},
     {"link": "%E3%81%9F%E3%81%A6%E3%81%AA%E3%81%8B%E6%B5%81%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81.html", "text": "たてなか流クイックスケッチ"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%96%E3%83%83%E3%82%AF.html", "text": "オーディオブック"},
     {"link": "Wiki%E3%81%A8howm%E3%81%A8%E3%83%A1%E3%83%A2%E3%83%84%E3%83%BC%E3%83%AB.html", "text": "Wikiとhowmとメモツール"},
     {"link": "zx.html", "text": "zx"},
-    {"link": "OilShell.html", "text": "OilShell"},
    ]
 }
 ]
