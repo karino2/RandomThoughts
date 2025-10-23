@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "USB%E3%83%81%E3%82%A7%E3%83%83%E3%82%AB%E3%83%BC.html", "text": "USBチェッカー"},
     {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
     {"link": "2025%E5%B9%B410%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年10月下旬の雑記"},
     {"link": "Home.html", "text": "Home"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E5%9B%B2%E7%A2%81%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E8%A9%95%E4%BE%A1.html", "text": "囲碁エンジン評価"},
     {"link": "%E5%9B%B2%E7%A2%81.html", "text": "囲碁"},
     {"link": "%E7%B5%8C%E6%B8%88.html", "text": "経済"},
-    {"link": "%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%83%96%E3%83%83%E3%82%AF.html", "text": "オーディオブック"},
    ]
 }
 ]
