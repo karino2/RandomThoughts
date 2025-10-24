@@ -1,6 +1,9 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
+    {"link": "%E5%8C%96%E5%AD%A6%E8%A8%88%E7%AE%97%E5%95%8F%E9%A1%8C%E3%81%AE%E8%A7%A3%E3%81%8D%E6%96%B9.html", "text": "化学計算問題の解き方"},
+    {"link": "%E5%8C%96%E5%AD%A6.html", "text": "化学"},
     {"link": "2025%E5%B9%B410%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年10月下旬の雑記"},
     {"link": "USB%E3%83%81%E3%82%A7%E3%83%83%E3%82%AB%E3%83%BC.html", "text": "USBチェッカー"},
     {"link": "%E3%83%91%E3%82%AA%E7%A2%81.html", "text": "パオ碁"},
@@ -13,9 +16,6 @@ export const recents = [
     {"link": "TeFWiki.html", "text": "TeFWiki"},
     {"link": "USB%E5%85%85%E9%9B%BB%E5%99%A8.html", "text": "USB充電器"},
     {"link": "Qt.html", "text": "Qt"},
-    {"link": "%E5%9B%B2%E7%A2%81%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E8%A9%95%E4%BE%A1.html", "text": "囲碁エンジン評価"},
-    {"link": "%E5%9B%B2%E7%A2%81.html", "text": "囲碁"},
-    {"link": "%E7%B5%8C%E6%B8%88.html", "text": "経済"},
    ]
 }
 ]
