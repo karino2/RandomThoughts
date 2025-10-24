@@ -5,6 +5,7 @@
 12.7インチ。
 
 - アスペクト比 16:10 (iOSは4:3）
+- [Quick Charge - Wikipedia](https://en.wikipedia.org/wiki/Quick_Charge)
 
 ## 購入 2025-09-30 (火)
 
