@@ -2,6 +2,7 @@ export const recents = [
  {text: "Recents:",
    children: [
     {"link": "USB%E5%85%85%E9%9B%BB%E5%99%A8.html", "text": "USB充電器"},
+    {"link": "LenovoTabP12.html", "text": "LenovoTabP12"},
     {"link": "2025%E5%B9%B410%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年10月下旬の雑記"},
     {"link": "%E5%8C%96%E5%AD%A6%E8%A8%88%E7%AE%97%E5%95%8F%E9%A1%8C%E3%81%AE%E8%A7%A3%E3%81%8D%E6%96%B9.html", "text": "化学計算問題の解き方"},
     {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E3%81%9F%E3%81%A6%E3%81%AA%E3%81%8B%E6%B5%81%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81.html", "text": "たてなか流クイックスケッチ"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "TeFWiki.html", "text": "TeFWiki"},
-    {"link": "Qt.html", "text": "Qt"},
    ]
 }
 ]
