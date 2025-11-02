@@ -88,6 +88,10 @@ launchctl setenv PATH /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 launchctl setenv NODE_PATH /usr/local/lib/node_modules
 ```
 
+### 起動時の実行はLibrary/LaunchAgents下
+
+`~/Library/LaunchAgents` 下にplistのファイルがあって、これが実行される。
+
 ## UIKit入門
 
 [iOS開発に入門する - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/05/23/iosdev.html) にも書いた内容だが、
