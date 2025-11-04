@@ -57,7 +57,7 @@ Intel Mac Book Proがめちゃ遅くなったのを思うと、買って良か�
 
 ### 移行作業 2025-11-04 (火)
 
-- [ ] DotnetCoreを入れる
-- [ ] [[guash]]と[[htmnix]]をビルド
-- [ ] 雑用スクリプトを持ってくる
+- [x] DotnetCoreを入れる
+- [x] [[guash]]と[[htmnix]]をビルド
+- [x] 雑用スクリプトを持ってくる
 - [ ] golangを入れてmdimgrを持ってくる
