@@ -285,3 +285,15 @@ fastlane/metadata/android/en-US/images/phoneScreenshots/2.png: 'max:min' edge ra
 という事でfastlaneのインストールは不要な気がする。
 
 単にfastlane/metadata下を他の人を参考に作り、dockerのlsupply-metadataという奴で確認すれば十分っぽい。
+
+### TextTLがマージされる 2025-11-04 (火)
+
+先ほど無事マージされた。FDroidのサイトにはまだ無さそうだが。
+
+[New app: TextTL (!28307) · マージリクエスト · F-Droid / Data · GitLab](https://gitlab.com/fdroid/fdroiddata/-/merge_requests/28307)
+
+全て不備を直してreview-requestedのラベルが付いたのが10月19日で、2週間くらいでマージされた。
+作業の多くは結局FDroidのページに表示される情報を揃えることなので、やってみるとリリース作業はそんなに大変ではないな。
+
+今後はFDroidに置いていこう。
+
