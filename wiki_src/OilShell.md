@@ -1,4 +1,5 @@
-- [Oil](https://www.oilshell.org/)
+- [Oils](https://oils.pub/)
+  - Oilsにリネームしたらしい…
 - [[zx]] nodeでやる方がいいのでは？的な対抗馬。
 
 shell scriptのスクリプティングの所だけモダンにしよう、というコンセプトのシェル。pythonで書かれているとか。

@@ -81,6 +81,8 @@ Command+Wをクローズにするのは出来たが、Command+TabをCtrl+Tabに�
 
 定期実行はMacではlaunchdとlaunchctlというのを使う。
 
+### 環境変数
+
 実行時にはpathなどが通ってないのでlaunchctl setenvというのを使う。
 
 ```
@@ -91,6 +93,16 @@ launchctl setenv NODE_PATH /usr/local/lib/node_modules
 ### 起動時の実行はLibrary/LaunchAgents下
 
 `~/Library/LaunchAgents` 下にplistのファイルがあって、これが実行される。
+
+### listとunload
+
+launchctl listでタスクの一覧が表示される。
+
+止め方は以下のようにplistファイルを指定する。
+
+```
+$ launchctl unload ~/Library/LaunchAgents/environment.plist
+```
 
 ## UIKit入門
 
