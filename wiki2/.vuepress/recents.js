@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "git.html", "text": "git"},
     {"link": "2025%E5%B9%B411%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年11月上旬の雑記"},
     {"link": "%E6%9B%B8%E7%B1%8D.html", "text": "書籍"},
     {"link": "MacBookAir.html", "text": "MacBookAir"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E3%83%91%E3%82%AA%E7%A2%81.html", "text": "パオ碁"},
     {"link": "LenovoTabP12.html", "text": "LenovoTabP12"},
     {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
-    {"link": "USB%E5%85%85%E9%9B%BB%E5%99%A8.html", "text": "USB充電器"},
    ]
 }
 ]
