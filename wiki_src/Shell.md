@@ -22,6 +22,12 @@ export SAVEHIST=1000000000
 日付を表示するのは`history -i`。
 全部表示するなら`history -i 0`。
 
+## ln はソースが先、destがあと
+
+```
+$ ln -s ../../go_related/gnugo gnugo-3.8
+```
+
 ## ディレクトリだけls、ファイルだけls
 
 毎回やり方がわからなくてググるのでメモ。

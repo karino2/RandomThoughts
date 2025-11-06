@@ -5,6 +5,7 @@ github上にweb siteを持てる仕組み。
 
 - [GitHub Pages - Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.](https://pages.github.com/) 本家
 - [[VuePress]] サイトジェネレータだがGithubPagesと合わせて使う事が多いのでここに置く。
+- github pagesで使われてる jekyll のバージョン[About GitHub Pages and Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll) にDependency versionsというリンクがあり、そこからjekyllのバージョンが見れる（へんなjsonで） 2025/11時点では3.10.0との事
 
 以下はjekyll関連でよく参照するもの。
 
@@ -14,6 +15,45 @@ github上にweb siteを持てる仕組み。
 ## dockerでのローカル環境
 
 [Mac OS X上のdockerでjekyll環境を作ってgithub pagesのテストをする - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2021/01/17/jekyll_on_mac.html)
+
+## rbenvでのローカル環境
+
+最近dockerが遅いのでrbenvでどうにかする。
+
+rbenv install listしたら3.4.7が最新版っぽいのでこれを入れてみる。
+
+```
+$ rbenv install 3.4.7
+$ rbenv global 3.4.7
+```
+
+これで3.4.7になった。
+
+```
+$ gem install bundler
+$ gem install jekyll bundler
+```
+
+これでgithub.ioのディレクトリに行ってbundle execすればいいのか？
+
+```
+$ bundle exec jekyll serve
+Could not locate Gemfile or .bundle/ directory
+```
+
+Gemfileがないと言われた。
+まぁ大体動けばいいんだよなぁ、という事で以前作ったGemfileと同じ内容のものを置いておく。
+
+[kotlin-web-site-ja/docker/Gemfile at master · karino2/kotlin-web-site-ja](https://github.com/karino2/kotlin-web-site-ja/blob/master/docker/Gemfile)
+
+これを置いて以下で動いた。
+
+```
+$ bundle install
+$ bundle exec jekyll serve
+```
+
+github pagesのjekyllのバージョンと違うが、まぁいいか。
 
 ## 新規の始め方
 
