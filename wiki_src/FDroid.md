@@ -297,3 +297,8 @@ fastlane/metadata/android/en-US/images/phoneScreenshots/2.png: 'max:min' edge ra
 
 今後はFDroidに置いていこう。
 
+### FDroidのサイトの検索に引っ掛かるようになる 2025-11-07 (金)
+
+[TextTL - F-Droid - Free and Open Source Android App Repository](https://f-droid.org/ja/packages/io.github.karino2.texttl/)
+
+なかなか出てこないなと思っていたが、実際はマージされてから3日くらいか。まぁまぁすぐか。
