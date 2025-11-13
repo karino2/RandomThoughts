@@ -29,13 +29,17 @@ destの色にcurの色を足した場合どういう結果になるべきか。
 {destA*destRGB*(1-curA)+curRGB*curA}/{(1-destA)*curA+destA} 
 ```
 
-分母はcurAとdestAをアルファブレンドした結果なのでresA。
+分母はcurAとdestAをアルファブレンドした結果。
+さらにアルファ値は0.5の上に0.5を描いた時の期待値次第だが、加算か大きい方固定化のどちらかと思う。
+ここでは大きい方固定（maxをとる）としよう。
+
 つまりMFGのコードにすると以下か。
 
 ```mfg
 fn blend | dest: f32v4, cur: f32v4 | {
-  let resA = mix(dest.w, cur.w, cur.w)
-  let resBGR = (dest.w*dest.xyz*(1.0-cur.w)+cur.xyz*cur.w)/resA
+  let mixA = mix(dest.w, cur.w, cur.w)
+  let resA = max(dest.w, cur.w)
+  let resBGR = mix(dest.w*dest.xyz, cur.xyz, cur.w)/mixA
   ifel(cur.w < 0.0001,
         dest,
         [*resBGR, resA])
