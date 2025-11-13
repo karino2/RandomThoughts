@@ -9,6 +9,23 @@
 - [[ハーフトーン]]
 - [[Stippling]]
 
+## 半透明同士のアルファブレンド
+
+元が半透明な時に半透明を上書きするとどうなるか？というのが良く分からなかったのでメモ。
+以下みたいな感じでRGBは平均っぽく計算してアルファを普通にアルファブレンドの式で計算する感じで良さそう。
+
+```mfg
+fn blend | src: f32v4, cur: f32v4 | {
+  let srcBGR = src.xyz * src.w
+  let curBGR = cur.xyz * cur.w
+  let destBGR = (srcBGR+curBGR)/(src.w+cur.w)
+  let destA = src.w+cur.w-src.w*cur.w
+  ifel(cur.w < 0.0001,
+        src,
+        [*destBGR, destA])
+}
+```
+
 ## グレースケール
 
 良く使うのでコードを書いておく。
