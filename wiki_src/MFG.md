@@ -12,17 +12,33 @@
 ## 半透明同士のアルファブレンド
 
 元が半透明な時に半透明を上書きするとどうなるか？というのが良く分からなかったのでメモ。
-以下みたいな感じでRGBは平均っぽく計算してアルファを普通にアルファブレンドの式で計算する感じで良さそう。
+destの色にcurの色を足した場合どういう結果になるべきか。
+
+以下の条件を満たすべき。
+
+- destAが1.0の時destRGB*(1-curA)+curRGB*curA
+- destAが0.0の時にcurRGB
+- curAが0.0の時にdestRGB
+- curAが1.0の時にcurRGB
+- destAが小さい時はcurRGBに近づく
+- curAが小さい時はdestRGBに近づく
+
+これらを全て満たす数式は以下か？
+
+```
+{destA*destRGB*(1-curA)+curRGB*curA}/{(1-destA)*curA+destA} 
+```
+
+分母はcurAとdestAをアルファブレンドした結果なのでresA。
+つまりMFGのコードにすると以下か。
 
 ```mfg
-fn blend | src: f32v4, cur: f32v4 | {
-  let srcBGR = src.xyz * src.w
-  let curBGR = cur.xyz * cur.w
-  let destBGR = (srcBGR+curBGR)/(src.w+cur.w)
-  let destA = src.w+cur.w-src.w*cur.w
+fn blend | dest: f32v4, cur: f32v4 | {
+  let resA = mix(dest.w, cur.w, cur.w)
+  let resBGR = (dest.w*dest.xyz*(1.0-cur.w)+cur.xyz*cur.w)/resA
   ifel(cur.w < 0.0001,
-        src,
-        [*destBGR, destA])
+        dest,
+        [*resBGR, resA])
 }
 ```
 
