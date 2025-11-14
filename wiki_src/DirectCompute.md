@@ -1,3 +1,7 @@
+- [[技術的なメモ]]
+  - [[CG]]
+     - [[Metal]]
+
 DirectXのCompute Shaderのこと。
 Windows上だとランタイムとかの面倒が少ないかな？と思い調査してみる。
 

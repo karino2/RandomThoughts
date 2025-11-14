@@ -1,13 +1,15 @@
 - [[技術的なメモ]]
 - [[MFG]]
-- [[Metal]]
+- [[Shader]]
+  - [[Metal]]
+  - [[DirectCompute]]
+  - [[OpenGL]]
 - [[ガンマ補正]]
 - [Are there any books on shaders? : r/GraphicsProgramming](https://www.reddit.com/r/GraphicsProgramming/comments/olbkpi/are_there_any_books_on_shaders/)
 - [ShaderToy Tutorials - YouTube](https://www.youtube.com/playlist?list=PLGmrMu-IwbguU_nY2egTFmlg691DN7uE5)
 - [Shadertoy BETA](https://www.shadertoy.com/)
 - [XDC 2022 - Implementing the graphics pipeline on compute - Erik Faye-Lund - YouTube](https://www.youtube.com/watch?v=DREz3n7gZPw)
 - [[【書籍】PrinciplesOfDigitalImageProcessing]]
-- [[【書籍】OpenGL4ShadingLanguageCook]]
 - [[【書籍】HLSLシェーダーの魔導書]]
 - [[【書籍】2Dグラフィックスのしくみ]]
 - [math - Is there a good GLSL hash function? - Stack Overflow](https://stackoverflow.com/questions/23319289/is-there-a-good-glsl-hash-function) シェーダーでのハッシュ関数。randでは無くハッシュが欲しい事もあるんだよな。
