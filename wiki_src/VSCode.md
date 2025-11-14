@@ -84,3 +84,11 @@ configurationに以下を追加
 ~/Library/Application Support/Code/Cache
 ~/Library/Application Support/Code/CachedData
 ```
+
+## CodeLLDB使ってMacでprintfが出力されない
+
+よくわからないが、temrinalがintegratedだとダメな事がある。以下にすればとりあえずは出る。
+
+```
+            "terminal":"console",
+```
