@@ -200,7 +200,14 @@ qt5-base provides pkg-config modules:
 
 ```
 $ ./vcpkg install qt5-webchannel:arm64-osx-dynamic
+```
+
+これは上手くいった。
+
+```
 $ ./vcpkg install qt5-webengine:arm64-osx-dynamic
 ```
+
+これはエラー。ログをみると、`libs.webengine-icu`がないとか言われている。
 
 関係ないが昔はqt5-webview使ってたんだが、これも普通にメンテされてそうだな。vcpkgの方が本家のQtのサポート体制より納得できる感じだ。
