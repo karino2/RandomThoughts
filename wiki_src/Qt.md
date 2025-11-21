@@ -208,6 +208,22 @@ $ ./vcpkg install qt5-webchannel:arm64-osx-dynamic
 $ ./vcpkg install qt5-webengine:arm64-osx-dynamic
 ```
 
-これはエラー。ログをみると、`libs.webengine-icu`がないとか言われている。
+これはエラー。ログをみると、`libs.webengine-icu`がfailとか言われている。
 
-関係ないが昔はqt5-webview使ってたんだが、これも普通にメンテされてそうだな。vcpkgの方が本家のQtのサポート体制より納得できる感じだ。
+icuが入ってないのかな？とみてみるが入っていそう。
+
+```
+$ ./vcpkg list icu
+icu:arm64-osx                                     78.1                Mature and widely used Unicode and localization ...
+icu:arm64-osx-dynamic                             78.1                Mature and widely used Unicode and localization ...
+```
+
+でもエラーログをみていると以下と書いてある。
+
+```
+Checking for icu >= 65... no
+```
+
+おや、78.1と言っているが。
+
+色々試したが良くわからん。なお、qt5-webviewは入れられた。別にこれでもいい気もするな。
