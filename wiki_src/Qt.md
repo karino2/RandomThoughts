@@ -118,6 +118,89 @@ qt5-webengine is only supported on '!static', which does not match arm64-osx. Th
 
 ```
 $ ./vcpkg install qt5:arm64-osx-dynamic
+....
+CMake Error at scripts/cmake/vcpkg_execute_build_process.cmake:134 (message):
+    Command failed: /usr/bin/make -j 11
+    Working Directory: /Users/karino2/source/vcpkg/buildtrees/qt5-graphicaleffects/arm64-osx-dynamic-dbg
+    See logs for more information:
+      /Users/karino2/source/vcpkg/buildtrees/qt5-graphicaleffects/package-build-arm64-osx-dynamic-dbg-out.log
+      /Users/karino2/source/vcpkg/buildtrees/qt5-graphicaleffects/package-build-arm64-osx-dynamic-dbg-err.log
+
+Call Stack (most recent call first):
+  scripts/cmake/vcpkg_build_qmake.cmake:3 (vcpkg_execute_build_process)
+  scripts/cmake/vcpkg_build_qmake.cmake:76 (z_run_jom_build)
+  installed/arm64-osx-dynamic/share/qt5/qt_build_submodule.cmake:11 (vcpkg_build_qmake)
+  installed/arm64-osx-dynamic/share/qt5/qt_submodule_installation.cmake:9 (qt_build_submodule)
+  ports/qt5-graphicaleffects/portfile.cmake:3 (qt_submodule_installation)
+  scripts/ports.cmake:206 (include)
 ```
 
-なんかこれもあっさり通りそうだな。
+ふむふむ。err.logをみると、qmlcachegenからロードされるはずのlibpng16d.16.50.0.dylibが見つからないと言われているな。
+
+```
+ld: warning: search path '/Users/karino2/source/vcpkg/installed/arm64-osx-dynamic/debug/lib/manual-link' not found
+dyld[91096]: Library not loaded: @rpath/libpng16d.16.50.0.dylib
+  Referenced from: <0429EB76-C64C-32E4-BCE9-4CDA6E2D3125> /Users/karino2/source/vcpkg/packages/qt5-declarative_arm64-osx-dynamic/tools/qt5/debug/bin/qmlcachegen
+  Reason: tried: '/Users/karino2/source/vcpkg/packages/qt5-declarative_arm64-osx-dynamic/tools/qt5/debug/bin/../../../../debug/lib/libpng16d.16.50.0.dylib' (no such file), '/Users/karino2/source/vcpkg/packages/qt5-declarative_arm64-osx-dynamic/tools/qt5/debug/bin/../../../../debug/lib/libpng16d.16.50.0.dylib' (no such file)
+make[3]: *** [../../../qml/QtGraphicalEffects/private/GaussianMaskedBlur.qmlc] Abort trap: 6
+```
+
+この`.././`がいっぱいあってdebug/libとなっている場所は、`vcpkg/packages/qt5-declarative_arm64-osx-dynamic/debug/lib`だった。
+そしてそこにはlibpng16dはなかった。
+
+ってqt5-declarativeってqmlのことかな？これはいらないな。
+
+qt5-baseに入っているのは以下か。
+
+```
+qt5-base provides pkg-config modules:
+
+  # Qt Concurrent module
+  Qt5Concurrent
+
+  # Qt Core module
+  Qt5Core
+
+  # Qt DBus module
+  Qt5DBus
+
+  # Qt Gui module
+  Qt5Gui
+
+  # Qt Network module
+  Qt5Network
+
+  # Qt OpenGL module
+  Qt5OpenGL
+
+  # Qt OpenGLExtensions module
+  Qt5OpenGLExtensions
+
+  # Qt PrintSupport module
+  Qt5PrintSupport
+
+  # Qt Sql module
+  Qt5Sql
+
+  # Qt Unit Testing Library
+  Qt5Test
+
+  # Qt Widgets module
+  Qt5Widgets
+
+  # Qt Xml module
+  Qt5Xml
+```
+
+で、qt5に入っているのは以下か。
+
+[qt5 - vcpkg.link: Vcpkg Ports and Packages Explorer](https://vcpkg.link/ports/qt5)
+
+えーと、webchannelとwebengineをとりあえず使っているので足してみるか。
+
+```
+$ ./vcpkg install qt5-webchannel:arm64-osx-dynamic
+$ ./vcpkg install qt5-webengine:arm64-osx-dynamic
+```
+
+関係ないが昔はqt5-webview使ってたんだが、これも普通にメンテされてそうだな。vcpkgの方が本家のQtのサポート体制より納得できる感じだ。
