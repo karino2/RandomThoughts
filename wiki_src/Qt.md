@@ -103,4 +103,21 @@ QMAKE_LIBDIR_OPENGL[_ES2] and QMAKE_LIBS_OPENGL[_ES2] in the mkspec for your pla
 と、web上でそれっぽいのを眺めていたら（[vcpkg/ports/qt5-base/portfile.cmake at master · microsoft/vcpkg](https://github.com/microsoft/vcpkg/blob/master/ports/qt5-base/portfile.cmake#L247-L251)）、なんかtahoeの時の対応が入っているっぽいな。
 git pullしてみよう。
 
-色々調べる前に、まずはqt5-baseを入れてみよう。
+お、それでvcpkg installしたらあっさり入ったっぽい？
+
+webengineが入ってないっぽいな、とググってみたらqt5-webengineというのがあるらしい。という事でインストールしてみよう。
+
+```
+$ ./vcpkg install qt5-webengine
+Computing installation plan...
+qt5-webengine is only supported on '!static', which does not match arm64-osx. This usually means that there are known build failures, or runtime problems, when building other platforms. To ignore this and attempt to build qt5-webengine anyway, rerun vcpkg with `--allow-unsupported`.
+```
+
+おや、staticになっているのか。そもそもqt、staticになってる方が嬉しいという話はあるよなぁ。いや、LGPLだからdylibの方がいいのか。
+まぁなんにせよqt5-webengineはstaticでは上手くいかないらしいとの事だしqt5もdynamicにしてみよう。
+
+```
+$ ./vcpkg install qt5:arm64-osx-dynamic
+```
+
+なんかこれもあっさり通りそうだな。
