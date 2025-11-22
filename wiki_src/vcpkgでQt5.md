@@ -270,4 +270,51 @@ Qt5ではqt5-webviewを使うようにする方が長生きするんじゃない
 WindowsはDeveloper Powershellに入っているvcpkgを使いたいのでマニフェストモードになるよなぁ、と思ってどうするのがいいかgeminiに聞いたら、
 バイナリキャッシュを指定しろ、と言われる。ふむふむ。＞[[vcpkg]]
 
-とりあえず指定した。
+とりあえず指定した。なんかきいてないな。でもデフォルトの挙動で良さそうな気がするので指定をやめる。
+
+### マニフェストモードでqt5-baseを入れてみる
+
+とりあえずさっきMac用につくったHelloQt5VcpkgをWindows上でビルドしてみよう。
+vcpkg.json作ってなかったので、適当に作ってコミットする。
+
+そして以下を実行するとqt5-baseのビルドでエラーになる
+
+```
+PS> mkdir build
+PS> cmake . -B build -G "Visual Studio 17 2022" -A x64
+```
+
+なんかfreetypeのあたりで失敗しているが、イマイチ良くわからないな。
+
+issueを眺めていたら、似たような現象がsubstコマンド使ったら治ったというのを見つける。
+
+[[qt5-base] build error on x64-windows · Issue #47501 · microsoft/vcpkg](https://github.com/microsoft/vcpkg/issues/47501)
+
+substというのは特定のディレクトリをドライブレターに割り当てるコマンドっぽいな。なんか昔こういうの良く使ってた気がするが。
+とりあえずやってみよう。
+
+```
+PS> subst P: $PWD
+PS> cd P:
+PS> cmake . -B build -G "Visual Studio 17 2022" -A x64
+```
+
+お、なんか上手くいった風味だな。マジか。エラーメッセージからはめちゃわかりにくいな、これ。
+
+続いてビルドして実行。
+
+```
+PS> cmake --build ./build --config Debug
+PS> ./build/Debug/HelloQt5Vcpkg.exe
+```
+
+おお、出来た。
+
+### マニフェストモードでのMacの振る舞い
+
+バイナリキャッシュ、WindowsだとAppData下が使われてくれているが、Macで手でcloneしたものだとそのディレクトリを使ってくれるんだろうか？
+試してみよう。
+
+windows側でvcpkg.jsonを作成したプロジェクトをgit pullしてもうちどninjaをジェネレートしてみる。
+
+お、なんかVCPKG_ROOTの下のbuildtreesとかが使われそうな雰囲気だな（ただ使ってるライブラリのハッシュが変わったので作り直しているっぽい）。
