@@ -11,6 +11,15 @@ qt5-webengineが鬼門らしい。割とメンテされていて、パッチも�
   - [qt5 - vcpkg.link: Vcpkg Ports and Packages Explorer](https://vcpkg.link/ports/qt5)
      - qt5-baseの後に個別に入れる場合にここから探す。qt5-webchannelなどとして入れられる。
   - [qt5-webengine - vcpkg.link: Vcpkg Ports and Packages Explorer](https://vcpkg.link/ports/qt5-webengine) よくビルドが失敗する奴。
+- [karino2/HelloQt5Vcpkg: vcpkg Qt5 test project.](https://github.com/karino2/HelloQt5Vcpkg) 動作を確認する一番簡単なプロジェクト
+
+## HelloQt5的なプロジェクト
+
+動作を確認するために基本的なプロジェクトを作ってみた。
+
+- [karino2/HelloQt5Vcpkg: vcpkg Qt5 test project.](https://github.com/karino2/HelloQt5Vcpkg)
+
+mainwindow.uiなども使った例にしようかと思ったが、切り分けが面倒になりそうなのでそういうのが無い例もある方がいいだろう、という事で。
 
 ## MacBook Airでのビルドの作業ログ
 
