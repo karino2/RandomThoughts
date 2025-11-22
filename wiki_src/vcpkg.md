@@ -1,4 +1,4 @@
-[[VisualStudio]]、[[VSCode]], [[vcpkgでQt5]]
+このWiki内の関連ページ: [[VisualStudio]]、[[VSCode]], [[vcpkgでQt5]]
 
 - [vcpkg.json リファレンス - Microsoft Learn](https://learn.microsoft.com/ja-jp/vcpkg/reference/vcpkg-json)
 
@@ -7,3 +7,25 @@
 ```
 % vcpkg x-update-baseline
 ```
+
+## CMakeから使うミニマムな例
+
+手順は以下に書いてある。
+
+[vcpkg in CMake projects - Microsoft Learn](https://learn.microsoft.com/en-us/vcpkg/users/buildsystems/cmake-integration)
+
+CMAKE_TOOLCHAIN_FILEでvcpkgのものを指定する。そのための推奨の方法はCMakePresets.jsonを使う、との事だが、CMakeLists.txtの冒頭に以下の方がミニマムか。
+
+```
+if(DEFINED ENV{VCPKG_ROOT} AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+    set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake")
+endif()
+```
+
+これは`project()`の前にセットしなくてはいけない。VCPKG_ROOTはまぁみんな定義しているだろう。
+
+## マニフェストモードでのライブラリの共有
+
+Qtなどをvcpkgで入れる場合、流石にプロジェクトごとにビルドするのはイマイチだがVSのvcpkgではクラシックモードで動かすのもどうすべきか微妙だったりするのでどうしたもんか、と調べていたところ、バイナリキャッシュを特定のディレクトリに置いてそれを共有する仕組みがあるらしい。
+こちらの方が王道っぽいな。
+

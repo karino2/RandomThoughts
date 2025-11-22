@@ -211,3 +211,29 @@ Checking for icu >= 65... no
 
 色々試したが良くわからん。なお、qt5-webviewは入れられた。別にこれでもいい気もするな。
 
+### 少しいじってみたが根が深そう
+
+少しビルドを通せないかパッチを作ってみようとしたが厳しそう。
+
+- zutil.hのfdopenを削除
+- mojo関連のimport impを削除
+
+で、perfettoのテンプレートエラーまで来た。
+
+```
+In file included from ../../../../src/5.15.18-eb2c6a0533/src/3rdparty/chromium/third_party/perfetto/src/tracing/track.cc:20:
+../../../../src/5.15.18-eb2c6a0533/src/3rdparty/chromium/third_party/perfetto/include/perfetto/tracing/internal/track_event_data_source.h:110:20: error: a template argument list is expecte
+d after a name prefixed by the template keyword [-Wmissing-template-arg-list-after-template-kw]
+  110 |     Base::template Trace([](typename Base::TraceContext ctx) { ctx.Flush(); });
+      |                    ^
+../../../../src/5.15.18-eb2c6a0533/src/3rdparty/chromium/third_party/perfetto/include/perfetto/tracing/internal/track_event_data_source.h:124:20: error: a template argument list is expecte
+d after a name prefixed by the template keyword [-Wmissing-template-arg-list-after-template-kw]
+  124 |     Base::template Trace([&](typename Base::TraceContext ctx) {
+      |                    ^
+```
+
+この手のエラーが結構多い。DataSourceのTraceにテンプレート引数が追加であるのか？という雰囲気だが、チラッと見たらlambdaの引数があるだけで、引数で解決しそうにも見える。そして結構似たようなのの数が多い。
+
+最近のコードと見比べたが結構違っていて、うーん、これを直すのは大変かな〜という気分になった。
+
+Qt5ではqt5-webviewを使うようにする方が長生きするんじゃないかな？
