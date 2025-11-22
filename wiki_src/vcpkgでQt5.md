@@ -1,10 +1,8 @@
 [[Qt]], [[vcpkg]]
 
-## vcpkgのQt5
-
 qt5-webengineが鬼門らしい。割とメンテされていて、パッチも色々あるし、新しいMacへの対応もちゃんとしている模様。
 
-### リンク集
+## リンク集
 
 - [[qt5] Update to 5.15.4 by Osyotr · Pull Request #24660 · microsoft/vcpkg](https://github.com/microsoft/vcpkg/pull/24660#issuecomment-1124329485) Qt5をアップデートする手順
 - [[qt5-webengine] fix spellcheck buildflags issue by rremilian · Pull Request #43524 · microsoft/vcpkg](https://github.com/microsoft/vcpkg/pull/43524/files) qt5-webengineの適当なPR。関連ファイルを知る手頃な方法という事でリンクしておく。
@@ -14,7 +12,7 @@ qt5-webengineが鬼門らしい。割とメンテされていて、パッチも�
      - qt5-baseの後に個別に入れる場合にここから探す。qt5-webchannelなどとして入れられる。
   - [qt5-webengine - vcpkg.link: Vcpkg Ports and Packages Explorer](https://vcpkg.link/ports/qt5-webengine) よくビルドが失敗する奴。
 
-### ビルドの作業ログ
+## MacBook Airでのビルドの作業ログ
 
 MacBook Air、Tahoe 26.1でビルドしてみる。まだTahoeはサポートしてなさそうだが。
 
@@ -178,6 +176,17 @@ $ ./vcpkg install qt5-webchannel:arm64-osx-dynamic
 
 これは上手くいった。
 
+### qt5-webengine
+
+上手くいってない。リンクをいくつか貼っておく。
+
+- [qt5-base: Fix build error on macOS 26 Tahoe by phoerious · Pull Request #48298 · microsoft/vcpkg](https://github.com/microsoft/vcpkg/pull/48298/files) これと同じような事が必要か？
+- [[qt5] Update to 5.15.18 by Osyotr · Pull Request #48098 · microsoft/vcpkg](https://github.com/microsoft/vcpkg/pull/48098) これをみるとまだqt5-webengineが動いていないのはknwon issueの模様。直してもいいかもしれない。
+
+
+
+
+
 ```
 $ ./vcpkg install qt5-webengine:arm64-osx-dynamic
 ```
@@ -201,3 +210,4 @@ Checking for icu >= 65... no
 おや、78.1と言っているが。
 
 色々試したが良くわからん。なお、qt5-webviewは入れられた。別にこれでもいい気もするな。
+
