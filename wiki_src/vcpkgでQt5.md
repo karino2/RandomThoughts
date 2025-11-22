@@ -264,3 +264,10 @@ d after a name prefixed by the template keyword [-Wmissing-template-arg-list-aft
 最近のコードと見比べたが結構違っていて、うーん、これを直すのは大変かな〜という気分になった。
 
 Qt5ではqt5-webviewを使うようにする方が長生きするんじゃないかな？
+
+## Windowsでのビルドの作業ログ
+
+WindowsはDeveloper Powershellに入っているvcpkgを使いたいのでマニフェストモードになるよなぁ、と思ってどうするのがいいかgeminiに聞いたら、
+バイナリキャッシュを指定しろ、と言われる。ふむふむ。＞[[vcpkg]]
+
+とりあえず指定した。
