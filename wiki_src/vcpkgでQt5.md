@@ -12,6 +12,7 @@ qt5-webengineが鬼門らしい。割とメンテされていて、パッチも�
      - qt5-baseの後に個別に入れる場合にここから探す。qt5-webchannelなどとして入れられる。
   - [qt5-webengine - vcpkg.link: Vcpkg Ports and Packages Explorer](https://vcpkg.link/ports/qt5-webengine) よくビルドが失敗する奴。
 - [karino2/HelloQt5Vcpkg: vcpkg Qt5 test project.](https://github.com/karino2/HelloQt5Vcpkg) 動作を確認する一番簡単なプロジェクト
+  - [Application Example - Qt Widgets 5.15.19](https://doc.qt.io/archives/qt-5.15/qtwidgets-mainwindows-application-example.html) あたりからそれっぽいのを持ってきて動かす。
 
 ## HelloQt5的なプロジェクト
 
@@ -19,7 +20,24 @@ qt5-webengineが鬼門らしい。割とメンテされていて、パッチも�
 
 - [karino2/HelloQt5Vcpkg: vcpkg Qt5 test project.](https://github.com/karino2/HelloQt5Vcpkg)
 
-mainwindow.uiなども使った例にしようかと思ったが、切り分けが面倒になりそうなのでそういうのが無い例もある方がいいだろう、という事で。
+[Qt Examples And Tutorials - Qt 5.15](https://doc.qt.io/archives/qt-5.15/qtexamplesandtutorials.html) あたりからそれっぽいのを持ってきて動かしたい。
+ソース的にはqtbaseの中にあるので取ってくる
+
+5.15のものを持ってくるには以下のタグか？
+
+```
+git clone git://code.qt.io/qt/qtbase.git --branch v5.15.18-lts-lgpl --depth 1
+```
+
+mainwindow.uiやqrcのある例がいいなぁ、と思い、tutorialsのnotepadに決定。
+持ってきたらあっさり動く。
+
+### qt_wrap_cppなどが使えるか？
+
+find_packageすると勝手に使えるっぽいな。
+qt_standard_project_setupだけ使えない。
+
+tool_chainの設定などはいらないっぽい。すばら。
 
 ## MacBook Airでのビルドの作業ログ
 
