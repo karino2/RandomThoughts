@@ -7,6 +7,8 @@
 - M4
 - 16GBメモリ
 - 512GB SSD
+- 70W MagSafe3充電器
+- [MacBook Air (15インチ, M4, 2025) - 技術仕様 - Apple サポート (日本)](https://support.apple.com/ja-jp/122210)
 
 22万8800円。
 
