@@ -319,3 +319,7 @@ PS> ./build/Debug/HelloQt5Vcpkg.exe
 windows側でvcpkg.jsonを作成したプロジェクトをgit pullしてもうちどninjaをジェネレートしてみる。
 
 お、なんかVCPKG_ROOTの下のbuildtreesとかが使われそうな雰囲気だな（ただ使ってるライブラリのハッシュが変わったので作り直しているっぽい）。
+
+## qt5-webview
+
+WebEngineはビルドが困難過ぎるので、webviewで行ってみる。
