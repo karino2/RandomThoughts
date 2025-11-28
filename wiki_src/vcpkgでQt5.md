@@ -13,6 +13,7 @@ qt5-webengineが鬼門らしい。割とメンテされていて、パッチも�
   - [qt5-webengine - vcpkg.link: Vcpkg Ports and Packages Explorer](https://vcpkg.link/ports/qt5-webengine) よくビルドが失敗する奴。
 - [karino2/HelloQt5Vcpkg: vcpkg Qt5 test project.](https://github.com/karino2/HelloQt5Vcpkg) 動作を確認する一番簡単なプロジェクト
   - [Application Example - Qt Widgets 5.15.19](https://doc.qt.io/archives/qt-5.15/qtwidgets-mainwindows-application-example.html) あたりからそれっぽいのを持ってきて動かす。
+- [vcpkgに関する備忘録。 - 賢朽脳瘏](https://kenkyu-note.hatenablog.com/entry/2021/05/01/181500) qt5-baseだけdynamicにするやり方とか。
 
 ## HelloQt5的なプロジェクト
 
