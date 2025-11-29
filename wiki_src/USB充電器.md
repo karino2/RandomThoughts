@@ -4,6 +4,15 @@
 
 - [Quick Charge - Wikipedia](https://en.wikipedia.org/wiki/Quick_Charge)
 
+## CIO NovaPort DUOⅡ 65W USB-C 2ポート 2025-11-29 (土)
+
+[amazon: CIO NovaPort DUOⅡ 65W USB-C 2ポート 充電器](https://amzn.to/4p9eEVd)
+
+UGREENのやつが[[LenovoTabP12]]では30W出なかったので、もう一つくらい試してみるか、と購入したもの。
+65Wと少し余裕があり、ちゃんとQC4対応が明記されているものを選んでこれに行き着く。
+
+LenovoTabP12で30W出なくても[[MacBookAir]]の充電器として使おう、と思っている。
+
 ## UGREEN Nexode Mini 30W PD 充電器 USB-C 急速充電器 2025-10-14 (火)
 
 - [amazon: UGREEN Nexode Mini 30W PD 充電器 USB-C 急速充電器 ](https://amzn.to/4nnfyvD)
