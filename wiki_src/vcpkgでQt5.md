@@ -322,4 +322,4 @@ windows側でvcpkg.jsonを作成したプロジェクトをgit pullしてもう�
 
 ## qt5-webview
 
-WebEngineはビルドが困難過ぎるので、webviewで行ってみる。
+WebEngineはビルドが困難過ぎるので、webviewで行ってみる。なんか一発で通ってしまった。
