@@ -323,3 +323,9 @@ windows側でvcpkg.jsonを作成したプロジェクトをgit pullしてもう�
 ## qt5-webview
 
 WebEngineはビルドが困難過ぎるので、webviewで行ってみる。なんか一発で通ってしまった。
+
+## プラグイン関連
+
+qt_add_pluginが無いが、add_libraryをSHAREDでやって、target_link_librariesでQt5::Widgetsを指定すれば良さそうか？
+
+[c++ - Using CMake with Qt5 and Qt Plugins - Stack Overflow](https://stackoverflow.com/questions/30628593/using-cmake-with-qt5-and-qt-plugins)
