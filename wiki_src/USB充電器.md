@@ -13,6 +13,10 @@ UGREENのやつが[[LenovoTabP12]]では30W出なかったので、もう一つ�
 
 LenovoTabP12で30W出なくても[[MacBookAir]]の充電器として使おう、と思っている。
 
+### 10Wしか出なかった
+
+[[LenovoTabP12]]では10Wしか出なかった。UGREENのは20Wでているので向こうの方がマシだ…
+
 ## UGREEN Nexode Mini 30W PD 充電器 USB-C 急速充電器 2025-10-14 (火)
 
 - [amazon: UGREEN Nexode Mini 30W PD 充電器 USB-C 急速充電器 ](https://amzn.to/4nnfyvD)
