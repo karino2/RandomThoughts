@@ -117,3 +117,25 @@ $Env:Path += ';C:\Qt\6.8.3\msvc2022_64\bin\'
 これでちゃんと動く。こっちの方が圧倒的にいいじゃん。geminiはかたくなに公式使えって言ってくるが。
 
 ただディレクトリから出ても環境変数は戻らないな。まぁいいかなぁ。
+
+## ps-dotenv
+
+posh-direnvはcdをフックするのがやはりいまいち、という事で、ps-dotenvを試してみる。
+
+[insomnimus/ps-dotenv: A feature complete and unintrusive direnv for Powershell Core](https://github.com/insomnimus/ps-dotenv)
+
+scoopが必要とか言われたのでいれてみる。
+
+```
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+
+あっさり入った。あとは公式の通り実行してみる。
+
+そのあと`Enable-Dotenv`を実行してみたがみつからない、と言われる。
+おや？とターミナルを開きなおしたら実行出来た。
+
+あとは.envを書こうと思ったが、これ、独自のフォーマットというかdirenvの.envrcと同じようなフォーマットで書くのか。
+これではコマンドの実行結果を環境変数にしたい、とかが出来ない！
+
+という事で自分の用途には合わなかった。
