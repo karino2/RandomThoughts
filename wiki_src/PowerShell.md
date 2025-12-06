@@ -27,7 +27,20 @@ profileに
 Import-Module ZLocation
 ```
 
-## direnv（挫折）
+## PowerShell上のdirenv代替のメモ
+
+ここにまとめを書いておく。
+
+1. 公式のdirenv ... PowerShell対応があるがbashをforkしようとするのでbashを入れてない環境では使えない
+2. posh-direnv ... .psenvrcをPowerShellとして実行する。cdした時にしか有効にならないのとunloadが無い。ただPowerShellのスクリプトとして実行してくれる
+3. ps-dotenv ... .envを自前でパースして環境変数を設定したりunloadしたりする。けれどbashっぽいものとしてパースするだけでサブコマンドとか使えないしバックスラッシュのエスケープとかPowserShellではなくbash。
+4. posh-dotenv ... ps-dotenvと似ているがもっとシンプル。
+
+3のPowerShellスクリプト実行版が欲しいなぁ。
+
+以下は試した詳細など。
+
+### direnv（挫折）
 
 PowerShell版もあるとのことなので設定してみる。
 
@@ -88,7 +101,7 @@ $Env:XDG_DATA_HOME="$Env:USERPROFILE\.config\direnv\data"
 
 さすがにちょっと面倒になってきた。
 
-## posh-direnv
+### posh-direnv
 
 [takekazuomi/posh-direnv: powershell directory environment switcher](https://github.com/takekazuomi/posh-direnv)
 
@@ -118,7 +131,7 @@ $Env:Path += ';C:\Qt\6.8.3\msvc2022_64\bin\'
 
 ただディレクトリから出ても環境変数は戻らないな。まぁいいかなぁ。
 
-## ps-dotenv
+### ps-dotenv
 
 posh-direnvはcdをフックするのがやはりいまいち、という事で、ps-dotenvを試してみる。
 
