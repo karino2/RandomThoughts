@@ -38,3 +38,9 @@ C-qしてC-tして、file:hogehoge.cとかでも良い。
 「.NET デスクトップ開発」をインストールしたら起動するようになった。これは酷い…
 
 [VS2022 Performance profiler "Unexpected exception" on start - Developer Community](https://developercommunity.visualstudio.com/t/VS2022-Performance-profiler-Unexpected-/10795500)
+
+## NuGetライブラリを使う
+
+- [Quickstart: Install and use a NuGet package in Visual Studio (Windows only) - Microsoft Learn](https://learn.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+
+プロジェクト＞NuGetパッケージの管理 から。
