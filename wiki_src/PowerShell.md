@@ -1,5 +1,9 @@
 [[Windows]]のシェル。[[技術的なメモ]]
 
+## リンク
+
+- [Writing a Windows PowerShell Module - PowerShell - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/scripting/developer/module/writing-a-windows-powershell-module?view=powershell-7.5) モジュールのドキュメント
+
 ## こまごまとしたこと
 
 ```
