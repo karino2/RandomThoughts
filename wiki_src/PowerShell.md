@@ -1,9 +1,5 @@
 [[Windows]]のシェル。[[技術的なメモ]]
 
-## リンク
-
-- [Writing a Windows PowerShell Module - PowerShell - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/scripting/developer/module/writing-a-windows-powershell-module?view=powershell-7.5) モジュールのドキュメント
-
 ## こまごまとしたこと
 
 ```
@@ -31,6 +27,16 @@ profileに
 Import-Module ZLocation
 ```
 
+## モジュール開発
+
+- [Writing a Windows PowerShell Module - PowerShell - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/scripting/developer/module/writing-a-windows-powershell-module?view=powershell-7.5) モジュールのドキュメント
+
+Impot-Moduleでディレクトリを指定する。
+DllはロードされるとRemove-Moduleしても残ってしまうので、テストは`Start-Process pwsh` の中でやるのがよい。
+
+NoNewWindowはなんかターミナルが変になったので使わない。
+
+
 ## PowerShell上のdirenv代替のメモ
 
 ここにまとめを書いておく。
@@ -39,8 +45,7 @@ Import-Module ZLocation
 2. posh-direnv ... .psenvrcをPowerShellとして実行する。cdした時にしか有効にならないのとunloadが無い。ただPowerShellのスクリプトとして実行してくれる
 3. ps-dotenv ... .envを自前でパースして環境変数を設定したりunloadしたりする。けれどbashっぽいものとしてパースするだけでサブコマンドとか使えないしバックスラッシュのエスケープとかPowserShellではなくbash。
 4. posh-dotenv ... ps-dotenvと似ているがもっとシンプル。
-
-3のPowerShellスクリプト実行版が欲しいなぁ。
+5. ps-dotenv-psenvrcfork ... 自分でforkしたバージョン。3のpsenvrcバージョンを結局自分で作ることにした。
 
 以下は試した詳細など。
 
