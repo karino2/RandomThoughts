@@ -156,3 +156,11 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 これではコマンドの実行結果を環境変数にしたい、とかが出来ない！
 
 という事で自分の用途には合わなかった。
+
+### ps-dotenv-psenvrcfork
+
+という事でps-dotenvを`.psenvrc`にするforkを作った。posh-direnvのちゃんとした版、という感じ。
+
+[karino2/ps-dotenv-psenvrcfork: psenv fork of ps-dotenv.](https://github.com/karino2/ps-dotenv-psenvrcfork/)
+
+結構いい感じ。
