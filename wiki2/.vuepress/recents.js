@@ -1,8 +1,9 @@
 export const recents = [
  {text: "Recents:",
    children: [
-    {"link": "PSDotenvrc.html", "text": "PSDotenvrc"},
+    {"link": "%E7%9D%80%E3%82%8B%E6%AF%9B%E5%B8%83.html", "text": "着る毛布"},
     {"link": "2025%E5%B9%B412%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年12月上旬の雑記"},
+    {"link": "PSDotenvrc.html", "text": "PSDotenvrc"},
     {"link": "%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%97%E3%83%AA.html", "text": "自作アプリ"},
     {"link": "PowerShell.html", "text": "PowerShell"},
     {"link": "VisualStudio.html", "text": "VisualStudio"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "MacBookAir.html", "text": "MacBookAir"},
     {"link": "vcpkg.html", "text": "vcpkg"},
     {"link": "Qt.html", "text": "Qt"},
-    {"link": "MFG.html", "text": "MFG"},
    ]
 }
 ]
