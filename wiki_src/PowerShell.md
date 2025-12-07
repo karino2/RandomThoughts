@@ -29,13 +29,14 @@ Import-Module ZLocation
 
 ## モジュール開発
 
+[[PSDotenvrc]]を開発するのにこの辺のノウハウが必要になった。
+
 - [Writing a Windows PowerShell Module - PowerShell - Microsoft Learn](https://learn.microsoft.com/en-us/powershell/scripting/developer/module/writing-a-windows-powershell-module?view=powershell-7.5) モジュールのドキュメント
 
 Impot-Moduleでディレクトリを指定する。
 DllはロードされるとRemove-Moduleしても残ってしまうので、テストは`Start-Process pwsh` の中でやるのがよい。
 
 NoNewWindowはなんかターミナルが変になったので使わない。
-
 
 ## PowerShell上のdirenv代替のメモ
 
@@ -45,7 +46,7 @@ NoNewWindowはなんかターミナルが変になったので使わない。
 2. posh-direnv ... .psenvrcをPowerShellとして実行する。cdした時にしか有効にならないのとunloadが無い。ただPowerShellのスクリプトとして実行してくれる
 3. ps-dotenv ... .envを自前でパースして環境変数を設定したりunloadしたりする。けれどbashっぽいものとしてパースするだけでサブコマンドとか使えないしバックスラッシュのエスケープとかPowserShellではなくbash。
 4. posh-dotenv ... ps-dotenvと似ているがもっとシンプル。
-5. ps-dotenv-psenvrcfork ... 自分でforkしたバージョン。3のpsenvrcバージョンを結局自分で作ることにした。
+5. [[PSDotenvrc]] ... 自分でforkしたバージョン。3のpsenvrcバージョンを結局自分で作ることにした。
 
 以下は試した詳細など。
 
@@ -166,6 +167,4 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 という事でps-dotenvを`.psenvrc`にするforkを作った。posh-direnvのちゃんとした版、という感じ。
 
-[karino2/ps-dotenv-psenvrcfork: psenv fork of ps-dotenv.](https://github.com/karino2/ps-dotenv-psenvrcfork/)
-
-結構いい感じ。
+[[PSDotenvrc]]
