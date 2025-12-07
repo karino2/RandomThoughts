@@ -2,7 +2,8 @@
 
 色々なdirenvのPowerShell版を評価したが、どれも自分の用途に合わないので、ps-dotenvをforkして作ることにした。
 
-[karino2/ps-dotenv-psenvrcfork: psenv fork of ps-dotenv.](https://github.com/karino2/ps-dotenv-psenvrcfork/)
+- [karino2/ps-dotenv-psenvrcfork: psenv fork of ps-dotenv.](https://github.com/karino2/ps-dotenv-psenvrcfork/)
+- [PowerShell Gallery - Dotenvrc 1.0.0](https://www.powershellgallery.com/packages/Dotenvrc/1.0.0)
 
 posh-direnvのちゃんとUnloadしたり親ディレクトリ探したりするバージョン、という感じ。
 
