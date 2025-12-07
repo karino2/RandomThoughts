@@ -6,14 +6,6 @@
 
 posh-direnvのちゃんとUnloadしたり親ディレクトリ探したりするバージョン、という感じ。
 
-## 直近のToDo
-
-- Approve-Dotenvrcで.を指定出来るようにする
-- Clear-Dotenvrcを実装（allow listを全部削除する奴）
-- 新しく足したコマンドのドキュメントを追加
-
-ここまで出来たらVer 1.0としてどこかに登録したい。
-
 ## 呼び名の問題
 
 正式な名前はps-dotenvrcにして、Import-ModuleはDotenvrcにする。ps-dotenvとの対比で。
@@ -29,3 +21,28 @@ direnvのallowと揃えてAllow-Dotenvrcにしようとしたら、PowerShellの
 という事でApprove-Direnvrcにする。
 
 dotenvはDirenvFileというnounになっているが、PSDotenvrcではnounはなるべくDirenvrcで揃えたい。
+
+## PowerShell Galleryへの登録
+
+初めてなのでやった事をかいておく。
+
+普段はbuild.ps1を実行してbin/DotenvrcをImport-Moduleで指定している。
+
+```
+PS> Publish-Module -Path .\bin\Dotenvrc -NuGetApiKey XXXXX
+Write-Error: Failed to generate the compressed file for module 'Cannot index into a null array.'.
+````
+
+なんだこれ？以下のブログで同じような話があった。
+
+[PowerShell Galleryへ公開する際に出る 'Cannot index into a null array' への対処法 - ねこさんのぶろぐ](https://www.neko3cs.net/entry/publishing-ps-module-error-null-array)
+
+ふむふむ、試してみよう。
+
+```
+$env:DOTNET_CLI_LANGUAGE="en_US"
+$env:DOTNET_CLI_UI_LANGUAGE="en_US"
+Publish-Module -Path .\bin\Dotenvrc -NuGetApiKey XXXXX
+```
+
+お、成功した。
