@@ -1,12 +1,12 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "vcpkg.html", "text": "vcpkg"},
+    {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "2025%E5%B9%B412%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年12月中旬の雑記"},
     {"link": "%E4%BD%9C%E6%A5%AD%E3%83%AD%E3%82%B0.html", "text": "作業ログ"},
-    {"link": "vcpkg.html", "text": "vcpkg"},
     {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
     {"link": "%E3%83%8E%E3%83%BC%E3%83%88.html", "text": "ノート"},
-    {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%A9%E3%82%A4%E3%83%95.html", "text": "プログラマライフ"},
     {"link": "Home.html", "text": "Home"},
     {"link": "%E7%9D%80%E3%82%8B%E6%AF%9B%E5%B8%83.html", "text": "着る毛布"},
