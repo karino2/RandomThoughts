@@ -43,3 +43,10 @@ NoNewWindowはなんかターミナルが変になったので使わない。
 結局自分で作ることにした。
 
 [[PSDotenvrc]]
+
+## DeveloperPowerShell for VS2022で使ってるpowershellのバージョンアップ
+
+マシンによっては5.1とかが使われているのでアップデートする手順。
+
+1. choco install powershell-core
+2. Windows terminalなどのDeveloper PowerShell for VS2022の先頭のpowershell.exeをC:/Program Files/PowerShell/7/pwsh.exeとかに差し替え（パスのコピーで得た値をペーストする）
