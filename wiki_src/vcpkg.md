@@ -3,6 +3,8 @@
 - [vcpkg.json リファレンス - Microsoft Learn](https://learn.microsoft.com/ja-jp/vcpkg/reference/vcpkg-json)
 - [CMake でパッケージをインストールして使用する - Microsoft Learn](https://learn.microsoft.com/ja-jp/vcpkg/get_started/get-started?pivots=shell-powershell) 新しく作る時の雛形として手頃な記事。
 - [vcpkg-docs/vcpkg/examples/patching.md at main · MicrosoftDocs/vcpkg-docs](https://github.com/MicrosoftDocs/vcpkg-docs/blob/main/vcpkg/examples/patching.md) パッチを作る時のハウツー
+- [vcpkg-docs/vcpkg/contributing/maintainer-guide.md at main · MicrosoftDocs/vcpkg-docs](https://github.com/MicrosoftDocs/vcpkg-docs/blob/main/vcpkg/contributing/maintainer-guide.md) PRのガイド
+  - [[ginkgo] Update to 1.11.0 by MarcelKoch · Pull Request #48888 · microsoft/vcpkg](https://github.com/microsoft/vcpkg/pull/48888) 参考になりそうなマージされたPR
 
 ## baselineのアップデート
 
