@@ -50,3 +50,11 @@ NoNewWindowはなんかターミナルが変になったので使わない。
 
 1. choco install powershell-core
 2. Windows terminalなどのDeveloper PowerShell for VS2022の先頭のpowershell.exeをC:/Program Files/PowerShell/7/pwsh.exeとかに差し替え（パスのコピーで得た値をペーストする）
+
+## patchファイルをつなげるcat的な事
+
+cmd.exeを呼ぶのが一番楽か。
+
+```
+$ cmd /c "copy /b python3_win.patch+python3_win2.patch+python3_win3.patch python3_win_all.patch"
+```
