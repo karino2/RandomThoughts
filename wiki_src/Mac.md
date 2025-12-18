@@ -105,6 +105,20 @@ launchctl listでタスクの一覧が表示される。
 $ launchctl unload ~/Library/LaunchAgents/environment.plist
 ```
 
+## xcrunでエラーが出る時
+
+xcrunを実行したら以下のようなエラーが出る時
+
+```
+% xcrun  --show-sdk-version
+xcodebuild: error: SDK "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk" cannot be located.
+xcrun: error: unable to lookup item 'SDKVersion' in SDK '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'
+```
+
+これは設定からアップデートでコマンドラインツールが来ている時に起こっていた。アップデートしたら直した。
+
+以前は`xcode-select --install`で治った事もある気がした。
+
 ## UIKit入門
 
 [iOS開発に入門する - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2020/05/23/iosdev.html) にも書いた内容だが、
