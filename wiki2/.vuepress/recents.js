@@ -2,8 +2,8 @@ export const recents = [
  {text: "Recents:",
    children: [
     {"link": "%E5%A5%84%E7%BE%8E%E5%A4%A7%E5%B3%B6%E8%A8%88%E7%94%BB.html", "text": "奄美大島計画"},
-    {"link": "PowerShell.html", "text": "PowerShell"},
     {"link": "2025%E5%B9%B412%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年12月中旬の雑記"},
+    {"link": "PowerShell.html", "text": "PowerShell"},
     {"link": "Shell.html", "text": "Shell"},
     {"link": "vcpkg.html", "text": "vcpkg"},
     {"link": "SurfLog.html", "text": "SurfLog"},
