@@ -53,3 +53,16 @@ mkdir ~/source/vcpkg_cache
 ```
 $env:VCPKG_BINARY_SOURCES="clear;filesystem,C:\Users\karino2\source\vcpkg_cache\vcpkg_cache,read-write"
 ```
+
+## vcpkgにPRを出す
+
+qt5-webengineの最新macとwindowsのビルド通す作業を行ったので、vcpkgの本家に入れられないかPRを出して相談してみる。
+
+- [vcpkg-docs/vcpkg/produce/update-package-version.md at main · MicrosoftDocs/vcpkg-docs](https://github.com/MicrosoftDocs/vcpkg-docs/blob/main/vcpkg/produce/update-package-version.md)
+- [vcpkg-docs/vcpkg/contributing/pr-review-checklist.md at main · MicrosoftDocs/vcpkg-docs](https://github.com/MicrosoftDocs/vcpkg-docs/blob/main/vcpkg/contributing/pr-review-checklist.md)
+- [vcpkg-docs/vcpkg/concepts/registries.md at main · MicrosoftDocs/vcpkg-docs](https://github.com/MicrosoftDocs/vcpkg-docs/blob/main/vcpkg/concepts/registries.md#versions-files)
+- [vcpkg-docs/vcpkg/contributing/maintainer-guide.md at main · MicrosoftDocs/vcpkg-docs](https://github.com/MicrosoftDocs/vcpkg-docs/blob/main/vcpkg/contributing/maintainer-guide.md) ここにdraft PRを使え、と書いてある。やってみよう。
+
+### PRを作る
+
+1. 本家のmasterに上げてrebase
