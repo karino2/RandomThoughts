@@ -63,6 +63,8 @@ qt5-webengineの最新macとwindowsのビルド通す作業を行ったので、
 - [vcpkg-docs/vcpkg/concepts/registries.md at main · MicrosoftDocs/vcpkg-docs](https://github.com/MicrosoftDocs/vcpkg-docs/blob/main/vcpkg/concepts/registries.md#versions-files)
 - [vcpkg-docs/vcpkg/contributing/maintainer-guide.md at main · MicrosoftDocs/vcpkg-docs](https://github.com/MicrosoftDocs/vcpkg-docs/blob/main/vcpkg/contributing/maintainer-guide.md) ここにdraft PRを使え、と書いてある。やってみよう。
 
-### PRを作る
+### PRを作る 2025-12-19 (金)
 
-1. 本家のmasterに上げてrebase
+とりあえずmasterを上げてrebaseして動作を確認したので、draft PRを作ってみた。
+
+[[qt5-webengine] Latest mac, win build support. (fix #47010) by karino2 · Pull Request #48960 · microsoft/vcpkg](https://github.com/microsoft/vcpkg/pull/48960)
