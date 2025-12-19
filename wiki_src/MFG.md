@@ -8,6 +8,7 @@
 - [MFGプログラムシリーズ - YouTube](https://www.youtube.com/playlist?list=PL3J_mLcl4YCf1AHEjZO4PjdaIexukpb6e)
 - [[ハーフトーン]]
 - [[Stippling]]
+- [フィルタ言語「MFG」とAI - 株式会社ピージーエヌ](https://pgn.co.jp/blog/mfg_and_ai/#page-content)
 
 ## 半透明同士のアルファブレンド
 
