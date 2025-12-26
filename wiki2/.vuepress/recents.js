@@ -1,6 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E8%87%AA%E7%94%B1%E3%81%AE%E5%91%BD%E9%81%8B.html", "text": "【書籍】自由の命運"},
+    {"link": "%E7%B5%8C%E6%B8%88.html", "text": "経済"},
     {"link": "2025%E5%B9%B412%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2025年12月下旬の雑記"},
     {"link": "Home.html", "text": "Home"},
     {"link": "vcpkg.html", "text": "vcpkg"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
     {"link": "%E3%83%8E%E3%83%BC%E3%83%88.html", "text": "ノート"},
     {"link": "%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9E%E3%83%A9%E3%82%A4%E3%83%95.html", "text": "プログラマライフ"},
-    {"link": "%E7%9D%80%E3%82%8B%E6%AF%9B%E5%B8%83.html", "text": "着る毛布"},
-    {"link": "USB%E5%85%85%E9%9B%BB%E5%99%A8.html", "text": "USB充電器"},
    ]
 }
 ]
