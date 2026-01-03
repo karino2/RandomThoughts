@@ -1,9 +1,13 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E9%98%B2%E5%AF%92%E3%82%B0%E3%83%83%E3%82%BA.html", "text": "防寒グッズ"},
+    {"link": "%E9%9B%BB%E5%AD%90%E3%83%AC%E3%83%B3%E3%82%B8%E3%81%82%E3%82%93%E3%81%8B.html", "text": "電子レンジあんか"},
+    {"link": "%E7%9D%80%E3%82%8B%E6%AF%9B%E5%B8%83.html", "text": "着る毛布"},
+    {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
+    {"link": "2026%E5%B9%B41%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年1月上旬の雑記"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "Home.html", "text": "Home"},
-    {"link": "2026%E5%B9%B41%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年1月上旬の雑記"},
     {"link": "%E5%A5%84%E7%BE%8E%E5%A4%A7%E5%B3%B6%E8%A8%88%E7%94%BB.html", "text": "奄美大島計画"},
     {"link": "%E3%83%AF%E3%83%BC%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html", "text": "ワーケーション"},
     {"link": "SurfLog%E3%81%AE%E9%81%8E%E5%8E%BB%E3%83%AD%E3%82%B0.html", "text": "SurfLogの過去ログ"},
@@ -12,10 +16,6 @@ export const recents = [
     {"link": "%E7%B5%8C%E6%B8%88.html", "text": "経済"},
     {"link": "vcpkg.html", "text": "vcpkg"},
     {"link": "MFG.html", "text": "MFG"},
-    {"link": "Mac.html", "text": "Mac"},
-    {"link": "PowerShell.html", "text": "PowerShell"},
-    {"link": "Shell.html", "text": "Shell"},
-    {"link": "%E4%BD%9C%E6%A5%AD%E3%83%AD%E3%82%B0.html", "text": "作業ログ"},
    ]
 }
 ]
