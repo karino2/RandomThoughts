@@ -1,10 +1,12 @@
 ### 関連リンク
 
+- [[ノート]]
 - [[TeFWiki]]
 - [blog: 理想のノート（アプリ）について考える](https://karino2.github.io/2021/09/26/ideal_note.html)
 - [blog: Blogに向く事、Wikiに向く事](https://karino2.github.io/2021/09/28/blog_vs_wiki.html)
 - [[サブWiki]]
 - [[講義ノート]]
+- [[Wikiとhowmとメモツール]]
 
 ### WIkiで講義のノートを取るのに必要な事
 
