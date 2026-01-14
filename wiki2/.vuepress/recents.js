@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "CG.html", "text": "CG"},
     {"link": "Home.html", "text": "Home"},
     {"link": "2026%E5%B9%B41%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年1月中旬の雑記"},
     {"link": "%E9%9B%BB%E5%AD%90%E3%83%AC%E3%83%B3%E3%82%B8%E3%81%82%E3%82%93%E3%81%8B.html", "text": "電子レンジあんか"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "Wiki%E3%81%A8howm%E3%81%A8%E3%83%A1%E3%83%A2%E3%83%84%E3%83%BC%E3%83%AB.html", "text": "Wikiとhowmとメモツール"},
     {"link": "Syncthing.html", "text": "Syncthing"},
     {"link": "%E8%8B%B1%E8%AA%9E.html", "text": "英語"},
-    {"link": "%E9%98%B2%E5%AF%92%E3%82%B0%E3%83%83%E3%82%BA.html", "text": "防寒グッズ"},
    ]
 }
 ]
