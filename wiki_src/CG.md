@@ -17,6 +17,7 @@
   - [Hash Functions for GPU Rendering (JCGT)](https://jcgt.org/published/0009/03/02/) リンクされてたこの論文は決定版ではないか。
 - [[Stippling]]
 - [[ハーフトーン]]
+- [The Book of Shaders](https://thebookofshaders.com/) そのうち読んでみたい。
 
 ## GPUでのPath描画
 
