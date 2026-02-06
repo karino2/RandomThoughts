@@ -1,5 +1,9 @@
+[[技術的なメモ]], [[Shell]], [[JavaScript]]
+
 - [google/zx: A tool for writing better scripts](https://github.com/google/zx)
 - [Getting Started - google/zx](https://google.github.io/zx/getting-started) ドキュメント
+- [dax: Cross-platform shell tools for Deno and Node.js inspired by zx.](https://github.com/dsherret/dax) 競合
+  - [make.ts](https://matklad.github.io/2026/01/27/make-ts.html)より
 
 [[JavaScript]]でシェルっぽく雑用するためのライブラリ。
 [[OilShell]]のアップデートで学び直さないといけない事が結構あってうんざりしてきたので、zxへの乗り換えを検討してみる。
