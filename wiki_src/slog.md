@@ -80,6 +80,30 @@ FILE=$(echo "$SELECTED" | awk -F '|' '{print $3}' | xargs)
 
 こういうの書かせるにはLLMは最強だな。
 
+サマリーが無いが素のPowerShellのバージョンも作ってもらった。
+
+```powershell
+$dir = Split-Path $PSCommandPath
+
+$items = Get-ChildItem "$dir" -Filter *.md | ForEach-Object {
+    $title = (Get-Content $_.FullName -TotalCount 1) -replace '^#\s*', ''
+    $date  = $_.BaseName -replace '-.*','' -replace '_',' '
+    [PSCustomObject]@{
+        Date  = $date
+        Title = $title
+        Path  = $_.FullName
+    }
+}
+
+$selected = $items | Out-GridView -Title "Select Markdown" -PassThru
+
+if ($selected) {
+    Start-Process $selected.Path
+}
+```
+
+Out-GridViewはなかなかいいよな。
+
 ## 使ってみた感想
 
 以下に雑多な感想などを書いてみる
