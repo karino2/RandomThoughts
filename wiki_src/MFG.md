@@ -13,6 +13,9 @@
 ## 自分の関連ブログ
 
 - [MFGチャレンジ、無事終了！](https://karino2.github.io/2026/02/10/thank_you_for_mfg_challenge.html)
+- [MFG：ドロップシャドウフィルターを作る（その1） ](https://karino2.github.io/2025/12/10/mfg_drop_shadow_part1.html)
+
+もっと色々あるが全部貼るのは大変なのでたまに気が向いたものだけここに貼る。
 
 ## 半透明同士のアルファブレンド
 
