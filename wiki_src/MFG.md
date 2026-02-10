@@ -10,6 +10,10 @@
 - [[Stippling]]
 - [フィルタ言語「MFG」とAI - 株式会社ピージーエヌ](https://pgn.co.jp/blog/mfg_and_ai/#page-content)
 
+## 自分の関連ブログ
+
+- [MFGチャレンジ、無事終了！](https://karino2.github.io/2026/02/10/thank_you_for_mfg_challenge.html)
+
 ## 半透明同士のアルファブレンド
 
 元が半透明な時に半透明を上書きするとどうなるか？というのが良く分からなかったのでメモ。
