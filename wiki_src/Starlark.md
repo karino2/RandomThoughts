@@ -96,3 +96,9 @@ FileOptionsのParseというメソッド。
 parserのparseFileメソッドがその中身か。
 
 パース結果はStmtの配列として返るっぽい。
+
+## Pythonとのdiff
+
+[Starlark Language  -  Bazel](https://bazel.build/rules/language?hl=en#differences-with-python)
+
+classは無い。
