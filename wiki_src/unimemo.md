@@ -61,3 +61,5 @@ Scratch.fsxの該当部分をAlt+Enterする。
 2024-02-07 (水)  なんか最近ionideでAlt+Enterが動いていないので、dotnet fsiを実行した後にスクリプトをコピペしている。
 
 RSSのURLははspotifyになっても変わって無さそう。
+
+簡単なものはgolangで書き直した方が小回りが効いていいかな、と思い直し、anchor2mdをgolangで書き直してみる。
