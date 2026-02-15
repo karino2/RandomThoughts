@@ -56,10 +56,21 @@ original/anchor_rss/ で以下を実行し、
 $ wget -O rss.txt https://anchor.fm/s/68ce140/podcast/rss
 ```
 
+その後以下を実行する。
+
+```
+$ ~/bin/anchor2md rss.txt > ../../md/anchor_md/anchor.md
+```
+
+anchor2mdはunimemoのレポジトリにある。
+
+2026-02-15 (日) 簡単なものはgolangで書き直した方が小回りが効いていいかな、と思い直し、anchor2mdをgolangで書き直してみる。
+
+以下は古い内容。
+
 Scratch.fsxの該当部分をAlt+Enterする。
 
 2024-02-07 (水)  なんか最近ionideでAlt+Enterが動いていないので、dotnet fsiを実行した後にスクリプトをコピペしている。
 
 RSSのURLははspotifyになっても変わって無さそう。
 
-簡単なものはgolangで書き直した方が小回りが効いていいかな、と思い直し、anchor2mdをgolangで書き直してみる。
