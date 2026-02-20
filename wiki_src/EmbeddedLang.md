@@ -8,8 +8,7 @@ Embedで使える手頃な言語がたまに欲しくなるのでそのメモを
 - [BeanShell - Lightweight Scripting for Java](https://beanshell.github.io/home.html)
   - [zhanghai/BeeShell: Java REPL on Android with BeanShell](https://github.com/zhanghai/BeeShell?tab=readme-ov-file)
   - yeildが出来なさそう、classはAndroidでは使えない疑惑もあり
-- [mozilla/rhino: Rhino is an open-source implementation of JavaScript written entirely in Java](https://github.com/mozilla/rhino/tree/master)
-  - [rhino/it-android/README.md at master · mozilla/rhino](https://github.com/mozilla/rhino/blob/master/it-android/README.md) 公式でAndroidのテストが入っているので動きそう
+- [[Rhino]] [[JavaScript]]の[[Java]]実装
 
 ## ネイティブ系
 

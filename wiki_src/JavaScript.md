@@ -5,6 +5,7 @@
 - [New series of blog posts: learning web development](https://2ality.com/2025/08/learning-web-dev-toc.html) 現代的な入門としていいかもしれん。
 - [[VuePress]] nodejs製のサイトジェネレータ
 - [[zx]]
+- [[Rhino]]
 
 ## JDoc
 
