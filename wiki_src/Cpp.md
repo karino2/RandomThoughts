@@ -24,7 +24,7 @@
 - [GitHub - rigtorp/awesome-modern-cpp: A collection of resources on modern C++](https://github.com/rigtorp/awesome-modern-cpp?tab=readme-ov-file) C++の本の一覧
 - [stlab/libraries: ASL libraries will be migrated here in the stlab namespace, new libraries will be created here.](https://github.com/stlab/libraries/tree/main) Adobeのオープンソースライブラリ
 - [国内の C++ 勉強会 - C++ の歩き方 - cppmap](https://cppmap.github.io/learn/studymeetings/) 結構良さそう。自分もここで発表するのがいいかもしれん。
-
+- [ocornut/imgui: Dear ImGui: Bloat-free Graphical User interface for C++ with minimal dependencies](https://github.com/ocornut/imgui) ゲームエンジンっぽい構成のGUIライブラリ。入力周りは弱いか？
 
 ## mapのキーと違う型でfindしたい時
 
