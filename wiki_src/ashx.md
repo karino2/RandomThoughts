@@ -1,6 +1,7 @@
 [[そのうちやりたい事]]
 
-Android用のシェルっぽいスクリプトが欲しい。とりあえず[[zx]]みたいな何かという事とAndroid Shellをあわせてashxと無付ける。
+Android用のシェルっぽいスクリプトが欲しい。とりあえず[[zx]]みたいな何かという事とAndroid Shellをあわせてashxと無付ける。関連ページ: [[小粋なスクリプト言語が欲しい]]
+
 まだ名付けただけ。
 
 ## リンクメモ
@@ -24,6 +25,28 @@ Android用のシェルっぽいスクリプトが欲しい。とりあえず[[zx
 大体シェルスクリプトっぽい何かなのだが、runtime permissionとかSAFとかを使える感じの何かにしたい。
 
 [[Starlark]]+[Plumbum](https://plumbum.readthedocs.io/en/latest/)みたいなシンタックスの何かでどうだろう？
+
+やりたいのは以下のようなpowershellスクリプトと同じような事。
+
+```powershell
+$dir = Split-Path $PSCommandPath
+
+$items = Get-ChildItem "$dir" -Filter *.md | ForEach-Object {
+    $title = (Get-Content $_.FullName -TotalCount 1) -replace '^#\s*', ''
+    $date  = $_.BaseName -replace '-.*','' -replace '_',' '
+    [PSCustomObject]@{
+        Date  = $date
+        Title = $title
+        Path  = $_.FullName
+    }
+}
+
+$selected = $items | Out-GridView -Title "Select Markdown" -PassThru
+
+if ($selected) {
+    Start-Process $selected.Path
+}
+```
 
 ## コマンドと拡張
 
@@ -64,4 +87,32 @@ inputはas_lines, as_text, head, tailくらいあればいいか。headとtail�
 
 一方で`_out`引数などを全部のコマンドで処理しないといけないのは何か違うよなぁ。
 
-やはりStarlarkのようなクラスが無い言語でこういう仕組みを作るのはいまいちな気もする。もう少し良いembed言語がいるか？
+やはりStarlarkのようなクラスが無い言語でこういう仕組みを作るのはいまいちな気もする。もう少し良いembed言語がいるか？＞[[EmbeddedLang]]
+
+[[Rhino]]がいいかもしれない。これでdaxみたいなものを作ればいいのでは？
+
+daxはshellのパーサーはrustで書かれていて結構でかい。うーん。CommandBuilderを作るDSLが必要なのはそうかもしれんが、そういうのは言語内DSLでどうにかならんのかなぁ。
+
+## JSでやりたい事を書いてみる
+
+とりあえずこんな風に書きたいな、というものをJSっぽい文法で書いてみる。
+
+```js
+cdt(); // SAFでディレクトリを選ぶ
+let res = ls("*.md")
+        .map(f=>{
+            let title = head(f, {n:1}).replace("^#¥s*", "")
+            let date = basename(f).replace("-.*", "").replace("_", "")
+           [title, date, f]
+         })
+         .select();
+
+if (res) {
+    open(res.path)
+}
+```
+
+こんな感じで書けたらいいな。
+ただこれだとストリーミングはされないだろうな。そしてエラーもうまく扱えないな。
+
+でもまずは簡潔な記述だよな。こんな感じで書ければ使ってもいい気はする。
