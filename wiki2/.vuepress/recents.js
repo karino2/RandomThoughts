@@ -1,11 +1,11 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E3%82%AE%E3%83%A3%E3%83%8E%E3%83%B3%E3%82%B0%E7%94%9F%E7%90%86%E5%AD%A6.html", "text": "【書籍】ギャノング生理学"},
+    {"link": "2026%E5%B9%B43%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年3月上旬の雑記"},
     {"link": "%E7%94%9F%E7%90%86%E5%AD%A6.html", "text": "生理学"},
     {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E6%96%B0%E3%81%97%E3%81%84%E4%BA%BA%E4%BD%93%E3%81%AE%E6%95%99%E7%A7%91%E6%9B%B8.html", "text": "【書籍】新しい人体の教科書"},
-    {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E3%82%AE%E3%83%A3%E3%83%8E%E3%83%B3%E3%82%B0%E7%94%9F%E7%90%86%E5%AD%A6.html", "text": "【書籍】ギャノング生理学"},
     {"link": "%E6%9B%B8%E7%B1%8D.html", "text": "書籍"},
-    {"link": "2026%E5%B9%B43%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年3月上旬の雑記"},
     {"link": "%E7%94%9F%E7%89%A9%E5%AD%A6.html", "text": "生物学"},
     {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
     {"link": "%E5%8C%BB%E5%AD%A6.html", "text": "医学"},
