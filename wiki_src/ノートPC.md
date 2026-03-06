@@ -1,3 +1,5 @@
+[[グッズ関連]], [[タブレット]]
+
 ## MacBook Air
 
 [[MacBookAir]]
