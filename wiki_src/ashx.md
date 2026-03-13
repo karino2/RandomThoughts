@@ -116,3 +116,10 @@ if (res) {
 ただこれだとストリーミングはされないだろうな。そしてエラーもうまく扱えないな。
 
 でもまずは簡潔な記述だよな。こんな感じで書ければ使ってもいい気はする。
+
+## 開発メモ
+
+- [rhino/examples/src/main/java/Shell.java at master · mozilla/rhino](https://github.com/mozilla/rhino/blob/master/examples/src/main/java/Shell.java)
+- [rhino/rhino-tools/src/main/java/org/mozilla/javascript/tools/shell/Global.java at master · mozilla/rhino](https://github.com/mozilla/rhino/blob/master/rhino-tools/src/main/java/org/mozilla/javascript/tools/shell/Global.java)
+- [Scopes and contexts - Rhino](https://rhino.github.io/docs/scopes_and_contexts/)
+- [Generator - JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
