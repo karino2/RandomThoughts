@@ -2,8 +2,6 @@
 
 Android用のシェルっぽいスクリプトが欲しい。とりあえず[[zx]]みたいな何かという事とAndroid Shellをあわせてashxと無付ける。関連ページ: [[小粋なスクリプト言語が欲しい]]
 
-まだ名付けただけ。
-
 ## リンクメモ
 
 - [[Starlark]]
@@ -123,3 +121,9 @@ if (res) {
 - [rhino/rhino-tools/src/main/java/org/mozilla/javascript/tools/shell/Global.java at master · mozilla/rhino](https://github.com/mozilla/rhino/blob/master/rhino-tools/src/main/java/org/mozilla/javascript/tools/shell/Global.java)
 - [Scopes and contexts - Rhino](https://rhino.github.io/docs/scopes_and_contexts/)
 - [Generator - JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
+
+### とりあえずreplが動くまで 2026-03-20 (金)
+
+ExamplesのShell.javaを参考にJetpack Composeで雑に書いた上側に入力、下側にコンソール、という構成で、とりあえずprintとclearだけ追加したもので実行出来るまでは出来た。[[Rhino]]は有能だな。
+
+次はcdtとlsを作りたいな。
