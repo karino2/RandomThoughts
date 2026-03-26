@@ -1,6 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E5%86%99%E7%9C%9Fmd%E3%83%A1%E3%83%A2.html", "text": "写真mdメモ"},
+    {"link": "%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%97%E3%83%AA.html", "text": "自作アプリ"},
     {"link": "2026%E5%B9%B43%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年3月下旬の雑記"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "Home.html", "text": "Home"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
     {"link": "Rhino.html", "text": "Rhino"},
     {"link": "kanau.html", "text": "kanau"},
-    {"link": "%E5%A5%84%E7%BE%8E%E5%A4%A7%E5%B3%B6%E8%A8%88%E7%94%BB.html", "text": "奄美大島計画"},
-    {"link": "%E5%B0%8F%E7%B2%8B%E3%81%AA%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E8%A8%80%E8%AA%9E%E3%81%8C%E6%AC%B2%E3%81%97%E3%81%84.html", "text": "小粋なスクリプト言語が欲しい"},
    ]
 }
 ]
