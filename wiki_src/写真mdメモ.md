@@ -2,7 +2,7 @@
 
 - [karino2/PhotoMdMemo: Receive photo intent and save and add note md.](https://github.com/karino2/PhotoMdMemo)
 
-日本語名は「写真mdメモ」。
+日本語名は「写真mdメモ」。[[UFASアーキテクチャ]]で作った、写真とそのメモをプレーンなファイルで保存してリスト表示するアプリ。
 
 ## モチベーション
 

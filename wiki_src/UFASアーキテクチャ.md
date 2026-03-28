@@ -1,8 +1,10 @@
-自分の考えたAndroidアプリのアーキテクチャ。Unix like File And Syncの頭文字をとってUFASアーキテクチャと呼びたい。
+自分(karino2)の考えたAndroidアプリのアーキテクチャ。Unix like File And Syncの頭文字をとってUFASアーキテクチャと呼びたい。
 ユーファスと読む。
 
 ## UFASアーキテクチャで作られたアプリ
 
+- [[SAFToDo]]
+- [[写真mdメモ]]
 - [[てきすとでっき]]
 - [[てきすとTL]]
 - [[PngNote]]
