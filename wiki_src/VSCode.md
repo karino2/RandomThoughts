@@ -92,3 +92,33 @@ configurationに以下を追加
 ```
             "terminal":"console",
 ```
+
+## Qtのヘッダのincludeパスをインテリセンスなどで効くようにする
+
+.envrcに以下のようなのを書いて
+
+```
+export PATH=${HOME}/Qt/6.10.3/macos/bin:$PATH
+export MY_QT_LIB_PATH=`qmake -query QT_INSTALL_LIBS`
+export MY_QT_INCLUDE_PATH=`qmake -query QT_INSTALL_HEADERS`
+```
+
+c_cpp_properties.jsonに以下のように書く。
+
+
+```
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:MY_QT_INCLUDE_PATH}",
+                "${env:MY_QT_LIB_PATH}/QtCore.framework/Headers",
+                "${env:MY_QT_LIB_PATH}/QtGui.framework/Headers",
+                "${env:MY_QT_LIB_PATH}/QtWidgets.framework/Headers",
+                "${vcpkgRoot}/arm64-osx/include",
+                "${vcpkgRoot}/arm64-osx-dynamic/include"
+            ],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks",
+                "${env:MY_QT_LIB_PATH}"                
+            ],
+```
