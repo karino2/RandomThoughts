@@ -79,3 +79,9 @@ grep -vでできる。
 ```
 $ grep -v "メモ：インクルード ファイル：" debg-out.log > filter.log
 ```
+
+## agで正規表現にしないのは-Q
+
+```
+ag -Q .mp4
+```
