@@ -5,6 +5,7 @@
 - [[VSCode]]
 - [[VisualStudio]]
 - [[PowerShell]]
+- [microsoft/wil: Windows Implementation Library](https://github.com/microsoft/wil/) [[Cpp]]のライブラリ
 
 Windows上の環境設定のメモなど。そのうちまとめてブログにしたい。
 
