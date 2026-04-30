@@ -1,9 +1,11 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E9%9B%BB%E5%8B%95%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88%E8%87%AA%E8%BB%A2%E8%BB%8A.html", "text": "電動アシスト自転車"},
+    {"link": "Dio110.html", "text": "Dio110"},
+    {"link": "2026%E5%B9%B44%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年4月下旬の雑記"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "Windows.html", "text": "Windows"},
-    {"link": "2026%E5%B9%B44%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年4月下旬の雑記"},
     {"link": "%E3%83%90%E3%82%A4%E3%82%AF.html", "text": "バイク"},
     {"link": "Shell.html", "text": "Shell"},
     {"link": "VSCode.html", "text": "VSCode"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "%E3%82%AE%E3%82%BF%E3%83%BC.html", "text": "ギター"},
     {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
     {"link": "%E5%86%99%E7%9C%9Fmd%E3%83%A1%E3%83%A2.html", "text": "写真mdメモ"},
-    {"link": "BOOX.html", "text": "BOOX"},
-    {"link": "%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88.html", "text": "タブレット"},
    ]
 }
 ]
