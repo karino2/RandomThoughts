@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E9%A3%9F%E4%BA%8B%E9%96%A2%E9%80%A3.html", "text": "食事関連"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "2026%E5%B9%B45%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年5月上旬の雑記"},
     {"link": "Home.html", "text": "Home"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E3%82%B7%E3%83%A3%E3%83%AF%E3%83%BC%E3%83%98%E3%83%83%E3%83%89.html", "text": "シャワーヘッド"},
     {"link": "%E3%82%AE%E3%82%BF%E3%83%BC.html", "text": "ギター"},
     {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
-    {"link": "%E5%86%99%E7%9C%9Fmd%E3%83%A1%E3%83%A2.html", "text": "写真mdメモ"},
    ]
 }
 ]
