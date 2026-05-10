@@ -1,8 +1,10 @@
 export const recents = [
  {text: "Recents:",
    children: [
-    {"link": "%E4%B8%96%E7%95%8C%E5%8F%B2.html", "text": "世界史"},
     {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E8%88%88%E4%BA%A1%E3%81%AE%E4%B8%96%E7%95%8C%E5%8F%B2%E3%80%81%E3%82%B7%E3%83%AB%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A8%E5%94%90%E5%B8%9D%E5%9B%BD.html", "text": "【書籍】興亡の世界史、シルクロードと唐帝国"},
+    {"link": "Wails.html", "text": "Wails"},
+    {"link": "MdImgr.html", "text": "MdImgr"},
+    {"link": "%E4%B8%96%E7%95%8C%E5%8F%B2.html", "text": "世界史"},
     {"link": "%E3%82%B0%E3%83%83%E3%82%BA%E9%96%A2%E9%80%A3.html", "text": "グッズ関連"},
     {"link": "Dio110.html", "text": "Dio110"},
     {"link": "2026%E5%B9%B45%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年5月上旬の雑記"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "%E9%A3%9F%E4%BA%8B%E9%96%A2%E9%80%A3.html", "text": "食事関連"},
     {"link": "Home.html", "text": "Home"},
     {"link": "Shell.html", "text": "Shell"},
-    {"link": "%E9%9B%BB%E5%8B%95%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%88%E8%87%AA%E8%BB%A2%E8%BB%8A.html", "text": "電動アシスト自転車"},
-    {"link": "Windows.html", "text": "Windows"},
    ]
 }
 ]
