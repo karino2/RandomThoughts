@@ -2,6 +2,7 @@
 
 - [The Wails Project - Wails](https://wails.io/)
 - [wailsapp/awesome-wails: ⭐ A carefully selected list of Wails applications](https://github.com/wailsapp/awesome-wails?tab=readme-ov-file) サンプルアプリを探すのに良い。
+- [[MdImgr]] Wailsを使って作ったアプリ。
 
 ## GettingStartedをやってみる
 
