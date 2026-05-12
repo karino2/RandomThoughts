@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%82%AC%E3%82%B9%E3%83%95%E3%82%A1%E3%83%B3%E3%83%92%E3%83%BC%E3%82%BF%E3%83%BC.html", "text": "ガスファンヒーター"},
     {"link": "%E9%85%8D%E9%A3%9F%E3%81%AE%E3%81%B5%E3%82%8C%E6%84%9B.html", "text": "配食のふれ愛"},
     {"link": "2026%E5%B9%B45%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年5月中旬の雑記"},
     {"link": "Home.html", "text": "Home"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "Dio110.html", "text": "Dio110"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "%E3%81%8A%E7%B5%B5%E6%8F%8F%E3%81%8D.html", "text": "お絵描き"},
-    {"link": "%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9F%E3%83%BC%E3%83%AB.html", "text": "オートミール"},
    ]
 }
 ]
