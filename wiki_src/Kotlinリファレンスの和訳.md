@@ -1,4 +1,6 @@
-dogwood008氏がやったものをkarino2が引き継いで和訳している
+[[Kotlin]]
+
+dogwood008氏がやったものをkarino2が引き継いで和訳していた
 
 - [日本語リファレンス - Kotlin Programming Language](https://karino2.github.io/kotlin-web-site-ja/docs/)
    - [karino2/kotlin-web-site-ja](https://github.com/karino2/kotlin-web-site-ja)

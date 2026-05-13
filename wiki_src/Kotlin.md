@@ -1,5 +1,6 @@
 ## 雑多なメモ
 
+- [Scope functions - Kotlin Documentation](https://kotlinlang.org/docs/scope-functions.html) Scope functionは久しぶりに触ると忘れているのでリンクしておく
 - [Parcelable implementation generator  -  Android Developers](https://developer.android.com/kotlin/parcelize) dataクラスをParcelableにするプラグイン
 - [[KotlinNative]]
 - [kotlin-playground - Self-contained component to embed in websites for running Kotlin code](https://jetbrains.github.io/kotlin-playground/) web上で実行する奴
