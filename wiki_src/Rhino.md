@@ -9,3 +9,5 @@
   - arrow関数はあるか
 - [rhino/rhino/src/test/java/org/mozilla/javascript/tests/ContinuationsApiTest.java at 96d264acd2df85ad685ecdc4f059b4413f99faeb · mozilla/rhino](https://github.com/mozilla/rhino/blob/96d264acd2df85ad685ecdc4f059b4413f99faeb/rhino/src/test/java/org/mozilla/javascript/tests/ContinuationsApiTest.java#L37) 中断はできそう。
 - [ShabdVasudeva/OneUI-Gallery-Clone](https://github.com/ShabdVasudeva/OneUI-Gallery-Clone) Androidで使ってるアプリで現在でも動きそうなもの
+
+使ってみたらあっさり動いて中断とか再開も出来るので気にった。使っていこう＞[[AshX]], [[Rhinocs]]
