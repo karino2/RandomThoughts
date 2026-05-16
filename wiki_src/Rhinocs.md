@@ -134,6 +134,47 @@ contentResolver.openInputStream(uri)?.use { inputStream ->
 }
 ```
 
+### skk-modeの変換周辺を読む
+
+chrome-skkの移植はなんとなくpreeditが動いているあたりまでは来た。ただsetCompositionとかが空なのでこの辺をどうするか考えるタイミングに来た。
+
+という事で[loyaltouch/Skk-Mode: xyzzy-skk-mode](https://github.com/loyaltouch/Skk-Mode/tree/master)のskk.lを読む。
+
+大文字のAとかが何にバインドされているかを調べると、j-set-henkan-pointという関数らしい。
+
+```
+(define-key map #\A 'j-set-henkan-point)
+```
+
+j-set-henkan-pointで変換が始まり、j-henkanとかj-kakuteiで処理される感じか？
+
+j-set-henkan-pointを見ると、
+
+1. j-set-henkan-point-subrを呼ぶ（ここで▽をinsertしたり変換開始のpointを覚えたりj-henkan-onをセットしたり）
+2. j-okuriganaや撥音などを処理
+3. 必要ならj-henkanを呼び出す
+
+j-henkanを簡単に見ると
+
+1. j-change-markerする
+2. j-henkan-activeをtにする
+3. j-henkan-show-candidateを呼ぶ
+4. (delete-region j-henkan-start-point j-henkan-end-point)を呼ぶ
+5. (insert new-word)する
+6. kakuteなら(j-kakute new-word)する
+
+ここまでの感じだと、chrome-skkでpreeditと呼んでいるのがだいたいj-set-henkan-pointに対応し、setCompositionやclearCompositionとconversionの処理をしているのがj-henkanっぽい。
+chrome-skkの移植として参考にすべきはj-henkanのあたりか。
+
+Rhinocs側で実装する必要がある関数を抜き出そう。
+
+- (point)
+   - j-kana-start-pointとかj-henkan-start-pointとかを覚えている
+- delete-backward-char
+- delete-region
+
+まずはこの辺か。
+
 ## 最初の目標
 
 考えないといけない事は無限にあって永遠に前に進めない気がするので、一番最初の目標を決めてそれに必要な事だけをやる感じにしたい。
