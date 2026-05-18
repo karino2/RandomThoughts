@@ -12,3 +12,14 @@
 - [oracle/graaljs: GraalJS – A high-performance, ECMAScript compliant, and embeddable JavaScript runtime for Java](https://github.com/oracle/graaljs) GraalJSはRhinoより新しいJSで動くとの事でESMとかもサポートしているらしくAndroidでも動くと言っているが、良くわからん。
 
 使ってみたらあっさり動いて中断とか再開も出来るので気にった。使っていこう＞[[AshX]], [[Rhinocs]]
+
+## Objectリテラルのメソッド（は使える）
+
+昔ながらのprototypeとか書いていて、シングルトンはこんな事する必要無いよなぁ、とCopilotにオブジェクトリテラルに直してもらったら、
+アロー関数のthisは呼び出しもとだ、とか言われて、method定義に直された。
+
+あれ？Rhinoってメソッド使えたっけ？と調べると使える＞[Rhino ES2015/ES6, ES2016 and ES2017 support](https://mozilla.github.io/rhino/compat/engines.html#ES2015-syntax-object-literal-extensions-shorthand-methods)
+
+なおclassキーワードは使えない。asyncは使えないがgeneratorは使えたり、何が使えるかちょっと曖昧だよなぁ。
+
+でもObjectのメソッドはもう使えない環境は無さそうだから積極的に使っていった方がいいな。
