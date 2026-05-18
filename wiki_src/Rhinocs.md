@@ -80,8 +80,8 @@ file_historyというパッケージ的なものとして書いていこう。
 
 という事でfile_historyを作る事に必要なものを考えてみよう。
 
-1. select_fileにdisplay nameも返すようにする
-2. write_file的なものを作る
+1. DONE ... select_fileにdisplay nameも返すようにする
+2. DONE ... write_file的なものを作る
 3. read_key的なものを作る
 4. get-buffer-creatとset-buffer
 
