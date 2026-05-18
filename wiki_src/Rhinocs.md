@@ -83,7 +83,7 @@ file_historyというパッケージ的なものとして書いていこう。
 1. DONE ... select_fileにdisplay nameも返すようにする
 2. DONE ... write_file的なものを作る
 3. read_key的なものを作る
-4. get-buffer-creatとset-buffer
+4. DONE ... get-buffer-creatとset-buffer
 
 このくらいでいけるか？
 
