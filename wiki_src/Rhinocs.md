@@ -38,6 +38,22 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 
 とりあえず何をやったかを書いておく所。
 
+## 2026-05-20 (水)
+
+### マーカー仕様検討
+
+eval-regionやコピペのためにマーカーが欲しくなる。既存実装を調査＞[[エディタ調査]]
+
+elipsの関数名を参考に考える。
+
+[GNU Emacs Lispリファレンスマニュアル: Markers](https://web.sfc.wide.ad.jp/~sagawa/gnujdoc/elisp-manual-20-2.5/elisp-ja_31.html#SEC473)
+
+- make-marker
+- set-marker
+
+
+
+
 ## 2026-05-19 (火)
 
 ### js相対のreadを廃止していつもpackageルートからに
