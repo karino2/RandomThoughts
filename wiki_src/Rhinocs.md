@@ -27,7 +27,7 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 ### 2026-05-20 (水) 時点での進捗
 
 - Rhinoにキーイベントを渡してキーマップに登録した関数を実行する事で動くエディタ
-- SKKを移植して動かす
+- SKKを移植して動く
 - SAF経由でのファイルのオープンと保存
 
 ## ToDo
@@ -72,6 +72,9 @@ markなどはmark-markerとmarker-positionなどを使ってjsレイヤーで実
 2. insertとかdeleteとか必要な所でadjustの実装を追加
 3. js側に見せるメソッドを追加
 
+### マーカーを実装
+
+C-SpaceとC-x C-xはとりあえず動いてそうなのを確認。あとはbuffer_substringを実装すればeval_regionはevalで実装出来るな。
 
 ## 2026-05-19 (火)
 
