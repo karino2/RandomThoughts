@@ -23,3 +23,45 @@
 なおclassキーワードは使えない。asyncは使えないがgeneratorは使えたり、何が使えるかちょっと曖昧だよなぁ。
 
 でもObjectのメソッドはもう使えない環境は無さそうだから積極的に使っていった方がいいな。
+
+## docstringのメモ
+
+describe-function的なものを実装するために、なんかdocstringみたいなの無い？とgeminiに聞いたら以下を教えてくれたので貼っておく。
+
+```js
+function getDocstring(fn) {
+    var fnSource = fn.toString();
+    
+    // 関数の最初にある /** ... */ または /* ... */ のブロックコメントを抽出する正規表現
+    var match = fnSource.match(/^function\s*.*?\s*\(\s*.*?\s*\)\s*\{\s*(\/\*\*[\s\S]*?\*\/|\/\*[\s\S]*?\*\/)/);
+    
+    if (match && match[1]) {
+        // コメント内のアスタリスクや無駄な改行を綺麗に掃除する
+        return match[1]
+            .replace(/^\/\*\*|^\/\*|\*\/$/g, '') // デリミタの削除
+            .replace(/^\s*\*\s?/mg, '')          // 行頭の「 * 」の削除
+            .trim();
+    }
+    return null;
+}
+
+// --- 使い方 ---
+
+function myAppFunction(x, y) {
+    /**
+     * 2つの数値を加算する関数です。
+     * @param {number} x - 最初の数値
+     * @param {number} y - 2番目の数値
+     * @returns {number} 計算結果
+     */
+    return x + y;
+}
+
+var doc = getDocstring(myAppFunction);
+print(doc); 
+// 出力:
+// 2つの数値を加算する関数です。
+// @param {number} x - 最初の数値
+// @param {number} y - 2番目の数値
+// @returns {number} 計算結果
+```
