@@ -34,7 +34,7 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 
 優先度の高い順に思いついた事を書いておく。
 
-- ステータスバー(SKKの現在のモードを知りたいので)
+- モード行(SKKの現在のモードを知りたいので)
 - ミニバッファ
 - バッファ切り替え（うっかり作業が消えてしまわないように）
 - undo
@@ -70,6 +70,31 @@ Loadボタンも無くしてだいぶ挙動が分かりやすくなる。
 
 typoで漢字登録ダイアログが立ち上がった時にいちいちタッチするのがかったるいのでC-gでもキャンセル出来るようにした。
 
+### モード行の仕様検討
+
+emacsやxyzzyはmode-line-format変数に設定しておくと毎回それをformatして表示するが、RhinoだといちいちContextをenterして値を取り出すのでなんか無駄な気はする。
+
+それよりは以下みたいな関数で設定してWindowに持たせるかな。
+
+- `set_mode_line_format(fmt: string)`
+- `get_mode_line_format() : string`
+
+mode-line-formatの％の略語は今どき覚える気も起こらないので、冗長にドル始まりの変数名っぽいのでいいだろう。
+JavaScriptのテンプレート文字列っぽい以下の表記でどうか？
+
+- `${column}`
+- `${lineNum}`
+- `${bufferName}`
+- `${modified}`
+
+とりあえずこの4つくらいサポートする事から始めたい。modifiedは変更されてると**でそれ以外は--とする。read onlyとかはしばらく考えない。
+
+例えば以下みたいな感じで指定する。
+
+```js
+set_mode_line_format("--${modified}- ${bufferName} Ln: ${lineNum} Col: ${column} --");
+```
+get_mode_line_formatでは置換される前のfmt文字列がそのまま取れる。
 
 ## 2026-05-21 (木)
 
