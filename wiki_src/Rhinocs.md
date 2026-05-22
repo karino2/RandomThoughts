@@ -1,7 +1,8 @@
 [[自作アプリ]], [[Rhino]], [[エディタ調査]]
 
 - [karino2/Rhinocs: Rhino backed Android editor only for keyboard.](https://github.com/karino2/Rhinocs)
-  - [karino2/RhinocsSKK: SKK port for Rhinocs](https://github.com/karino2/RhinocsSKK) Rhinocs用のSKK移植
+  - [karino2/RhinocsJSPackage: JS package repository for Rhinocs.](https://github.com/karino2/RhinocsJSPackage) Rhinocsで使用するパッケージ。この中身のルートを指定しておく。
+    - [karino2/RhinocsSKK: SKK port for Rhinocs](https://github.com/karino2/RhinocsSKK) Rhinocs用のSKK移植。上記のレポジトリのsubmodule
 
 [[Rhino]]をバックエンドにしたAndroidのキーボード専用エディタ。
 
@@ -33,7 +34,6 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 
 優先度の高い順に思いついた事を書いておく。
 
-- 漢字登録をC-gでキャンセルしたい
 - ステータスバー(SKKの現在のモードを知りたいので)
 - ミニバッファ
 - バッファ切り替え（うっかり作業が消えてしまわないように）
@@ -47,13 +47,16 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 
 ### いまいちな所を書き出す
 
-- init.jsをLoadボタンを押さないとロードしない所
 - set_device_idとかパッケージのディレクトリ指定とか最初にやらないといけない事が多い事
-- eval_regionからpending continuationが必要な関数を実行出来ない所
+- eval_regionからpending continuationが必要な関数を実行出来ない所（これはcaptureContinuationの仕様っぽくて直せなかった）
 
 skkの外のキーとの連携が少しバグってるかも。
 C-hで途中から消せなかったり、C-jでjが入力されてしまったり。
 この辺の品質は上げたい。
+
+最初にここに書き出したが直した事
+
+- init.jsをLoadボタンを押さないとロードしない所
 
 
 ## 2026-05-21 (木)
@@ -107,6 +110,21 @@ innerSKKは使い方が良く分からない上に普通のIMEで変換したも
 これでデバイスごとに辞書を保存するようになったぜ。
 
 あとはステータスバーあたりを終えればSKKのコードは安定するかな。
+
+### skk_all.jsのロードをlazyにする
+
+ロードをlazyにする為には、ロードが終わった後に実行するコマンドを指定出来れば良さそう。
+
+という事でrequest_load_jsにafterLoad関数をオプショナルで渡せるように変更。
+
+### init.jsをいつもロードするように変更
+
+skk_all.jsのロードをlazyにした事でinit.jsのロードが一瞬で終わるようになったので、最初に自動でロードするように変更。
+Loadボタンも無くしてだいぶ挙動が分かりやすくなる。
+
+### 漢字登録をC-gでもキャンセル出来るように
+
+typoで漢字登録ダイアログが立ち上がった時にいちいちタッチするのがかったるいのでC-gでもキャンセル出来るようにした。
 
 ## 2026-05-20 (水)
 
