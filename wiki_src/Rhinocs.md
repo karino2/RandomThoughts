@@ -38,6 +38,7 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 - search-forward
 - split-window
 - undo
+- タブ補完
 
 ## 開発日記
 
