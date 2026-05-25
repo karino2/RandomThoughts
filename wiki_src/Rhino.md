@@ -24,6 +24,21 @@
 
 でもObjectのメソッドはもう使えない環境は無さそうだから積極的に使っていった方がいいな。
 
+## JavaScriptの配列をJavaから使う
+
+```js
+select_file_callback([mimeType], onSuccess, onFailure)
+```
+
+という関数を作った時に、Java側で最初のmimeTypesの配列をどう扱ったらいいかわからなかったので調べた。
+Scriptableにキャストしてctx.getElementsでObjectの配列が取れる。
+
+```java
+        Object[] mtypesObj = ctx.getElements((Scriptable)args[0]);
+```
+
+中身は `ctx.toString(mTypesObj[0])` とかする必要がある。
+
 ## docstringのメモ
 
 describe-function的なものを実装するために、なんかdocstringみたいなの無い？とgeminiに聞いたら以下を教えてくれたので貼っておく。
