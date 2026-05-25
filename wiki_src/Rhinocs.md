@@ -46,6 +46,17 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 
 とりあえず何をやったかを書いておく所。
 
+## 2026-05-25 (月)
+
+### 脱continuation, Promise化運動 その1
+
+capture continuationは制約が多いので、全部コールバック化してJSレイヤーでPromiseにラップする事にする。
+
+とりあえずselect_fileをselect_file_callbackにして、request_js_loadをjs_load_callbackにしてPromiseでラップした。
+こちらの方が素直でいいね。
+
+まだquery_text_dialogとread_keyが残っているので、この二つもPromise化したい。
+
 ## 2026-05-24 (日)
 
 ### 座標計算のリファクタリング
