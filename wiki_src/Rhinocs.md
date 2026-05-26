@@ -29,6 +29,7 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 - SKKを移植して動く
 - SAF経由でのファイルのオープンと保存
 - コピー・ペースト、eval_regionなどが動く
+- split_windowが動く
 
 ## ToDo
 
