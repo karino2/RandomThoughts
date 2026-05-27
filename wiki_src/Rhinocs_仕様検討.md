@@ -1,7 +1,30 @@
 [[Rhinocs]]の仕様の検討を残しておく。
 
-### switch-bufferの仕様検討 2026-05-27 (水)
 
+## floating-list 2026-05-27 (水)
+
+switch-bufferはタブ補完みたいなのよりはVSCodeのCmd+pみたいなのにしたい。フィルタリングとかはJS側で書くとする。
+するとエディタ側で用意すべきものは何なのかを考えたい。
+
+とりあえず以下があれば実現は出来るか？
+
+- 文字列のリストをセットするとそれを下から上のリストとして描画し、一番下が選択される
+- 選択を一つ上、一つ下に移動するコマンド
+- 現在の選択を返す関数
+
+そもそもfloatingListインスタンスが取れればあとはJS側からこれを操ればいいか？
+
+```
+let floating = get_floating_list();
+floating.items = ["abc", "def", "ghi"];
+floating.moveUp();
+floating.moveDown();
+let res = floating.selectedIndex
+```
+
+
+
+## switch-buffer 2026-05-27 (水)
 
 メモリ上にあるバッファを探すというのはAndroid的ではない気もする。
 リサイクルで全部無くなっちゃうので。
