@@ -105,6 +105,14 @@ launchctl listでタスクの一覧が表示される。
 $ launchctl unload ~/Library/LaunchAgents/environment.plist
 ```
 
+## Spotlightをオフにする
+
+最近spotlightknowledged.updaterがCPUを使っていて、もうspotlight使ってないしなぁ、と思ってオフにする事にした。
+
+```
+sudo mdutil -a -i off
+```
+
 ## xcrunでエラーが出る時
 
 xcrunを実行したら以下のようなエラーが出る時
