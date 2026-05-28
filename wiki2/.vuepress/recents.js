@@ -1,11 +1,11 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "SKK.html", "text": "SKK"},
+    {"link": "2026%E5%B9%B45%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年5月下旬の雑記"},
     {"link": "Mac.html", "text": "Mac"},
     {"link": "Rhinocs_%E4%BB%95%E6%A7%98%E6%A4%9C%E8%A8%8E.html", "text": "Rhinocs_仕様検討"},
-    {"link": "2026%E5%B9%B45%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年5月下旬の雑記"},
     {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
-    {"link": "SKK.html", "text": "SKK"},
     {"link": "Rhinocs.html", "text": "Rhinocs"},
     {"link": "Rhinocs_%E5%8F%A4%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F%E8%A9%B1%E9%A1%8C.html", "text": "Rhinocs_古くなった話題"},
     {"link": "%E3%81%9D%E3%81%AE%E3%81%86%E3%81%A1%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E4%BA%8B.html", "text": "そのうちやりたい事"},
