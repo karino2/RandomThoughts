@@ -39,6 +39,25 @@ Scriptableにキャストしてctx.getElementsでObjectの配列が取れる。
 
 中身は `ctx.toString(mTypesObj[0])` とかする必要がある。
 
+## for ofのconstは対応していない
+
+for ofは対応しているしconstも対応しているが、以下は対応していない。
+
+```js
+for(const a of arr) {
+...
+}
+```
+
+なお、letは動く。
+
+```js
+for(let a of arr) {
+...
+}
+```
+
+
 ## docstringのメモ
 
 describe-function的なものを実装するために、なんかdocstringみたいなの無い？とgeminiに聞いたら以下を教えてくれたので貼っておく。

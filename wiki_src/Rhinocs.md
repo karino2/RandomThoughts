@@ -56,6 +56,24 @@ Activityのリサイクル、SAFなどを考えたエディタであって欲し
 
 とりあえず何をやったかを書いておく所。
 
+## 2026-05-30 (土)
+
+### ミニバッファフックやミニバッファ用のキーマップを作る
+
+switch-bufferを実装する前準備として、switch-bufferでSKKをミニバッファで使いたいので、ミニバッファ周りを少し整備して、ミニバッファは別のキーマップを使うようにする。
+そしてミニバッファから抜ける時に呼ばれるhookも実装する。
+
+g_keyMapHandler.isMiniBufferをtrueにするとミニバッファ用のキーマップスタックに切り替わり、falseにすると戻る。
+ミニバッファに入ったかどうかはJS側で管理する。
+
+hookはg_hooksにaddHook, removeHookで登録、解除する。
+
+hook名はとりあえず以下の二つだけ。
+
+- `"enter_minibuffer_hook"`
+- `"exit_minibuffer_hook"`
+
+
 ## 2026-05-27 (水)
 
 ### SKKの辞書のエントリパースをlazyにしてロードの高速化
