@@ -22,9 +22,9 @@ floating.moveDown();
 let res = floating.selectedIndex
 ```
 
+実装して試したら良さそうだったのでこれで行く。
 
-
-## switch-buffer 2026-05-27 (水)
+## switch-to-buffer 2026-05-27 (水)
 
 メモリ上にあるバッファを探すというのはAndroid的ではない気もする。
 リサイクルで全部無くなっちゃうので。
