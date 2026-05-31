@@ -57,6 +57,22 @@ for(let a of arr) {
 }
 ```
 
+## spreadは未対応
+
+```js
+function hoge(...res) {
+  ika(...res);  // <- シンタックスエラー
+}
+```
+
+なお、applyは使えるので以下は動く。
+
+```js
+function hoge(...res) {
+  ika.apply(null, res);
+}
+```
+
 
 ## docstringのメモ
 
