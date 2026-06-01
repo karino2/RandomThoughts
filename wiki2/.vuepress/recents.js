@@ -1,8 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
-    {"link": "Home.html", "text": "Home"},
     {"link": "2026%E5%B9%B46%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年6月上旬の雑記"},
+    {"link": "Home.html", "text": "Home"},
     {"link": "Rhinocs.html", "text": "Rhinocs"},
     {"link": "Rhino.html", "text": "Rhino"},
     {"link": "SKK.html", "text": "SKK"},
