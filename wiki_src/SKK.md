@@ -22,4 +22,12 @@ innerSKKは廃止してダイアログでAndroidのEditTextを出すような作
 - DONE ... hiraganaでは＞記号は全角にしたい(良く使うので)
 
 なんか漢字登録がEnterで中途半端にされているな。OKだとちゃんとされていた気がするので、
-なんかバグってるのかも。
+なんかバグってるのかも。＞Viewのinvalidate呼ばれてなかった
+
+### 変換途中のundoの試行錯誤撤退メモ
+
+insertなどにundoTrackをfalseにするモードが追加されたので、clearCompositionとかだけundo情報を持たせなければいいんじゃないか、と思ったが、
+clearCompositionがcommitTextの後に呼ばれるとUndo情報のpointがずれるのでうまくいかなかった。
+conversionModeは順番変えるだけで直せたが、
+例えばひがらなの「の」などでうまくいかない。
+これはskk.jsのhandleKeyEventでkeyHandlerを呼んでからupdateCompositionとかclearCompositionをするからで、これを直すのは手間なので撤退した。
