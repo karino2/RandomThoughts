@@ -57,6 +57,20 @@ for(let a of arr) {
 }
 ```
 
+ちなみに以下のgはzzzになる。(letにかえるとzbccになる)。
+
+```js
+let arr = ["a", "b", "c"];
+let g = "";
+for(let [index, elem] of arr.entries()) {
+  const item = index === 0 ? 'z' : elem.repeat(index);
+  g = g + item;
+}
+```
+
+わ、わかりにくい…
+
+
 ## spreadは未対応
 
 ```js
