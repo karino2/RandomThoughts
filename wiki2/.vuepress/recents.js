@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E8%88%88%E4%BA%A1%E3%81%AE%E4%B8%96%E7%95%8C%E5%8F%B2%E3%80%81%E3%82%B7%E3%83%AB%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A8%E5%94%90%E5%B8%9D%E5%9B%BD.html", "text": "【書籍】興亡の世界史、シルクロードと唐帝国"},
     {"link": "Rhinocs_%E4%BB%95%E6%A7%98%E6%A4%9C%E8%A8%8E.html", "text": "Rhinocs_仕様検討"},
     {"link": "SKK.html", "text": "SKK"},
     {"link": "Rhinocs.html", "text": "Rhinocs"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E5%8E%9F%E8%AB%96%E6%96%87%E3%81%8B%E3%82%89%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%99%E7%94%9F%E6%88%90AI.html", "text": "【書籍】原論文から解き明かす生成AI"},
     {"link": "%E6%9B%B8%E7%B1%8D.html", "text": "書籍"},
     {"link": "Home.html", "text": "Home"},
-    {"link": "Mac.html", "text": "Mac"},
    ]
 }
 ]
