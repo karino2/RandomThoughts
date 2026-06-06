@@ -18,7 +18,7 @@ innerSKKは廃止してダイアログでAndroidのEditTextを出すような作
 **Dogfoodメモ**
 
 - preeditでC-kが効いているがたぶん良く無い。(でもどうするのがいいかな？)
-- cyuuで｢ちゅう｣にならない
+- DONE ... cyuuで｢ちゅう｣にならない
 - DONE ... cyauで｢ちゃう｣にならない。
 - DONE ... hiraganaでは＞記号は全角にしたい(良く使うので)
 
