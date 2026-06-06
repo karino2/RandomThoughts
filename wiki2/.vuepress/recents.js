@@ -1,13 +1,13 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "SKK.html", "text": "SKK"},
     {"link": "Rhinocs.html", "text": "Rhinocs"},
-    {"link": "HT2.html", "text": "HT2"},
     {"link": "2026%E5%B9%B46%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年6月上旬の雑記"},
+    {"link": "HT2.html", "text": "HT2"},
     {"link": "%E3%82%B5%E3%83%BC%E3%83%95%E3%83%9C%E3%83%BC%E3%83%89.html", "text": "サーフボード"},
     {"link": "%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "技術的なメモ"},
     {"link": "BOOX.html", "text": "BOOX"},
-    {"link": "SKK.html", "text": "SKK"},
     {"link": "Rhino.html", "text": "Rhino"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9F%E3%83%BC%E3%83%AB.html", "text": "オートミール"},
