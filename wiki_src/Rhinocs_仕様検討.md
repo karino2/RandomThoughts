@@ -4,10 +4,17 @@
 
 JS側で実装するために必要な低レベルAPIを考える。
 
-- select_open_dir_callback
-- list_file(uri)
+- `select_open_dir_callback(success, fail, fromDirUri=undefined)`
+- `open_dir(uri)`
 
-とりあえずこの二つくらいあれば、あとはJS側で実装出来るか。
+１つ目はFastFileのdirを返す。二つ目はuriからFastFileのdirを作る。
+
+FastFileはlistFiles()を呼べばファイルの一覧が取れるし、getUri()やgetName()で保存するようなデータをとれる。
+
+uriを保存したら、そのuriからFastFileを復元する必要がありそうなのでopen_dirを作る。
+
+こうして考えるとselect_open_fileなどもFastFileを返すべきだな。直そう。
+
 
 ## インクリメンタルサーチ 2026-06-03 (水)
 
