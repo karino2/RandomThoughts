@@ -20,7 +20,7 @@
 
 ## youtube等
 
-ちょっと欲しいと思って調べている。
+HT2が欲しいと思って調べている。（追記：結局買った）
 
 - [Sharpeye "HT2" "Filipe Toledo Model" Surfboard Review by Noel Salas Ep.57 - YouTube](https://www.youtube.com/watch?v=3crxrshK_YY)
 - [【湘南炸裂】デカ波セッションの中、奇跡1本ゲットしちゃいました。。。 - YouTube](https://www.youtube.com/watch?v=vvwtiF8ygEY) 河村海沙は 5'10, ダブルくらい
