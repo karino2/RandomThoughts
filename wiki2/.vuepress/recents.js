@@ -1,10 +1,11 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%97%E3%83%AA.html", "text": "自作アプリ"},
+    {"link": "%E3%83%9E%E3%82%B0%E3%83%8A%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81.html", "text": "マグナスケッチ"},
     {"link": "2026%E5%B9%B46%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年6月上旬の雑記"},
     {"link": "BOOX.html", "text": "BOOX"},
     {"link": "%E5%86%99%E7%9C%9Fmd%E3%83%A1%E3%83%A2.html", "text": "写真mdメモ"},
-    {"link": "%E8%87%AA%E4%BD%9C%E3%82%A2%E3%83%97%E3%83%AA.html", "text": "自作アプリ"},
     {"link": "%E3%81%9D%E3%81%AE%E3%81%86%E3%81%A1%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84%E4%BA%8B.html", "text": "そのうちやりたい事"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "HT2.html", "text": "HT2"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E3%82%B5%E3%83%BC%E3%83%95%E3%83%9C%E3%83%BC%E3%83%89.html", "text": "サーフボード"},
     {"link": "%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "技術的なメモ"},
     {"link": "Rhino.html", "text": "Rhino"},
-    {"link": "%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9F%E3%83%BC%E3%83%AB.html", "text": "オートミール"},
    ]
 }
 ]
