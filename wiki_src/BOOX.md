@@ -3,7 +3,7 @@
 AndroidのE-inkデバイス。
 
 - [[PngNote]] BOOX用に書いたノートアプリ。
-- [karino2/MagnaSketch: Toy magnetic drawing board like app for BOOX.](https://github.com/karino2/MagnaSketch)
+- [[マグナスケッチ]] BOOX用に書いた磁気ボードみたいなアプリ
 - [karino2/ToggleOrient: Toggle portlait-landscape on Android.](https://github.com/karino2/ToggleOrient)
 - [[Rhinocs]] これはBOOX以外でも使えるけど。
 
