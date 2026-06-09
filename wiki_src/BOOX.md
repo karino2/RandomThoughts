@@ -5,6 +5,7 @@ AndroidのE-inkデバイス。
 - [[PngNote]] BOOX用に書いたノートアプリ。
 - [[マグナスケッチ]] BOOX用に書いた磁気ボードみたいなアプリ
 - [karino2/ToggleOrient: Toggle portlait-landscape on Android.](https://github.com/karino2/ToggleOrient)
+- [karino2/SSaverSetter: Receive image intent and set to ScreenSaver, for BOOX only.](https://github.com/karino2/SSaverSetter) マグナスケッチをスクリーンセーバーにするために。
 - [[Rhinocs]] これはBOOX以外でも使えるけど。
 
 
@@ -74,3 +75,7 @@ MagnaSketchを使っていて気付いたが、画面の真ん中より少し右
 ### と思ったら後ろのスタンドのせいだ！
 
 スタンドを回転してみるとかけない領域が移動する事に気づいた。スタンドのせいだ！
+
+## スクリーンセーバーのメモ
+
+/data/local/assets/images に standby-1.png がある。2と3がどこにあるかは不明。
