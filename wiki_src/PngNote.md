@@ -14,6 +14,27 @@ karino2が作っているONYX BOOX Note3用のノートアプリ。
 - 低機能で使っていて迷う所が無いような選択肢の少ないUI
 - 講義ノートなどを取るのに特化した機能＞[[講義ノート]]
 
+## 大きめの修正 2026-06-09 (火)
+
+最近不安定な挙動が目立っていたので、ちゃんと直す。
+
+まずはonResumeとレイアウトとfocus周辺のタイミングの問題は[[マグナスケッチ]]で割とちゃんと直したのでそれを持ってくる。
+
+### 裏BitmapのActor化
+
+それでもまだたまにraw renderingが有効だが実際は描けて無くてボタンも押せない状態になるな。
+
+ログをはっつけてgeminiに聞いた所、どうもSurfaceViewのlockCanvasをしつつBitmap関連のlockをしていると、
+描画リソースが足りないとかで他を待つ時に他もこのロックで待つというような事が起こりうるらしい。
+
+SurfaceViewのlockCanvasをもう少し短期間で済むようにしたい。
+基本的には画面に書いている時に裏のbitmapにも同じものを描いている訳だが、この時にundoとredoバッファを作るのが結構重い。
+しかも裏に描くのは別に同期する必要は全く無い。
+
+だが全部キューにたまったイベントの処理が終わった、という事を待つ必要があるタイミングはある。
+
+呼ぶ側はいつもUIスレッドなので、そんなに複雑な事は考えなくてもいいはずだが、一応そういう修正をしたい。
+
 ### 雑感
 
 BOOX Note3のペンは非常に良い。
@@ -29,6 +50,19 @@ BOOX Note3のペンは非常に良い。
 モードの切り替え的な事はやはりノートを取るのには邪魔だよな。
 なにもないページに自由に描き始められる感じが凄く気分が良い。
 この気分の良さは損なわないように機能追加はやっていきたいな。
+
+### バックグラウンド画像機能
+
+現状、フォルダにbackground.pngというファイルがあると、それをそのノートのバックグラウンドとして描画する。
+罫線の機能を実現するために実装した機能だが、ToDoリストなどでも使えるように、とは考えている。
+
+なお、現状はbackground.pngを置くUIは無い。自分で画像を用意して手で置く。
+自分はこれを使っている。 [https://github.com/karino2/PngNote/blob/main/images/background.png](https://github.com/karino2/PngNote/blob/main/images/background.png)
+
+### github pagesへの公開
+
+公開には[[GithubPagesGallery]]を使っている。
+
 
 ### ペンサイズの変更（予定）
 
@@ -78,15 +112,3 @@ DashPathEffect
 消しゴム;e;20
 消しゴム（細）;e;8.0
 ```
-
-### バックグラウンド画像機能
-
-現状、フォルダにbackground.pngというファイルがあると、それをそのノートのバックグラウンドとして描画する。
-罫線の機能を実現するために実装した機能だが、ToDoリストなどでも使えるように、とは考えている。
-
-なお、現状はbackground.pngを置くUIは無い。自分で画像を用意して手で置く。
-自分はこれを使っている。 [https://github.com/karino2/PngNote/blob/main/images/background.png](https://github.com/karino2/PngNote/blob/main/images/background.png)
-
-### github pagesへの公開
-
-公開には[[GithubPagesGallery]]を使っている。
