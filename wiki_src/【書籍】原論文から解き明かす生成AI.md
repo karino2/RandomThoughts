@@ -15,3 +15,8 @@
 
 ## 1章のメモ 2026-06-09 (火)
 
+普遍性定理
+
+えーと、これか？ [Cybenko: Approximation by superpositions of a sigmoidal... - Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=ja&cluster=7998114008152383322)
+
+superpositionは重ね合わせだそうで。
