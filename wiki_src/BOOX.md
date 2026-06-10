@@ -79,3 +79,15 @@ MagnaSketchを使っていて気付いたが、画面の真ん中より少し右
 ## スクリーンセーバーのメモ
 
 /data/local/assets/images に standby-1.png がある。2と3がどこにあるかは不明。
+
+[karino2/SSaverSetter: Receive image intent and set to ScreenSaver, for BOOX only.](https://github.com/karino2/SSaverSetter) で二回目以降が無視されてしまう問題を調べた結果を。
+
+スクリーンセーバーのセットは最終的にはonyx.action.SCREENSAVERへのインテントでセットされるのだが、
+これは内部でPictures下に渡されたuriからとったファイル名のファイルを作って保存して、それをセットしているっぽい。
+
+そして同じ名前（パスが違っても）のファイルがあると更新せずに古いのを再利用してしまう。
+
+パスとしては手持ちのNote3では `/storage/emulated/0/Pictures/` になっていて、Fileオブジェクトを作ればファイルがあるかどうかは確認出来るが削除は出来なさそう。
+このpermissonも良く分からないので、SSaverSetterとしては連番をつけて、定期的に削除を手でやってもらう事にする。
+
+なお、ここのファイルを消すとスクリーンセーバーはデフォルトに戻る。
