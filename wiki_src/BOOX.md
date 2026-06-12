@@ -91,3 +91,20 @@ MagnaSketchを使っていて気付いたが、画面の真ん中より少し右
 このpermissonも良く分からないので、SSaverSetterとしては連番をつけて、定期的に削除を手でやってもらう事にする。
 
 なお、ここのファイルを消すとスクリーンセーバーはデフォルトに戻る。
+
+## apkのリリース手順
+
+レポジトリの設定のSecrets and variablesのActionsで、SecretsのタブのRepositorySecretsに以下を追加
+
+- SIGNING_KEY
+- SIGNING_KEY_ALIAS
+- SIGNING_KEY_PASSWORD
+- SIGNING_STORE_PASSWORD
+
+なおSIGNING_KEYは
+
+```
+base64 -i  release_keystore_for_github_actions.jks | tr -d '\n' | pbcopy
+```
+
+とかしたものをペースト。
