@@ -15,7 +15,29 @@
 
 ## 1章のメモ 2026-06-09 (火)
 
-普遍性定理
+### 自分の力で論文を読み解くための技術
+
+- 議論が成立する条件を確認する
+- 具体例を構成する
+  - 評価指標の具体例
+      - パープレキシティの例
+      - 演習問題1.1, accuracy, precision, recall
+  - 主張を確認するための具体例
+     - back propagationの計算量
+     - 生成AIを実際に触ってみて確認
+  - 仮定が成り立たない例を考える
+     - Markovじゃないとは
+     - 次トークン予測がうまくいきにくい例とは
+- 実装を読み解いて理解を深める
+- 重要な参考文献は踏み込んで調べる
+- アウトプットする事で理解を深める
+  - 他人に内容を説明
+  - github issueに読んだメモを書く
+- 
+
+### Universal Approximation Theorem
+
+普遍性定理。
 
 えーと、これか？ [Cybenko: Approximation by superpositions of a sigmoidal... - Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=ja&cluster=7998114008152383322)
 
@@ -34,7 +56,7 @@ Rieszの表現定理とか昔やった気がするが何も覚えてないな。
 
 いい機会なのでこれの最初の方でも読んでみるかなぁ。Rieszの定理は8章だ…
 
-### Universal Approximation Theorem
+### 証明のあらすじ
 
 大まかにあらすじくらいは理解した。
 
