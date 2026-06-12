@@ -108,3 +108,5 @@ base64 -i  release_keystore_for_github_actions.jks | tr -d '\n' | pbcopy
 ```
 
 とかしたものをペースト。
+
+GitHub ActionsのGeneral でwrite permissionが必要。
