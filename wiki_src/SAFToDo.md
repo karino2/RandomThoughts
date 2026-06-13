@@ -1,6 +1,6 @@
 [[自作アプリ]]
 
-- [karino2/SAFToDo: Android todo app, store plain md file via SAF.](https://github.com/karino2/SAFToDo)
+- [Karino2DIYApp/SAFToDo: Android todo app, store plain md file via SAF.](https://github.com/Karino2DIYApp/SAFToDo)
 
 特定フォルダの下にあるmdファイルのリストをToDoとして使う。ファイル名がタブになる。スワイプで削除。ファイルの削除は無いので手で消す。
 
