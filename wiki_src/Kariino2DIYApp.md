@@ -1,12 +1,18 @@
 [[自作アプリ]]
 
-自分用のAndroidアプリを置くOrganization。
+自分用のAndroidアプリを置くOrganizationとしてKarino2DIYAppというOrganizationを作った。[Karino2DIYApp repositories](https://github.com/orgs/Karino2DIYApp/repositories)
+
+## モチベーション
 
 自作アプリをagentで作りまくるようになった結果、いちいちapkを作ったりするのが面倒になってきた。
 ただ後でビルドが通らないとかで端末乗り換えの時に苦労しそうなので、
 自分用アプリはOrganizationの下に入れてapk作成を自動化する事にする。
 
-このDIYAppはいろいろ単純化した方針でやっていきたい。
+開発はデバッグ実行しながら開発していくのでDebug版がどれかの端末には入ったままになる。
+そしてrelease用のworkflowを定義しておいて、適当なタイミングでv3とかタグをつけてpushすると
+apkがReleaseページに出来る、みたいな感じになっている。
+
+このDIYAppは基本的には自分しか使わないので、いろいろ単純化した方針でやっていきたい。
 
 ## バージョンは単なる連番でv0, v1, v2と進める
 
@@ -16,6 +22,7 @@
 ## タグをpushしたらapkがReleaseページに出来る
 
 このOrganizationでは基本的にはapkのリリースを共通のワークフローテンプレートを使ってリリースする。
+release.ymlは以下の移行手順に書いてあるものを使う。
 
 ## 既存レポジトリの移行手順
 
