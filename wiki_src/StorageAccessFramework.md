@@ -176,13 +176,10 @@ DocumentsContractというのがヒントっぽい、とドキュメントを読
 
 ### DocumentFileと同じような機能を持つFastFileを実装
 
-[Implement FastFile and use it instead of DocumentFile. · karino2/PngNote@b19dbf1](https://github.com/karino2/PngNote/commit/b19dbf1841ff443ea7561c9c07109e358d03cdad)
+[karino2/FastFile: Android DocumentFile alternative, single file.](https://github.com/karino2/FastFile)
 
 今後はこれを使っていこう。
-
-いろんな所でコピペして使っているのでいい加減最新版が良く分からなくなってきた。
-
-[[パオ碁]]では[[てきすとTL]]の奴を使っていてこの辺が最新か？
+最新版はここに置く事にして、それぞれのプロジェクトにコピペして使っている。
 
 ----
 
