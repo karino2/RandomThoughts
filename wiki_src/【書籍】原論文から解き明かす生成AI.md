@@ -2,6 +2,7 @@
 
 - [amazon: 原論文から解き明かす生成AI](https://amzn.to/4voWeSZ)
 - [原論文から解き明かす生成AIのサポートページ](https://github.com/yoheikikuta/support-genAI-book)
+- [[一人読書会ライブ]] まずはこの本を題材にやってるのでリンク貼っておく。
 
 菊田先生のありがたい本。
 
@@ -39,6 +40,12 @@
   - 他人に内容を説明
   - github issueに読んだメモを書く
   - ライブはどうか？
+
+単語
+
+- hypotenuse: 斜辺
+- right triangle: 直角三角形
+- inscribed circle: 内接円
 
 ### 自分以外の力
 
