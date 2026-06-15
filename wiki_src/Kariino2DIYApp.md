@@ -59,12 +59,16 @@ EOF
 ## Organizationに入れないけど同じworkflowを実行したい場合の設定
 
 - PngNoteのrelease.ymlを持ってくる [PngNote/.github/workflows/release.yml at main · karino2/PngNote](https://github.com/karino2/PngNote/blob/main/.github/workflows/release.yml)
-- Secretsで以下を指定
+- Secrets＞Secrets and variables＞ActionsのSecretsタブの下のRepository secretsで以下を指定
 - Settings＞ActionsでWorkflow permissionsをRead and writeに変更
 
 | 名前 | 何を設定するか |
 |-----| -----|
-| SIGNING_KEY | `base64 -i  ~/GoogleDriveMirror/backup/release_keystore_for_github_actions2.jks | tr -d '\n' | pbcopy` |
+| SIGNING_KEY | 下のpbcopy|
 | SIGNING_KEY_ALIAS | release |
-| SIGNING_KEY_PASSWORD | aa |
-| SIGNING_STORE_PASSWORD | aa |
+| SIGNING_KEY_PASSWORD | パスワードマネージャから |
+| SIGNING_STORE_PASSWORD | パスワードマネージャから |
+
+```
+base64 -i  ~/your/pass/to/release_keystore_for_github_actions2.jks | tr -d '\n' | pbcopy
+```
