@@ -26,3 +26,13 @@ $ ollama run gemma4:e2b
 ```
 
 7.2GBのダウンロードとか…
+
+その後は
+
+settings.jsonに以下を書くらしい。
+
+```
+  "lazyjp.apiKey": "ollama",
+  "lazyjp.apiUrl": "http://localhost:11434/v1",
+  "lazyjp.model": "gemma4:e2b"
+```
