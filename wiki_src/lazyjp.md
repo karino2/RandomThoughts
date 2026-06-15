@@ -27,7 +27,8 @@ $ ollama run gemma4:e2b
 
 7.2GBのダウンロードとか…
 
-その後は
+VSCode側ではCmd+pでlazyjpとするとSet API Keyというのがあるので、これを選んで`ollama`を入れるらしい。
+
 
 settings.jsonに以下を書くらしい。
 
@@ -36,3 +37,28 @@ settings.jsonに以下を書くらしい。
   "lazyjp.apiUrl": "http://localhost:11434/v1",
   "lazyjp.model": "gemma4:e2b"
 ```
+
+これと同じになるように、Code＞Preferences＞Setttingsからlazyjpで検索してそれっぽいもので埋める。
+
+## 終わり方
+
+ollamaからの終わりは/exit
+
+```
+>>> /exit
+```
+
+あとは
+
+```
+brew services stop ollama
+```
+
+で良い。
+
+## 使ってみた感想、e2bでは全然駄目
+
+無事動いた。
+
+ローマ字を入れてCmd+Alt+Jで行単位で変換出来るが、誤変換が多すぎてまったく使い物にならない。しかも遅すぎる。
+e2bじゃ駄目だな。
