@@ -142,7 +142,7 @@ func main() {
 
 ちなみにドット３つはコンパイル時に要素数に展開されるらしい。
 
-## lorcaとWails
+## lorcaとWailsとwebview_go
 
 Electron的な事をやりたい、みたいな話。
 
@@ -158,6 +158,12 @@ lorcaはChromeのデバッグなんちゃらの機能を使って動くとの事
 [[mdvcat]]を移植してみた＞[karino2/mdvcat_lorca: lorca porting of mdvcat.](https://github.com/karino2/mdvcat_lorca)
 
 こういうのはこれでいいかもな。
+
+なんかGeminiに頼んでlorcaをwebview_goにしてもらったらあっさり動く。
+
+[karino2/mdvcat_go: mdvcat port to go, using webview_go](https://github.com/karino2/mdvcat_go)
+
+webView_goでいい気がしてきた。
 
 ## ASTのノード的な表現
 
