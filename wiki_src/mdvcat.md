@@ -6,6 +6,10 @@
 
 パフォーマンスがだいぶ良いので、コマンドラインオプションをつけてhomebrewで公開すれば流行るかもしれない。
 
+.NETがhomebrewがランタイムをアップデートして動かなくなるのにうんざりしてgoで書き直し。
+
+- [karino2/mdvcat_go: mdvcat port to go, using webview_go](https://github.com/karino2/mdvcat_go)
+
 ## usage
 
 ```
