@@ -122,3 +122,22 @@ c_cpp_properties.jsonに以下のように書く。
                 "${env:MY_QT_LIB_PATH}"                
             ],
 ```
+
+## Gemma 4をagentに使ってみる
+
+Copilotの無料トークンを使い果たしたのでGemma e2bをagentに使ってみる。
+
+[How to Use Gemma 4 in VS Code: Setup, Extensions, and Coding Workflows](https://sagnikbhattacharya.com/blog/gemma-4-vscode)
+
+Continueという拡張を入れるらしい。やってみよう。
+ollama関連は[[lazyjp]]にあるように以下。
+
+```
+$ brew services start ollama
+$ ollama run gemma4:e2b
+```
+
+で、上のブログに書かれているように設定してドロップダウンから選んだらchatは出来るようになった。
+ただCopilotのように頼むと全部やってくれる感じでは無いなぁ（具体的にどのファイルでやりたいかを質問仕返してくる）。
+
+もうちょっとやる気がある時に実際に作業してみよう。
