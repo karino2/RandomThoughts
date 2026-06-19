@@ -4,7 +4,11 @@
 
 [楽天: ZTE Speed Wi-Fi HOME 5G L13](https://a.r10.to/h5qpp7)
 
-13,847円に1300ポイントくらいがついて買う。
+13,847円に1300ポイントくらいがついて買う。12500円相当くらいか。
+
+設定はこのサイトを参考に＞[「図解」Speed WiFi Home5G L13の楽天モバイル設定方法-最新版 - 株式会社AFREVI（アフレビ）](https://afrevi.co.jp/speedwifihome5g-l13-rakutenmobile)
+
+今の所問題無さそう。
 
 ## Galaxy 5G Mobile WiFi (SCR01) 2023-08-26〜
 
