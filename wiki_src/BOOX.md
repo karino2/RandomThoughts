@@ -1,12 +1,14 @@
-[[タブレット]], [[グッズ関連]], [[キーボード]]
+[[タブレット]], [[グッズ関連]], [[キーボード]], [[自作アプリ]]
 
 AndroidのE-inkデバイス。
 
 - [[PngNote]] BOOX用に書いたノートアプリ。
-- [[マグナスケッチ]] BOOX用に書いた磁気ボードみたいなアプリ
-- [karino2/ToggleOrient: Toggle portlait-landscape on Android.](https://github.com/karino2/ToggleOrient)
-- [karino2/SSaverSetter: Receive image intent and set to ScreenSaver, for BOOX only.](https://github.com/karino2/SSaverSetter) マグナスケッチをスクリーンセーバーにするために。
 - [[Rhinocs]] これはBOOX以外でも使えるけど。
+- [[Karino2DIYApp]] に自分用アプリをいろいろ書いている。
+  - [[マグナスケッチ]] BOOX用に書いた磁気ボードみたいなアプリ
+  - [karino2/ToggleOrient: Toggle portlait-landscape on Android.](https://github.com/karino2/ToggleOrient)
+  - [karino2/SSaverSetter: Receive image intent and set to ScreenSaver, for BOOX only.](https://github.com/karino2/SSaverSetter) マグナスケッチをスクリーンセーバーにするために。
+  - [Karino2DIYApp/Kakito: BOOX用漢字書き取りアプリ](https://github.com/Karino2DIYApp/Kakito)
 
 
 ## Note3

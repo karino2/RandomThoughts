@@ -1,5 +1,11 @@
 [[WiMax]], [[楽天モバイル]]
 
+## ZTE Speed Wi-Fi HOME 5G L13(ZTR02) 2026-06-19〜
+
+[楽天: ZTE Speed Wi-Fi HOME 5G L13](https://a.r10.to/h5qpp7)
+
+13,847円に1300ポイントくらいがついて買う。
+
 ## Galaxy 5G Mobile WiFi (SCR01) 2023-08-26〜
 
 - [UQ WiMaxから楽天モバイル2回線に乗り換え - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2024/10/09/uq_wimax_to_rakuten_2line.html)
