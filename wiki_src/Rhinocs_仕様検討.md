@@ -1,5 +1,52 @@
 [[Rhinocs]]の仕様の検討を残しておく。
 
+## 行のリスト的なインターフェース 2026-06-20 (土)
+
+ここまで割とemacs lispやxyzzyに似たインターフェースを用意してきたが、
+バッファ全体の変更はmapとか使って行単位のリストとして処理出来る方がJS的かな、と思う。
+
+この時にundoバッファをどうするか？という問題があるが、全部テキストを保存していくのもやりすぎかなぁ。
+本当は行の差分からreplaceでの表現を作り出せると良いのだが。
+ちょっと難しそうなので、単に変更の行だけまるごと保存、くらいでいいかもしれない。
+
+まずはバッファを行のリストとして取り出す、`get_lines()`を提供する。
+そして結果として行のリストを渡して置換とみなす、`bulk_replace(lines)`を提供するとどうだろう？
+
+```js
+const lines = get_buffer_lines()
+  .map(l=> { /* 何か正規表現で置換とか */ });
+bulk_replace(lines);
+```
+
+一度変数に入れないといけないのはダサいが、JSではそうするものだとgeminiが言ったのでこれでいいかな。
+
+### API名の検討
+
+elispだと現在のバッファはcurrent_bufferで、Rhinocsはselected_bufferにしている。
+その理屈でいけばselected_lines()とかcurrent_linesの方が良いのだろうが、
+少し暗号的にも思える。
+
+単にBufferのAPIにしておく方がいいかもしれない。
+
+```js
+const lines = selected_buffer()
+                .getLines()
+                .map(l=>{/* 何か処理 */);
+bulk_replace(lines);
+```
+
+こっちの方がいいか。selected_buffer_linesとかの関数は提供してもいい気もするが。
+
+```js
+const lines = selected_buffer_lines()
+                .map(l=>{/* 何か処理 */);
+bulk_replace(lines);
+```
+
+selected_buffer, selected_windowの流れからすればこんな感じか。
+get_buffer_linesとselected_bufferは一貫性が無いな。
+
+
 ## ファイラーに必要なAPI 2026-06-06 (土)
 
 JS側で実装するために必要な低レベルAPIを考える。
