@@ -2,6 +2,8 @@
 
 自分用のAndroidアプリを置くOrganizationとしてKarino2DIYAppというOrganizationを作った。[Karino2DIYApp repositories](https://github.com/orgs/Karino2DIYApp/repositories)
 
+- [Karino2DIYApp/CropPagenate](https://github.com/Karino2DIYApp/CropPagenate) PDF Reader
+
 ## モチベーション
 
 自作アプリをagentで作りまくるようになった結果、いちいちapkを作ったりするのが面倒になってきた。
