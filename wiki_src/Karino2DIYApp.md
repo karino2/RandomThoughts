@@ -30,6 +30,12 @@ release.ymlは以下の移行手順に書いてあるものを使う。
 - .github/workflows下にrelease.ymlを作る、下のセクションのシェルスクリプトを実行
 - versionNameを1に変えてv1タグをpush
 
+ちなみにprivateだったりOrg下では無くkarino2下になっているとCIがこけた時のメッセージは、以下みたいにTag numberうんちゃら、と出る。
+
+```
+"/home/runner/work/CropPagenate/CropPagenate/release-key.jks": Tag number over 30 is not supported
+```
+
 ## 既存レポジトリの移行手順
 
 - レポジトリのSettings＞General＞Danger Zone＞Transfer ownershipでKarino2DIYAppにする
