@@ -20,6 +20,8 @@ bulk_replace(lines);
 
 一度変数に入れないといけないのはダサいが、JSではそうするものだとgeminiが言ったのでこれでいいかな。
 
+行単位でMyers diffを計算するのがいいかもしれん。
+
 ### API名の検討
 
 elispだと現在のバッファはcurrent_bufferで、Rhinocsはselected_bufferにしている。
