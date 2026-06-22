@@ -244,3 +244,12 @@ Type I Error: false positive
 
 - [一人読書会ライブ: 原論文から解き明かす生成AI、2.1分布仮説 - YouTube](https://www.youtube.com/live/mN5_whp03DE)
 - [一人読書会ライブ: 原論文から解き明かす生成AI、2.1分布仮説続き - YouTube](https://www.youtube.com/live/CQ4yysTesZk)
+
+
+## NMT subword
+
+- transliteration: 音訳
+- cognate: 同根語
+- loanword: 借用語
+
+character copyingは人名などの固有名詞を翻訳せずそのままコピーする事らしい。
