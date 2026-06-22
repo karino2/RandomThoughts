@@ -9,11 +9,11 @@
 本当は行の差分からreplaceでの表現を作り出せると良いのだが。
 ちょっと難しそうなので、単に変更の行だけまるごと保存、くらいでいいかもしれない。
 
-まずはバッファを行のリストとして取り出す、`get_lines()`を提供する。
+まずはバッファを行のリストとして取り出す、`selected_buffer_lines()`を提供する。
 そして結果として行のリストを渡して置換とみなす、`bulk_replace(lines)`を提供するとどうだろう？
 
 ```js
-const lines = get_buffer_lines()
+const lines = selected_buffer_lines()
   .map(l=> { /* 何か正規表現で置換とか */ });
 bulk_replace(lines);
 ```
@@ -22,11 +22,19 @@ bulk_replace(lines);
 
 行単位でMyers diffを計算するのがいいかもしれん。
 
+[DiffUtil  -  API reference  -  Android Developers](https://developer.android.com/reference/androidx/recyclerview/widget/DiffUtil) こんなのあるんか！
+
+[recyclerview/recyclerview/src/main/java/androidx/recyclerview/widget/DiffUtil.java - platform/frameworks/support - Git at Google](https://android.googlesource.com/platform/frameworks/support/+/refs/heads/androidx-main/recyclerview/recyclerview/src/main/java/androidx/recyclerview/widget/DiffUtil.java#236)　areItemsTheSameでスネークを実行するので、これは文字列のイコールを返すべきっぽいな。
+
 ### API名の検討
 
-elispだと現在のバッファはcurrent_bufferで、Rhinocsはselected_bufferにしている。
+get_buffer_linesにしようかと思ったが、selected_bufferと一貫性がないと思ったのでその検討のメモ。
+
+elispだと現在のバッファはcurrent_bufferで、現在のウィンドウはselected_window。
+これは一貫性がない気がしていて、xyzzyはselected_bufferなので、Rhinocsはselected_bufferにしている。
+
 その理屈でいけばselected_lines()とかcurrent_linesの方が良いのだろうが、
-少し暗号的にも思える。
+selected_linesはいかにも現在選択中の行を返しそうだし、currentも現在のカーソル位置に関連したものがかえってきそうでややこしい。
 
 単にBufferのAPIにしておく方がいいかもしれない。
 
@@ -37,7 +45,7 @@ const lines = selected_buffer()
 bulk_replace(lines);
 ```
 
-こっちの方がいいか。selected_buffer_linesとかの関数は提供してもいい気もするが。
+こっちの方がいいか。selected_buffer_linesとかの関数はラッパとして提供してもいい気もするが。
 
 ```js
 const lines = selected_buffer_lines()
