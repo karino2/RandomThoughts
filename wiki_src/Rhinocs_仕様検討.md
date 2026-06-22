@@ -56,6 +56,14 @@ bulk_replace(lines);
 selected_buffer, selected_windowの流れからすればこんな感じか。
 get_buffer_linesとselected_bufferは一貫性が無いな。
 
+bulk_replaceの方はちょっと悩ましい。
+
+replace-matchとかがemacs lispとかなので、replace_bulkの方が正しいのだが、目的語じゃないしなぁ。
+
+replace_new_linesとかの方がただしいのだろうが、長いわりには挙動がわかりにくいしな。
+という事でbulk_replaceのままにしておく。
+
+勝手に差分がundoバッファに入る感じで。
 
 ## ファイラーに必要なAPI 2026-06-06 (土)
 
