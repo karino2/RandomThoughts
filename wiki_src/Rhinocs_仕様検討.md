@@ -56,6 +56,8 @@ bulk_replace(lines);
 selected_buffer, selected_windowの流れからすればこんな感じか。
 get_buffer_linesとselected_bufferは一貫性が無いな。
 
+buffer_substringとの関連でいけばbuffer_linesとかの方がいいかもしれないが、第三引数無しだと暗号的なのでslected_buffer_linesにしておこう。
+
 bulk_replaceの方はちょっと悩ましい。
 
 replace-matchとかがemacs lispとかなので、replace_bulkの方が正しいのだが、目的語じゃないしなぁ。
