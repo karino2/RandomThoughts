@@ -258,6 +258,7 @@ Neural Machine Translation of Rare Words with Subword Unitsの論文を読んだ
 - morpheme: 形態素
   - morphology: 《言語学》形態論
 - affixation: 接辞添加
+- OOV: Out of Vocabulary
 
 character copyingは人名などの固有名詞を翻訳せずそのままコピーする事らしい。
 
@@ -295,3 +296,5 @@ character copyingは人名などの固有名詞を翻訳せずそのままコピ
 - サブワードへの分割手法ごとに、vocab size, text size, 翻訳品質 の良し悪しを比較
 
 WMT 2015の 英語ー＞ドイツ語(420万センテンス） と 英語ー＞ロシア語（260万センテンス） らしい。
+
+Unigram F1というのは、翻訳結果に出て来る単語がどのくらい解答文の単語と一致しているかを測る指標らしい。へー。
