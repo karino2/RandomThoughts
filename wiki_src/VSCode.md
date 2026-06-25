@@ -147,4 +147,17 @@ $ ollama run gemma4:e2b
 ホームルーターを導入してダウンロードが少しマシになったので、e4bも試してみる。
 Continueというのはなんかいまいちな気がしたので以下で言及のあったOAI COmpatible Provider for Copilotを試してみる。 [Google Gemma4 via VSCode : r/ollama](https://www.reddit.com/r/ollama/comments/1sdom5v/google_gemma4_via_vscode/)
 
-Cmd+Shift+PでOAICopilot: Open Configuration UIを開くのか。URIは`http://localhost:11434/v1`か？
+Cmd+Shift+PでOAICopilot: Open Configuration UIを開くのか。
+
+Provider ManagementでAdd Providerをして
+
+- Provider ID: 適当（local ollamaとか）
+- BaseURL: `http://localhost:11434/v1`
+- API Key: ollama（たぶんなんでも良いと思うけど）
+- API Model: Ollama
+
+API ModelはOpen AIにしないとCopilot Chatからは使えない？
+
+そしてAdd Modelsする。
+
+- Model ID: gemma4:e4b
