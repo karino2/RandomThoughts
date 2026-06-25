@@ -141,3 +141,10 @@ $ ollama run gemma4:e2b
 ただCopilotのように頼むと全部やってくれる感じでは無いなぁ（具体的にどのファイルでやりたいかを質問仕返してくる）。
 
 もうちょっとやる気がある時に実際に作業してみよう。
+
+### e4bをOAI Compatible Provider for Copilotで使ってみる
+
+ホームルーターを導入してダウンロードが少しマシになったので、e4bも試してみる。
+Continueというのはなんかいまいちな気がしたので以下で言及のあったOAI COmpatible Provider for Copilotを試してみる。 [Google Gemma4 via VSCode : r/ollama](https://www.reddit.com/r/ollama/comments/1sdom5v/google_gemma4_via_vscode/)
+
+Cmd+Shift+PでOAICopilot: Open Configuration UIを開くのか。URIは`http://localhost:11434/v1`か？
