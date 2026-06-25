@@ -142,9 +142,35 @@ $ ollama run gemma4:e2b
 
 もうちょっとやる気がある時に実際に作業してみよう。
 
-### e4bをOAI Compatible Provider for Copilotで使ってみる
+### e4bを試してみる。
 
 ホームルーターを導入してダウンロードが少しマシになったので、e4bも試してみる。
+
+Continueというのはなんかいまいちだったので、いろいろ試していた所、ollam  launch vscodeで起動すると設定なんていらないぜ、
+とChatGPTが言ったのでそれで試す。
+
+1. ターミナルからollama launch vscodeを実行し、モデルを選び、VSCodeを再起動
+2. Copilot Chatのモデルの所のドロップダウンからgemma4: e4b(ollama)を選ぶ
+3. 「こんにちは」と打つもresponse fail
+
+以下のcurlとかはそれっぽい結果を返すので、どうもモデルは動いてそうだが。
+
+```
+curl http://localhost:11434/api/generate -d '{
+  "model": "gemma4:e4b",
+  "prompt": "こんにちは",
+  "stream": false
+}'
+```
+
+qwen3:8bを試してみたらこちらは出来たので、なんか相性の問題があるっぽい。
+
+ただいろいろ試していたらメモリがいっぱいになって何も操作出来ない感じになってしまった。ちょっと実用には厳しいかなぁ。
+
+### OAI Compatible Provider for Copilotで使ってみる（失敗）
+
+追記: ollama launch vscodeの方が良さそう
+
 Continueというのはなんかいまいちな気がしたので以下で言及のあったOAI COmpatible Provider for Copilotを試してみる。 [Google Gemma4 via VSCode : r/ollama](https://www.reddit.com/r/ollama/comments/1sdom5v/google_gemma4_via_vscode/)
 
 Cmd+Shift+PでOAICopilot: Open Configuration UIを開くのか。
@@ -161,3 +187,7 @@ API ModelはOpen AIにしないとCopilot Chatからは使えない？
 そしてAdd Modelsする。
 
 - Model ID: gemma4:e4b
+
+「こんにちは」にもreponse failする。駄目そう。
+
+ollama launch vscodeでちゃんと設定されたもっと公式っぽいのが動くのでそちらの方が良さそう。

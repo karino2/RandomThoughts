@@ -62,3 +62,22 @@ brew services stop ollama
 
 ローマ字を入れてCmd+Alt+Jで行単位で変換出来るが、誤変換が多すぎてまったく使い物にならない。しかも遅すぎる。
 e2bじゃ駄目だな。
+
+## e4bで試した、全然違う日本語出す！ 2026-06-25 (木)
+
+e4bで試してみた所、入力したのと全く違う文を出す！
+
+入力したのは以下。
+
+```
+korehatesutodesu. nihonngogadounyuuryokudekikriunokatamesitemitaitoomoimasu.
+mecyaosoikedonanikahahyoujidekita.tadasikuugoiteirukana?
+```
+
+- 「これはテストです。日本語がどう入力できるのかためしてみたいと思います。」
+- 「めっちゃ遅いけど何かは入力出来た。正しく動いているかな？」
+
+```
+これテストです。日本語がどんな入出力できるか試してみたいと思います。
+めちゃくちゃに具合でも悪いのかな？大丈夫？
+```
