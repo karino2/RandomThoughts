@@ -17,6 +17,7 @@ innerSKKは廃止してダイアログでAndroidのEditTextを出すような作
 
 **Dogfoodメモ**
 
+- preeditでC-nとかが動くのも良くない
 - preeditでC-kが効いているがたぶん良く無い。(でもどうするのがいいかな？)
 - DONE ... ｢りふぁk｣と入力してバックスペースを二回以上押してもkより前が消えない
 - DONE ... cyuuで｢ちゅう｣にならない
