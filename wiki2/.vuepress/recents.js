@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91IntroductionToAlgorithms.html", "text": "【書籍】IntroductionToAlgorithms"},
     {"link": "webviewjs.html", "text": "webviewjs"},
     {"link": "Neutralinojs.html", "text": "Neutralinojs"},
     {"link": "Electron.html", "text": "Electron"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E3%82%B5%E3%83%BC%E3%83%95%E3%82%A3%E3%83%B3.html", "text": "サーフィン"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "%E3%83%90%E3%82%A4%E3%82%AF.html", "text": "バイク"},
-    {"link": "Rhinocs.html", "text": "Rhinocs"},
    ]
 }
 ]
