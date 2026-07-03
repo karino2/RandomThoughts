@@ -1,4 +1,4 @@
-[[技術的なメモ]], [[数学]], [[書籍]]
+[[技術的なメモ]], [[数学]], [[書籍]], [[機械学習]]
 
 [amazon: Elements of Information Theory](https://www.amazon.co.jp/dp/0471241954?&linkCode=ll2&tag=karino203-22&ref_=as_li_ss_tl) の事。
 情報理論の定番教科書その１（その2はMacKey）。
