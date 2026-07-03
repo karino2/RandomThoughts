@@ -1,4 +1,9 @@
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01NBRG0UA&linkId=ead6c4475d5b011ed76f9b1ca9f7b7c8"></iframe>
+- [amazon: The Art of Computer Programming Volume 1 Fundamental Algorithms Third Edition 日本語版
+](https://www.amazon.co.jp/dp/4048694022?&linkCode=ll2&tag=karino203-22&linkId=bd4f8b6285ad24296c2a47c5e6978574&ref_=as_li_ss_tl)
+- [amazon: The Art of Computer Programming Volume 2 Seminumerical Algorithms Third Edition 日本語版
+](https://www.amazon.co.jp/dp/4048694162?&linkCode=ll2&tag=karino203-22&linkId=51d2b189605f3f8127f303be51633a68&ref_=as_li_ss_tl)
+- [amazon: The Art of Computer Programming Volume 3 Sorting and Searching Second Edition 日本語版
+](https://www.amazon.co.jp/dp/4048694316?&linkCode=ll2&tag=karino203-22&linkId=54ae63953692b84bc477f7546d78fa31&ref_=as_li_ss_tl)
 
 クヌース先生の有名な本。
 全部読む、というよりは、仕事で必要になる都度買って必要な所だけ読んでいる。
@@ -18,7 +23,8 @@
 
 ソートが必要になったのでVol 3のあたりを読んだ。
 
-<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=karino203-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B087YT9S1D&linkId=afff70b0ab53f2e15863a00826d2a8a7"></iframe>
+[amazon: The Art of Computer Programming Volume 3 Sorting and Searching Second Edition 日本語版
+](https://www.amazon.co.jp/dp/4048694316?&linkCode=ll2&tag=karino203-22&linkId=54ae63953692b84bc477f7546d78fa31&ref_=as_li_ss_tl)
 
 MIXマシンと言う仮想的なCPU向けのアセンブリ、MIXALというのでアルゴリズムを記述していていろいろ解析するのだが、
 このアセンブリがかなり読みにくい。命令自身を書き換えるのが読みづらさをアップしている、というのもあるし、
