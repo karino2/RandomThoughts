@@ -12,6 +12,9 @@
 - [[WebUI]]
 - [Introduction - Wails](https://wails.io/docs/introduction)
 - [[webviewjs]]
+- [[Neutralinojs]]
+- [Elanis/web-to-desktop-framework-comparison: An objective comparison of multiple frameworks that allow us to "transform" our web apps to desktop applications.](https://github.com/Elanis/web-to-desktop-framework-comparison)
+- [[Wails]]
 
 ### Deskgapで、パッケージングの方法
 
