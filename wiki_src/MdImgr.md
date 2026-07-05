@@ -97,12 +97,6 @@ $ open build/bin/MdImgr.app --args /to/target/dir '![imgs/Soreppoku/$1](imgs/Sor
 
 ブログやRandomThoughtsの画像などをランチャーからシンボルだけ指定して開く、みたいな使い方が出来るように。
 
-##  追加したい機能 2026-07-03 (金)
-
-- 外部からフォルダとテンプレートを渡して起動する機能
-  - ブログやRandomThoughtsのどちらかを選び、シンボル決めるだけで追加していける感じにしたい
-
-
 ----
 
 開発時に考えたこと
