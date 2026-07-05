@@ -3,6 +3,7 @@ md用の画像管理ソフトが欲しい。
 
 - [karino2/MdImgr: Image manager for markdown](https://github.com/karino2/MdImgr)
 - [[Wails]]で作っている
+- [[kickimgr]]
 
 ## 機能
 
