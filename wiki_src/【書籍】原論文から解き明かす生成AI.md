@@ -333,7 +333,107 @@ vocabは空白が除去されたものになっている。これはもともと
 
 ### learn_bpeのコード
 
-抜粋しているコードは良く意味が分からないのでprune_statsを見る。
+抜粋しているコードは良く意味が分からないのでいろいろ見ていったが、結局最初から見ていく必要がありそう。
+
+まずvocabが何か？を見ていみると、まずはvocabは単語をキーにして頻度をvalueとした辞書を作っている。
+単純にファイルを開いて空白でsplitしていて、ファイルの方には文章のテキストが入っている（全部小文字っぽい）。
+
+例えば以下か。
+
+```python
+vocab = {"the": 10, "a": 23, ...}
+```
+
+その後にこれを以下のように変更している。(is_byteは消してcharの方だけ残してる）
+
+```python
+    vocab = get_vocabulary(infile, is_dict, is_bytes, num_workers)
+    vocab = dict([(tuple(x[:-1])+(x[-1]+'</w>',) ,y) for (x,y) in vocab.items()])
+    sorted_vocab = sorted(vocab.items(), key=lambda x: x[1], reverse=True)
+```
+
+vocabはキーが
+
+```python
+('t' 'h' 'e</w>')
+```
+
+のタプルで、値は頻度のまま、となるか。
+これがtoy_bpeと違うのが酷いなぁ。
+
+ちなみに関数の引数側でvocabと呼んでいるものはだいたいsorted_vocab。
+
+次にindices。これは以下でstatsを一緒に作っている。
+
+```python
+def get_pair_statistics(vocab):
+    """Count frequency of all symbol pairs, and create index"""
+
+    # data structure of pair frequencies
+    stats = defaultdict(int)
+
+    #index from pairs to words
+    indices = defaultdict(lambda: defaultdict(int))
+
+    for i, (word, freq) in enumerate(vocab):
+        prev_char = word[0]
+        for char in word[1:]:
+            stats[prev_char, char] += freq
+            indices[prev_char, char][i] += 1
+            prev_char = char
+
+    return stats, indices
+```
+
+`indices[pair]`でdictが返り、そのキーはそのbpeが登場したwordを表すsorted_vocabのindex。valueはそのword内に幾つ入っていたか。
+結構ややこしいがだいたい分かった。
+
+ちなみにstatsはペアのfreq。
+
+次に本を読んでいて良くわからなかったのがbig_statsとstatsの関係。
+なんかstatsが同じに見えるような？
+
+と元コードを見るとforの最後が以下だ。
+
+```python
+        changes = replace_pair(most_frequent, sorted_vocab, indices, is_bytes)
+        update_pair_statistics(most_frequent, changes, stats, indices)
+        stats[most_frequent] = 0
+        if not i % 100:
+            prune_stats(stats, big_stats, threshold)
+```
+
+いやいや、ここ無いと分からんでしょ！？と思ってしまうが。0を入れる事でmost_frequentは取り除いている訳だな。
+
+replace_pairは以下みたいな感じ（多少改変している）
+
+```python
+    iterator = indices[pair].items()
+    for j, freq in iterator:
+        if freq < 1:
+            continue
+        word, freq = vocab[j]
+        new_word = split_char.join(word)
+        new_word = pattern.sub(pair_str, new_word)
+        new_word = tuple(new_word.split(split_char))
+
+        vocab[j] = (new_word, freq)
+        changes.append((j, new_word, word, freq))
+```
+
+new_wordはタプルをsplit_charでジョインしている。`t h e</w>`とかになる訳だな。
+で、pair_strは例えば`he</w>`なら'h e</w>'とか空白でつなげたものになっていて、これを'he</w>'に置き換える。
+
+そして最後にsplitするので、
+
+`(t, he</w>)` というタプルになる訳か。
+
+vocabがまずは文字ごとのタプルになって、その後にbpeで置き換えられていくんだな。ややこしい。
+
+update_pair_staticsをちらっと見ると、これは'he</w>'とマージしたら`(t, h)`のペアの頻度を下げたりしている。
+当然`t, he</w>`の頻度はその分あげるのだろう。
+
+prune_statsを見る。
 
 ```python
 def prune_stats(stats, big_stats, threshold):
@@ -351,3 +451,12 @@ def prune_stats(stats, big_stats, threshold):
             else:
                 big_stats[item] = freq
 ```
+
+freqがthreshold以下のものをbig_statsに移すとはこういう感じか。
+
+statsから低頻度のものを一時移して高頻度だけのものを残し、その中でbpeの統計をとったり置き換えたりの処理をしていく。
+statsやbig_statsはあくまで調べるbpであってvocabなどはそのまま全体を見ている。
+
+大きい頻度のものが全部処理されてしまったりマージ処理の分かれ具合でthresholdより下になってしまったら、そもそもにbig_statsの方にもっと大きいものがあるはずなので全体を取り直してまた再計算しましょう、という事かな。マージ処理で減少するケースが本当にあるかどうかはコード動かしてみないと自信が持てないが。
+
+まぁだいたいは理解したか。いやぁ、これは本文の解説はいまいちだな。演習問題を答えるにはちゃんと元ソースを読む必要があるので読めって事なんだろうが。
