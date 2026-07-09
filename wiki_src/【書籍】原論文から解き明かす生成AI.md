@@ -330,3 +330,24 @@ vocabは空白が除去されたものになっている。これはもともと
 `est</w>`がloよりも先にサブワードとして認識されるのはこのBPEのアルゴリズムの動きを理解する助けにはなる気がする。（BPEのBPEを置き換えるので二文字では無く3文字が置き換え対象になるメカニズム）。
 
 あと単語の頻度に大きく依存するのもこのアルゴリズムからは予想出来る。
+
+### learn_bpeのコード
+
+抜粋しているコードは良く意味が分からないのでprune_statsを見る。
+
+```python
+def prune_stats(stats, big_stats, threshold):
+    """Prune statistics dict for efficiency of max()
+
+    The frequency of a symbol pair never increases, so pruning is generally safe
+    (until we the most frequent pair is less frequent than a pair we previously pruned)
+    big_stats keeps full statistics for when we need to access pruned items
+    """
+    for item,freq in list(stats.items()):
+        if freq < threshold:
+            del stats[item]
+            if freq < 0:
+                big_stats[item] += freq
+            else:
+                big_stats[item] = freq
+```
