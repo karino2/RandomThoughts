@@ -1,9 +1,9 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%81%9D%E3%82%8C%E3%81%A3%E3%81%BD%E3%81%8F%E6%8F%8F%E3%81%8F%E3%82%B3%E3%83%841%E5%91%A8%E7%9B%AE.html", "text": "それっぽく描くコツ1周目"},
     {"link": "%E6%96%87%E5%AD%97%E5%88%97%E3%83%9E%E3%83%83%E3%83%81.html", "text": "文字列マッチ"},
     {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91IntroductionToAlgorithms.html", "text": "【書籍】IntroductionToAlgorithms"},
-    {"link": "%E3%81%9D%E3%82%8C%E3%81%A3%E3%81%BD%E3%81%8F%E6%8F%8F%E3%81%8F%E3%82%B3%E3%83%841%E5%91%A8%E7%9B%AE.html", "text": "それっぽく描くコツ1周目"},
     {"link": "Wiki%E3%81%A8%E6%89%8B%E6%9B%B8%E3%81%8D%E3%83%8E%E3%83%BC%E3%83%88%E3%81%AE%E8%9E%8D%E5%90%88.html", "text": "Wikiと手書きノートの融合"},
     {"link": "2026%E5%B9%B47%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年7月中旬の雑記"},
     {"link": "%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E6%9C%AC.html", "text": "アルゴリズム本"},
