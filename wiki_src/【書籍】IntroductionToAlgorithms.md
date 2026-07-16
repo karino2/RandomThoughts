@@ -3,10 +3,13 @@
 割と定番のアルゴリズムの本。[[【書籍】TheArtOfComputerProgramming]]でソートを読み終わったので、こちらも買って読んで見る事にする。
 自分が買ったのは3rd editionだがリンクは最新の4th editionにしておく。
 
+## 文字列マッチを読む 2026-07-16 (木)
+
+32.3から読んでいく。
+
 ## Dynamic Programing 2026-07-03 (金)
 
-Dynamic Programmingのあたりを読む。
-
+Dynamic Programmingのあたりを読む。＞ついでに[[サイコロ本]]の[[HMM]]を追う
 
 ## 2022-10-02
 
