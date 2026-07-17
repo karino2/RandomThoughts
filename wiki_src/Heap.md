@@ -1,4 +1,4 @@
-[[アルゴリズム本]], [[【書籍】IntroductionToAlgorithms]]
+[[アルゴリズム]], [[【書籍】IntroductionToAlgorithms]]
 
 Binary Heapに関するページ。Heapソートなどで使う。
 
