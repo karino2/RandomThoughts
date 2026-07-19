@@ -1,10 +1,10 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "SuffixArray.html", "text": "SuffixArray"},
     {"link": "2026%E5%B9%B47%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年7月中旬の雑記"},
     {"link": "Home.html", "text": "Home"},
     {"link": "%E3%81%9D%E3%82%8C%E3%81%A3%E3%81%BD%E3%81%8F%E6%8F%8F%E3%81%8F%E3%82%B3%E3%83%842%E5%91%A8%E7%9B%AE.html", "text": "それっぽく描くコツ2周目"},
-    {"link": "SuffixArray.html", "text": "SuffixArray"},
     {"link": "Rhinocs.html", "text": "Rhinocs"},
     {"link": "Rhinocs_%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97.html", "text": "Rhinocs_セットアップ"},
     {"link": "SKK.html", "text": "SKK"},
