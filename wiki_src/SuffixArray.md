@@ -2,6 +2,8 @@
 
 - [Suffix array - Wikipedia](https://en.wikipedia.org/wiki/Suffix_array)
 
+PngNoteのノートはあとで埋める。
+
 ## Enhanced Suffix Array
 
 Sentence Piece読んでいるとなんかSAの他にLとかRが出てきて何これ？ってなるので調べたら、どうもこれはEnhanced Suffix Arrayというものらしい。
