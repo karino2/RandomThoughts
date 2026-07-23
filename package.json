@@ -20,8 +20,13 @@
     "wiki2:build": "vuepress build wiki2"
   },
   "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.30",
+    "@vuepress/theme-default": "^2.0.0-rc.132",
     "markdown-it": "^14.1.0",
     "markdown-it-wikilinks": "github:karino2/markdown-it-wikilinks#normalize_nfc_for_filename",
-    "prismjs": "^1.30.0"
+    "prismjs": "^1.30.0",
+    "sass-embedded": "^1.100.0",
+    "vuepress": "^2.0.0-rc.30",
+    "vuepress-theme-hope": "^2.0.0-rc.107"
   }
 }
