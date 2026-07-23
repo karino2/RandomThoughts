@@ -56,9 +56,35 @@ $ mkdir wiki_src/.vuepress
 
 ### 別のマシンでのセットアップ
 
+viteが古いとかいろいろ言われたので
+
+- package.jsonからdevDependenciesでvuepress系を削除
+- package-lock.jsonを削除
+- node_modulesを削除
+
+をやってから上記のnpm installをやった。あとtheme-hopeが内と言われたので、以下を実行した。
+
 ```
-$ npm install
+$ npm install -D vuepress-theme-hope  --legacy-peer-deps
 ```
+
+なお最後はprimsjsのバージョンがvuepressの指定するバージョンと違うとか言われたから。
+
+これでインストールが出来た。
+
+### 実行
+
+```
+$ cd scirpts
+$ server_all.sh
+$ cd ..
+$ npm run wiki2:dev
+```
+
+これでアクセス出来た。
+
+
+
 
 ### WikiLink対応
 
