@@ -1,6 +1,7 @@
 [[アルゴリズム]]
 
 - [Suffix array - Wikipedia](https://en.wikipedia.org/wiki/Suffix_array)
+- [hillbig/esaxx: Automatically exported from code.google.com/p/esaxx](https://github.com/hillbig/esaxx) Sentence Pieceで使ってるのはこれかな。
 
 PngNoteのノートはあとで埋める。
 
