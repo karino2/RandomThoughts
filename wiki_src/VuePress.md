@@ -54,6 +54,12 @@ $ mkdir wiki_src/.vuepress
 
 これで、とりあえずdevで`http://localhost:8080/Home.html`にはアクセス出来た。
 
+### 別のマシンでのセットアップ
+
+```
+$ npm install
+```
+
 ### WikiLink対応
 
 とりあえず[spencerwooo/vuepress-markdown-it-wikilink: Wikimedia-style links for VuePress using the markdown-it parser](https://github.com/spencerwooo/vuepress-markdown-it-wikilink)を試してみよう。

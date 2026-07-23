@@ -25,3 +25,13 @@ $ neu run
 完成したので別ページにしておく＞[[kickimgr]]
 
 Macはembed-resourceは動かなさそうでバンドルを作るしか無さそう。
+
+## 新しいアプリの作り方
+
+blognewというコマンドを作ろう。
+
+```
+$ neu create blognew
+$ cd blognew
+$ neu run
+```
