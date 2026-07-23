@@ -1,4 +1,4 @@
-[[アルゴリズム本]]、[[書籍]]
+[[アルゴリズム本]]、[[書籍]]、[[アルゴリズム]]
 
 [amazon: Introduction to Algorithms, fourth edition (English Edition)](https://www.amazon.co.jp/dp/B094WZNKP2?&linkCode=ll2&tag=karino203-22&linkId=92c689364fbdb9495d57937c99df064c&ref_=as_li_ss_tl)
 
