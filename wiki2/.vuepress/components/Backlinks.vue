@@ -15,8 +15,12 @@ const fetchBacklinks = async () => {
   backlinks.value = []
 
   console.log('--- [Backlinks Debug] 開始 ---')
-  console.log(siteData.value)
-  console.log('deb2')
+  console.log('2. siteData:', siteData.value)
+
+  // サイト内の全ページ一覧を取得
+  // (VuePressのバージョンにより siteData.value.pages または routes等に入っています)
+  const pages = siteData.value?.pages || []
+  console.log(`3. 検出された全ページ数: ${pages.length} 件`)
 
   try {
     // const pagesData = vuepressClient.usePagesData() // getPagesData()
