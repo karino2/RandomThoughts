@@ -740,12 +740,12 @@ export const backlinkData = {
 "【書籍】自由論.md",
 "【書籍】本当に役立つ栄養学.md",
 ],
+"【書籍】プロテスタンティズムの倫理と資本主義の精神.md": [
+"【書籍】社会学史.md",
+],
 "2022年の花粉の記録.md": [
 "花粉.md",
 "雑多なメモ.md",
-],
-"【書籍】プロテスタンティズムの倫理と資本主義の精神.md": [
-"【書籍】社会学史.md",
 ],
 "【書籍】OpenGL4ShadingLanguageCook.md": [
 "CG.md",
@@ -1183,6 +1183,7 @@ export const backlinkData = {
 ],
 "SuffixArray.md": [
 "2026年7月下旬の雑記.md",
+"EnhancedSuffixArray.md",
 "アルゴリズム.md",
 ],
 "一人読書会ライブ.md": [
@@ -1423,6 +1424,9 @@ export const backlinkData = {
 "技術的なメモ.md",
 "書籍.md",
 "並列プログラム.md",
+],
+"EnhancedSuffixArray.md": [
+"SuffixArray.md",
 ],
 "アルカン.md": [
 "化学.md",
