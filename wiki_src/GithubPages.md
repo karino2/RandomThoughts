@@ -1,12 +1,13 @@
 github上にweb siteを持てる仕組み。
 無料で使えてかなり制限が少なく、jekyllを使っていろいろな事が出来る。
 
-## 外部リンク
+## 関連リンク
 
 - [GitHub Pages - Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.](https://pages.github.com/) 本家
 - [[VuePress]] サイトジェネレータだがGithubPagesと合わせて使う事が多いのでここに置く。
-- github pagesで使われてる jekyll のバージョン[About GitHub Pages and Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll) にDependency versionsというリンクがあり、そこからjekyllのバージョンが見れる（へんなjsonで） 2025/11時点では3.10.0との事
 - [[GithubPagesGallery]]
+- [[GithubPagesを使った画像置き場]]
+- github pagesで使われてる jekyll のバージョン[About GitHub Pages and Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll) にDependency versionsというリンクがあり、そこからjekyllのバージョンが見れる（へんなjsonで） 2025/11時点では3.10.0との事
 
 以下はjekyll関連でよく参照するもの。
 
