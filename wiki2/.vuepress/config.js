@@ -44,5 +44,32 @@ export default defineUserConfig({
     description: "公開用Wiki、雑多なジャンルのメモを全部入れておく所",
     extendsMarkdown: md => {
       md.use(wikilinks(options))
+
+      // viteのアップデートで imgs/HMM/0001.pngなどが相対パスで見てくれなくなった。
+      // そのため、imgs/... などの相対パスに自動で ./ を付与する補正処理を追加する。
+      const defaultRender = md.renderer.rules.image || function (tokens, idx, options, env, self) {
+        return self.renderToken(tokens, idx, options)
+      }
+
+      md.renderer.rules.image = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const srcIndex = token.attrIndex('src')
+
+        if (srcIndex >= 0) {
+          const src = token.attrs[srcIndex][1]
+
+          if (
+            src &&
+            !src.startsWith('http://') &&
+            !src.startsWith('https://') &&
+            !src.startsWith('/') &&
+            !src.startsWith('./')
+          ) {
+            token.attrs[srcIndex][1] = `./${src}`
+          }
+        }
+
+        return defaultRender(tokens, idx, options, env, self)
+      }
     },
 })
