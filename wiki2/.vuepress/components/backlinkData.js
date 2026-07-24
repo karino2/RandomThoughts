@@ -1569,6 +1569,7 @@ export const backlinkData = {
 "GithubPages.md": [
 "11ty.md",
 "GithubPagesGallery.md",
+"GithubPagesを使った画像置き場.md",
 "GitWiki.md",
 "UFASアーキテクチャ.md",
 "VuePress.md",
@@ -1616,6 +1617,7 @@ export const backlinkData = {
 ],
 "GithubPagesGallery.md": [
 "GithubPages.md",
+"GithubPagesを使った画像置き場.md",
 "PngNote.md",
 "Wikiと手書きノートの融合.md",
 "技術的なメモ.md",
@@ -2222,6 +2224,9 @@ export const backlinkData = {
 "【書籍】集合・位相入門.md": [
 "書籍.md",
 "数学.md",
+],
+"GithubPagesを使った画像置き場.md": [
+"GithubPages.md",
 ],
 "それっぽく描くコツ2周目.md": [
 "それっぽく描くコツ1周目.md",
