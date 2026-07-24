@@ -1426,6 +1426,7 @@ export const backlinkData = {
 "並列プログラム.md",
 ],
 "EnhancedSuffixArray.md": [
+"2026年7月下旬の雑記.md",
 "SuffixArray.md",
 ],
 "アルカン.md": [
