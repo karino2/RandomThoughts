@@ -968,6 +968,7 @@ export const backlinkData = {
 "EjiCell.md",
 "GithubPages.md",
 "GithubPagesGallery.md",
+"GithubPagesを使った画像置き場.md",
 "UFASアーキテクチャ.md",
 "Wikiと手書きノートの融合.md",
 "そのうちやりたい事.md",
@@ -2005,6 +2006,7 @@ export const backlinkData = {
 "2026年7月下旬の雑記.md",
 "GithubPages.md",
 "JavaScript.md",
+"RandomThoughts.md",
 "サブWikiの公開手順.md",
 "技術的なメモ.md",
 ],
@@ -2226,6 +2228,7 @@ export const backlinkData = {
 "数学.md",
 ],
 "GithubPagesを使った画像置き場.md": [
+"2026年7月下旬の雑記.md",
 "GithubPages.md",
 ],
 "それっぽく描くコツ2周目.md": [
