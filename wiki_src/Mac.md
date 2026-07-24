@@ -103,6 +103,7 @@ launchctl listでタスクの一覧が表示される。
 
 ```
 $ launchctl unload ~/Library/LaunchAgents/environment.plist
+$ launchctl unload regular_publish.plist
 ```
 
 ## Spotlightをオフにする

@@ -68,7 +68,7 @@ viteが古いとかいろいろ言われたので
 $ npm install -D vuepress-theme-hope  --legacy-peer-deps
 ```
 
-なお最後はprimsjsのバージョンがvuepressの指定するバージョンと違うとか言われたから。
+なお最後のオプションはprimsjsのバージョンがvuepressの指定するバージョンと違うとか言われたから。
 
 これでインストールが出来た。
 
@@ -82,9 +82,6 @@ $ npm run wiki2:dev
 ```
 
 これでアクセス出来た。
-
-
-
 
 ### WikiLink対応
 
@@ -239,3 +236,15 @@ export default defineUserConfig({
 ```
 
 かなりいい感じになった。
+
+### バックリンクの実装
+
+[[Wikiのリンクを扱うシェルスクリプト]]を元にjsonを生成して、それをcomponents/Backlink.vueからロードして書く感じにした。
+
+1. wiki2/.vuepress/components/backlinkData.js にバックリンク情報のjsonを生成(公開する定期実行スクリプトの一部にgen_backlinkdata.shを作って実行）
+2. wiki2/.vuepress/components/Backlinks.vue からこのjsをロードしてレンダリング
+3. wiki2/client.jsにBacklinks.vueを実行するコードを追加
+
+詳細は以下のコミットを参照。
+
+[Backlinkの実装 · karino2/RandomThoughts@533d73c](https://github.com/karino2/RandomThoughts/commit/533d73cc0efddee4376a3de195fb595eb1673c53)
