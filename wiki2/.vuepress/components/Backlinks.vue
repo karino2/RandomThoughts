@@ -51,31 +51,31 @@ watch(
 </script>
 
 <template>
-  <div class="backlinks-container">
+  <div v-if="backlinks.length > 0" class="backlinks-container">
     <div class="backlinks-content">
-      <div v-if="backlinks.length > 0">
-        <h3 class="backlinks-title">このページを参照している記事</h3>
-        <ul class="backlinks-list">
-          <li v-for="link in backlinks" :key="link.path" class="backlinks-item">
-            <RouterLink :to="link.path">{{ link.title }}</RouterLink>
-          </li>
-        </ul>
-      </div>
+      <h3 class="backlinks-title">このページを参照している記事</h3>
+      <ul class="backlinks-list">
+        <li v-for="link in backlinks" :key="link.path" class="backlinks-item">
+          <RouterLink :to="link.path">{{ link.title }}</RouterLink>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
 
 <style scoped>
 .backlinks-container {
-  padding-left: var(--sidebar-width, 20rem);
+  /* Hopeテーマの本文エリアと同じ横幅と中央寄せに自動追従 */
+  max-width: var(--content-width, 740px);
+  margin: 2rem auto 0;
+  padding: 0 2.5rem;
   box-sizing: border-box;
 }
 
 .backlinks-content {
-  max-width: var(--content-width, 740px);
-  margin: 0 auto 0;
-  padding: 1.5rem 2.5rem;
-  border-top: 1px solid var(--c-border, #e2e8f0);
+  padding-top: 1.5rem;
+  /* テーマのボーダー色変数を使うことでダークモードにも自動適応 */
+  border-top: 1px solid var(--theme-border-color, var(--c-border, #e2e8f0));
 }
 
 .backlinks-title {
