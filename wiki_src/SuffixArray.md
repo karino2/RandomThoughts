@@ -1,46 +1,27 @@
 [[アルゴリズム]]
 
 - [Suffix array - Wikipedia](https://en.wikipedia.org/wiki/Suffix_array)
-- [hillbig/esaxx: Automatically exported from code.google.com/p/esaxx](https://github.com/hillbig/esaxx) Sentence Pieceで使ってるのはこれかな。
+- [[EnhancedSuffixArray]] SuffixArrayにlcpテーブルや追加のテーブルを持たせてSuffix Treeと同様の能力を与えたもの
 
-PngNoteのノートはあとで埋める。
+## SA-IS
 
-## Enhanced Suffix Array
+以下の論文のアルゴリズムの略称。
 
-Sentence Piece読んでいるとなんかSAの他にLとかRが出てきて何これ？ってなるので調べたら、どうもこれはEnhanced Suffix Arrayというものらしい。
+[Linear Suffix Array Construction by Almost Pure Induced-Sorting - IEEE Conference Publication - IEEE Xplore](https://ieeexplore.ieee.org/document/4976463)
 
-[Enhanced Suffix Array.pdf](https://www.mi.fu-berlin.de/wiki/pub/ABI/RnaSeqP4/enhanced-suffix-array.pdf)
+線形時間で作れてアルゴリズムもめちゃ短い。たくさん解説がある。
 
-元論文はこれか。
+### S-typeとL-type
 
-[Replacing suffix trees with enhanced suffix arrays - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1570866703000650)
+- S-type: i番目からのサフィックス ＜  i+1番目からのサフィックス
+- L-type:  i番目からのサフィックス ＞ i+1番目からのサフィックス
 
-アイデアとしては、Suffix Arrayに追加のテーブルを幾つか持つ事で、Suffix Treeと同じアルゴリズム的性能を実現する、というもの。
-Suffix Treeの効率的な保持方法と解釈する事が出来る。
+### LMS
 
-追加のテーブルとしてはlcptableが基本。＞[LCP array - Wikipedia](https://en.wikipedia.org/wiki/LCP_array)
+iがS-typeでi-1がL-typeのiをLeft Most S-type, 略してLMSと言う。
+また、この時 `S[i]` をLMS characterという。
 
-## Suffix Tree
+### LMS-substring
 
-PngNote1
+iとjがLMSで、間がLMS characterで無い時、Si..jをLMS-substringと言う。
 
-## Suffix Array
-
-PngNote2
-
-## Repeat分析
-
-MUMなど。
-
-## lcpインターバルツリー
-
-### アルゴリズム4.1、インターバルのレポート
-
-より大きなlcpがでてくる都度スタックにpushしていき、より小さいlcpに出会ったらその一つ手前までをスタックトップのインターバルとして確定させていく。
-
-Fig. 2に従いインターバルツリーを上から出力していこうと思うとこんなアルゴリズムになると思う。
-
-### アルゴリズム4.4 ボトムアップトラバース
-
-lcpテーブルを順番に見ていってスタックを使うだけで、ツリーのトラバースをしたのと同じ結果が得られる。
-インターバルが確定した時にはその子どものリストを持つ形の処理は全てこれで行える。
