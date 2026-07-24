@@ -30,6 +30,12 @@ export default defineUserConfig({
       ],
       sidebar: recents,
       home: "Home.html",
+      locales: {
+        "/": {
+          prevLink: false,
+          nextLink: false,
+        },
+      },
       markdown: {
         highlighter: {
           type: "prismjs"
