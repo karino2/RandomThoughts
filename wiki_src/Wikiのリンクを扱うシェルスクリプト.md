@@ -105,6 +105,8 @@ $  linkinfo.sh | grep ":.*IntroductionToAlgorithms"
 
 曖昧検索も出来て良い。このくらいローテクに出来るのならメモの構造をこれに依存させてもいいかな。
 
+＞[[VuePress]]で公開しているRandomThoughtsのバックリンク実装をしてみた。いいね。
+
 ### 2hopリンク
 
 実装してみたが、大量のページが表示されてしまって駄目だな。
