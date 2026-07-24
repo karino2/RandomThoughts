@@ -16,7 +16,7 @@ const backlinks = ref([])
   return: "MFG.md"
 */
 const hpath2md = (hpath) => {
-  return hpath.substring(1).replace(/\.html$/, ".md")
+  return decodeURI(hpath.substring(1).replace(/\.html$/, ".md"))
 }
 
 const fetchBacklinks = async () => {
