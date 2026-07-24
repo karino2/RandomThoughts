@@ -250,6 +250,10 @@ export default defineUserConfig({
 - [Backlinkの実装 · karino2/RandomThoughts@533d73c](https://github.com/karino2/RandomThoughts/commit/533d73cc0efddee4376a3de195fb595eb1673c53)
 - [日本語のリンクがuri encodeされて来てしまう事があるのでdecodeを挟む（バックリンク） · karino2/RandomThoughts@12403a1](https://github.com/karino2/RandomThoughts/commit/12403a114bdfdf41a9a063e5e6811d276d85c47c)
 
+これで出来たが間に大きな余白が出るので少し調整。
+
+[バックリンクの上の余白を無くすべく、LayoutのpageBottomに移動 · karino2/RandomThoughts@711298d](https://github.com/karino2/RandomThoughts/commit/711298d6fedde474c692238962b29002ad9dfb22)
+
 ついでにprevとnextも消す。
 
 [Recentsのprevとnextは使わないので消す。 · karino2/RandomThoughts@a96de5c](https://github.com/karino2/RandomThoughts/commit/a96de5c9538d718d11893451fdfab07627503ef9)
