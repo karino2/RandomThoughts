@@ -1,8 +1,9 @@
 export const recents = [
  {text: "Recents:",
    children: [
-    {"link": "2026%E5%B9%B47%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年7月下旬の雑記"},
     {"link": "VuePress.html", "text": "VuePress"},
+    {"link": "Mac.html", "text": "Mac"},
+    {"link": "2026%E5%B9%B47%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年7月下旬の雑記"},
     {"link": "Neutralinojs.html", "text": "Neutralinojs"},
     {"link": "GithubPagesGallery.html", "text": "GithubPagesGallery"},
     {"link": "GithubPages.html", "text": "GithubPages"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "StorageAccessFramework.html", "text": "StorageAccessFramework"},
     {"link": "SAF.html", "text": "SAF"},
     {"link": "Home.html", "text": "Home"},
-    {"link": "%E6%96%87%E5%AD%97%E5%88%97%E3%83%9E%E3%83%83%E3%83%81.html", "text": "文字列マッチ"},
    ]
 }
 ]
