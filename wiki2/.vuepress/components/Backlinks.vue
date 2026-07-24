@@ -73,7 +73,7 @@ watch(
 
 .backlinks-content {
   max-width: var(--content-width, 740px);
-  margin: 2rem auto 0;
+  margin: 0 auto 0;
   padding: 1.5rem 2.5rem;
   border-top: 1px solid var(--c-border, #e2e8f0);
 }

@@ -5,7 +5,11 @@ export default defineClientConfig({
   enhance({ app }) {
     app.component('Backlinks', Backlinks)
   },
-  rootComponents: [
-    Backlinks
-  ]
+  setup() {},
+  rootComponents: [],
+  // ページの最下部レイアウトエリアに指定
+  layouts: {},
+  slots: {
+    'page.bottom': Backlinks
+  }
 })

@@ -247,6 +247,11 @@ export default defineUserConfig({
 
 詳細は以下のコミットを参照。
 
-[Backlinkの実装 · karino2/RandomThoughts@533d73c](https://github.com/karino2/RandomThoughts/commit/533d73cc0efddee4376a3de195fb595eb1673c53)
+- [Backlinkの実装 · karino2/RandomThoughts@533d73c](https://github.com/karino2/RandomThoughts/commit/533d73cc0efddee4376a3de195fb595eb1673c53)
+- [日本語のリンクがuri encodeされて来てしまう事があるのでdecodeを挟む（バックリンク） · karino2/RandomThoughts@12403a1](https://github.com/karino2/RandomThoughts/commit/12403a114bdfdf41a9a063e5e6811d276d85c47c)
 
-ついでにprevとnextも消す。いい感じになった。
+ついでにprevとnextも消す。
+
+[Recentsのprevとnextは使わないので消す。 · karino2/RandomThoughts@a96de5c](https://github.com/karino2/RandomThoughts/commit/a96de5c9538d718d11893451fdfab07627503ef9)
+
+いい感じになった。
