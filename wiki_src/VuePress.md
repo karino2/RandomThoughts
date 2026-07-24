@@ -248,3 +248,5 @@ export default defineUserConfig({
 詳細は以下のコミットを参照。
 
 [Backlinkの実装 · karino2/RandomThoughts@533d73c](https://github.com/karino2/RandomThoughts/commit/533d73cc0efddee4376a3de195fb595eb1673c53)
+
+ついでにprevとnextも消す。いい感じになった。
