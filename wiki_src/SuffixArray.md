@@ -23,6 +23,8 @@
 
 一番最後の文字はS-typeと約束。
 
+![imgs/SuffixArray/0001.png](imgs/SuffixArray/0001.png)
+
 ### LMS
 
 iがS-typeでi-1がL-typeのiをLeft Most S-type, 略してLMSと言う。

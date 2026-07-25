@@ -1,7 +1,5 @@
 [[SuffixArray]]
 
-PngNoteのノートはあとで埋める。
-
 - [Enhanced Suffix Array.pdf](https://www.mi.fu-berlin.de/wiki/pub/ABI/RnaSeqP4/enhanced-suffix-array.pdf)
 - [Replacing suffix trees with enhanced suffix arrays - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1570866703000650) 元論文
 
@@ -16,17 +14,33 @@ Suffix Treeの効率的な保持方法と解釈する事が出来る。トラバ
 
 ## Suffix Tree
 
-PngNote1
+![imgs/EnhancedSuffixArray/0000.png](imgs/EnhancedSuffixArray/0000.png)
 
 ## Suffix Array
 
-PngNote2
+![imgs/EnhancedSuffixArray/0001.png](imgs/EnhancedSuffixArray/0001.png)
 
 ## Repeat分析
 
-MUMなど。
+![imgs/EnhancedSuffixArray/0002.png](imgs/EnhancedSuffixArray/0002.png)
+
+### lcpインターバル
+
+![imgs/EnhancedSuffixArray/0003.png](imgs/EnhancedSuffixArray/0003.png)
+
+![imgs/EnhancedSuffixArray/0004.png](imgs/EnhancedSuffixArray/0004.png)
+
+例
+
+### MUM
+
+![imgs/EnhancedSuffixArray/0005.png](imgs/EnhancedSuffixArray/0005.png)
+
+![imgs/EnhancedSuffixArray/0006.png](imgs/EnhancedSuffixArray/0006.png)
 
 ## lcpインターバルツリー
+
+![imgs/EnhancedSuffixArray/0007.png](imgs/EnhancedSuffixArray/0007.png)
 
 ### アルゴリズム4.1、インターバルのレポート
 
@@ -38,6 +52,25 @@ Fig. 2に従いインターバルツリーを上から出力していこうと�
 
 lcpテーブルを順番に見ていってスタックを使うだけで、ツリーのトラバースをしたのと同じ結果が得られる。
 インターバルが確定した時にはその子どものリストを持つ形の処理は全てこれで行える。
+
+## トップダウンとchildtab
+
+![imgs/EnhancedSuffixArray/0008.png](imgs/EnhancedSuffixArray/0008.png)
+
+![imgs/EnhancedSuffixArray/0009.png](imgs/EnhancedSuffixArray/0009.png)
+
+### childtabの構築
+
+![imgs/EnhancedSuffixArray/0010.png](imgs/EnhancedSuffixArray/0010.png)
+
+![imgs/EnhancedSuffixArray/0011.png](imgs/EnhancedSuffixArray/0011.png)
+
+### childtabを用いた子どものリストアップ
+
+![imgs/EnhancedSuffixArray/0012.png](imgs/EnhancedSuffixArray/0012.png)
+
+![imgs/EnhancedSuffixArray/0013.png](imgs/EnhancedSuffixArray/0013.png)
+
 
 ## esaxxの引数
 
