@@ -88,7 +88,11 @@ LMS Substringが順番にソート出来ているとする。この順番を表�
 
 ### 2.4 LMS SubstringのソートにもInduced Sortを使う
 
-2.4に、S-typeのバケットの方にLMS Substringを入れるとか後ろから見ていくとかいろいろトリックが書いてあって、
-この通りにやるとLMS Substringも自動的にソートされるらしい。
+2.4に、LMS SubstringのソートにもInduced Sortを使う、という話がある。
 
-ここはあんまり正確には理解してないが、ここまで読むとまぁできそうなのでいいかという気分になる。
+LMS-prefixというものであるiから最初のS-typeまでのsubstringを考えて、これを1文字のS-typeから始めて左に伸ばしてInduced sortしていくと、
+最終的に2文字以上のLMS-prefixは正しくソートされる、という事を示せる。
+
+これは2文字以上のS-typeから始まる全部分文字列もソートされて、LMS-substringもそれに含まれる。
+
+prefix側の1文字目から始めて増やしていく、というのがポイント。
