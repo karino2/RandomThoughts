@@ -581,4 +581,4 @@ statsやbig_statsはあくまで調べるbpであってvocabなどはそのま�
 
 ## Sentence Pieceのコード理解
 
-[[EnhancedSuffixArray]]を先に勉強する。
+[[EnhancedSuffixArray]]を先に勉強する。[[Heap]]も復習。

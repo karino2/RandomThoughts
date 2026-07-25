@@ -8,6 +8,8 @@ Binary Heapに関するページ。Heapソートなどで使う。
 
 ![imgs/Heap/0000.png](imgs/Heap/0000.png)
 
+log2 nはツリーを子どもに辿っていく操作。
+
 ## HeapifyとHeapの構築
 
 ![imgs/Heap/0001.png](imgs/Heap/0001.png)
