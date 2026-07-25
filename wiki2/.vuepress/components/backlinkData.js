@@ -270,6 +270,7 @@ export const backlinkData = {
 "RandomThoughts.md": [
 "Home.md",
 "MdImgr.md",
+"TeFWiki.md",
 "VuePress.md",
 "メモをアプリケーションに依存させたくない.md",
 ],
@@ -1371,6 +1372,7 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "【書籍】原論文から解き明かす生成AI.md": [
+"EnhancedSuffixArray.md",
 "一人読書会ライブ.md",
 "技術的なメモ.md",
 "書籍.md",
@@ -1431,6 +1433,7 @@ export const backlinkData = {
 "2026年7月下旬の雑記.md",
 "SuffixArray.md",
 "アルゴリズム.md",
+"【書籍】原論文から解き明かす生成AI.md",
 ],
 "アルカン.md": [
 "化学.md",
@@ -2201,6 +2204,7 @@ export const backlinkData = {
 ],
 "SAF.md": [
 "StorageAccessFramework.md",
+"TeFWiki.md",
 "メモをアプリケーションに依存させたくない.md",
 ],
 "【書籍】イタリア語会話パーフェクトブック.md": [
