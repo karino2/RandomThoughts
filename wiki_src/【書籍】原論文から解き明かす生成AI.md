@@ -578,3 +578,7 @@ statsやbig_statsはあくまで調べるbpであってvocabなどはそのま�
 - [[HMM]]
 - [[サイコロ本]]
 - [[アルゴリズム本]]
+
+## Sentence Pieceのコード理解
+
+[[EnhancedSuffixArray]]を先に勉強する。

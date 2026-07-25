@@ -41,7 +41,7 @@ lcpテーブルを順番に見ていってスタックを使うだけで、ツ�
 
 ## esaxxの引数
 
-Sentence Pieceでは以下が使われている。[hillbig/esaxx: Automatically exported from code.google.com/p/esaxx](https://github.com/hillbig/esaxx)
+[[【書籍】原論文から解き明かす生成AI]]で出てくるSentence Pieceでは、以下が使われている。[hillbig/esaxx: Automatically exported from code.google.com/p/esaxx](https://github.com/hillbig/esaxx)
 
 引数は[esaxx/esa.hxx#L94-L110](https://github.com/hillbig/esaxx/blob/master/esa.hxx#L94C1-L110C4)に解説があるが、
 
@@ -78,3 +78,5 @@ Riは単調増加していて、同じRiに対してはLiは単調に減少し�
 同じRiの狭いインターバルから広いインターバルに並んでいる。
 
 たぶんツリー構造を復活させるルールがあるんだろうけれど、Sentence Pieceではそういう性質は使っていないので、知らなくてもSentence Pieceの理解には問題無い。上記の意味さえ理解しておけばコードは読めるし、これらがリニアタイムで構築出来るのも特に分からない事は無いだろう。
+
+単に辿っていけばインターバルツリーのボトムアップトラバーサルにはなりそうで、親子関係は分かるはずなので、一回なめればトップダウン構造も再現できそうではある。
