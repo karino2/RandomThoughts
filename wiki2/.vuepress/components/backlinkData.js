@@ -134,6 +134,7 @@ export const backlinkData = {
 "Heap.md": [
 "アルゴリズム.md",
 "【書籍】IntroductionToAlgorithms.md",
+"【書籍】原論文から解き明かす生成AI.md",
 ],
 "【書籍】ファストアンドスロー.md": [
 "書籍.md",
