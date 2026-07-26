@@ -153,6 +153,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "CoverAndThomas.md": [
+"データ圧縮.md",
 "機械学習.md",
 "原論文から解き明かす生成AI.md",
 "【書籍】CoverAndThomas.md",
@@ -1621,6 +1622,10 @@ export const backlinkData = {
 "2026年7月下旬の雑記.md",
 "それっぽく描くコツ1周目.md",
 ],
+"データ圧縮.md": [
+"CoverAndThomas.md",
+"アルゴリズム.md",
+],
 "mdvcat.md": [
 "FSharp.md",
 "Go.md",
@@ -1735,15 +1740,15 @@ export const backlinkData = {
 "自分の興味から物を知る大切さ.md",
 "【書籍】ソーシャルメディアプリズム.md",
 ],
-"【書籍】はじめてのスピノザ.md": [
-"書籍.md",
-],
 "【書籍】プログラミングの心理学.md": [
 "プログラミングエッセイ.md",
 "技術的なメモ.md",
 "【書籍】CodersAtWork.md",
 "【書籍】アドレナリンジャンキー.md",
 "【書籍】情熱プログラマー.md",
+],
+"【書籍】はじめてのスピノザ.md": [
+"書籍.md",
 ],
 "【書籍】CodeComplete.md": [
 "技術的なメモ.md",
@@ -2170,6 +2175,7 @@ export const backlinkData = {
 "HMM.md",
 "SuffixArray.md",
 "アルゴリズム本.md",
+"データ圧縮.md",
 "技術的なメモ.md",
 "【書籍】IntroductionToAlgorithms.md",
 "文字列マッチ.md",
