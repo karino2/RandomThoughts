@@ -581,4 +581,16 @@ statsやbig_statsはあくまで調べるbpであってvocabなどはそのま�
 
 ## Sentence Pieceのコード理解
 
-[[EnhancedSuffixArray]]を先に勉強する。[[Heap]]も復習。
+[[EnhancedSuffixArray]]を先に勉強する。[[Heap]]も復習。ついでに[[SuffixArray]]も復習。
+
+## バイトのBPE（GPT2の論文）
+
+これか。
+
+[Language Models are Unsupervised Multitask Learners.pdf](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+
+トークナイズの所よりもそれ以外の所が興味深い論文ではあるが、GPT2はバイトのBPEか〜と眺めておく意義はあるな。
+
+## Toward a Theory of Tokenization in LLMs
+
+[arxiv:2404.08335 Toward a Theory of Tokenization in LLMs](https://arxiv.org/abs/2404.08335)

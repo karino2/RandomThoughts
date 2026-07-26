@@ -1,4 +1,4 @@
-[[SuffixArray]]
+[[SuffixArray]], [[【書籍】原論文から解き明かす生成AI]]
 
 - [Enhanced Suffix Array.pdf](https://www.mi.fu-berlin.de/wiki/pub/ABI/RnaSeqP4/enhanced-suffix-array.pdf)
 - [Replacing suffix trees with enhanced suffix arrays - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1570866703000650) 元論文
@@ -190,7 +190,7 @@ i	SA	L	R	D	substring:
 - 最後の数字だけはSAの値で置き換えているのに注意
    - lcpインターバルツリーとして読むならiの値のままの方が分かりやすいのだが、Suffixツリーの定義では無くなってしまうので。
 - lcpインターバルはRi-1なので1引いている
-- 中間ノードだけを入れたテーブルとみなして左下の（中間ノードの中で）一番子どもから順番に辿っていくと表と対応している
+- 表を中間ノードだけを入れたテーブルとみなしてツリーの左下の（中間ノードの中で）一番子どもから順番に辿っていくと表と対応している
    - 1..2, 3..4, 3..5, 6..7, 0..7
    - 子どもが揃ったら親に行く
    - 兄弟に移る時はその一番子どもから始まる（Forestのtrailingだけ追うようなもの [Forest: An Introduction](https://stlab.cc/2020/12/01/forest-introduction.html)）
