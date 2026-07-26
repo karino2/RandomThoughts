@@ -133,8 +133,8 @@ export const backlinkData = {
 ],
 "Heap.md": [
 "アルゴリズム.md",
+"原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
-"【書籍】原論文から解き明かす生成AI.md",
 ],
 "【書籍】ファストアンドスロー.md": [
 "書籍.md",
@@ -154,8 +154,8 @@ export const backlinkData = {
 ],
 "CoverAndThomas.md": [
 "機械学習.md",
+"原論文から解き明かす生成AI.md",
 "【書籍】CoverAndThomas.md",
-"【書籍】原論文から解き明かす生成AI.md",
 "数学.md",
 ],
 "GitHubを使ったSNSを考える.md": [
@@ -609,6 +609,13 @@ export const backlinkData = {
 "kickimgr.md",
 "技術的なメモ.md",
 ],
+"原論文から解き明かす生成AI.md": [
+"2026年7月下旬の雑記.md",
+"EnhancedSuffixArray.md",
+"一人読書会ライブ.md",
+"技術的なメモ.md",
+"【書籍】原論文から解き明かす生成AI.md",
+],
 "生物学.md": [
 "edX.md",
 "Home.md",
@@ -699,8 +706,8 @@ export const backlinkData = {
 "Wikiと手書きノートの融合.md",
 "アルゴリズム.md",
 "技術的なメモ.md",
+"原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
-"【書籍】原論文から解き明かす生成AI.md",
 ],
 "座椅子.md": [
 "グッズ関連.md",
@@ -935,9 +942,9 @@ export const backlinkData = {
 "サイコロ本.md": [
 "HMM.md",
 "機械学習.md",
+"原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
 "【書籍】サイコロ本.md",
-"【書籍】原論文から解き明かす生成AI.md",
 "数学.md",
 ],
 "【書籍】これからはじめるイタリア語入門.md": [
@@ -1150,7 +1157,7 @@ export const backlinkData = {
 "ノート.md",
 ],
 "一人読書会ライブ.md": [
-"【書籍】原論文から解き明かす生成AI.md",
+"原論文から解き明かす生成AI.md",
 ],
 "【書籍】リヴァイアサン.md": [
 "社会科学.md",
@@ -1172,9 +1179,9 @@ export const backlinkData = {
 "VuePress.md",
 "ハーフトーン.md",
 "技術的なメモ.md",
+"原論文から解き明かす生成AI.md",
 "自作アプリ.md",
 "【書籍】PrinciplesOfDigitalImageProcessing.md",
-"【書籍】原論文から解き明かす生成AI.md",
 ],
 "あおぞらAndroid教室.md": [
 "40代後半からアラフィフのプログラマライフについて考える.md",
@@ -1195,10 +1202,10 @@ export const backlinkData = {
 "2026年7月下旬の雑記.md",
 "EnhancedSuffixArray.md",
 "アルゴリズム.md",
-"【書籍】原論文から解き明かす生成AI.md",
+"原論文から解き明かす生成AI.md",
 ],
 "一人読書会ライブ.md": [
-"【書籍】原論文から解き明かす生成AI.md",
+"原論文から解き明かす生成AI.md",
 ],
 "Metal.md": [
 "CG.md",
@@ -1231,11 +1238,11 @@ export const backlinkData = {
 "ガンマ補正.md",
 "ハーフトーン.md",
 "技術的なメモ.md",
+"原論文から解き明かす生成AI.md",
 "【書籍】2Dグラフィックスのしくみ.md",
 "【書籍】HLSLシェーダーの魔導書.md",
 "【書籍】OpenGL4ShadingLanguageCook.md",
 "【書籍】PrinciplesOfDigitalImageProcessing.md",
-"【書籍】原論文から解き明かす生成AI.md",
 ],
 "着る毛布.md": [
 "グッズ関連.md",
@@ -1318,8 +1325,8 @@ export const backlinkData = {
 "アルゴリズム.md",
 "サイコロ本.md",
 "機械学習.md",
+"原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
-"【書籍】原論文から解き明かす生成AI.md",
 ],
 "Rhinocs.md": [
 "BOOX.md",
@@ -1380,9 +1387,6 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "【書籍】原論文から解き明かす生成AI.md": [
-"EnhancedSuffixArray.md",
-"一人読書会ライブ.md",
-"技術的なメモ.md",
 "書籍.md",
 ],
 "お便りコーナー.md": [
@@ -1441,7 +1445,7 @@ export const backlinkData = {
 "2026年7月下旬の雑記.md",
 "SuffixArray.md",
 "アルゴリズム.md",
-"【書籍】原論文から解き明かす生成AI.md",
+"原論文から解き明かす生成AI.md",
 ],
 "アルカン.md": [
 "化学.md",
@@ -1786,8 +1790,8 @@ export const backlinkData = {
 "MFG.md",
 "ガンマ補正.md",
 "技術的なメモ.md",
+"原論文から解き明かす生成AI.md",
 "書籍.md",
-"【書籍】原論文から解き明かす生成AI.md",
 ],
 "Cpp.md": [
 "1024cores.md",
@@ -2589,6 +2593,7 @@ export const backlinkData = {
 "オーディオブック.md",
 "技術的なメモ.md",
 "元祖水玉本舗.md",
+"原論文から解き明かす生成AI.md",
 "社会科学.md",
 "【書籍】14歳から知る影響と連鎖の全世界史.md",
 "【書籍】60秒右脳ドローイングで絵が感動的にうまくなる！.md",
@@ -2612,7 +2617,6 @@ export const backlinkData = {
 "【書籍】マンガキャラアタリ練習帳.md",
 "【書籍】英会話フレーズ大特訓.md",
 "【書籍】科学者たちが語る食欲.md",
-"【書籍】原論文から解き明かす生成AI.md",
 "【書籍】最強の集中力.md",
 "【書籍】自由の命運.md",
 "【書籍】自由論.md",
@@ -2667,8 +2671,8 @@ export const backlinkData = {
 ],
 "ガンマ補正.md": [
 "CG.md",
+"原論文から解き明かす生成AI.md",
 "【書籍】PrinciplesOfDigitalImageProcessing.md",
-"【書籍】原論文から解き明かす生成AI.md",
 ],
 "プログラミングエッセイ.md": [
 "サーファープログラマー.md",
