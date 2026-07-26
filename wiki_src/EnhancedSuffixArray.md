@@ -1,4 +1,4 @@
-[[SuffixArray]], [[【書籍】原論文から解き明かす生成AI]]
+[[SuffixArray]], [[原論文から解き明かす生成AI]]
 
 - [Enhanced Suffix Array.pdf](https://www.mi.fu-berlin.de/wiki/pub/ABI/RnaSeqP4/enhanced-suffix-array.pdf)
 - [Replacing suffix trees with enhanced suffix arrays - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1570866703000650) 元論文
@@ -74,7 +74,7 @@ lcpテーブルを順番に見ていってスタックを使うだけで、ツ�
 
 ## esaxxの引数
 
-[[【書籍】原論文から解き明かす生成AI]]で出てくるSentence Pieceでは、以下が使われている。[hillbig/esaxx: Automatically exported from code.google.com/p/esaxx](https://github.com/hillbig/esaxx)
+[[原論文から解き明かす生成AI]]で出てくるSentence Pieceでは、以下が使われている。[hillbig/esaxx: Automatically exported from code.google.com/p/esaxx](https://github.com/hillbig/esaxx)
 
 引数は[esaxx/esa.hxx#L94-L110](https://github.com/hillbig/esaxx/blob/master/esa.hxx#L94C1-L110C4)に解説があるが、
 
