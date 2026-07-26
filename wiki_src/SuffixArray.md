@@ -90,9 +90,13 @@ LMS Substringが順番にソート出来ているとする。この順番を表�
 
 2.4に、LMS SubstringのソートにもInduced Sortを使う、という話がある。
 
-LMS-prefixというものであるiから最初のS-typeまでのsubstringを考えて、これを1文字のS-typeから始めて左に伸ばしてInduced sortしていくと、
+LMS-prefixというものを定義して考える。
+これはあるiから最初のS-typeまでのsubstring。
+これを使う事でInduced Sortの1文字から始めて伸ばしていく事を可能にしている。
+
+LMS-prefixが1文字のS-typeから始めて左に伸ばしてInduced sortしていくと、
 最終的に2文字以上のLMS-prefixは正しくソートされる、という事を示せる。
 
-これは2文字以上のS-typeから始まる全部分文字列もソートされて、LMS-substringもそれに含まれる。
+これは2文字以上のS-typeから始まる全部分文字列もソートされる事を意味し、LMS-substringもそれに含まれる。
 
 prefix側の1文字目から始めて増やしていく、というのがポイント。
