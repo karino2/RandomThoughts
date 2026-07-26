@@ -1195,6 +1195,7 @@ export const backlinkData = {
 "2026年7月下旬の雑記.md",
 "EnhancedSuffixArray.md",
 "アルゴリズム.md",
+"【書籍】原論文から解き明かす生成AI.md",
 ],
 "一人読書会ライブ.md": [
 "【書籍】原論文から解き明かす生成AI.md",
