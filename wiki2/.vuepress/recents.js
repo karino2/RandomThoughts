@@ -1,6 +1,11 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E6%B0%B4%E7%8E%89%E6%87%90%E3%82%B2%E3%83%BC%E5%A4%9C%E8%A9%B1.html", "text": "水玉懐ゲー夜話"},
+    {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
+    {"link": "%E3%83%9C%E3%83%84%E3%82%A8%E3%83%83%E3%82%BB%E3%82%A4.html", "text": "ボツエッセイ"},
+    {"link": "%E3%82%A2%E3%83%97%E3%83%AA%E3%81%8C%E7%B0%A1%E5%8D%98%E3%81%AB%E4%BD%9C%E3%82%8C%E3%82%8B%E6%99%82%E4%BB%A3.html", "text": "アプリが簡単に作れる時代"},
+    {"link": "TeFWiki%E3%81%A8%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88.html", "text": "TeFWikiとシェルスクリプト"},
     {"link": "%E3%83%87%E3%83%BC%E3%82%BF%E5%9C%A7%E7%B8%AE.html", "text": "データ圧縮"},
     {"link": "%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0.html", "text": "アルゴリズム"},
     {"link": "CoverAndThomas.html", "text": "CoverAndThomas"},
@@ -11,11 +16,6 @@ export const recents = [
     {"link": "%E4%B8%80%E4%BA%BA%E8%AA%AD%E6%9B%B8%E4%BC%9A%E3%83%A9%E3%82%A4%E3%83%96.html", "text": "一人読書会ライブ"},
     {"link": "EnhancedSuffixArray.html", "text": "EnhancedSuffixArray"},
     {"link": "SuffixArray.html", "text": "SuffixArray"},
-    {"link": "%E5%85%83%E7%A5%96%E6%B0%B4%E7%8E%89%E6%9C%AC%E8%88%97.html", "text": "元祖水玉本舗"},
-    {"link": "%E3%81%8A%E7%B5%B5%E6%8F%8F%E3%81%8D.html", "text": "お絵描き"},
-    {"link": "%E6%B0%B4%E7%8E%89%E6%87%90%E3%82%B2%E3%83%BC%E5%A4%9C%E8%A9%B1.html", "text": "水玉懐ゲー夜話"},
-    {"link": "%E3%81%9D%E3%82%8C%E3%81%A3%E3%81%BD%E3%81%8F%E6%8F%8F%E3%81%8F%E3%82%B3%E3%83%842%E5%91%A8%E7%9B%AE.html", "text": "それっぽく描くコツ2周目"},
-    {"link": "Heap.html", "text": "Heap"},
    ]
 }
 ]

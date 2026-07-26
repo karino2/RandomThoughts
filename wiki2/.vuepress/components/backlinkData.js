@@ -522,15 +522,15 @@ export const backlinkData = {
 "SurfLog.md",
 "サーフボード.md",
 ],
+"【書籍】ビギナーズクラシック、平家物語.md": [
+"日本史.md",
+"平氏.md",
+],
 "カキオク.md": [
 "UFASアーキテクチャ.md",
 "イタリア語.md",
 "自作アプリ.md",
 "【書籍】これからはじめるイタリア語入門.md",
-],
-"【書籍】ビギナーズクラシック、平家物語.md": [
-"日本史.md",
-"平氏.md",
 ],
 "Shader.md": [
 "CG.md",
@@ -951,6 +951,11 @@ export const backlinkData = {
 "【書籍】これからはじめるイタリア語入門.md": [
 "イタリア語.md",
 ],
+"ボツエッセイ.md": [
+"TeFWikiとシェルスクリプト.md",
+"アプリが簡単に作れる時代.md",
+"雑多なメモ.md",
+],
 "ポータブルなUI.md": [
 "技術的なメモ.md",
 ],
@@ -966,6 +971,9 @@ export const backlinkData = {
 ],
 "Java.md": [
 "EmbeddedLang.md",
+],
+"アプリが簡単に作れる時代.md": [
+"ボツエッセイ.md",
 ],
 "【書籍】RforDataScience.md": [
 "LabNotebook.md",
@@ -1853,6 +1861,7 @@ export const backlinkData = {
 "お絵描き.md",
 "グッズ関連.md",
 "ノート.md",
+"ボツエッセイ.md",
 "レッグウォーマー.md",
 "医学.md",
 "英語.md",
@@ -2094,6 +2103,9 @@ export const backlinkData = {
 ],
 "【書籍】知らぬは恥だが役に立つ法律知識.md": [
 "オーディオブック.md",
+],
+"TeFWikiとシェルスクリプト.md": [
+"ボツエッセイ.md",
 ],
 "社会科学.md": [
 "経済.md",
