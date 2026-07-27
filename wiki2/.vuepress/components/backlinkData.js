@@ -153,6 +153,7 @@ export const backlinkData = {
 "CoverAndThomas.md": [
 "KLダイバージェンス.md",
 "LempelZiv.md",
+"MacKay.md",
 "クロスエントロピー.md",
 "データ圧縮.md",
 "機械学習.md",
@@ -626,6 +627,7 @@ export const backlinkData = {
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "一人読書会ライブ.md",
+"機械学習.md",
 "技術的なメモ.md",
 "【書籍】原論文から解き明かす生成AI.md",
 "論文.md",
@@ -1658,6 +1660,7 @@ export const backlinkData = {
 "CoverAndThomas.md",
 "LempelZiv.md",
 "アルゴリズム.md",
+"クロスエントロピー.md",
 ],
 "mdvcat.md": [
 "FSharp.md",
