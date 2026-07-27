@@ -1631,6 +1631,7 @@ export const backlinkData = {
 "それっぽく描くコツ1周目.md",
 ],
 "データ圧縮.md": [
+"2026年7月下旬の雑記.md",
 "CoverAndThomas.md",
 "アルゴリズム.md",
 ],
@@ -2183,6 +2184,7 @@ export const backlinkData = {
 ],
 "アルゴリズム.md": [
 "Diff.md",
+"EnhancedSuffixArray.md",
 "Heap.md",
 "HMM.md",
 "SuffixArray.md",
