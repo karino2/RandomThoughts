@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"image"
 	"image/png"
+	"io"
 	"os"
 	"path/filepath"
 	"strings"
@@ -16,6 +17,23 @@ const (
 	// コンテンツの下に残す余白
 	bottomMargin = 40
 )
+
+func copyFile(src, dst string) error {
+	in, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer in.Close()
+
+	out, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	defer out.Close()
+
+	_, err = io.Copy(out, in)
+	return err
+}
 
 func main() {
 	if len(os.Args) != 3 {
@@ -94,8 +112,10 @@ func trimPNG(inputPath, outputPath string) error {
 	}
 
 	newBottom := lastContentY + 1 + bottomMargin
-	if newBottom > bounds.Max.Y {
-		newBottom = bounds.Max.Y
+
+	// 余白がない場合は単純コピー
+	if newBottom >= bounds.Max.Y {
+		return copyFile(inputPath, outputPath)
 	}
 
 	cropRect := image.Rect(

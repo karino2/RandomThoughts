@@ -20,6 +20,11 @@ Suffix Treeの効率的な保持方法と解釈する事が出来る。トラバ
 
 ![imgs/EnhancedSuffixArray/0001.png](imgs/EnhancedSuffixArray/0001.png)
 
+lcpテーブルはSA-ISを変更して同時に作る事が出来るらしい。
+
+[arxiv:1101.3448 Inducing the LCP-Array](https://arxiv.org/abs/1101.3448)
+
+
 ## Repeat分析
 
 ![imgs/EnhancedSuffixArray/0002.png](imgs/EnhancedSuffixArray/0002.png)

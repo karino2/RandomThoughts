@@ -1,7 +1,6 @@
-[[アルゴリズム]]
+[[アルゴリズム]], [[EnhancedSuffixArray]]はSuffixArrayにlcpテーブルや追加のテーブルを持たせてSuffix Treeと同様の能力を与えたもの
 
 - [Suffix array - Wikipedia](https://en.wikipedia.org/wiki/Suffix_array)
-- [[EnhancedSuffixArray]] SuffixArrayにlcpテーブルや追加のテーブルを持たせてSuffix Treeと同様の能力を与えたもの
 - [1101.3448 Inducing the LCP-Array](https://arxiv.org/abs/1101.3448) SA-ISのついでにLCPテーブルも構築するもの
 
 ## SA-IS
