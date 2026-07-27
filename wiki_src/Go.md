@@ -12,6 +12,16 @@ go言語、golangなどと呼ばれる。関連して[[Folang]]のリンクも�
 - [[Wails]] Go向けの[[Electron]]代替。
 - [karino2/mdvcat_go: mdvcat port to go, using webview_go](https://github.com/karino2/mdvcat_go) [[mdvcat]]をgoのwebviewに直した。
 
+## 書き捨てコマンドの作業手順
+
+```
+$ mkdir hoge
+$ cd hoge
+$ go mod init hoge
+$ vi main.go
+$ go build -o hoge_cmd .
+```
+
 ## 久しぶりに開発する時のメモ
 
 ```
