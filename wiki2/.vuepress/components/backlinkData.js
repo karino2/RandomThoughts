@@ -62,9 +62,6 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md",
 "生物学.md",
 ],
-"【書籍】興亡の世界史、シルクロードと唐帝国.md": [
-"書籍.md",
-],
 "【書籍】TheSwiftProgrammingLanguage.md": [
 "Swift.md",
 "書籍.md",
@@ -243,6 +240,9 @@ export const backlinkData = {
 "【書籍】サピエンス全史.md",
 "食事関連.md",
 ],
+"ApproximationBySuperpositionsOfASigmoidalFunction.md": [
+"原論文から解き明かす生成AI.md",
+],
 "ZipSourceCodeReading.md": [
 "Rhinocs_古くなった話題.md",
 "自作アプリ.md",
@@ -310,6 +310,9 @@ export const backlinkData = {
 "SwiftConcurrency.md",
 "技術的なメモ.md",
 "【書籍】TheSwiftProgrammingLanguage.md",
+],
+"NeuralMachineTranslationOfRareWordsWithSubwordUnits.md": [
+"原論文から解き明かす生成AI.md",
 ],
 "電気ケトル.md": [
 "グッズ関連.md",
@@ -498,11 +501,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 "書籍.md",
 ],
-"MDTouch.md": [
-"MDMinaosi.md",
-"TeFWiki.md",
-"自作アプリ.md",
-],
 "guash.md": [
 "bulma.md",
 "FSharp.md",
@@ -514,6 +512,11 @@ export const backlinkData = {
 "Wikiとhowmとメモツール.md",
 "そのうちやりたい事.md",
 "てきすとTL.md",
+"自作アプリ.md",
+],
+"MDTouch.md": [
+"MDMinaosi.md",
+"TeFWiki.md",
 "自作アプリ.md",
 ],
 "UberDriverJp.md": [
@@ -613,10 +616,15 @@ export const backlinkData = {
 ],
 "原論文から解き明かす生成AI.md": [
 "2026年7月下旬の雑記.md",
+"ApproximationBySuperpositionsOfASigmoidalFunction.md",
+"ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
+"NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
+"TowardATheoryOfTokenizationInLLMs.md",
 "一人読書会ライブ.md",
 "技術的なメモ.md",
 "【書籍】原論文から解き明かす生成AI.md",
+"論文.md",
 ],
 "生物学.md": [
 "edX.md",
@@ -818,9 +826,6 @@ export const backlinkData = {
 "40代後半からアラフィフのプログラマライフについて考える.md",
 "プログラマライフ.md",
 "雑多なメモ.md",
-],
-"【書籍】サイコロ本.md": [
-"書籍の自動生成用ページ.md",
 ],
 "【書籍】ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法.md": [
 "書籍.md",
@@ -1053,7 +1058,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "【書籍】60秒右脳ドローイングで絵が感動的にうまくなる！.md": [
-"書籍.md",
 "【書籍】マンガキャラアタリ練習帳.md",
 ],
 "おうちコープ.md": [
@@ -1213,6 +1217,7 @@ export const backlinkData = {
 "EnhancedSuffixArray.md",
 "アルゴリズム.md",
 "原論文から解き明かす生成AI.md",
+"論文.md",
 ],
 "一人読書会ライブ.md": [
 "原論文から解き明かす生成AI.md",
@@ -1338,6 +1343,16 @@ export const backlinkData = {
 "原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
 ],
+"論文.md": [
+"ApproximationBySuperpositionsOfASigmoidalFunction.md",
+"ContextualCorrelatesOfSynonymy.md",
+"EnhancedSuffixArray.md",
+"Home.md",
+"NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
+"SuffixArray.md",
+"TowardATheoryOfTokenizationInLLMs.md",
+"書籍.md",
+],
 "Rhinocs.md": [
 "BOOX.md",
 "Rhino.md",
@@ -1396,9 +1411,6 @@ export const backlinkData = {
 "2022年の花粉の記録.md",
 "雑多なメモ.md",
 ],
-"【書籍】原論文から解き明かす生成AI.md": [
-"書籍.md",
-],
 "お便りコーナー.md": [
 "プログラム雑談.md",
 "技術的なメモ.md",
@@ -1409,9 +1421,6 @@ export const backlinkData = {
 "JavaScript.md",
 "技術的なメモ.md",
 "統計グラフ！.md",
-],
-"【書籍】CoverAndThomas.md": [
-"書籍の自動生成用ページ.md",
 ],
 "たてなか流クイックスケッチ.md": [
 "KindleFire.md",
@@ -1456,6 +1465,7 @@ export const backlinkData = {
 "SuffixArray.md",
 "アルゴリズム.md",
 "原論文から解き明かす生成AI.md",
+"論文.md",
 ],
 "アルカン.md": [
 "化学.md",
@@ -1714,6 +1724,9 @@ export const backlinkData = {
 ],
 "ビデオカメラ.md": [
 "グッズ関連.md",
+],
+"TowardATheoryOfTokenizationInLLMs.md": [
+"原論文から解き明かす生成AI.md",
 ],
 "【書籍】ギャノング生理学.md": [
 "生理学.md",
@@ -2129,9 +2142,6 @@ export const backlinkData = {
 "グッズ関連.md",
 "雑多なメモ.md",
 ],
-"書籍の自動生成用ページ.md": [
-"数学.md",
-],
 "LinusPauling.md": [
 "LabNotebook.md",
 "生物学.md",
@@ -2358,7 +2368,6 @@ export const backlinkData = {
 "Wikiと手書きノートの融合.md",
 "それっぽく描くコツ1周目.md",
 "それっぽく描くコツ2周目.md",
-"書籍.md",
 ],
 "将棋.md": [
 "雑多なメモ.md",
@@ -2416,11 +2425,13 @@ export const backlinkData = {
 "着る毛布.md",
 "防寒グッズ.md",
 ],
+"ContextualCorrelatesOfSynonymy.md": [
+"原論文から解き明かす生成AI.md",
+],
 "化学計算問題の解き方.md": [
 "化学.md",
 ],
 "【書籍】14歳から知る影響と連鎖の全世界史.md": [
-"書籍.md",
 "【書籍】物語イギリスの歴史.md",
 "世界史.md",
 ],
@@ -2538,7 +2549,6 @@ export const backlinkData = {
 ],
 "【書籍】人月の神話.md": [
 "技術的なメモ.md",
-"書籍.md",
 ],
 "Mac.md": [
 "MacBookAir.md",
@@ -2621,7 +2631,6 @@ export const backlinkData = {
 "社会科学.md",
 "【書籍】14歳から知る影響と連鎖の全世界史.md",
 "【書籍】60秒右脳ドローイングで絵が感動的にうまくなる！.md",
-"【書籍】CoverAndThomas.md",
 "【書籍】IntroductionToAlgorithms.md",
 "【書籍】ModernCompilerImplementationInML.md",
 "【書籍】OpenGL4ShadingLanguageCook.md",
@@ -2631,7 +2640,6 @@ export const backlinkData = {
 "【書籍】イーロン・マスク.md",
 "【書籍】イラストをそれっぽく描くコツ.md",
 "【書籍】ヴァロワ朝.md",
-"【書籍】サイコロ本.md",
 "【書籍】ソーシャルメディアプリズム.md",
 "書籍の自動生成用ページ.md",
 "【書籍】バカと無知.md",
@@ -2641,6 +2649,7 @@ export const backlinkData = {
 "【書籍】マンガキャラアタリ練習帳.md",
 "【書籍】英会話フレーズ大特訓.md",
 "【書籍】科学者たちが語る食欲.md",
+"【書籍】興亡の世界史、シルクロードと唐帝国.md",
 "【書籍】最強の集中力.md",
 "【書籍】自由の命運.md",
 "【書籍】自由論.md",
@@ -2653,6 +2662,7 @@ export const backlinkData = {
 "【書籍】物語イギリスの歴史.md",
 "【書籍】本当に役立つ栄養学.md",
 "【書籍】魔法の人物ドローイング.md",
+"論文.md",
 ],
 "大河ドラマ.md": [
 "雑多なメモ.md",
