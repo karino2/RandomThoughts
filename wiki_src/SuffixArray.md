@@ -5,7 +5,7 @@
 
 ## SA-IS
 
-以下の論文のアルゴリズムの略称。
+以下の論文のアルゴリズムの略称。[[論文]]
 
 [Linear Suffix Array Construction by Almost Pure Induced-Sorting - IEEE Conference Publication - IEEE Xplore](https://ieeexplore.ieee.org/document/4976463)
 
