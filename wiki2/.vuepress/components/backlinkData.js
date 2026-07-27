@@ -90,6 +90,7 @@ export const backlinkData = {
 ],
 "文字列マッチ.md": [
 "Diff.md",
+"EnhancedSuffixArray.md",
 "Wikiと手書きノートの融合.md",
 "アルゴリズム.md",
 "【書籍】IntroductionToAlgorithms.md",
@@ -151,6 +152,8 @@ export const backlinkData = {
 ],
 "CoverAndThomas.md": [
 "KLダイバージェンス.md",
+"LempelZiv.md",
+"クロスエントロピー.md",
 "データ圧縮.md",
 "機械学習.md",
 "原論文から解き明かす生成AI.md",
@@ -271,6 +274,7 @@ export const backlinkData = {
 "食事関連.md",
 ],
 "RandomThoughts.md": [
+"2026年7月下旬の雑記.md",
 "Home.md",
 "MdImgr.md",
 "TeFWiki.md",
@@ -948,6 +952,7 @@ export const backlinkData = {
 ],
 "サイコロ本.md": [
 "HMM.md",
+"クロスエントロピー.md",
 "機械学習.md",
 "原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
@@ -1344,6 +1349,7 @@ export const backlinkData = {
 "【書籍】IntroductionToAlgorithms.md",
 ],
 "論文.md": [
+"2026年7月下旬の雑記.md",
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
@@ -1465,6 +1471,7 @@ export const backlinkData = {
 "SuffixArray.md",
 "アルゴリズム.md",
 "原論文から解き明かす生成AI.md",
+"文字列マッチ.md",
 "論文.md",
 ],
 "アルカン.md": [
@@ -1497,6 +1504,8 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "KLダイバージェンス.md": [
+"CoverAndThomas.md",
+"クロスエントロピー.md",
 "データ圧縮.md",
 ],
 "【書籍】TheArtOfUnixProgramming.md": [
@@ -1647,6 +1656,7 @@ export const backlinkData = {
 "データ圧縮.md": [
 "2026年7月下旬の雑記.md",
 "CoverAndThomas.md",
+"LempelZiv.md",
 "アルゴリズム.md",
 ],
 "mdvcat.md": [
@@ -1657,6 +1667,9 @@ export const backlinkData = {
 "unimemo.md",
 "Unix的GUIツール.md",
 "自作アプリ.md",
+],
+"クロスエントロピー.md": [
+"KLダイバージェンス.md",
 ],
 "1024cores.md": [
 "Cpp.md",
@@ -1726,6 +1739,7 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "TowardATheoryOfTokenizationInLLMs.md": [
+"2026年7月下旬の雑記.md",
 "原論文から解き明かす生成AI.md",
 ],
 "【書籍】ギャノング生理学.md": [
@@ -1747,6 +1761,9 @@ export const backlinkData = {
 ],
 "フリーランスプログラマー.md": [
 "プログラミングエッセイ.md",
+],
+"MacKay.md": [
+"機械学習.md",
 ],
 "サブWIki.md": [
 "TeFWikiのサブWiki機能.md",
@@ -2197,6 +2214,7 @@ export const backlinkData = {
 "VuePress.md",
 ],
 "アルゴリズム.md": [
+"2026年7月下旬の雑記.md",
 "Diff.md",
 "EnhancedSuffixArray.md",
 "Heap.md",
@@ -2320,14 +2338,14 @@ export const backlinkData = {
 "SurfLog.md",
 "サーフボード.md",
 ],
+"【書籍】はじめてのスピノザ.md": [
+"オーディオブック.md",
+],
 "Calclark.md": [
 "自作アプリ.md",
 ],
 "手書きとテキストの共存.md": [
 "雑多なメモ.md",
-],
-"【書籍】はじめてのスピノザ.md": [
-"オーディオブック.md",
 ],
 "JetpackCompose.md": [
 "Android.md",
@@ -2589,6 +2607,11 @@ export const backlinkData = {
 "40代前半のプログラマライフの振り返り.md",
 "雑多なメモ.md",
 ],
+"LempelZiv.md": [
+"CoverAndThomas.md",
+"EnhancedSuffixArray.md",
+"データ圧縮.md",
+],
 "sitabot.md": [
 "技術的なメモ.md",
 ],
@@ -2620,6 +2643,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "書籍.md": [
+"2026年7月下旬の雑記.md",
 "CoverAndThomas.md",
 "Home.md",
 "PRML.md",
