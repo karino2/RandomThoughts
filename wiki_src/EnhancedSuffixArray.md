@@ -58,6 +58,8 @@ Fig. 2に従いインターバルツリーを上から出力していこうと�
 lcpテーブルを順番に見ていってスタックを使うだけで、ツリーのトラバースをしたのと同じ結果が得られる。
 インターバルが確定した時にはその子どものリストを持つ形の処理は全てこれで行える。
 
+[[LempelZiv]]などを計算するのに使える。
+
 ## トップダウンとchildtab
 
 ![imgs/EnhancedSuffixArray/0008.png](imgs/EnhancedSuffixArray/0008.png)
@@ -76,6 +78,7 @@ lcpテーブルを順番に見ていってスタックを使うだけで、ツ�
 
 ![imgs/EnhancedSuffixArray/0013.png](imgs/EnhancedSuffixArray/0013.png)
 
+[[文字列マッチ]]はprefix関数を使うが、こちらはより直接的に木を降りていく。
 
 ## esaxxの引数
 

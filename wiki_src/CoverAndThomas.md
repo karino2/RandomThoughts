@@ -5,6 +5,14 @@
 
 - [Elements of Information Theoryの読書記録 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2019/02/10/143600.html)
 
+##  KLダイバージェンス
+
+[[KLダイバージェンス]]
+
 ## 5章 DATA COMPRESSION
 
 [[データ圧縮]]
+
+## 13.4 Lempel Ziv Algorithms
+
+[[LempelZiv]]
