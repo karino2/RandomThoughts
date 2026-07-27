@@ -1,10 +1,10 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "KL%E3%83%80%E3%82%A4%E3%83%90%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%82%B9.html", "text": "KLダイバージェンス"},
     {"link": "%E3%83%87%E3%83%BC%E3%82%BF%E5%9C%A7%E7%B8%AE.html", "text": "データ圧縮"},
     {"link": "2026%E5%B9%B47%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年7月下旬の雑記"},
     {"link": "SuffixArray.html", "text": "SuffixArray"},
-    {"link": "KL%E3%83%80%E3%82%A4%E3%83%90%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%82%B9.html", "text": "KLダイバージェンス"},
     {"link": "EnhancedSuffixArray.html", "text": "EnhancedSuffixArray"},
     {"link": "Wiki%E3%81%A8%E6%89%8B%E6%9B%B8%E3%81%8D%E3%83%8E%E3%83%BC%E3%83%88%E3%81%AE%E8%9E%8D%E5%90%88.html", "text": "Wikiと手書きノートの融合"},
     {"link": "Go.html", "text": "Go"},
