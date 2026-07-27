@@ -153,6 +153,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "CoverAndThomas.md": [
+"KLダイバージェンス.md",
 "データ圧縮.md",
 "機械学習.md",
 "原論文から解き明かす生成AI.md",
@@ -1484,6 +1485,9 @@ export const backlinkData = {
 "パオ碁.md",
 "囲碁エンジン評価.md",
 "技術的なメモ.md",
+],
+"KLダイバージェンス.md": [
+"データ圧縮.md",
 ],
 "【書籍】TheArtOfUnixProgramming.md": [
 "UFASアーキテクチャ.md",
