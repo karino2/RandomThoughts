@@ -1,6 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "技術的なメモ"},
+    {"link": "embed%E7%94%A8%E3%81%AE%E3%82%B7%E3%82%A7%E3%83%AB%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E4%BD%95%E3%81%8B.html", "text": "embed用のシェルのような何か"},
     {"link": "%E6%B8%AC%E5%BA%A6%E8%AB%96.html", "text": "測度論"},
     {"link": "%E6%95%B0%E5%AD%A6.html", "text": "数学"},
     {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E9%9B%86%E5%90%88%E3%83%BB%E4%BD%8D%E7%9B%B8%E5%85%A5%E9%96%80.html", "text": "【書籍】集合・位相入門"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "MacKay.html", "text": "MacKay"},
     {"link": "%E8%AB%96%E6%96%87.html", "text": "論文"},
     {"link": "%E6%96%87%E5%AD%97%E5%88%97%E3%83%9E%E3%83%83%E3%83%81.html", "text": "文字列マッチ"},
-    {"link": "%E3%83%87%E3%83%BC%E3%82%BF%E5%9C%A7%E7%B8%AE.html", "text": "データ圧縮"},
-    {"link": "LempelZiv.html", "text": "LempelZiv"},
    ]
 }
 ]

@@ -572,6 +572,7 @@ export const backlinkData = {
 ],
 "zx.md": [
 "AshX.md",
+"embed用のシェルのような何か.md",
 "JavaScript.md",
 "OilShell.md",
 "Shell.md",
@@ -1573,6 +1574,7 @@ export const backlinkData = {
 "Rhino.md": [
 "AshX.md",
 "EmbeddedLang.md",
+"embed用のシェルのような何か.md",
 "JavaScript.md",
 "Rhinocs.md",
 "Starlarcs.md",
@@ -2116,6 +2118,9 @@ export const backlinkData = {
 "Unix的GUIツール.md",
 "自作アプリ.md",
 "【書籍】まつもとゆきひろ、言語のしくみ.md",
+],
+"embed用のシェルのような何か.md": [
+"技術的なメモ.md",
 ],
 "【書籍】英会話フレーズ大特訓.md": [
 "書籍.md",
