@@ -457,6 +457,7 @@ export const backlinkData = {
 "PRML.md",
 "サイコロ本.md",
 "技術的なメモ.md",
+"数学.md",
 ],
 "【書籍】TheArtOfComputerProgramming.md": [
 "アルゴリズム本.md",
@@ -635,7 +636,6 @@ export const backlinkData = {
 ],
 "生物学.md": [
 "edX.md",
-"Home.md",
 "MITxBio.md",
 "医学.md",
 "化学.md",
@@ -845,6 +845,10 @@ export const backlinkData = {
 "ブルースギター.md",
 "雑多なメモ.md",
 ],
+"実解析.md": [
+"数学.md",
+"測度論.md",
+],
 "【書籍】HLSLシェーダーの魔導書.md": [
 "CG.md",
 ],
@@ -928,7 +932,6 @@ export const backlinkData = {
 ],
 "ハーフトーン.md": [
 "CG.md",
-"Home.md",
 "MFG.md",
 "Stippling.md",
 ],
@@ -1114,7 +1117,6 @@ export const backlinkData = {
 ],
 "バイク.md": [
 "Dio110.md",
-"Home.md",
 "VTZ250.md",
 "グッズ関連.md",
 "雑多なメモ.md",
@@ -1168,7 +1170,6 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "サーファープログラマー.md": [
-"Home.md",
 "サーフィン.md",
 "プログラミングエッセイ.md",
 "技術的なメモ.md",
@@ -1194,7 +1195,6 @@ export const backlinkData = {
 ],
 "MFG.md": [
 "CG.md",
-"Home.md",
 "JavaScript.md",
 "Shader.md",
 "Stippling.md",
@@ -1649,8 +1649,13 @@ export const backlinkData = {
 "サーフィン.md",
 ],
 "数学.md": [
+"2026年7月下旬の雑記.md",
 "CoverAndThomas.md",
+"機械学習.md",
 "雑多なメモ.md",
+"実解析.md",
+"【書籍】集合・位相入門.md",
+"測度論.md",
 ],
 "それっぽく描くコツ2周目.md": [
 "2026年7月下旬の雑記.md",
@@ -1768,6 +1773,7 @@ export const backlinkData = {
 ],
 "MacKay.md": [
 "機械学習.md",
+"数学.md",
 ],
 "サブWIki.md": [
 "TeFWikiのサブWiki機能.md",
@@ -1868,6 +1874,10 @@ export const backlinkData = {
 ],
 "雑多ななメモ.md": [
 "スーツケース.md",
+],
+"測度論.md": [
+"実解析.md",
+"数学.md",
 ],
 "エアコン.md": [
 "グッズ関連.md",
@@ -2228,6 +2238,7 @@ export const backlinkData = {
 "データ圧縮.md",
 "技術的なメモ.md",
 "【書籍】IntroductionToAlgorithms.md",
+"数学.md",
 "文字列マッチ.md",
 ],
 "FutureLearn.md": [
@@ -2332,7 +2343,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "イタリア語.md": [
-"Home.md",
 "まいにちイタリア語.md",
 "雑多なメモ.md",
 "【書籍】これからはじめるイタリア語入門.md",
