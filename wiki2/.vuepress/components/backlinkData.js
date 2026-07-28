@@ -604,6 +604,7 @@ export const backlinkData = {
 "ワーケーション.md",
 ],
 "Shell.md": [
+"embed用のシェルのような何か.md",
 "sed.md",
 "zx.md",
 "技術的なメモ.md",
