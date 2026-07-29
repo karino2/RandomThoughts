@@ -229,6 +229,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "Unix的.md": [
+"2026年7月下旬の雑記.md",
 "CSVのプロットはもうちょっと簡単にならないか.md",
 "embed用のシェルのような何か.md",
 "Shell.md",
@@ -702,11 +703,11 @@ export const backlinkData = {
 "【書籍】国家はなぜ衰退するのか.md": [
 "書籍.md",
 ],
-"SurfLog_202504から202512まで.md": [
-"SurfLogの過去ログ.md",
-],
 "【書籍】ソーシャルメディアプリズム.md": [
 "インターネットリテラシー.md",
+],
+"SurfLog_202504から202512まで.md": [
+"SurfLogの過去ログ.md",
 ],
 "FSharpLesson.md": [
 "FSharp.md",
@@ -992,9 +993,11 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "Nushell.md": [
+"2026年7月下旬の雑記.md",
 "CSVのプロットはもうちょっと簡単にならないか.md",
 "embed用のシェルのような何か.md",
 "Shell.md",
+"パース.md",
 ],
 "【書籍】絶対早繰り銀.md": [
 "書籍.md",
@@ -1802,6 +1805,10 @@ export const backlinkData = {
 ],
 "洗濯機.md": [
 "グッズ関連.md",
+],
+"パース.md": [
+"2026年7月下旬の雑記.md",
+"Nushell.md",
 ],
 "kanau.md": [
 "奄美大島計画.md",
