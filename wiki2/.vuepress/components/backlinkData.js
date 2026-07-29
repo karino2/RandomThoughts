@@ -337,6 +337,7 @@ export const backlinkData = {
 "CSVのプロットはもうちょっと簡単にならないか.md",
 "FParsec.md",
 "FSharp.md",
+"Nushell.md",
 "コマンドラインツールを書くための言語.md",
 "自作アプリ.md",
 "【書籍】RforDataScience.md",
@@ -1683,7 +1684,6 @@ export const backlinkData = {
 "測度論.md",
 ],
 "それっぽく描くコツ2周目.md": [
-"2026年7月下旬の雑記.md",
 "それっぽく描くコツ1周目.md",
 ],
 "データ圧縮.md": [
@@ -2363,6 +2363,7 @@ export const backlinkData = {
 "水玉懐ゲー夜話.md",
 ],
 "それっぽく描くコツ2周目.md": [
+"2026年7月下旬の雑記.md",
 "お絵描き.md",
 "それっぽく描くコツ1周目.md",
 "【書籍】イラストをそれっぽく描くコツ.md",
