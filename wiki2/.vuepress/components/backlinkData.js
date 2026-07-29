@@ -614,6 +614,8 @@ export const backlinkData = {
 ],
 "Shell.md": [
 "embed用のシェルのような何か.md",
+"Nushell.md",
+"OilShell.md",
 "sed.md",
 "Unix的.md",
 "zx.md",
@@ -962,12 +964,12 @@ export const backlinkData = {
 "パドリング.md": [
 "サーフィン.md",
 ],
-"絵師がAIについて語るのが辛い.md": [
-"雑多なメモ.md",
-],
 "【書籍】ソーシャルメディアプリズム.md": [
 "書籍.md",
 "【書籍】最強の集中力.md",
+],
+"絵師がAIについて語るのが辛い.md": [
+"雑多なメモ.md",
 ],
 "サイコロ本.md": [
 "HMM.md",
@@ -988,6 +990,11 @@ export const backlinkData = {
 ],
 "ポータブルなUI.md": [
 "技術的なメモ.md",
+],
+"Nushell.md": [
+"CSVのプロットはもうちょっと簡単にならないか.md",
+"embed用のシェルのような何か.md",
+"Shell.md",
 ],
 "【書籍】絶対早繰り銀.md": [
 "書籍.md",
