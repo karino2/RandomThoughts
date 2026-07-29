@@ -228,6 +228,15 @@ export const backlinkData = {
 "会社のためvs自分のため.md": [
 "技術的なメモ.md",
 ],
+"Unix的.md": [
+"CSVのプロットはもうちょっと簡単にならないか.md",
+"embed用のシェルのような何か.md",
+"Shell.md",
+"TeFWikiとシェルスクリプト.md",
+"UFASアーキテクチャ.md",
+"Unix的GUIツール.md",
+"技術的なメモ.md",
+],
 "バイク整備記録.md": [
 "FDroid.md",
 "自作アプリ.md",
@@ -606,6 +615,7 @@ export const backlinkData = {
 "Shell.md": [
 "embed用のシェルのような何か.md",
 "sed.md",
+"Unix的.md",
 "zx.md",
 "技術的なメモ.md",
 ],
@@ -873,6 +883,7 @@ export const backlinkData = {
 "MDDeck.md",
 "MdImgr.md",
 "MDTouch.md",
+"TeFWikiとシェルスクリプト.md",
 "UFASアーキテクチャ.md",
 "VuePress.md",
 "Wikiとhowmとメモツール.md",
@@ -1515,6 +1526,7 @@ export const backlinkData = {
 ],
 "【書籍】TheArtOfUnixProgramming.md": [
 "UFASアーキテクチャ.md",
+"Unix的.md",
 "技術的なメモ.md",
 "書籍.md",
 ],
