@@ -1,3 +1,5 @@
+[[Unix的]]。[Nushell](https://www.nushell.sh/)はやりたい事は似ているな、と思う。
+
 花粉のデータがcsvで落とせる。
 
 [花粉飛散数データの無料ダウンロード：WxTech®（ウェザーテック）](https://wxtech.weathernews.com/pollen/index.html)

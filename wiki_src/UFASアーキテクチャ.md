@@ -1,5 +1,5 @@
 自分(karino2)の考えたAndroidアプリのアーキテクチャ。Unix like File And Syncの頭文字をとってUFASアーキテクチャと呼びたい。
-ユーファスと読む。[[StorageAccessFramework]]
+ユーファスと読む。[[StorageAccessFramework]], [[Unix的]]
 
 ## UFASアーキテクチャで作られたアプリ
 
