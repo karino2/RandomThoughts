@@ -1,3 +1,5 @@
+[[Shell]]の一種
+
 - [Oils](https://oils.pub/)
   - Oilsにリネームしたらしい…
 - [[zx]] nodeでやる方がいいのでは？的な対抗馬。

@@ -37,4 +37,4 @@ cdやlsやmvといった事が出来るくらいの簡潔さが欲しい。
 
 ## Nushell
 
-Geminiにいろいろ相談していたらNushellに似てるのでは？と言われる。[Nushell](https://www.nushell.sh/)
+Geminiにいろいろ相談していたらNushellに似てるのでは？と言われる。[[Nushell]]

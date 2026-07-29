@@ -4,7 +4,7 @@
 
 - [[Unix的]]
 - [[zx]]
-- [Nushell](https://www.nushell.sh/)
+- [[Nushell]]
 - [[OilShell]]
 
 ## コマンドの記録

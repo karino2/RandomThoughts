@@ -1,4 +1,4 @@
-[[Unix的]]。[Nushell](https://www.nushell.sh/)はやりたい事は似ているな、と思う。
+[[Unix的]]。[[Nushell]]はやりたい事は似ているな、と思う。
 
 花粉のデータがcsvで落とせる。
 
