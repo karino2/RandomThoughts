@@ -563,6 +563,7 @@ export const backlinkData = {
 "Rhinocs.md",
 ],
 "AshX.md": [
+"Nushell.md",
 "Rhino.md",
 "そのうちやりたい事.md",
 ],
