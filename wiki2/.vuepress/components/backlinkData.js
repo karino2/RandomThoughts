@@ -131,7 +131,6 @@ export const backlinkData = {
 ],
 "Heap.md": [
 "アルゴリズム.md",
-"原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
 ],
 "【書籍】ファストアンドスロー.md": [
@@ -1096,6 +1095,9 @@ export const backlinkData = {
 "経済.md",
 "書籍.md",
 ],
+"SentencePiece.md": [
+"原論文から解き明かす生成AI.md",
+],
 "【書籍】世界一シンプルで科学的に証明された究極の食事.md": [
 "書籍.md",
 ],
@@ -1255,7 +1257,6 @@ export const backlinkData = {
 "2026年7月下旬の雑記.md",
 "EnhancedSuffixArray.md",
 "アルゴリズム.md",
-"原論文から解き明かす生成AI.md",
 "論文.md",
 ],
 "一人読書会ライブ.md": [
@@ -1504,7 +1505,6 @@ export const backlinkData = {
 "2026年7月下旬の雑記.md",
 "SuffixArray.md",
 "アルゴリズム.md",
-"原論文から解き明かす生成AI.md",
 "文字列マッチ.md",
 "論文.md",
 ],

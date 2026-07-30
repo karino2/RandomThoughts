@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E5%8E%9F%E8%AB%96%E6%96%87%E3%81%8B%E3%82%89%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%99%E7%94%9F%E6%88%90AI.html", "text": "原論文から解き明かす生成AI"},
     {"link": "%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%85%A5%E9%96%80.html", "text": "型システム入門"},
     {"link": "%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0.html", "text": "型システム"},
     {"link": "Nushell.html", "text": "Nushell"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "技術的なメモ"},
     {"link": "Unix%E7%9A%84GUI%E3%83%84%E3%83%BC%E3%83%AB.html", "text": "Unix的GUIツール"},
     {"link": "Unix%E7%9A%84.html", "text": "Unix的"},
-    {"link": "UFAS%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3.html", "text": "UFASアーキテクチャ"},
    ]
 }
 ]
