@@ -113,4 +113,44 @@ eraseなんて大丈夫？と見てみるとpositionsはbtree_setだそうで。
 
 ### 雑に計算量を考えてみる
 
-最初にバイグラムをqueueに入れる所で、バイグラムの個数はN/2なのでO(N)。priority queueはinsertはO(log N)なんだが、ツリーのサイズが最初は小さいのでちゃんと評価するとO(N)（[[Heap]]の方に教科書の参照あり）、
+最初にバイグラムをqueueに入れる所で、バイグラムの個数はN/2なのでO(N)。priority queueはinsertはO(log N)なんだが、ツリーのサイズが最初は小さいのでちゃんと評価するとO(N)（[[Heap]]の方に教科書の参照あり）。
+
+sentence pieceはマージの個数次第だが、マージの個数をMとしておこう。
+
+一回あたりが、pqからのpopにO(log N)、隣を見たり再計算したりはまぁ定数時間だろう。
+pqに入れるのはたかだが2個か？と思うとだいたいO(log N)か。
+これをM回なので、 雑には O(M log N)。
+Mが大きくなるとキューが減るのでもうちょっとtightなバウンドはあるかもしれないが。
+
+以上から、O(N + M log N)かな？
+
+[[原論文から解き明かす生成AI]]ではO(N log N)と言ってるな。
+論文にも以下の記述があるが
+
+```
+Sentence-
+Piece adopts an O(N log(N )) algorithm in which
+the merged symbols are managed by a binary heap
+(priority queue).
+```
+
+自分の理解と違うなぁ。
+MはNよりはだいぶ小さいと思うのだが。
+
+コメントにはマージごとに O(log N)と書いてあるな。
+
+```cpp
+// Algorithm: O(log N) per merge via:
+//   1. Max-heap for finding the best pair (O(log N) pop vs O(N) scan)
+//   2. Doubly-linked lists for O(1) merge of adjacent tokens
+//   3. Lazy deletion: frequency decrements stored in a "dirty" map,
+//      applied on pop, avoiding O(N) heap search for updates
+```
+
+こちらは正しいので、やはり O(M log N)じゃん、と思うのだが。本の回答を見てみる。
+
+[support-genAI-book/exercises/chapter2.md at main · yoheikikuta/support-genAI-book](https://github.com/yoheikikuta/support-genAI-book/blob/main/exercises/chapter2.md#%E6%BC%94%E7%BF%92%E5%95%8F%E9%A1%8C211)
+
+いやぁ、Mを最悪Nとか言うのはどうなの？さすがに100GBくらいの学習データとか言っていて、vocabは16kとかなんだからオーダーが全然違うだろう。
+
+ただBPEをN^2と言うならN log Nと言わないといけないというのはまぁそうだな。
