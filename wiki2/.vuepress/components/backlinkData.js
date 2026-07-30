@@ -851,6 +851,10 @@ export const backlinkData = {
 "プログラマライフ.md",
 "雑多なメモ.md",
 ],
+"型システム.md": [
+"Nushell.md",
+"型システム入門.md",
+],
 "【書籍】ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法.md": [
 "書籍.md",
 ],
@@ -1000,6 +1004,8 @@ export const backlinkData = {
 "embed用のシェルのような何か.md",
 "Shell.md",
 "パース.md",
+"型システム.md",
+"型システム入門.md",
 ],
 "【書籍】絶対早繰り銀.md": [
 "書籍.md",
@@ -2027,6 +2033,9 @@ export const backlinkData = {
 "【書籍】硬い体が驚くほど気持ち良く伸びる自重ストレッチ.md": [
 "書籍.md",
 ],
+"型システム入門.md": [
+"型システム.md",
+],
 "706x.md": [
 "ClassCentral.md",
 "edX.md",
@@ -2048,6 +2057,7 @@ export const backlinkData = {
 "MdImgr.md",
 "コマンドラインツールを書くための言語.md",
 "技術的なメモ.md",
+"型システム.md",
 "自作アプリ.md",
 "【書籍】ModernCompilerImplementationInML.md",
 ],
@@ -2149,6 +2159,7 @@ export const backlinkData = {
 ],
 "embed用のシェルのような何か.md": [
 "技術的なメモ.md",
+"型システム入門.md",
 ],
 "【書籍】英会話フレーズ大特訓.md": [
 "書籍.md",
@@ -2698,6 +2709,7 @@ export const backlinkData = {
 "RandomThoughts.md",
 "オーディオブック.md",
 "技術的なメモ.md",
+"型システム入門.md",
 "元祖水玉本舗.md",
 "原論文から解き明かす生成AI.md",
 "社会科学.md",

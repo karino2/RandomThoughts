@@ -1,9 +1,11 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%85%A5%E9%96%80.html", "text": "型システム入門"},
+    {"link": "%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0.html", "text": "型システム"},
+    {"link": "Nushell.html", "text": "Nushell"},
     {"link": "%E6%B0%B4%E7%8E%89%E6%87%90%E3%82%B2%E3%83%BC%E5%A4%9C%E8%A9%B1.html", "text": "水玉懐ゲー夜話"},
     {"link": "2026%E5%B9%B47%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年7月下旬の雑記"},
-    {"link": "Nushell.html", "text": "Nushell"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "%E3%83%91%E3%83%BC%E3%82%B9.html", "text": "パース"},
     {"link": "Shell.html", "text": "Shell"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "Unix%E7%9A%84GUI%E3%83%84%E3%83%BC%E3%83%AB.html", "text": "Unix的GUIツール"},
     {"link": "Unix%E7%9A%84.html", "text": "Unix的"},
     {"link": "UFAS%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3.html", "text": "UFASアーキテクチャ"},
-    {"link": "TeFWiki%E3%81%A8%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88.html", "text": "TeFWikiとシェルスクリプト"},
-    {"link": "%E6%B8%AC%E5%BA%A6%E8%AB%96.html", "text": "測度論"},
    ]
 }
 ]
