@@ -244,7 +244,7 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 
 ## Sentence Pieceのコード理解
 
-[[EnhancedSuffixArray]]を先に勉強する。[[Heap]]も復習。ついでに[[SuffixArray]]も復習。
+[[SentencePiece]]
 
 ## バイトのBPE（GPT2の論文）
 
