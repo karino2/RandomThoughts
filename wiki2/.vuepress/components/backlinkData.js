@@ -1098,6 +1098,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "SentencePiece.md": [
+"2026年7月下旬の雑記.md",
 "原論文から解き明かす生成AI.md",
 ],
 "【書籍】世界一シンプルで科学的に証明された究極の食事.md": [
@@ -1263,6 +1264,7 @@ export const backlinkData = {
 "論文.md",
 ],
 "一人読書会ライブ.md": [
+"2026年7月下旬の雑記.md",
 "原論文から解き明かす生成AI.md",
 ],
 "Metal.md": [
@@ -2039,6 +2041,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "型システム入門.md": [
+"2026年7月下旬の雑記.md",
 "型システム.md",
 ],
 "706x.md": [
