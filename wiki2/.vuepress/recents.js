@@ -1,6 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "SentencePiece.html", "text": "SentencePiece"},
+    {"link": "Heap.html", "text": "Heap"},
     {"link": "%E5%8E%9F%E8%AB%96%E6%96%87%E3%81%8B%E3%82%89%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%99%E7%94%9F%E6%88%90AI.html", "text": "原論文から解き明かす生成AI"},
     {"link": "%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%85%A5%E9%96%80.html", "text": "型システム入門"},
     {"link": "%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0.html", "text": "型システム"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "embed%E7%94%A8%E3%81%AE%E3%82%B7%E3%82%A7%E3%83%AB%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E4%BD%95%E3%81%8B.html", "text": "embed用のシェルのような何か"},
     {"link": "CSV%E3%81%AE%E3%83%97%E3%83%AD%E3%83%83%E3%83%88%E3%81%AF%E3%82%82%E3%81%86%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E7%B0%A1%E5%8D%98%E3%81%AB%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84%E3%81%8B.html", "text": "CSVのプロットはもうちょっと簡単にならないか"},
     {"link": "%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "技術的なメモ"},
-    {"link": "Unix%E7%9A%84GUI%E3%83%84%E3%83%BC%E3%83%AB.html", "text": "Unix的GUIツール"},
-    {"link": "Unix%E7%9A%84.html", "text": "Unix的"},
    ]
 }
 ]

@@ -130,6 +130,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "Heap.md": [
+"SentencePiece.md",
 "アルゴリズム.md",
 "【書籍】IntroductionToAlgorithms.md",
 ],
@@ -643,6 +644,7 @@ export const backlinkData = {
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
+"SentencePiece.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "一人読書会ライブ.md",
 "機械学習.md",
@@ -1256,6 +1258,7 @@ export const backlinkData = {
 "SuffixArray.md": [
 "2026年7月下旬の雑記.md",
 "EnhancedSuffixArray.md",
+"SentencePiece.md",
 "アルゴリズム.md",
 "論文.md",
 ],
@@ -1390,6 +1393,7 @@ export const backlinkData = {
 "EnhancedSuffixArray.md",
 "Home.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
+"SentencePiece.md",
 "SuffixArray.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "書籍.md",
@@ -1503,6 +1507,7 @@ export const backlinkData = {
 ],
 "EnhancedSuffixArray.md": [
 "2026年7月下旬の雑記.md",
+"SentencePiece.md",
 "SuffixArray.md",
 "アルゴリズム.md",
 "文字列マッチ.md",
