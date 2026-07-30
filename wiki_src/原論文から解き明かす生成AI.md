@@ -244,7 +244,7 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 
 ## Sentence Pieceのコード理解
 
-[[SentencePiece]]
+[[SentencePiece]]、[[一人読書会ライブ]]もこの辺を対象にやった。
 
 ## バイトのBPE（GPT2の論文）
 
