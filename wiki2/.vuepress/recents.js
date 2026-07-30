@@ -1,6 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E4%B8%80%E4%BA%BA%E8%AA%AD%E6%9B%B8%E4%BC%9A%E3%83%A9%E3%82%A4%E3%83%96.html", "text": "一人読書会ライブ"},
+    {"link": "%E3%83%87%E3%83%BC%E3%82%BF%E5%9C%A7%E7%B8%AE.html", "text": "データ圧縮"},
     {"link": "SentencePiece.html", "text": "SentencePiece"},
     {"link": "Heap.html", "text": "Heap"},
     {"link": "%E5%8E%9F%E8%AB%96%E6%96%87%E3%81%8B%E3%82%89%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%99%E7%94%9F%E6%88%90AI.html", "text": "原論文から解き明かす生成AI"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "Shell.html", "text": "Shell"},
     {"link": "OilShell.html", "text": "OilShell"},
     {"link": "embed%E7%94%A8%E3%81%AE%E3%82%B7%E3%82%A7%E3%83%AB%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E4%BD%95%E3%81%8B.html", "text": "embed用のシェルのような何か"},
-    {"link": "CSV%E3%81%AE%E3%83%97%E3%83%AD%E3%83%83%E3%83%88%E3%81%AF%E3%82%82%E3%81%86%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E7%B0%A1%E5%8D%98%E3%81%AB%E3%81%AA%E3%82%89%E3%81%AA%E3%81%84%E3%81%8B.html", "text": "CSVのプロットはもうちょっと簡単にならないか"},
-    {"link": "%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "技術的なメモ"},
    ]
 }
 ]
