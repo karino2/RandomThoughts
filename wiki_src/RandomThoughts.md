@@ -2,7 +2,7 @@
 
 - 公開先URL [Home - RandomThoughts](https://karino2.github.io/RandomThoughts/Home) 
 
-最近は[[VuePress]]で公開している。
+最近は[[VuePress]]で公開している。karino2の公開用パーソナルWiki。
 
 ## 今後は本は書籍、をつけない事に
 

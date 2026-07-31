@@ -1,4 +1,4 @@
-[[書籍]]
+[[書籍]], [[機械学習]]
 
 - [amazon: 原論文から解き明かす生成AI](https://amzn.to/4voWeSZ)
 - [原論文から解き明かす生成AIのサポートページ](https://github.com/yoheikikuta/support-genAI-book)
