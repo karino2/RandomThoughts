@@ -486,6 +486,7 @@ export const backlinkData = {
 "サブワード分割.md",
 "ユニグラム言語モデル.md",
 "技術的なメモ.md",
+"原論文から解き明かす生成AI.md",
 "数学.md",
 ],
 "【書籍】TheArtOfComputerProgramming.md": [
@@ -1429,6 +1430,7 @@ export const backlinkData = {
 "SubwordRegularization.md",
 "SuffixArray.md",
 "TowardATheoryOfTokenizationInLLMs.md",
+"機械学習.md",
 "書籍.md",
 ],
 "Rhinocs.md": [
