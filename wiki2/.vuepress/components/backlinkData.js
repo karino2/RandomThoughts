@@ -879,7 +879,7 @@ export const backlinkData = {
 ],
 "型システム.md": [
 "Nushell.md",
-"型システム入門.md",
+"型システムのしくみ.md",
 ],
 "【書籍】ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法.md": [
 "書籍.md",
@@ -1031,7 +1031,7 @@ export const backlinkData = {
 "Shell.md",
 "パース.md",
 "型システム.md",
-"型システム入門.md",
+"型システムのしくみ.md",
 ],
 "【書籍】絶対早繰り銀.md": [
 "書籍.md",
@@ -1820,12 +1820,12 @@ export const backlinkData = {
 "ビデオカメラ.md": [
 "グッズ関連.md",
 ],
+"【書籍】ギャノング生理学.md": [
+"生理学.md",
+],
 "TowardATheoryOfTokenizationInLLMs.md": [
 "2026年7月下旬の雑記.md",
 "原論文から解き明かす生成AI.md",
-],
-"【書籍】ギャノング生理学.md": [
-"生理学.md",
 ],
 "キーボード.md": [
 "BOOX.md",
@@ -2202,7 +2202,7 @@ export const backlinkData = {
 ],
 "embed用のシェルのような何か.md": [
 "技術的なメモ.md",
-"型システム入門.md",
+"型システムのしくみ.md",
 ],
 "【書籍】英会話フレーズ大特訓.md": [
 "書籍.md",
@@ -2537,6 +2537,10 @@ export const backlinkData = {
 "Kotlin.md",
 "技術的なメモ.md",
 ],
+"型システムのしくみ.md": [
+"型システム.md",
+"型システム入門.md",
+],
 "Scoop.md": [
 "技術的なメモ.md",
 ],
@@ -2766,7 +2770,7 @@ export const backlinkData = {
 "RandomThoughts.md",
 "オーディオブック.md",
 "技術的なメモ.md",
-"型システム入門.md",
+"型システムのしくみ.md",
 "元祖水玉本舗.md",
 "原論文から解き明かす生成AI.md",
 "社会科学.md",
