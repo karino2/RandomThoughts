@@ -150,6 +150,12 @@ export const backlinkData = {
 "MDDeck.md",
 "技術的なメモ.md",
 ],
+"サブワード分割.md": [
+"BPE.md",
+"NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
+"SentencePiece.md",
+"ユニグラム言語モデル.md",
+],
 "CoverAndThomas.md": [
 "KLダイバージェンス.md",
 "LempelZiv.md",
@@ -311,6 +317,12 @@ export const backlinkData = {
 "PowerShell.md",
 "自作アプリ.md",
 ],
+"BPE.md": [
+"NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
+"SentencePiece.md",
+"サブワード分割.md",
+"ユニグラム言語モデル.md",
+],
 "雑多な統計.md": [
 "雑多なメモ.md",
 ],
@@ -328,6 +340,9 @@ export const backlinkData = {
 "【書籍】TheSwiftProgrammingLanguage.md",
 ],
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md": [
+"BPE.md",
+"SubwordRegularization.md",
+"サブワード分割.md",
 "原論文から解き明かす生成AI.md",
 ],
 "電気ケトル.md": [
@@ -463,10 +478,13 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "機械学習.md": [
+"BPE.md",
 "CoverAndThomas.md",
 "HMM.md",
 "PRML.md",
 "サイコロ本.md",
+"サブワード分割.md",
+"ユニグラム言語モデル.md",
 "技術的なメモ.md",
 "数学.md",
 ],
@@ -645,6 +663,7 @@ export const backlinkData = {
 "EnhancedSuffixArray.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "SentencePiece.md",
+"SubwordRegularization.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "一人読書会ライブ.md",
 "機械学習.md",
@@ -846,6 +865,11 @@ export const backlinkData = {
 ],
 "スケーボーでサーフィンの陸トレ.md": [
 "サーフィン.md",
+],
+"SubwordRegularization.md": [
+"2026年7月下旬の雑記.md",
+"ユニグラム言語モデル.md",
+"原論文から解き明かす生成AI.md",
 ],
 "40代前半のプログラマライフの振り返り.md": [
 "40代後半からアラフィフのプログラマライフについて考える.md",
@@ -1100,6 +1124,9 @@ export const backlinkData = {
 ],
 "SentencePiece.md": [
 "2026年7月下旬の雑記.md",
+"SubwordRegularization.md",
+"サブワード分割.md",
+"ユニグラム言語モデル.md",
 "原論文から解き明かす生成AI.md",
 ],
 "【書籍】世界一シンプルで科学的に証明された究極の食事.md": [
@@ -1222,13 +1249,13 @@ export const backlinkData = {
 "【書籍】リヴァイアサン.md": [
 "社会科学.md",
 ],
+"【書籍】サピエンス全史.md": [
+"オーディオブック.md",
+],
 "Karino2DIYApp.md": [
 "BOOX.md",
 "Kariino2DIYApp.md",
 "自作アプリ.md",
-],
-"【書籍】サピエンス全史.md": [
-"オーディオブック.md",
 ],
 "MFG.md": [
 "CG.md",
@@ -1358,13 +1385,13 @@ export const backlinkData = {
 "技術的なメモ.md",
 "書籍.md",
 ],
-"sed.md": [
-"Shell.md",
-"技術的なメモ.md",
-],
 "【書籍】サピエンス全史.md": [
 "書籍.md",
 "【書籍】14歳から知る影響と連鎖の全世界史.md",
+],
+"sed.md": [
+"Shell.md",
+"技術的なメモ.md",
 ],
 "スーツケース.md": [
 "グッズ関連.md",
@@ -1386,6 +1413,7 @@ export const backlinkData = {
 "Wikiと手書きノートの融合.md",
 "アルゴリズム.md",
 "サイコロ本.md",
+"ユニグラム言語モデル.md",
 "機械学習.md",
 "原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
@@ -1398,6 +1426,7 @@ export const backlinkData = {
 "Home.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "SentencePiece.md",
+"SubwordRegularization.md",
 "SuffixArray.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "書籍.md",
@@ -1629,6 +1658,9 @@ export const backlinkData = {
 "USB充電器.md",
 "ノートPC.md",
 ],
+"【書籍】これからはじめるイタリア語入門.md": [
+"書籍.md",
+],
 "サブWiki.md": [
 "GithubPages.md",
 "GitWiki.md",
@@ -1642,9 +1674,6 @@ export const backlinkData = {
 ],
 "伊豆の温泉計画.md": [
 "ワーケーション.md",
-],
-"【書籍】これからはじめるイタリア語入門.md": [
-"書籍.md",
 ],
 "bulma.md": [
 "htmnix.md",
@@ -2301,6 +2330,9 @@ export const backlinkData = {
 "MOOC.md",
 "化学.md",
 ],
+"分布仮説.md": [
+"ContextualCorrelatesOfSynonymy.md",
+],
 "そのうちやりたい事.md": [
 "AshX.md",
 "FAScript.md",
@@ -2405,6 +2437,11 @@ export const backlinkData = {
 "雑多なメモ.md",
 "【書籍】これからはじめるイタリア語入門.md",
 "電子辞書.md",
+],
+"ユニグラム言語モデル.md": [
+"SentencePiece.md",
+"SubwordRegularization.md",
+"サブワード分割.md",
 ],
 "HT2.md": [
 "SurfLog.md",
@@ -2517,6 +2554,7 @@ export const backlinkData = {
 ],
 "ContextualCorrelatesOfSynonymy.md": [
 "原論文から解き明かす生成AI.md",
+"分布仮説.md",
 ],
 "化学計算問題の解き方.md": [
 "化学.md",
@@ -2820,11 +2858,6 @@ export const backlinkData = {
 "Rhinocs_セットアップ.md": [
 "Rhinocs.md",
 ],
-"MarkDown.md": [
-"mdvcat.md",
-"unimemo.md",
-"技術的なメモ.md",
-],
 "Android.md": [
 "FDroid.md",
 "PDF.md",
@@ -2832,6 +2865,11 @@ export const backlinkData = {
 "SAF.md",
 "StorageAccessFramework.md",
 "あおぞらAndroid教室.md",
+"技術的なメモ.md",
+],
+"MarkDown.md": [
+"mdvcat.md",
+"unimemo.md",
 "技術的なメモ.md",
 ],
 "沖縄計画.md": [
