@@ -2,7 +2,7 @@
 
 [arxiv:1508.07909 Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/abs/1508.07909)
 
-NMTにサブワードを使おう、それにはBPEがいいぜ、という事を言った論文。最初にBPEをこのコンテキストで使おうと言った論文。
+NMTに[[サブワード分割]]を使おう、それにはBPEがいいぜ、という事を言った[[論文]]。最初に[[BPE]]をサブワード分割に使おうと言った論文。
 
 ## 単語
 

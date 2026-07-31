@@ -132,6 +132,10 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 
 [[NeuralMachineTranslationOfRareWordsWithSubwordUnits]]
 
+## SubowrdRegularization
+
+[[SubwordRegularization]]
+
 ### Amazonの低評価レビューの話
 
 この本には「サブワードの出現確率は、サブワードの頻度に依存した確率のみで定まる」が意味分からん、という低評価レビューがついている。

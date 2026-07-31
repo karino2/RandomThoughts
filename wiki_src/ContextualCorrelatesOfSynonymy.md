@@ -2,7 +2,7 @@
 
 [Contextual correlates of synonymy - Communications of the ACM](https://dl.acm.org/doi/abs/10.1145/365628.365657?download=true)
 
-分布仮説の論文。
+[[分布仮説]]の論文。
 
 ## 提唱する仮説: 単語Aの文脈と単語Bの文脈で共通の単語の割合いは、単語AとBの意味の類似度の関数である
 
@@ -74,3 +74,18 @@ walksをwalkに統一したり、という操作をしても、単にカーブ�
 
 Type I Error: false positive
 
+## 演習2.3 (原論文から解き明かす生成AI)
+
+![imgs/DistHypo/0000.png](imgs/DistHypo/0000.png)
+
+## 実験の設定: Freq考慮
+
+![imgs/DistHypo/0001.png](imgs/DistHypo/0001.png)
+
+## 実験の設定: Gramatical
+
+![imgs/DistHypo/0002.png](imgs/DistHypo/0002.png)
+
+## 実験の設定: Association
+
+![imgs/DistHypo/0003.png](imgs/DistHypo/0003.png)

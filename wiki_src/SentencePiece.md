@@ -3,12 +3,15 @@
 - [google/sentencepiece: Unsupervised text tokenizer for Neural Network-based text generation.](https://github.com/google/sentencepiece)
 - [[論文]] [arxiv:1808.06226 SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing](https://arxiv.org/abs/1808.06226)
 
+[[サブワード分割]]のライブラリ。[[BPE]]と[[ユニグラム言語モデル]]の実装が入っている、及びその解説論文。
 
-[[EnhancedSuffixArray]]を先に勉強する。[[Heap]]も復習。ついでに[[SuffixArray]]も復習。
+## 関連ページ
+
+コードを理解するには[[EnhancedSuffixArray]]を勉強すると良い。[[Heap]]も復習しておくと良い。ついでに[[SuffixArray]]も復習（これは不要だが）。
 
 ## BPEのトレーニングのコード読み
 
-[[原論文から解き明かす生成AI]]の問題が2問ほどこれに言及していたので読む。bpe_model_trainer.ccのTrainer::Trainあたり。
+[[原論文から解き明かす生成AI]]の問題が2問ほどこれに言及していたので[[BPE]]のトレーニングのコードを読む。bpe_model_trainer.ccのTrainer::Trainあたり。
 
 ###  センテンス周辺の型の確認
 
