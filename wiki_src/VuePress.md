@@ -259,3 +259,10 @@ export default defineUserConfig({
 [Recentsのprevとnextは使わないので消す。 · karino2/RandomThoughts@a96de5c](https://github.com/karino2/RandomThoughts/commit/a96de5c9538d718d11893451fdfab07627503ef9)
 
 いい感じになった。
+
+## Math support
+
+[[TeFWiki]]に数式サポートを入れているので、RandomThoughtsの公開の方にも数式を入れる。
+プラグインもあるっぽいが、まぁmarkdown-itを既にconfig.jsで使っているので、ここに[microsoft/vscode-markdown-it-katex: Add Math to your Markdown with a KaTeX plugin for Markdown-it](https://github.com/microsoft/vscode-markdown-it-katex/tree/main)を足す。
+
+[math support. · karino2/RandomThoughts@1961d4c](https://github.com/karino2/RandomThoughts/commit/1961d4cb1d5f5bd46748f62983a179a5c4ce448e)
