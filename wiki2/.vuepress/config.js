@@ -13,6 +13,8 @@ import wikilinks from 'markdown-it-wikilinks'
 // const wikilinks = wikilinkLocalFork.default
 // import wikilinks from './markdown-it-wikilinks-nfcfork.cjs'
 
+import mdkatex from "@vscode/markdown-it-katex"
+
 import Prism from 'prismjs'
 import PrismMfg from './prism-mfg.js'
 
@@ -44,12 +46,14 @@ export default defineUserConfig({
       }
     }),
     head: [
-      ['meta', { name: 'google-site-verification', content: 'OOVcbzSUlF4UfIyZcP3CCKeILC5dmVL0xRBcou-NvvU' }]
+      ['meta', { name: 'google-site-verification', content: 'OOVcbzSUlF4UfIyZcP3CCKeILC5dmVL0xRBcou-NvvU' }],
+      ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css' }],
     ],
     title: "RandomThoughts",
     description: "公開用Wiki、雑多なジャンルのメモを全部入れておく所",
     extendsMarkdown: md => {
       md.use(wikilinks(options))
+      md.use(mdkatex.default)
 
       // viteのアップデートで imgs/HMM/0001.pngなどが相対パスで見てくれなくなった。
       // そのため、imgs/... などの相対パスに自動で ./ を付与する補正処理を追加する。

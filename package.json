@@ -20,6 +20,7 @@
     "wiki2:build": "vuepress build wiki2"
   },
   "devDependencies": {
+    "@vscode/markdown-it-katex": "^1.1.2",
     "@vuepress/bundler-vite": "^2.0.0-rc.30",
     "@vuepress/theme-default": "^2.0.0-rc.132",
     "markdown-it": "^14.1.0",
