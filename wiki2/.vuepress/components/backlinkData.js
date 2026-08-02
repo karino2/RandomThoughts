@@ -577,7 +577,6 @@ export const backlinkData = {
 "Rhinocs.md",
 ],
 "AshX.md": [
-"Nushell.md",
 "Rhino.md",
 "そのうちやりたい事.md",
 ],
@@ -868,7 +867,6 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "型システム.md": [
-"Nushell.md",
 "型システムのしくみ.md",
 ],
 "【書籍】ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法.md": [

@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "Nushell.html", "text": "Nushell"},
     {"link": "2026%E5%B9%B48%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年8月上旬の雑記"},
     {"link": "%E6%B0%B4%E7%8E%89%E6%87%90%E3%82%B2%E3%83%BC%E5%A4%9C%E8%A9%B1.html", "text": "水玉懐ゲー夜話"},
     {"link": "%E5%9E%8B%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF.html", "text": "型システムのしくみ"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "RandomThoughts.html", "text": "RandomThoughts"},
     {"link": "%E5%88%86%E5%B8%83%E4%BB%AE%E8%AA%AC.html", "text": "分布仮説"},
     {"link": "%E3%83%A6%E3%83%8B%E3%82%B0%E3%83%A9%E3%83%A0%E8%A8%80%E8%AA%9E%E3%83%A2%E3%83%87%E3%83%AB.html", "text": "ユニグラム言語モデル"},
-    {"link": "%E3%82%B5%E3%83%96%E3%83%AF%E3%83%BC%E3%83%89%E5%88%86%E5%89%B2.html", "text": "サブワード分割"},
    ]
 }
 ]
