@@ -1482,9 +1482,11 @@ export const backlinkData = {
 ],
 "TypeScript.md": [
 "Deno.md",
+"embed用のシェルのような何か.md",
 "GithubPages.md",
 "JavaScript.md",
 "技術的なメモ.md",
+"型システムのしくみ.md",
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
@@ -2176,6 +2178,7 @@ export const backlinkData = {
 "【書籍】まつもとゆきひろ、言語のしくみ.md",
 ],
 "embed用のシェルのような何か.md": [
+"2026年8月上旬の雑記.md",
 "技術的なメモ.md",
 "型システムのしくみ.md",
 ],
@@ -2397,6 +2400,7 @@ export const backlinkData = {
 "それっぽく描くコツ1周目.md",
 "ライブ.md",
 "【書籍】イラストをそれっぽく描くコツ.md",
+"水玉懐ゲー夜話.md",
 ],
 "【書籍】社会契約論.md": [
 "社会科学.md",
