@@ -347,6 +347,7 @@ export const backlinkData = {
 ],
 "GoFO.md": [
 "CSVのプロットはもうちょっと簡単にならないか.md",
+"embed用のシェルのような何か.md",
 "FParsec.md",
 "FSharp.md",
 "Nushell.md",
@@ -577,6 +578,7 @@ export const backlinkData = {
 "Rhinocs.md",
 ],
 "AshX.md": [
+"embed用のシェルのような何か.md",
 "Rhino.md",
 "そのうちやりたい事.md",
 ],
@@ -867,6 +869,7 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "型システム.md": [
+"embed用のシェルのような何か.md",
 "型システムのしくみ.md",
 ],
 "【書籍】ズボラでも中性脂肪とコレステロールがみるみる下がる47の方法.md": [
@@ -1015,6 +1018,7 @@ export const backlinkData = {
 "Nushell.md": [
 "CSVのプロットはもうちょっと簡単にならないか.md",
 "embed用のシェルのような何か.md",
+"GoFO.md",
 "Shell.md",
 "パース.md",
 "型システム.md",

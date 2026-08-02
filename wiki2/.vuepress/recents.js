@@ -1,6 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "GoFO.html", "text": "GoFO"},
+    {"link": "embed%E7%94%A8%E3%81%AE%E3%82%B7%E3%82%A7%E3%83%AB%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E4%BD%95%E3%81%8B.html", "text": "embed用のシェルのような何か"},
     {"link": "Nushell.html", "text": "Nushell"},
     {"link": "2026%E5%B9%B48%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年8月上旬の雑記"},
     {"link": "%E6%B0%B4%E7%8E%89%E6%87%90%E3%82%B2%E3%83%BC%E5%A4%9C%E8%A9%B1.html", "text": "水玉懐ゲー夜話"},
@@ -14,8 +16,6 @@ export const recents = [
     {"link": "%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92.html", "text": "機械学習"},
     {"link": "%E3%82%B5%E3%83%96Wiki.html", "text": "サブWiki"},
     {"link": "RandomThoughts.html", "text": "RandomThoughts"},
-    {"link": "%E5%88%86%E5%B8%83%E4%BB%AE%E8%AA%AC.html", "text": "分布仮説"},
-    {"link": "%E3%83%A6%E3%83%8B%E3%82%B0%E3%83%A9%E3%83%A0%E8%A8%80%E8%AA%9E%E3%83%A2%E3%83%87%E3%83%AB.html", "text": "ユニグラム言語モデル"},
    ]
 }
 ]
