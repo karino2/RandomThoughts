@@ -10,7 +10,9 @@ go言語、golangなどと呼ばれる。関連して[[Folang]]のリンクも�
 - [go - Go](https://cs.opensource.google/go/go) 処理系のソース。
 - [alecthomas/participle: A parser library for Go](https://github.com/alecthomas/participle/tree/master) パーサーはこれが良い。
 - [[Wails]] Go向けの[[Electron]]代替。
-- [karino2/mdvcat_go: mdvcat port to go, using webview_go](https://github.com/karino2/mdvcat_go) [[mdvcat]]をgoのwebviewに直した。
+- [[GoとWebView]]
+  - [karino2/mdvcat_go: mdvcat port to go, using webview_go](https://github.com/karino2/mdvcat_go) [[mdvcat]]をgoのwebviewに直した。
+- [[fyne]]
 
 ## 書き捨てコマンドの作業手順
 
