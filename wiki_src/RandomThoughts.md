@@ -1,8 +1,10 @@
+karino2のパーソナルWikiの公開部分。
+
 公開用の雑多なメモを書いておく[[サブWiki]]を、RandomThoughtsという名前で作って公開している。ようするに現在あなたが見ているこのWikiの事。
 
 - 公開先URL [Home - RandomThoughts](https://karino2.github.io/RandomThoughts/Home) 
 
-最近は[[VuePress]]で公開している。karino2の公開用パーソナルWiki。
+最近は[[VuePress]]で公開している。
 
 ## 今後は本は書籍、をつけない事に
 

@@ -132,6 +132,6 @@ ls *.md | each {|f|
 
 割といいのでは？
 
-TypeScriptで実装するか？
+[[TypeScript]]で実装するか？
 
 [[型システム]]
