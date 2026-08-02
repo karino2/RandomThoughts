@@ -1365,6 +1365,7 @@ export const backlinkData = {
 "Metal.md",
 ],
 "GoとWebView.md": [
+"2026年8月上旬の雑記.md",
 "Go.md",
 ],
 "awk.md": [
