@@ -5,11 +5,93 @@
 - [TypeScript: Documentation - TypeScript for JavaScript Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - [[Deno]]
 - [The essentials of TypeScript • Tackling TypeScript](https://exploringjs.com/tackling-ts/ch_typescript-essentials.html) 入門記事
+- [TypeScript: TS Playground - An online editor for exploring TypeScript and JavaScript](https://www.typescriptlang.org/play/?#code/Q) ちょっと試すにはこれ。
 
 **VSCode 関連**
 
 - [TypeScript tutorial with Visual Studio Code](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
 - [TypeScript debugging with Visual Studio Code](https://code.visualstudio.com/docs/typescript/typescript-debugging)
+
+## Type Challenges
+
+少しType Scriptの型を調べたいと思って見つけたサイト。
+
+[type-challenges/type-challenges: Collection of TypeScript type challenges with online judge](https://github.com/type-challenges/type-challenges?utm_source=chatgpt.com)
+
+各問題の左上の「Take the challenges」というボタンを押すと実際に問題に挑める。
+
+Errorsのタブに失敗していると出るっぽい。
+
+
+## 型テスト
+
+上のType Challengesでやってる方法は以下みたいな感じらしい。
+
+```ts
+type Equal<A, B> =
+    (<T>() => T extends A ? 1 : 2) extends
+    (<T>() => T extends B ? 1 : 2)
+        ? true
+        : false
+
+type Expect<T extends true> = T
+```
+
+というのを書いて、
+
+```ts
+
+type Test = Expect<
+    Equal<
+        MyType<string>,
+        string[]
+    >
+>
+```
+
+とかやる。
+
+以下みたいな例を試すと使い方は分かる。
+
+```ts
+type A = {
+    x: string
+}
+
+type B = A & {
+    y: number
+}
+
+const v = {
+    x: "abc",
+    y: 123
+} satisfies B
+
+const v2 : B = {
+    x: "abc",
+    y: 123
+}
+
+// これはOK
+type Test = Expect<
+    Equal<
+        typeof v2,
+        B
+    >
+>
+
+// これはエラー
+type Test2 = Expect<
+    Equal<
+        typeof v1,
+        B
+    >
+>
+
+```
+
+satisfiesはこちら。 [TypeScript: Documentation - TypeScript 4.9](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html)
+
 
 ## 単一jsファイルを作る時のメモ
 
