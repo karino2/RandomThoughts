@@ -687,6 +687,9 @@ export const backlinkData = {
 "声でストレッチタイマー.md": [
 "そのうちやりたい事.md",
 ],
+"JavaScrpt.md": [
+"ExploringTypeScript.md",
+],
 "【書籍】ビギナーズクラシック、平家物語.md": [
 "書籍.md",
 ],
@@ -1224,6 +1227,9 @@ export const backlinkData = {
 "ラック.md": [
 "グッズ関連.md",
 ],
+"ExploringTypeScript.md": [
+"TypeScript.md",
+],
 "サーファープログラマー.md": [
 "サーフィン.md",
 "プログラミングエッセイ.md",
@@ -1489,6 +1495,7 @@ export const backlinkData = {
 "TypeScript.md": [
 "Deno.md",
 "embed用のシェルのような何か.md",
+"ExploringTypeScript.md",
 "GithubPages.md",
 "JavaScript.md",
 "技術的なメモ.md",
@@ -2678,6 +2685,15 @@ export const backlinkData = {
 "【書籍】人月の神話.md": [
 "技術的なメモ.md",
 ],
+"BaseFood.md": [
+"2022年の花粉の記録.md",
+"kanau.md",
+"伊豆の温泉計画.md",
+"奄美大島計画.md",
+"【書籍】世界一シンプルで科学的に証明された究極の食事.md",
+"食事関連.md",
+"電気ケトル.md",
+],
 "Mac.md": [
 "MacBookAir.md",
 "Macショートカット.md",
@@ -2688,15 +2704,6 @@ export const backlinkData = {
 "ミニPC.md",
 "技術的なメモ.md",
 "動画配信.md",
-],
-"BaseFood.md": [
-"2022年の花粉の記録.md",
-"kanau.md",
-"伊豆の温泉計画.md",
-"奄美大島計画.md",
-"【書籍】世界一シンプルで科学的に証明された究極の食事.md",
-"食事関連.md",
-"電気ケトル.md",
 ],
 "OpenGL.md": [
 "CG.md",
@@ -2757,6 +2764,7 @@ export const backlinkData = {
 ],
 "書籍.md": [
 "CoverAndThomas.md",
+"ExploringTypeScript.md",
 "Home.md",
 "PRML.md",
 "RandomThoughts.md",
