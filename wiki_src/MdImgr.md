@@ -96,7 +96,11 @@ GitHubにドキュメントのmdファイルを置きたい時とjekyllのブロ
 $ open build/bin/MdImgr.app --args /to/target/dir '![imgs/Soreppoku/$1](imgs/Soreppoku/$1)'
 ```
 
-ブログやRandomThoughtsの画像などをランチャーからシンボルだけ指定して開く、みたいな使い方が出来るように。
+ブログやRandomThoughtsの画像などをランチャーからシンボルだけ指定して開く、みたいな使い方が出来るように。＞[[kickimgr]]というランチャーを作った
+
+## CopyAllUrlsを追加 2026-08-03 (月)
+
+[[PngNote]]のフォルダを丸ごと置いてWikiに貼るユースケースに対応すべく、CopyAllUrlsを実装した。
 
 ----
 
