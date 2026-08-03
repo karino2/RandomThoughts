@@ -8,7 +8,7 @@ AndroidのE-inkデバイス。
   - [[マグナスケッチ]] BOOX用に書いた磁気ボードみたいなアプリ
   - [karino2/ToggleOrient: Toggle portlait-landscape on Android.](https://github.com/karino2/ToggleOrient)
   - [karino2/SSaverSetter: Receive image intent and set to ScreenSaver, for BOOX only.](https://github.com/karino2/SSaverSetter) マグナスケッチをスクリーンセーバーにするために。
-  - [Karino2DIYApp/Kakito: BOOX用漢字書き取りアプリ](https://github.com/Karino2DIYApp/Kakito)
+  - [[Kakito]]
 
 
 ## Note3
