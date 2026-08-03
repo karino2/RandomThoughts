@@ -6,6 +6,7 @@
 - [[Deno]]
 - [The essentials of TypeScript • Tackling TypeScript](https://exploringjs.com/tackling-ts/ch_typescript-essentials.html) 入門記事
 - [TypeScript: TS Playground - An online editor for exploring TypeScript and JavaScript](https://www.typescriptlang.org/play/?#code/Q) ちょっと試すにはこれ。
+- [[ExploringTypeScript]]
 
 **VSCode 関連**
 
