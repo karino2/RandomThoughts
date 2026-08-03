@@ -1244,6 +1244,7 @@ export const backlinkData = {
 ],
 "Karino2DIYApp.md": [
 "BOOX.md",
+"Kakito.md",
 "Kariino2DIYApp.md",
 "自作アプリ.md",
 ],
@@ -1840,6 +1841,9 @@ export const backlinkData = {
 ],
 "洗濯機.md": [
 "グッズ関連.md",
+],
+"Kakito.md": [
+"BOOX.md",
 ],
 "パース.md": [
 "Nushell.md",
@@ -2829,6 +2833,7 @@ export const backlinkData = {
 "テーブルエディタ.md",
 ],
 "BOOX.md": [
+"Kakito.md",
 "Rhinocs.md",
 "グッズ関連.md",
 "タブレット.md",
