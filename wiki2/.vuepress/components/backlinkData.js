@@ -1357,6 +1357,7 @@ export const backlinkData = {
 ],
 "TypeScriptHandbook.md": [
 "2026年8月上旬の雑記.md",
+"JavaScript.md",
 "TypeScript.md",
 ],
 "htmnix.md": [
