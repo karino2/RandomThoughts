@@ -79,6 +79,34 @@ typeと似ていて、ほとんど同じに使えるけれど、extendsしたり
 集合論的に考えればtypeだけで全部済みそうな気もするが、
 よりJavaとかのinterfaceっぽく差分だけで定義していけるのが便利なケースはあるかもしれない。
 
+### Literal Type
+
+文字列とかを型に入れているのはどういう仕組なんだろう？と思っていたが、Literal Typeという概念があるのか。
+リテラルはそれぞれその値固有の型とみなされるのでunionとかに入れれるのね。
+
+C++のTemplateがなんとなく値が入れられるのとは違って、こっちの方が型システム的にちゃんとしているな。
+
+ただオブジェクトのプロパティとかのinferenceが絡むと結構分かりにくい挙動をするな。
+以下の例がreq.methodがstringになるのでエラーになるのは結構意外だ。
+
+確かにconstでもプロパティは変えられちゃうんだよな。
+
+```ts
+declare function handleRequest(url: string, method: "GET" | "POST"): void;
+ 
+const req = { url: "https://example.com", method: "GET" };
+// NG
+handleRequest(req.url, req.method);
+```
+
+そしてas constなんてものもあるらしい。これをするとmethodもLiteral Typeになるとか。
+
+```ts
+const req = { url: "https://example.com", method: "GET" } as const;
+```
+
+これでreq.methodがstringじゃなくて"GET"型になるらしい。へー。
+
 ## Basic Types 2026-08-04 (火)
 
 [The Basics](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
