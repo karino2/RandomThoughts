@@ -131,7 +131,62 @@ function isFish(pet: Fish | Bird): pet is Fish {
 
 JavaScript的にはbooleanだが引数に関する特別な処理な事を型のsignatureレベルで表現するのね。
 
+## More on Function
 
+[More on Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
+
+ジェネリクスとかの話があるが、あんまり凄い意外な事が無いのでメモする事は少ない。
+
+### ジェネリクスのconstraints
+
+extendsで書く。
+
+```ts
+function longest<Type extends { length: number }>(a: Type, b: Type) {
+  if (a.length >= b.length) {
+    return a;
+  } else {
+    return b;
+  }
+}
+```
+
+この辺のシンタックスはすぐ忘れるのでメモしておく。
+
+### Function Type ExpressionとCall Signatureとコンストラクタ
+
+関数の型はarrow functionっぽいシンタックス（Function Type Expressionと言うらしい）で表せる。
+
+```ts
+(a: string) => void
+```
+
+ここで、aは省略出来ない。`(string)=>void` はstringという名前のany引数だと解釈される（！？）
+
+一方オブジェクトがcallableであるのは、Call Sinatureと言うらしく、なぜかアローじゃない。
+
+```ts
+type DescribableFunction = {
+  description: string;
+  (someArg: number): boolean;
+};
+```
+
+DescraibableFunction型の値は普通に呼べる。
+
+なお、コンストラクタも似た感じに書ける。
+
+```ts
+type SomeConstructor = {
+  new (s: string): SomeObject;
+};
+```
+
+これはnewでSomeConstructor型を呼ぶケース。
+
+### Function Overloads
+
+こんな機能あるんだ！？overloaded signatureだけ呼べて、implementation signatureの関数は呼べないとか。ほえ〜。
 
 ## Basic Types 2026-08-04 (火)
 

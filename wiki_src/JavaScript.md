@@ -102,3 +102,40 @@ const nestedProp = obj?.[propName];
 ```
 
 これはobjがnullかどうかでは無く、propNameがあるかどうか、というoptionalになっている。配列の範囲外アクセスをundefinedにする感じだ。
+
+JavaScriptのOptional Chainはnullに対してでは無くundefinedに対してで、undefinedとはそのプロパティが「存在しない」という場合なのでこうした違いがある訳だな。
+
+### Arrow function expression
+
+[Arrow function expressions - JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+いろいろな言語で似たような機能があるが微妙に違うので毎回迷う。
+
+- アローは `=>` 
+- expressionならreturnはいらない
+- 中括弧をつけてstatementを並べる場合はreturnがいる（中括弧をつけると強制的にstatementsとみなされる）
+
+### Destructuringのassignment
+
+[[TypeScriptHandbook]]を読んでいて、以下の文は既にJavaScriptで存在してしまうので、
+以下のようなdestructuringの型指定は出来ない、と書いてあった。
+
+```js
+function draw({ shape: Shape, xPos: number = 100 /*...*/ }) {
+// ...
+}
+```
+
+へ、どういう意味？と思って見ると、MDNのBinding and assignmentのassignmentの方がその話題だ。
+
+[Destructuring - JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring)
+
+```js
+const numbers = [];
+const obj = { a: 1, b: 2 };
+({ a: numbers[0], b: numbers[1] } = obj);
+// The properties `a` and `b` are assigned to properties of `numbers`
+```
+
+なるほど、変数に代入する感じになるのか。
+そしてカッコが無いとブロックになっちゃってオブジェクト式にならないとか。うへぇ。
