@@ -56,6 +56,8 @@ function welcomePeople(x: string[] | string) {
 
 [TypeScript for Functional Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#unions) の方に、built-in predicatesが載っていて、ここにArray.isArrayは特別扱いしているな。
 
+（追記: あとでtype predicatesというセクションでこの話がある、後述）
+
 ### Type Aliases
 
 type文は型を定義しているのではなく、aliasなんだな。
@@ -106,6 +108,30 @@ const req = { url: "https://example.com", method: "GET" } as const;
 ```
 
 これでreq.methodがstringじゃなくて"GET"型になるらしい。へー。
+
+## Narrowing
+
+[Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
+
+ここはなかなか面白いな。こういうのをちゃんと知りたかった。
+最近の言語では標準装備という感じだけれど。Kotlinとかもこの辺は普通にあるよな。
+
+### Type predicates
+
+[Narrowing: Using type predicates](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)
+
+user-defined type guard！こんなのあるんだ！へー。
+以下のpet is Fishというreturn value。
+
+```ts
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+```
+
+JavaScript的にはbooleanだが引数に関する特別な処理な事を型のsignatureレベルで表現するのね。
+
+
 
 ## Basic Types 2026-08-04 (火)
 
