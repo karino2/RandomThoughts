@@ -1377,6 +1377,9 @@ export const backlinkData = {
 "csvplr.md",
 "技術的なメモ.md",
 ],
+"イラストをそれっぽく描くコツ.md": [
+"書籍.md",
+],
 "Halide.md": [
 "Metal.md",
 ],
@@ -2501,13 +2504,13 @@ export const backlinkData = {
 "サブWikiをTeFWIkiの外部機能に出来ないか.md": [
 "サブWiki.md",
 ],
-"イヤホン.md": [
-"グッズ関連.md",
-],
 "【書籍】イラストをそれっぽく描くコツ.md": [
 "Wikiと手書きノートの融合.md",
 "それっぽく描くコツ1周目.md",
 "それっぽく描くコツ2周目.md",
+],
+"イヤホン.md": [
+"グッズ関連.md",
 ],
 "将棋.md": [
 "雑多なメモ.md",
