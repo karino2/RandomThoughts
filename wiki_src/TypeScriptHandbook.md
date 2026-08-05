@@ -2,7 +2,114 @@
 
 [TypeScript: Handbook - The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 
-読んで思った事を適当に書く。
+読んで思った事を適当に書く。新しいのは上に足します。
+
+## Intersection Type
+
+[Object Types](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+
+Object Typeにintersection typeの記述があり、はじめて触れるものなので少しメモ。
+
+以下のようなのがそれ。
+
+```ts
+interface Colorful {
+  color: string;
+}
+interface Circle {
+  radius: number;
+}
+ 
+type ColorfulCircle = Colorful & Circle;
+```
+
+ColorfulCircleは両方のメンバを持つ。集合的にはintersectionになっているので普通なんだが、
+なんとなく一瞬共通のメンバしか持たないように感じるので注意が必要か。
+型を構造体のように見るのでは無く値の方を集合論的感覚で見る必要があるよなぁ。
+
+
+## More on Function
+
+[More on Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
+
+ジェネリクスとかの話があるが、あんまり凄い意外な事が無いのでメモする事は少ない。
+
+### ジェネリクスのconstraints
+
+extendsで書く。
+
+```ts
+function longest<Type extends { length: number }>(a: Type, b: Type) {
+  if (a.length >= b.length) {
+    return a;
+  } else {
+    return b;
+  }
+}
+```
+
+この辺のシンタックスはすぐ忘れるのでメモしておく。
+
+### Function Type ExpressionとCall Signatureとコンストラクタ
+
+関数の型はarrow functionっぽいシンタックス（Function Type Expressionと言うらしい）で表せる。
+
+```ts
+(a: string) => void
+```
+
+ここで、aは省略出来ない。`(string)=>void` はstringという名前のany引数だと解釈される（！？）
+
+一方オブジェクトがcallableであるのは、Call Sinatureと言うらしく、なぜかアローじゃない。
+
+```ts
+type DescribableFunction = {
+  description: string;
+  (someArg: number): boolean;
+};
+```
+
+DescraibableFunction型の値は普通に呼べる。
+
+なお、コンストラクタも似た感じに書ける。
+
+```ts
+type SomeConstructor = {
+  new (s: string): SomeObject;
+};
+```
+
+これはnewでSomeConstructor型を呼ぶケース。
+
+### Function Overloads
+
+こんな機能あるんだ！？overloaded signatureだけ呼べて、implementation signatureの関数は呼べないとか。ほえ〜。
+
+
+
+## Narrowing
+
+[Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
+
+ここはなかなか面白いな。こういうのをちゃんと知りたかった。
+最近の言語では標準装備という感じだけれど。Kotlinとかもこの辺は普通にあるよな。
+
+### Type predicates
+
+[Narrowing: Using type predicates](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)
+
+user-defined type guard！こんなのあるんだ！へー。
+以下のpet is Fishというreturn value。
+
+```ts
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+```
+
+JavaScript的にはbooleanだが引数に関する特別な処理な事を型のsignatureレベルで表現するのね。
+
+
 
 ## Everyday Types 2026-08-04 (火)
 
@@ -108,85 +215,6 @@ const req = { url: "https://example.com", method: "GET" } as const;
 ```
 
 これでreq.methodがstringじゃなくて"GET"型になるらしい。へー。
-
-## Narrowing
-
-[Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
-
-ここはなかなか面白いな。こういうのをちゃんと知りたかった。
-最近の言語では標準装備という感じだけれど。Kotlinとかもこの辺は普通にあるよな。
-
-### Type predicates
-
-[Narrowing: Using type predicates](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)
-
-user-defined type guard！こんなのあるんだ！へー。
-以下のpet is Fishというreturn value。
-
-```ts
-function isFish(pet: Fish | Bird): pet is Fish {
-  return (pet as Fish).swim !== undefined;
-}
-```
-
-JavaScript的にはbooleanだが引数に関する特別な処理な事を型のsignatureレベルで表現するのね。
-
-## More on Function
-
-[More on Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
-
-ジェネリクスとかの話があるが、あんまり凄い意外な事が無いのでメモする事は少ない。
-
-### ジェネリクスのconstraints
-
-extendsで書く。
-
-```ts
-function longest<Type extends { length: number }>(a: Type, b: Type) {
-  if (a.length >= b.length) {
-    return a;
-  } else {
-    return b;
-  }
-}
-```
-
-この辺のシンタックスはすぐ忘れるのでメモしておく。
-
-### Function Type ExpressionとCall Signatureとコンストラクタ
-
-関数の型はarrow functionっぽいシンタックス（Function Type Expressionと言うらしい）で表せる。
-
-```ts
-(a: string) => void
-```
-
-ここで、aは省略出来ない。`(string)=>void` はstringという名前のany引数だと解釈される（！？）
-
-一方オブジェクトがcallableであるのは、Call Sinatureと言うらしく、なぜかアローじゃない。
-
-```ts
-type DescribableFunction = {
-  description: string;
-  (someArg: number): boolean;
-};
-```
-
-DescraibableFunction型の値は普通に呼べる。
-
-なお、コンストラクタも似た感じに書ける。
-
-```ts
-type SomeConstructor = {
-  new (s: string): SomeObject;
-};
-```
-
-これはnewでSomeConstructor型を呼ぶケース。
-
-### Function Overloads
-
-こんな機能あるんだ！？overloaded signatureだけ呼べて、implementation signatureの関数は呼べないとか。ほえ〜。
 
 ## Basic Types 2026-08-04 (火)
 

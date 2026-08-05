@@ -94,6 +94,28 @@ type Test2 = Expect<
 
 satisfiesはこちら。 [TypeScript: Documentation - TypeScript 4.9](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html)
 
+### declare constを使う
+
+declare constを使うと、作り方を無視して変数を用意出来る。
+
+```ts
+interface Person1 {
+  name: string;
+}
+ 
+interface Person2 {
+  name: number;
+}
+ 
+type Staff = Person1 & Person2
+ 
+declare const staffer: Staff;
+staffer.name;
+```
+
+これでホバーして型を見る事が出来る。簡単な型の確認にはこれが手軽かもしれん。
+
+ちなみにこの場合のstaffer.nameはneverになる（[TypeScript: Documentation - Object Types](https://www.typescriptlang.org/docs/handbook/2/objects.html)の「Interface Extension vs. Intersection」より)
 
 ## 単一jsファイルを作る時のメモ
 
