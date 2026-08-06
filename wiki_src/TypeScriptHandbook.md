@@ -4,6 +4,83 @@
 
 読んで思った事を適当に書く。新しいのは上に足します。
 
+## Generics 2026-08-06 (木)
+
+[Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
+
+### タイプパラメータがinterface側に無いものが書ける
+
+interfaceにタイプパラメータが無いのもOK。
+
+```ts
+interface GenericIdentityFn {
+  <Type>(arg: Type): Type;
+}
+```
+
+これはcall signatureの例で関数として呼べる、という奴だ。
+
+``` 
+function identity<Type>(arg: Type): Type {
+  return arg;
+}
+ 
+let myIdentity: GenericIdentityFn = identity;
+```
+
+ただここで言いたいのはそれよりも、GenericIdentityFnの方にはタイプパラメータが無い、という所。
+
+ちなみに以下のようにも書けて、
+
+```ts
+interface GenericIdentityFn<Type> {
+  (arg: Type): Type;
+}
+```
+
+この場合使う時に指定がいるらしい。
+
+```ts
+let myIdentity: GenericIdentityFn<number> = identity;
+```
+
+なんかinferされても良さそうなもんだが。
+
+### keyofの引数
+
+以下みたいな例があった。
+
+```ts
+function getProperty<Type, Key extends keyof Type>(obj: Type, key: Key) {
+  return obj[key];
+}
+ 
+let x = { a: 1, b: 2, c: 3, d: 4 };
+```
+
+以下のように、キーとして存在しない文字列はNGとなる。
+
+```ts 
+getProperty(x, "a");
+getProperty(x, "m"); // NG
+```
+
+という事はリテラル型しか使えないという事かな？
+以下のように書くと、kはanyとなるので使う事が出来てしまう。
+
+```ts
+function hoge(k) {
+  return getProperty(x, k)
+}
+
+console.log(hoge("ika")) // undefined
+```
+
+なお、kにstringのアノテーションをつけると `"a" | "b" | "c" | "d" ` でない、と型チェックで弾かれる。
+やはりリテラルでないと駄目らしい。
+
+anyで抜けられるのはなるほど、という感じだな。
+
 ## Intersection Type
 
 [Object Types](https://www.typescriptlang.org/docs/handbook/2/objects.html)
