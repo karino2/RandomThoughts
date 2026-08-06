@@ -4,6 +4,32 @@
 
 読んで思った事を適当に書く。新しいのは上に足します。
 
+## Conditional Type
+
+こんなのあるんだ、という感じ。
+
+[Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
+
+述語にはextendsを使うのが読みにくさを感じるが、constraintsと同じものと思えばそういうものか。
+
+引数の型をつけるにはGenericsを使うが、返る型は全然関係ないのが返るのが不思議な感じはするな。
+
+```ts
+interface IdLabel {
+  id: number /* some fields */;
+}
+interface NameLabel {
+  name: string /* other fields */;
+}
+
+type NameOrId<T extends number | string> = T extends number
+  ? IdLabel
+  : NameLabel;
+```
+
+この時、`NameOrId<T>`型はIdLabelとかNameLabelを返すのであって、NameOrId型は返さない。
+単なる関数のようなものとしてGenericsが使われるのがちょっと違和感があったのでメモしておく。
+
 ## Generics 2026-08-06 (木)
 
 [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
