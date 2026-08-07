@@ -460,16 +460,16 @@ export const backlinkData = {
 "技術文書の読み方.md",
 "雑多なメモ.md",
 ],
+"KotlinNative.md": [
+"Kotlin.md",
+"ScalaNative.md",
+"コマンドラインツールを書くための言語.md",
+],
 "LittleMarley.md": [
 "KumaFish.md",
 "KyussFish.md",
 "サーフボード.md",
 "ソフトボード.md",
-],
-"KotlinNative.md": [
-"Kotlin.md",
-"ScalaNative.md",
-"コマンドラインツールを書くための言語.md",
 ],
 "FDroid.md": [
 "Android.md",
@@ -738,6 +738,9 @@ export const backlinkData = {
 ],
 "【書籍】ダイアローグ1800.md": [
 "書籍.md",
+],
+"eshlk.md": [
+"TypeScript.md",
 ],
 "サブWikiリンク.md": [
 "サブWiki.md",
@@ -1023,6 +1026,7 @@ export const backlinkData = {
 "Nushell.md": [
 "CSVのプロットはもうちょっと簡単にならないか.md",
 "embed用のシェルのような何か.md",
+"eshlk.md",
 "GoFO.md",
 "Shell.md",
 "パース.md",
@@ -1510,6 +1514,7 @@ export const backlinkData = {
 "TypeScript.md": [
 "Deno.md",
 "embed用のシェルのような何か.md",
+"eshlk.md",
 "ExploringTypeScript.md",
 "GithubPages.md",
 "JavaScript.md",
@@ -1662,6 +1667,7 @@ export const backlinkData = {
 "AshX.md",
 "EmbeddedLang.md",
 "embed用のシェルのような何か.md",
+"eshlk.md",
 "JavaScript.md",
 "Rhinocs.md",
 "Starlarcs.md",
@@ -2217,6 +2223,7 @@ export const backlinkData = {
 ],
 "embed用のシェルのような何か.md": [
 "2026年8月上旬の雑記.md",
+"eshlk.md",
 "技術的なメモ.md",
 "型システムのしくみ.md",
 ],
@@ -2365,6 +2372,7 @@ export const backlinkData = {
 "自作アプリ.md": [
 "BOOX.md",
 "CppUnzip.md",
+"eshlk.md",
 "Home.md",
 "htmnix.md",
 "Karino2DIYApp.md",
@@ -2389,13 +2397,13 @@ export const backlinkData = {
 "スマホ用単眼レンズ.md": [
 "グッズ関連.md",
 ],
+"【書籍】イタリア語会話パーフェクトブック.md": [
+"イタリア語.md",
+],
 "SAF.md": [
 "StorageAccessFramework.md",
 "TeFWiki.md",
 "メモをアプリケーションに依存させたくない.md",
-],
-"【書籍】イタリア語会話パーフェクトブック.md": [
-"イタリア語.md",
 ],
 "プログラム雑談.md": [
 "Home.md",
