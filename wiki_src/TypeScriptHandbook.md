@@ -4,6 +4,33 @@
 
 読んで思った事を適当に書く。新しいのは上に足します。
 
+## keyofをstringに限定する理由
+
+[Template Literal Types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html)で以下のようなコードがあった。
+
+```ts
+type PropEventSource<Type> = {
+    on(eventName: `${string & keyof Type}Changed`, callback: (newValue: any) => void): void;
+};
+```
+
+なんで `string &`がいるんだろう？とchatGPTに聞いたら、keyofはindexとかの数字も入る、
+とのこと。ただしこのkeyofを見るのはなかなか難しい。
+
+以下はうまくいった。
+
+```ts
+type hoge = [true, false]
+
+type a = keyof hoge
+
+type Debug = {
+    [P in a]: P
+}
+```
+
+Debugにホバーすると一通り出る。
+
 ## Conditional Type
 
 こんなのあるんだ、という感じ。
