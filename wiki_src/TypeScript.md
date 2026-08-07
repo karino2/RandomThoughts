@@ -8,6 +8,7 @@
 - [TypeScript: TS Playground - An online editor for exploring TypeScript and JavaScript](https://www.typescriptlang.org/play/?#code/Q) ちょっと試すにはこれ。
 - [[ExploringTypeScript]]
 - [[TypeScriptHandbook]]
+- [[eshlk]]
 
 **VSCode 関連**
 
