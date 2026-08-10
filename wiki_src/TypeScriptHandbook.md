@@ -4,6 +4,43 @@
 
 読んで思った事を適当に書く。新しいのは上に足します。
 
+## classに対するtypeof
+
+[Classes#Abstract Construct Signatures](https://www.typescriptlang.org/docs/handbook/2/classes.html#abstract-construct-signatures)
+の所で、以下のようなコードがあった。
+
+```ts
+function greet(ctor: typeof Base) {
+  const instance = new ctor(); // Cannot create an instance of an abstract class.
+  instance.printName();
+}
+```
+
+エラーになるのはabstract classだからだ、という話だが、それ以前にtypeof Baseの所が何をやっているか戸惑ったのでメモ。
+
+JavaScriptは、expressionでtypeofを使う事が出来るが、TypeScriptはさらにこれをtypeコンテキストでも使えるように拡張している。
+
+[Typeof Type Operator](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html#the-typeof-type-operator)
+
+そしてtypeコンテキストではtypeofは変数やプロパティの型を返す、とある。
+
+上記のBaseはclass宣言で作られるものだが、これはコンストラクタの入った変数名でもある。そのためtypeof ClassNameでそのコンストラクタの型が返る事になる。
+ただコンストラクタはnewで使うとそのオブジェクトを返す、という特殊な型であるので、単なる関数の型では無く、newで呼べて、この時はインスタンスの型を返す、という特殊なsignatureになると思われる。
+
+たぶん[More on Functions#Construct Signatures](https://www.typescriptlang.org/docs/handbook/2/functions.html#construct-signatures)に書いてある、
+以下のSomeConstructorみたいな感じの型になるんじゃないか。
+
+```ts
+type SomeConstructor = {
+  new (s: string): SomeObject;
+};
+function fn(ctor: SomeConstructor) {
+  return new ctor("hello");
+}
+```
+
+JavaScriptのtypeofのつもりで読んでいると"function"が返るんじゃないの？という気分になってしまうので、型コンテキストだというのを注意する必要がある。
+
 ## keyofをstringに限定する理由
 
 [Template Literal Types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html)で以下のようなコードがあった。
