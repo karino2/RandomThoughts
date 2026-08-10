@@ -57,6 +57,25 @@ type NameOrId<T extends number | string> = T extends number
 この時、`NameOrId<T>`型はIdLabelとかNameLabelを返すのであって、NameOrId型は返さない。
 単なる関数のようなものとしてGenericsが使われるのがちょっと違和感があったのでメモしておく。
 
+### inferキーワード
+
+後で見た時になんだったか忘れて見直すハメになったのでメモしておく。
+
+Conditional Typeで以下のような文があったとする。
+
+```ts
+type Flatten<T> = T extends any[] ? T[number] : T;
+```
+
+Conditional Typeを使って何らかの制約を課して、それが満たされている時に型を取り出す、みたいな処理。
+これと同じような事を以下のようにinferキーワードを使って書ける。
+
+```ts
+type Flatten<Type> = Type extends Array<infer Item> ? Item : Type;
+```
+
+Itemというのが新しく導入される訳だ。
+
 ## Generics 2026-08-06 (木)
 
 [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
