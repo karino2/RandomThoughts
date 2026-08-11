@@ -199,7 +199,7 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md",
 ],
 "SurfLog.md": [
-"2026年8月上旬の雑記.md",
+"2026年8月中旬の雑記.md",
 "Home.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
@@ -512,6 +512,9 @@ export const backlinkData = {
 "Wikiとhowmとメモツール.md",
 "グッズ関連.md",
 "サーフィン.md",
+],
+"2026年8月中旬の雑記.md": [
+"Home.md",
 ],
 "DirectCompute.md": [
 "CG.md",
@@ -909,7 +912,6 @@ export const backlinkData = {
 "【書籍】本当に役立つ栄養学.md",
 ],
 "TeFWiki.md": [
-"2026年8月上旬の雑記.md",
 "bulma.md",
 "Electron.md",
 "Home.md",
@@ -1093,7 +1095,6 @@ export const backlinkData = {
 "食事関連.md",
 ],
 "水玉懐ゲー夜話.md": [
-"2026年8月上旬の雑記.md",
 "お絵描き.md",
 "ライブ.md",
 "元祖水玉本舗.md",
@@ -1361,7 +1362,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "TypeScriptHandbook.md": [
-"2026年8月上旬の雑記.md",
 "JavaScript.md",
 "TypeScript.md",
 ],
@@ -1388,7 +1388,6 @@ export const backlinkData = {
 "Metal.md",
 ],
 "GoとWebView.md": [
-"2026年8月上旬の雑記.md",
 "Go.md",
 ],
 "awk.md": [
@@ -1446,7 +1445,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Rhinocs.md": [
-"2026年8月上旬の雑記.md",
 "BOOX.md",
 "Rhino.md",
 "Rhinocs_セットアップ.md",
@@ -1457,9 +1455,6 @@ export const backlinkData = {
 "エディタ調査.md",
 "ひざの上テーブル.md",
 "自作アプリ.md",
-],
-"イラストをそれっぽく描くコツ.md": [
-"2026年8月上旬の雑記.md",
 ],
 "【書籍】ConcurrentProgrammingOnWindows.md": [
 "Cpp.md",
@@ -1872,7 +1867,6 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "Kakito.md": [
-"2026年8月上旬の雑記.md",
 "BOOX.md",
 ],
 "パース.md": [
@@ -2222,7 +2216,6 @@ export const backlinkData = {
 "【書籍】まつもとゆきひろ、言語のしくみ.md",
 ],
 "embed用のシェルのような何か.md": [
-"2026年8月上旬の雑記.md",
 "eshlk.md",
 "技術的なメモ.md",
 "型システムのしくみ.md",
@@ -2292,7 +2285,6 @@ export const backlinkData = {
 "日本史.md",
 ],
 "MdImgr.md": [
-"2026年8月上旬の雑記.md",
 "kickimgr.md",
 "slog.md",
 "Stippling.md",
@@ -2397,13 +2389,13 @@ export const backlinkData = {
 "スマホ用単眼レンズ.md": [
 "グッズ関連.md",
 ],
-"【書籍】イタリア語会話パーフェクトブック.md": [
-"イタリア語.md",
-],
 "SAF.md": [
 "StorageAccessFramework.md",
 "TeFWiki.md",
 "メモをアプリケーションに依存させたくない.md",
+],
+"【書籍】イタリア語会話パーフェクトブック.md": [
+"イタリア語.md",
 ],
 "プログラム雑談.md": [
 "Home.md",
@@ -2736,9 +2728,6 @@ export const backlinkData = {
 ],
 "ロボット掃除機.md": [
 "グッズ関連.md",
-],
-"2026年8月上旬の雑記.md": [
-"Home.md",
 ],
 "【書籍】2Dグラフィックスのしくみ.md": [
 "CG.md",
