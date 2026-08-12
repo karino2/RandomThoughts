@@ -15,6 +15,24 @@
 - [TypeScript tutorial with Visual Studio Code](https://code.visualstudio.com/docs/typescript/typescript-tutorial)
 - [TypeScript debugging with Visual Studio Code](https://code.visualstudio.com/docs/typescript/typescript-debugging)
 
+## ES5を生成するHello World
+
+```
+$ mkdir eshlk
+$ cd eshlk
+$ npm init -y
+$ npm install --save-dev typescript@5.6
+```
+
+ES5にしたい場合はtypescriptを最新にしては駄目っぽい（ES2015が最低とか言われる）
+
+tsconfig.jsonを適当に書いて、main.tsを作って何かを書いて、以下みたいな感じにする。
+
+```
+$ npx tsc
+$ node dist/main.js
+```
+
 ## Type Challenges
 
 少しType Scriptの型を調べたいと思って見つけたサイト。
