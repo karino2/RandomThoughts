@@ -78,17 +78,39 @@ gradleのタスクでlicenseReleaseReportを実行してライセンス生成す
 
 - 一番下、上へのスクロールボタン
 
-## WikiNameの絞り込みオープン、Mathサポート (どちらも）2026-08-01 (土)
+## Mathサポート (どちらも）
 
-ElectronもAndroid版もファイル名の絞り込み検索とMathのサポートを入れた。
+ElectronもAndroid版もMathのサポートを入れた。
 mathに関しては、インラインはドルの直後に空白があっては駄目そう。ドルとドルドルが動いている。
 
-Android版の絞り込み検索はめちゃ遅かったのでいろいろSAF周りの高速化も入れた。
+[Math support by vscode/markdown-it-katex · karino2/TeFWiki-Electron@9b9ee3f](https://github.com/karino2/TeFWiki-Electron/commit/9b9ee3fc557bd6b49e3be8bd2ab9845f3f0bc493)
+
+[microsoft/vscode-markdown-it-katex: Add Math to your Markdown with a KaTeX plugin for Markdown-it](https://github.com/microsoft/vscode-markdown-it-katex)を使っている。
+
+$f_x$はインライン。
+
+$$
+f_x
+$$
+はブロック。
+
+begin arrayとかもできそう。
+
+$$\begin{array}{c}
+y & =  ax \\
+   & = 2
+\end{array}$$
+
 
 ## WikINameの絞り込みオープン(Electron版のみ、途中） 2026-07-28 (火)
 
 とりあえず動く所までは実装したが、矢印キーやC-fとのバインドなどやりたい事が残っている状態でCopilotのトークンが尽きたので続きは次回。
 バックリンクは[[SAF]]では遅そうなのでAndroidでは実装しないが、絞り込みオープンは実装したい。ただこちらは後回しかな。
+
+### Android版もサポート 2026-08-01 (土)
+
+ファイル名の絞り込み検索をAndroid版にも入れた。
+実装してみたらめちゃ遅かったのでいろいろ[[SAF]]周りの高速化も入れた。
 
 ## バックリンクのサポート(Electron版のみ） 2026-07-25 (土)
 

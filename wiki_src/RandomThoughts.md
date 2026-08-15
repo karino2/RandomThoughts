@@ -6,8 +6,258 @@ karino2のパーソナルWikiの公開部分。
 
 最近は[[VuePress]]で公開している。
 
-## 今後は本は書籍、をつけない事に
+## 本は書籍、をつけない事に
 
-本のWikiNameは書籍で始めて、スクリプトで[[書籍]]のページを生成していたのだが、
+当初は、本のWikiNameは書籍で始めて、スクリプトで[[書籍]]のページを生成していたのだが、
 これがリンクを書くのが意外とかったるいのとバックリンクを実装したので別に書籍へのリンクを貼ればおおむね用は足りる、
 という事で、今後は本も書籍をつけない事にする。
+
+これまでの本にはついているが、歴史的事情という事で。
+
+## RandomThoughtsのVuePress化
+
+RandomThoughtsを[[VuePress]]に乗り換えた時のメモ。
+
+[karino2/RandomThoughts: Wiki repository for random thoughts](https://github.com/karino2/RandomThoughts)のレポジトリで行った作業のメモ。
+
+prism.jsでのmfgのシンタックスハイライトの対応をしたので、[[RandomThoughts]]もそれに対応したい。
+いい機会なのでJekyllの[[GitWiki]]からVuePressに乗り換える方向で考えてみる。
+
+- [Sidebar - vuepress-theme-hope](https://theme-hope.vuejs.press/guide/layout/sidebar.html#string-format) Recentsはこの辺で頑張る
+- [spencerwooo/vuepress-markdown-it-wikilink: Wikimedia-style links for VuePress using the markdown-it parser](https://github.com/spencerwooo/vuepress-markdown-it-wikilink) wikilinkはこれを試してみたい
+
+### 作業メモ
+
+まず以下を実行。
+
+```
+$ npm init
+$ npm install -D vuepress@next
+$ npm install -D @vuepress/bundler-vite@next @vuepress/theme-default@next
+$ npm install -D sass-embedded
+```
+
+最後はドキュメントに書いてないけどなんか必要（テンプレートを入れると勝手に入るからその手順の人はいらないらしい）
+
+次にwiki_srcをそのまま扱う方向で作業してみよう。
+
+```
+$ mkdir wiki_src/.vuepress
+```
+
+あとはGetting Startedに従ってconfig.jsを作りnpm runを書く（名前は`wiki_src:dev`と`wiki_src:build`にして、パスもwiki_srcにしておく)
+
+これで、とりあえずdevで`http://localhost:8080/Home.html`にはアクセス出来た。
+
+### 別のマシンでのセットアップ
+
+viteが古いとかいろいろ言われたので
+
+- package.jsonからdevDependenciesでvuepress系を削除
+- package-lock.jsonを削除
+- node_modulesを削除
+
+をやってから上記のnpm installをやった。あとtheme-hopeが内と言われたので、以下を実行した。
+
+```
+$ npm install -D vuepress-theme-hope  --legacy-peer-deps
+```
+
+なお最後のオプションはprimsjsのバージョンがvuepressの指定するバージョンと違うとか言われたから。
+
+これでインストールが出来た。
+
+### 実行
+
+```
+$ cd scirpts
+$ server_all.sh
+$ cd ..
+$ npm run wiki2:dev
+```
+
+これでアクセス出来た。
+
+### WikiLink対応
+
+とりあえず[spencerwooo/vuepress-markdown-it-wikilink: Wikimedia-style links for VuePress using the markdown-it parser](https://github.com/spencerwooo/vuepress-markdown-it-wikilink)を試してみよう。
+
+```
+$ npm install -D vuepress-markdown-it-wikilink
+```
+
+なんかそれっぽくconfig.jsを書いてみたが動かない。
+
+buildの方をしたらエラーメッセージを吐いてくれた！
+
+mdの方にリンクの中にタグと解釈される文字列が含まれていたせいだったので直したが、それでもwikilinkは有効にならない。
+
+どうもこれはv1向けのプラグインっぽいなぁ。
+
+単なるmarkdown-itのプラグインを手で呼ぶかなぁ。
+
+[[TeFWiki]]はjekyllの制約でリンクパターンをカスタマイズしていたので、以下を使ってたので同じのを使ってみる。
+
+```
+$ npm i -D @kwvanderlinde/markdown-it-wikilinks
+```
+
+optionsは[[TeFWiki]]のものと同じので、以下で動いた。
+
+```
+import wikilinks from '@kwvanderlinde/markdown-it-wikilinks'
+
+export default defineUserConfig({
+    bundler: viteBundler(),
+    theme: defaultTheme(),
+    extendsMarkdown: md => {
+        md.use(wikilinks(options))
+    },
+})
+```
+
+いやぁ、これは苦戦した。v1とv2で微妙に変わってて、ポイントとしては、markdownプロパティではなくextendsMarkdownを直接書く、という事と、
+extendじゃなくてextendsに変わってる事（三単現のs…）。
+
+これで無事動いた。
+
+### 日本語リンクが動かない
+
+これではいくつかの日本語の正規化の問題が正しく動かない。
+例えば[[【書籍】今を生きる思想、ジョン・ロールズ]]などが辿れない。
+
+これは以下に相当する処理が無いからだ。
+
+```
+    encoded = urllib.parse.quote(unicodedata.normalize('NFC', original), safe='')
+```
+
+とりあえずforkしたgithubを作り直してそれを使うようにしておこう。
+
+```
+npm install -D --save https://github.com/karino2/markdown-it-wikilinks.git#normalize_nfc_for_filename
+```
+
+## タイトルとnavbar
+
+トップに戻る方法が無いとデバッグが面倒なので以下を追加。
+
+```
+    theme: defaultTheme({
+      navbar: [
+        {text: "Home", link: "/Home.html"}
+    ]
+    }),
+    title: "RandomThoughts",
+    description: "公開用Wiki、雑多なジャンルのメモを全部入れておく所",
+```
+
+## ファイル名をH1に
+
+VuePressでやる方法がわからなかったので、シェルスクリプトで先頭に挟む事にする。
+
+## Recents
+
+シェルスクリプトでgitを叩いて作ったrecentsを、以下の形のjsファイルに整形して出力し、recents.jsという名前にして.vuepressフォルダに置き、
+
+```js
+export const recents = [
+ {text: "Recents:",
+   children: [
+     {link: "Hoge.html", text: "Hoge"},
+     {link: "Ika.html", text: "Ika"},
+   ...
+   ]
+  }
+]
+```
+
+config.jsを以下のようにした。
+
+```
+import { recents } from './recents.js'
+
+export default defineUserConfig({
+    theme: defaultTheme({
+      sidebar: recents,
+       ...
+    })
+})
+```
+
+git logで時間をとってsortしているが、GitHub Actionsのcheckoutアクションではlog情報が無いっぽいので、
+recents.jsを作るスクリプトはローカルで定時でpushするスクリプトの方で動かしている。
+
+## Google Search ConsoleのSite verification
+
+これまではhtmlファイル置くのにしていたが、htmlのheadにタグを置く形に変更する。
+
+1. Google Search Consoleの設定に行く
+2. Ownership VerificationのHTML tagの所に行き、内容をコピー
+3. config.jsに以下を追加(contentは2でコピーした値)
+
+```
+    head: [
+      ['meta', { name: 'google-site-verification', content: 'XXX_SOME_ID_XXX' }]
+    ],
+```
+
+## themeをhopeに変更
+
+何故かnpm installの例が載ってないけれど、普通にnpm installで平気だった。
+
+```
+$  npm install -D vuepress-theme-hope@latest
+```
+
+デフォルトのhighlighterがshikiになっちゃうのでprismに変更。
+ついでにTaskListもenableにしておく。
+
+```js
+import { hopeTheme } from "vuepress-theme-hope";
+
+export default defineUserConfig({
+    theme: hopeTheme({
+      // navbarとかsidebarとかhomeはdefaultThemeと同じ内容なので割愛
+      markdown: {
+        highlighter: {
+          type: "prismjs"
+        },
+        tasklist: true,
+      }
+    }),
+  //...
+})
+```
+
+かなりいい感じになった。
+
+### バックリンクの実装
+
+[[Wikiのリンクを扱うシェルスクリプト]]を元にjsonを生成して、それをcomponents/Backlink.vueからロードして書く感じにした。
+
+1. wiki2/.vuepress/components/backlinkData.js にバックリンク情報のjsonを生成(公開する定期実行スクリプトの一部にgen_backlinkdata.shを作って実行）
+2. wiki2/.vuepress/components/Backlinks.vue からこのjsをロードしてレンダリング
+3. wiki2/client.jsにBacklinks.vueを実行するコードを追加
+
+詳細は以下のコミットを参照。
+
+- [Backlinkの実装 · karino2/RandomThoughts@533d73c](https://github.com/karino2/RandomThoughts/commit/533d73cc0efddee4376a3de195fb595eb1673c53)
+- [日本語のリンクがuri encodeされて来てしまう事があるのでdecodeを挟む（バックリンク） · karino2/RandomThoughts@12403a1](https://github.com/karino2/RandomThoughts/commit/12403a114bdfdf41a9a063e5e6811d276d85c47c)
+
+これで出来たが間に大きな余白が出るので少し調整。
+
+[バックリンクの上の余白を無くすべく、LayoutのpageBottomに移動 · karino2/RandomThoughts@711298d](https://github.com/karino2/RandomThoughts/commit/711298d6fedde474c692238962b29002ad9dfb22)
+
+ついでにprevとnextも消す。
+
+[Recentsのprevとnextは使わないので消す。 · karino2/RandomThoughts@a96de5c](https://github.com/karino2/RandomThoughts/commit/a96de5c9538d718d11893451fdfab07627503ef9)
+
+いい感じになった。
+
+## Math support
+
+[[TeFWiki]]に数式サポートを入れているので、RandomThoughtsの公開の方にも数式を入れる。
+プラグインもあるっぽいが、まぁmarkdown-itを既にconfig.jsで使っているので、ここに[microsoft/vscode-markdown-it-katex: Add Math to your Markdown with a KaTeX plugin for Markdown-it](https://github.com/microsoft/vscode-markdown-it-katex/tree/main)を足す。
+
+[math support. · karino2/RandomThoughts@1961d4c](https://github.com/karino2/RandomThoughts/commit/1961d4cb1d5f5bd46748f62983a179a5c4ce448e)
