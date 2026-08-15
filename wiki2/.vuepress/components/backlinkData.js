@@ -300,6 +300,7 @@ export const backlinkData = {
 "RandomThoughts.md": [
 "Home.md",
 "MdImgr.md",
+"RandomThoughts.md",
 "TeFWiki.md",
 "VuePress.md",
 "メモをアプリケーションに依存させたくない.md",
@@ -926,9 +927,9 @@ export const backlinkData = {
 "MDDeck.md",
 "MdImgr.md",
 "MDTouch.md",
+"RandomThoughts.md",
 "TeFWikiとシェルスクリプト.md",
 "UFASアーキテクチャ.md",
-"VuePress.md",
 "Wikiとhowmとメモツール.md",
 "Wikiとノート.md",
 "Wikiと手書きノートの融合.md",
@@ -1633,7 +1634,7 @@ export const backlinkData = {
 ],
 "GitWiki.md": [
 "GithubPages.md",
-"VuePress.md",
+"RandomThoughts.md",
 "サブWiki.md",
 "サブWikiの公開手順.md",
 "技術的なメモ.md",
@@ -1869,6 +1870,7 @@ export const backlinkData = {
 "生理学.md",
 ],
 "TowardATheoryOfTokenizationInLLMs.md": [
+"2026年8月中旬の雑記.md",
 "原論文から解き明かす生成AI.md",
 ],
 "キーボード.md": [
@@ -2362,7 +2364,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "Wikiのリンクを扱うシェルスクリプト.md": [
-"VuePress.md",
+"RandomThoughts.md",
 ],
 "アルゴリズム.md": [
 "Diff.md",
@@ -2554,7 +2556,7 @@ export const backlinkData = {
 "【書籍】絶対早繰り銀.md",
 ],
 "【書籍】今を生きる思想、ジョン・ロールズ.md": [
-"VuePress.md",
+"RandomThoughts.md",
 "社会科学.md",
 "書籍.md",
 "【書籍】正義論.md",
