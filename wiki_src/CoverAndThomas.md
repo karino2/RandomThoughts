@@ -9,6 +9,10 @@
 
 [[KLダイバージェンス]]
 
+## 4章 Entropy Rateとマルコフ連鎖
+
+[[マルコフ連鎖]]
+
 ## 5章 DATA COMPRESSION
 
 [[データ圧縮]]

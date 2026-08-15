@@ -1,7 +1,7 @@
 [[Electron]]
 
 - [公式](https://webui.me/)
-- [[MDDeck]]はWebUIで作ってみた。
+- [[MDDeck]]は最初はWebUIで作ってみた。
 
 ## 始め方
 

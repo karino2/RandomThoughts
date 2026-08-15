@@ -1,4 +1,4 @@
-Goで簡単なGUIを作るのにWebViewを使う話。
+Goで簡単なGUIを作るのにWebViewを使う話。[[Electron代替]]
 
 - [karino2/mdvcat_go: mdvcat port to go, using webview_go](https://github.com/karino2/mdvcat_go) [[mdvcat]]をgoのwebviewに直した。
   - assetsの例となっている。embed.FSと組み合わせている

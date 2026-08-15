@@ -1,4 +1,4 @@
-[[Electron]]代替。
+[[Electron代替]]。
 
 - [webviewjs/webview: Robust cross-platform webview library for Node/Deno/Bun](https://github.com/webviewjs/webview)
 
