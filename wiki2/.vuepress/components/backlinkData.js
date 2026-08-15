@@ -636,6 +636,7 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "Wikiと手書きノートの融合.md": [
+"2026年8月中旬の雑記.md",
 "ノート.md",
 ],
 "茨城計画.md": [
@@ -1435,6 +1436,7 @@ export const backlinkData = {
 "Wikiと手書きノートの融合.md",
 "アルゴリズム.md",
 "サイコロ本.md",
+"マルコフ連鎖.md",
 "ユニグラム言語モデル.md",
 "機械学習.md",
 "原論文から解き明かす生成AI.md",
@@ -1491,7 +1493,9 @@ export const backlinkData = {
 "マルコフ連鎖.md": [
 "2026年8月中旬の雑記.md",
 "CoverAndThomas.md",
+"HMM.md",
 "TheNatureOfComputation.md",
+"Wikiと手書きノートの融合.md",
 "アルゴリズム.md",
 "基礎からのベイズ統計学.md",
 ],
@@ -1575,6 +1579,7 @@ export const backlinkData = {
 "EnhancedSuffixArray.md": [
 "SentencePiece.md",
 "SuffixArray.md",
+"Wikiと手書きノートの融合.md",
 "アルゴリズム.md",
 "一人読書会ライブ.md",
 "文字列マッチ.md",
@@ -1726,6 +1731,7 @@ export const backlinkData = {
 "Go.md": [
 "Folang.md",
 "fyne.md",
+"Wikiと手書きノートの融合.md",
 "技術的なメモ.md",
 ],
 "八丈島計画.md": [
