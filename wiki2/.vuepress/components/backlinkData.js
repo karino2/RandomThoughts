@@ -145,7 +145,7 @@ export const backlinkData = {
 ],
 "WebUI.md": [
 "Deno.md",
-"Electron.md",
+"Electron代替.md",
 "git.md",
 "MDDeck.md",
 "技術的なメモ.md",
@@ -162,6 +162,7 @@ export const backlinkData = {
 "MacKay.md",
 "クロスエントロピー.md",
 "データ圧縮.md",
+"マルコフ連鎖.md",
 "機械学習.md",
 "原論文から解き明かす生成AI.md",
 "【書籍】CoverAndThomas.md",
@@ -171,6 +172,11 @@ export const backlinkData = {
 "GithubPages.md",
 "技術的な事を話すweb上の場.md",
 "雑多なメモ.md",
+],
+"Electron代替.md": [
+"Electron.md",
+"GoとWebView.md",
+"webviewjs.md",
 ],
 "ScalaNative.md": [
 "KotlinNative.md",
@@ -588,7 +594,7 @@ export const backlinkData = {
 "そのうちやりたい事.md",
 ],
 "webviewjs.md": [
-"Electron.md",
+"Electron代替.md",
 ],
 "【書籍】へたっぴさんのための身体の描き方入門、アタリの取り方編.md": [
 "お絵描き.md",
@@ -654,7 +660,7 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "Neutralinojs.md": [
-"Electron.md",
+"Electron代替.md",
 "kickimgr.md",
 "技術的なメモ.md",
 ],
@@ -1390,6 +1396,7 @@ export const backlinkData = {
 "Metal.md",
 ],
 "GoとWebView.md": [
+"Electron代替.md",
 "Go.md",
 ],
 "awk.md": [
@@ -1482,6 +1489,9 @@ export const backlinkData = {
 "書籍.md",
 ],
 "マルコフ連鎖.md": [
+"2026年8月中旬の雑記.md",
+"CoverAndThomas.md",
+"TheNatureOfComputation.md",
 "アルゴリズム.md",
 "基礎からのベイズ統計学.md",
 ],
@@ -1643,6 +1653,9 @@ export const backlinkData = {
 "ChromeOS.md": [
 "技術的なメモ.md",
 ],
+"TheNatureOfComputation.md": [
+"マルコフ連鎖.md",
+],
 "ネックスピーカー.md": [
 "オーディオブック.md",
 "グッズ関連.md",
@@ -1744,6 +1757,7 @@ export const backlinkData = {
 ],
 "数学.md": [
 "CoverAndThomas.md",
+"TheNatureOfComputation.md",
 "基礎からのベイズ統計学.md",
 "機械学習.md",
 "雑多なメモ.md",
@@ -1960,6 +1974,7 @@ export const backlinkData = {
 "並列プログラム.md",
 ],
 "PRML.md": [
+"マルコフ連鎖.md",
 "機械学習.md",
 ],
 "甲信越計画.md": [
@@ -2071,6 +2086,7 @@ export const backlinkData = {
 "並列プログラム.md",
 ],
 "Electron.md": [
+"Electron代替.md",
 "FAScript.md",
 "Go.md",
 "JavaScript.md",
@@ -2082,7 +2098,6 @@ export const backlinkData = {
 "UFASアーキテクチャ.md",
 "Wails.md",
 "WebUI.md",
-"webviewjs.md",
 "そのうちやりたい事.md",
 "技術的なメモ.md",
 ],
@@ -2155,7 +2170,7 @@ export const backlinkData = {
 ],
 "photino.md": [
 "CSVのプロットはもうちょっと簡単にならないか.md",
-"Electron.md",
+"Electron代替.md",
 "FSharp.md",
 "htmnix_chart.md",
 "htmnix.md",
@@ -2794,6 +2809,7 @@ export const backlinkData = {
 "Home.md",
 "PRML.md",
 "RandomThoughts.md",
+"TheNatureOfComputation.md",
 "オーディオブック.md",
 "基礎からのベイズ統計学.md",
 "技術的なメモ.md",
@@ -2927,7 +2943,7 @@ export const backlinkData = {
 "配食のふれ愛.md",
 ],
 "Wails.md": [
-"Electron.md",
+"Electron代替.md",
 "Go.md",
 "GoとWebView.md",
 "MdImgr.md",
