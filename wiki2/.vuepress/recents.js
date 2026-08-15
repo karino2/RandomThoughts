@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "TowardATheoryOfTokenizationInLLMs.html", "text": "TowardATheoryOfTokenizationInLLMs"},
     {"link": "%E3%83%9E%E3%83%AB%E3%82%B3%E3%83%95%E9%80%A3%E9%8E%96.html", "text": "マルコフ連鎖"},
     {"link": "Wiki%E3%81%A8%E6%89%8B%E6%9B%B8%E3%81%8D%E3%83%8E%E3%83%BC%E3%83%88%E3%81%AE%E8%9E%8D%E5%90%88.html", "text": "Wikiと手書きノートの融合"},
     {"link": "HMM.html", "text": "HMM"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "Electron%E4%BB%A3%E6%9B%BF.html", "text": "Electron代替"},
     {"link": "Electron.html", "text": "Electron"},
     {"link": "CoverAndThomas.html", "text": "CoverAndThomas"},
-    {"link": "%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0.html", "text": "アルゴリズム"},
    ]
 }
 ]

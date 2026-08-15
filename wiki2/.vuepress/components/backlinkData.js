@@ -1495,6 +1495,7 @@ export const backlinkData = {
 "CoverAndThomas.md",
 "HMM.md",
 "TheNatureOfComputation.md",
+"TowardATheoryOfTokenizationInLLMs.md",
 "Wikiと手書きノートの融合.md",
 "アルゴリズム.md",
 "基礎からのベイズ統計学.md",
@@ -1616,6 +1617,7 @@ export const backlinkData = {
 ],
 "KLダイバージェンス.md": [
 "CoverAndThomas.md",
+"TowardATheoryOfTokenizationInLLMs.md",
 "クロスエントロピー.md",
 "データ圧縮.md",
 ],
