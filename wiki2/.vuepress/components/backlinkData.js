@@ -1481,6 +1481,10 @@ export const backlinkData = {
 "【書籍】ウォーキングの科学.md": [
 "書籍.md",
 ],
+"マルコフ連鎖.md": [
+"アルゴリズム.md",
+"基礎からのベイズ統計学.md",
+],
 "伊豆白浜計画.md": [
 "ワーケーション.md",
 "奄美大島計画.md",
@@ -1740,6 +1744,7 @@ export const backlinkData = {
 ],
 "数学.md": [
 "CoverAndThomas.md",
+"基礎からのベイズ統計学.md",
 "機械学習.md",
 "雑多なメモ.md",
 "実解析.md",
@@ -1790,6 +1795,9 @@ export const backlinkData = {
 "囲碁エンジン評価.md",
 "作業ログ.md",
 "自作アプリ.md",
+],
+"基礎からのベイズ統計学.md": [
+"マルコフ連鎖.md",
 ],
 "PowerShell.md": [
 "PSDotenvrc.md",
@@ -2341,6 +2349,7 @@ export const backlinkData = {
 "SuffixArray.md",
 "アルゴリズム本.md",
 "データ圧縮.md",
+"マルコフ連鎖.md",
 "技術的なメモ.md",
 "【書籍】IntroductionToAlgorithms.md",
 "数学.md",
@@ -2391,13 +2400,13 @@ export const backlinkData = {
 "スマホ用単眼レンズ.md": [
 "グッズ関連.md",
 ],
+"【書籍】イタリア語会話パーフェクトブック.md": [
+"イタリア語.md",
+],
 "SAF.md": [
 "StorageAccessFramework.md",
 "TeFWiki.md",
 "メモをアプリケーションに依存させたくない.md",
-],
-"【書籍】イタリア語会話パーフェクトブック.md": [
-"イタリア語.md",
 ],
 "プログラム雑談.md": [
 "Home.md",
@@ -2786,6 +2795,7 @@ export const backlinkData = {
 "PRML.md",
 "RandomThoughts.md",
 "オーディオブック.md",
+"基礎からのベイズ統計学.md",
 "技術的なメモ.md",
 "型システムのしくみ.md",
 "元祖水玉本舗.md",
