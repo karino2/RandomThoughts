@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%82%B9%E3%83%9E%E3%83%9B.html", "text": "スマホ"},
     {"link": "%E3%83%9E%E3%83%AB%E3%82%B3%E3%83%95%E9%80%A3%E9%8E%96.html", "text": "マルコフ連鎖"},
     {"link": "TowardATheoryOfTokenizationInLLMs.html", "text": "TowardATheoryOfTokenizationInLLMs"},
     {"link": "CoverAndThomas.html", "text": "CoverAndThomas"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "webviewjs.html", "text": "webviewjs"},
     {"link": "WebUI.html", "text": "WebUI"},
     {"link": "Wails.html", "text": "Wails"},
-    {"link": "TheNatureOfComputation.html", "text": "TheNatureOfComputation"},
    ]
 }
 ]
