@@ -5,6 +5,10 @@
 
 - [Elements of Information Theoryの読書記録 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2019/02/10/143600.html)
 
+## エントロピー関連の関係式
+
+[Elements of Information Theoryの一章、二章 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2019/01/31/115955.html)にある。
+
 ##  KLダイバージェンス
 
 [[KLダイバージェンス]]
