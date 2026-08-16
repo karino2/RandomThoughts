@@ -1885,6 +1885,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "スマホ.md": [
+"2026年8月中旬の雑記.md",
 "Android.md",
 "グッズ関連.md",
 "技術的なメモ.md",
