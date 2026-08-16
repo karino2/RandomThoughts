@@ -787,6 +787,9 @@ export const backlinkData = {
 "書籍.md",
 "【書籍】知らぬは恥だが役に立つ法律知識.md",
 ],
+"水玉懐ゲー夜話.md": [
+"2026年8月中旬の雑記.md",
+],
 "NuGet.md": [
 "Windows.md",
 "技術的なメモ.md",
