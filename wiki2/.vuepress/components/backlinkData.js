@@ -1502,6 +1502,7 @@ export const backlinkData = {
 "TowardATheoryOfTokenizationInLLMs.md",
 "Wikiと手書きノートの融合.md",
 "アルゴリズム.md",
+"一人読書会ライブ.md",
 "基礎からのベイズ統計学.md",
 ],
 "伊豆白浜計画.md": [
@@ -1880,6 +1881,7 @@ export const backlinkData = {
 ],
 "TowardATheoryOfTokenizationInLLMs.md": [
 "2026年8月中旬の雑記.md",
+"一人読書会ライブ.md",
 "原論文から解き明かす生成AI.md",
 ],
 "キーボード.md": [
