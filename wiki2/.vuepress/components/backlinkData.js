@@ -1309,6 +1309,7 @@ export const backlinkData = {
 "論文.md",
 ],
 "一人読書会ライブ.md": [
+"2026年8月中旬の雑記.md",
 "ライブ.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -1394,6 +1395,9 @@ export const backlinkData = {
 "csvplr.md",
 "技術的なメモ.md",
 ],
+"虎本.md": [
+"【書籍】ModernCompilerImplementationInML.md",
+],
 "イラストをそれっぽく描くコツ.md": [
 "書籍.md",
 ],
@@ -1410,6 +1414,7 @@ export const backlinkData = {
 ],
 "【書籍】ModernCompilerImplementationInML.md": [
 "技術的なメモ.md",
+"虎本.md",
 "書籍.md",
 ],
 "【書籍】サピエンス全史.md": [
@@ -1708,6 +1713,7 @@ export const backlinkData = {
 "ノートPC.md",
 ],
 "お絵描き雑談ライブ.md": [
+"2026年8月中旬の雑記.md",
 "ライブ.md",
 ],
 "【書籍】これからはじめるイタリア語入門.md": [
@@ -2603,6 +2609,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "型システムのしくみ.md": [
+"2026年8月中旬の雑記.md",
 "型システム.md",
 "型システム入門.md",
 ],
