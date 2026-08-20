@@ -100,6 +100,9 @@ export const backlinkData = {
 "TeFWiki.md",
 "自作アプリ.md",
 ],
+"ConvolutionalSequenceToSequenceLearning.md": [
+"原論文から解き明かす生成AI.md",
+],
 "SurfLog_202512から202603まで.md": [
 "SurfLog.md",
 "SurfLogの過去ログ.md",
@@ -1454,6 +1457,7 @@ export const backlinkData = {
 "論文.md": [
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
 "ContextualCorrelatesOfSynonymy.md",
+"ConvolutionalSequenceToSequenceLearning.md",
 "EnhancedSuffixArray.md",
 "Home.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
