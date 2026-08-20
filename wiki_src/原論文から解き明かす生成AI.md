@@ -261,3 +261,7 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 ## Toward a Theory of Tokenization in LLMs
 
 [[TowardATheoryOfTokenizationInLLMs]]
+
+## 3章 Transformer
+
+[[ConvolutionalSequenceToSequenceLearning]]
