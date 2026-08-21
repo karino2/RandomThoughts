@@ -264,4 +264,6 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 
 ## 3章 Transformer
 
-[[ConvolutionalSequenceToSequenceLearning]]
+- [[アテンション]]
+- [[ConvS2S]]
+- [[Transformer]]
