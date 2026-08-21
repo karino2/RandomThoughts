@@ -101,6 +101,7 @@ export const backlinkData = {
 "自作アプリ.md",
 ],
 "ConvolutionalSequenceToSequenceLearning.md": [
+"機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
 "SurfLog_202512から202603まで.md": [
@@ -111,6 +112,10 @@ export const backlinkData = {
 "お絵描き.md",
 "【書籍】へたっぴさんのための身体の描き方入門、アタリの取り方編.md",
 ],
+"【書籍】TheGrammarOfGraphics.md": [
+"書籍.md",
+"【書籍】ggplot2、ElegantGraphicsForDataAnalysis.md",
+],
 "edX.md": [
 "728x.md",
 "MOOC.md",
@@ -118,10 +123,6 @@ export const backlinkData = {
 ],
 "カジュアルな勉強会.md": [
 "技術的なメモ.md",
-],
-"【書籍】TheGrammarOfGraphics.md": [
-"書籍.md",
-"【書籍】ggplot2、ElegantGraphicsForDataAnalysis.md",
 ],
 "【書籍】イタリア語会話パーフェクトブック.md": [
 "書籍.md",
@@ -352,6 +353,7 @@ export const backlinkData = {
 "BPE.md",
 "SubwordRegularization.md",
 "サブワード分割.md",
+"機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
 "電気ケトル.md": [
@@ -493,6 +495,7 @@ export const backlinkData = {
 "サイコロ本.md",
 "サブワード分割.md",
 "ユニグラム言語モデル.md",
+"機械翻訳.md",
 "技術的なメモ.md",
 "原論文から解き明かす生成AI.md",
 "数学.md",
@@ -541,13 +544,13 @@ export const backlinkData = {
 "グッズ関連.md",
 "ノートPC用電源.md",
 ],
-"写真mdメモ.md": [
-"UFASアーキテクチャ.md",
-"自作アプリ.md",
-],
 "【書籍】TheChecklistManifesto.md": [
 "技術的なメモ.md",
 "書籍.md",
+],
+"写真mdメモ.md": [
+"UFASアーキテクチャ.md",
+"自作アプリ.md",
 ],
 "guash.md": [
 "bulma.md",
@@ -886,6 +889,7 @@ export const backlinkData = {
 ],
 "SubwordRegularization.md": [
 "ユニグラム言語モデル.md",
+"機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
 "40代前半のプログラマライフの振り返り.md": [
@@ -1145,6 +1149,7 @@ export const backlinkData = {
 "SubwordRegularization.md",
 "サブワード分割.md",
 "ユニグラム言語モデル.md",
+"機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
 "【書籍】世界一シンプルで科学的に証明された究極の食事.md": [
@@ -1465,7 +1470,9 @@ export const backlinkData = {
 "SubwordRegularization.md",
 "SuffixArray.md",
 "TowardATheoryOfTokenizationInLLMs.md",
+"アテンション.md",
 "機械学習.md",
+"機械翻訳.md",
 "書籍.md",
 ],
 "Rhinocs.md": [
@@ -2180,6 +2187,9 @@ export const backlinkData = {
 "サーフボード.md",
 "ソフトボード.md",
 ],
+"アテンション.md": [
+"機械翻訳.md",
+],
 "【書籍】人口大逆転.md": [
 "経済.md",
 "書籍.md",
@@ -2801,6 +2811,10 @@ export const backlinkData = {
 "40代後半からアラフィフのプログラマライフについて考える.md",
 "40代前半のプログラマライフの振り返り.md",
 "雑多なメモ.md",
+],
+"機械翻訳.md": [
+"ConvolutionalSequenceToSequenceLearning.md",
+"アテンション.md",
 ],
 "LempelZiv.md": [
 "CoverAndThomas.md",
