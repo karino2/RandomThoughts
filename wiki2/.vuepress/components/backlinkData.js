@@ -101,8 +101,7 @@ export const backlinkData = {
 "自作アプリ.md",
 ],
 "ConvolutionalSequenceToSequenceLearning.md": [
-"機械翻訳.md",
-"原論文から解き明かす生成AI.md",
+"ConvS2S.md",
 ],
 "SurfLog_202512から202603まで.md": [
 "SurfLog.md",
@@ -209,7 +208,6 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md",
 ],
 "SurfLog.md": [
-"2026年8月中旬の雑記.md",
 "Home.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
@@ -492,6 +490,7 @@ export const backlinkData = {
 "CoverAndThomas.md",
 "HMM.md",
 "PRML.md",
+"Transformer.md",
 "サイコロ本.md",
 "サブワード分割.md",
 "ユニグラム言語モデル.md",
@@ -525,9 +524,6 @@ export const backlinkData = {
 "Wikiとhowmとメモツール.md",
 "グッズ関連.md",
 "サーフィン.md",
-],
-"2026年8月中旬の雑記.md": [
-"Home.md",
 ],
 "DirectCompute.md": [
 "CG.md",
@@ -643,7 +639,6 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "Wikiと手書きノートの融合.md": [
-"2026年8月中旬の雑記.md",
 "ノート.md",
 ],
 "茨城計画.md": [
@@ -661,6 +656,9 @@ export const backlinkData = {
 "作業ログ.md": [
 "slog.md",
 "ノート.md",
+],
+"2026年8月下旬の雑記.md": [
+"Home.md",
 ],
 "技術的な事を話すweb上の場.md": [
 "GitHubを使ったSNSを考える.md",
@@ -792,9 +790,6 @@ export const backlinkData = {
 "雑多なメモ.md",
 "書籍.md",
 "【書籍】知らぬは恥だが役に立つ法律知識.md",
-],
-"水玉懐ゲー夜話.md": [
-"2026年8月中旬の雑記.md",
 ],
 "NuGet.md": [
 "Windows.md",
@@ -1076,7 +1071,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "PngNote.md": [
-"2026年8月中旬の雑記.md",
 "BOOX.md",
 "EjiCell.md",
 "GithubPages.md",
@@ -1317,7 +1311,6 @@ export const backlinkData = {
 "論文.md",
 ],
 "一人読書会ライブ.md": [
-"2026年8月中旬の雑記.md",
 "ライブ.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -1462,7 +1455,7 @@ export const backlinkData = {
 "論文.md": [
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
 "ContextualCorrelatesOfSynonymy.md",
-"ConvolutionalSequenceToSequenceLearning.md",
+"ConvS2S.md",
 "EnhancedSuffixArray.md",
 "Home.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
@@ -1470,6 +1463,7 @@ export const backlinkData = {
 "SubwordRegularization.md",
 "SuffixArray.md",
 "TowardATheoryOfTokenizationInLLMs.md",
+"Transformer.md",
 "アテンション.md",
 "機械学習.md",
 "機械翻訳.md",
@@ -1511,7 +1505,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "マルコフ連鎖.md": [
-"2026年8月中旬の雑記.md",
 "CoverAndThomas.md",
 "HMM.md",
 "TheNatureOfComputation.md",
@@ -1586,17 +1579,20 @@ export const backlinkData = {
 "Flutter.md": [
 "技術的なメモ.md",
 ],
+"AttentionIsAllYouNeed.md": [
+"Transformer.md",
+],
 "仕事のやる気が出ない時対策.md": [
 "プログラミングエッセイ.md",
 "雑多なメモ.md",
-],
-"ReactNative.md": [
-"Electron.md",
 ],
 "【書籍】TheArtOfMultiprocessorProgramming.md": [
 "技術的なメモ.md",
 "書籍.md",
 "並列プログラム.md",
+],
+"ReactNative.md": [
+"Electron.md",
 ],
 "EnhancedSuffixArray.md": [
 "SentencePiece.md",
@@ -1724,7 +1720,6 @@ export const backlinkData = {
 "ノートPC.md",
 ],
 "お絵描き雑談ライブ.md": [
-"2026年8月中旬の雑記.md",
 "ライブ.md",
 ],
 "【書籍】これからはじめるイタリア語入門.md": [
@@ -1855,9 +1850,6 @@ export const backlinkData = {
 "グッズ関連.md",
 "防寒グッズ.md",
 ],
-"お絵描き雑談ライブ.md": [
-"2026年8月中旬の雑記.md",
-],
 "口腔洗浄器.md": [
 "グッズ関連.md",
 ],
@@ -1897,7 +1889,6 @@ export const backlinkData = {
 "生理学.md",
 ],
 "TowardATheoryOfTokenizationInLLMs.md": [
-"2026年8月中旬の雑記.md",
 "一人読書会ライブ.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -1910,7 +1901,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "スマホ.md": [
-"2026年8月中旬の雑記.md",
 "Android.md",
 "グッズ関連.md",
 "技術的なメモ.md",
@@ -2188,7 +2178,10 @@ export const backlinkData = {
 "ソフトボード.md",
 ],
 "アテンション.md": [
+"2026年8月下旬の雑記.md",
+"ConvS2S.md",
 "機械翻訳.md",
+"原論文から解き明かす生成AI.md",
 ],
 "【書籍】人口大逆転.md": [
 "経済.md",
@@ -2454,6 +2447,12 @@ export const backlinkData = {
 "【書籍】スタンフォード式、疲れない体.md": [
 "書籍.md",
 ],
+"Transformer.md": [
+"AttentionIsAllYouNeed.md",
+"ConvS2S.md",
+"機械翻訳.md",
+"原論文から解き明かす生成AI.md",
+],
 "スマホ用単眼レンズ.md": [
 "グッズ関連.md",
 ],
@@ -2546,6 +2545,12 @@ export const backlinkData = {
 "JetpackCompose.md": [
 "Android.md",
 ],
+"ConvS2S.md": [
+"ConvolutionalSequenceToSequenceLearning.md",
+"Transformer.md",
+"機械翻訳.md",
+"原論文から解き明かす生成AI.md",
+],
 "SAFToDo.md": [
 "UFASアーキテクチャ.md",
 "自作アプリ.md",
@@ -2623,7 +2628,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "型システムのしくみ.md": [
-"2026年8月中旬の雑記.md",
 "型システム.md",
 "型システム入門.md",
 ],
@@ -2813,7 +2817,8 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "機械翻訳.md": [
-"ConvolutionalSequenceToSequenceLearning.md",
+"ConvS2S.md",
+"Transformer.md",
 "アテンション.md",
 ],
 "LempelZiv.md": [
