@@ -1,4 +1,4 @@
-機械翻訳にRNNでは無くCNNを使う事を提唱した[[論文]]
+[[機械翻訳]]にRNNでは無くCNNを使う事を提唱した[[論文]]
 
 - [arxiv:1705.03122 Convolutional Sequence to Sequence Learning](https://arxiv.org/abs/1705.03122)
 - [fairseq/fairseq/models/fconv.py at 3d262bb25690e4eb2e7d3c1309b1e9c406ca4b99 · facebookresearch/fairseq](https://github.com/facebookresearch/fairseq/blob/3d262bb25690e4eb2e7d3c1309b1e9c406ca4b99/fairseq/models/fconv.py#L33) 実装はこれか。
@@ -23,10 +23,15 @@ Transformerへとつながる数々のアイデアがある。
 
 これをconvolutionしていく。
 
-### Encoder-Decoderの概略
+## Encoder-Decoderの概略
 
 ![imgs/ConvS2S/0003.png](imgs/ConvS2S/0003.png)
 
 cがAttention。Decoderの各レイヤにある。
+
+### アテンション
+
+![imgs/ConvS2S/0004.png](imgs/ConvS2S/0004.png)
+
 
 dはhと$g_i$の線形和（decoder state summaryと呼んでいる）。このdecoderの状態要約とzの関係で求めるアテンションとなる。
