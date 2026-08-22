@@ -102,6 +102,7 @@ export const backlinkData = {
 ],
 "ConvolutionalSequenceToSequenceLearning.md": [
 "ConvS2S.md",
+"WikiNameの作り方.md",
 ],
 "SurfLog_202512から202603まで.md": [
 "SurfLog.md",
@@ -136,6 +137,10 @@ export const backlinkData = {
 "SentencePiece.md",
 "アルゴリズム.md",
 "【書籍】IntroductionToAlgorithms.md",
+],
+"WikiNameの作り方.md": [
+"2026年8月下旬の雑記.md",
+"ノート.md",
 ],
 "【書籍】ファストアンドスロー.md": [
 "書籍.md",
@@ -486,6 +491,13 @@ export const backlinkData = {
 "Android.md",
 "技術的なメモ.md",
 ],
+"【書籍】TheArtOfComputerProgramming.md": [
+"アルゴリズム本.md",
+"技術的なメモ.md",
+"書籍.md",
+"【書籍】IntroductionToAlgorithms.md",
+"電子書籍.md",
+],
 "機械学習.md": [
 "BPE.md",
 "CoverAndThomas.md",
@@ -499,13 +511,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 "原論文から解き明かす生成AI.md",
 "数学.md",
-],
-"【書籍】TheArtOfComputerProgramming.md": [
-"アルゴリズム本.md",
-"技術的なメモ.md",
-"書籍.md",
-"【書籍】IntroductionToAlgorithms.md",
-"電子書籍.md",
 ],
 "R.md": [
 "技術的なメモ.md",
@@ -1465,6 +1470,7 @@ export const backlinkData = {
 "SuffixArray.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "Transformer.md",
+"WikiNameの作り方.md",
 "アテンション.md",
 "機械学習.md",
 "機械翻訳.md",
@@ -2549,6 +2555,7 @@ export const backlinkData = {
 "ConvS2S.md": [
 "ConvolutionalSequenceToSequenceLearning.md",
 "Transformer.md",
+"WikiNameの作り方.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
