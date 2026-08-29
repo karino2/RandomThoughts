@@ -16,10 +16,15 @@
 
 ![imgs/ConvS2S/0000.png](imgs/ConvS2S/0000.png)
 
+入力はmトークン、一つあたりV次元だが、embedによりこれがf次元となる（ただしfやVは以後あまり出てこない）。
+
 ## CNNブロック
 
 ![imgs/ConvS2S/0002.png](imgs/ConvS2S/0002.png)
 
+$i_k$ というのはk個の入力、という意味。一つあたりd次元。ちなみに5.1での実験のkは3とか。
+
+入力はkより大きいもので、これをkずつconvolutionしていく。
 これをconvolutionしていく。
 
 ## Encoder-Decoderの概略
