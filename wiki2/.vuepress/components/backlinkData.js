@@ -677,6 +677,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "原論文から解き明かす生成AI.md": [
+"2026年8月下旬の雑記.md",
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
@@ -684,6 +685,7 @@ export const backlinkData = {
 "SentencePiece.md",
 "SubwordRegularization.md",
 "TowardATheoryOfTokenizationInLLMs.md",
+"Transformer.md",
 "一人読書会ライブ.md",
 "機械学習.md",
 "技術的なメモ.md",
@@ -998,6 +1000,9 @@ export const backlinkData = {
 "【書籍】CodersAtWork.md",
 "【書籍】アドレナリンジャンキー.md",
 ],
+"ゲーム.md": [
+"雑多なメモ.md",
+],
 "ハーフトーン.md": [
 "CG.md",
 "MFG.md",
@@ -1065,16 +1070,16 @@ export const backlinkData = {
 "イラストをそれっぽく描くコツ.md",
 "お絵描き.md",
 ],
+"【書籍】RforDataScience.md": [
+"LabNotebook.md",
+"R.md",
+"書籍.md",
+],
 "Java.md": [
 "EmbeddedLang.md",
 ],
 "アプリが簡単に作れる時代.md": [
 "ボツエッセイ.md",
-],
-"【書籍】RforDataScience.md": [
-"LabNotebook.md",
-"R.md",
-"書籍.md",
 ],
 "PngNote.md": [
 "BOOX.md",
@@ -1831,6 +1836,9 @@ export const backlinkData = {
 "ゆっくり中級git.md",
 "技術的なメモ.md",
 ],
+"ワルキューレの伝説.md": [
+"ゲーム.md",
+],
 "GithubPagesGallery.md": [
 "GithubPages.md",
 "GithubPagesを使った画像置き場.md",
@@ -2455,6 +2463,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Transformer.md": [
+"2026年8月下旬の雑記.md",
 "AttentionIsAllYouNeed.md",
 "ConvS2S.md",
 "機械翻訳.md",
