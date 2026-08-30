@@ -1,5 +1,8 @@
 [[Transformer]]や[[ConvS2S]]で使われている、位置情報をトークンの値と独立に判断するための仕組み。
 
+- [[WhatDoPositionEmbeddingsLearn]]
+- [[OnPositionEmbeddingsInBERT]]
+
 ## ConvS2S
 
 [[ConvS2S]]のPositionEmbeddingsの周辺の話。
