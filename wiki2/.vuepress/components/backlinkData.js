@@ -595,6 +595,7 @@ export const backlinkData = {
 "PositionEmbeddings.md": [
 "2026年8月下旬の雑記.md",
 "ConvS2S.md",
+"OnPositionEmbeddingsInBERT.md",
 "Transformer.md",
 "WhatDoPositionEmbeddingsLearn.md",
 ],
@@ -925,12 +926,12 @@ export const backlinkData = {
 "ブルースギター.md",
 "雑多なメモ.md",
 ],
+"【書籍】HLSLシェーダーの魔導書.md": [
+"CG.md",
+],
 "実解析.md": [
 "数学.md",
 "測度論.md",
-],
-"【書籍】HLSLシェーダーの魔導書.md": [
-"CG.md",
 ],
 "LabNotebook.md": [
 "LinusPauling.md",
@@ -1480,6 +1481,7 @@ export const backlinkData = {
 "EnhancedSuffixArray.md",
 "Home.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
+"OnPositionEmbeddingsInBERT.md",
 "SentencePiece.md",
 "SubwordRegularization.md",
 "SuffixArray.md",
@@ -1511,6 +1513,10 @@ export const backlinkData = {
 "書籍.md",
 "【書籍】CppConcurrencyInAction.md",
 "並列プログラム.md",
+],
+"クイックスケッチライブ.md": [
+"たてなか流クイックスケッチ.md",
+"ライブ.md",
 ],
 "WhiteBoardCast.md": [
 "KindleFire.md",
@@ -1584,6 +1590,7 @@ export const backlinkData = {
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
+"クイックスケッチライブ.md",
 "【書籍】魔法の人物ドローイング.md",
 ],
 "充電式カイロ.md": [
