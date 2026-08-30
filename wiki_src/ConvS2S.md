@@ -41,20 +41,5 @@ dはhと$g_i$の線形和（decoder state summaryと呼んでいる）。このd
 
 ## Positional Embedding
 
-論文では詳細は述べていないが、以下の実装を見ると
+[[PositionEmbeddings]]へ。
 
-- [fairseq/fairseq/modules/learned_positional_embedding.py at main · facebookresearch/fairseq](https://github.com/facebookresearch/fairseq/blob/main/fairseq/modules/learned_positional_embedding.py#L15)
-
-単なるintのindexにWを掛けて、そのWを学習する感じになっている。通常のembeddingと同じ計算だな。
-上の実装には[[Transformer]]で提唱されたsinの奴も入っているが。
-
-なお、positional embedding無しでもそこそこスコアはでているので、これ無しでもそこそこは位置を扱えていそう。テーブル4に以下のスコアがある。
-
-| 項目 | BLUE |
-| ---- | ---- |
-| 両方にpositional embedding | 21.7 |
-| targetだけpositional embedding | 21.3 |
-| sourceだけpositional embedding | 21.5 |
-| 両方無し | 21.2 |
-
-sourceの方が影響はでかそう。
