@@ -1,9 +1,9 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81%E3%83%A9%E3%82%A4%E3%83%96.html", "text": "クイックスケッチライブ"},
     {"link": "%E3%83%A9%E3%82%A4%E3%83%96.html", "text": "ライブ"},
     {"link": "%E3%81%9F%E3%81%A6%E3%81%AA%E3%81%8B%E6%B5%81%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81.html", "text": "たてなか流クイックスケッチ"},
-    {"link": "%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81%E3%83%A9%E3%82%A4%E3%83%96.html", "text": "クイックスケッチライブ"},
     {"link": "OnPositionEmbeddingsInBERT.html", "text": "OnPositionEmbeddingsInBERT"},
     {"link": "WhatDoPositionEmbeddingsLearn.html", "text": "WhatDoPositionEmbeddingsLearn"},
     {"link": "PositionEmbeddings.html", "text": "PositionEmbeddings"},
