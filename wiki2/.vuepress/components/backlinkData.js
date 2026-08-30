@@ -1515,6 +1515,7 @@ export const backlinkData = {
 "並列プログラム.md",
 ],
 "クイックスケッチライブ.md": [
+"2026年8月下旬の雑記.md",
 "たてなか流クイックスケッチ.md",
 "ライブ.md",
 ],
@@ -1587,6 +1588,7 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
+"2026年8月下旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
