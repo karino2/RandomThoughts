@@ -127,6 +127,9 @@ export const backlinkData = {
 "【書籍】イタリア語会話パーフェクトブック.md": [
 "書籍.md",
 ],
+"WhatDoPositionEmbeddingsLearn.md": [
+"PositionEmbeddings.md",
+],
 "IntroductionToChemistry.md": [
 "化学.md",
 ],
@@ -589,6 +592,11 @@ export const backlinkData = {
 "自作アプリ.md",
 "【書籍】これからはじめるイタリア語入門.md",
 ],
+"PositionEmbeddings.md": [
+"ConvS2S.md",
+"Transformer.md",
+"WhatDoPositionEmbeddingsLearn.md",
+],
 "Shader.md": [
 "CG.md",
 "Metal.md",
@@ -682,6 +690,7 @@ export const backlinkData = {
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
+"PositionEmbeddings.md",
 "SentencePiece.md",
 "SubwordRegularization.md",
 "TowardATheoryOfTokenizationInLLMs.md",
@@ -1420,14 +1429,14 @@ export const backlinkData = {
 "Electron代替.md",
 "Go.md",
 ],
-"awk.md": [
-"Shell.md",
-"技術的なメモ.md",
-],
 "【書籍】ModernCompilerImplementationInML.md": [
 "技術的なメモ.md",
 "虎本.md",
 "書籍.md",
+],
+"awk.md": [
+"Shell.md",
+"技術的なメモ.md",
 ],
 "【書籍】サピエンス全史.md": [
 "書籍.md",
@@ -1475,6 +1484,7 @@ export const backlinkData = {
 "SuffixArray.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "Transformer.md",
+"WhatDoPositionEmbeddingsLearn.md",
 "WikiNameの作り方.md",
 "アテンション.md",
 "機械学習.md",
@@ -2467,6 +2477,7 @@ export const backlinkData = {
 "2026年8月下旬の雑記.md",
 "AttentionIsAllYouNeed.md",
 "ConvS2S.md",
+"PositionEmbeddings.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -2564,6 +2575,7 @@ export const backlinkData = {
 ],
 "ConvS2S.md": [
 "ConvolutionalSequenceToSequenceLearning.md",
+"PositionEmbeddings.md",
 "Transformer.md",
 "WikiNameの作り方.md",
 "機械翻訳.md",
