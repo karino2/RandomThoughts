@@ -1,6 +1,6 @@
 [[Transformer]]や[[ConvS2S]]で使われている、位置情報をトークンの値と独立に判断するための仕組み。
 
-- [[WhatDoPositionEmbeddingsLearn]]
+- [[WhatDoPositionEmbeddingsLearn]] 学習されたPositionEmbeddingsの内容などを調査、ただし調査方法が少し微妙。
 - [[OnPositionEmbeddingsInBERT]]
 
 ## ConvS2S
@@ -25,7 +25,7 @@
 
 sourceの方が影響はでかそう。
 
-## 原論文から解き明かす生成AIの演習問題3.1
+## 原論文から解き明かす生成AIの演習問題3.1(sinusoidalの相対位置)
 
 [[原論文から解き明かす生成AI]]の演習問題3.1に、[[Transformer]]のポジショナルエンコーディングが相対的な位置関係を把握しやすいというメリットがあるという事を示す問題があるのでやってみよう。
 
