@@ -593,6 +593,7 @@ export const backlinkData = {
 "【書籍】これからはじめるイタリア語入門.md",
 ],
 "PositionEmbeddings.md": [
+"2026年8月下旬の雑記.md",
 "ConvS2S.md",
 "Transformer.md",
 "WhatDoPositionEmbeddingsLearn.md",
