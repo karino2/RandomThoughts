@@ -1561,6 +1561,9 @@ export const backlinkData = {
 "2022年の花粉の記録.md",
 "雑多なメモ.md",
 ],
+"OnPositionEmbeddingsInBERT.md": [
+"PositionEmbeddings.md",
+],
 "お便りコーナー.md": [
 "プログラム雑談.md",
 "技術的なメモ.md",
