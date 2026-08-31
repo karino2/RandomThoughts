@@ -128,6 +128,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "WhatDoPositionEmbeddingsLearn.md": [
+"OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
 ],
 "IntroductionToChemistry.md": [
