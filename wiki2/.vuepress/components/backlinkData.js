@@ -196,6 +196,9 @@ export const backlinkData = {
 "sdbm.md": [
 "技術的なメモ.md",
 ],
+"SQuAD.md": [
+"OnPositionEmbeddingsInBERT.md",
+],
 "GoFS.md": [
 "KotlinNative.md",
 ],
@@ -2578,6 +2581,7 @@ export const backlinkData = {
 ],
 "BERT.md": [
 "OnPositionEmbeddingsInBERT.md",
+"SQuAD.md",
 ],
 "【書籍】はじめてのスピノザ.md": [
 "オーディオブック.md",
