@@ -1597,6 +1597,7 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "OnPositionEmbeddingsInBERT.md": [
+"2026年8月下旬の雑記.md",
 "PositionEmbeddings.md",
 ],
 "お便りコーナー.md": [
