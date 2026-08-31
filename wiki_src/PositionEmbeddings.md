@@ -2,8 +2,9 @@
 
 - [[WhatDoPositionEmbeddingsLearn]] 学習されたPositionEmbeddingsの内容などを調査、ただし調査方法が少し微妙。
 - [[OnPositionEmbeddingsInBERT]]
+- [[RoPE]]
 
-## ConvS2S
+## LxDの行列をindexでルックアップして学習（ConvS2S, BERT）
 
 [[ConvS2S]]のPositionEmbeddingsの周辺の話。
 
@@ -11,7 +12,7 @@
 
 - [fairseq/fairseq/modules/learned_positional_embedding.py at main · facebookresearch/fairseq](https://github.com/facebookresearch/fairseq/blob/main/fairseq/modules/learned_positional_embedding.py#L15)
 
-単なるintのindexにWを掛けて、そのWを学習する感じになっている。通常のembeddingと同じ計算だな。
+単なるintのindexでWをlookupしているようで、そのWを学習する感じになっている。通常のembeddingと同じ計算だな。
 上の実装には[[Transformer]]で提唱されたsinの奴も入っているが。
 
 なお、positional embedding無しでもそこそこスコアはでているので、これ無しでもそこそこは位置を扱えていそう。論文のテーブル4に以下のスコアがある。
@@ -24,6 +25,10 @@
 | 両方無し | 21.2 |
 
 sourceの方が影響はでかそう。
+
+[[BERT]]でも、論文には詳細は書いていないが実装を見ると、512個のD次元のベクトルを単に学習させている。
+
+[bert/modeling.py at master · google-research/bert](https://github.com/google-research/bert/blob/master/modeling.py?utm_source=chatgpt.com#L492C7-L492C31)
 
 ## 原論文から解き明かす生成AIの演習問題3.1(sinusoidalの相対位置)
 

@@ -8,6 +8,16 @@
 
 [[SQuAD]]に詳細があるように、パッセージの一部が回答になるようなQ and A。
 
+## 調べる対象のPosition Embeddings
+
+- Fully learnable APE （[[ConvS2S]]のもの）
+- Fixed sinusoidal APE ([[Transformer]]のもの)
+- Learnable sinusoidal APE (この論文が提案するもの、sinusoidalのwを学習）
+- Fully learnable RPE (relativeな奴だけを入れる奴）
+- Fixed sinusoidal RPE
+- Learnable sinusoidal RPE (この論文が提案するもの、sinusoidalのwを学習）
+
+
 ## 検討する性質
 
 - Monotonicity
