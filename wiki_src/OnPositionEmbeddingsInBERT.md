@@ -5,3 +5,17 @@
 ## Span prediction
 
 [[SQuAD]]に詳細があるように、パッセージの一部が回答になるようなQ and A。
+
+## 検討する性質
+
+### Monotonicity
+
+一般に、
+二つの位置が離れると二つの位置のembeddingsのsimilarityが下がる、
+という性質はorder preservationとして調べられてきた。
+
+我々はその特殊なケースとして位置が自然数であらわされるケースにだけ関心があるので、
+order preservationの特殊なケースとしてのmonotonicityを定義してそれを考える。
+
+- mがnより大きい
+- xと
