@@ -368,6 +368,9 @@ export const backlinkData = {
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
+"RoPE.md": [
+"PositionEmbeddings.md",
+],
 "電気ケトル.md": [
 "グッズ関連.md",
 ],
@@ -601,6 +604,7 @@ export const backlinkData = {
 "2026年8月下旬の雑記.md",
 "ConvS2S.md",
 "OnPositionEmbeddingsInBERT.md",
+"RoPE.md",
 "Transformer.md",
 "WhatDoPositionEmbeddingsLearn.md",
 ],
@@ -701,6 +705,7 @@ export const backlinkData = {
 "EnhancedSuffixArray.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "PositionEmbeddings.md",
+"RoPE.md",
 "SentencePiece.md",
 "SubwordRegularization.md",
 "TowardATheoryOfTokenizationInLLMs.md",
@@ -1497,6 +1502,7 @@ export const backlinkData = {
 "Home.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "OnPositionEmbeddingsInBERT.md",
+"RoPE.md",
 "SentencePiece.md",
 "SubwordRegularization.md",
 "SuffixArray.md",
@@ -2516,6 +2522,7 @@ export const backlinkData = {
 "AttentionIsAllYouNeed.md",
 "BERT.md",
 "ConvS2S.md",
+"OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
@@ -2602,6 +2609,7 @@ export const backlinkData = {
 ],
 "BERT.md": [
 "OnPositionEmbeddingsInBERT.md",
+"PositionEmbeddings.md",
 "SQuAD.md",
 ],
 "【書籍】はじめてのスピノザ.md": [
@@ -2618,6 +2626,7 @@ export const backlinkData = {
 ],
 "ConvS2S.md": [
 "ConvolutionalSequenceToSequenceLearning.md",
+"OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
 "Transformer.md",
 "WikiNameの作り方.md",
