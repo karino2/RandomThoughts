@@ -1476,6 +1476,7 @@ export const backlinkData = {
 ],
 "論文.md": [
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
+"BERT.md",
 "ContextualCorrelatesOfSynonymy.md",
 "ConvS2S.md",
 "EnhancedSuffixArray.md",
@@ -2489,6 +2490,7 @@ export const backlinkData = {
 "Transformer.md": [
 "2026年8月下旬の雑記.md",
 "AttentionIsAllYouNeed.md",
+"BERT.md",
 "ConvS2S.md",
 "PositionEmbeddings.md",
 "機械翻訳.md",
@@ -2573,6 +2575,9 @@ export const backlinkData = {
 "SurfLog.md",
 "UberDriverJp.md",
 "サーフボード.md",
+],
+"BERT.md": [
+"OnPositionEmbeddingsInBERT.md",
 ],
 "【書籍】はじめてのスピノザ.md": [
 "オーディオブック.md",
