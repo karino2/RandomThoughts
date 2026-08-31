@@ -1,6 +1,11 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%80%90%E6%9B%B8%E7%B1%8D%E3%80%91%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%92%E3%81%9D%E3%82%8C%E3%81%A3%E3%81%BD%E3%81%8F%E6%8F%8F%E3%81%8F%E3%82%B3%E3%83%84.html", "text": "【書籍】イラストをそれっぽく描くコツ"},
+    {"link": "%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%ABWiki%E3%81%AE%E7%94%BB%E5%83%8F%E7%AE%A1%E7%90%86.html", "text": "パーソナルWikiの画像管理"},
+    {"link": "%E3%83%8E%E3%83%BC%E3%83%88.sync-conflict-20260831-145648-WI4LIFX.html", "text": "ノート.sync-conflict-20260831-145648-WI4LIFX"},
+    {"link": "%E3%81%8A%E7%B5%B5%E6%8F%8F%E3%81%8D.html", "text": "お絵描き"},
+    {"link": "%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%92%E3%81%9D%E3%82%8C%E3%81%A3%E3%81%BD%E3%81%8F%E6%8F%8F%E3%81%8F%E3%82%B3%E3%83%84.html", "text": "イラストをそれっぽく描くコツ"},
     {"link": "%E3%83%A9%E3%82%A4%E3%83%96.html", "text": "ライブ"},
     {"link": "%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81%E3%83%A9%E3%82%A4%E3%83%96.html", "text": "クイックスケッチライブ"},
     {"link": "%E3%81%8A%E7%B5%B5%E6%8F%8F%E3%81%8D%E3%83%A9%E3%82%A4%E3%83%96.html", "text": "お絵描きライブ"},
@@ -11,11 +16,6 @@ export const recents = [
     {"link": "PositionEmbeddings.html", "text": "PositionEmbeddings"},
     {"link": "%E3%81%9F%E3%81%A6%E3%81%AA%E3%81%8B%E6%B5%81%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%81.html", "text": "たてなか流クイックスケッチ"},
     {"link": "WhatDoPositionEmbeddingsLearn.html", "text": "WhatDoPositionEmbeddingsLearn"},
-    {"link": "Transformer.html", "text": "Transformer"},
-    {"link": "ConvS2S.html", "text": "ConvS2S"},
-    {"link": "%E9%9B%91%E5%A4%9A%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "雑多なメモ"},
-    {"link": "%E3%83%AF%E3%83%AB%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%AC%E3%81%AE%E4%BC%9D%E8%AA%AC.html", "text": "ワルキューレの伝説"},
-    {"link": "%E3%82%B2%E3%83%BC%E3%83%A0.html", "text": "ゲーム"},
    ]
 }
 ]
