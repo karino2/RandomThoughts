@@ -1289,6 +1289,10 @@ export const backlinkData = {
 "ラック.md": [
 "グッズ関連.md",
 ],
+"GLUE.md": [
+"BERT.md",
+"OnPositionEmbeddingsInBERT.md",
+],
 "ExploringTypeScript.md": [
 "TypeScript.md",
 ],
@@ -2249,6 +2253,7 @@ export const backlinkData = {
 "アテンション.md": [
 "2026年8月下旬の雑記.md",
 "ConvS2S.md",
+"Transformer.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -2524,6 +2529,7 @@ export const backlinkData = {
 "ConvS2S.md",
 "OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
+"アテンション.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -2608,6 +2614,7 @@ export const backlinkData = {
 "サーフボード.md",
 ],
 "BERT.md": [
+"GLUE.md",
 "OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
 "SQuAD.md",
