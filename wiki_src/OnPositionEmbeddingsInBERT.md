@@ -1,6 +1,8 @@
-[[BERT]]にいろんな[[PositionEmbeddings]]を試してみて結果を見る[[論文]]
+[[BERT]]にいろんな[[PositionEmbeddings]]を試してみて結果を見る[[論文]]。
 
 - [On Position Embeddings in BERT - OpenReview](https://openreview.net/forum?id=onxoVA9FxMw)
+
+[[WhatDoPositionEmbeddingsLearn]]が微妙だったので他のも見てみようと思って見かけた論文。
 
 ## Span prediction
 
@@ -8,14 +10,18 @@
 
 ## 検討する性質
 
-### Monotonicity
+- Monotonicity
+- Translation Invariance
+- Symmetry
 
-一般に、
-二つの位置が離れると二つの位置のembeddingsのsimilarityが下がる、
-という性質はorder preservationとして調べられてきた。
+について、いろいろなembeddingsがどうなっているかを見ていく。
 
-我々はその特殊なケースとして位置が自然数であらわされるケースにだけ関心があるので、
-order preservationの特殊なケースとしてのmonotonicityを定義してそれを考える。
+![imgs/OnPositionEmbeddings/0000.png](imgs/OnPositionEmbeddings/0000.png)
 
-- mがnより大きい
-- xと
+## Sinusoidal PE
+
+Trans InvとSymmetryは解析的に示せる。
+
+![imgs/OnPositionEmbeddings/0001.png](imgs/OnPositionEmbeddings/0001.png)
+
+Monotonicityは一般には近い所でしか成り立っていない。
