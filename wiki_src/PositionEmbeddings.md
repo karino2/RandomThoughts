@@ -1,7 +1,7 @@
 [[Transformer]]や[[ConvS2S]]で使われている、位置情報をトークンの値と独立に判断するための仕組み。
 
 - [[WhatDoPositionEmbeddingsLearn]] 学習されたPositionEmbeddingsの内容などを調査、ただし調査方法が少し微妙。
-- [[OnPositionEmbeddingsInBERT]]
+- [[OnPositionEmbeddingsInBERT]] BERTにいろんなPEを適用してGLUEとかSQuADのスコアを見たり最初のアテンションの重みを評価したり。
 - [[RoPE]]
 
 ## LxDの行列をindexでルックアップして学習（ConvS2S, BERT）
