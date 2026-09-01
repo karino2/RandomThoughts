@@ -143,7 +143,6 @@ export const backlinkData = {
 "【書籍】IntroductionToAlgorithms.md",
 ],
 "WikiNameの作り方.md": [
-"2026年8月下旬の雑記.md",
 "ノート.md",
 ],
 "【書籍】ファストアンドスロー.md": [
@@ -220,7 +219,6 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md",
 ],
 "SurfLog.md": [
-"2026年8月下旬の雑記.md",
 "Home.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
@@ -601,7 +599,6 @@ export const backlinkData = {
 "【書籍】これからはじめるイタリア語入門.md",
 ],
 "PositionEmbeddings.md": [
-"2026年8月下旬の雑記.md",
 "ConvS2S.md",
 "OnPositionEmbeddingsInBERT.md",
 "RoPE.md",
@@ -685,9 +682,6 @@ export const backlinkData = {
 "ノート.md",
 "ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 ],
-"2026年8月下旬の雑記.md": [
-"Home.md",
-],
 "技術的な事を話すweb上の場.md": [
 "GitHubを使ったSNSを考える.md",
 "プログラミングエッセイ.md",
@@ -699,7 +693,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "原論文から解き明かす生成AI.md": [
-"2026年8月下旬の雑記.md",
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
@@ -1520,7 +1513,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Rhinocs.md": [
-"2026年8月下旬の雑記.md",
 "BOOX.md",
 "Rhino.md",
 "Rhinocs_セットアップ.md",
@@ -1543,7 +1535,6 @@ export const backlinkData = {
 "【書籍】イラストをそれっぽく描くコツ.md",
 ],
 "クイックスケッチライブ.md": [
-"2026年8月下旬の雑記.md",
 "お絵描きライブ.md",
 "たてなか流クイックスケッチ.md",
 ],
@@ -1597,7 +1588,6 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "OnPositionEmbeddingsInBERT.md": [
-"2026年8月下旬の雑記.md",
 "PositionEmbeddings.md",
 ],
 "お便りコーナー.md": [
@@ -1617,7 +1607,6 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
-"2026年8月下旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
@@ -1808,6 +1797,9 @@ export const backlinkData = {
 "htmnix.md",
 "mdvcat.md",
 "技術的なメモ.md",
+],
+"2026年9月上旬の雑記.md": [
+"Home.md",
 ],
 "マグナスケッチ.md": [
 "BOOX.md",
@@ -2252,7 +2244,6 @@ export const backlinkData = {
 "ソフトボード.md",
 ],
 "アテンション.md": [
-"2026年8月下旬の雑記.md",
 "ConvS2S.md",
 "Transformer.md",
 "機械翻訳.md",
@@ -2524,7 +2515,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Transformer.md": [
-"2026年8月下旬の雑記.md",
 "AttentionIsAllYouNeed.md",
 "BERT.md",
 "ConvS2S.md",
