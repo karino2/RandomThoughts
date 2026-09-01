@@ -77,3 +77,17 @@ kを学習は出来るはずと言えそうだ。
 逆象が存在するかもかなり自明ではないし、kと近いようなpの値を間違えて相対位置と勘違いしないような演算が作れるか、とかはかなり自明ではない。
 
 ChatGPTに質問して、以下の論文を教えてもらう。[[WhatDoPositionEmbeddingsLearn]]
+
+## Sinusoidalの値の確認(演習問題3.2)
+
+[[原論文から解き明かす生成AI]]の演習問題3.2はsinusoidalのembeddingsが実際にどういう値になっているかを確認せよ、というもの。
+annotated transformerに同じようなのあったが、自分でやってみるか。
+
+[colab: SinusoidalなPositionEmbeddingsの確認.ipynb](https://colab.research.google.com/drive/1I0Xk6PG1G-KggKCBR7Ubark8PnQ9awEH?usp=sharing)
+
+高次元の方がゆるやかになって、低次元の方が高周波になっている。
+低次元は近傍の前後関係を、高次元は絶対的な位置の雰囲気を伝えるのだろう。
+
+## Sinusoidalのスケールの確認（演習問題3.3）
+
+上のcolabで一緒にやっている。
