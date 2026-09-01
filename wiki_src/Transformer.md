@@ -24,3 +24,16 @@ Q, K, Vを8個（H=8）に分離する訳だが、
 ようするに512次元の入力を、64次元の出力にするWを8つ用意して、掛ける。図のLinearがこれ。
 
 図1
+
+## FFのコネクション
+
+以下のdense_relu_denseが呼ばれそう。
+
+[tensor2tensor/tensor2tensor/layers/common_layers.py at master · tensorflow/tensor2tensor](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/layers/common_layers.py?utm_source=chatgpt.com)
+
+denseは以下っぽい。
+
+[tf.keras.layers.Dense  -  TensorFlow v2.16.1](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense?utm_source=chatgpt.com)
+
+Noteの所に、rankが2以上だとlast axisだけをdotすると書いてあるのでd_modelに対してだけdotするという事で良さそうかな。
+入力は(バッチ, token列, d_model)というテンソルだろう。
