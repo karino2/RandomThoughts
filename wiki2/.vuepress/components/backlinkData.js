@@ -129,7 +129,6 @@ export const backlinkData = {
 ],
 "WhatDoPositionEmbeddingsLearn.md": [
 "OnPositionEmbeddingsInBERT.md",
-"OnPositionEmbeddingsInBERT.sync-conflict-20260901-164443-WI4LIFX.md",
 "PositionEmbeddings.md",
 ],
 "IntroductionToChemistry.md": [
@@ -199,7 +198,6 @@ export const backlinkData = {
 ],
 "SQuAD.md": [
 "OnPositionEmbeddingsInBERT.md",
-"OnPositionEmbeddingsInBERT.sync-conflict-20260901-164443-WI4LIFX.md",
 ],
 "GoFS.md": [
 "KotlinNative.md",
@@ -601,9 +599,9 @@ export const backlinkData = {
 "【書籍】これからはじめるイタリア語入門.md",
 ],
 "PositionEmbeddings.md": [
+"2026年9月上旬の雑記.md",
 "ConvS2S.md",
 "OnPositionEmbeddingsInBERT.md",
-"OnPositionEmbeddingsInBERT.sync-conflict-20260901-164443-WI4LIFX.md",
 "RoPE.md",
 "Transformer.md",
 "WhatDoPositionEmbeddingsLearn.md",
@@ -1502,7 +1500,6 @@ export const backlinkData = {
 "Home.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "OnPositionEmbeddingsInBERT.md",
-"OnPositionEmbeddingsInBERT.sync-conflict-20260901-164443-WI4LIFX.md",
 "RoPE.md",
 "SentencePiece.md",
 "SubwordRegularization.md",
@@ -2611,7 +2608,6 @@ export const backlinkData = {
 "BERT.md": [
 "GLUE.md",
 "OnPositionEmbeddingsInBERT.md",
-"OnPositionEmbeddingsInBERT.sync-conflict-20260901-164443-WI4LIFX.md",
 "PositionEmbeddings.md",
 "SQuAD.md",
 ],
