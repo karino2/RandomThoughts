@@ -3,6 +3,7 @@
 自分用のAndroidアプリを置くOrganizationとしてKarino2DIYAppというOrganizationを作った。[Karino2DIYApp repositories](https://github.com/orgs/Karino2DIYApp/repositories)
 
 - [Karino2DIYApp/CropPagenate](https://github.com/Karino2DIYApp/CropPagenate) PDF Reader
+- [Karino2DIYApp/Musimegane: Android magnifier app](https://github.com/Karino2DIYApp/Musimegane) 虫眼鏡アプリ
 
 ## モチベーション
 
@@ -16,10 +17,10 @@ apkがReleaseページに出来る、みたいな感じになっている。
 
 このDIYAppは基本的には自分しか使わないので、いろいろ単純化した方針でやっていきたい。
 
-## バージョンは単なる連番でv0, v1, v2と進める
+## バージョンは単なる連番でv1, v2, v3と進める
 
-バージョンコードとバージョンネームを完全に単なるintの連番として、スクリプトから上げやすくする。
-そしてタグもv0, v1とvで始めたバージョン番号とする。
+バージョンコードとバージョンネームを完全に単なるintの連番（1とか2とか）として、スクリプトから上げやすくする。
+そしてタグもv1, v2とvで始めたバージョン番号とする。
 
 ## タグをpushしたらapkがReleaseページに出来る
 
