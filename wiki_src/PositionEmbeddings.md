@@ -30,6 +30,11 @@ sourceの方が影響はでかそう。
 
 [bert/modeling.py at master · google-research/bert](https://github.com/google-research/bert/blob/master/modeling.py?utm_source=chatgpt.com#L492C7-L492C31)
 
+### sinusoidal vs learned embeddings
+
+[[Transformer]]の論文のTable 3の(E)に学習するケースのスコアが載っていて、sinusoidalとほとんど同じ（少し学習する方が落ちる）という結果が載っている。
+[[OnPositionEmbeddingsInBERT]]ではlearnedの方が優秀そうなのでタスクによりそう。
+
 ## 原論文から解き明かす生成AIの演習問題3.1(sinusoidalの相対位置)
 
 [[原論文から解き明かす生成AI]]の演習問題3.1に、[[Transformer]]のポジショナルエンコーディングが相対的な位置関係を把握しやすいというメリットがあるという事を示す問題があるのでやってみよう。
