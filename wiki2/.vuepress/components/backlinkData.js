@@ -2519,6 +2519,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Transformer.md": [
+"2026年9月上旬の雑記.md",
 "AttentionIsAllYouNeed.md",
 "BERT.md",
 "ConvS2S.md",
