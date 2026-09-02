@@ -605,6 +605,7 @@ export const backlinkData = {
 "RoPE.md",
 "Transformer.md",
 "WhatDoPositionEmbeddingsLearn.md",
+"原論文から解き明かす生成AI.md",
 ],
 "Shader.md": [
 "CG.md",
@@ -1514,6 +1515,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Rhinocs.md": [
+"2026年9月上旬の雑記.md",
 "BOOX.md",
 "Rhino.md",
 "Rhinocs_セットアップ.md",
