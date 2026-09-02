@@ -265,5 +265,6 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 ## 3章 Transformer
 
 - [[アテンション]]
+- [[PositionEmbeddings]]
 - [[ConvS2S]]
 - [[Transformer]]

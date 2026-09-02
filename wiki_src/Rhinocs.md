@@ -61,6 +61,7 @@ Activityのリサイクル、SAFなどを最初から考えたエディタ。
 - Restart
 - インテントからのオープン
 - Bundleへのバッファのuriと編集位置くらい保存
+  - InterpreterインスタンスもActivityのリサイクルくらいはキャッシュする
 - 名前をつけて保存
 - describe_functionとか
 
