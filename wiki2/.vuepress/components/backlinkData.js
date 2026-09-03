@@ -705,6 +705,7 @@ export const backlinkData = {
 "SubwordRegularization.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "Transformer.md",
+"セルフアテンション.md",
 "一人読書会ライブ.md",
 "機械学習.md",
 "技術的なメモ.md",
@@ -2250,6 +2251,7 @@ export const backlinkData = {
 "アテンション.md": [
 "ConvS2S.md",
 "Transformer.md",
+"セルフアテンション.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -2526,6 +2528,7 @@ export const backlinkData = {
 "OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
 "アテンション.md",
+"セルフアテンション.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -2832,6 +2835,10 @@ export const backlinkData = {
 ],
 "【書籍】スタンフォード式、疲れない体.md": [
 "オーディオブック.md",
+],
+"セルフアテンション.md": [
+"Transformer.md",
+"アテンション.md",
 ],
 "ライブ.md": [
 "お絵描きライブ.md",
