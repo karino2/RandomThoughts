@@ -2637,6 +2637,7 @@ export const backlinkData = {
 "PositionEmbeddings.md",
 "Transformer.md",
 "WikiNameの作り方.md",
+"セルフアテンション.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
