@@ -41,13 +41,13 @@ sourceの方が影響はでかそう。
 
 まずp+kを加法定理で開く事で、pの線形結合の形で書ける。
 
-図2
+![imgs/PositionEmbeddings/0000.png](imgs/PositionEmbeddings/0000.png)
 
 これでpの線形結合の形で書ける事が証明出来た（ちょっとpを右に寄せてないので見づらいが、まぁ分かるだろう）。
 
 次にp+kとpの間の相対的な位置関係を調べるために、$PE_{p+k} - PE_{p}$ を計算してみる。2iと2i+1を調べてみれば十分だろう。
 
-図3
+![imgs/PositionEmbeddings/0001.png](imgs/PositionEmbeddings/0001.png)
 
 ここで、Aはkのみで、Bはpのみとなっている。
 そしてpositional encodingは違う位置のものが区別出来るような値になっていると期待出来るので、pを起点として既知とすると、このAの部分を分離出来て、
