@@ -20,7 +20,8 @@
 
 [[原論文から解き明かす生成AI]]の演習3.5。
 
-図
+![imgs/Transformer/0001.png](imgs/Transformer/0001.png)
+![imgs/Transformer/0002.png](imgs/Transformer/0002.png)
 
 こんな考察のもとに、attentionに渡す値のスケールをdの影響分割り引く事にしているらしい。
 
@@ -38,7 +39,7 @@ Q, K, Vを8個（H=8）に分離する訳だが、
 
 ようするに512次元の入力を、64次元の出力にするWを8つ用意して、掛ける。図のLinearがこれ。
 
-図1
+![imgs/Transformer/0000.png](imgs/Transformer/0000.png)
 
 全ての位置の入力に対して同じWを掛ける。Q, K, Vそれぞれに別々のWを掛ける（論文の3.2.2に説明がある)。
 
@@ -66,3 +67,25 @@ Noteの所に、rankが2以上だとlast axisだけをdotすると書いてあ�
 他からもリンクしたい事があるのでページを分ける。
 
 [[セルフアテンション]]
+
+## マスクと3つのアテンション
+
+アテンションの使われ方が3つあり、decoderのセルフアテンションだけmaskが必要、みたいな話が論文と本に書いてあるので、
+この３つのアテンションの使われ方を見ておく。
+
+### エンコーダーのセルフアテンション
+
+![imgs/Transformer/0003.png](imgs/Transformer/0003.png)
+
+### クロスアテンション
+
+![imgs/Transformer/0004.png](imgs/Transformer/0004.png)
+
+これは通常の[[アテンション]]になる。[[ConvS2S]]などと同じもの。
+dを使うが、クエリに使うdは一つだけ（図ではiとしているが、実際はt-1期のもの）なのに注意。
+
+### デコーダーのセルフアテンション
+
+これだけ未来のdが登場しうるのでマスクが必要。
+
+![imgs/Transformer/0005.png](imgs/Transformer/0005.png)
