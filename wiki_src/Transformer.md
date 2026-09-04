@@ -89,3 +89,8 @@ dを使うが、クエリに使うdは一つだけ（図ではiとしている�
 これだけ未来のdが登場しうるのでマスクが必要。
 
 ![imgs/Transformer/0005.png](imgs/Transformer/0005.png)
+
+
+## Layer Normalization
+
+[[LayerNornalization]]

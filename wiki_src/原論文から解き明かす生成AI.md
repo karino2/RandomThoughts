@@ -268,3 +268,5 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 - [[PositionEmbeddings]]
 - [[ConvS2S]]
 - [[Transformer]]
+  - [[セルフアテンション]]
+- [[BatchNormalization]]
