@@ -93,4 +93,4 @@ dを使うが、クエリに使うdは一つだけ（図ではiとしている�
 
 ## Layer Normalization
 
-[[LayerNornalization]]
+[[LayerNormalization]]
