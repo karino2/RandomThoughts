@@ -697,8 +697,10 @@ export const backlinkData = {
 ],
 "原論文から解き明かす生成AI.md": [
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
+"BatchNormalization.md",
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
+"LayerNornalization.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "PositionEmbeddings.md",
 "RoPE.md",
@@ -1599,6 +1601,9 @@ export const backlinkData = {
 "お便りコーナー.md": [
 "プログラム雑談.md",
 "技術的なメモ.md",
+],
+"LayerNornalization.md": [
+"Transformer.md",
 ],
 "TypeScript.md": [
 "Deno.md",
@@ -2842,6 +2847,7 @@ export const backlinkData = {
 "2026年9月上旬の雑記.md",
 "Transformer.md",
 "アテンション.md",
+"原論文から解き明かす生成AI.md",
 ],
 "ライブ.md": [
 "お絵描きライブ.md",
@@ -2927,6 +2933,10 @@ export const backlinkData = {
 ],
 "sitabot.md": [
 "技術的なメモ.md",
+],
+"BatchNormalization.md": [
+"LayerNornalization.md",
+"原論文から解き明かす生成AI.md",
 ],
 "カルボニル基.md": [
 "化学.md",
