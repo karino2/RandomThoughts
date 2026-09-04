@@ -671,6 +671,9 @@ export const backlinkData = {
 "茨城計画.md": [
 "ワーケーション.md",
 ],
+"一人読書会.md": [
+"2026年9月上旬の雑記.md",
+],
 "Shell.md": [
 "embed用のシェルのような何か.md",
 "Nushell.md",
@@ -700,7 +703,7 @@ export const backlinkData = {
 "BatchNormalization.md",
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
-"LayerNornalization.md",
+"LayerNormalization.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "PositionEmbeddings.md",
 "RoPE.md",
@@ -849,6 +852,10 @@ export const backlinkData = {
 "【書籍】プロテスタンティズムの倫理と資本主義の精神.md",
 "【書籍】自由論.md",
 "【書籍】本当に役立つ栄養学.md",
+],
+"LayerNormalization.md": [
+"BatchNormalization.md",
+"Transformer.md",
 ],
 "【書籍】プロテスタンティズムの倫理と資本主義の精神.md": [
 "【書籍】社会学史.md",
@@ -1602,9 +1609,6 @@ export const backlinkData = {
 "プログラム雑談.md",
 "技術的なメモ.md",
 ],
-"LayerNornalization.md": [
-"Transformer.md",
-],
 "TypeScript.md": [
 "Deno.md",
 "embed用のシェルのような何か.md",
@@ -2253,6 +2257,9 @@ export const backlinkData = {
 "LittleMarley.md",
 "サーフボード.md",
 "ソフトボード.md",
+],
+"深層学習.md": [
+"BatchNormalization.md",
 ],
 "アテンション.md": [
 "ConvS2S.md",
@@ -2935,8 +2942,9 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "BatchNormalization.md": [
-"LayerNornalization.md",
+"LayerNormalization.md",
 "原論文から解き明かす生成AI.md",
+"深層学習.md",
 ],
 "カルボニル基.md": [
 "化学.md",
@@ -3012,6 +3020,7 @@ export const backlinkData = {
 "【書籍】物語イギリスの歴史.md",
 "【書籍】本当に役立つ栄養学.md",
 "【書籍】魔法の人物ドローイング.md",
+"深層学習.md",
 "論文.md",
 ],
 "大河ドラマ.md": [
