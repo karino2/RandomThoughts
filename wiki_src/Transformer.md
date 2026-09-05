@@ -90,7 +90,28 @@ dを使うが、クエリに使うdは一つだけ（図ではiとしている�
 
 ![imgs/Transformer/0005.png](imgs/Transformer/0005.png)
 
-
 ## Layer Normalization
 
 [[LayerNormalization]]
+
+## 入力の所はnormalizeされないのでは？という疑問
+
+論文の図によると最初はLayer Normしてないように見えるが、これだと内積では絶対値に引きずられてcos距離にならず、アテンションとしては微妙なのでは？と思った疑問。
+
+２つ目以降はLayerNormが入るので1にノーマライズされている入力になるから内積でcos距離のようなものになる。
+
+ChaatGPTに聞いたら、先にLayerNormを置くPre-LN Transformerというのがあって、そっちの方が最近は主流との事。
+
+Pre-LNの方が良いのでは、という理論的な話をしている論文は以下。
+
+[On Layer Normalization in the Transformer Architecture](https://proceedings.mlr.press/v119/xiong20b.html?utm_source=chatgpt.com)
+
+学習が簡単になる、という話だが、自分の直感の、ノルムに引きずられる分をembeddingとかWが学習するのが無駄に大変という話とも整合的に思う。
+
+この論文は既にあるPre-LNの理論的な裏付けであって、最初にPre-LN Transformerを使ったのはこの論文では無い。
+最初に使われたのは以下の論文のよう。
+
+ [arxiv: 1809.10853 Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/abs/1809.10853)
+
+ただこれには「we apply layer normalization
+before the self-attention and FFN blocks instead of after, as we find it leads to more effective training.」とあるだけで、何故か、みたいな話はあまり無さそう。
