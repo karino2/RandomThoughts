@@ -22,9 +22,6 @@ export const backlinkData = {
 "サーフボード.md",
 "ソフトボード.md",
 ],
-"LayerNormalize.md": [
-"BatchNormalization.md",
-],
 "Starlarcs.md": [
 "Rhinocs_古くなった話題.md",
 ],
@@ -859,6 +856,7 @@ export const backlinkData = {
 "LayerNormalization.md": [
 "BatchNormalization.md",
 "Transformer.md",
+"セルフアテンション.md",
 ],
 "【書籍】プロテスタンティズムの倫理と資本主義の精神.md": [
 "【書籍】社会学史.md",
@@ -2542,6 +2540,7 @@ export const backlinkData = {
 "AttentionIsAllYouNeed.md",
 "BERT.md",
 "ConvS2S.md",
+"LayerNormalization.md",
 "OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
 "アテンション.md",
