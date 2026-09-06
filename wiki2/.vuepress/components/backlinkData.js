@@ -22,6 +22,9 @@ export const backlinkData = {
 "サーフボード.md",
 "ソフトボード.md",
 ],
+"LayerNormalize.md": [
+"BatchNormalization.md",
+],
 "Starlarcs.md": [
 "Rhinocs_古くなった話題.md",
 ],
