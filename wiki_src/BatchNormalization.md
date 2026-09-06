@@ -8,4 +8,8 @@
 
 ![imgs/BatchNorm/0000.png](imgs/BatchNorm/0000.png)
 
-[[LayerNormalize]]との比較で調べていた感じ、どうもベータとガンマはベクトルでガンマとの積はelement-wiseっぽい。
+[[LayerNormalization]]との比較で調べていた感じ、どうもベータとガンマはベクトルでガンマとの積はelement-wiseっぽい。以下のWikipediaでもkの添字がある。
+
+[Batch normalization - Wikipedia](https://en.wikipedia.org/wiki/Batch_normalization)
+
+$\sigma^2$ もベクトルで2乗は要素ごとに計算するっぽい。えー、この表記だと2乗ノルムだと思うよ〜。
