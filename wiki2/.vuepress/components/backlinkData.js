@@ -664,6 +664,7 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "Wikiと手書きノートの融合.md": [
+"2026年9月上旬の雑記.md",
 "ノート.md",
 "ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "パーソナルWikiの画像管理.md",
@@ -708,6 +709,7 @@ export const backlinkData = {
 "PositionEmbeddings.md",
 "RoPE.md",
 "SentencePiece.md",
+"SoftMax.md",
 "SubwordRegularization.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "Transformer.md",
@@ -899,6 +901,8 @@ export const backlinkData = {
 "Transformerブロック.md": [
 "2026年9月上旬の雑記.md",
 "Transformer.md",
+"アテンション.md",
+"アテンションとセルフアテンション.md",
 "セルフアテンション.md",
 ],
 "統計グラフ！.md": [
@@ -1218,6 +1222,7 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "アテンションとセルフアテンション.md": [
+"アテンション.md",
 "一人読書会ライブ.md",
 ],
 "お絵描き.md": [
@@ -2253,6 +2258,11 @@ export const backlinkData = {
 "日本史.md",
 "平氏.md",
 ],
+"SoftMax.md": [
+"Transformer.md",
+"アテンション.md",
+"アテンションとセルフアテンション.md",
+],
 "Folang.md": [
 "Folang過去ログ.md",
 "Folang仕様検討.md",
@@ -2277,6 +2287,7 @@ export const backlinkData = {
 "アテンション.md": [
 "ConvS2S.md",
 "Transformer.md",
+"アテンションとセルフアテンション.md",
 "セルフアテンション.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
@@ -2867,11 +2878,11 @@ export const backlinkData = {
 ],
 "セルフアテンション.md": [
 "2026年9月上旬の雑記.md",
+"SoftMax.md",
 "Transformer.md",
 "Transformerブロック.md",
 "アテンション.md",
 "アテンションとセルフアテンション.md",
-"セルフアテンション.md",
 "原論文から解き明かす生成AI.md",
 ],
 "ライブ.md": [
