@@ -27,46 +27,11 @@
 
 ## Transformerのブロック構成
 
-マルチヘッドアテンションとLayerNormとFFNの組み合わせになっている。
+[[セルフアテンション]]と[[LayerNormalization]]とFFNの組み合わせになっている。
 
-### マルチヘッドアテンション
-
-マルチヘッドの所についてのメモ。
-Q, K, Vを8個（H=8）に分離する訳だが、
-次元とかがややこしいので。
-
-入力の次元 $d_{model}=512$ で、Wのアウトプットの方はQ, K, V共通で全て 64。
-
-ようするに512次元の入力を、64次元の出力にするWを8つ用意して、掛ける。図のLinearがこれ。
-
-![imgs/Transformer/0000.png](imgs/Transformer/0000.png)
-
-全ての位置の入力に対して同じWを掛ける。Q, K, Vそれぞれに別々のWを掛ける（論文の3.2.2に説明がある)。
-
-### FFのコネクション
-
-以下のdense_relu_denseが呼ばれそう。
-
-[tensor2tensor/tensor2tensor/layers/common_layers.py at master · tensorflow/tensor2tensor](https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/layers/common_layers.py?utm_source=chatgpt.com)
-
-denseは以下っぽい。
-
-[tf.keras.layers.Dense  -  TensorFlow v2.16.1](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dense?utm_source=chatgpt.com)
-
-Noteの所に、rankが2以上だとlast axisだけをdotすると書いてあるのでd_modelに対してだけdotするという事で良さそうかな。
-入力は(バッチ, token列, d_model)というテンソルだろう。
-
-計算量は[[セルフアテンション]]の方で計算した。
-
-### アテンションの取り込み方
-
-マルチヘッドのアテンションをconcatしてWを掛けたものをそのまま次の入力へと渡している。
-
-## セルフアテンションとマルチヘッドアテンション
-
-他からもリンクしたい事があるのでページを分ける。
-
-[[セルフアテンション]]
+- [[Transformerブロック]]
+  - [[セルフアテンション]]
+  - [[LayerNormalization]]
 
 ## マスクと3つのアテンション
 
@@ -89,29 +54,3 @@ dを使うが、クエリに使うdは一つだけ（図ではiとしている�
 これだけ未来のdが登場しうるのでマスクが必要。
 
 ![imgs/Transformer/0005.png](imgs/Transformer/0005.png)
-
-## Layer Normalization
-
-[[LayerNormalization]]
-
-## 入力の所はnormalizeされないのでは？という疑問
-
-論文の図によると最初はLayer Normしてないように見えるが、これだと内積では絶対値に引きずられてcos距離にならず、アテンションとしては微妙なのでは？と思った疑問。
-
-２つ目以降はLayerNormが入るので1にノーマライズされている入力になるから内積でcos距離のようなものになる。
-
-ChaatGPTに聞いたら、先にLayerNormを置くPre-LN Transformerというのがあって、そっちの方が最近は主流との事。
-
-Pre-LNの方が良いのでは、という理論的な話をしている論文は以下。
-
-[On Layer Normalization in the Transformer Architecture](https://proceedings.mlr.press/v119/xiong20b.html?utm_source=chatgpt.com)
-
-学習が簡単になる、という話だが、自分の直感の、ノルムに引きずられる分をembeddingとかWが学習するのが無駄に大変という話とも整合的に思う。
-
-この論文は既にあるPre-LNの理論的な裏付けであって、最初にPre-LN Transformerを使ったのはこの論文では無い。
-最初に使われたのは以下の論文のよう。
-
- [arxiv: 1809.10853 Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/abs/1809.10853)
-
-ただこれには「we apply layer normalization
-before the self-attention and FFN blocks instead of after, as we find it leads to more effective training.」とあるだけで、何故か、みたいな話はあまり無さそう。
