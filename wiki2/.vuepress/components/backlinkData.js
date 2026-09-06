@@ -711,6 +711,7 @@ export const backlinkData = {
 "SubwordRegularization.md",
 "TowardATheoryOfTokenizationInLLMs.md",
 "Transformer.md",
+"Transformerブロック.md",
 "セルフアテンション.md",
 "一人読書会ライブ.md",
 "機械学習.md",
@@ -856,7 +857,7 @@ export const backlinkData = {
 "LayerNormalization.md": [
 "BatchNormalization.md",
 "Transformer.md",
-"セルフアテンション.md",
+"Transformerブロック.md",
 ],
 "【書籍】プロテスタンティズムの倫理と資本主義の精神.md": [
 "【書籍】社会学史.md",
@@ -893,6 +894,10 @@ export const backlinkData = {
 "ぼくのかんがえた最強の講義ノート.md",
 "雑多なメモ.md",
 "少しバッチノート.md",
+],
+"Transformerブロック.md": [
+"Transformer.md",
+"セルフアテンション.md",
 ],
 "統計グラフ！.md": [
 "GithubPages.md",
@@ -2543,6 +2548,7 @@ export const backlinkData = {
 "LayerNormalization.md",
 "OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
+"Transformerブロック.md",
 "アテンション.md",
 "セルフアテンション.md",
 "機械翻訳.md",
@@ -2651,8 +2657,8 @@ export const backlinkData = {
 "OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
 "Transformer.md",
+"Transformerブロック.md",
 "WikiNameの作り方.md",
-"セルフアテンション.md",
 "機械翻訳.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -2856,7 +2862,9 @@ export const backlinkData = {
 "セルフアテンション.md": [
 "2026年9月上旬の雑記.md",
 "Transformer.md",
+"Transformerブロック.md",
 "アテンション.md",
+"セルフアテンション.md",
 "一人読書会ライブ.md",
 "原論文から解き明かす生成AI.md",
 ],
