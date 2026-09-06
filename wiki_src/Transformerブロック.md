@@ -1,17 +1,30 @@
-[[Transformer]]の構成要素の1ブロック。
-
-マルチヘッドアテンション+LayerNorm+FFN+LayerNorm。
-
-- [[セルフアテンション]]
-- [[LayerNormalization]]
+[[Transformer]]の構成要素の1ブロック。Decoderは間にクロスアテンションが入るので少し追加があるが、基本的にはこのブロックがTransformerの本質。
 
 ![imgs/TransformerBlock/0000.png](imgs/TransformerBlock/0000.png)
 
+図のマルチヘッドへの入力が３つに分かれているのはQ, K, Vの3つの事。
+
 ## マルチヘッドアテンション
 
-[[セルフアテンション]]を参照のこと。
+Transformerブロックでは、[[セルフアテンション]]をマルチヘッド化している。
 
-### FFのコネクション
+マルチヘッドとは、$W_Q$, $W_K$, $W_V$を8個（H=8）に分離して、それぞれセルフアテンションを計算して、最後にそれをまとめて次へ送る。
+次元がややこしいので以下にメモしておく。
+
+入力の次元 $d_{model}=512$ で、Wのアウトプットの方はQ, K, V共通で全て 64。
+
+ようするに512次元の入力を、64次元の出力にするWを8つ用意して、掛ける。[[Transformer]]論文の図のLinearがこれ。
+
+![imgs/Transformer/0000.png](imgs/Transformer/0000.png)
+
+全ての位置の入力に対して同じWを掛ける。Q, K, Vそれぞれに別々のWを掛ける（論文の3.2.2に説明がある)。
+
+### 次のレイヤーとのつなぎ
+
+マルチヘッドのアテンションをconcatしてWを掛けたものをそのまま次の入力へと渡している。
+アテンションを元になにかをする、というよりはアテンション自身の値をそのまま次にわたす（といっても$W_V$を掛けているのでそこで値用の変換をしている訳だが）。
+
+## FFのコネクション
 
 以下のdense_relu_denseが呼ばれそう。
 
@@ -29,11 +42,15 @@ $$
 FFN(\bm{x}) = W_2 \cdot max(\bm{0}, W_1 \bm{x} + \bm{b}_1) + \bm{b}_2
 $$
 
+## Residual Connection
+
+ResNetなどと同様に、レイヤーをバイパスした値と結果を足す。図のAddしてNormのうちのAddの部分。
+
 ## Layer Normalization
 
 [[LayerNormalization]]
 
-## 入力の所はnormalizeされないのでは？という疑問
+### 入力の所はnormalizeされないのでは？という疑問
 
 論文の図によると最初はLayer Normしてないように見えるが、これだと内積では絶対値に引きずられてcos距離にならず、アテンションとしては微妙なのでは？と思った疑問。
 
@@ -56,14 +73,31 @@ Pre-LNの方が良いのでは、という理論的な話をしている論文�
 before the self-attention and FFN blocks instead of after, as we find it leads to more effective training.」とあるだけで、何故か、みたいな話はあまり無さそう。
 
 
-## Fully-connectedなパーセプトロンとのパラメータ数の比較
+## パラメータ数
+
+[[原論文から解き明かす生成AI]]（や元のTransformer論文）には計算量の話があるが、
+現代的な視点ではパラメータ数の方が興味が湧く所だろう（2026年現在ではメモリがかなり厳しいので）。
+
+という事でここではTransformerブロックのパラメータ数の概算を見ておく。
+
+### Transformerブロックのパラメータ数
+
+MultiHeadと[[LayerNormalization]]とFFNで出来ている。LayerNormは大したこと無いので無視しよう。また多くの演算はW+Bの形式になるがWが512x512の時Bは512のオーダーなので、Wだけ見ていけば丼勘定としては十分。
+
+![imgs/SelfAttention/0003.png](imgs/SelfAttention/0003.png)
+![imgs/SelfAttention/0004.png](imgs/SelfAttention/0004.png)
+
+という事で2Mi個くらい。
+
+### Fully-connectedなパーセプトロンのパラメータ数
 
 セルフアテンションとConvやRNNの比較は論文や[[原論文から解き明かす生成AI]]にあるが、
 この辺は当時の状況からの比較であって、今から新しくこの辺を学ぶ人にとっては不要に難しい比較に思う。
 
 素人の視点としては、Fully-connectedなパーセプトロンとの違いを見てみるのが教育的だろう。
+パラメータ数というのが一番大きな違いの出る所なので、パーセプトロンのパラメータ数を見ておく。
 
-### Fully-connectedなパーセプトロンのパラメータ数
+なお、TransformerブロックのFFNはpoint wiseであり、こちらはFully connectedなケースの比較となる。両者はパラメータ数としては月とすっぽんなのが以下で分かる。
 
 一つのoutputにつき、トークン数、トークンの次元を512とする。
 
@@ -74,14 +108,16 @@ before the self-attention and FFN blocks instead of after, as we find it leads t
 
 これが512個あるのだから、全体では512の4乗で、だいたい64G個（64Billion）となる。
 
-### Transformerブロックのパラメータ数
+### Transformerブロックとの比較
 
-MultiHeadと[[LayerNormalization]]とFFNで出来ている。LayerNormは大したこと無いので無視しよう。また多くの演算はW+Bの形式になるがWが512x512の時Bは512のオーダーなので、Wだけ見ていけば丼勘定としては十分。
+という事で、
 
-![imgs/SelfAttention/0003.png](imgs/SelfAttention/0003.png)
-![imgs/SelfAttention/0004.png](imgs/SelfAttention/0004.png)
+- パーセプトロン: 64Gi 個
+- Transformerブロック: 2Mi 個
 
-という事で、64Giと2Mi、くらいの差（32*1024倍）がある。
+ほどの違い（32*1024倍）がある。全然違う。64Bは現在的には頑張ればいけるのでは？と思うかもしれないが、1層でこれである。
+レイヤーを深くする方がうまく学習しやすいのは初期のディープラーニングの頃から言われている事なのでこの差はでかい。
+また、学習のしやすさも段違いである。
 
 なお、パラメータ数を直感的に感じるには、どの行列は同じものを掛けているかに注目すると良い。
 
