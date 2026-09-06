@@ -896,6 +896,7 @@ export const backlinkData = {
 "少しバッチノート.md",
 ],
 "Transformerブロック.md": [
+"2026年9月上旬の雑記.md",
 "Transformer.md",
 "セルフアテンション.md",
 ],
