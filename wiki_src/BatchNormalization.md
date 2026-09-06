@@ -7,3 +7,5 @@
 ミニバッチごとに平均と分散を割り引いた入力を入れるように変更する手法。
 
 ![imgs/BatchNorm/0000.png](imgs/BatchNorm/0000.png)
+
+[[LayerNormalize]]との比較で調べていた感じ、どうもベータとガンマはベクトルでガンマとの積はelement-wiseっぽい。
