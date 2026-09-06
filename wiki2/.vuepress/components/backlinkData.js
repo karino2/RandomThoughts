@@ -712,6 +712,7 @@ export const backlinkData = {
 "TowardATheoryOfTokenizationInLLMs.md",
 "Transformer.md",
 "Transformerブロック.md",
+"アテンションとセルフアテンション.md",
 "セルフアテンション.md",
 "一人読書会ライブ.md",
 "機械学習.md",
@@ -1216,6 +1217,9 @@ export const backlinkData = {
 "ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "雑多なメモ.md",
 ],
+"アテンションとセルフアテンション.md": [
+"一人読書会ライブ.md",
+],
 "お絵描き.md": [
 "Home.md",
 "イラストをそれっぽく描くコツ.md",
@@ -1370,6 +1374,7 @@ export const backlinkData = {
 ],
 "一人読書会ライブ.md": [
 "2026年9月上旬の雑記.md",
+"アテンションとセルフアテンション.md",
 "ライブ.md",
 "原論文から解き明かす生成AI.md",
 ],
@@ -2865,8 +2870,8 @@ export const backlinkData = {
 "Transformer.md",
 "Transformerブロック.md",
 "アテンション.md",
+"アテンションとセルフアテンション.md",
 "セルフアテンション.md",
-"一人読書会ライブ.md",
 "原論文から解き明かす生成AI.md",
 ],
 "ライブ.md": [
@@ -2981,11 +2986,6 @@ export const backlinkData = {
 "【書籍】あなたの体は9割が細菌.md",
 "食事関連.md",
 ],
-"SwiftConcurrency.md": [
-"Python.md",
-"Swift.md",
-"技術的なメモ.md",
-],
 "書籍.md": [
 "CoverAndThomas.md",
 "ExploringTypeScript.md",
@@ -3035,6 +3035,11 @@ export const backlinkData = {
 "【書籍】魔法の人物ドローイング.md",
 "深層学習.md",
 "論文.md",
+],
+"SwiftConcurrency.md": [
+"Python.md",
+"Swift.md",
+"技術的なメモ.md",
 ],
 "大河ドラマ.md": [
 "雑多なメモ.md",
