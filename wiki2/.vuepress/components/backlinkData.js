@@ -714,8 +714,8 @@ export const backlinkData = {
 "TowardATheoryOfTokenizationInLLMs.md",
 "Transformer.md",
 "Transformerブロック.md",
+"アテンション.md",
 "アテンションとセルフアテンション.md",
-"セルフアテンション.md",
 "一人読書会ライブ.md",
 "機械学習.md",
 "技術的なメモ.md",
@@ -2286,7 +2286,10 @@ export const backlinkData = {
 ],
 "アテンション.md": [
 "ConvS2S.md",
+"SoftMax.md",
 "Transformer.md",
+"Transformerブロック.md",
+"アテンション.md",
 "アテンションとセルフアテンション.md",
 "セルフアテンション.md",
 "機械翻訳.md",
@@ -2565,6 +2568,7 @@ export const backlinkData = {
 "LayerNormalization.md",
 "OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
+"SoftMax.md",
 "Transformerブロック.md",
 "アテンション.md",
 "セルフアテンション.md",
@@ -2660,11 +2664,11 @@ export const backlinkData = {
 "【書籍】はじめてのスピノザ.md": [
 "オーディオブック.md",
 ],
-"Calclark.md": [
-"自作アプリ.md",
-],
 "手書きとテキストの共存.md": [
 "雑多なメモ.md",
+],
+"Calclark.md": [
+"自作アプリ.md",
 ],
 "JetpackCompose.md": [
 "Android.md",
@@ -2773,6 +2777,9 @@ export const backlinkData = {
 "SAF.md",
 "UFASアーキテクチャ.md",
 "技術的なメモ.md",
+],
+"SoftMaxx.md": [
+"Transformerブロック.md",
 ],
 "レッグウォーマー.md": [
 "グッズ関連.md",
