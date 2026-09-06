@@ -54,3 +54,29 @@ dを使うが、クエリに使うdは一つだけ（図ではiとしている�
 これだけ未来のdが登場しうるのでマスクが必要。
 
 ![imgs/Transformer/0005.png](imgs/Transformer/0005.png)
+
+i番目のクエリに対してキー側にi+1番目以降のdが登場しているのに注目。eは先があってもいいがdはまだ知らない答えに相当するからまずい。
+
+## Decoderのクロスアテンション部分
+
+Decoderは真ん中にクロスアテンションのMultiHead attentionが入る。
+
+[The Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/)のDecoderLayerを見ると、
+
+```python
+ x = self.sublayer[1](x, lambda x: self.src_attn(x, m, m, src_mask))
+```
+
+となっていて、src_attnはMultiHeadedAttentionになっていて、$W_Q, W_K, W_V$がx, m, mにそれぞれ掛けられる模様。
+mはエンコーダーの最終出力(memory)。
+
+### クロスアテンションをMultiHeadにする意義があるのか？（答. むしろクロスヘッドこそすべきらしい）
+
+クロスアテンションは従来の[[アテンション]]とほぼ同じなのでマルチヘッドにする必要は無いのでは？とChatGPTに聞いたら以下の論文を紹介してくれた。
+
+[arxiv: 1905.10650 Are Sixteen Heads Really Better than One?](https://arxiv.org/abs/1905.10650)
+
+自分の直感とは逆に、むしろクロスアテンションの方がマルチヘッド化は効くらしい。
+
+じゃあRNNもそうなのでは？とChatGPTに聞いたらRNNは文脈ベクトルを持つ分この効果は弱くなるのではないか、との事。
+真偽は試してみないとなんともいえないが、ありそうな話ではある。
