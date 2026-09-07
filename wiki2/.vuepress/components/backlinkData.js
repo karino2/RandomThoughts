@@ -2655,6 +2655,7 @@ export const backlinkData = {
 ],
 "HT2.md": [
 "SurfLog_202604から202608まで.md",
+"SurfLog.md",
 "UberDriverJp.md",
 "サーフボード.md",
 ],
