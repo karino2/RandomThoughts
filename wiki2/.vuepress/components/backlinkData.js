@@ -18,7 +18,7 @@ export const backlinkData = {
 ],
 "KyussFish.md": [
 "SurfLog_202504から202512まで.md",
-"SurfLog.md",
+"SurfLog_202604から202608まで.md",
 "サーフボード.md",
 "ソフトボード.md",
 ],
@@ -267,6 +267,9 @@ export const backlinkData = {
 "バイク整備記録.md": [
 "FDroid.md",
 "自作アプリ.md",
+],
+"SurfLog_202604から202608まで.md": [
+"SurfLog.md",
 ],
 "ぼくのかんがえた最強の講義ノート.md": [
 "ノート.md",
@@ -586,7 +589,7 @@ export const backlinkData = {
 "HT2.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
-"SurfLog.md",
+"SurfLog_202604から202608まで.md",
 "サーフボード.md",
 ],
 "【書籍】ビギナーズクラシック、平家物語.md": [
@@ -1964,7 +1967,7 @@ export const backlinkData = {
 "自作アプリ.md",
 ],
 "KyusFish.md": [
-"SurfLog.md",
+"SurfLog_202604から202608まで.md",
 ],
 "Kotlin.md": [
 "Android.md",
@@ -2651,7 +2654,7 @@ export const backlinkData = {
 "サブワード分割.md",
 ],
 "HT2.md": [
-"SurfLog.md",
+"SurfLog_202604から202608まで.md",
 "UberDriverJp.md",
 "サーフボード.md",
 ],
