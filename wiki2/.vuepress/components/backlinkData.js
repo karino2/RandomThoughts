@@ -861,6 +861,7 @@ export const backlinkData = {
 "【書籍】本当に役立つ栄養学.md",
 ],
 "LayerNormalization.md": [
+"2026年9月上旬の雑記.md",
 "BatchNormalization.md",
 "Transformer.md",
 "Transformerブロック.md",
@@ -1643,6 +1644,7 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
+"2026年9月上旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
