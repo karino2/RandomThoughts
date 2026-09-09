@@ -23,6 +23,8 @@ Layer NormalizationはもともとRNNのようにバッチという概念が中�
 
 一方Vision Transformerなどでは工夫したBNの方がいいという話もあるとか。
 
+[SLAB: Efficient Transformers with Simplified Linear Attention and Progressive Re-parameterized Batch Normalization](https://arxiv.org/html/2405.11582v2)
+
 LayerNormの元論文の6.7にCNNでの比較があり、通常のCNNではbatch normalizationの方が良いとか。
 
 それは境界のそばのフィーチャーは0に近いなど、同じレイヤーでも場所によって統計が大きく違うという、
