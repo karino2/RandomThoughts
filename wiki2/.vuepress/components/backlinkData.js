@@ -2265,6 +2265,7 @@ export const backlinkData = {
 ],
 "SoftMax.md": [
 "Transformer.md",
+"Transformerブロック.md",
 "アテンション.md",
 "アテンションとセルフアテンション.md",
 ],
@@ -2783,9 +2784,6 @@ export const backlinkData = {
 "SAF.md",
 "UFASアーキテクチャ.md",
 "技術的なメモ.md",
-],
-"SoftMaxx.md": [
-"Transformerブロック.md",
 ],
 "レッグウォーマー.md": [
 "グッズ関連.md",
