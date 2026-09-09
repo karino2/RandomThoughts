@@ -57,13 +57,20 @@ $$
 FFN(\bm{x}) = W_2 \cdot max(\bm{0}, W_1 \bm{x} + \bm{b}_1) + \bm{b}_2
 $$
 
-## Residual Connection
+## Add+Norm
 
-ResNetなどと同様に、レイヤーをバイパスした値と結果を足す。図のAddしてNormのうちのAddの部分。
+Addの所は、いわゆるResidual Connection。ResNetなどと同様に、レイヤーをバイパスした値と結果を足す。図のAddしてNormのうちのAddの部分。
 
-## Layer Normalization
+Normは[[LayerNormalization]]。
 
-[[LayerNormalization]]
+Add+Normは全体として、
+
+$$
+LayerNrom(x + Sublayer(x))
+$$
+
+という形式となる。
+SublayerはFFNまたはMultiHead。
 
 ### 入力の所はnormalizeされないのでは？という疑問
 
@@ -183,6 +190,10 @@ QとWの積は、アテンションの種類によってQがベクトル1つかn
 
 ![imgs/SelfAttention/0009.png](imgs/SelfAttention/0009.png)
 
+### LayerNormalizeの計算量
+
+[[LayerNormalization]]の方に書いたが、O(nd)で他のオーダーより小さいのでこの場合は無視して良い。
+
 ### Trasnformerブロック全体
 
 以上をまとめると以下のようになる。
@@ -199,6 +210,10 @@ QとWの積は、アテンションの種類によってQがベクトル1つかn
 ![imgs/SelfAttention/0011.png](imgs/SelfAttention/0011.png)
 
 なお、convolutionはinputの個数だけこの演算を行うので、最後にn倍する事に注意。
+
+[[ConvS2S]]では2dの結果を出してから半分にはsigmoidを掛けてpoint wise multiplyしている（GLU、gated linear unitというものらしい）。
+この計算量も考えた方が比較としてはフェアだと思うが、これはこれで特定のモデルに依存しすぎた話にもなるのと、
+どうせ大した計算量では無いのでここでは無視しておく。
 
 ### r個にrestrictしたケースの計算量等（演習3.6）
 

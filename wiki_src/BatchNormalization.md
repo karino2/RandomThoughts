@@ -13,3 +13,11 @@
 [Batch normalization - Wikipedia](https://en.wikipedia.org/wiki/Batch_normalization)
 
 $\sigma^2$ もベクトルで2乗は要素ごとに計算するっぽい。えー、この表記だと2乗ノルムだと思うよ〜。
+
+### LayerNormlizationとの比較
+
+ミニバッチ単位で計算するのでバッチが必要だ、というのは大前提として。
+
+[[LayerNormalization]]との比較としては、こちらは$\mu$がベクトルで要素ごとに別々というのはちょっと注目したい所。
+
+また、inference時には平均の計算は不要というのも速度という点では意外と良いらしい。

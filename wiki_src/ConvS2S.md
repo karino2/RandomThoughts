@@ -26,6 +26,8 @@ $i_k$ というのはk個の入力、という意味。一つあたりd次元。
 
 入力は実際はm個あり、これをkずつconvolutionしていく。結果もm個となる。1個あたりの次元も最終的にはdになるので、入力と同じ個数、次元となる。
 
+この2倍の次元を出力して、半分にsigmoidを掛けてpoint wise multiplyするのはGLU（gated linear unit）というものらしい。
+
 ## Encoder-Decoderの概略
 
 ![imgs/ConvS2S/0003.png](imgs/ConvS2S/0003.png)
