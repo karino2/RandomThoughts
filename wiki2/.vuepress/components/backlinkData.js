@@ -134,6 +134,9 @@ export const backlinkData = {
 "IntroductionToChemistry.md": [
 "化学.md",
 ],
+"BatchNormlization.md": [
+"LayerNormalization.md",
+],
 "逗子Androidアプリ開発もくもく会.md": [
 "技術的なメモ.md",
 ],
@@ -904,6 +907,7 @@ export const backlinkData = {
 ],
 "Transformerブロック.md": [
 "2026年9月上旬の雑記.md",
+"LayerNormalization.md",
 "Transformer.md",
 "アテンション.md",
 "アテンションとセルフアテンション.md",
