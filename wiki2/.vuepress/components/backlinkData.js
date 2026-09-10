@@ -1537,6 +1537,7 @@ export const backlinkData = {
 "ConvS2S.md",
 "EnhancedSuffixArray.md",
 "Home.md",
+"LayerNormalization.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "OnPositionEmbeddingsInBERT.md",
 "RoPE.md",
