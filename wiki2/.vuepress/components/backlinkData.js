@@ -2416,6 +2416,10 @@ export const backlinkData = {
 "Mac.md",
 "技術的なメモ.md",
 ],
+"launchpick.md": [
+"2026年9月中旬の雑記.md",
+"Mac.md",
+],
 "【書籍】東大名物教授がゼミで教えている人生で大切なこと.md": [
 "書籍.md",
 ],
@@ -2930,6 +2934,7 @@ export const backlinkData = {
 "電気ケトル.md",
 ],
 "Mac.md": [
+"launchpick.md",
 "MacBookAir.md",
 "Macショートカット.md",
 "Metal.md",
