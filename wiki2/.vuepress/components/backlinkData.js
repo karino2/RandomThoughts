@@ -1544,6 +1544,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Rhinocs.md": [
+"2026年9月中旬の雑記.md",
 "BOOX.md",
 "Rhino.md",
 "Rhinocs_セットアップ.md",
