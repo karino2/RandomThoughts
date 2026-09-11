@@ -1,5 +1,25 @@
 [[Rhinocs]]の仕様の検討を残しておく。
 
+## インテントまわりの検討 2026-09-11 (金)
+
+ACTION_EDITはuriは一時的で、送り側がFLAG_GRANT_PERSISTABLE_URI_PERMISSIONをつけてる場合に限りあとからも使える。
+ACTION_OPEN_DOCUMENTなどは普通はtakePersistableUriPermission出来る。
+
+一時的なpermissionのuriをfind_file_hookなどで保存してあとから使うと使えない訳だよなぁ。
+この辺は
+
+- 一時的
+  - read only
+  - writable
+- 永続的に使える
+  - read only
+  - weritable
+
+の4通りのurlを本来は区別する必要がある。
+
+ただこの変更はちょっと大掛りなので、とりあえずwritableで永続的に使える時だけ開ける、とするかなぁ。
+
+
 ## 行のリスト的なインターフェース 2026-06-20 (土)
 
 ここまで割とemacs lispやxyzzyに似たインターフェースを用意してきたが、
