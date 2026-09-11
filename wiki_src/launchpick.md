@@ -39,6 +39,7 @@ vi ~/.config/launchpick/config.json
 でカスタマイズ。以下でランチャーをCmd+Spaceに出来る。
 
 ```
+"suppressSystemShortcut" : true,
 "shortcut": "cmd+space",
 ```
 

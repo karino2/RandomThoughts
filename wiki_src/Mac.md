@@ -5,6 +5,9 @@
 - [MacBook Pro (16-inch, 2019) - Technical Specifications](https://support.apple.com/kb/SP809?locale=en_US) 仕事マシンはMacBook Pro 2019 16-inch 
 - [OrbStack · Fast, light, simple Docker & Linux](https://orbstack.dev/) MacのDocker.app alternativeだって。
 - [[launchpick]] ランチャー
+- OpenMTP Androidとのファイルのやりとりに使ってる
+- WindowsApp リモートデスクトップ
+- Gifski 動画をgifに変換するツール
 
 ## VSCode関連
 
