@@ -222,7 +222,6 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md",
 ],
 "SurfLog.md": [
-"2026年9月上旬の雑記.md",
 "Home.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
@@ -606,7 +605,6 @@ export const backlinkData = {
 "【書籍】これからはじめるイタリア語入門.md",
 ],
 "PositionEmbeddings.md": [
-"2026年9月上旬の雑記.md",
 "ConvS2S.md",
 "OnPositionEmbeddingsInBERT.md",
 "RoPE.md",
@@ -670,16 +668,12 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "Wikiと手書きノートの融合.md": [
-"2026年9月上旬の雑記.md",
 "ノート.md",
 "ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "パーソナルWikiの画像管理.md",
 ],
 "茨城計画.md": [
 "ワーケーション.md",
-],
-"一人読書会.md": [
-"2026年9月上旬の雑記.md",
 ],
 "Shell.md": [
 "embed用のシェルのような何か.md",
@@ -864,7 +858,6 @@ export const backlinkData = {
 "【書籍】本当に役立つ栄養学.md",
 ],
 "LayerNormalization.md": [
-"2026年9月上旬の雑記.md",
 "BatchNormalization.md",
 "Transformer.md",
 "Transformerブロック.md",
@@ -906,7 +899,6 @@ export const backlinkData = {
 "少しバッチノート.md",
 ],
 "Transformerブロック.md": [
-"2026年9月上旬の雑記.md",
 "LayerNormalization.md",
 "Transformer.md",
 "アテンション.md",
@@ -1133,7 +1125,6 @@ export const backlinkData = {
 "ボツエッセイ.md",
 ],
 "PngNote.md": [
-"2026年9月上旬の雑記.md",
 "BOOX.md",
 "EjiCell.md",
 "GithubPages.md",
@@ -1386,7 +1377,6 @@ export const backlinkData = {
 "論文.md",
 ],
 "一人読書会ライブ.md": [
-"2026年9月上旬の雑記.md",
 "アテンションとセルフアテンション.md",
 "ライブ.md",
 "原論文から解き明かす生成AI.md",
@@ -1554,7 +1544,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Rhinocs.md": [
-"2026年9月上旬の雑記.md",
 "BOOX.md",
 "Rhino.md",
 "Rhinocs_セットアップ.md",
@@ -1649,7 +1638,6 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
-"2026年9月上旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
@@ -1840,9 +1828,6 @@ export const backlinkData = {
 "htmnix.md",
 "mdvcat.md",
 "技術的なメモ.md",
-],
-"2026年9月上旬の雑記.md": [
-"Home.md",
 ],
 "マグナスケッチ.md": [
 "BOOX.md",
@@ -2572,7 +2557,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Transformer.md": [
-"2026年9月上旬の雑記.md",
 "AttentionIsAllYouNeed.md",
 "BERT.md",
 "ConvS2S.md",
@@ -2893,7 +2877,6 @@ export const backlinkData = {
 "オーディオブック.md",
 ],
 "セルフアテンション.md": [
-"2026年9月上旬の雑記.md",
 "SoftMax.md",
 "Transformer.md",
 "Transformerブロック.md",
@@ -2933,6 +2916,9 @@ export const backlinkData = {
 ],
 "【書籍】人月の神話.md": [
 "技術的なメモ.md",
+],
+"2026年9月中旬の雑記.md": [
+"Home.md",
 ],
 "BaseFood.md": [
 "2022年の花粉の記録.md",
