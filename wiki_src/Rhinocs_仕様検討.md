@@ -19,6 +19,9 @@ ACTION_OPEN_DOCUMENTなどは普通はtakePersistableUriPermission出来る。
 
 ただこの変更はちょっと大掛りなので、とりあえずwritableで永続的に使える時だけ開ける、とするかなぁ。
 
+試しにこの方針で実装してみたらFLAG_GRANT_PERSISTABLE_URI_PERMISSIONをつけている人はほとんのいないっぽいいので意味がない。
+という事でちゃんと対応しない限りはintentは受けとらない方がいいか。
+
 
 ## 行のリスト的なインターフェース 2026-06-20 (土)
 
