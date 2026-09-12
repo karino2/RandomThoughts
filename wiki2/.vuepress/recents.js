@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "LayerNormalization.html", "text": "LayerNormalization"},
     {"link": "2026%E5%B9%B49%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年9月中旬の雑記"},
     {"link": "Rhinocs.html", "text": "Rhinocs"},
     {"link": "Rhinocs_%E4%BB%95%E6%A7%98%E6%A4%9C%E8%A8%8E.html", "text": "Rhinocs_仕様検討"},
@@ -8,7 +9,6 @@ export const recents = [
     {"link": "Mac.html", "text": "Mac"},
     {"link": "launchpick.html", "text": "launchpick"},
     {"link": "Home.html", "text": "Home"},
-    {"link": "LayerNormalization.html", "text": "LayerNormalization"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "Transformer%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF.html", "text": "Transformerブロック"},
     {"link": "ConvS2S.html", "text": "ConvS2S"},
