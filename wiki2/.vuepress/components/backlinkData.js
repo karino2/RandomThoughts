@@ -22,6 +22,9 @@ export const backlinkData = {
 "サーフボード.md",
 "ソフトボード.md",
 ],
+"LayerNormalize.md": [
+"LayerNormとTransformerブロック.md",
+],
 "Starlarcs.md": [
 "Rhinocs_古くなった話題.md",
 ],
@@ -702,6 +705,7 @@ export const backlinkData = {
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
 "LayerNormalization.md",
+"LayerNormとTransformerブロック.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
 "PositionEmbeddings.md",
 "RoPE.md",
@@ -897,6 +901,7 @@ export const backlinkData = {
 ],
 "Transformerブロック.md": [
 "LayerNormalization.md",
+"LayerNormとTransformerブロック.md",
 "Transformer.md",
 "アテンション.md",
 "アテンションとセルフアテンション.md",
@@ -1007,6 +1012,9 @@ export const backlinkData = {
 "【書籍】物語イギリスの歴史.md": [
 "書籍.md",
 "【書籍】ヴァロワ朝.md",
+],
+"LayerNormとTransformerブロック.md": [
+"一人読書会ライブ.md",
 ],
 "705x.md": [
 "ClassCentral.md",
@@ -1374,6 +1382,7 @@ export const backlinkData = {
 "論文.md",
 ],
 "一人読書会ライブ.md": [
+"LayerNormとTransformerブロック.md",
 "アテンションとセルフアテンション.md",
 "ライブ.md",
 "原論文から解き明かす生成AI.md",
@@ -1899,6 +1908,9 @@ export const backlinkData = {
 "クロスエントロピー.md": [
 "KLダイバージェンス.md",
 ],
+"BatchNormalize.md": [
+"LayerNormとTransformerブロック.md",
+],
 "1024cores.md": [
 "Cpp.md",
 "【書籍】TheArtOfMultiprocessorProgramming.md",
@@ -2253,6 +2265,7 @@ export const backlinkData = {
 "平氏.md",
 ],
 "SoftMax.md": [
+"LayerNormとTransformerブロック.md",
 "Transformer.md",
 "Transformerブロック.md",
 "アテンション.md",
@@ -2564,6 +2577,7 @@ export const backlinkData = {
 "BERT.md",
 "ConvS2S.md",
 "LayerNormalization.md",
+"LayerNormとTransformerブロック.md",
 "OnPositionEmbeddingsInBERT.md",
 "PositionEmbeddings.md",
 "SoftMax.md",
