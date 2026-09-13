@@ -3,6 +3,7 @@
 - [karino2/Rhinocs: Rhino backed Android editor only for keyboard.](https://github.com/karino2/Rhinocs)
   - [karino2/RhinocsJSPackage: JS package repository for Rhinocs.](https://github.com/karino2/RhinocsJSPackage) Rhinocsで使用するパッケージ。この中身のルートを指定しておく。
     - [karino2/RhinocsSKK: SKK port for Rhinocs](https://github.com/karino2/RhinocsSKK) Rhinocs用のSKK移植。上記のレポジトリのsubmodule
+- [Rhinocsエディタ playlist](https://www.youtube.com/playlist?list=PLMuRFsqc0MB0)
 
 [[Rhino]]をバックエンドにしたAndroidのキーボード専用エディタ。
 
