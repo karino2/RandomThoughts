@@ -1,5 +1,7 @@
 [[Rhinocs]]のインストールとセットアップ手順。
 
+このページのshorturl `https://tinyurl.com/334t7cfd`
+
 ## 関連レポジトリ
 
 - [karino2/Rhinocs: Rhino backed Android editor only for keyboard.](https://github.com/karino2/Rhinocs)
