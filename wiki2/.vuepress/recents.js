@@ -1,6 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E9%A3%9F%E4%BA%8B%E9%96%A2%E9%80%A3.html", "text": "食事関連"},
+    {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "2026%E5%B9%B49%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年9月中旬の雑記"},
     {"link": "Rhinocs.html", "text": "Rhinocs"},
     {"link": "Rhinocs_%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97.html", "text": "Rhinocs_セットアップ"},
@@ -12,10 +14,8 @@ export const recents = [
     {"link": "Mac.html", "text": "Mac"},
     {"link": "launchpick.html", "text": "launchpick"},
     {"link": "Home.html", "text": "Home"},
-    {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "Transformer%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF.html", "text": "Transformerブロック"},
     {"link": "ConvS2S.html", "text": "ConvS2S"},
-    {"link": "BatchNormalization.html", "text": "BatchNormalization"},
    ]
 }
 ]
