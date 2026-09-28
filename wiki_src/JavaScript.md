@@ -8,58 +8,13 @@
 - [[Rhino]]
 - [JavaScript reference - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 
-## JDoc
 
-[JSDocいいね！ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/08/19/jsdoc_is_nice.html)
 
-関数はreturns。
+## プロパティ、getter, setter
 
-[Use JSDoc: returns](https://jsdoc.app/tags-returns)
+プロパティって定義出来たっけ？ってなるのでメモ。
 
-```javascript
-/**
- * Returns the sum of a and b
- * @param {number} a
- * @param {number} b
- * @returns {number}
- */
-function sum(a, b) {
-    return a + b;
-}
-```
-
-## Arrayのfilterをasyncで使うのが難しい
-
-[javascript - How to use Array.prototype.filter with async? - Stack Overflow](https://stackoverflow.com/questions/47095019/how-to-use-array-prototype-filter-with-async)
-
-信じがたいけれど、本当にこんな事しないといけないのかね。
-
-## ブックマークレット
-
-とりあえずここに置いておく。
-markdownのリンクとして、けれど縦棒をハイフンに置き換えるブックマークレット。
-
-```javascript
-javascript:(function(){const e=document.createElement('input');const title = document.title.replaceAll('|', '-'); e.value=`[${title}](${location.href})`;document.querySelector('body').append(e);e.select();document.execCommand('copy');e.remove(); alert(`${title} copied!`)})();
-```
-
-## jsonc, json5
-
-JavaScript関係無いがjson関連。
-
-コメントが入れられるのがjsonc、trailing commaとかもありなのがjson5か。json5でいいのでは感。
-
-[Paji's Blog - What is JSONC, what is JSON5.](https://paji.blog/jsonc-json5)
-
-## prismjs
-
-[Prism](https://prismjs.com/)
-
-JS製のシンタックスハイライト。小さい。
-
-[[TeFWiki]]のAndroid版はassetsにprismjsを入れている。こういう用途には小さくて良い。
-
-[[MFG]]のシンタックスハイライトも以下に用意した。＞[MFG/tools/prism-mfg at main · karino2/MFG](https://github.com/karino2/MFG/tree/main/tools/prism-mfg)
+[get - JavaScript - MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Functions/get)
 
 ## Optional Chain
 
@@ -105,7 +60,13 @@ const nestedProp = obj?.[propName];
 
 JavaScriptのOptional Chainはnullに対してでは無くundefinedに対してで、undefinedとはそのプロパティが「存在しない」という場合なのでこうした違いがある訳だな。
 
-### Arrow function expression
+## nullish colescing
+
+JSにあったっけ？とたまになるのでメモしておく。
+
+[ヌル値合体演算子 (??) - JavaScript - MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
+
+## Arrow function expression
 
 [Arrow function expressions - JavaScript - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
@@ -115,7 +76,7 @@ JavaScriptのOptional Chainはnullに対してでは無くundefinedに対して�
 - expressionならreturnはいらない
 - 中括弧をつけてstatementを並べる場合はreturnがいる（中括弧をつけると強制的にstatementsとみなされる）
 
-### Destructuringのassignment
+## Destructuringのassignment
 
 [[TypeScriptHandbook]]を読んでいて、以下の文は既にJavaScriptで存在してしまうので、
 以下のようなdestructuringの型指定は出来ない、と書いてあった。
@@ -139,3 +100,57 @@ const obj = { a: 1, b: 2 };
 
 なるほど、変数に代入する感じになるのか。
 そしてカッコが無いとブロックになっちゃってオブジェクト式にならないとか。うへぇ。
+
+## Arrayのfilterをasyncで使うのが難しい
+
+[javascript - How to use Array.prototype.filter with async? - Stack Overflow](https://stackoverflow.com/questions/47095019/how-to-use-array-prototype-filter-with-async)
+
+信じがたいけれど、本当にこんな事しないといけないのかね。
+
+## JDoc
+
+[JSDocいいね！ - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2023/08/19/jsdoc_is_nice.html)
+
+関数はreturns。
+
+[Use JSDoc: returns](https://jsdoc.app/tags-returns)
+
+```javascript
+/**
+ * Returns the sum of a and b
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+function sum(a, b) {
+    return a + b;
+}
+```
+
+## ブックマークレット
+
+とりあえずここに置いておく。
+markdownのリンクとして、けれど縦棒をハイフンに置き換えるブックマークレット。
+
+```javascript
+javascript:(function(){const e=document.createElement('input');const title = document.title.replaceAll('|', '-'); e.value=`[${title}](${location.href})`;document.querySelector('body').append(e);e.select();document.execCommand('copy');e.remove(); alert(`${title} copied!`)})();
+```
+
+## jsonc, json5
+
+JavaScript関係無いがjson関連。
+
+コメントが入れられるのがjsonc、trailing commaとかもありなのがjson5か。json5でいいのでは感。
+
+[Paji's Blog - What is JSONC, what is JSON5.](https://paji.blog/jsonc-json5)
+
+## prismjs
+
+[Prism](https://prismjs.com/)
+
+JS製のシンタックスハイライト。小さい。
+
+[[TeFWiki]]のAndroid版はassetsにprismjsを入れている。こういう用途には小さくて良い。
+
+[[MFG]]のシンタックスハイライトも以下に用意した。＞[MFG/tools/prism-mfg at main · karino2/MFG](https://github.com/karino2/MFG/tree/main/tools/prism-mfg)
+

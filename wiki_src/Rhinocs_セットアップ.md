@@ -1,6 +1,8 @@
 [[Rhinocs]]のインストールとセットアップ手順。
 
-このページのshorturl `https://tinyurl.com/334t7cfd`
+## 解説動画
+
+[Rhinocsのインストールとセットアップ方法 - YouTube](https://www.youtube.com/watch?v=vTVCbSpzEfI)
 
 ## 関連レポジトリ
 
@@ -71,3 +73,7 @@ Androidではプロセスが良く殺されるので、メモリ内のバッフ�
 パッケージが使うデータは、`RhinocsJS/storage/per_device/(デバイスID)/` 下に保存される。 `(デバイスID)` の所はセットアップで指定したデバイスID。
 
 ヒストリやファイラーなどで保存したものはここに保存されるので、何かリセットしたくなったらこの該当ファイルを削除すれば良い。
+
+## このページのshorturl
+
+YouTubeの概要欄などに貼る用。 `https://tinyurl.com/334t7cfd`

@@ -194,7 +194,15 @@ emacsと変えると学習コストとかドキュメントとかの問題が出
 C-x C-nでUntitiled-1とかのバッファが出来て、それをC-x C-sで保存する時に名前を指定する、
 という感じにしたい。
 
+### new_fileなのnew_bufferなのか（new_fileにする）
 
+実際にバッファを作るのだからnew_bufferが正しいようにも思う。
+だがnew_bufferはバッファを作るだけでwindowにセットするのは分けたいようにも思う。
+
+VSCodeなどではNew Text Fileに相当する挙動なので、保存しなくてもnewというのはVSCodeとは同じであるし、
+find-fileのnew版と考えるとnew_fileでもいい気もする。
+
+どれもいまいちという気がするがとりあえずnew_fileにする。
 
 ## ミニバッファの仕様検討
 

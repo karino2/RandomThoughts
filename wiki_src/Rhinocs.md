@@ -4,6 +4,7 @@
   - [karino2/RhinocsJSPackage: JS package repository for Rhinocs.](https://github.com/karino2/RhinocsJSPackage) Rhinocsで使用するパッケージ。この中身のルートを指定しておく。
     - [karino2/RhinocsSKK: SKK port for Rhinocs](https://github.com/karino2/RhinocsSKK) Rhinocs用のSKK移植。上記のレポジトリのsubmodule
 - [Rhinocsエディタ playlist](https://www.youtube.com/playlist?list=PLMuRFsqc0MB0)
+- [Rhinocsエディタ、Android用キーボード専用の日本語入力環境](https://karino2.github.io/2026/09/16/rhinocs_editor_for_android_keyboard.html) 紹介ブログ
 
 [[Rhino]]をバックエンドにしたAndroidのキーボード専用エディタ。
 
@@ -59,7 +60,9 @@ Activityのリサイクル、SAFなどを最初から考えたエディタ。
 
 優先度の高い順に思いついた事を書いておく。もうだいぶ優先度が高いものはなくなったかな。
 
+- new_documentをコマンドに
 - kill-buffer
+  - M-x reloadでバッファをファイルからリロードは出来る
 - Restart
 - 名前をつけて保存
 - describe_functionとか
@@ -69,6 +72,28 @@ Activityのリサイクル、SAFなどを最初から考えたエディタ。
 ## 開発日記
 
 とりあえず何をやったかを書いておく所。
+
+## kill_buffrerの実装など 2026-09-24 (木)
+
+syncthingで更新されたファイルを読み直すためにkill_bufferが欲しくなる。
+実はreloadを実装していたので不要だったのだが、同じ事は良く思うだろうから実装する事に。isModifiedとか見ずに問答無用で消している。
+
+ついでにnew_fileもnew_file_cmdにしてM-xから実行出来るようにしておく。
+
+## 動画作成、ブログポスト 2026-09-16 (水)
+
+apkをインストールせずになんだか分かるように、動画を一通り作る、という試みをやってみた。
+
+[Rhinocsエディタ playlist](https://www.youtube.com/playlist?list=PLMuRFsqc0MB0)
+
+もう少しグッズ紹介youtuberっぽくやりたかったのだが、ちょっと普通っぽくなってしまったかなぁ。
+
+ブログも書いた。
+
+[Rhinocsエディタ、Android用キーボード専用の日本語入力環境 - なーんだ、ただの水たまりじゃないか](https://karino2.github.io/2026/09/16/rhinocs_editor_for_android_keyboard.html)
+
+もともとapkは公開されていたのでリリース自体は元からされていたとも言えるが、第三者が使うのに必要な情報を全て発信出来た、
+という点では、これが正式リリースに相当するもの、と思っている。
 
 ## Activityのリサイクル対応 2026-09-11 (金)
 

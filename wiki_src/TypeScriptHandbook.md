@@ -271,14 +271,18 @@ type SomeConstructor = {
 
 こんな機能あるんだ！？overloaded signatureだけ呼べて、implementation signatureの関数は呼べないとか。ほえ〜。
 
-
-
 ## Narrowing
 
 [Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
 
 ここはなかなか面白いな。こういうのをちゃんと知りたかった。
 最近の言語では標準装備という感じだけれど。Kotlinとかもこの辺は普通にあるよな。
+
+### Discriminated Union
+
+後から見直す時にどこにあったか忘れがちなのでメモ。Narrowingに書いてある。
+
+ちなみにinterfaceで定義してunionにしている例があるが、structurally typedなので単にanonymous objectとか渡せる、という話は[Everyday Types: Interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces)に書いてある。
 
 ### Type predicates
 
@@ -373,6 +377,12 @@ typeと似ていて、ほとんど同じに使えるけれど、extendsしたり
 
 集合論的に考えればtypeだけで全部済みそうな気もするが、
 よりJavaとかのinterfaceっぽく差分だけで定義していけるのが便利なケースはあるかもしれない。
+
+プロパティも普通にフィールドを定義して、classでフィールドを定義すればimplementsした事になる。
+この辺はあくまでstructureが一致しているかをチェックするだけなのでスロットがあるかを気にする必要が無いTypeScriptならでは。
+
+[Classes: implements
+ Clauses](https://www.typescriptlang.org/docs/handbook/2/classes.html#implements-clauses) あたりにもその辺の話題がある。
 
 ### Literal Type
 

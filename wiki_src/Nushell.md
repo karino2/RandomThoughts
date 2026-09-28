@@ -2,6 +2,113 @@ SelectとかWhereとか使える感じの[[Shell]]。[[GoFO]]と似ている気�
 
 - 公式: [Nushell](https://www.nushell.sh/)
 
+## restパラメータ
+
+ls.rsを読んでいて、restパラメータについてどうしてこの記述で複数パラメータとなるのかが疑問に思ったので少し調べる。
+以下を見ると、restは最後の...の要素となる。
+
+[Custom Commands - Nushell](https://www.nushell.sh/book/custom_commands.html#rest-parameters)
+
+だからいつも0個以上の繰り返しで同じ型となる（ただしその型がOneOfだったりするのはOKだしLsは実際にGlobとStringのOneOf）。
+
+## Full Parseの型の解決
+
+lsなどの引数がどう解決されているかを理解したい。
+
+parse_blockやparse_pipelineなどでFull Parseしている雰囲気で、最終的にparse_callになっているように見える。
+
+LsとかはCommandをimplしてstate_working_setのadd_declに渡している感じに見える。
+
+parse_callを見ていくとLsとかはparse_internal_callに行くのか？
+
+parse_internal_callはめちゃくちゃ複雑だな。
+
+Lsはrestに以下が指定されている。
+
+```rust
+SyntaxShape::OneOf(vec![SyntaxShape::GlobPattern, SyntaxShape::String])
+```
+
+だからrestのパースがどうなっているかを見たい。
+restで検索すると、以下の所か？
+
+```rust
+let args = crate::parser::parse_value(
+    working_set,
+    spread_arg_span,
+    &SyntaxShape::List(Box::new(rest_shape)),
+    None,
+);
+```
+
+rest_shapeはさっきのrestが入ってそうな雰囲気。
+
+parse_valueはparse_expression.rsにあって、OneOfを渡しているとparse_oneofに行きそう。これはparse_calls.rsに定義されていて、
+これがshape一つずつparse_valueを呼んで良さそうなのを返す、という感じっぽいので、parse_valueに戻ってくるという事か。
+
+parse_valueの先に進むと以下がある。
+
+```rust
+match shape {
+    SyntaxShape::Number => parse_number(working_set, span),
+    SyntaxShape::Float => parse_float(working_set, span),
+    SyntaxShape::GlobPattern => parse_glob_pattern(working_set, span),
+    // ...
+}
+```
+
+これが型に応じたパースを呼び出す所か。
+
+## LiteParse
+
+パーサーのコードを読んでいると、まずLiteParseというので大きな区切りに分かれて、その後型に応じてより詳細なパースが走る構造になっている模様。
+
+LiteParseではbare wordとか数値とかを全部Itemとして扱い、それ以外にはPipeとかAssignmentOperatorとかがある。この辺はlex.rsのTokenContentsが参考になる。
+
+構造としては
+
+- LiteBlock
+  - LitePipeline
+      - LiteCommand
+      - ...
+   - LitePipeline
+      - LiteCommand
+
+という感じになっている模様。
+
+## 改行のパイプライン
+
+改行直後にパイプ記号があるとこれはEolでは無くpipeになる。その仕組はlex.rsでやっている。
+
+まずlexの結果は全部トークンの配列としてpushされていく。パイプラインにあったら、前のトークンがEolだったらパイプに置き換える。
+
+## 中括弧などはlexで処理される
+
+```
+def foo [x] { echo $x }
+```
+
+は、
+
+- Item def
+- Item foo
+- Item `[x]`
+- Item `{ echo $x }`
+
+となるらしい。中括弧の対応はlexレベルでやっていて、Itemとして処理される。ネストもlexレベルで見ている。
+対応をとるブロックの種類としては
+
+```rust
+pub enum BlockKind {
+    Paren,
+    CurlyBracket,
+    SquareBracket,
+    AngleBracket,
+}
+```
+
+となっている。
+
 ## bare wordとexpressionの区別
 
 geminiに聞いた話なので本当に正しいかは確かめていない。

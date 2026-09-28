@@ -270,3 +270,7 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 - [[Transformer]]
   - [[セルフアテンション]]
 - [[BatchNormalization]]
+
+## 4章 GPTとテキスト生成
+
+- [[GPT1論文]]

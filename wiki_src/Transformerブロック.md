@@ -109,7 +109,7 @@ MultiHeadと[[LayerNormalization]]とFFNで出来ている。LayerNormは大し�
 ![imgs/SelfAttention/0003.png](imgs/SelfAttention/0003.png)
 ![imgs/SelfAttention/0004.png](imgs/SelfAttention/0004.png)
 
-という事で2Mi個くらい。
+という事で3Mi個くらい。
 
 ### Fully-connectedなパーセプトロンのパラメータ数
 
@@ -135,9 +135,9 @@ MultiHeadと[[LayerNormalization]]とFFNで出来ている。LayerNormは大し�
 という事で、
 
 - パーセプトロン: 64Gi 個
-- Transformerブロック: 2Mi 個
+- Transformerブロック: 3Mi 個
 
-ほどの違い（32*1024倍）がある。全然違う。64Bは現在的には頑張ればいけるのでは？と思うかもしれないが、1層でこれである。
+ほどの違い（21*1024倍）がある。全然違う。64Bは現在的には頑張ればいけるのでは？と思うかもしれないが、1層でこれである。
 レイヤーを深くする方がうまく学習しやすいのは初期のディープラーニングの頃から言われている事なのでこの差はでかい。
 また、学習のしやすさも段違いである。
 

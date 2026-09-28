@@ -145,9 +145,6 @@ export const backlinkData = {
 "アルゴリズム.md",
 "【書籍】IntroductionToAlgorithms.md",
 ],
-"WikiNameの作り方.md": [
-"ノート.md",
-],
 "【書籍】ファストアンドスロー.md": [
 "書籍.md",
 ],
@@ -218,11 +215,12 @@ export const backlinkData = {
 "USB充電器.md",
 "グッズ関連.md",
 "タブレット.md",
+"ひざの上テーブル.md",
 "技術的なメモ.md",
 "【書籍】ギャノング生理学.md",
 ],
 "SurfLog.md": [
-"2026年9月中旬の雑記.md",
+"2026年9月下旬の雑記.md",
 "Home.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
@@ -276,7 +274,6 @@ export const backlinkData = {
 ],
 "ぼくのかんがえた最強の講義ノート.md": [
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "講義ノート.md",
 "雑多なメモ.md",
 ],
@@ -670,7 +667,6 @@ export const backlinkData = {
 ],
 "Wikiと手書きノートの融合.md": [
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "パーソナルWikiの画像管理.md",
 ],
 "茨城計画.md": [
@@ -688,7 +684,6 @@ export const backlinkData = {
 "作業ログ.md": [
 "slog.md",
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 ],
 "技術的な事を話すweb上の場.md": [
 "GitHubを使ったSNSを考える.md",
@@ -705,6 +700,7 @@ export const backlinkData = {
 "BatchNormalization.md",
 "ContextualCorrelatesOfSynonymy.md",
 "EnhancedSuffixArray.md",
+"GPT1論文.md",
 "LayerNormalization.md",
 "LayerNormとTransformerブロック.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
@@ -767,6 +763,7 @@ export const backlinkData = {
 "キーボード.md",
 "シャワーヘッド.md",
 "タブレット.md",
+"タブレットスタンド.md",
 "ノートPC.md",
 "ノートPC用電源.md",
 "ひざの上テーブル.md",
@@ -795,6 +792,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "eshlk.md": [
+"2026年9月下旬の雑記.md",
 "TypeScript.md",
 ],
 "サブWikiリンク.md": [
@@ -893,7 +891,6 @@ export const backlinkData = {
 "Wikiと手書きノートの融合.md",
 "サブWiki.md",
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "ノート関連.md",
 "パーソナルWikiの画像管理.md",
 "ぼくのかんがえた最強の講義ノート.md",
@@ -901,6 +898,7 @@ export const backlinkData = {
 "少しバッチノート.md",
 ],
 "Transformerブロック.md": [
+"GPT1論文.md",
 "LayerNormalization.md",
 "LayerNormとTransformerブロック.md",
 "Transformer.md",
@@ -1050,9 +1048,6 @@ export const backlinkData = {
 "【書籍】CodersAtWork.md",
 "【書籍】アドレナリンジャンキー.md",
 ],
-"ゲーム.md": [
-"雑多なメモ.md",
-],
 "ハーフトーン.md": [
 "CG.md",
 "MFG.md",
@@ -1100,6 +1095,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "Nushell.md": [
+"2026年9月下旬の雑記.md",
 "CSVのプロットはもうちょっと簡単にならないか.md",
 "embed用のシェルのような何か.md",
 "eshlk.md",
@@ -1183,7 +1179,6 @@ export const backlinkData = {
 "eshlk.md",
 "Wikiとhowmとメモツール.md",
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "作業ログ.md",
 ],
 "オートミールリゾット.md": [
@@ -1223,7 +1218,6 @@ export const backlinkData = {
 "GitHubを使ったSNSを考える.md",
 "てきすとTL.md",
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "雑多なメモ.md",
 ],
 "アテンションとセルフアテンション.md": [
@@ -1332,7 +1326,6 @@ export const backlinkData = {
 ],
 "メモをアプリケーションに依存させたくない.md": [
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 ],
 "一人読書会ライブ.md": [
 "原論文から解き明かす生成AI.md",
@@ -1373,6 +1366,11 @@ export const backlinkData = {
 "自作アプリ.md",
 "逗子Androidアプリ開発もくもく会.md",
 ],
+"GPT1論文.md": [
+"2026年9月下旬の雑記.md",
+"Transformer.md",
+"原論文から解き明かす生成AI.md",
+],
 "go.md": [
 "Wails.md",
 ],
@@ -1383,7 +1381,6 @@ export const backlinkData = {
 "論文.md",
 ],
 "一人読書会ライブ.md": [
-"2026年9月中旬の雑記.md",
 "LayerNormとTransformerブロック.md",
 "アテンションとセルフアテンション.md",
 "ライブ.md",
@@ -1436,7 +1433,6 @@ export const backlinkData = {
 "TeFWiki.md",
 "サブWiki.md",
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "ノート関連.md",
 "講義ノート.md",
 "雑多なメモ.md",
@@ -1456,6 +1452,9 @@ export const backlinkData = {
 "JavaScript.md",
 "TypeScript.md",
 ],
+"自分の興味から物を知る大切さ.md": [
+"インターネットリテラシー.md",
+],
 "htmnix.md": [
 "htmnix_chart.md",
 "MacBookAir.md",
@@ -1464,9 +1463,6 @@ export const backlinkData = {
 "てきすとTL.md",
 "てきすとでっき.md",
 "自作アプリ.md",
-],
-"自分の興味から物を知る大切さ.md": [
-"インターネットリテラシー.md",
 ],
 "CSVのプロットはもうちょっと簡単にならないか.md": [
 "csvplr.md",
@@ -1534,6 +1530,7 @@ export const backlinkData = {
 "ContextualCorrelatesOfSynonymy.md",
 "ConvS2S.md",
 "EnhancedSuffixArray.md",
+"GPT1論文.md",
 "Home.md",
 "LayerNormalization.md",
 "NeuralMachineTranslationOfRareWordsWithSubwordUnits.md",
@@ -1552,7 +1549,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Rhinocs.md": [
-"2026年9月中旬の雑記.md",
+"2026年9月下旬の雑記.md",
 "BOOX.md",
 "Rhino.md",
 "Rhinocs_セットアップ.md",
@@ -1576,6 +1573,7 @@ export const backlinkData = {
 ],
 "クイックスケッチライブ.md": [
 "お絵描きライブ.md",
+"クイックスケッチ2周目.md",
 "たてなか流クイックスケッチ.md",
 ],
 "WhiteBoardCast.md": [
@@ -1647,10 +1645,12 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
-"2026年9月中旬の雑記.md",
+"2026年9月下旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
+"クイックスケッチ1周目.md",
+"クイックスケッチ2周目.md",
 "クイックスケッチライブ.md",
 "【書籍】魔法の人物ドローイング.md",
 ],
@@ -1781,6 +1781,7 @@ export const backlinkData = {
 "ポータブルスピーカー.md",
 ],
 "タブレットスタンド.md": [
+"2026年9月下旬の雑記.md",
 "ステッパー.md",
 ],
 "【書籍】へたっぴさんのための身体の描き方入門、アタリの取り方編.md": [
@@ -1923,7 +1924,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "ワルキューレの伝説.md": [
-"ゲーム.md",
+"Switch.md",
 ],
 "GithubPagesGallery.md": [
 "GithubPages.md",
@@ -1996,6 +1997,7 @@ export const backlinkData = {
 "キーボード.md": [
 "BOOX.md",
 "グッズ関連.md",
+"タブレットスタンド.md",
 ],
 "lazyjp.md": [
 "VSCode.md",
@@ -2161,7 +2163,6 @@ export const backlinkData = {
 "お絵描き.md",
 "グッズ関連.md",
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "ボツエッセイ.md",
 "レッグウォーマー.md",
 "医学.md",
@@ -2284,6 +2285,10 @@ export const backlinkData = {
 "型システム.md",
 "自作アプリ.md",
 "【書籍】ModernCompilerImplementationInML.md",
+],
+"クイックスケッチ1周目.md": [
+"クイックスケッチ2周目.md",
+"たてなか流クイックスケッチ.md",
 ],
 "KumaFish.md": [
 "KyussFish.md",
@@ -2431,8 +2436,11 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "launchpick.md": [
-"2026年9月中旬の雑記.md",
 "Mac.md",
+],
+"Switch.md": [
+"ゲーム.md",
+"雑多なメモ.md",
 ],
 "【書籍】東大名物教授がゼミで教えている人生で大切なこと.md": [
 "書籍.md",
@@ -2578,6 +2586,7 @@ export const backlinkData = {
 "AttentionIsAllYouNeed.md",
 "BERT.md",
 "ConvS2S.md",
+"GPT1論文.md",
 "LayerNormalization.md",
 "LayerNormとTransformerブロック.md",
 "OnPositionEmbeddingsInBERT.md",
@@ -2608,13 +2617,16 @@ export const backlinkData = {
 "自作アプリ.md",
 ],
 "ひざの上テーブル.md": [
+"2026年9月下旬の雑記.md",
 "グッズ関連.md",
+"タブレットスタンド.md",
 "ノートPC用電源.md",
 "背もたれクッション.md",
 ],
 "【書籍】魔法の人物ドローイング.md": [
 "MdImgr.md",
 "TeFWiki.md",
+"クイックスケッチ1周目.md",
 "たてなか流クイックスケッチ.md",
 "書籍.md",
 ],
@@ -2727,6 +2739,9 @@ export const backlinkData = {
 "サブWikiをTeFWIkiの外部機能に出来ないか.md": [
 "サブWiki.md",
 ],
+"クイックスケッチ2周目.md": [
+"たてなか流クイックスケッチ.md",
+],
 "【書籍】イラストをそれっぽく描くコツ.md": [
 "Wikiと手書きノートの融合.md",
 "それっぽく描くコツ1周目.md",
@@ -2747,10 +2762,13 @@ export const backlinkData = {
 "【書籍】正義論.md",
 ],
 "パーソナルWikiの画像管理.md": [
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
+"ノート.md",
 ],
 "VTZ250.md": [
 "バイク.md",
+],
+"2026年9月下旬の雑記.md": [
+"Home.md",
 ],
 "電動アシスト自転車.md": [
 "Dio110.md",
@@ -2936,9 +2954,6 @@ export const backlinkData = {
 "【書籍】人月の神話.md": [
 "技術的なメモ.md",
 ],
-"2026年9月中旬の雑記.md": [
-"Home.md",
-],
 "BaseFood.md": [
 "2022年の花粉の記録.md",
 "kanau.md",
@@ -3028,6 +3043,7 @@ export const backlinkData = {
 "TheNatureOfComputation.md",
 "イラストをそれっぽく描くコツ.md",
 "オーディオブック.md",
+"たてなか流クイックスケッチ.md",
 "基礎からのベイズ統計学.md",
 "技術的なメモ.md",
 "型システムのしくみ.md",
@@ -3084,7 +3100,6 @@ export const backlinkData = {
 "Wikiとhowmとメモツール.md": [
 "Wikiとノート.md",
 "ノート.md",
-"ノート.sync-conflict-20260831-145648-WI4LIFX.md",
 "メモをアプリケーションに依存させたくない.md",
 "技術的なメモ.md",
 ],
@@ -3093,12 +3108,10 @@ export const backlinkData = {
 "防寒グッズ.md",
 ],
 "ネットスーパー.md": [
+"2026年9月下旬の雑記.md",
 "おうちコープ.md",
 "雑多なメモ.md",
 "食事関連.md",
-],
-"LayerNormとTransformerブロック.md": [
-"2026年9月中旬の雑記.md",
 ],
 "ソフトボード.md": [
 "KumaFish.md",
@@ -3115,6 +3128,7 @@ export const backlinkData = {
 "Rhinocs.md",
 "グッズ関連.md",
 "タブレット.md",
+"タブレットスタンド.md",
 "マグナスケッチ.md",
 "技術的なメモ.md",
 ],
