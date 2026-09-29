@@ -820,6 +820,9 @@ export const backlinkData = {
 "原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
 ],
+"SNS中毒や動画中毒について知っておくべき事.md": [
+"インターネットリテラシー.md",
+],
 "座椅子.md": [
 "グッズ関連.md",
 "背もたれクッション.md",
@@ -1143,6 +1146,7 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "【書籍】最強の集中力.md": [
+"SNS中毒や動画中毒について知っておくべき事.md",
 "雑多なメモ.md",
 "書籍.md",
 "【書籍】人月の神話.md",
@@ -2547,16 +2551,6 @@ export const backlinkData = {
 "分布仮説.md": [
 "ContextualCorrelatesOfSynonymy.md",
 ],
-"そのうちやりたい事.md": [
-"AshX.md",
-"FAScript.md",
-"Folang.md",
-"Home.md",
-"そのうち作りたいもの.md",
-"技術的なメモ.md",
-"自作アプリ.md",
-"声でストレッチタイマー.md",
-],
 "自作アプリ.md": [
 "BOOX.md",
 "CppUnzip.md",
@@ -2578,6 +2572,16 @@ export const backlinkData = {
 "マグナスケッチ.md",
 "技術的なメモ.md",
 "写真mdメモ.md",
+],
+"そのうちやりたい事.md": [
+"AshX.md",
+"FAScript.md",
+"Folang.md",
+"Home.md",
+"そのうち作りたいもの.md",
+"技術的なメモ.md",
+"自作アプリ.md",
+"声でストレッチタイマー.md",
 ],
 "【書籍】スタンフォード式、疲れない体.md": [
 "書籍.md",
