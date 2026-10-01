@@ -27,6 +27,16 @@ getのinputは以下になっている。
             ])
 ```
 
+Anyがこれらの型のどれとして処理されるのかを追ってみる。
+
+parse_pipelineの段階ではexprの型を次のparse_pipeline_elementのinputに渡しているように見える。だからこの時点ではAnyが渡されているはず。
+parse_pipeline_elementは最終的にはparse_callのinputに渡されて、これはparse_internal_callに渡される。
+
+ここでは、signature.get_output_typeに渡していて、これはinput_typeがassignableなものを集めてUnionにしている。
+
+なお、実行はget.rsのactionが呼ばれて、これはValueにしてValueのfollow_cell_pathを呼んでいる。
+これはget_value_memberが呼ばれて、memberがStringの時はRecordだったらうんたら、みたいな処理がある。
+
 ## TableとListの型
 
 lsの結果はTableだが、`ls | first`の結果はRecordになる。
@@ -44,6 +54,30 @@ TableをListとして扱うのはどこで処理しているのかを見ると�
 
 確かにここで`List<Any>`はTableのサブタイプ、としている。
 
+ではfirstの実行時にはTableの時にどう処理するのか？というと、実行時はPipelineDataというものになり、
+これはValueとかListStreamとかの種類がある。
+
+とりあえずストリーミングを無視してValueを見ると、ListだとかRangeだとかの処理があり、Tableの処理は無さそう。
+
+Tableの時にValueが何になるかを追いたいが、ls.rsは結構複雑で追うのにいまいち。
+Tableリテラルを追ってみようか。
+
+[Table#table literal syntax](https://www.nushell.sh/lang-guide/chapters/types/basic_types/table.html#table-literal-syntax)
+
+parse_exrepssions.rsにparse_table_expressionというのがあり、Expr::Tableとして中にTable構造体を入れて返している。
+これを実行時にどうしているかを見ればいいが、
+どこを見るのかな。検索した範囲ではそれっぽいのはcompile/expression.rsとeval_base.rsか。
+
+eval_base.rsではValue::listにレコードを入れている。
+
+compile/expression.rsではバイトコードでListPushを最後にpushしているので、やはりListを作っていそうだな。
+つまりTableの実行時の値はValue::listとなる。なるほど。
+
+### Valueの型
+
+src/value/mod.rsにValueの定義があって、Int, String, Float, Date, List, Record等となっている。
+これらはenumで、だいたい同じ名前の構造体が定義されててそれを保持するようになっている。
+ふむふむ。
 
 ## restパラメータ
 
