@@ -792,6 +792,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "eshlk.md": [
+"2026年10月上旬の雑記.md",
 "TypeScript.md",
 ],
 "サブWikiリンク.md": [
@@ -1097,6 +1098,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "Nushell.md": [
+"2026年10月上旬の雑記.md",
 "CSVのプロットはもうちょっと簡単にならないか.md",
 "embed用のシェルのような何か.md",
 "eshlk.md",
