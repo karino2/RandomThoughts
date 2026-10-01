@@ -35,6 +35,7 @@ AndroidのE-inkデバイス。
 - ネットワーク：Wi-Fi（2.4GHz + 5GHz）+ BT 5.0
 - OS：Android 10
 - 電池容量：4300mAh Polymer Li-on
+- 重さ: 378g
 
 ### USBデバッグ
 
