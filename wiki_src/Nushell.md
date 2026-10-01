@@ -2,6 +2,49 @@ SelectとかWhereとか使える感じの[[Shell]]。[[GoFO]]と似ている気�
 
 - 公式: [Nushell](https://www.nushell.sh/)
 
+## getにAnyを渡すと何が起こるか
+
+例えば以下のようなスクリプトがある。
+
+```
+> ls | first | get name
+README.md
+```
+
+getのinputは以下になっている。
+
+```rust
+            .input_output_types(vec![
+                (
+                    // TODO: This is too permissive; if we could express this
+                    // using a type parameter it would be List<T> -> T.
+                    Type::List(Box::new(Type::Any)),
+                    Type::Any,
+                ),
+                (Type::table(), Type::Any),
+                (Type::record(), Type::Any),
+                (Type::Nothing, Type::Nothing),
+            ])
+```
+
+## TableとListの型
+
+lsの結果はTableだが、`ls | first`の結果はRecordになる。
+
+```
+> ls | first | describe
+record<name: string, type: string, size: filesize, modified: datetime>
+> ls | describe
+table<name: string, type: string, size: filesize, modified: datetime> (stream)
+```
+
+firstは`List<Any>`から`Any`となっている。
+
+TableをListとして扱うのはどこで処理しているのかを見ると、どうもty.rsのcompare_typesっぽい。
+
+確かにここで`List<Any>`はTableのサブタイプ、としている。
+
+
 ## restパラメータ
 
 ls.rsを読んでいて、restパラメータについてどうしてこの記述で複数パラメータとなるのかが疑問に思ったので少し調べる。
