@@ -50,3 +50,7 @@ PEというのは良く知らないがJSのページを見た感じPU+EPSみた�
 - [Average Surfer Rides a 6'8 JS Big Baron on a Sunny Southern California Day - YouTube](https://www.youtube.com/watch?v=L6SEm75Yswc)
 
 こんなにサクサク乗れるならいいかもしれない。
+
+Redditではベコベコになる、と言っている人がたまにいるが人によるっぽい。
+
+[JS Big Baron, anybody? : r/surfing](https://www.reddit.com/r/surfing/comments/1438p2v/js_big_baron_anybody/)
