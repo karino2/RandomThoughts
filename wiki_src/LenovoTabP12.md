@@ -1,11 +1,15 @@
 [[タブレット]]
 
+[Lenovo Tab P12 - 広い画面でパワフルな性能を楽しむ - レノボ・ ジャパン](https://www.lenovo.com/jp/ja/p/tablets/lenovo-tab-series/lenovo-tab-p12/len103l0018?srsltid=AU7gw4W1BU4VY90HAAeOl3qYxttpOQjzqWXDS6L_hDQwb0EystBJYflc)
+
 [[KindleFire]]Maxがちょっと狭く感じるようになってきたし、
 あまり持ち歩かないので、もう少し大きいタブレットでいいのではないか？と思って調べていきついたタブレット。
-12.7インチ。
 
+- 12.7インチ
+- 2944x1840
 - アスペクト比 16:10 (iOSは4:3）
 - [Quick Charge - Wikipedia](https://en.wikipedia.org/wiki/Quick_Charge)
+- 615g
 
 ## 購入 2025-09-30 (火)
 
