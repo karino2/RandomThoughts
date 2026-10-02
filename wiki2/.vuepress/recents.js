@@ -1,10 +1,10 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "2026%E5%B9%B410%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年10月上旬の雑記"},
     {"link": "LenovoTabP12.html", "text": "LenovoTabP12"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "BOOX.html", "text": "BOOX"},
-    {"link": "2026%E5%B9%B410%E6%9C%88%E4%B8%8A%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年10月上旬の雑記"},
     {"link": "Nushell.html", "text": "Nushell"},
     {"link": "Home.html", "text": "Home"},
     {"link": "eshlk.html", "text": "eshlk"},
