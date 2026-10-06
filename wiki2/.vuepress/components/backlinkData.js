@@ -1655,6 +1655,7 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
+"2026年10月上旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
