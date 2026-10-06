@@ -69,6 +69,9 @@ export const backlinkData = {
 "Swift.md",
 "書籍.md",
 ],
+"Supernote.md": [
+"タブレット.md",
+],
 "世界史.md": [
 "雑多なメモ.md",
 "社会科学.md",
@@ -1704,11 +1707,11 @@ export const backlinkData = {
 "文字列マッチ.md",
 "論文.md",
 ],
-"アルカン.md": [
-"化学.md",
-],
 "時間を置いて後からニュースを知る効用.md": [
 "インターネットリテラシー.md",
+],
+"アルカン.md": [
+"化学.md",
 ],
 "英語.md": [
 "雑多なメモ.md",
