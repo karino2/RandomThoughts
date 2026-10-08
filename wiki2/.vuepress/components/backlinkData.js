@@ -1450,6 +1450,9 @@ export const backlinkData = {
 "講義ノート.md",
 "雑多なメモ.md",
 ],
+"インドネシア語.md": [
+"雑多なメモ.md",
+],
 "風神録.md": [
 "ゆっくり実況.md",
 "雑多なメモ.md",
@@ -2813,6 +2816,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "電子書籍.md": [
+"インドネシア語.md",
 "雑多なメモ.md",
 ],
 "StorageAccessFramework.md": [
