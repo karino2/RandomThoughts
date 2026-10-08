@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "Supernote.html", "text": "Supernote"},
     {"link": "%E9%9B%BB%E5%AD%90%E6%9B%B8%E7%B1%8D.html", "text": "電子書籍"},
     {"link": "%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "ニューエクスプレスインドネシア語"},
     {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "インドネシア語"},
@@ -11,7 +12,6 @@ export const recents = [
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B1%E3%83%83%E3%83%812%E5%91%A8%E7%9B%AE.html", "text": "クイックスケッチ2周目"},
     {"link": "%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88.html", "text": "タブレット"},
-    {"link": "Supernote.html", "text": "Supernote"},
     {"link": "%E3%83%8D%E3%83%83%E3%83%88%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC.html", "text": "ネットスーパー"},
     {"link": "BOOX.html", "text": "BOOX"},
     {"link": "BigBaron.html", "text": "BigBaron"},
