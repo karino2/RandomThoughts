@@ -2816,7 +2816,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "電子書籍.md": [
-"インドネシア語.md",
+"ニューエクスプレスインドネシア語.md",
 "雑多なメモ.md",
 ],
 "StorageAccessFramework.md": [
@@ -2849,6 +2849,10 @@ export const backlinkData = {
 "Folang.md",
 "Folang過去ログ.md",
 ],
+"ニューエスクスプレスインドネシア語.md": [
+"2026年10月上旬の雑記.md",
+"電子書籍.md",
+],
 "VisualStudio.md": [
 "Cpp.md",
 "vcpkg.md",
@@ -2875,6 +2879,9 @@ export const backlinkData = {
 ],
 "税制の比較の論点.md": [
 "雑多なメモ.md",
+],
+"ニューエクスプレスインドネシア語.md": [
+"インドネシア語.md",
 ],
 "実験経済学の手法に関する議論.md": [
 "【書籍】「学力」の経済学.md",
