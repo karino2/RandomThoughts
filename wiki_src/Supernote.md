@@ -18,6 +18,15 @@ Mantaを買った。
   - [AnimInk/docs/PERFORMANCE_RESEARCH.md at main · YoramDevGH/AnimInk](https://github.com/YoramDevGH/AnimInk/blob/main/docs/PERFORMANCE_RESEARCH.md)
 
 
+### 届いた〜！ 2026-10-09 (金)
+
+朝の6時には最寄りの営業所まで来ていたのだが家まで来たのは16時という。まぁ３日で届いたのでなかなか優秀だ。
+
+開封してセットアップ。開幕WiFiに接続、を押しても無反応でRedditを調べるとskipしてあとで設定すればいいとか。なんか昔GalaxyTabかなんかでもこんなのあったな。
+
+セットアップして手書き。ペンはBOOX Note3のペンでもいいかな、という感じではある。
+自分の机の上だと思ったより暗いなぁ。デスクライトとか無いからなぁ。
+
 ### 購入 2026-10-06 (火)
 
 本体76980円、ハーフフォリオケースが8980円で合計85960円。
