@@ -11,6 +11,13 @@ Mantaを買った。
 - フロントライト無し
 - 3600mAh
 
+### low latency的な奴
+
+- [mpdairy/monopaint](https://github.com/mpdairy/monopaint) コードがAI生成で読みにくい…
+- [YoramDevGH/AnimInk: Offline frame-by-frame animation for the Supernote Nomad e-ink tablet](https://github.com/YoramDevGH/AnimInk)
+  - [AnimInk/docs/PERFORMANCE_RESEARCH.md at main · YoramDevGH/AnimInk](https://github.com/YoramDevGH/AnimInk/blob/main/docs/PERFORMANCE_RESEARCH.md)
+
+
 ### 購入 2026-10-06 (火)
 
 本体76980円、ハーフフォリオケースが8980円で合計85960円。
