@@ -1860,6 +1860,7 @@ export const backlinkData = {
 "2026年10月上旬の雑記.md",
 "BOOX.md",
 "PngNote.md",
+"Supernote.md",
 "雑多なメモ.md",
 "自作アプリ.md",
 ],
