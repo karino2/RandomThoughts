@@ -70,7 +70,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Supernote.md": [
-"2026年10月上旬の雑記.md",
 "PngNote.md",
 "タブレット.md",
 ],
@@ -228,7 +227,7 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md",
 ],
 "SurfLog.md": [
-"2026年10月上旬の雑記.md",
+"2026年10月中旬の雑記.md",
 "Home.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
@@ -706,7 +705,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "原論文から解き明かす生成AI.md": [
-"2026年10月上旬の雑記.md",
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
 "BatchNormalization.md",
 "ContextualCorrelatesOfSynonymy.md",
@@ -803,7 +801,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "eshlk.md": [
-"2026年10月上旬の雑記.md",
 "TypeScript.md",
 ],
 "サブWikiリンク.md": [
@@ -1109,7 +1106,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "Nushell.md": [
-"2026年10月上旬の雑記.md",
 "CSVのプロットはもうちょっと簡単にならないか.md",
 "embed用のシェルのような何か.md",
 "eshlk.md",
@@ -1141,7 +1137,7 @@ export const backlinkData = {
 "ボツエッセイ.md",
 ],
 "PngNote.md": [
-"2026年10月上旬の雑記.md",
+"2026年10月中旬の雑記.md",
 "BOOX.md",
 "EjiCell.md",
 "GithubPages.md",
@@ -1662,7 +1658,6 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
-"2026年10月上旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
@@ -1857,7 +1852,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "マグナスケッチ.md": [
-"2026年10月上旬の雑記.md",
 "BOOX.md",
 "PngNote.md",
 "Supernote.md",
@@ -2205,9 +2199,6 @@ export const backlinkData = {
 "電気ケトル.md",
 "板タブ.md",
 "腕時計.md",
-],
-"2026年10月上旬の雑記.md": [
-"Home.md",
 ],
 "【書籍】ギャノング生理学.md": [
 "LenovoTabP12.md",
@@ -2854,7 +2845,6 @@ export const backlinkData = {
 "Folang過去ログ.md",
 ],
 "ニューエスクスプレスインドネシア語.md": [
-"2026年10月上旬の雑記.md",
 "電子書籍.md",
 ],
 "VisualStudio.md": [
@@ -2975,6 +2965,9 @@ export const backlinkData = {
 "Wikiとhowmとメモツール.md",
 "てきすとTL.md",
 "技術的なメモ.md",
+],
+"2026年10月中旬の雑記.md": [
+"Home.md",
 ],
 "【書籍】人月の神話.md": [
 "技術的なメモ.md",
@@ -3148,7 +3141,6 @@ export const backlinkData = {
 "テーブルエディタ.md",
 ],
 "BOOX.md": [
-"2026年10月上旬の雑記.md",
 "Kakito.md",
 "Rhinocs.md",
 "グッズ関連.md",
