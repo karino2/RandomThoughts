@@ -21,6 +21,18 @@ redditから公式サイトに行くとupdate.zipがダウンロード出来て�
 
 [sugoi-supernote/Guides/How to root SN A6X2.md at main · dwongdev/sugoi-supernote](https://github.com/dwongdev/sugoi-supernote/blob/main/Guides/How%20to%20root%20SN%20A6X2.md)
 
+update.zipはFinderからは開けなかったのでterminalからunzipした。
+
+展開にはmagiskbootを使ってみる。
+
+[Releases · PinNaCode/magiskboot_build](https://github.com/PinNaCode/magiskboot_build/releases)
+
+chmod +xして設定から許可して以下を実行。
+
+```
+./magiskboot unpack boot.img
+```
+
 ### low latency的な奴
 
 - [mpdairy/monopaint](https://github.com/mpdairy/monopaint) コードがAI生成で読みにくい…
