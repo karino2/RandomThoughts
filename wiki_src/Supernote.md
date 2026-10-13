@@ -11,6 +11,16 @@ Mantaを買った。
 - フロントライト無し
 - 3600mAh
 
+### ファームウェア関連
+
+redditから公式サイトに行くとupdate.zipがダウンロード出来てそれを手動でインストールすると降ってくるのを待たなくて良い。
+
+[ファームウェアのダウンロードとシステムのアップデート - Supernote](https://support.supernote.com/change-log/how-to-update-your-supernote)
+
+展開方法を調べていてroot関連のドキュメントを見つける。
+
+[sugoi-supernote/Guides/How to root SN A6X2.md at main · dwongdev/sugoi-supernote](https://github.com/dwongdev/sugoi-supernote/blob/main/Guides/How%20to%20root%20SN%20A6X2.md)
+
 ### low latency的な奴
 
 - [mpdairy/monopaint](https://github.com/mpdairy/monopaint) コードがAI生成で読みにくい…
