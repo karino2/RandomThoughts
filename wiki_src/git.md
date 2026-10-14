@@ -10,9 +10,9 @@
 - [git rebaseでコミットをまとめたり分割する #Git - Qiita](https://qiita.com/kzmasa/items/b430bc528d117a7a4493) rebase -i。この辺を中級gitの解説では出来るようにしたい。
 - [Jujutsu docs](https://docs.jj-vcs.dev/latest/) gitじゃないけどgitもバックエンドに使えるvcsという事でここにリンクを貼っておく。
 
-## sshでなくhttpsでcloneしてしまった場合にsshにする方法
+## originのURLを変更
 
-たまに必要になるのでコピペ用に書いておく。
+sshでなくhttpsでcloneしてしまった場合にsshにしたり、forkして別の場所にpushしたい時などにたまに必要になるのでコピペ用に書いておく。
 
 ```
 $ git remote set-url origin git@github.com:karino2/TeFWiki-Electron.git
