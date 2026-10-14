@@ -2035,6 +2035,7 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "Kakito.md": [
+"2026年10月中旬の雑記.md",
 "BOOX.md",
 ],
 "パース.md": [
