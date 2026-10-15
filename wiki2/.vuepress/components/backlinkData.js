@@ -1144,6 +1144,7 @@ export const backlinkData = {
 "GithubPagesGallery.md",
 "GithubPagesを使った画像置き場.md",
 "MdImgr.md",
+"Supernote.md",
 "UFASアーキテクチャ.md",
 "Wikiと手書きノートの融合.md",
 "そのうちやりたい事.md",
@@ -2037,6 +2038,7 @@ export const backlinkData = {
 "Kakito.md": [
 "2026年10月中旬の雑記.md",
 "BOOX.md",
+"Supernote.md",
 ],
 "パース.md": [
 "Nushell.md",
