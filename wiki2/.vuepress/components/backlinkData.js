@@ -1393,6 +1393,7 @@ export const backlinkData = {
 "論文.md",
 ],
 "一人読書会ライブ.md": [
+"2026年10月中旬の雑記.md",
 "LayerNormとTransformerブロック.md",
 "アテンションとセルフアテンション.md",
 "ライブ.md",
