@@ -277,3 +277,5 @@ RGBはCRTベースの話なので、より人間の知覚に沿った色空間�
 - [arxiv: 2005.14165 Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
 - [arxiv: 1904.10509 Generating Long Sequences with Sparse Transformers](https://arxiv.org/abs/1904.10509)
 - [arxiv: 2303.08774 GPT-4 Technical Report](https://arxiv.org/abs/2303.08774)
+
+式4.16で $X'X^T$ などの項がいらないのは何故か？
