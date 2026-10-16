@@ -1,10 +1,10 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "2026%E5%B9%B410%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年10月中旬の雑記"},
     {"link": "%E5%8E%9F%E8%AB%96%E6%96%87%E3%81%8B%E3%82%89%E8%A7%A3%E3%81%8D%E6%98%8E%E3%81%8B%E3%81%99%E7%94%9F%E6%88%90AI.html", "text": "原論文から解き明かす生成AI"},
     {"link": "%E3%83%9D%E3%83%A2%E3%83%89%E3%83%BC%E3%83%AD%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF.html", "text": "ポモドーロテクニック"},
     {"link": "%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89.html", "text": "キーボード"},
-    {"link": "2026%E5%B9%B410%E6%9C%88%E4%B8%AD%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年10月中旬の雑記"},
     {"link": "Supernote.html", "text": "Supernote"},
     {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "git.html", "text": "git"},
