@@ -72,6 +72,7 @@ export const backlinkData = {
 "Supernote.md": [
 "2026年10月中旬の雑記.md",
 "PngNote.md",
+"Rhinocs.md",
 "キーボード.md",
 "タブレット.md",
 ],
