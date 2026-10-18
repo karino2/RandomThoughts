@@ -97,6 +97,9 @@ export const backlinkData = {
 "【書籍】ウォーキングの科学.md": [
 "オーディオブック.md",
 ],
+"webにもあるような内容の本の価値.md": [
+"雑多なメモ.md",
+],
 "ステッパー.md": [
 "2022年の花粉の記録.md",
 "グッズ関連.md",
@@ -716,6 +719,7 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "原論文から解き明かす生成AI.md": [
+"2026年10月中旬の雑記.md",
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
 "BatchNormalization.md",
 "ContextualCorrelatesOfSynonymy.md",
@@ -840,12 +844,12 @@ export const backlinkData = {
 "原論文から解き明かす生成AI.md",
 "【書籍】IntroductionToAlgorithms.md",
 ],
-"SNS中毒や動画中毒について知っておくべき事.md": [
-"インターネットリテラシー.md",
-],
 "座椅子.md": [
 "グッズ関連.md",
 "背もたれクッション.md",
+],
+"SNS中毒や動画中毒について知っておくべき事.md": [
+"インターネットリテラシー.md",
 ],
 "【書籍】伊藤真の刑法入門.md": [
 "雑多なメモ.md",
@@ -1649,6 +1653,7 @@ export const backlinkData = {
 "【書籍】まつもとゆきひろ、言語のしくみ.md",
 ],
 "スタイラス.md": [
+"2026年10月中旬の雑記.md",
 "Supernote.md",
 ],
 "花粉.md": [
