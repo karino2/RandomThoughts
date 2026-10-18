@@ -74,6 +74,7 @@ export const backlinkData = {
 "PngNote.md",
 "Rhinocs.md",
 "キーボード.md",
+"スタイラス.md",
 "タブレット.md",
 ],
 "世界史.md": [
@@ -88,6 +89,7 @@ export const backlinkData = {
 "続ゆっくりじっくりイタリア語.md",
 ],
 "強化学習.md": [
+"2026年10月中旬の雑記.md",
 "原論文から解き明かす生成AI.md",
 ],
 "【書籍】ウォーキングの科学.md": [
@@ -1643,6 +1645,9 @@ export const backlinkData = {
 "FSharp.md",
 "自作アプリ.md",
 "【書籍】まつもとゆきひろ、言語のしくみ.md",
+],
+"スタイラス.md": [
+"Supernote.md",
 ],
 "花粉.md": [
 "2022年の花粉の記録.md",
