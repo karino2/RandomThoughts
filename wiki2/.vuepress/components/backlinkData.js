@@ -695,6 +695,9 @@ export const backlinkData = {
 "茨城計画.md": [
 "ワーケーション.md",
 ],
+"一人読書会.md": [
+"2026年10月中旬の雑記.md",
+],
 "Shell.md": [
 "embed用のシェルのような何か.md",
 "Nushell.md",
