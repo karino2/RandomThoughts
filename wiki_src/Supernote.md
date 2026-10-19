@@ -11,6 +11,14 @@ Mantaを買った。
 - フロントライト無し
 - 3600mAh
 
+## 移植した自分アプリ
+
+- [Karino2DIYApp/PngNoteSN: PngNote fork for Supernote](https://github.com/Karino2DIYApp/PngNoteSN) これは[[PngNote]]のフォーク
+- [Karino2DIYApp/MagnaSketchSN: MagnaSketch fork for Supernote.](https://github.com/Karino2DIYApp/MagnaSketchSN) これは[[マグナスケッチ]]のフォーク
+- [Karino2DIYApp/KakitoSN: 漢字書き取りアプリのSupernoteフォーク](https://github.com/Karino2DIYApp/KakitoSN) 漢字書き取りアプリ[[Kakito]]のフォーク
+
+あと移植した訳では無いが[[Rhinocs]]はSupernote用の対応を入れた（キーボード周りが少し特殊だったので）
+
 ## 2026-10-15 (木)
 
 とりあえず[[マグナスケッチ]]、[[PngNote]]、[[Kakito]]がハードウェアレンダリングで動くようになった。
