@@ -1591,6 +1591,7 @@ export const backlinkData = {
 "Rhinocs_仕様検討.md",
 "SKK.md",
 "Starlarcs.md",
+"Supernote.md",
 "エディタ調査.md",
 "ひざの上テーブル.md",
 "自作アプリ.md",
