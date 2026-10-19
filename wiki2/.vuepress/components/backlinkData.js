@@ -232,6 +232,7 @@ export const backlinkData = {
 "生物学.md",
 ],
 "BigBaron.md": [
+"SurfLog.md",
 "サーフボード.md",
 ],
 "LenovoTabP12.md": [
