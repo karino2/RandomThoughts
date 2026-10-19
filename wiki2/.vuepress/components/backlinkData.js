@@ -90,6 +90,7 @@ export const backlinkData = {
 ],
 "強化学習.md": [
 "2026年10月中旬の雑記.md",
+"MarkovDecisionProcess.md",
 "強化学習とは.md",
 "強化学習の用語定義.md",
 "原論文から解き明かす生成AI.md",
@@ -1778,6 +1779,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "強化学習の用語定義.md": [
+"MarkovDecisionProcess.md",
 "強化学習.md",
 ],
 "EjiCell.md": [
@@ -2150,12 +2152,12 @@ export const backlinkData = {
 "【書籍】CppConcurrencyInAction.md",
 "並列プログラム.md",
 ],
+"甲信越計画.md": [
+"ワーケーション.md",
+],
 "PRML.md": [
 "マルコフ連鎖.md",
 "機械学習.md",
-],
-"甲信越計画.md": [
-"ワーケーション.md",
 ],
 "UFASアーキテクチャ.md": [
 "SAFToDo.md",
@@ -3150,6 +3152,9 @@ export const backlinkData = {
 "【書籍】大いなる謎、平清盛.md",
 "日本史.md",
 "平氏.md",
+],
+"MarkovDecisionProcess.md": [
+"強化学習の用語定義.md",
 ],
 "Wikiとhowmとメモツール.md": [
 "Wikiとノート.md",
