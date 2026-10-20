@@ -92,7 +92,8 @@ export const backlinkData = {
 "2026年10月中旬の雑記.md",
 "MarkovDecisionProcess.md",
 "Q関数.md",
-"リターンとバリュー関数.md",
+"Value関数.md",
+"ベルマンバックアップ演算子.md",
 "強化学習とは.md",
 "強化学習の用語定義.md",
 "原論文から解き明かす生成AI.md",
@@ -134,11 +135,6 @@ export const backlinkData = {
 "【書籍】マンガキャラアタリ練習帳.md": [
 "お絵描き.md",
 "【書籍】へたっぴさんのための身体の描き方入門、アタリの取り方編.md",
-],
-"リターンとバリュー関数.md": [
-"MarkovDecisionProcess.md",
-"Q関数.md",
-"強化学習の用語定義.md",
 ],
 "【書籍】TheGrammarOfGraphics.md": [
 "書籍.md",
@@ -378,6 +374,10 @@ export const backlinkData = {
 ],
 "雑多な統計.md": [
 "雑多なメモ.md",
+],
+"ベルマンバックアップ演算子.md": [
+"MarkovDecisionProcess.md",
+"強化学習.md",
 ],
 "【書籍】HLSLシェーダーの魔導書.md": [
 "書籍.md",
@@ -725,11 +725,6 @@ export const backlinkData = {
 "プログラミングエッセイ.md",
 "雑多なメモ.md",
 ],
-"Neutralinojs.md": [
-"Electron代替.md",
-"kickimgr.md",
-"技術的なメモ.md",
-],
 "原論文から解き明かす生成AI.md": [
 "2026年10月中旬の雑記.md",
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
@@ -756,6 +751,11 @@ export const backlinkData = {
 "強化学習.md",
 "【書籍】原論文から解き明かす生成AI.md",
 "論文.md",
+],
+"Neutralinojs.md": [
+"Electron代替.md",
+"kickimgr.md",
+"技術的なメモ.md",
 ],
 "生物学.md": [
 "edX.md",
@@ -1720,6 +1720,10 @@ export const backlinkData = {
 ],
 "Q関数.md": [
 "MarkovDecisionProcess.md",
+"Value関数.md",
+"ベルマンバックアップ演算子.md",
+"強化学習.md",
+"強化学習の用語定義.md",
 ],
 "Flutter.md": [
 "技術的なメモ.md",
@@ -1791,6 +1795,7 @@ export const backlinkData = {
 ],
 "強化学習の用語定義.md": [
 "MarkovDecisionProcess.md",
+"ベルマンバックアップ演算子.md",
 "強化学習.md",
 ],
 "EjiCell.md": [
@@ -1943,6 +1948,13 @@ export const backlinkData = {
 "実解析.md",
 "【書籍】集合・位相入門.md",
 "測度論.md",
+],
+"Value関数.md": [
+"MarkovDecisionProcess.md",
+"Q関数.md",
+"ベルマンバックアップ演算子.md",
+"リターンとバリュー関数.md",
+"強化学習の用語定義.md",
 ],
 "それっぽく描くコツ2周目.md": [
 "それっぽく描くコツ1周目.md",
@@ -3165,6 +3177,7 @@ export const backlinkData = {
 "平氏.md",
 ],
 "MarkovDecisionProcess.md": [
+"ベルマンバックアップ演算子.md",
 "強化学習.md",
 "強化学習の用語定義.md",
 ],
