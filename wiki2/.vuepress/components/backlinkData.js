@@ -70,7 +70,6 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Supernote.md": [
-"2026年10月中旬の雑記.md",
 "PngNote.md",
 "Rhinocs.md",
 "キーボード.md",
@@ -89,11 +88,12 @@ export const backlinkData = {
 "続ゆっくりじっくりイタリア語.md",
 ],
 "強化学習.md": [
-"2026年10月中旬の雑記.md",
+"2026年10月下旬の雑記.md",
 "MarkovDecisionProcess.md",
 "Q関数.md",
 "Value関数.md",
 "ベルマンバックアップ演算子.md",
+"やった事があるの消費と拡充.md",
 "強化学習とは.md",
 "強化学習の用語定義.md",
 "原論文から解き明かす生成AI.md",
@@ -102,7 +102,7 @@ export const backlinkData = {
 "オーディオブック.md",
 ],
 "webにもあるような内容の本の価値.md": [
-"雑多なメモ.md",
+"書きかけエッセイ.md",
 ],
 "ステッパー.md": [
 "2022年の花粉の記録.md",
@@ -223,6 +223,9 @@ export const backlinkData = {
 "GoFS.md": [
 "KotlinNative.md",
 ],
+"論文をどこまで辿るべきか.md": [
+"書きかけエッセイ.md",
+],
 "生理学.md": [
 "医学.md",
 "雑多なメモ.md",
@@ -245,7 +248,6 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md",
 ],
 "SurfLog.md": [
-"2026年10月中旬の雑記.md",
 "Home.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
@@ -704,9 +706,6 @@ export const backlinkData = {
 "茨城計画.md": [
 "ワーケーション.md",
 ],
-"一人読書会.md": [
-"2026年10月中旬の雑記.md",
-],
 "Shell.md": [
 "embed用のシェルのような何か.md",
 "Nushell.md",
@@ -726,7 +725,6 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "原論文から解き明かす生成AI.md": [
-"2026年10月中旬の雑記.md",
 "ApproximationBySuperpositionsOfASigmoidalFunction.md",
 "BatchNormalization.md",
 "ContextualCorrelatesOfSynonymy.md",
@@ -1165,7 +1163,6 @@ export const backlinkData = {
 "ボツエッセイ.md",
 ],
 "PngNote.md": [
-"2026年10月中旬の雑記.md",
 "BOOX.md",
 "EjiCell.md",
 "GithubPages.md",
@@ -1188,9 +1185,6 @@ export const backlinkData = {
 "書籍.md",
 "【書籍】人月の神話.md",
 ],
-"シェーバー.md": [
-"グッズ関連.md",
-],
 "経済.md": [
 "雑多なメモ.md",
 "社会科学.md",
@@ -1200,6 +1194,9 @@ export const backlinkData = {
 "【書籍】自由の命運.md",
 "【書籍】自由論.md",
 "【書籍】人口大逆転.md",
+],
+"シェーバー.md": [
+"グッズ関連.md",
 ],
 "オートミール.md": [
 "食事関連.md",
@@ -1235,6 +1232,9 @@ export const backlinkData = {
 "【書籍】財政赤字の神話.md": [
 "経済.md",
 "書籍.md",
+],
+"やった事があるの消費と拡充.md": [
+"書きかけエッセイ.md",
 ],
 "SentencePiece.md": [
 "SubwordRegularization.md",
@@ -1421,7 +1421,6 @@ export const backlinkData = {
 "論文.md",
 ],
 "一人読書会ライブ.md": [
-"2026年10月中旬の雑記.md",
 "LayerNormとTransformerブロック.md",
 "アテンションとセルフアテンション.md",
 "ライブ.md",
@@ -1530,6 +1529,9 @@ export const backlinkData = {
 "虎本.md",
 "書籍.md",
 ],
+"書きかけエッセイ.md": [
+"雑多なメモ.md",
+],
 "awk.md": [
 "Shell.md",
 "技術的なメモ.md",
@@ -1602,6 +1604,7 @@ export const backlinkData = {
 "Starlarcs.md",
 "Supernote.md",
 "エディタ調査.md",
+"パソコンが欲しくなる作業.md",
 "ひざの上テーブル.md",
 "自作アプリ.md",
 ],
@@ -1666,7 +1669,6 @@ export const backlinkData = {
 "【書籍】まつもとゆきひろ、言語のしくみ.md",
 ],
 "スタイラス.md": [
-"2026年10月中旬の雑記.md",
 "Supernote.md",
 ],
 "花粉.md": [
@@ -1675,6 +1677,9 @@ export const backlinkData = {
 ],
 "OnPositionEmbeddingsInBERT.md": [
 "PositionEmbeddings.md",
+],
+"【書籍】原論文から解き明かす生成AI.md": [
+"パソコンが欲しくなる作業.md",
 ],
 "お便りコーナー.md": [
 "プログラム雑談.md",
@@ -1802,6 +1807,9 @@ export const backlinkData = {
 "そのうちやりたい事.md",
 "ぼくのかんがえた最強の講義ノート.md",
 ],
+"DynamicProgram.md": [
+"やった事があるの消費と拡充.md",
+],
 "GitWiki.md": [
 "GithubPages.md",
 "RandomThoughts.md",
@@ -1899,7 +1907,6 @@ export const backlinkData = {
 "技術的なメモ.md",
 ],
 "マグナスケッチ.md": [
-"2026年10月中旬の雑記.md",
 "BOOX.md",
 "PngNote.md",
 "Supernote.md",
@@ -2062,7 +2069,6 @@ export const backlinkData = {
 "原論文から解き明かす生成AI.md",
 ],
 "キーボード.md": [
-"2026年10月中旬の雑記.md",
 "BOOX.md",
 "グッズ関連.md",
 "タブレットスタンド.md",
@@ -2091,7 +2097,6 @@ export const backlinkData = {
 "グッズ関連.md",
 ],
 "Kakito.md": [
-"2026年10月中旬の雑記.md",
 "BOOX.md",
 "Supernote.md",
 ],
@@ -2720,6 +2725,9 @@ export const backlinkData = {
 "お絵描き雑談ライブ.md",
 "水玉懐ゲー夜話.md",
 ],
+"パソコンが欲しくなる作業.md": [
+"書きかけエッセイ.md",
+],
 "それっぽく描くコツ2周目.md": [
 "イラストをそれっぽく描くコツ.md",
 "お絵描き.md",
@@ -3027,9 +3035,6 @@ export const backlinkData = {
 "てきすとTL.md",
 "技術的なメモ.md",
 ],
-"2026年10月中旬の雑記.md": [
-"Home.md",
-],
 "【書籍】人月の神話.md": [
 "技術的なメモ.md",
 ],
@@ -3230,6 +3235,9 @@ export const backlinkData = {
 ],
 "Rhinocs_セットアップ.md": [
 "Rhinocs.md",
+],
+"2026年10月下旬の雑記.md": [
+"Home.md",
 ],
 "Android.md": [
 "FDroid.md",
