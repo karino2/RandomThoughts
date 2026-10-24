@@ -1185,9 +1185,6 @@ export const backlinkData = {
 "書籍.md",
 "【書籍】人月の神話.md",
 ],
-"シェーバー.md": [
-"グッズ関連.md",
-],
 "経済.md": [
 "雑多なメモ.md",
 "社会科学.md",
@@ -1197,6 +1194,9 @@ export const backlinkData = {
 "【書籍】自由の命運.md",
 "【書籍】自由論.md",
 "【書籍】人口大逆転.md",
+],
+"シェーバー.md": [
+"グッズ関連.md",
 ],
 "オートミール.md": [
 "食事関連.md",
@@ -1824,6 +1824,9 @@ export const backlinkData = {
 "TeFWiki.md",
 "UFASアーキテクチャ.md",
 "自作アプリ.md",
+],
+"英和辞典.md": [
+"技術的なメモ.md",
 ],
 "mdvtbl.md": [
 "Unix的GUIツール.md",
