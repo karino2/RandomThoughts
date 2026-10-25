@@ -1826,7 +1826,6 @@ export const backlinkData = {
 "自作アプリ.md",
 ],
 "英和辞典.md": [
-"2026年10月下旬の雑記.md",
 "技術的なメモ.md",
 "雑英辞郎.md",
 ],
@@ -2472,6 +2471,7 @@ export const backlinkData = {
 "世界史.md",
 ],
 "雑英辞郎.md": [
+"2026年10月下旬の雑記.md",
 "英和辞典.md",
 ],
 "htmnix_chart.md": [
