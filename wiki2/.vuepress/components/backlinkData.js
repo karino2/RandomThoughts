@@ -1826,6 +1826,7 @@ export const backlinkData = {
 "自作アプリ.md",
 ],
 "英和辞典.md": [
+"2026年10月下旬の雑記.md",
 "技術的なメモ.md",
 ],
 "mdvtbl.md": [
