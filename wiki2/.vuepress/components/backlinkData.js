@@ -1828,6 +1828,7 @@ export const backlinkData = {
 "英和辞典.md": [
 "2026年10月下旬の雑記.md",
 "技術的なメモ.md",
+"雑英辞郎.md",
 ],
 "mdvtbl.md": [
 "Unix的GUIツール.md",
@@ -2470,6 +2471,9 @@ export const backlinkData = {
 "【書籍】物語イギリスの歴史.md": [
 "世界史.md",
 ],
+"雑英辞郎.md": [
+"英和辞典.md",
+],
 "htmnix_chart.md": [
 "csvplr.md",
 "Unix的GUIツール.md",
@@ -2640,6 +2644,7 @@ export const backlinkData = {
 "パオ碁.md",
 "マグナスケッチ.md",
 "技術的なメモ.md",
+"雑英辞郎.md",
 "写真mdメモ.md",
 ],
 "そのうちやりたい事.md": [
