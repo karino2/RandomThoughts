@@ -1,8 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
-    {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "2026%E5%B9%B410%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年10月下旬の雑記"},
+    {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "%E9%9B%91%E8%8B%B1%E8%BE%9E%E9%83%8E.html", "text": "雑英辞郎"},
     {"link": "%E8%8B%B1%E5%92%8C%E8%BE%9E%E5%85%B8.html", "text": "英和辞典"},
     {"link": "Supernote.html", "text": "Supernote"},
