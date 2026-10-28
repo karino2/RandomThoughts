@@ -105,8 +105,6 @@ MRPはMDP+actionなので前のMRPの続きとしてMDPを考える。
 
 次に最適なVを求めるという問題を考えるにあたり、下準備としてBellmanのBackup Operatorを定義する。
 
-![imgs/CS234Lec2/0012.png](imgs/CS234Lec2/0012.png)
-
 [[ベルマンバックアップ演算子]]
 
 ### Value Iterationによる最適なVの計算
