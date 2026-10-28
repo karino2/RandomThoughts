@@ -45,7 +45,7 @@ rewardsは観測は出来るが数式は知らない。
 
 [[CertaintyEquivalenceによるモデル推計]]
 
-![imgs/CS234Lec3/0011.png](imgs/CS234Lec3/0011.png)
-![imgs/CS234Lec3/0012.png](imgs/CS234Lec3/0012.png)
-![imgs/CS234Lec3/0013.png](imgs/CS234Lec3/0013.png)
-![imgs/CS234Lec3/0014.png](imgs/CS234Lec3/0014.png)
+## バッチMCとバッチTD
+
+[[バッチMCとバッチTD]]
+

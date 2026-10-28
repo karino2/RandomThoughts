@@ -14,7 +14,7 @@ Temporal Difference Learningとも言う。[[ModelFreePolicyEvaluation]]の一�
 ## 特徴など
 
 - モンテカルロとdynamic programmingのハイブリッド的なもの
-- ブートストラップとサンプリング（最初に幾つかのサンプルでVを推計する）
+- ブートストラップとサンプリング（安定するまで最初はしばらくVを推計する期間を設けるという事か）
 - 有限地平で無くても使える（エピソード的なセッティングじゃなくてもOK）
 - (s, a, r, s')のタプルが来るごとにその場で更新
 - 最初の頃は初期化によるのでbiasedなestimator
