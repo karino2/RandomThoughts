@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "MarkovDecisionProcess.html", "text": "MarkovDecisionProcess"},
     {"link": "%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92.html", "text": "強化学習"},
     {"link": "%E3%83%90%E3%83%83%E3%83%81MC%E3%81%A8%E3%83%90%E3%83%83%E3%83%81TD.html", "text": "バッチMCとバッチTD"},
     {"link": "TDLearning.html", "text": "TDLearning"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E9%9B%91%E8%8B%B1%E8%BE%9E%E9%83%8E.html", "text": "雑英辞郎"},
     {"link": "%E8%8B%B1%E5%92%8C%E8%BE%9E%E5%85%B8.html", "text": "英和辞典"},
     {"link": "Supernote.html", "text": "Supernote"},
-    {"link": "%E6%8A%80%E8%A1%93%E7%9A%84%E3%81%AA%E3%83%A1%E3%83%A2.html", "text": "技術的なメモ"},
    ]
 }
 ]
