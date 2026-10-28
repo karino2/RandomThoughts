@@ -94,6 +94,7 @@ export const backlinkData = {
 "Q関数.md",
 "Value関数.md",
 "ベルマンバックアップ演算子.md",
+"モンテカルロPolicyEvaluation.md",
 "強化学習とは.md",
 "強化学習の用語定義.md",
 "原論文から解き明かす生成AI.md",
@@ -150,6 +151,11 @@ export const backlinkData = {
 ],
 "【書籍】イタリア語会話パーフェクトブック.md": [
 "書籍.md",
+],
+"バイアスとバリアンス.md": [
+"ConsistentEstimator.md",
+"ModelFreePolicyEvaluation.md",
+"モンテカルロPolicyEvaluation.md",
 ],
 "WhatDoPositionEmbeddingsLearn.md": [
 "OnPositionEmbeddingsInBERT.md",
@@ -1043,6 +1049,9 @@ export const backlinkData = {
 "【書籍】魔法の人物ドローイング.md",
 ],
 "ModelFreePolicyEvaluation.md": [
+"CertaintyEquivalenceによるモデル推計.md",
+"TDLearning.md",
+"モンテカルロPolicyEvaluation.md",
 "強化学習.md",
 ],
 "GeoGebra.md": [
@@ -1117,6 +1126,10 @@ export const backlinkData = {
 ],
 "絵師がAIについて語るのが辛い.md": [
 "雑多なメモ.md",
+],
+"TDLearning.md": [
+"ModelFreePolicyEvaluation.md",
+"モンテカルロPolicyEvaluation.md",
 ],
 "サイコロ本.md": [
 "HMM.md",
@@ -1804,7 +1817,10 @@ export const backlinkData = {
 "書籍.md",
 ],
 "強化学習の用語定義.md": [
+"ConsistentEstimator.md",
 "MarkovDecisionProcess.md",
+"ModelFreePolicyEvaluation.md",
+"バイアスとバリアンス.md",
 "ベルマンバックアップ演算子.md",
 "強化学習.md",
 ],
@@ -1924,6 +1940,10 @@ export const backlinkData = {
 "fyne.md",
 "Wikiと手書きノートの融合.md",
 "技術的なメモ.md",
+],
+"モンテカルロPolicyEvaluation.md": [
+"ModelFreePolicyEvaluation.md",
+"TDLearning.md",
 ],
 "八丈島計画.md": [
 "ワーケーション.md",
@@ -2054,6 +2074,9 @@ export const backlinkData = {
 ],
 "KyusFish.md": [
 "SurfLog_202604から202608まで.md",
+],
+"CertaintyEquivalenceによるモデル推計.md": [
+"ModelFreePolicyEvaluation.md",
 ],
 "Kotlin.md": [
 "Android.md",
@@ -2272,6 +2295,12 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md": [
 "LenovoTabP12.md",
 "書籍.md",
+],
+"ConsistentEstimator.md": [
+"ModelFreePolicyEvaluation.md",
+"TDLearning.md",
+"バイアスとバリアンス.md",
+"モンテカルロPolicyEvaluation.md",
 ],
 "それっぽく描くコツ1周目.md": [
 "イラストをそれっぽく描くコツ.md",
@@ -2849,11 +2878,11 @@ export const backlinkData = {
 "書籍.md",
 "【書籍】正義論.md",
 ],
-"パーソナルWikiの画像管理.md": [
-"ノート.md",
-],
 "強化学習とは.md": [
 "強化学習.md",
+],
+"パーソナルWikiの画像管理.md": [
+"ノート.md",
 ],
 "VTZ250.md": [
 "バイク.md",
@@ -3197,6 +3226,7 @@ export const backlinkData = {
 "平氏.md",
 ],
 "MarkovDecisionProcess.md": [
+"CertaintyEquivalenceによるモデル推計.md",
 "ベルマンバックアップ演算子.md",
 "強化学習.md",
 "強化学習の用語定義.md",
