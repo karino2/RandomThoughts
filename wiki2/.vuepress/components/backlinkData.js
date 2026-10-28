@@ -90,6 +90,7 @@ export const backlinkData = {
 "強化学習.md": [
 "2026年10月下旬の雑記.md",
 "MarkovDecisionProcess.md",
+"ModelFreePolicyEvaluation.md",
 "Q関数.md",
 "Value関数.md",
 "ベルマンバックアップ演算子.md",
@@ -1040,6 +1041,9 @@ export const backlinkData = {
 "講義ノート.md",
 "自作アプリ.md",
 "【書籍】魔法の人物ドローイング.md",
+],
+"ModelFreePolicyEvaluation.md": [
+"強化学習.md",
 ],
 "GeoGebra.md": [
 "技術的なメモ.md",
@@ -2878,13 +2882,13 @@ export const backlinkData = {
 "技術的なメモ.md",
 "書籍.md",
 ],
-"Kotlinリファレンスの和訳.md": [
-"Kotlin.md",
-"技術的なメモ.md",
-],
 "型システムのしくみ.md": [
 "型システム.md",
 "型システム入門.md",
+],
+"Kotlinリファレンスの和訳.md": [
+"Kotlin.md",
+"技術的なメモ.md",
 ],
 "Scoop.md": [
 "技術的なメモ.md",
