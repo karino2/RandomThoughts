@@ -1049,8 +1049,10 @@ export const backlinkData = {
 "【書籍】魔法の人物ドローイング.md",
 ],
 "ModelFreePolicyEvaluation.md": [
+"2026年10月下旬の雑記.md",
 "CertaintyEquivalenceによるモデル推計.md",
 "TDLearning.md",
+"バッチMCとバッチTD.md",
 "モンテカルロPolicyEvaluation.md",
 "強化学習.md",
 ],
@@ -1129,6 +1131,7 @@ export const backlinkData = {
 ],
 "TDLearning.md": [
 "ModelFreePolicyEvaluation.md",
+"バッチMCとバッチTD.md",
 "モンテカルロPolicyEvaluation.md",
 ],
 "サイコロ本.md": [
@@ -1869,6 +1872,9 @@ export const backlinkData = {
 "グッズ関連.md",
 "ポータブルスピーカー.md",
 ],
+"バッチMCとバッチTD.md": [
+"ModelFreePolicyEvaluation.md",
+],
 "タブレットスタンド.md": [
 "ステッパー.md",
 ],
@@ -1944,6 +1950,7 @@ export const backlinkData = {
 "モンテカルロPolicyEvaluation.md": [
 "ModelFreePolicyEvaluation.md",
 "TDLearning.md",
+"バッチMCとバッチTD.md",
 ],
 "八丈島計画.md": [
 "ワーケーション.md",
