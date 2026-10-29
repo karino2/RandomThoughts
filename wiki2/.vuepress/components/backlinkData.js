@@ -1719,6 +1719,7 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
+"2026年10月下旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
@@ -1951,6 +1952,10 @@ export const backlinkData = {
 "ModelFreePolicyEvaluation.md",
 "TDLearning.md",
 "バッチMCとバッチTD.md",
+],
+"生命の大進化40億年史.md": [
+"2026年10月下旬の雑記.md",
+"生物学.md",
 ],
 "八丈島計画.md": [
 "ワーケーション.md",
@@ -3218,6 +3223,7 @@ export const backlinkData = {
 "【書籍】本当に役立つ栄養学.md",
 "【書籍】魔法の人物ドローイング.md",
 "深層学習.md",
+"生命の大進化40億年史.md",
 "論文.md",
 ],
 "SwiftConcurrency.md": [
