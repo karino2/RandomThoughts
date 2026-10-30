@@ -1,4 +1,4 @@
-[[ModelFreePolicyEvaluation]]の一種。[[強化学習]]。
+[[ModelFreePolicyEvaluation]]の一種。[[強化学習]]。[[TDLearning]]、[[CertaintyEquivalenceによるモデル推計]]。
 
 [Stanford CS234 Reinforcement Learning I Policy Evaluation I 2024 I Lecture 3 - YouTube](https://www.youtube.com/watch?v=jjq51TRNVvk&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX&index=3)
 
