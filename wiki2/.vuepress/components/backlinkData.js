@@ -2089,6 +2089,7 @@ export const backlinkData = {
 ],
 "CertaintyEquivalenceによるモデル推計.md": [
 "ModelFreePolicyEvaluation.md",
+"モンテカルロPolicyEvaluation.md",
 ],
 "Kotlin.md": [
 "Android.md",
