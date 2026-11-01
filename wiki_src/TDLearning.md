@@ -21,3 +21,7 @@ Temporal Difference Learningとも言う。[[ModelFreePolicyEvaluation]]の一�
 - 最初の頃は初期化によるのでbiasedなestimator
 - インクリメンタルな[[モンテカルロPolicyEvaluation]]と同じ条件で[[ConsistentEstimator]]になる
 - [[モンテカルロPolicyEvaluation]]よりvarianceが低い
+
+## Policy Improvementでの使用。
+
+[[ModelFreePolicyImprovement]]へ。[[SARSA]]と[[QLearning]]がある。

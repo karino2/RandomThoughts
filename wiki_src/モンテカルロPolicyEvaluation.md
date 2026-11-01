@@ -34,3 +34,7 @@ Consistentについては[[ConsistentEstimator]]を参照のこと。
 ![imgs/CS234Lec3/0007.png](imgs/CS234Lec3/0007.png)
 
 [[バイアスとバリアンス]]も参照。[[TDLearning]]とも比較したい。
+
+## Policy Improvement
+
+[[ModelFreePolicyImprovement]]でε-greedyポリシーのMCのPolicy Improvementについて書いてある。

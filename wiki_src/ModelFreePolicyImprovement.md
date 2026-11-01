@@ -41,42 +41,19 @@
 1. SARSA（オンポリシー手法の一つ）
 2. Q-Learning（オフポリシー手法の一つ）
 
-### SARSAアルゴリズム
+### SARSA
 
-![imgs/CS234Lec4/0007.png](imgs/CS234Lec4/0007.png)
+[[SARSA]]
 
-### SARSAの収束の性質
-
-![imgs/CS234Lec4/0008.png](imgs/CS234Lec4/0008.png)
-
-### SARSAの収束の性質に関する研究の経緯
-
-![imgs/CS234Lec4/0009.png](imgs/CS234Lec4/0009.png)
 
 ### オンポリシーとオフポリシー
 
 ![imgs/CS234Lec4/0010.png](imgs/CS234Lec4/0010.png)
 
-## Q-learning、オフポリシーの手法
+## Q-learning
 
-![imgs/CS234Lec4/0011.png](imgs/CS234Lec4/0011.png)
+[[QLearning]]
 
-実際のアクションを行うbehaviorポリシーと、Qを推計する時のポリシーが異なり、
-QのTDターゲットとする一つ次のstateのQのポリシーはarg max Qとする手法。
+## Value関数の関数近似（VFA）
 
-## Q-learningでのε-greedyの収束の性質
-
-![imgs/CS234Lec4/0012.png](imgs/CS234Lec4/0012.png)
-
-Robbins-Munro列については「SARSAの収束」を参照のこと。
-
-## Value関数の近似（VFA）
-
-![imgs/CS234Lec4/0013.png](imgs/CS234Lec4/0013.png)
-![imgs/CS234Lec4/0014.png](imgs/CS234Lec4/0014.png)
-![imgs/CS234Lec4/0015.png](imgs/CS234Lec4/0015.png)
-![imgs/CS234Lec4/0016.png](imgs/CS234Lec4/0016.png)
-![imgs/CS234Lec4/0017.png](imgs/CS234Lec4/0017.png)
-![imgs/CS234Lec4/0018.png](imgs/CS234Lec4/0018.png)
-![imgs/CS234Lec4/0019.png](imgs/CS234Lec4/0019.png)
-![imgs/CS234Lec4/0020.png](imgs/CS234Lec4/0020.png)
+[[Value関数の関数近似]]
