@@ -91,6 +91,7 @@ export const backlinkData = {
 "2026年11月上旬の雑記.md",
 "MarkovDecisionProcess.md",
 "ModelFreePolicyEvaluation.md",
+"QLearning.md",
 "Q関数.md",
 "Value関数.md",
 "ベルマンバックアップ演算子.md",
@@ -242,6 +243,13 @@ export const backlinkData = {
 "BigBaron.md": [
 "SurfLog.md",
 "サーフボード.md",
+],
+"SARSA.md": [
+"ModelFreePolicyImprovement.md",
+"QLearning.md",
+"TDLearning.md",
+"Value関数の関数近似.md",
+"強化学習.md",
 ],
 "LenovoTabP12.md": [
 "Android.md",
@@ -432,6 +440,13 @@ export const backlinkData = {
 "メモをアプリケーションに依存させたくない.md",
 ],
 "ModelFreePolicyImprovement.md": [
+"2026年11月上旬の雑記.md",
+"DQN.md",
+"QLearning.md",
+"SARSA.md",
+"TDLearning.md",
+"Value関数の関数近似.md",
+"モンテカルロPolicyEvaluation.md",
 "強化学習.md",
 ],
 "ノートPC.md": [
@@ -1052,6 +1067,7 @@ export const backlinkData = {
 "CertaintyEquivalenceによるモデル推計.md",
 "ModelFreePolicyImprovement.md",
 "TDLearning.md",
+"Value関数の関数近似.md",
 "バッチMCとバッチTD.md",
 "モンテカルロPolicyEvaluation.md",
 "強化学習.md",
@@ -1135,6 +1151,8 @@ export const backlinkData = {
 "TDLearning.md": [
 "ModelFreePolicyEvaluation.md",
 "ModelFreePolicyImprovement.md",
+"QLearning.md",
+"SARSA.md",
 "バッチMCとバッチTD.md",
 "モンテカルロPolicyEvaluation.md",
 ],
@@ -1273,6 +1291,11 @@ export const backlinkData = {
 ],
 "【書籍】60秒右脳ドローイングで絵が感動的にうまくなる！.md": [
 "【書籍】マンガキャラアタリ練習帳.md",
+],
+"Value関数の関数近似.md": [
+"DQN.md",
+"ModelFreePolicyImprovement.md",
+"強化学習.md",
 ],
 "おうちコープ.md": [
 "ネットスーパー.md",
@@ -1785,6 +1808,13 @@ export const backlinkData = {
 "時間を置いて後からニュースを知る効用.md": [
 "インターネットリテラシー.md",
 ],
+"QLearning.md": [
+"ModelFreePolicyImprovement.md",
+"SARSA.md",
+"TDLearning.md",
+"Value関数の関数近似.md",
+"強化学習.md",
+],
 "アルカン.md": [
 "化学.md",
 ],
@@ -1850,6 +1880,10 @@ export const backlinkData = {
 ],
 "WiFiルーター.md": [
 "WiMax.md",
+],
+"DQN.md": [
+"Value関数の関数近似.md",
+"強化学習.md",
 ],
 "いつなに.md": [
 "TeFWiki.md",
@@ -2048,14 +2082,14 @@ export const backlinkData = {
 "技術的なメモ.md",
 "講義ノート.md",
 ],
+"基礎からのベイズ統計学.md": [
+"マルコフ連鎖.md",
+],
 "パオ碁.md": [
 "囲碁.md",
 "囲碁エンジン評価.md",
 "作業ログ.md",
 "自作アプリ.md",
-],
-"基礎からのベイズ統計学.md": [
-"マルコフ連鎖.md",
 ],
 "PowerShell.md": [
 "PSDotenvrc.md",
