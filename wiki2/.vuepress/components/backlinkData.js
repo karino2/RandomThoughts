@@ -431,6 +431,9 @@ export const backlinkData = {
 "TeFWiki.md",
 "メモをアプリケーションに依存させたくない.md",
 ],
+"ModelFreePolicyImprovement.md": [
+"強化学習.md",
+],
 "ノートPC.md": [
 "MacBookAir.md",
 "Windows.md",
@@ -1047,6 +1050,7 @@ export const backlinkData = {
 ],
 "ModelFreePolicyEvaluation.md": [
 "CertaintyEquivalenceによるモデル推計.md",
+"ModelFreePolicyImprovement.md",
 "TDLearning.md",
 "バッチMCとバッチTD.md",
 "モンテカルロPolicyEvaluation.md",
@@ -1130,6 +1134,7 @@ export const backlinkData = {
 ],
 "TDLearning.md": [
 "ModelFreePolicyEvaluation.md",
+"ModelFreePolicyImprovement.md",
 "バッチMCとバッチTD.md",
 "モンテカルロPolicyEvaluation.md",
 ],
@@ -3237,6 +3242,7 @@ export const backlinkData = {
 ],
 "MarkovDecisionProcess.md": [
 "CertaintyEquivalenceによるモデル推計.md",
+"ModelFreePolicyImprovement.md",
 "ベルマンバックアップ演算子.md",
 "強化学習.md",
 "強化学習の用語定義.md",
