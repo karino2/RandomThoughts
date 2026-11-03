@@ -1532,6 +1532,7 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "インドネシア語.md": [
+"インドネシア語のしくみ.md",
 "雑多なメモ.md",
 ],
 "風神録.md": [
@@ -3225,6 +3226,7 @@ export const backlinkData = {
 "RandomThoughts.md",
 "TheNatureOfComputation.md",
 "イラストをそれっぽく描くコツ.md",
+"インドネシア語のしくみ.md",
 "オーディオブック.md",
 "たてなか流クイックスケッチ.md",
 "ドーパミン反応.md",
