@@ -1040,6 +1040,7 @@ export const backlinkData = {
 "【書籍】本当に役立つ栄養学.md",
 ],
 "TeFWiki.md": [
+"2026年11月上旬の雑記.md",
 "bulma.md",
 "Electron.md",
 "Home.md",
