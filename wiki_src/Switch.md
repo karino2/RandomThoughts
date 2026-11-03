@@ -2,12 +2,7 @@ Switchで出来る昔のゲームを買ってやったりしている。
 
 - [[ワルキューレの伝説]]
 - ファイナルファイト
-
-## Little Witch in the Woods 2026-11-03 (火)
-
-[Little Witch in the Woods - Nintendo Store](https://store-jp.nintendo.com/item/software/D70010000113821)
-
-サーフィンなどで疲れた後にダラダラやれそうなゲーム無いかなぁ、とシミュレーションで探して見かけたゲーム。1840円で購入。
+- [[LittleWitchInTheWoods]]
 
 ## 縦画面用アタッチメント 2026-09-26 (土)
 
