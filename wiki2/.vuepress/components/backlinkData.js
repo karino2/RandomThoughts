@@ -2135,14 +2135,14 @@ export const backlinkData = {
 "ModelFreePolicyEvaluation.md",
 "モンテカルロPolicyEvaluation.md",
 ],
+"学問.md": [
+"数学.md",
+],
 "Kotlin.md": [
 "Android.md",
 "KotlinNative.md",
 "Kotlinリファレンスの和訳.md",
 "技術的なメモ.md",
-],
-"学問.md": [
-"数学.md",
 ],
 "ビデオカメラ.md": [
 "グッズ関連.md",
@@ -2609,6 +2609,7 @@ export const backlinkData = {
 "Mac.md",
 ],
 "Switch.md": [
+"LittleWitchInTheWoods.md",
 "ゲーム.md",
 "雑多なメモ.md",
 ],
@@ -3367,6 +3368,9 @@ export const backlinkData = {
 "技術文書の読み方.md",
 "書籍.md",
 "並列プログラム.md",
+],
+"LittleWitchInTheWoods.md": [
+"Switch.md",
 ],
 "【書籍】世界一シンプルで科学的に証明された究極の食事.md": [
 "オーディオブック.md",
