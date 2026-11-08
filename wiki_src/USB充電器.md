@@ -4,6 +4,14 @@
 
 - [Quick Charge - Wikipedia](https://en.wikipedia.org/wiki/Quick_Charge)
 
+## エレコム MPA-ACD03シリーズ 合計最大60W USB-A×6 2026-11-08 (日)
+
+[ヨドバシ.com - エレコム ELECOM USB AC充電器 MPA-ACD03シリーズ 合計最大60W USB-A×6 おまかせ充電対応 電源ケーブル付き（1.5m） ブラック MPA-ACD03BK](https://www.yodobashi.com/product-detail/100000001004215107/)
+
+使ってた4ポート5.4Aの充電器でタブレットを充電していると、なんか満充電のあとに画面がつくようになって、満充電の処理がおかしくなっているのではないか？と思いヨドバシで適当に調べた充電器を購入することに。
+
+2560円で購入。6ポートで60Wの割にはなんか安いがエレコムなのでそんな変なものでもないだろう、ということで。
+
 ## CIO NovaPort DUOⅡ 65W USB-C 2ポート 2025-11-29 (土)
 
 [amazon: CIO NovaPort DUOⅡ 65W USB-C 2ポート 充電器](https://amzn.to/4p9eEVd)
