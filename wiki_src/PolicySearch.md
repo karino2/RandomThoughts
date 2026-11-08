@@ -23,7 +23,7 @@
 
 前回まではε-greedyなどはdeterministic policyだったが、今回考えるポリシーは基本的にはstochasticなもの。
 
-## Aliased Gridworld
+## 例: Aliased Gridworld
 
 二つの区別出来ない状態があると、deterministic policyでは上手く行かないので、これまでのValue-Basedなやり方は上手く行かない。
 
