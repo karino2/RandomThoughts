@@ -22,3 +22,9 @@
 ### 今回のポリシーはstochastic
 
 前回まではε-greedyなどはdeterministic policyだったが、今回考えるポリシーは基本的にはstochasticなもの。
+
+## Aliased Gridworld
+
+二つの区別出来ない状態があると、deterministic policyでは上手く行かないので、これまでのValue-Basedなやり方は上手く行かない。
+
+Policy-Basedなやり方なら、最適なポリシーを学習しうる。
