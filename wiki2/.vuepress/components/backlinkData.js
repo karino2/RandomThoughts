@@ -92,6 +92,7 @@ export const backlinkData = {
 "2026年11月上旬の雑記.md",
 "MarkovDecisionProcess.md",
 "ModelFreePolicyEvaluation.md",
+"PolicySearch.md",
 "QLearning.md",
 "Q関数.md",
 "Value関数.md",
@@ -849,6 +850,9 @@ export const backlinkData = {
 "FSharp.md",
 "ReCJKLine.md",
 ],
+"PolicySearch.md": [
+"強化学習.md",
+],
 "【書籍】ダイアローグ1800.md": [
 "書籍.md",
 ],
@@ -1302,6 +1306,7 @@ export const backlinkData = {
 "Value関数の関数近似.md": [
 "DQN.md",
 "ModelFreePolicyImprovement.md",
+"PolicySearch.md",
 "強化学習.md",
 ],
 "おうちコープ.md": [
@@ -2041,6 +2046,7 @@ export const backlinkData = {
 ],
 "Value関数.md": [
 "MarkovDecisionProcess.md",
+"PolicySearch.md",
 "Q関数.md",
 "ベルマンバックアップ演算子.md",
 "リターンとバリュー関数.md",
