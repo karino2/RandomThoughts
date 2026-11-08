@@ -1,8 +1,8 @@
 export const recents = [
  {text: "Recents:",
    children: [
-    {"link": "%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92.html", "text": "強化学習"},
     {"link": "PolicySearch.html", "text": "PolicySearch"},
+    {"link": "%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92.html", "text": "強化学習"},
     {"link": "%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "ニューエクスプレスインドネシア語"},
     {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF.html", "text": "インドネシア語のしくみ"},
     {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "インドネシア語"},
