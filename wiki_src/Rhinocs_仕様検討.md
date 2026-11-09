@@ -1,5 +1,21 @@
 [[Rhinocs]]の仕様の検討を残しておく。
 
+
+## 続: インテントまわりの検討 2026-11-09 (月)
+
+前回無理という結論になったが、やはり[[TeFWiki]]やファイラーから開けないと不便、という事で対応する。
+前回の調査を元に対応するのは以下。
+
+- ACTION_EDIT
+- ACTION_VIEW+writable
+
+そしてインテントに来る全てのURLはPersistableではない、という前提で扱う。
+
+find_file_hookにisTempの引数を追加し、これがtrueの時はpersistableではない、とする。
+これまでのコードは変更したくないのでundefinedならpersistable。
+
+Tetra Freeがjsはapplication/javascriptで投げてくるので対応するMIME typeは `text/*` と application/javascriptとした。
+
 ## インテントまわりの検討 2026-09-11 (金)
 
 ACTION_EDITはuriは一時的で、送り側がFLAG_GRANT_PERSISTABLE_URI_PERMISSIONをつけてる場合に限りあとからも使える。
