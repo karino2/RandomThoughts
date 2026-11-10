@@ -1,6 +1,9 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92%E3%81%AE%E7%94%A8%E8%AA%9E%E5%AE%9A%E7%BE%A9.html", "text": "強化学習の用語定義"},
+    {"link": "%E3%83%AA%E3%82%BF%E3%83%BC%E3%83%B3%E9%96%A2%E6%95%B0.html", "text": "リターン関数"},
+    {"link": "Value%E9%96%A2%E6%95%B0.html", "text": "Value関数"},
     {"link": "%E5%A4%A7%E8%A1%86%E3%81%AE%E5%8F%8D%E9%80%86.html", "text": "大衆の反逆"},
     {"link": "USB%E5%85%85%E9%9B%BB%E5%99%A8.html", "text": "USB充電器"},
     {"link": "%E7%A4%BE%E4%BC%9A%E7%A7%91%E5%AD%A6.html", "text": "社会科学"},
@@ -13,9 +16,6 @@ export const recents = [
     {"link": "%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "ニューエクスプレスインドネシア語"},
     {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "インドネシア語"},
     {"link": "SurfLog.html", "text": "SurfLog"},
-    {"link": "LittleWitchInTheWoods.html", "text": "LittleWitchInTheWoods"},
-    {"link": "Switch.html", "text": "Switch"},
-    {"link": "%E3%83%A2%E3%83%B3%E3%83%86%E3%82%AB%E3%83%AB%E3%83%ADPolicyEvaluation.html", "text": "モンテカルロPolicyEvaluation"},
    ]
 }
 ]

@@ -1405,6 +1405,10 @@ export const backlinkData = {
 "小粋なスクリプト言語が欲しい.md",
 "逗子Androidアプリ開発もくもく会.md",
 ],
+"リターン関数.md": [
+"Value関数.md",
+"強化学習の用語定義.md",
+],
 "【書籍】ヴァロワ朝.md": [
 "書籍.md",
 ],
@@ -1875,6 +1879,7 @@ export const backlinkData = {
 "ModelFreePolicyEvaluation.md",
 "バイアスとバリアンス.md",
 "ベルマンバックアップ演算子.md",
+"リターン関数.md",
 "強化学習.md",
 ],
 "EjiCell.md": [
@@ -2056,6 +2061,7 @@ export const backlinkData = {
 "Q関数.md",
 "ベルマンバックアップ演算子.md",
 "リターンとバリュー関数.md",
+"リターン関数.md",
 "強化学習の用語定義.md",
 ],
 "それっぽく描くコツ2周目.md": [
