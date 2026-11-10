@@ -1929,6 +1929,10 @@ export const backlinkData = {
 "バッチMCとバッチTD.md": [
 "ModelFreePolicyEvaluation.md",
 ],
+"大衆の反逆.md": [
+"2026年11月上旬の雑記.md",
+"社会科学.md",
+],
 "タブレットスタンド.md": [
 "ステッパー.md",
 ],
