@@ -1,0 +1,1 @@
+var e=`/RandomThoughts/assets/0010-Dd3kC62Q.png`;export{e as t};
