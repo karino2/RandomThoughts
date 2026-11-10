@@ -1,4 +1,4 @@
-[[強化学習]]の用語。State Value関数とも言う。＞[[Q関数]]
+[[強化学習]]の用語。State Value関数とも言う。＞[[Q関数]], [[リターン関数]]
 
 ![imgs/CS234Intro/0010.png](imgs/CS234Intro/0010.png)
 
