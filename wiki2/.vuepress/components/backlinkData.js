@@ -2584,6 +2584,7 @@ export const backlinkData = {
 "世界史.md",
 ],
 "雑英辞郎.md": [
+"2026年11月上旬の雑記.md",
 "英和辞典.md",
 ],
 "htmnix_chart.md": [
