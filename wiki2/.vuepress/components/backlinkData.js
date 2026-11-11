@@ -1163,6 +1163,7 @@ export const backlinkData = {
 "SARSA.md",
 "バッチMCとバッチTD.md",
 "モンテカルロPolicyEvaluation.md",
+"強化学習の用語定義.md",
 ],
 "サイコロ本.md": [
 "HMM.md",
