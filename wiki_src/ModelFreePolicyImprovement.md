@@ -38,21 +38,12 @@
 [[TDLearning]]ではVを推計したが、Qを推計するにはアクションが必要となる。
 良く使われるのは以下の二つ。
 
-1. SARSA（オンポリシー手法の一つ）
-2. Q-Learning（オフポリシー手法の一つ）
-
-### SARSA
-
-[[SARSA]]
-
+1. [[SARSA]]（オンポリシー手法の一つ）
+2. [[QLearning]]（オフポリシー手法の一つ）
 
 ### オンポリシーとオフポリシー
 
 ![imgs/CS234Lec4/0010.png](imgs/CS234Lec4/0010.png)
-
-## Q-learning
-
-[[QLearning]]
 
 ## Value関数の関数近似（VFA）
 

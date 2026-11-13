@@ -24,4 +24,7 @@ Temporal Difference Learningとも言う。[[ModelFreePolicyEvaluation]]の一�
 
 ## Policy Improvementでの使用。
 
-[[ModelFreePolicyImprovement]]へ。[[SARSA]]と[[QLearning]]がある。
+[[ModelFreePolicyImprovement]]へ。
+
+- オンポリシー: [[SARSA]]
+- オフポリシー: [[QLearning]]
