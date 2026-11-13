@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "インドネシア語"},
     {"link": "%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "ニューエクスプレスインドネシア語"},
     {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E6%97%85%E8%A1%8C.html", "text": "インドネシア旅行"},
     {"link": "SurfLog.html", "text": "SurfLog"},
@@ -13,7 +14,6 @@ export const recents = [
     {"link": "%E3%83%AF%E3%83%BC%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html", "text": "ワーケーション"},
     {"link": "%E3%81%93%E3%81%A8%E3%81%9F%E3%81%B3%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "ことたびインドネシア語"},
     {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E%E3%81%AE%E3%81%97%E3%81%8F%E3%81%BF.html", "text": "インドネシア語のしくみ"},
-    {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "インドネシア語"},
     {"link": "Home.html", "text": "Home"},
     {"link": "%E3%83%AA%E3%82%BF%E3%83%BC%E3%83%B3%E9%96%A2%E6%95%B0.html", "text": "リターン関数"},
    ]
