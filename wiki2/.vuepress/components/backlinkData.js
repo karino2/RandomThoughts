@@ -89,6 +89,7 @@ export const backlinkData = {
 "続ゆっくりじっくりイタリア語.md",
 ],
 "強化学習.md": [
+"2026年11月中旬の雑記.md",
 "MarkovDecisionProcess.md",
 "ModelFreePolicyEvaluation.md",
 "PolicySearch.md",
