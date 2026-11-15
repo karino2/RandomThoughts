@@ -31,26 +31,24 @@
 
 Policy-Basedなやり方なら、最適なポリシーを学習しうる。
 
-
 ![imgs/CS234Lec5/0001.png](imgs/CS234Lec5/0001.png)
+
+このようなケースで学習出来るようなアルゴリズムを考える。
+
+## 問題設定
+
 ![imgs/CS234Lec5/0002.png](imgs/CS234Lec5/0002.png)
+
+## Gradient無しのポリシー最適化手法
+
+Policy Gradientの話にはいる前に、Gradient無しの最適化を概観しておく。
+
 ![imgs/CS234Lec5/0003.png](imgs/CS234Lec5/0003.png)
-![imgs/CS234Lec5/0004.png](imgs/CS234Lec5/0004.png)
-![imgs/CS234Lec5/0005.png](imgs/CS234Lec5/0005.png)
-![imgs/CS234Lec5/0006.png](imgs/CS234Lec5/0006.png)
-![imgs/CS234Lec5/0007.png](imgs/CS234Lec5/0007.png)
-![imgs/CS234Lec5/0008.png](imgs/CS234Lec5/0008.png)
-![imgs/CS234Lec5/0009.png](imgs/CS234Lec5/0009.png)
-![imgs/CS234Lec5/0010.png](imgs/CS234Lec5/0010.png)
-![imgs/CS234Lec5/0011.png](imgs/CS234Lec5/0011.png)
-![imgs/CS234Lec5/0012.png](imgs/CS234Lec5/0012.png)
-![imgs/CS234Lec5/0013.png](imgs/CS234Lec5/0013.png)
-![imgs/CS234Lec5/0014.png](imgs/CS234Lec5/0014.png)
-![imgs/CS234Lec5/0015.png](imgs/CS234Lec5/0015.png)
-![imgs/CS234Lec5/0016.png](imgs/CS234Lec5/0016.png)
-![imgs/CS234Lec5/0017.png](imgs/CS234Lec5/0017.png)
-![imgs/CS234Lec5/0018.png](imgs/CS234Lec5/0018.png)
-![imgs/CS234Lec5/0019.png](imgs/CS234Lec5/0019.png)
-![imgs/CS234Lec5/0020.png](imgs/CS234Lec5/0020.png)
-![imgs/CS234Lec5/0021.png](imgs/CS234Lec5/0021.png)
-![imgs/CS234Lec5/0022.png](imgs/CS234Lec5/0022.png)
+
+簡単に使えて意外と優秀、というのは忘れないでおきたい。
+
+## Policy Gradient
+
+- [[PolicyGradient]] Likelihoodレシオやスコア関数
+- [[時系列構造を考慮に入れたPolicyGradient法]] REINFORCEとベースライン、Actor-Criticなど。
+
