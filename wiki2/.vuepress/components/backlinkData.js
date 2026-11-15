@@ -1175,6 +1175,7 @@ export const backlinkData = {
 "バッチMCとバッチTD.md",
 "モンテカルロPolicyEvaluation.md",
 "強化学習の用語定義.md",
+"時系列構造を考慮に入れたPolicyGradient法.md",
 ],
 "サイコロ本.md": [
 "HMM.md",
