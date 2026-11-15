@@ -92,6 +92,7 @@ export const backlinkData = {
 "2026年11月中旬の雑記.md",
 "MarkovDecisionProcess.md",
 "ModelFreePolicyEvaluation.md",
+"PolicyGradient.md",
 "PolicySearch.md",
 "QLearning.md",
 "Q関数.md",
@@ -101,6 +102,7 @@ export const backlinkData = {
 "強化学習とは.md",
 "強化学習の用語定義.md",
 "原論文から解き明かす生成AI.md",
+"時系列構造を考慮に入れたPolicyGradient法.md",
 ],
 "【書籍】ウォーキングの科学.md": [
 "オーディオブック.md",
@@ -853,7 +855,9 @@ export const backlinkData = {
 "ReCJKLine.md",
 ],
 "PolicySearch.md": [
+"PolicyGradient.md",
 "強化学習.md",
+"時系列構造を考慮に入れたPolicyGradient法.md",
 ],
 "【書籍】ダイアローグ1800.md": [
 "書籍.md",
@@ -1137,6 +1141,10 @@ export const backlinkData = {
 "CG.md",
 "MFG.md",
 "Stippling.md",
+],
+"時系列構造を考慮に入れたPolicyGradient法.md": [
+"PolicyGradient.md",
+"PolicySearch.md",
 ],
 "MOOC.md": [
 "ClassCentral.md",
@@ -1687,6 +1695,10 @@ export const backlinkData = {
 ],
 "イラストをそれっぽく描くコツ.md": [
 "【書籍】イラストをそれっぽく描くコツ.md",
+],
+"PolicyGradient.md": [
+"PolicySearch.md",
+"時系列構造を考慮に入れたPolicyGradient法.md",
 ],
 "クイックスケッチライブ.md": [
 "お絵描きライブ.md",
