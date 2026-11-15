@@ -14,7 +14,7 @@
 
 ![imgs/CS234Lec5/0016.png](imgs/CS234Lec5/0016.png)
 
-### Gが高variantになる問題の二つの対策
+### Gが高varianceになる問題の二つの対策
 
 Gはトラジェクトリー一つにつき一回計算する感じなので、varianceが高くなって収束までに大量のデータが必要となる。
 この対策に二つの方法が考えられている。
@@ -40,5 +40,7 @@ Gはトラジェクトリー一つにつき一回計算する感じなので、v
 ![imgs/CS234Lec5/0021.png](imgs/CS234Lec5/0021.png)
 
 ### CriticにTD構造を入れる
+
+[[TDLearning]]の時のようにTD(0)構造を入れる。
 
 ![imgs/CS234Lec5/0022.png](imgs/CS234Lec5/0022.png)
