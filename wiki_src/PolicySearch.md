@@ -19,6 +19,8 @@
 
 今回はポリシーを直接パラメトライズして、Value関数が最大になるパラメータを求めることでポリシーを得る、という方法を考える。
 
+![imgs/CS234Lec5/0000.png](imgs/CS234Lec5/0000.png)
+
 ### 今回のポリシーはstochastic
 
 前回まではε-greedyなどはdeterministic policyだったが、今回考えるポリシーは基本的にはstochasticなもの。
@@ -28,3 +30,27 @@
 二つの区別出来ない状態があると、deterministic policyでは上手く行かないので、これまでのValue-Basedなやり方は上手く行かない。
 
 Policy-Basedなやり方なら、最適なポリシーを学習しうる。
+
+
+![imgs/CS234Lec5/0001.png](imgs/CS234Lec5/0001.png)
+![imgs/CS234Lec5/0002.png](imgs/CS234Lec5/0002.png)
+![imgs/CS234Lec5/0003.png](imgs/CS234Lec5/0003.png)
+![imgs/CS234Lec5/0004.png](imgs/CS234Lec5/0004.png)
+![imgs/CS234Lec5/0005.png](imgs/CS234Lec5/0005.png)
+![imgs/CS234Lec5/0006.png](imgs/CS234Lec5/0006.png)
+![imgs/CS234Lec5/0007.png](imgs/CS234Lec5/0007.png)
+![imgs/CS234Lec5/0008.png](imgs/CS234Lec5/0008.png)
+![imgs/CS234Lec5/0009.png](imgs/CS234Lec5/0009.png)
+![imgs/CS234Lec5/0010.png](imgs/CS234Lec5/0010.png)
+![imgs/CS234Lec5/0011.png](imgs/CS234Lec5/0011.png)
+![imgs/CS234Lec5/0012.png](imgs/CS234Lec5/0012.png)
+![imgs/CS234Lec5/0013.png](imgs/CS234Lec5/0013.png)
+![imgs/CS234Lec5/0014.png](imgs/CS234Lec5/0014.png)
+![imgs/CS234Lec5/0015.png](imgs/CS234Lec5/0015.png)
+![imgs/CS234Lec5/0016.png](imgs/CS234Lec5/0016.png)
+![imgs/CS234Lec5/0017.png](imgs/CS234Lec5/0017.png)
+![imgs/CS234Lec5/0018.png](imgs/CS234Lec5/0018.png)
+![imgs/CS234Lec5/0019.png](imgs/CS234Lec5/0019.png)
+![imgs/CS234Lec5/0020.png](imgs/CS234Lec5/0020.png)
+![imgs/CS234Lec5/0021.png](imgs/CS234Lec5/0021.png)
+![imgs/CS234Lec5/0022.png](imgs/CS234Lec5/0022.png)
