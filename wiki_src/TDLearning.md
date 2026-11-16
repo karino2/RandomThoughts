@@ -20,7 +20,8 @@ Temporal Difference Learningとも言う。[[ModelFreePolicyEvaluation]]の一�
 - (s, a, r, s')のタプルが来るごとにその場で更新
 - 最初の頃は初期化によるのでbiasedなestimator
 - インクリメンタルな[[モンテカルロPolicyEvaluation]]と同じ条件で[[ConsistentEstimator]]になる
-- [[モンテカルロPolicyEvaluation]]よりvarianceが低い
+- [[モンテカルロPolicyEvaluation]]よりvarianceが低い（biasが高い）
+   - [[バイアスとバリアンス]]も参照
 
 ## Policy Improvementでの使用。
 
