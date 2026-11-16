@@ -94,6 +94,7 @@ export const backlinkData = {
 "ModelFreePolicyEvaluation.md",
 "PolicyGradient.md",
 "PolicySearch.md",
+"PPO.md",
 "QLearning.md",
 "Q関数.md",
 "Value関数.md",
@@ -856,6 +857,7 @@ export const backlinkData = {
 ],
 "PolicySearch.md": [
 "PolicyGradient.md",
+"PPO.md",
 "強化学習.md",
 "時系列構造を考慮に入れたPolicyGradient法.md",
 ],
@@ -1145,6 +1147,7 @@ export const backlinkData = {
 "時系列構造を考慮に入れたPolicyGradient法.md": [
 "PolicyGradient.md",
 "PolicySearch.md",
+"強化学習.md",
 ],
 "MOOC.md": [
 "ClassCentral.md",
@@ -1699,6 +1702,7 @@ export const backlinkData = {
 ],
 "PolicyGradient.md": [
 "PolicySearch.md",
+"強化学習.md",
 "時系列構造を考慮に入れたPolicyGradient法.md",
 ],
 "クイックスケッチライブ.md": [
@@ -2222,6 +2226,9 @@ export const backlinkData = {
 "Kakito.md": [
 "BOOX.md",
 "Supernote.md",
+],
+"PPO.md": [
+"強化学習.md",
 ],
 "パース.md": [
 "Nushell.md",
@@ -3036,12 +3043,12 @@ export const backlinkData = {
 "着る毛布.md",
 "防寒グッズ.md",
 ],
+"化学計算問題の解き方.md": [
+"化学.md",
+],
 "ContextualCorrelatesOfSynonymy.md": [
 "原論文から解き明かす生成AI.md",
 "分布仮説.md",
-],
-"化学計算問題の解き方.md": [
-"化学.md",
 ],
 "【書籍】14歳から知る影響と連鎖の全世界史.md": [
 "【書籍】物語イギリスの歴史.md",
