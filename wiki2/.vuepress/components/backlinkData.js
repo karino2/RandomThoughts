@@ -164,6 +164,7 @@ export const backlinkData = {
 "バイアスとバリアンス.md": [
 "ConsistentEstimator.md",
 "ModelFreePolicyEvaluation.md",
+"TDLearning.md",
 "モンテカルロPolicyEvaluation.md",
 ],
 "WhatDoPositionEmbeddingsLearn.md": [
@@ -2228,6 +2229,7 @@ export const backlinkData = {
 "Supernote.md",
 ],
 "PPO.md": [
+"2026年11月中旬の雑記.md",
 "強化学習.md",
 ],
 "パース.md": [
