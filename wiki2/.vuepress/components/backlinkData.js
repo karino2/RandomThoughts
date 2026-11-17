@@ -90,6 +90,7 @@ export const backlinkData = {
 ],
 "強化学習.md": [
 "2026年11月中旬の雑記.md",
+"ImitationLearning.md",
 "MarkovDecisionProcess.md",
 "ModelFreePolicyEvaluation.md",
 "PolicyGradient.md",
@@ -681,6 +682,9 @@ export const backlinkData = {
 "CG.md",
 "Metal.md",
 "OpenGL.md",
+],
+"ImitationLearning.md": [
+"強化学習.md",
 ],
 "Rhinocs_仕様検討.md": [
 "Rhinocs.md",
