@@ -4,3 +4,10 @@
 
 例えば人間のエキスパートなどがstateとactionの系列を提供出来るが（デモンストレーション）、rewardは無い、というような場合に、
 この系列を真似するという学習。
+
+## Feature Matching
+
+前後の流れが良く分からないので元論文を軽く確認する。
+
+[ICML Apprenticeship Learning via Inverse Reinforcement Learning.pdf](https://icml.cc/Conferences/2004/proceedings/papers/335.pdf)
+
