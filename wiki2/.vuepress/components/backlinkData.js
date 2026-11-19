@@ -3078,6 +3078,9 @@ export const backlinkData = {
 "Windows.md",
 "技術的なメモ.md",
 ],
+"寡頭制.md": [
+"社会科学.md",
+],
 "背もたれクッション.md": [
 "グッズ関連.md",
 "ノートPC用電源.md",
