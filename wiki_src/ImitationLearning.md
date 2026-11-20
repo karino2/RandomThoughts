@@ -11,3 +11,4 @@
 
 [ICML Apprenticeship Learning via Inverse Reinforcement Learning.pdf](https://icml.cc/Conferences/2004/proceedings/papers/335.pdf)
 
+Holderの不等式はこちら＞[ヘルダーの不等式とその証明 - 数学の景色](https://mathlandscape.com/holder/)
