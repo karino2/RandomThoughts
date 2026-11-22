@@ -70,7 +70,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "Supernote.md": [
-"2026年11月中旬の雑記.md",
+"BOOX.md",
 "PngNote.md",
 "Rhinocs.md",
 "キーボード.md",
@@ -89,7 +89,6 @@ export const backlinkData = {
 "続ゆっくりじっくりイタリア語.md",
 ],
 "強化学習.md": [
-"2026年11月中旬の雑記.md",
 "ImitationLearning.md",
 "MarkovDecisionProcess.md",
 "ModelFreePolicyEvaluation.md",
@@ -272,7 +271,7 @@ export const backlinkData = {
 "【書籍】ギャノング生理学.md",
 ],
 "SurfLog.md": [
-"2026年11月中旬の雑記.md",
+"2026年11月下旬の雑記.md",
 "Home.md",
 "SurfLog_202504から202512まで.md",
 "SurfLog_202512から202603まで.md",
@@ -1134,7 +1133,6 @@ export const backlinkData = {
 "成田空港.md",
 ],
 "インドネシア語のしくみ.md": [
-"2026年11月中旬の雑記.md",
 "インドネシア語.md",
 "ニューエクスプレスインドネシア語.md",
 ],
@@ -1432,7 +1430,6 @@ export const backlinkData = {
 "自作アプリ.md",
 ],
 "ラック.md": [
-"2026年11月中旬の雑記.md",
 "グッズ関連.md",
 ],
 "GLUE.md": [
@@ -1790,7 +1787,6 @@ export const backlinkData = {
 "統計グラフ！.md",
 ],
 "たてなか流クイックスケッチ.md": [
-"2026年11月中旬の雑記.md",
 "KindleFire.md",
 "LenovoTabP12.md",
 "お絵描き.md",
@@ -1992,9 +1988,6 @@ export const backlinkData = {
 "グッズ関連.md",
 "耳栓.md",
 ],
-"2026年11月中旬の雑記.md": [
-"Home.md",
-],
 "MacBookAir.md": [
 "USB充電器.md",
 "ノートPC.md",
@@ -2136,6 +2129,9 @@ export const backlinkData = {
 "技術的なメモ.md",
 "講義ノート.md",
 ],
+"2026年11月下旬の雑記.md": [
+"Home.md",
+],
 "基礎からのベイズ統計学.md": [
 "マルコフ連鎖.md",
 ],
@@ -2233,7 +2229,6 @@ export const backlinkData = {
 "Supernote.md",
 ],
 "PPO.md": [
-"2026年11月中旬の雑記.md",
 "強化学習.md",
 ],
 "パース.md": [
@@ -2612,7 +2607,6 @@ export const backlinkData = {
 "自作アプリ.md",
 ],
 "インドネシア旅行.md": [
-"2026年11月中旬の雑記.md",
 "インドネシア語.md",
 "ワーケーション.md",
 ],
@@ -3102,7 +3096,6 @@ export const backlinkData = {
 "雑多なメモ.md",
 ],
 "ニューエクスプレスインドネシア語.md": [
-"2026年11月中旬の雑記.md",
 "インドネシア語.md",
 "インドネシア語のしくみ.md",
 ],
@@ -3127,6 +3120,7 @@ export const backlinkData = {
 ],
 "KindleFire.md": [
 "Android.md",
+"BOOX.md",
 "LenovoTabP12.md",
 "グッズ関連.md",
 "タブレット.md",
@@ -3224,7 +3218,6 @@ export const backlinkData = {
 "Shader.md",
 ],
 "ロボット掃除機.md": [
-"2026年11月中旬の雑記.md",
 "グッズ関連.md",
 "ラック.md",
 ],
@@ -3381,6 +3374,7 @@ export const backlinkData = {
 "テーブルエディタ.md",
 ],
 "BOOX.md": [
+"2026年11月下旬の雑記.md",
 "Kakito.md",
 "Rhinocs.md",
 "グッズ関連.md",
