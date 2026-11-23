@@ -89,6 +89,7 @@ export const backlinkData = {
 "続ゆっくりじっくりイタリア語.md",
 ],
 "強化学習.md": [
+"2026年11月下旬の雑記.md",
 "ImitationLearning.md",
 "MarkovDecisionProcess.md",
 "ModelFreePolicyEvaluation.md",
@@ -166,6 +167,7 @@ export const backlinkData = {
 "ModelFreePolicyEvaluation.md",
 "TDLearning.md",
 "モンテカルロPolicyEvaluation.md",
+"時系列構造を考慮に入れたPolicyGradient法.md",
 ],
 "WhatDoPositionEmbeddingsLearn.md": [
 "OnPositionEmbeddingsInBERT.md",
@@ -1150,6 +1152,8 @@ export const backlinkData = {
 "時系列構造を考慮に入れたPolicyGradient法.md": [
 "PolicyGradient.md",
 "PolicySearch.md",
+"PPO.md",
+"REINFORCE.md",
 "強化学習.md",
 ],
 "MOOC.md": [
@@ -1447,6 +1451,9 @@ export const backlinkData = {
 ],
 "メモをアプリケーションに依存させたくない.md": [
 "ノート.md",
+],
+"REINFORCE.md": [
+"時系列構造を考慮に入れたPolicyGradient法.md",
 ],
 "一人読書会ライブ.md": [
 "原論文から解き明かす生成AI.md",
@@ -2230,7 +2237,10 @@ export const backlinkData = {
 "Supernote.md",
 ],
 "PPO.md": [
+"2026年11月下旬の雑記.md",
+"PolicyGradient.md",
 "強化学習.md",
+"時系列構造を考慮に入れたPolicyGradient法.md",
 ],
 "パース.md": [
 "Nushell.md",
@@ -3400,6 +3410,9 @@ export const backlinkData = {
 "Rhinocs_セットアップ.md": [
 "Rhinocs.md",
 ],
+"沖縄計画.md": [
+"ワーケーション.md",
+],
 "Android.md": [
 "FDroid.md",
 "PDF.md",
@@ -3413,9 +3426,6 @@ export const backlinkData = {
 "mdvcat.md",
 "unimemo.md",
 "技術的なメモ.md",
-],
-"沖縄計画.md": [
-"ワーケーション.md",
 ],
 "ネット通販.md": [
 "雑多なメモ.md",
