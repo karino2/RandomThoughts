@@ -39,7 +39,7 @@ PPOは[[PolicyGradient]]を改善したものなので、そのモチベーシ�
 
 ![imgs/CS234Lec6_PPO/0005.png](imgs/CS234Lec6_PPO/0005.png)
 
-### PPOの派生、Adaptive KLペナルティとClipped Objective
+## PPOの派生、Adaptive KLペナルティとClipped Objective
 
 PPOでベータの値をadaptiveに決めていく、というアイデアがAdaptive KLペナルティ。
 パラメータを動かす時に、現在のsとaから離れすぎているものは除外するのがClipped Objective。
@@ -47,19 +47,25 @@ PPOでベータの値をadaptiveに決めていく、というアイデアがAda
 Clipped Objectiveは簡単な割にはめちゃ有能らしい。
 
 ![imgs/CS234Lec6_PPO/0006.png](imgs/CS234Lec6_PPO/0006.png)
+
+## Monotonic Improvement Theory
+
 ![imgs/CS234Lec6_PPO/0007.png](imgs/CS234Lec6_PPO/0007.png)
 ![imgs/CS234Lec6_PPO/0008.png](imgs/CS234Lec6_PPO/0008.png)
+
+### Monotonic Improvement Theoryの実際と対策
+
 ![imgs/CS234Lec6_PPO/0009.png](imgs/CS234Lec6_PPO/0009.png)
-![imgs/CS234Lec6_PPO/0010.png](imgs/CS234Lec6_PPO/0010.png)
-![imgs/CS234Lec6_PPO/0011.png](imgs/CS234Lec6_PPO/0011.png)
 
-## GAE
+## GAE（はREINFORCEの方のページに書く）
 
-High-Dimensional Continuous Control Using Generalized Advantage Estimator (ICLR 2016 by Schulman et al.)
+講義動画としてはここで説明していたが、内容的にはREINFORCEの発展なので[[時系列構造を考慮に入れたPolicyGradient法]]に書く。
+ただ、PPOと合わせて使われる事が多く、たぶん流れ的にPPOのあとにこれの改善として追加されたのだろう。
 
 ## PPOまとめ
 
 - data efficiencyの改善: 新しいポリシーから追加のデータを集める前に複数のgradient stepを進める場合がある
 - monotonic improvementのlikelihoodの改善のためにclipを使ったりする
+  - monotonic improvementにだいたいなる、くらいの意味か
 - 局所最適への収束
 - 実装が簡単、ChatGPTなどでも使われてる
