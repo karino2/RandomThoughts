@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%83%A1%E3%83%A2%E3%82%92%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E4%BE%9D%E5%AD%98%E3%81%95%E3%81%9B%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84.html", "text": "メモをアプリケーションに依存させたくない"},
     {"link": "%E6%99%82%E7%B3%BB%E5%88%97%E6%A7%8B%E9%80%A0%E3%82%92%E8%80%83%E6%85%AE%E3%81%AB%E5%85%A5%E3%82%8C%E3%81%9FPolicyGradient%E6%B3%95.html", "text": "時系列構造を考慮に入れたPolicyGradient法"},
     {"link": "REINFORCE.html", "text": "REINFORCE"},
     {"link": "PPO.html", "text": "PPO"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "%E3%83%A9%E3%83%83%E3%82%AF.html", "text": "ラック"},
     {"link": "%E7%A4%BE%E4%BC%9A%E7%A7%91%E5%AD%A6.html", "text": "社会科学"},
     {"link": "%E5%AF%A1%E9%A0%AD%E5%88%B6.html", "text": "寡頭制"},
-    {"link": "%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92.html", "text": "強化学習"},
    ]
 }
 ]

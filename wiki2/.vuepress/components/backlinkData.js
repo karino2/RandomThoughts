@@ -2239,6 +2239,7 @@ export const backlinkData = {
 "PPO.md": [
 "2026年11月下旬の雑記.md",
 "PolicyGradient.md",
+"メモをアプリケーションに依存させたくない.md",
 "強化学習.md",
 "時系列構造を考慮に入れたPolicyGradient法.md",
 ],
