@@ -1704,6 +1704,7 @@ export const backlinkData = {
 ],
 "PolicyGradient.md": [
 "PolicySearch.md",
+"PPO.md",
 "強化学習.md",
 "時系列構造を考慮に入れたPolicyGradient法.md",
 ],
