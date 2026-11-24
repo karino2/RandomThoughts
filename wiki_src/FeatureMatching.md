@@ -1,16 +1,10 @@
 [[強化学習]]の[[ImitationLearning]]の一種。
 
-[Stanford CS234 Reinforcement Learning I Offline RL 1 I 2024 I Lecture 8 - YouTube](https://www.youtube.com/watch?v=IEbuJtjqtMU&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX&index=8)
+- [Stanford CS234 Reinforcement Learning I Policy Search 3 I 2024 I Lecture 7 - YouTube](https://www.youtube.com/watch?v=4ngb0IZTg8I&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX&index=8)
+- [ICML Apprenticeship Learning via Inverse Reinforcement Learning.pdf](https://icml.cc/Conferences/2004/proceedings/papers/335.pdf) 元論文
+- Holderの不等式はこちら＞[ヘルダーの不等式とその証明 - 数学の景色](https://mathlandscape.com/holder/)
 
-良くApprenticeship Learningとしても参照される手法だが、Apprenticeship LearningはInverse RLの事らしい。
-
-## 元論文など
-
-前後の流れが良く分からないので元論文を軽く確認する。
-
-[ICML Apprenticeship Learning via Inverse Reinforcement Learning.pdf](https://icml.cc/Conferences/2004/proceedings/papers/335.pdf)
-
-Holderの不等式はこちら＞[ヘルダーの不等式とその証明 - 数学の景色](https://mathlandscape.com/holder/)
+良くこの論文はApprenticeship Learningとしても参照される手法だが、Apprenticeship LearningはImitation Learningの事らしい。
 
 ## 概要
 
