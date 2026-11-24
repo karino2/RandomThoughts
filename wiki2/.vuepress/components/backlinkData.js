@@ -90,8 +90,10 @@ export const backlinkData = {
 ],
 "強化学習.md": [
 "2026年11月下旬の雑記.md",
+"FeatureMatching.md",
 "ImitationLearning.md",
 "MarkovDecisionProcess.md",
+"MaximumEntropyInverseRL.md",
 "ModelFreePolicyEvaluation.md",
 "PolicyGradient.md",
 "PolicySearch.md",
@@ -594,6 +596,10 @@ export const backlinkData = {
 "原論文から解き明かす生成AI.md",
 "数学.md",
 ],
+"FeatureMatching.md": [
+"ImitationLearning.md",
+"MaximumEntropyInverseRL.md",
+],
 "R.md": [
 "技術的なメモ.md",
 "【書籍】RforDataScience.md",
@@ -685,6 +691,8 @@ export const backlinkData = {
 "OpenGL.md",
 ],
 "ImitationLearning.md": [
+"FeatureMatching.md",
+"MaximumEntropyInverseRL.md",
 "強化学習.md",
 ],
 "Rhinocs_仕様検討.md": [
@@ -1931,6 +1939,10 @@ export const backlinkData = {
 "WiFiルーター.md": [
 "WiMax.md",
 ],
+"英和辞典.md": [
+"技術的なメモ.md",
+"雑英辞郎.md",
+],
 "DQN.md": [
 "Value関数の関数近似.md",
 "強化学習.md",
@@ -1939,10 +1951,6 @@ export const backlinkData = {
 "TeFWiki.md",
 "UFASアーキテクチャ.md",
 "自作アプリ.md",
-],
-"英和辞典.md": [
-"技術的なメモ.md",
-"雑英辞郎.md",
 ],
 "mdvtbl.md": [
 "Unix的GUIツール.md",
@@ -2814,6 +2822,9 @@ export const backlinkData = {
 ],
 "【書籍】スタンフォード式、疲れない体.md": [
 "書籍.md",
+],
+"MaximumEntropyInverseRL.md": [
+"ImitationLearning.md",
 ],
 "Transformer.md": [
 "AttentionIsAllYouNeed.md",
