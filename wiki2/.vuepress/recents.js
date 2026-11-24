@@ -1,6 +1,7 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "MarkovDecisionProcess.html", "text": "MarkovDecisionProcess"},
     {"link": "MaximumEntropyInverseRL.html", "text": "MaximumEntropyInverseRL"},
     {"link": "FeatureMatching.html", "text": "FeatureMatching"},
     {"link": "ImitationLearning.html", "text": "ImitationLearning"},
@@ -15,7 +16,6 @@ export const recents = [
     {"link": "BOOX.html", "text": "BOOX"},
     {"link": "%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "ニューエクスプレスインドネシア語"},
     {"link": "%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F.html", "text": "ロボット掃除機"},
-    {"link": "%E3%83%A9%E3%83%83%E3%82%AF.html", "text": "ラック"},
    ]
 }
 ]
