@@ -2824,6 +2824,7 @@ export const backlinkData = {
 "書籍.md",
 ],
 "MaximumEntropyInverseRL.md": [
+"2026年11月下旬の雑記.md",
 "ImitationLearning.md",
 ],
 "Transformer.md": [
