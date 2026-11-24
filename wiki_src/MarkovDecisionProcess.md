@@ -26,7 +26,7 @@ Value State関数を求める。[[Value関数]]。
 
 ## 無限地平のMDP
 
-MRPはMDP+actionなので前のMRPの続きとしてMDPを考える。
+MDPはMRP+actionなので前のMRPの続きとしてMDPを考える。
 
 ![imgs/CS234Lec2/0002.png](imgs/CS234Lec2/0002.png)
 
