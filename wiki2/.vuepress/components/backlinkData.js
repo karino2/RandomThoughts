@@ -163,6 +163,7 @@ export const backlinkData = {
 ],
 "ことたびインドネシア語.md": [
 "インドネシア語.md",
+"ニューエクスプレスインドネシア語.md",
 ],
 "バイアスとバリアンス.md": [
 "ConsistentEstimator.md",

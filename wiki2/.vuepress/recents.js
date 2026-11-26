@@ -1,6 +1,9 @@
 export const recents = [
  {text: "Recents:",
    children: [
+    {"link": "%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "ニューエクスプレスインドネシア語"},
+    {"link": "%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "インドネシア語"},
+    {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "BOOX.html", "text": "BOOX"},
     {"link": "2026%E5%B9%B411%E6%9C%88%E4%B8%8B%E6%97%AC%E3%81%AE%E9%9B%91%E8%A8%98.html", "text": "2026年11月下旬の雑記"},
     {"link": "MarkovDecisionProcess.html", "text": "MarkovDecisionProcess"},
@@ -12,10 +15,7 @@ export const recents = [
     {"link": "REINFORCE.html", "text": "REINFORCE"},
     {"link": "PPO.html", "text": "PPO"},
     {"link": "PolicyGradient.html", "text": "PolicyGradient"},
-    {"link": "SurfLog.html", "text": "SurfLog"},
     {"link": "Home.html", "text": "Home"},
-    {"link": "%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E.html", "text": "ニューエクスプレスインドネシア語"},
-    {"link": "%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%8E%83%E9%99%A4%E6%A9%9F.html", "text": "ロボット掃除機"},
    ]
 }
 ]
